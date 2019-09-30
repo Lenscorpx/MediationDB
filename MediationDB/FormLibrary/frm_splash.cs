@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MediationDB
+namespace MediationDB.FormLibrary
 {
-    public partial class Form1 : Form
+    public partial class frm_splash : Form
     {
-        public Form1()
+        public frm_splash()
         {
             InitializeComponent();
         }
