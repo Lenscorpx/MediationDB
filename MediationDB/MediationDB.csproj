@@ -51,6 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControlLibrary\uc_dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlLibrary\uc_dashboard.Designer.cs">
+      <DependentUpon>uc_dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLibrary\frm_menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +71,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ControlLibrary\uc_dashboard.resx">
+      <DependentUpon>uc_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_menu.resx">
       <DependentUpon>frm_menu.cs</DependentUpon>
     </EmbeddedResource>
