@@ -16,5 +16,15 @@ namespace MediationDB.FormLibrary
         {
             InitializeComponent();
         }
+
+        private void frm_menu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button9_MouseHover(object sender, EventArgs e)
+        {
+
+        }
     }
 }
