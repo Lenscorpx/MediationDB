@@ -26,5 +26,15 @@ namespace MediationDB.FormLibrary
         {
             
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btn_dashboard_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
