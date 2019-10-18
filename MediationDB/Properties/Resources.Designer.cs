@@ -63,6 +63,26 @@ namespace MediationDB.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add_96px {
+            get {
+                object obj = ResourceManager.GetObject("add_96px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap add_trash_96px {
+            get {
+                object obj = ResourceManager.GetObject("add_trash_96px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mediator {
             get {
                 object obj = ResourceManager.GetObject("mediator", resourceCulture);
@@ -76,6 +96,16 @@ namespace MediationDB.Properties {
         internal static System.Drawing.Bitmap mediator_red {
             get {
                 object obj = ResourceManager.GetObject("mediator-red", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap multiply_96px {
+            get {
+                object obj = ResourceManager.GetObject("multiply_96px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

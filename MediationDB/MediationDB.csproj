@@ -37,6 +37,12 @@
     <Reference Include="Bunifu_UI_v1.52">
       <HintPath>..\..\..\..\..\Downloads\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
+    <Reference Include="MaterialSkin">
+      <HintPath>H:\Data Center\Projects Datas\CodeLabs\Mes Frameworks\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>H:\Data Center\Projects Datas\CodeLabs\Mes Frameworks\MetroFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
@@ -120,6 +126,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\mediator-red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_trash_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiply_96px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

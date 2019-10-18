@@ -37,16 +37,26 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.txt_id_mediateur = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_description = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.btn_supprimer = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_enregistrer = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.bunifuImageButton1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(926, 49);
+            this.panel1.Size = new System.Drawing.Size(1040, 49);
             this.panel1.TabIndex = 0;
             // 
             // bunifuDragControl1
@@ -63,10 +73,11 @@
             this.bunifuCustomDataGrid1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.bunifuCustomDataGrid1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DodgerBlue;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -75,7 +86,7 @@
             this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -87,12 +98,12 @@
             this.bunifuCustomDataGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.DodgerBlue;
             this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(0, 210);
+            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(0, 290);
             this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
             this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -106,24 +117,171 @@
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
             this.bunifuCustomDataGrid1.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.bunifuCustomDataGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(926, 340);
+            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(1040, 340);
             this.bunifuCustomDataGrid1.TabIndex = 1;
+            // 
+            // txt_id_mediateur
+            // 
+            this.txt_id_mediateur.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_id_mediateur.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_id_mediateur.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.txt_id_mediateur.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_id_mediateur.HintText = "Nom de code du mediateur";
+            this.txt_id_mediateur.isPassword = false;
+            this.txt_id_mediateur.LineFocusedColor = System.Drawing.Color.DodgerBlue;
+            this.txt_id_mediateur.LineIdleColor = System.Drawing.Color.White;
+            this.txt_id_mediateur.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
+            this.txt_id_mediateur.LineThickness = 1;
+            this.txt_id_mediateur.Location = new System.Drawing.Point(13, 69);
+            this.txt_id_mediateur.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_id_mediateur.Name = "txt_id_mediateur";
+            this.txt_id_mediateur.Size = new System.Drawing.Size(370, 44);
+            this.txt_id_mediateur.TabIndex = 3;
+            this.txt_id_mediateur.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txt_description
+            // 
+            this.txt_description.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_description.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_description.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.txt_description.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_description.HintText = "Description mediateur";
+            this.txt_description.isPassword = false;
+            this.txt_description.LineFocusedColor = System.Drawing.Color.DodgerBlue;
+            this.txt_description.LineIdleColor = System.Drawing.Color.White;
+            this.txt_description.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
+            this.txt_description.LineThickness = 1;
+            this.txt_description.Location = new System.Drawing.Point(430, 69);
+            this.txt_description.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_description.Name = "txt_description";
+            this.txt_description.Size = new System.Drawing.Size(583, 44);
+            this.txt_description.TabIndex = 4;
+            this.txt_description.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // btn_supprimer
+            // 
+            this.btn_supprimer.Activecolor = System.Drawing.Color.DodgerBlue;
+            this.btn_supprimer.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_supprimer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btn_supprimer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_supprimer.BorderRadius = 0;
+            this.btn_supprimer.ButtonText = "     Supprimer";
+            this.btn_supprimer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_supprimer.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_supprimer.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_supprimer.ForeColor = System.Drawing.Color.White;
+            this.btn_supprimer.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_supprimer.Iconimage = global::MediationDB.Properties.Resources.add_trash_96px;
+            this.btn_supprimer.Iconimage_right = null;
+            this.btn_supprimer.Iconimage_right_Selected = null;
+            this.btn_supprimer.Iconimage_Selected = null;
+            this.btn_supprimer.IconMarginLeft = 0;
+            this.btn_supprimer.IconMarginRight = 0;
+            this.btn_supprimer.IconRightVisible = true;
+            this.btn_supprimer.IconRightZoom = 0D;
+            this.btn_supprimer.IconVisible = true;
+            this.btn_supprimer.IconZoom = 90D;
+            this.btn_supprimer.IsTab = false;
+            this.btn_supprimer.Location = new System.Drawing.Point(859, 123);
+            this.btn_supprimer.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.btn_supprimer.Name = "btn_supprimer";
+            this.btn_supprimer.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btn_supprimer.OnHovercolor = System.Drawing.Color.DodgerBlue;
+            this.btn_supprimer.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_supprimer.selected = false;
+            this.btn_supprimer.Size = new System.Drawing.Size(154, 48);
+            this.btn_supprimer.TabIndex = 6;
+            this.btn_supprimer.Text = "     Supprimer";
+            this.btn_supprimer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_supprimer.Textcolor = System.Drawing.Color.White;
+            this.btn_supprimer.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // btn_enregistrer
+            // 
+            this.btn_enregistrer.Activecolor = System.Drawing.Color.DodgerBlue;
+            this.btn_enregistrer.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_enregistrer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btn_enregistrer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_enregistrer.BorderRadius = 0;
+            this.btn_enregistrer.ButtonText = "     Enregistrer";
+            this.btn_enregistrer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_enregistrer.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_enregistrer.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_enregistrer.ForeColor = System.Drawing.Color.White;
+            this.btn_enregistrer.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_enregistrer.Iconimage = global::MediationDB.Properties.Resources.add_96px;
+            this.btn_enregistrer.Iconimage_right = null;
+            this.btn_enregistrer.Iconimage_right_Selected = null;
+            this.btn_enregistrer.Iconimage_Selected = null;
+            this.btn_enregistrer.IconMarginLeft = 0;
+            this.btn_enregistrer.IconMarginRight = 0;
+            this.btn_enregistrer.IconRightVisible = true;
+            this.btn_enregistrer.IconRightZoom = 0D;
+            this.btn_enregistrer.IconVisible = true;
+            this.btn_enregistrer.IconZoom = 90D;
+            this.btn_enregistrer.IsTab = false;
+            this.btn_enregistrer.Location = new System.Drawing.Point(682, 123);
+            this.btn_enregistrer.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.btn_enregistrer.Name = "btn_enregistrer";
+            this.btn_enregistrer.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btn_enregistrer.OnHovercolor = System.Drawing.Color.DodgerBlue;
+            this.btn_enregistrer.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_enregistrer.selected = false;
+            this.btn_enregistrer.Size = new System.Drawing.Size(154, 48);
+            this.btn_enregistrer.TabIndex = 5;
+            this.btn_enregistrer.Text = "     Enregistrer";
+            this.btn_enregistrer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_enregistrer.Textcolor = System.Drawing.Color.White;
+            this.btn_enregistrer.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.multiply_96px;
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(987, 8);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(42, 34);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton1.TabIndex = 7;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(305, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(362, 22);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Formulaire du partenaire de mediation";
             // 
             // frm_mediateur
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.ClientSize = new System.Drawing.Size(926, 550);
+            this.ClientSize = new System.Drawing.Size(1040, 630);
             this.ControlBox = false;
+            this.Controls.Add(this.btn_supprimer);
+            this.Controls.Add(this.btn_enregistrer);
+            this.Controls.Add(this.txt_description);
+            this.Controls.Add(this.txt_id_mediateur);
             this.Controls.Add(this.bunifuCustomDataGrid1);
             this.Controls.Add(this.panel1);
+            this.Font = new System.Drawing.Font("Segoe UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "frm_mediateur";
             this.Opacity = 0.9D;
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -133,5 +291,11 @@
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_id_mediateur;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_description;
+        private Bunifu.Framework.UI.BunifuFlatButton btn_enregistrer;
+        private Bunifu.Framework.UI.BunifuFlatButton btn_supprimer;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private System.Windows.Forms.Label label1;
     }
 }
