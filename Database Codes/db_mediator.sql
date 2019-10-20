@@ -111,6 +111,41 @@ create table t_type_conflit
     constraint pk_type_conflit primary key(id_type_conflit)
 )
 go
+create procedure afficher_type_conflit
+as
+    select top 50 id_type_conflit as 'Code Conflit', descr_type_conflit as 'Description'         
+        from t_type_conflit
+            order by id_type_conflit asc
+go
+create procedure enregistrer_type_conflit
+@id_type_conflit nvarchar(50),
+@descr_type_conflit nvarchar(100)
+as
+    merge into t_type_conflit
+        using ( select @id_type_conflit as x_id) as x_source
+        on (x_source.x_id=t_type_conflit.id_type_conflit)
+        when matched then
+            update set
+                descr_type_conflit=@descr_type_conflit
+        when not matched then
+            insert 
+                (id_type_conflit, descr_type_conflit)
+            values
+                (@id_type_conflit, @descr_type_conflit);
+go
+create procedure supprimer_type_conflit
+@id_type_conflit nvarchar(50)
+as
+    delete from t_type_conflit
+        where id_type_conflit like @id_type_conflit
+go
+create procedure search_type_conflit
+@id_type_conflit nvarchar(50)
+as
+    select top 50 id_type_conflit as 'Code Conflit', descr_type_conflit as 'Description'         
+        from t_type_conflit
+            where id_type_conflit like '%'+@id_type_conflit+'%'
+go
 ---------------- natures : individuel, collectif, communautaire, etc.....
 create table t_nature_conflit
 (
