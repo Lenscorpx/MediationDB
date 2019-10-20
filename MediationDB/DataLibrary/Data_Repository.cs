@@ -29,7 +29,7 @@ namespace MediationDB.DataLibrary
             //prms.Nom_user = "sa";
             //prms.Mot_de_passe = "123456789";
             prms.Serveur = "DESKTOP-PO0I2OH";
-            prms.Base_de_donnees = "db_kkdependants";
+            prms.Base_de_donnees = "db_mediator";
             prms.Nom_user = "Lens";
             prms.Mot_de_passe = "Windy@2019.com?";
             //prms.Serveur = "DESKTOP-3M7GUQ9";
@@ -37,53 +37,14 @@ namespace MediationDB.DataLibrary
             //prms.Nom_user = "sa";
             //prms.Mot_de_passe = "Admin123_";
         }
-        public void verifier_dependant(string id_dependent, Label existance)
+        public void afficher_mediateur(DataGridView dtg)
         {
             cnx = new SqlConnection(prms.ToString());
             try
             {
                 if (cnx.State == ConnectionState.Closed)
                     cnx.Open();
-                var cmd = new SqlCommand("verifier_dependant", cnx)
-                {
-                    CommandType = CommandType.StoredProcedure
-                };
-                cmd.Parameters.Add(new SqlParameter("id_dependents", SqlDbType.NVarChar)).Value = id_dependent;
-                cmd.ExecuteNonQuery();
-                var da = new SqlDataAdapter(cmd);
-                var dt = new DataTable();
-                da.Fill(dt);
-                if (dt.Rows.Count > 0)
-                {
-                    existance.Text = "1";
-                }
-                else
-                {
-                    existance.Text = "0";
-                }
-            }
-            catch (Exception tdf)
-            {
-                var rs = new DialogResult();
-                rs = MessageBox.Show("Voulez vous consulter le message d'erreur?", "Erreur de chargement", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (rs == DialogResult.Yes)
-                {
-                    MessageBox.Show(tdf.ToString());
-                }
-            }
-            finally
-            {
-                cnx.Close(); cnx.Dispose();
-            }
-        }
-        public void afficher_ville(DataGridView dtg)
-        {
-            cnx = new SqlConnection(prms.ToString());
-            try
-            {
-                if (cnx.State == ConnectionState.Closed)
-                    cnx.Open();
-                var cmd = new SqlCommand("afficher_ville", cnx)
+                var cmd = new SqlCommand("afficher_mediateur", cnx)
                 {
                     CommandType = CommandType.StoredProcedure
                 };
@@ -107,19 +68,19 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void enregistrer_ville(string id_ville, string denomination)
+        public void enregistrer_mediateur(string id_mediateur, string descr_mediateur)
         {
             cnx = new SqlConnection(prms.ToString());
             try
             {
                 if (cnx.State == ConnectionState.Closed)
                     cnx.Open();
-                var cmd = new SqlCommand("enregistrer_ville", cnx)
+                var cmd = new SqlCommand("enregistrer_mediateur", cnx)
                 {
                     CommandType = CommandType.StoredProcedure
                 };
-                cmd.Parameters.Add(new SqlParameter("id_ville", SqlDbType.NVarChar)).Value = id_ville;
-                cmd.Parameters.Add(new SqlParameter("denomination", SqlDbType.NVarChar)).Value = denomination;
+                cmd.Parameters.Add(new SqlParameter("id_mediateur", SqlDbType.NVarChar)).Value = id_mediateur;
+                cmd.Parameters.Add(new SqlParameter("descr_mediateur", SqlDbType.NVarChar)).Value = descr_mediateur;
                 cmd.ExecuteNonQuery();
                 //afficher_frais(dtg);
                 MessageBox.Show("Enregistrement avec succès!", "Enregistrement", MessageBoxButtons.OK, MessageBoxIcon.Information);
