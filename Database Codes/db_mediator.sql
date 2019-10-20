@@ -220,6 +220,7 @@ create table t_assignation_resolution
     constraint fk_resol_assign_res foreign key(id_resolution) references t_resolutions(id_resolution)
 )
 go
+------------------------------- Codes mediateur---------------------------------------------
 create table t_mediateur
 (
     id_mediateur nvarchar(50),
@@ -227,6 +228,42 @@ create table t_mediateur
     constraint pk_mediateur primary key(id_mediateur)
 )
 go
+create procedure afficher_mediateur
+as
+    select top 50 id_mediateur as 'Code mediateur', descr_mediateur as 'Description' from t_mediateur
+    order by id_mediateur asc
+go
+create procedure enregistrer_mediateur
+@id_mediateur nvarchar(50),
+@descr_mediateur nvarchar(100)
+as
+    merge into t_mediateur
+        using ( select @id_mediateur as x_id) as x_source
+        on (x_source.x_id=t_mediateur.id_mediateur)
+        when matched then
+            update set
+                descr_mediateur=@descr_mediateur
+        when not matched then
+            insert 
+                (id_mediateur, descr_mediateur)
+            values
+                (@id_mediateur, @descr_mediateur);
+go
+create procedure supprimer_mediateur
+@id_mediateur nvarchar(50)
+as
+    delete from t_mediateur
+        where 
+            id_mediateur like @id_mediateur
+go
+create procedure search_mediateur
+@id_mediateur nvarchar(50)
+as
+    select top 50 id_mediateur as 'Code mediateur', descr_mediateur as 'Description' 
+    from t_mediateur
+    where id_mediateur like '%'+@id_mediateur+'%'
+go
+------------------------------- Fin codes mediateur----------------------------------------
 create table t_mediation
 (
     num_mediation int identity,

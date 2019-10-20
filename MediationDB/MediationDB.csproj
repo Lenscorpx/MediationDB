@@ -63,6 +63,8 @@
     <Compile Include="ControlLibrary\uc_dashboard.Designer.cs">
       <DependentUpon>uc_dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataLibrary\Data_Repository.cs" />
+    <Compile Include="DataLibrary\Params.cs" />
     <Compile Include="FormLibrary\frm_mediateur.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,9 +120,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DataLibrary\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\mediator.png" />
   </ItemGroup>
