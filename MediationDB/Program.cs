@@ -17,7 +17,7 @@ namespace MediationDB
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_type_conflit());
+            Application.Run(new frm_causes_conflit());
         }
     }
 }

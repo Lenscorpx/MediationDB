@@ -65,6 +65,12 @@
     </Compile>
     <Compile Include="DataLibrary\Data_Repository.cs" />
     <Compile Include="DataLibrary\Params.cs" />
+    <Compile Include="FormLibrary\frm_causes_conflit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_causes_conflit.Designer.cs">
+      <DependentUpon>frm_causes_conflit.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLibrary\frm_mediateur.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ControlLibrary\uc_dashboard.resx">
       <DependentUpon>uc_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_causes_conflit.resx">
+      <DependentUpon>frm_causes_conflit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_mediateur.resx">
       <DependentUpon>frm_mediateur.cs</DependentUpon>
