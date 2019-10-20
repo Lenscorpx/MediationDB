@@ -21,5 +21,16 @@ namespace MediationDB.FormLibrary
         {
             this.Close();
         }
+
+        private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txt_id_cause_conflit.Text = bunifuCustomDataGrid1.SelectedRows[0].Cells[0].Value.ToString();
+            txt_description.Text = bunifuCustomDataGrid1.SelectedRows[0].Cells[1].Value.ToString();
+        }
+
+        private void refresh()
+        {
+
+        }
     }
 }
