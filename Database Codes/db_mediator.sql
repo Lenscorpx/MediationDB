@@ -147,6 +147,7 @@ as
             where id_type_conflit like '%'+@id_type_conflit+'%'
 go
 ---------------- natures : individuel, collectif, communautaire, etc.....
+---------------- Debut Codes Nature conflit------------------------------------------------------------
 create table t_nature_conflit
 (
     id_nature_conflit nvarchar(50),
@@ -154,6 +155,42 @@ create table t_nature_conflit
     constraint pk_nature_conflit primary key(id_nature_conflit)
 )
 go
+create procedure afficher_nature_conflit
+as
+    select top 50 id_nature_conflit as 'Nature du conflit', descr_nature_conflit as 'Description' 
+    from t_nature_conflit
+        order by id_nature_conflit asc
+go 
+create procedure enregistrer_nature_conflit
+@id_nature_conflit nvarchar(50),
+@descr_nature_conflit nvarchar(100)
+as
+    merge into t_nature_conflit
+    using (select @id_nature_conflit as x_id) as x_source
+    on (x_source.x_id=t_nature_conflit.id_nature_conflit)
+    when matched then
+        update set 
+            descr_nature_conflit=@descr_nature_conflit
+    when not matched then
+        insert
+            (id_nature_conflit,descr_nature_conflit)
+        values 
+            (@id_nature_conflit,@descr_nature_conflit);
+go
+create procedure supprimer_nature_conflit
+@id_nature_conflit nvarchar(50)
+as
+    delete from t_nature_conflit
+        where id_nature_conflit=@id_nature_conflit
+go
+create procedure search_nature_conflit
+@id_nature_conflit nvarchar(50)
+as
+    select top 50 id_nature_conflit as 'Nature de conflit', descr_nature_conflit as 'Description' 
+    from t_nature_conflit
+        where id_nature_conflit like '%'+@id_nature_conflit+'%'
+go
+----------------------------Fin Codes nature conflit---------------------------------------------------
 create table t_conflit
 (
     num_conflit int identity,
@@ -192,7 +229,7 @@ as
     from t_objets_conflits
         order by id_objets_conflits asc
 go
-create procedure enregistrer_ojet_conflit
+create procedure enregistrer_objet_conflit
 @id_objets_conflits nvarchar(50),
 @descr_objet_conflits nvarchar(100)
 as
