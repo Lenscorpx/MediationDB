@@ -178,6 +178,7 @@ create table t_details_conflits
     constraint fk_conflit_details foreign key(num_conflit) references t_conflit(num_conflit)
 )
 go
+-----------------------------Debut codes Objets Conflits----------------------------------------------------------
 create table t_objets_conflits
 (
     id_objets_conflits nvarchar(50),
@@ -185,6 +186,42 @@ create table t_objets_conflits
     constraint pk_objet primary key(id_objets_conflits)
 )
 go
+create procedure afficher_objet_conflit
+as
+    select top 50 id_objets_conflits as 'Objet de conflit', descr_objet_conflits as 'Description' 
+    from t_objets_conflits
+        order by id_objets_conflits asc
+go
+create procedure enregistrer_ojet_conflit
+@id_objets_conflits nvarchar(50),
+@descr_objet_conflits nvarchar(100)
+as
+    merge into t_objets_conflits
+    using (select @id_objets_conflits as x_id) as x_source
+    on (x_source.x_id=t_objets_conflits.id_objets_conflits)
+    when matched then
+        update set
+            descr_objet_conflits=@descr_objet_conflits
+    when not matched then
+        insert
+            (id_objets_conflits, descr_objet_conflits)
+        values
+            (@id_objets_conflits, @descr_objet_conflits);
+go
+create procedure supprimer_objet_conflit
+@id_objets_conflits nvarchar(50)
+as
+    delete from t_objets_conflits
+        where id_objets_conflits like @id_objets_conflits
+go
+create procedure search_objet_conflit
+@id_objets_conflits nvarchar(50)
+as
+    select top 50 id_objets_conflits as 'Objet du conflit', descr_objet_conflits as 'Description' 
+    from t_objets_conflits
+    where id_objets_conflits like '%'+@id_objets_conflits+'%'
+go 
+-------------------------Fin Codes Objets du conflits----------------------------------------------------------
 create table t_assignation_objets
 (
     num_details_objet int identity,
