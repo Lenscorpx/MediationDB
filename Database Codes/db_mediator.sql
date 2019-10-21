@@ -197,6 +197,7 @@ create table t_assignation_objets
     constraint fk_conflit_obj foreign key(num_conflit) references t_conflit(num_conflit)
 )
 go
+-----------------------------Debut code cause_conflit--------------------------------------------------
 create table t_causes_conflits
 (
     id_cause_conflit nvarchar(50),
@@ -204,6 +205,39 @@ create table t_causes_conflits
     constraint pk_causes primary key(id_cause_conflit)
 )
 go
+create procedure afficher_causes_conflit
+as
+    select top 50 id_cause_conflit as 'ID Cause conflit', descr_causes as 'Description' 
+        from t_causes_conflits
+    order by id_cause_conflit asc
+go
+create procedure enregistrer_causes_conflit
+@id_cause_conflit nvarchar(50),
+@descr_causes nvarchar(100)
+as
+    merge into t_causes_conflits
+    using (select @id_cause_conflit as x_id)as x_source
+        on(x_source.x_id=t_causes_conflits.id_cause_conflit)
+        when matched then
+            update set
+                descr_causes=@descr_causes
+        when not matched then
+            insert
+                (id_cause_conflit,descr_causes)
+            values
+                (@id_cause_conflit,@descr_causes);
+go
+create procedure supprimer_cause_conflit
+@id_cause_conflit nvarchar(50)
+as
+    delete from t_causes_conflits
+        where id_cause_conflit like @id_cause_conflit
+go
+create procedure search_cause_conflit
+@id_cause_conflit nvarchar(50)
+as
+    
+-----------------------------Fin code cause_conflit----------------------------------------------------
 create table t_assignation_causes
 (
     num_assignation_causes int identity,
