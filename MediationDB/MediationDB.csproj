@@ -101,6 +101,12 @@
     <Compile Include="FormLibrary\frm_splash.Designer.cs">
       <DependentUpon>frm_splash.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLibrary\frm_types_partie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_types_partie.Designer.cs">
+      <DependentUpon>frm_types_partie.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLibrary\frm_type_conflit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_splash.resx">
       <DependentUpon>frm_splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_types_partie.resx">
+      <DependentUpon>frm_types_partie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_type_conflit.resx">
       <DependentUpon>frm_type_conflit.cs</DependentUpon>

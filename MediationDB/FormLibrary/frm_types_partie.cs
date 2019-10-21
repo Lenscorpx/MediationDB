@@ -11,49 +11,42 @@ using MediationDB.DataLibrary;
 
 namespace MediationDB.FormLibrary
 {
-    public partial class frm_nature_conflit : Form
+    public partial class frm_types_partie : Form
     {
         Data_Repository rps = new Data_Repository();
-        public frm_nature_conflit()
+        public frm_types_partie()
         {
             InitializeComponent();
             refresh();
         }
-
-        private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            txt_id_nature_conflit.Text = bunifuCustomDataGrid1.SelectedRows[0].Cells[0].Value.ToString();
-            txt_description.Text = bunifuCustomDataGrid1.SelectedRows[0].Cells[1].Value.ToString();
-        }
-
-        private void bunifuImageButton1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void refresh()
         {
-            rps.afficher_nature_conflit(bunifuCustomDataGrid1);
+            rps.afficher_type_partie(bunifuCustomDataGrid1);
             txt_description.ResetText();
-            txt_id_nature_conflit.ResetText();
+            txt_type_partie.ResetText();
+        }
+
+        private void txt_type_partie_OnValueChanged(object sender, EventArgs e)
+        {
+            rps.search_type_partie(bunifuCustomDataGrid1, txt_type_partie.Text);
         }
 
         private void btn_enregistrer_Click(object sender, EventArgs e)
         {
-            if (txt_id_nature_conflit.Text == "" || txt_description.Text == "")
+            if (txt_type_partie.Text == "" || txt_description.Text == "")
             {
                 MessageBox.Show("Veuillez completer les champs necessaires!");
             }
             else
             {
-                rps.enregistrer_nature_conflit(txt_id_nature_conflit.Text, txt_description.Text);
+                rps.enregistrer_type_parties(txt_type_partie.Text, txt_description.Text);
                 refresh();
             }
         }
 
         private void btn_supprimer_Click(object sender, EventArgs e)
         {
-            if (txt_id_nature_conflit.Text == "")
+            if (txt_type_partie.Text == "")
             {
                 MessageBox.Show("Completez la nature de conflit a supprimer");
             }
@@ -63,10 +56,21 @@ namespace MediationDB.FormLibrary
                 rs = MessageBox.Show(this, "Voulez vous vraiment supprimer cette information?", "Message de confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (rs == DialogResult.Yes)
                 {
-                    rps.supprimer_nature_conflit(txt_id_nature_conflit.Text);
+                    rps.supprimer_type_partie(txt_type_partie.Text);
                     refresh();
                 }
             }
+        }
+
+        private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txt_type_partie.Text = bunifuCustomDataGrid1.SelectedRows[0].Cells[0].Value.ToString();
+            txt_description.Text = bunifuCustomDataGrid1.SelectedRows[0].Cells[1].Value.ToString();
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
