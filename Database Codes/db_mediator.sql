@@ -236,7 +236,10 @@ go
 create procedure search_cause_conflit
 @id_cause_conflit nvarchar(50)
 as
-    
+    select top 50 id_cause_conflit as 'ID Cause conflit', descr_causes as 'Description' 
+        from t_causes_conflits
+    where id_cause_conflit like '%'+@id_cause_conflit+'%'
+go
 -----------------------------Fin code cause_conflit----------------------------------------------------
 create table t_assignation_causes
 (
