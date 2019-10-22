@@ -121,6 +121,7 @@
             this.btn_supprimer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_supprimer.Textcolor = System.Drawing.Color.White;
             this.btn_supprimer.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_supprimer.Click += new System.EventHandler(this.btn_supprimer_Click);
             // 
             // btn_enregistrer
             // 
@@ -159,6 +160,7 @@
             this.btn_enregistrer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_enregistrer.Textcolor = System.Drawing.Color.White;
             this.btn_enregistrer.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_enregistrer.Click += new System.EventHandler(this.btn_enregistrer_Click);
             // 
             // txt_description
             // 
@@ -197,6 +199,7 @@
             this.txt_id_situation.Size = new System.Drawing.Size(370, 44);
             this.txt_id_situation.TabIndex = 23;
             this.txt_id_situation.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_id_situation.OnValueChanged += new System.EventHandler(this.txt_id_situation_OnValueChanged);
             // 
             // bunifuCustomDataGrid1
             // 
@@ -259,6 +262,7 @@
             this.bunifuCustomDataGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(1040, 447);
             this.bunifuCustomDataGrid1.TabIndex = 27;
+            this.bunifuCustomDataGrid1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid1_CellContentClick);
             // 
             // bunifuDragControl1
             // 

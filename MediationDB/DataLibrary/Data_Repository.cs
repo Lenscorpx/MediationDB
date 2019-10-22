@@ -1856,44 +1856,6 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        //public void imprimer_liste_agents(DocumentViewer dcviewer)
-        //{
-        //    cnx = new SqlConnection(prms.ToString());
-        //    try
-        //    {
-        //        if (cnx.State == ConnectionState.Closed)
-        //            cnx.Open();
-        //        const string requete = "imprimer_liste_agents";
-        //        var cmd = new SqlCommand(requete, cnx)
-        //        {
-        //            CommandType = CommandType.StoredProcedure
-        //        };
-        //        cmd.ExecuteNonQuery();
-
-        //        var da = new SqlDataAdapter(cmd);
-        //        var rpt = new rpt_liste_agents();
-        //        var dtset = new DataSet();
-        //        da.Fill(dtset, "imprimer_liste_agents");
-        //        rpt.DataSource = dtset;
-        //        dcviewer.DocumentSource = rpt;
-        //        rpt.CreateDocument();
-        //        dcviewer.Refresh();
-        //    }
-        //    catch (Exception etr)
-        //    {
-        //        MessageBox.Show("Erreur lors du chargement!", "Echec", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //        var rs = new DialogResult();
-        //        rs = MessageBox.Show("Voulez vous consulter le message d'erreur?", "Message d'erreur", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-        //        if (rs == DialogResult.Yes)
-        //        {
-        //            MessageBox.Show(etr.ToString());
-        //        }
-        //    }
-        //    finally
-        //    {
-        //        cnx.Close(); cnx.Dispose();
-        //    }
-        //}
         public void liste_dependants_structure(DataGridView dtg)
         {
             cnx = new SqlConnection(prms.ToString());
@@ -2269,36 +2231,6 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        //public void charts_dependants_paragent(Chart graphik)
-        //{
-        //    cnx = new SqlConnection(prms.ToString());
-        //    try
-        //    {
-        //        if (cnx.State == ConnectionState.Closed)
-        //            cnx.Open();
-        //        var cmd = new SqlCommand("charts_dependants_paragent", cnx)
-        //        {
-        //            CommandType = CommandType.StoredProcedure
-        //        };
-        //        cmd.ExecuteNonQuery();
-        //        var da = new SqlDataAdapter(cmd);
-        //        var dt = new DataTable();
-        //        da.Fill(dt);
-        //        graphik.Series["Dependants par agent"].Points.Clear();
-        //        foreach (DataRow dr in dt.Rows)
-        //        {
-        //            graphik.Series["Dependants par agent"].Points.AddXY(Convert.ToString(dr[0]), Convert.ToInt32(dr[1]));
-        //        }
-        //    }
-        //    catch (Exception tdf)
-        //    {
-        //        MessageBox.Show("Connection failed!\n" + tdf);
-        //    }
-        //    finally
-        //    {
-        //        cnx.Close(); cnx.Dispose();
-        //    }
-        //}
         public void charts_sans_dependants(Label sans_dependants)
         {
             cnx = new SqlConnection(prms.ToString());
