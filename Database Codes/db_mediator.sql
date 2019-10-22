@@ -81,7 +81,26 @@ as
     when matched then 
        update set
             descr_situation =@descr_situation
-      
+    when not matched then
+        insert
+            (id_situation, descr_situation)
+        values
+            (@id_situation, @descr_situation);
+go
+create procedure supprimer_situation_menage
+@id_situation nvarchar(50)
+as
+    delete from t_situation_menage
+        where id_situation=@id_situation
+go
+create procedure search_situation
+@id_situation nvarchar(50)
+as
+    select top 50 id_situation as 'Situation de menage', descr_situation as 'Description' 
+    from t_situation_menage
+    where id_situation like '%'+@id_situation+'%'
+go
+
 ----------------------------Fin des codes Situations menages -------------------------------------------------
 create table t_menages
 (
