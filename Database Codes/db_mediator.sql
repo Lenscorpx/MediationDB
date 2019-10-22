@@ -57,6 +57,7 @@ create table t_localite
     constraint fk_groupement foreign key(id_groupement) references t_groupement(id_groupement)
 )
 go
+-----------------------------Debut codes Situation Menages-----------------------------------------------------
 create table t_situation_menage
 (
     id_situation nvarchar(50),
@@ -64,6 +65,24 @@ create table t_situation_menage
     constraint pk_situation primary key(id_situation)
 )
 go
+create procedure afficher_situation_menage
+as
+    select top 50 id_situation as 'Situation de menage', descr_situation as 'Description' 
+    from t_situation_menage
+        order by id_situation asc
+go
+create procedure enregistrer_situation_menage
+@id_situation nvarchar(50),
+@descr_situation nvarchar(100)
+as
+    merge into t_situation_menage
+    using (select @id_situation as x_id)as x_source
+    on (x_source.x_id=t_situation_menage.id_situation)
+    when matched then 
+       update set
+            descr_situation =@descr_situation
+      
+----------------------------Fin des codes Situations menages -------------------------------------------------
 create table t_menages
 (
     id_menage nvarchar(50),
@@ -327,6 +346,7 @@ create table t_assignation_causes
 ) 
 go
 ---cette table permettra de reconnaitre quel type de menages est soit accuse ou plaignant
+--------------------- Debut codes Types Parties ---------------------------------------------------------
 create table t_type_parties 
 (
     id_typ_partie nvarchar(50),
@@ -334,6 +354,42 @@ create table t_type_parties
     constraint pk_type_partie primary key(id_typ_partie)
 )
 go
+create procedure afficher_type_partie
+as
+    select top 50 id_typ_partie as 'Type de partie prenante', descr_typ_partie as 'Description' 
+    from t_type_parties
+        order by id_typ_partie asc
+go
+create procedure enregistrer_type_parties
+@id_typ_partie nvarchar(50),
+@descr_typ_partie nvarchar(100)
+as
+    merge into t_type_parties
+    using(select @id_typ_partie as x_id)as x_source
+    on(x_source.x_id=t_type_parties.id_typ_partie)
+    when matched then
+        update set
+            descr_typ_partie = @descr_typ_partie
+    when not matched then
+        insert
+            (id_typ_partie, descr_typ_partie)
+        values
+            (@id_typ_partie, @descr_typ_partie);
+go
+create procedure supprimer_type_partie
+@id_typ_partie nvarchar(50)
+as
+    delete from t_type_parties
+        where id_typ_partie like @id_typ_partie
+go
+create procedure search_type_partie
+@id_typ_partie nvarchar(50)
+as
+    select top 50 id_typ_partie as 'Type de partie', descr_typ_partie as 'Description' 
+    from t_type_parties
+        where id_typ_partie like '%'+@id_typ_partie+'%'
+go
+---------------------- Fin Codes Types Parties ----------------------------------------------------------------
 create table t_parties
 (
     num_partie int identity,

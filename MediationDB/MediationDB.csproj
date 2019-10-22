@@ -95,6 +95,12 @@
     <Compile Include="FormLibrary\frm_objet_conflit.Designer.cs">
       <DependentUpon>frm_objet_conflit.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLibrary\frm_situation_menage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_situation_menage.Designer.cs">
+      <DependentUpon>frm_situation_menage.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLibrary\frm_splash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_objet_conflit.resx">
       <DependentUpon>frm_objet_conflit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_situation_menage.resx">
+      <DependentUpon>frm_situation_menage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_splash.resx">
       <DependentUpon>frm_splash.cs</DependentUpon>
