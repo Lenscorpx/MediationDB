@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MediationDB.ControlLibrary;
 
 namespace MediationDB.FormLibrary
 {
@@ -15,6 +16,7 @@ namespace MediationDB.FormLibrary
         public frm_menu()
         {
             InitializeComponent();
+            charger_splash();
         }
 
         private void frm_menu_Load(object sender, EventArgs e)
@@ -33,6 +35,34 @@ namespace MediationDB.FormLibrary
         }
 
         private void btn_dashboard_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_enregistrer_Click(object sender, EventArgs e)
+        {
+            
+        }
+        private void charger_splash()
+        {
+            var fr = new uc_splash()
+            {
+                Size = panel1.Size
+            };
+            panel1.Controls.Clear();
+            panel1.Controls.Add(fr);
+            fr.Visible = false;
+            //bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
+            //bunifuTransition1.ShowSync(fr);
+            fr.Visible = true;
+        }
+
+        private void pnl_menu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
 
         }

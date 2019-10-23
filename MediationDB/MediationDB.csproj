@@ -63,6 +63,12 @@
     <Compile Include="ControlLibrary\uc_dashboard.Designer.cs">
       <DependentUpon>uc_dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="ControlLibrary\uc_splash.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlLibrary\uc_splash.Designer.cs">
+      <DependentUpon>uc_splash.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataLibrary\Data_Repository.cs" />
     <Compile Include="DataLibrary\Params.cs" />
     <Compile Include="FormLibrary\frm_causes_conflit.cs">
@@ -135,6 +141,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ControlLibrary\uc_dashboard.resx">
       <DependentUpon>uc_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlLibrary\uc_splash.resx">
+      <DependentUpon>uc_splash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_causes_conflit.resx">
       <DependentUpon>frm_causes_conflit.cs</DependentUpon>
@@ -209,6 +218,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\multiply_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\collaboration_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\handshake_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\racism_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\strike_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\family_man_woman_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_groups_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\presentation_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\services_80px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
