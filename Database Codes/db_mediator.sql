@@ -48,6 +48,7 @@ create table t_groupement
     constraint fk_chefferie foreign key(id_chefferie) references t_chefferie(id_chefferie)
 )
 go
+--------------------------Debut codes localite-----------------------------------------------------------
 create table t_localite
 (
     id_localite nvarchar(50),
@@ -57,6 +58,7 @@ create table t_localite
     constraint fk_groupement foreign key(id_groupement) references t_groupement(id_groupement)
 )
 go
+----------------------------Fin codes localite----------------------------------------------------------
 -----------------------------Debut codes Situation Menages-----------------------------------------------------
 create table t_situation_menage
 (
@@ -582,6 +584,9 @@ create table t_mediation
     constraint fk_mediateur_mediation foreign key(id_mediateur) references t_mediateur(id_mediateur),
     constraint fk_mediation_conflit foreign key(num_conflit) references t_conflit(num_conflit)
 )
+go
+alter table t_mediation
+add date_fin_mediation date
 go
 create table t_logs
 (

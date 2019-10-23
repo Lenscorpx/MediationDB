@@ -64,7 +64,26 @@ namespace MediationDB.FormLibrary
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
+            var fr = new uc_conflit()
+            {
+                Size = panel1.Size
+            };
+            panel1.Controls.Clear();
+            panel1.Controls.Add(fr);
+            fr.Visible = false;
+            bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
+            bunifuTransition1.ShowSync(fr);
+            fr.Visible = true;
+        }
 
+        private void btn_quitter_Click(object sender, EventArgs e)
+        {
+            var rs = new DialogResult();
+            rs = MessageBox.Show(this, "Etes vous sur de vouloir quitter l'application?", "Confirmation pour quitter l'application", MessageBoxButtons.YesNo, MessageBoxIcon.Stop,MessageBoxDefaultButton.Button2);
+            if (rs==DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }

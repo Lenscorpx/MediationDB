@@ -16,5 +16,10 @@ namespace MediationDB.ControlLibrary
         {
             InitializeComponent();
         }
+
+        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

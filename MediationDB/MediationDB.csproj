@@ -57,6 +57,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControlLibrary\uc_conflit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlLibrary\uc_conflit.Designer.cs">
+      <DependentUpon>uc_conflit.cs</DependentUpon>
+    </Compile>
     <Compile Include="ControlLibrary\uc_dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -139,6 +145,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ControlLibrary\uc_conflit.resx">
+      <DependentUpon>uc_conflit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ControlLibrary\uc_dashboard.resx">
       <DependentUpon>uc_dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -242,6 +251,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\services_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\strike_80px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_property_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speaker_notes_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_slide_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\idea_sharing_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiply_96px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_80px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -29,17 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_menu));
             this.pnl_menu = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.lbl_user = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.lbl_access = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.btn_quitter = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton8 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton7 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton6 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -57,10 +54,7 @@
             // pnl_menu
             // 
             this.pnl_menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.pnl_menu.Controls.Add(this.lbl_access);
-            this.pnl_menu.Controls.Add(this.bunifuCustomLabel2);
-            this.pnl_menu.Controls.Add(this.lbl_user);
-            this.pnl_menu.Controls.Add(this.bunifuCustomLabel1);
+            this.pnl_menu.Controls.Add(this.btn_quitter);
             this.pnl_menu.Controls.Add(this.bunifuFlatButton8);
             this.pnl_menu.Controls.Add(this.bunifuFlatButton7);
             this.pnl_menu.Controls.Add(this.bunifuFlatButton6);
@@ -116,69 +110,63 @@
             // 
             this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.bunifuTransition1.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(0);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.bunifuTransition1.DefaultAnimation = animation3;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation1;
             this.bunifuTransition1.Interval = 5;
             // 
-            // bunifuCustomLabel1
+            // btn_quitter
             // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.bunifuCustomLabel1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(9, 625);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(69, 17);
-            this.bunifuCustomLabel1.TabIndex = 35;
-            this.bunifuCustomLabel1.Text = "Utilisateur";
-            // 
-            // lbl_user
-            // 
-            this.lbl_user.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.lbl_user, BunifuAnimatorNS.DecorationType.None);
-            this.lbl_user.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_user.ForeColor = System.Drawing.Color.White;
-            this.lbl_user.Location = new System.Drawing.Point(12, 654);
-            this.lbl_user.Name = "lbl_user";
-            this.lbl_user.Size = new System.Drawing.Size(0, 17);
-            this.lbl_user.TabIndex = 36;
-            // 
-            // bunifuCustomLabel2
-            // 
-            this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.bunifuCustomLabel2, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(9, 577);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(108, 17);
-            this.bunifuCustomLabel2.TabIndex = 37;
-            this.bunifuCustomLabel2.Text = "Niveau d\'accès";
-            // 
-            // lbl_access
-            // 
-            this.lbl_access.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.lbl_access, BunifuAnimatorNS.DecorationType.None);
-            this.lbl_access.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_access.ForeColor = System.Drawing.Color.White;
-            this.lbl_access.Location = new System.Drawing.Point(11, 601);
-            this.lbl_access.Name = "lbl_access";
-            this.lbl_access.Size = new System.Drawing.Size(0, 17);
-            this.lbl_access.TabIndex = 38;
+            this.btn_quitter.Activecolor = System.Drawing.Color.DodgerBlue;
+            this.btn_quitter.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_quitter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btn_quitter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_quitter.BorderRadius = 0;
+            this.btn_quitter.ButtonText = "     Quitter l\'application";
+            this.btn_quitter.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.btn_quitter, BunifuAnimatorNS.DecorationType.None);
+            this.btn_quitter.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_quitter.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_quitter.ForeColor = System.Drawing.Color.White;
+            this.btn_quitter.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_quitter.Iconimage = global::MediationDB.Properties.Resources.cancel_80px;
+            this.btn_quitter.Iconimage_right = null;
+            this.btn_quitter.Iconimage_right_Selected = null;
+            this.btn_quitter.Iconimage_Selected = null;
+            this.btn_quitter.IconMarginLeft = 0;
+            this.btn_quitter.IconMarginRight = 0;
+            this.btn_quitter.IconRightVisible = true;
+            this.btn_quitter.IconRightZoom = 0D;
+            this.btn_quitter.IconVisible = true;
+            this.btn_quitter.IconZoom = 70D;
+            this.btn_quitter.IsTab = true;
+            this.btn_quitter.Location = new System.Drawing.Point(0, 523);
+            this.btn_quitter.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.btn_quitter.Name = "btn_quitter";
+            this.btn_quitter.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btn_quitter.OnHovercolor = System.Drawing.Color.DodgerBlue;
+            this.btn_quitter.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_quitter.selected = false;
+            this.btn_quitter.Size = new System.Drawing.Size(245, 48);
+            this.btn_quitter.TabIndex = 39;
+            this.btn_quitter.Text = "     Quitter l\'application";
+            this.btn_quitter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_quitter.Textcolor = System.Drawing.Color.White;
+            this.btn_quitter.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_quitter.Click += new System.EventHandler(this.btn_quitter_Click);
             // 
             // bunifuFlatButton8
             // 
@@ -584,9 +572,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton3;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
         private BunifuAnimatorNS.BunifuTransition bunifuTransition1;
-        private Bunifu.Framework.UI.BunifuCustomLabel lbl_user;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-        private Bunifu.Framework.UI.BunifuCustomLabel lbl_access;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
+        private Bunifu.Framework.UI.BunifuFlatButton btn_quitter;
     }
 }
