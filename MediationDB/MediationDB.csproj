@@ -119,6 +119,12 @@
     <Compile Include="FormLibrary\frm_type_conflit.Designer.cs">
       <DependentUpon>frm_type_conflit.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLibrary\frm_vulnerabilite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_vulnerabilite.Designer.cs">
+      <DependentUpon>frm_vulnerabilite.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ControlLibrary\uc_dashboard.resx">
@@ -150,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_type_conflit.resx">
       <DependentUpon>frm_type_conflit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_vulnerabilite.resx">
+      <DependentUpon>frm_vulnerabilite.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
