@@ -464,6 +464,7 @@ create table t_parties
     constraint fk_menage_partie foreign key(id_menage) references t_menages(id_menage)
 )
 go
+-------------------------Debut codes Resolutions--------------------------------------------------------
 create table t_resolutions
 (
     id_resolution nvarchar(50),
@@ -471,6 +472,47 @@ create table t_resolutions
     constraint pk_resolution primary key(id_resolution)
 )
 go
+create procedure afficher_resolution
+as
+    select top 50 id_resolution as 'Resolution', descr_resolution as 'Description' 
+    from t_resolutions
+        order by id_resolution asc
+go
+create procedure enregistrer_resolution
+@id_resolution nvarchar(50),
+@descr_resolution nvarchar(100)
+as
+    merge into t_resolutions
+    using (select @id_resolution as x_id) as x_source
+    on(x_source.x_id=t_resolutions.id_resolution)
+    when matched then
+        update set
+            descr_resolution=@descr_resolution
+    when not matched then
+        insert
+            (id_resolution,descr_resolution)
+        values
+            (@id_resolution,@descr_resolution);
+go
+create procedure supprimer_resolution
+@id_resolution nvarchar(50)
+as
+    delete from t_resolutions
+        where id_resolution=@id_resolution
+go
+create procedure search_resolution
+@id_resolution nvarchar(50)
+as
+    select top 50 id_resolution as 'Resolution', descr_resolution as 'Description' 
+    from t_resolutions
+    where id_resolution like '%' + @id_resolution +'%'
+go
+create procedure recuperer_resolution
+as
+    select id_resolution from t_resolutions
+    order by id_resolution asc
+go
+------------------------Fin des codes resolutions------------------------------------------------------
 create table t_assignation_resolution
 (
     num_assign_resol int identity,
