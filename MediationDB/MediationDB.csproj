@@ -192,7 +192,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\speed_80px.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\mediator.png" />
   </ItemGroup>
