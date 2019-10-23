@@ -110,7 +110,8 @@ create table t_menages
     constraint pk_menages primary key(id_menage),
     constraint fk_situation foreign key(id_situation) references t_situation_menage(id_situation)
 )
-go
+
+-----------------------------Debut codes vulnerabilite ---------------------------------------
 create table t_vulnerabilite
 (
     id_vulnerabilite nvarchar(50),
@@ -118,7 +119,48 @@ create table t_vulnerabilite
     constraint pk_vulnerab primary key(id_vulnerabilite)
 )
 go
-
+create procedure afficher_vulnerabilite
+as
+    select top 50 id_vulnerabilite as 'Vulnerabilite', descr_vulnerabilite as 'Description' 
+    from t_vulnerabilite
+        order by id_vulnerabilite asc
+go
+create procedure enregistrer_vulnerabilite
+@id_vulnerabilite nvarchar(50),
+@descr_vulnerabilite nvarchar(100)
+as
+    merge into t_vulnerabilite
+    using (select @id_vulnerabilite as x_id) as x_source
+    on (x_source.x_id=t_vulnerabilite.id_vulnerabilite)
+        when matched then
+            update set
+                descr_vulnerabilite = @descr_vulnerabilite
+        when not matched then
+            insert
+                (id_vulnerabilite,descr_vulnerabilite)
+            values
+                (@id_vulnerabilite,@descr_vulnerabilite);
+go
+create procedure supprimer_vulnerabilite
+@id_vulnerabilite nvarchar(50)
+as
+    delete from t_vulnerabilite
+        where id_vulnerabilite like @id_vulnerabilite
+go
+create procedure search_vulnerabilite
+@id_vulnerabilite nvarchar(50)
+as
+    select top 50 id_vulnerabilite as 'Vulnerabilite', descr_vulnerabilite as 'Description' 
+    from t_vulnerabilite
+        where
+            id_vulnerabilite like '%'+ @id_vulnerabilite + '%'
+go
+create procedure recuperer_vulnerabilite
+as
+    select id_vulnerabilite from t_vulnerabilite
+    order by id_vulnerabilite asc
+go
+----------------------------- fin codes vulnerabilite ----------------------------------------
 create table t_membres
 (
     id_membre nvarchar(50),
