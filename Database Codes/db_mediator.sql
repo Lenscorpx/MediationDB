@@ -58,6 +58,16 @@ create table t_localite
     constraint fk_groupement foreign key(id_groupement) references t_groupement(id_groupement)
 )
 go
+create procedure recuperer_localite
+as
+    select top 50 id_localite from t_localite
+    order by id_localite asc
+go
+create procedure search_localite
+@id_localite nvarchar(50)
+as
+   select top 50 id_localite from t_localite
+    order by id_localite asc 
 ----------------------------Fin codes localite----------------------------------------------------------
 -----------------------------Debut codes Situation Menages-----------------------------------------------------
 create table t_situation_menage
