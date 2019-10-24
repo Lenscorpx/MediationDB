@@ -673,6 +673,7 @@ as
     where id_mediateur like '%'+@id_mediateur+'%'
 go
 ------------------------------- Fin codes mediateur----------------------------------------
+------------------------------- debut codes mediation -------------------------------------
 create table t_mediation
 (
     num_mediation int identity,
@@ -690,6 +691,57 @@ go
 alter table t_mediation
 add date_fin_mediation date
 go
+create procedure afficher_mediation
+@num_conflit int
+as
+    select top 50 num_mediation as 'Num.', date_debut_mediation as 'Debut Mediation', num_conflit as 'Conflit',
+        id_mediateur as 'Mediateur', noms_mediateur as 'Resp. Mediation', lieu as 'Lieu', appreciation as 'Commentaire', date_fin_mediation as 'Fin Mediation'
+    from t_mediation
+        order by num_mediation desc
+go
+create procedure inserer_mediation
+@date_debut_mediation date,
+@num_conflit int,
+@id_mediateur nvarchar(50),
+@noms_mediateur nvarchar(50),
+@lieu nvarchar(50),
+@appreciation nvarchar(500),
+@date_fin_mediation date
+as
+    insert into t_mediation
+        (date_debut_mediation, num_conflit, id_mediateur, noms_mediateur, lieu, appreciation, date_fin_mediation)
+    values
+        (@date_debut_mediation, @num_conflit, @id_mediateur, @noms_mediateur, @lieu, @appreciation, @date_fin_mediation)
+go
+create procedure modifier_mediation
+@num_mediation int,
+@date_debut_mediation date,
+@num_conflit int,
+@id_mediateur nvarchar(50),
+@noms_mediateur nvarchar(50),
+@lieu nvarchar(50),
+@appreciation nvarchar(500),
+@date_fin_mediation date
+as
+    update t_mediation
+        set
+            date_debut_mediation=@date_debut_mediation,
+            num_conflit=@num_conflit,
+            id_mediateur=@id_mediateur,
+            noms_mediateur=@noms_mediateur,
+            lieu=@lieu,
+            appreciation=@appreciation,
+            date_fin_mediation=@date_fin_mediation
+        where
+            num_mediation=@num_mediation
+go
+create procedure supprimer_mediation
+@num_mediation int
+as
+    delete from t_mediation 
+        where num_mediation = @num_mediation
+go
+------------------------------Fin codes de mediation-----------------------------------------------------------------
 create table t_logs
 (
     num_log int identity,
