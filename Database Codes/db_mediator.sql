@@ -67,7 +67,8 @@ create procedure search_localite
 @id_localite nvarchar(50)
 as
    select top 50 id_localite from t_localite
-    order by id_localite asc 
+   where id_localite like '%'+@id_localite+'%'
+go
 ----------------------------Fin codes localite----------------------------------------------------------
 -----------------------------Debut codes Situation Menages-----------------------------------------------------
 create table t_situation_menage
