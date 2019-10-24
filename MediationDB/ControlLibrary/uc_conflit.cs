@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MediationDB.DataLibrary;
+using MediationDB.FormLibrary;
 
 namespace MediationDB.ControlLibrary
 {
@@ -111,6 +112,20 @@ namespace MediationDB.ControlLibrary
         private void btn_mediation_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_details_Click(object sender, EventArgs e)
+        {
+            if(txt_num_conflit.Text=="")
+            {
+                MessageBox.Show("Choisissez le conflit auquel vous voulez ajouter des details!");
+            }
+            else
+            {
+                var fr = new frm_details_conflit();
+                fr.txt_num_conflit.Text = txt_num_conflit.Text;
+                fr.ShowDialog();
+            }            
         }
     }
 }
