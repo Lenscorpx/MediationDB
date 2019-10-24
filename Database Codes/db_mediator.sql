@@ -351,6 +351,7 @@ as
         where num_conflit=@num_conflit
 go
 ----------------------------Fin codes conflits----------------------------------------------------------
+----------------------------Debut codes details conflits------------------------------------------------
 create table t_details_conflits
 (
     num_details_conflits int identity,
@@ -361,6 +362,43 @@ create table t_details_conflits
     constraint fk_conflit_details foreign key(num_conflit) references t_conflit(num_conflit)
 )
 go
+create procedure afficher_details_conflits
+@num_conflit int
+as
+    select num_details_conflits as 'Num.', num_conflit as 'Conflit', descript_conflit as 'Details', date_enreg as 'Enreg.' 
+    from t_details_conflits
+    where num_conflit = @num_conflit
+        order by num_details_conflits desc
+go
+create procedure inserer_details
+@descript_conflit nvarchar(500),
+@num_conflit int
+as
+    insert into t_details_conflits
+        (date_enreg, descript_conflit, num_conflit)
+    values
+        (getDate(), @descript_conflit, @num_conflit)
+go
+create procedure modifier_details
+@num_details_conflits int,
+@descript_conflit nvarchar(500),
+@num_conflit int
+as
+    update t_details_conflits
+        set
+            date_enreg = getDate(),
+            descript_conflit=@descript_conflit,
+            num_conflit=@num_conflit
+    where
+        num_details_conflits=@num_details_conflits
+go
+create procedure supprimer_details_conflits
+@num_details_conflits int
+as
+    delete from t_details_conflits
+        where num_details_conflits like @num_details_conflits
+go
+----------------------------Fin codes details conflits------------------------------------------------
 -----------------------------Debut codes Objets Conflits----------------------------------------------------------
 create table t_objets_conflits
 (

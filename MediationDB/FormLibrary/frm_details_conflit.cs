@@ -22,7 +22,7 @@ namespace MediationDB.FormLibrary
 
         private void refresh()
         {
-            rps.afficher_details_conflits(bunifuCustomDataGrid1, Convert.ToInt32(txt_num_conflit.Text));
+            //rps.afficher_details_conflits(bunifuCustomDataGrid1, Convert.ToInt32(txt_num_conflit.Text));
         }
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
