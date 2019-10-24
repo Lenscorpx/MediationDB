@@ -111,7 +111,16 @@ namespace MediationDB.ControlLibrary
 
         private void btn_mediation_Click(object sender, EventArgs e)
         {
-
+            if (txt_num_conflit.Text == "")
+            {
+                MessageBox.Show("Choisissez le conflit auquel vous voulez ajouter une mediation!");
+            }
+            else
+            {
+                var fr = new frm_mediation();
+                fr.txt_num_conflit.Text = txt_num_conflit.Text;
+                fr.ShowDialog();
+            }
         }
 
         private void btn_details_Click(object sender, EventArgs e)
