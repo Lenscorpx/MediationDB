@@ -95,6 +95,12 @@
     <Compile Include="FormLibrary\frm_causes_conflit.Designer.cs">
       <DependentUpon>frm_causes_conflit.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLibrary\frm_details_conflit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_details_conflit.Designer.cs">
+      <DependentUpon>frm_details_conflit.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLibrary\frm_mediateur.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_causes_conflit.resx">
       <DependentUpon>frm_causes_conflit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_details_conflit.resx">
+      <DependentUpon>frm_details_conflit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_mediateur.resx">
       <DependentUpon>frm_mediateur.cs</DependentUpon>

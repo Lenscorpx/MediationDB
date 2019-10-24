@@ -239,6 +239,12 @@ as
         from t_type_conflit
             where id_type_conflit like '%'+@id_type_conflit+'%'
 go
+create procedure recuperer_type_conflit
+as
+    select id_type_conflit from t_type_conflit
+    order by id_type_conflit asc
+go
+
 ---------------- natures : individuel, collectif, communautaire, etc.....
 ---------------- Debut Codes Nature conflit------------------------------------------------------------
 create table t_nature_conflit
@@ -283,7 +289,13 @@ as
     from t_nature_conflit
         where id_nature_conflit like '%'+@id_nature_conflit+'%'
 go
+create procedure recuperer_nature_conflit
+as
+    select id_nature_conflit from t_nature_conflit
+    order by id_nature_conflit asc
+go
 ----------------------------Fin Codes nature conflit---------------------------------------------------
+----------------------------Debut codes pour conflit---------------------------------------------------
 create table t_conflit
 (
     num_conflit int identity,
@@ -298,6 +310,47 @@ create table t_conflit
     constraint fk_localite_conflit foreign key(id_localite) references t_localite(id_localite)
 )
 go
+create procedure afficher_conflit
+as
+    select top 50 num_conflit as 'Num.', date_enreg as 'Date Enr.', date_debut_conflit as 'Debut conflit', id_type_conflit as 'Type Conflit',
+                  id_nature_conflit as 'Nature conflit', id_localite as 'Lieu' from t_conflit
+                  order by num_conflit desc
+go
+create procedure inserer_conflit
+@date_debut_conflit date,
+@id_type_conflit nvarchar(50),
+@id_nature_conflit nvarchar(50),
+@id_localite nvarchar(50)
+as
+    insert into t_conflit
+        (date_enreg,date_debut_conflit,id_type_conflit,id_nature_conflit,id_localite)
+    values
+        (getDate(),@date_debut_conflit,@id_type_conflit,@id_nature_conflit,@id_localite)
+go
+create procedure modifier_conflit
+@num_conflit int, 
+@date_debut_conflit date,
+@id_type_conflit nvarchar(50),
+@id_nature_conflit nvarchar(50),
+@id_localite nvarchar(50)
+as
+    update t_conflit
+        set
+            date_enreg=getDate(),
+            date_debut_conflit=@date_debut_conflit,
+            id_type_conflit=@id_type_conflit,
+            id_nature_conflit=@id_nature_conflit,
+            id_localite=@id_localite
+        where
+            num_conflit=@num_conflit
+go
+create procedure supprimer_conflit
+@num_conflit int
+as
+    delete from t_conflit
+        where num_conflit=@num_conflit
+go
+----------------------------Fin codes conflits----------------------------------------------------------
 create table t_details_conflits
 (
     num_details_conflits int identity,

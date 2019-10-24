@@ -33,7 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.pnl_localite = new System.Windows.Forms.Panel();
             this.txt_id_localite = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.pnl_datagrid = new System.Windows.Forms.Panel();
@@ -47,7 +46,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.metroDateTime1 = new MetroFramework.Controls.MetroDateTime();
-            this.btn_resolutions = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_mediation = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_objets = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_causes = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_details = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -56,22 +55,11 @@
             this.btn_enregistrer = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.txt_num_conflit = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.pnl_localite.SuspendLayout();
             this.pnl_datagrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pnl_localite
-            // 
-            this.pnl_localite.Controls.Add(this.txt_id_localite);
-            this.pnl_localite.Controls.Add(this.listBox1);
-            this.pnl_localite.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnl_localite.Location = new System.Drawing.Point(0, 0);
-            this.pnl_localite.Name = "pnl_localite";
-            this.pnl_localite.Size = new System.Drawing.Size(217, 680);
-            this.pnl_localite.TabIndex = 0;
             // 
             // txt_id_localite
             // 
@@ -85,7 +73,7 @@
             this.txt_id_localite.LineIdleColor = System.Drawing.Color.White;
             this.txt_id_localite.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
             this.txt_id_localite.LineThickness = 1;
-            this.txt_id_localite.Location = new System.Drawing.Point(0, 50);
+            this.txt_id_localite.Location = new System.Drawing.Point(0, 51);
             this.txt_id_localite.Margin = new System.Windows.Forms.Padding(4);
             this.txt_id_localite.Name = "txt_id_localite";
             this.txt_id_localite.Size = new System.Drawing.Size(217, 44);
@@ -97,13 +85,12 @@
             // 
             this.listBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.listBox1.ForeColor = System.Drawing.Color.White;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 17;
-            this.listBox1.Location = new System.Drawing.Point(0, 119);
+            this.listBox1.Location = new System.Drawing.Point(0, 102);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(217, 561);
+            this.listBox1.Size = new System.Drawing.Size(217, 221);
             this.listBox1.TabIndex = 0;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -111,9 +98,9 @@
             // 
             this.pnl_datagrid.Controls.Add(this.bunifuCustomDataGrid1);
             this.pnl_datagrid.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnl_datagrid.Location = new System.Drawing.Point(217, 328);
+            this.pnl_datagrid.Location = new System.Drawing.Point(0, 328);
             this.pnl_datagrid.Name = "pnl_datagrid";
-            this.pnl_datagrid.Size = new System.Drawing.Size(738, 352);
+            this.pnl_datagrid.Size = new System.Drawing.Size(955, 352);
             this.pnl_datagrid.TabIndex = 1;
             // 
             // bunifuCustomDataGrid1
@@ -175,8 +162,9 @@
             dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.bunifuCustomDataGrid1.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.bunifuCustomDataGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(738, 352);
+            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(955, 352);
             this.bunifuCustomDataGrid1.TabIndex = 32;
+            this.bunifuCustomDataGrid1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid1_CellContentClick);
             // 
             // panel1
             // 
@@ -185,9 +173,9 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.bunifuImageButton1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(217, 0);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(738, 49);
+            this.panel1.Size = new System.Drawing.Size(955, 49);
             this.panel1.TabIndex = 8;
             // 
             // label1
@@ -195,7 +183,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(13, 16);
+            this.label1.Location = new System.Drawing.Point(208, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(232, 22);
             this.label1.TabIndex = 8;
@@ -296,43 +284,44 @@
             this.metroDateTime1.TabIndex = 42;
             this.metroDateTime1.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
-            // btn_resolutions
+            // btn_mediation
             // 
-            this.btn_resolutions.Activecolor = System.Drawing.Color.DodgerBlue;
-            this.btn_resolutions.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_resolutions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.btn_resolutions.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_resolutions.BorderRadius = 0;
-            this.btn_resolutions.ButtonText = "     Resultats de conflits";
-            this.btn_resolutions.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_resolutions.DisabledColor = System.Drawing.Color.Gray;
-            this.btn_resolutions.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_resolutions.ForeColor = System.Drawing.Color.White;
-            this.btn_resolutions.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_resolutions.Iconimage = global::MediationDB.Properties.Resources.idea_sharing_80px;
-            this.btn_resolutions.Iconimage_right = null;
-            this.btn_resolutions.Iconimage_right_Selected = null;
-            this.btn_resolutions.Iconimage_Selected = null;
-            this.btn_resolutions.IconMarginLeft = 0;
-            this.btn_resolutions.IconMarginRight = 0;
-            this.btn_resolutions.IconRightVisible = true;
-            this.btn_resolutions.IconRightZoom = 0D;
-            this.btn_resolutions.IconVisible = true;
-            this.btn_resolutions.IconZoom = 70D;
-            this.btn_resolutions.IsTab = true;
-            this.btn_resolutions.Location = new System.Drawing.Point(686, 268);
-            this.btn_resolutions.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.btn_resolutions.Name = "btn_resolutions";
-            this.btn_resolutions.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.btn_resolutions.OnHovercolor = System.Drawing.Color.DodgerBlue;
-            this.btn_resolutions.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_resolutions.selected = false;
-            this.btn_resolutions.Size = new System.Drawing.Size(264, 38);
-            this.btn_resolutions.TabIndex = 41;
-            this.btn_resolutions.Text = "     Resultats de conflits";
-            this.btn_resolutions.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_resolutions.Textcolor = System.Drawing.Color.White;
-            this.btn_resolutions.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_mediation.Activecolor = System.Drawing.Color.DodgerBlue;
+            this.btn_mediation.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_mediation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btn_mediation.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_mediation.BorderRadius = 0;
+            this.btn_mediation.ButtonText = "     Mediation";
+            this.btn_mediation.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_mediation.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_mediation.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_mediation.ForeColor = System.Drawing.Color.White;
+            this.btn_mediation.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_mediation.Iconimage = global::MediationDB.Properties.Resources.idea_sharing_80px;
+            this.btn_mediation.Iconimage_right = null;
+            this.btn_mediation.Iconimage_right_Selected = null;
+            this.btn_mediation.Iconimage_Selected = null;
+            this.btn_mediation.IconMarginLeft = 0;
+            this.btn_mediation.IconMarginRight = 0;
+            this.btn_mediation.IconRightVisible = true;
+            this.btn_mediation.IconRightZoom = 0D;
+            this.btn_mediation.IconVisible = true;
+            this.btn_mediation.IconZoom = 70D;
+            this.btn_mediation.IsTab = true;
+            this.btn_mediation.Location = new System.Drawing.Point(686, 268);
+            this.btn_mediation.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.btn_mediation.Name = "btn_mediation";
+            this.btn_mediation.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btn_mediation.OnHovercolor = System.Drawing.Color.DodgerBlue;
+            this.btn_mediation.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_mediation.selected = false;
+            this.btn_mediation.Size = new System.Drawing.Size(264, 38);
+            this.btn_mediation.TabIndex = 41;
+            this.btn_mediation.Text = "     Mediation";
+            this.btn_mediation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_mediation.Textcolor = System.Drawing.Color.White;
+            this.btn_mediation.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_mediation.Click += new System.EventHandler(this.btn_mediation_Click);
             // 
             // btn_objets
             // 
@@ -523,6 +512,7 @@
             this.btn_supprimer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_supprimer.Textcolor = System.Drawing.Color.White;
             this.btn_supprimer.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_supprimer.Click += new System.EventHandler(this.btn_supprimer_Click);
             // 
             // btn_enregistrer
             // 
@@ -589,7 +579,7 @@
             this.txt_num_conflit.LineIdleColor = System.Drawing.Color.White;
             this.txt_num_conflit.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
             this.txt_num_conflit.LineThickness = 1;
-            this.txt_num_conflit.Location = new System.Drawing.Point(434, 1);
+            this.txt_num_conflit.Location = new System.Drawing.Point(462, 1);
             this.txt_num_conflit.Margin = new System.Windows.Forms.Padding(4);
             this.txt_num_conflit.Name = "txt_num_conflit";
             this.txt_num_conflit.Size = new System.Drawing.Size(299, 44);
@@ -600,8 +590,10 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.txt_id_localite);
             this.Controls.Add(this.metroDateTime1);
-            this.Controls.Add(this.btn_resolutions);
+            this.Controls.Add(this.btn_mediation);
             this.Controls.Add(this.btn_objets);
             this.Controls.Add(this.btn_causes);
             this.Controls.Add(this.btn_details);
@@ -616,12 +608,10 @@
             this.Controls.Add(this.txt_localite);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnl_datagrid);
-            this.Controls.Add(this.pnl_localite);
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "uc_conflit";
             this.Size = new System.Drawing.Size(955, 680);
-            this.pnl_localite.ResumeLayout(false);
             this.pnl_datagrid.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -633,8 +623,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel pnl_localite;
         private System.Windows.Forms.Panel pnl_datagrid;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
         private System.Windows.Forms.ListBox listBox1;
@@ -654,7 +642,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton btn_details;
         private Bunifu.Framework.UI.BunifuFlatButton btn_causes;
         private Bunifu.Framework.UI.BunifuFlatButton btn_objets;
-        private Bunifu.Framework.UI.BunifuFlatButton btn_resolutions;
+        private Bunifu.Framework.UI.BunifuFlatButton btn_mediation;
         private MetroFramework.Controls.MetroDateTime metroDateTime1;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_num_conflit;
     }

@@ -42,10 +42,73 @@ namespace MediationDB.ControlLibrary
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            txt_localite.Text = listBox1.SelectedItem.ToString();
+            try
+            {
+                txt_localite.Text = listBox1.SelectedItem.ToString();
+            }
+            catch
+            {
+
+            }
+            
         }
 
         private void btn_enregistrer_Click(object sender, EventArgs e)
+        {
+            if(txt_num_conflit.Text=="")
+            {
+                if(cbx_nature_conflit.Text=="" || cbx_type_conflit.Text==""|| txt_localite.Text=="")
+                {
+                    MessageBox.Show("Completez les informations manquantes!");
+                }
+                else
+                {
+                    rps.inserer_conflit(metroDateTime1.Value, cbx_type_conflit.Text, cbx_nature_conflit.Text, txt_localite.Text);
+                    refresh();
+                }
+            }
+            else
+            {
+                if (cbx_nature_conflit.Text == "" || cbx_type_conflit.Text == "" || txt_localite.Text == "")
+                {
+                    MessageBox.Show("Completez les informations manquantes!");
+                }
+                else
+                {
+                    rps.modifier_conflit(Convert.ToInt32(txt_num_conflit.Text),metroDateTime1.Value, cbx_type_conflit.Text, cbx_nature_conflit.Text, txt_localite.Text);
+                    refresh();
+                }
+            }
+        }
+
+        private void btn_supprimer_Click(object sender, EventArgs e)
+        {
+            if (txt_num_conflit.Text == "")
+            {
+                MessageBox.Show("Completez le code du conflit a supprimer");
+            }
+            else
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show(this, "Voulez vous vraiment supprimer cette information?", "Message de confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    rps.supprimer_conflit(Convert.ToInt32(txt_num_conflit.Text));
+                    refresh();
+                }
+            }
+        }
+
+        private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txt_num_conflit.Text = bunifuCustomDataGrid1.SelectedRows[0].Cells[0].Value.ToString();
+            metroDateTime1.Text = bunifuCustomDataGrid1.SelectedRows[0].Cells[2].Value.ToString();
+            cbx_type_conflit.Text = bunifuCustomDataGrid1.SelectedRows[0].Cells[3].Value.ToString();
+            cbx_nature_conflit.Text = bunifuCustomDataGrid1.SelectedRows[0].Cells[4].Value.ToString();
+            txt_localite.Text = bunifuCustomDataGrid1.SelectedRows[0].Cells[5].Value.ToString();
+        }
+
+        private void btn_mediation_Click(object sender, EventArgs e)
         {
 
         }
