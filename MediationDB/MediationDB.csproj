@@ -30,6 +30,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>MediationDB.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>mediator.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="BunifuDataViz">
       <HintPath>..\..\..\..\..\Downloads\Bunifu-Dataviz-Advanced-1.1.1.5_ShareAppsCrack.com\Bunifu Dataviz Advanced 1.1.1.5\BunifuDataViz.dll</HintPath>
@@ -68,6 +74,12 @@
     </Compile>
     <Compile Include="ControlLibrary\uc_dashboard.Designer.cs">
       <DependentUpon>uc_dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlLibrary\uc_parametres.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlLibrary\uc_parametres.Designer.cs">
+      <DependentUpon>uc_parametres.cs</DependentUpon>
     </Compile>
     <Compile Include="ControlLibrary\uc_splash.cs">
       <SubType>UserControl</SubType>
@@ -150,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ControlLibrary\uc_dashboard.resx">
       <DependentUpon>uc_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlLibrary\uc_parametres.resx">
+      <DependentUpon>uc_parametres.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ControlLibrary\uc_splash.resx">
       <DependentUpon>uc_splash.cs</DependentUpon>
@@ -272,6 +287,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cancel_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="mediator.ico" />
+    <None Include="Resources\good_quality_80px.png" />
+    <None Include="Resources\hypertension_80px.png" />
+    <None Include="Resources\courthouse_80px.png" />
+    <None Include="Resources\group_foreground_selected_80px.png" />
+    <None Include="Resources\mind_map_80px.png" />
+    <None Include="Resources\administrative_tools_80px.png" />
+    <None Include="Resources\speaker_notes_80px1.png" />
+    <None Include="Resources\split_horizontal_80px.png" />
+    <None Include="Resources\racism_80px1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
