@@ -17,12 +17,12 @@ namespace MediationDB.FormLibrary
         public frm_details_conflit()
         {
             InitializeComponent();
-            refresh();
         }
 
         private void refresh()
         {
-            //rps.afficher_details_conflits(bunifuCustomDataGrid1, Convert.ToInt32(txt_num_conflit.Text));
+            //MessageBox.Show(txt_num_conflit.Text);
+            rps.afficher_details_conflits(bunifuCustomDataGrid1, Convert.ToInt32(txt_num_conflit.Text));
         }
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
@@ -80,6 +80,11 @@ namespace MediationDB.FormLibrary
             txt_num_details.Text = bunifuCustomDataGrid1.SelectedRows[0].Cells[0].Value.ToString();
             txt_num_conflit .Text = bunifuCustomDataGrid1.SelectedRows[0].Cells[1].Value.ToString();
             rtxt_descr.Text = bunifuCustomDataGrid1.SelectedRows[0].Cells[2].Value.ToString();
+        }
+
+        private void frm_details_conflit_Load(object sender, EventArgs e)
+        {
+            refresh();
         }
     }
 }
