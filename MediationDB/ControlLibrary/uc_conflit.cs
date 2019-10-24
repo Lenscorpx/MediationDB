@@ -25,6 +25,10 @@ namespace MediationDB.ControlLibrary
             rps.recuperer_localite(listBox1);
             rps.recuperer_type_conflit(cbx_type_conflit);
             rps.recuperer_nature_conflit(cbx_nature_conflit);
+            rps.afficher_conflit(bunifuCustomDataGrid1);
+            txt_id_localite.ResetText();
+            txt_localite.ResetText();
+            txt_num_conflit.ResetText();
         }
         private void bunifuImageButton2_Click(object sender, EventArgs e)
         {
@@ -39,6 +43,11 @@ namespace MediationDB.ControlLibrary
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             txt_localite.Text = listBox1.SelectedItem.ToString();
+        }
+
+        private void btn_enregistrer_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
