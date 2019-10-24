@@ -672,6 +672,11 @@ as
     from t_mediateur
     where id_mediateur like '%'+@id_mediateur+'%'
 go
+create procedure recuperer_mediateur
+as
+    select id_mediateur from t_mediateur
+        order by id_mediateur asc
+go
 ------------------------------- Fin codes mediateur----------------------------------------
 ------------------------------- debut codes mediation -------------------------------------
 create table t_mediation
