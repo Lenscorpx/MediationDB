@@ -2457,39 +2457,6 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void modifier_affectation(int num_affectation, string code_agent, string id_structure, DateTime date_affectation)
-        {
-            cnx = new SqlConnection(prms.ToString());
-            try
-            {
-                if (cnx.State == ConnectionState.Closed)
-                    cnx.Open();
-                var cmd = new SqlCommand("modifier_affectation", cnx)
-                {
-                    CommandType = CommandType.StoredProcedure
-                };
-                cmd.Parameters.Add(new SqlParameter("num_affectation", SqlDbType.Int)).Value = num_affectation;
-                cmd.Parameters.Add(new SqlParameter("code_agent", SqlDbType.NVarChar)).Value = code_agent;
-                cmd.Parameters.Add(new SqlParameter("id_structure", SqlDbType.NVarChar)).Value = id_structure;
-                cmd.Parameters.Add(new SqlParameter("date_affectation", SqlDbType.Date)).Value = date_affectation;
-                cmd.ExecuteNonQuery();
-                //afficher_frais(dtg);
-                MessageBox.Show("Enregistrement avec succès!", "Enregistrement", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception tdf)
-            {
-                var rs = new DialogResult();
-                rs = MessageBox.Show("Voulez vous voir le code d'erreur?", "Erreurs ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (rs == DialogResult.Yes)
-                {
-                    MessageBox.Show(tdf.ToString());
-                }
-            }
-            finally
-            {
-                cnx.Close(); cnx.Dispose();
-            }
-        }
         public void supprimer_affectation(int num_affectation)
         {
             cnx = new SqlConnection(prms.ToString());
