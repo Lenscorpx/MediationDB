@@ -1794,67 +1794,6 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void enregistrer_lien(string id_lien, string description_lien)
-        {
-            cnx = new SqlConnection(prms.ToString());
-            try
-            {
-                if (cnx.State == ConnectionState.Closed)
-                    cnx.Open();
-                var cmd = new SqlCommand("enregistrer_lien", cnx)
-                {
-                    CommandType = CommandType.StoredProcedure
-                };
-                cmd.Parameters.Add(new SqlParameter("id_lien", SqlDbType.NVarChar)).Value = id_lien;
-                cmd.Parameters.Add(new SqlParameter("description_lien", SqlDbType.NVarChar)).Value = description_lien;
-                cmd.ExecuteNonQuery();
-                //afficher_frais(dtg);
-                MessageBox.Show("Enregistrement avec succès!", "Enregistrement", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception tdf)
-            {
-                var rs = new DialogResult();
-                rs = MessageBox.Show("Voulez vous voir le code d'erreur?", "Erreurs ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (rs == DialogResult.Yes)
-                {
-                    MessageBox.Show(tdf.ToString());
-                }
-            }
-            finally
-            {
-                cnx.Close(); cnx.Dispose();
-            }
-        }
-        public void supprimer_lien(string id_lien)
-        {
-            cnx = new SqlConnection(prms.ToString());
-            try
-            {
-                if (cnx.State == ConnectionState.Closed)
-                    cnx.Open();
-                var cmd = new SqlCommand("supprimer_lien", cnx)
-                {
-                    CommandType = CommandType.StoredProcedure
-                };
-                cmd.Parameters.Add(new SqlParameter("id_lien", SqlDbType.NVarChar)).Value = id_lien;
-                cmd.ExecuteNonQuery();
-                //afficher_frais(dtg);
-                MessageBox.Show("Enregistrement avec succès!", "Enregistrement", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception tdf)
-            {
-                var rs = new DialogResult();
-                rs = MessageBox.Show("Voulez vous voir le code d'erreur?", "Erreurs ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (rs == DialogResult.Yes)
-                {
-                    MessageBox.Show(tdf.ToString());
-                }
-            }
-            finally
-            {
-                cnx.Close(); cnx.Dispose();
-            }
-        }
         public void recuperer_combobox_lien(MetroComboBox cbx)
         {
             cnx = new SqlConnection(prms.ToString());
