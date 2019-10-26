@@ -2457,36 +2457,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void supprimer_affectation(int num_affectation)
-        {
-            cnx = new SqlConnection(prms.ToString());
-            try
-            {
-                if (cnx.State == ConnectionState.Closed)
-                    cnx.Open();
-                var cmd = new SqlCommand("supprimer_affectation", cnx)
-                {
-                    CommandType = CommandType.StoredProcedure
-                };
-                cmd.Parameters.Add(new SqlParameter("num_affectation", SqlDbType.Int)).Value = num_affectation;
-                cmd.ExecuteNonQuery();
-                //afficher_frais(dtg);
-                MessageBox.Show("Enregistrement avec succès!", "Enregistrement", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception tdf)
-            {
-                var rs = new DialogResult();
-                rs = MessageBox.Show("Voulez vous voir le code d'erreur?", "Erreurs ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (rs == DialogResult.Yes)
-                {
-                    MessageBox.Show(tdf.ToString());
-                }
-            }
-            finally
-            {
-                cnx.Close(); cnx.Dispose();
-            }
-        }
+        
         public void rechercher_affectation_paragent(DataGridView dtg, string code_agent)
         {
             cnx = new SqlConnection(prms.ToString());
