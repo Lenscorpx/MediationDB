@@ -38,6 +38,7 @@
             this.pnl_datagrid = new System.Windows.Forms.Panel();
             this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txt_num_conflit = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_localite = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.cbx_type_conflit = new MetroFramework.Controls.MetroComboBox();
@@ -46,7 +47,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.metroDateTime1 = new MetroFramework.Controls.MetroDateTime();
-            this.txt_num_conflit = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.btn_mediation = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_objets = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_causes = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -178,6 +178,26 @@
             this.panel1.Size = new System.Drawing.Size(955, 49);
             this.panel1.TabIndex = 8;
             // 
+            // txt_num_conflit
+            // 
+            this.txt_num_conflit.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_num_conflit.Enabled = false;
+            this.txt_num_conflit.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_num_conflit.ForeColor = System.Drawing.Color.White;
+            this.txt_num_conflit.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_num_conflit.HintText = "Num. cnft";
+            this.txt_num_conflit.isPassword = false;
+            this.txt_num_conflit.LineFocusedColor = System.Drawing.Color.DodgerBlue;
+            this.txt_num_conflit.LineIdleColor = System.Drawing.Color.White;
+            this.txt_num_conflit.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
+            this.txt_num_conflit.LineThickness = 1;
+            this.txt_num_conflit.Location = new System.Drawing.Point(462, 1);
+            this.txt_num_conflit.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_num_conflit.Name = "txt_num_conflit";
+            this.txt_num_conflit.Size = new System.Drawing.Size(299, 44);
+            this.txt_num_conflit.TabIndex = 43;
+            this.txt_num_conflit.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -283,26 +303,6 @@
             this.metroDateTime1.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroDateTime1.TabIndex = 42;
             this.metroDateTime1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // txt_num_conflit
-            // 
-            this.txt_num_conflit.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_num_conflit.Enabled = false;
-            this.txt_num_conflit.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txt_num_conflit.ForeColor = System.Drawing.Color.White;
-            this.txt_num_conflit.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txt_num_conflit.HintText = "Num. cnft";
-            this.txt_num_conflit.isPassword = false;
-            this.txt_num_conflit.LineFocusedColor = System.Drawing.Color.DodgerBlue;
-            this.txt_num_conflit.LineIdleColor = System.Drawing.Color.White;
-            this.txt_num_conflit.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
-            this.txt_num_conflit.LineThickness = 1;
-            this.txt_num_conflit.Location = new System.Drawing.Point(462, 1);
-            this.txt_num_conflit.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_num_conflit.Name = "txt_num_conflit";
-            this.txt_num_conflit.Size = new System.Drawing.Size(299, 44);
-            this.txt_num_conflit.TabIndex = 43;
-            this.txt_num_conflit.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // btn_mediation
             // 

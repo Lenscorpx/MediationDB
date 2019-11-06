@@ -75,6 +75,12 @@
     <Compile Include="ControlLibrary\uc_dashboard.Designer.cs">
       <DependentUpon>uc_dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="ControlLibrary\uc_menage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlLibrary\uc_menage.Designer.cs">
+      <DependentUpon>uc_menage.cs</DependentUpon>
+    </Compile>
     <Compile Include="ControlLibrary\uc_parametres.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -174,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ControlLibrary\uc_dashboard.resx">
       <DependentUpon>uc_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlLibrary\uc_menage.resx">
+      <DependentUpon>uc_menage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ControlLibrary\uc_parametres.resx">
       <DependentUpon>uc_parametres.cs</DependentUpon>

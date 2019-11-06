@@ -99,5 +99,19 @@ namespace MediationDB.FormLibrary
             bunifuTransition1.ShowSync(fr);
             fr.Visible = true;
         }
+
+        private void bunifuFlatButton2_Click(object sender, EventArgs e)
+        {
+            var fr = new uc_menage()
+            {
+                Size = panel1.Size
+            };
+            panel1.Controls.Clear();
+            panel1.Controls.Add(fr);
+            fr.Visible = false;
+            bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
+            bunifuTransition1.ShowSync(fr);
+            fr.Visible = true;
+        }
     }
 }
