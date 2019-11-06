@@ -113,7 +113,12 @@ as
     from t_situation_menage
     where id_situation like '%'+@id_situation+'%'
 go
-
+create procedure recuperer_situation_menage
+as
+    select id_situation
+    from t_situation_menage
+        order by id_situation asc
+go
 ----------------------------Fin des codes Situations menages -------------------------------------------------
 --------------------------- Debut codes menages---------------------------------------------------------------
 create table t_menages
