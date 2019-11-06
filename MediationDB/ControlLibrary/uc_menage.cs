@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MediationDB.FormLibrary;
 
 namespace MediationDB.ControlLibrary
 {
@@ -15,6 +16,20 @@ namespace MediationDB.ControlLibrary
         public uc_menage()
         {
             InitializeComponent();
+        }
+
+        private void btn_membres_Click(object sender, EventArgs e)
+        {
+            if(txt_id_menage.Text=="")
+            {
+                MessageBox.Show("Veuillez selectionner le menage auquel vous voulez ajouter un membre!");
+            }
+            else
+            {
+                var fr = new frm_membres();
+                fr.txt_id_menage.Text = txt_id_menage.Text;
+                fr.ShowDialog();
+            }
         }
     }
 }

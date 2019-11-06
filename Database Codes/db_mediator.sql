@@ -115,6 +115,7 @@ as
 go
 
 ----------------------------Fin des codes Situations menages -------------------------------------------------
+--------------------------- Debut codes menages---------------------------------------------------------------
 create table t_menages
 (
     id_menage nvarchar(50),
@@ -123,6 +124,37 @@ create table t_menages
     constraint pk_menages primary key(id_menage),
     constraint fk_situation foreign key(id_situation) references t_situation_menage(id_situation)
 )
+go
+create procedure afficher_menages
+as
+    select top 50 id_menage as 'Code Menage', date_enregistrement as 'Date Enr', id_situation as 'Situation Menage' from t_menages
+    order by  
+        date_enregistrement desc, id_menage desc
+    go
+create procedure enregistrer_menage
+@id_menage nvarchar(50),
+@id_situation nvarchar(50)
+as 
+    merge into t_menages
+    using (select @id_menage as x_id) as x_source
+    on(x_source.x_id=t_menages.id_menage)
+    when matched then
+        update set
+            date_enregistrement=getDate(),
+            id_situation=@id_situation
+    when not matched then
+        insert
+            (id_menage,date_enregistrement,id_situation)
+        values
+            (@id_menage,getDate(),@id_situation);
+go
+create procedure supprimer_menage
+@id_menage nvarchar(50)
+as
+    delete from t_menages
+        where id_menage like @id_menage
+go
+-----------------------------Fin codes menages --------------------------------------------------------------
 
 -----------------------------Debut codes vulnerabilite ---------------------------------------
 create table t_vulnerabilite
