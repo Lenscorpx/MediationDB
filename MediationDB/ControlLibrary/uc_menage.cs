@@ -17,16 +17,15 @@ namespace MediationDB.ControlLibrary
         Data_Repository rps = new Data_Repository();
         public uc_menage()
         {
-            InitializeComponent();
-            refreshData();
+            InitializeComponent();            
         }
 
         private void refreshData()
-        {
-            rps.afficher_menages(bunifuCustomDataGrid1);
+        {            
             rps.recuperer_situation_menage(cbx_situation);
             txt_id_menage.ResetText();
             cbx_situation.Text = "";
+            rps.afficher_menages(bunifuCustomDataGrid1);
         }
         private void btn_membres_Click(object sender, EventArgs e)
         {
@@ -74,6 +73,16 @@ namespace MediationDB.ControlLibrary
         }
 
         private void bunifuCustomDataGrid2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void uc_menage_Load(object sender, EventArgs e)
+        {
+            refreshData();
+        }
+
+        private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             txt_id_menage.Text = bunifuCustomDataGrid1.SelectedRows[0].Cells[0].Value.ToString();
             dt_date_enregistrement.Text = bunifuCustomDataGrid1.SelectedRows[0].Cells[1].Value.ToString();
