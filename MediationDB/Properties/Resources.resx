@@ -136,6 +136,9 @@
   <data name="multiply_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\multiply_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="scales_104px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\scales_104px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="courthouse_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\courthouse_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -154,8 +157,8 @@
   <data name="mediator-red" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mediator-red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="user_groups_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user_groups_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mediation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mediation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="new_slide_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\new_slide_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,6 +172,9 @@
   <data name="add_trash_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add_trash_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="good_quality_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\good_quality_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="presentation_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\presentation_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -177,6 +183,9 @@
   </data>
   <data name="add_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="scales_104px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\scales_104px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="handshake_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\handshake_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,8 +202,8 @@
   <data name="idea_sharing_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\idea_sharing_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="collaboration_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\collaboration_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="user_groups_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user_groups_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="speaker_notes_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\speaker_notes_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,10 +211,13 @@
   <data name="administrative_tools_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\administrative_tools_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="collaboration_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\collaboration_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="services_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\services_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="good_quality_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\good_quality_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cancel_80px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancel_80px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -54,11 +54,9 @@
             this.btn_parties = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_supprimer = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_enregistrer = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.pnl_datagrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_id_localite
@@ -73,10 +71,10 @@
             this.txt_id_localite.LineIdleColor = System.Drawing.Color.White;
             this.txt_id_localite.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
             this.txt_id_localite.LineThickness = 1;
-            this.txt_id_localite.Location = new System.Drawing.Point(0, 51);
+            this.txt_id_localite.Location = new System.Drawing.Point(4, 51);
             this.txt_id_localite.Margin = new System.Windows.Forms.Padding(4);
             this.txt_id_localite.Name = "txt_id_localite";
-            this.txt_id_localite.Size = new System.Drawing.Size(217, 44);
+            this.txt_id_localite.Size = new System.Drawing.Size(213, 44);
             this.txt_id_localite.TabIndex = 28;
             this.txt_id_localite.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_id_localite.OnValueChanged += new System.EventHandler(this.txt_id_localite_OnValueChanged);
@@ -88,7 +86,7 @@
             this.listBox1.ForeColor = System.Drawing.Color.White;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 17;
-            this.listBox1.Location = new System.Drawing.Point(0, 102);
+            this.listBox1.Location = new System.Drawing.Point(4, 102);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(217, 221);
             this.listBox1.TabIndex = 0;
@@ -100,7 +98,7 @@
             this.pnl_datagrid.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnl_datagrid.Location = new System.Drawing.Point(0, 328);
             this.pnl_datagrid.Name = "pnl_datagrid";
-            this.pnl_datagrid.Size = new System.Drawing.Size(955, 352);
+            this.pnl_datagrid.Size = new System.Drawing.Size(1055, 352);
             this.pnl_datagrid.TabIndex = 1;
             // 
             // bunifuCustomDataGrid1
@@ -162,7 +160,7 @@
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.bunifuCustomDataGrid1.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.bunifuCustomDataGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(955, 352);
+            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(1055, 352);
             this.bunifuCustomDataGrid1.TabIndex = 32;
             this.bunifuCustomDataGrid1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid1_CellContentClick);
             // 
@@ -171,11 +169,10 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.panel1.Controls.Add(this.txt_num_conflit);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.bunifuImageButton1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(955, 49);
+            this.panel1.Size = new System.Drawing.Size(1055, 680);
             this.panel1.TabIndex = 8;
             // 
             // txt_num_conflit
@@ -328,7 +325,7 @@
             this.btn_mediation.IconVisible = true;
             this.btn_mediation.IconZoom = 70D;
             this.btn_mediation.IsTab = true;
-            this.btn_mediation.Location = new System.Drawing.Point(686, 103);
+            this.btn_mediation.Location = new System.Drawing.Point(736, 103);
             this.btn_mediation.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btn_mediation.Name = "btn_mediation";
             this.btn_mediation.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -367,7 +364,7 @@
             this.btn_objets.IconVisible = true;
             this.btn_objets.IconZoom = 70D;
             this.btn_objets.IsTab = true;
-            this.btn_objets.Location = new System.Drawing.Point(686, 198);
+            this.btn_objets.Location = new System.Drawing.Point(736, 198);
             this.btn_objets.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btn_objets.Name = "btn_objets";
             this.btn_objets.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -405,7 +402,7 @@
             this.btn_causes.IconVisible = true;
             this.btn_causes.IconZoom = 70D;
             this.btn_causes.IsTab = true;
-            this.btn_causes.Location = new System.Drawing.Point(686, 153);
+            this.btn_causes.Location = new System.Drawing.Point(736, 153);
             this.btn_causes.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btn_causes.Name = "btn_causes";
             this.btn_causes.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -443,7 +440,7 @@
             this.btn_details.IconVisible = true;
             this.btn_details.IconZoom = 70D;
             this.btn_details.IsTab = true;
-            this.btn_details.Location = new System.Drawing.Point(686, 58);
+            this.btn_details.Location = new System.Drawing.Point(736, 58);
             this.btn_details.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btn_details.Name = "btn_details";
             this.btn_details.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -482,7 +479,7 @@
             this.btn_parties.IconVisible = true;
             this.btn_parties.IconZoom = 70D;
             this.btn_parties.IsTab = true;
-            this.btn_parties.Location = new System.Drawing.Point(686, 248);
+            this.btn_parties.Location = new System.Drawing.Point(736, 248);
             this.btn_parties.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btn_parties.Name = "btn_parties";
             this.btn_parties.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -520,7 +517,7 @@
             this.btn_supprimer.IconVisible = true;
             this.btn_supprimer.IconZoom = 50D;
             this.btn_supprimer.IsTab = true;
-            this.btn_supprimer.Location = new System.Drawing.Point(419, 284);
+            this.btn_supprimer.Location = new System.Drawing.Point(469, 284);
             this.btn_supprimer.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btn_supprimer.Name = "btn_supprimer";
             this.btn_supprimer.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -559,7 +556,7 @@
             this.btn_enregistrer.IconVisible = true;
             this.btn_enregistrer.IconZoom = 50D;
             this.btn_enregistrer.IsTab = true;
-            this.btn_enregistrer.Location = new System.Drawing.Point(225, 285);
+            this.btn_enregistrer.Location = new System.Drawing.Point(275, 285);
             this.btn_enregistrer.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btn_enregistrer.Name = "btn_enregistrer";
             this.btn_enregistrer.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -573,19 +570,6 @@
             this.btn_enregistrer.Textcolor = System.Drawing.Color.White;
             this.btn_enregistrer.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_enregistrer.Click += new System.EventHandler(this.btn_enregistrer_Click);
-            // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.multiply_96px;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(987, 8);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(42, 34);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 7;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
             // 
             // uc_conflit
             // 
@@ -612,12 +596,11 @@
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "uc_conflit";
-            this.Size = new System.Drawing.Size(955, 680);
+            this.Size = new System.Drawing.Size(1055, 680);
             this.pnl_datagrid.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -629,7 +612,6 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_id_localite;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_localite;
         private MetroFramework.Controls.MetroComboBox cbx_type_conflit;

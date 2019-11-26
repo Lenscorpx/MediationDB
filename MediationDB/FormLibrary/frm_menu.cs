@@ -17,6 +17,10 @@ namespace MediationDB.FormLibrary
         {
             InitializeComponent();
             charger_splash();
+            MessageBox.Show("Bienvenu(e) " + lbl_nom_user.Text +
+                "\nMerci encore pour l'utilisation de ce logiciel de gestion d'informations sur les médiations foncières" +
+                " sur le bas du formulaire veuillez trouver les boutons qui vous permettront de consulter les différents" +
+                " formulaires sur les médiations foncières ainsi que les sensibilisations");
         }
 
         private void frm_menu_Load(object sender, EventArgs e)
@@ -54,7 +58,7 @@ namespace MediationDB.FormLibrary
             fr.Visible = false;
             //bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             //bunifuTransition1.ShowSync(fr);
-            fr.Visible = true;
+            fr.Visible = true;            
         }
 
         private void pnl_menu_Paint(object sender, PaintEventArgs e)
@@ -112,6 +116,31 @@ namespace MediationDB.FormLibrary
             bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             bunifuTransition1.ShowSync(fr);
             fr.Visible = true;
+        }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton1_Click_1(object sender, EventArgs e)
+        {
+            bunifuFlatButton1_Click(sender, e);
+        }
+
+        private void bunifuFlatButton2_Click_1(object sender, EventArgs e)
+        {
+            bunifuFlatButton2_Click(sender, e);
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            var rs = new DialogResult();
+            rs = MessageBox.Show(this, "Voulez vous vraiment quitter l'application?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            if(rs==DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }

@@ -878,3 +878,33 @@ create table t_observation_atelier
     constraint fk_participant_observation foreign key(num_participation) references t_participation_atelier(num_participation)
 )
 go
+create table t_level_user
+(
+    id_level nvarchar(50),
+    description_level nvarchar(100),
+    constraint pk_level_user primary key(id_level)
+)
+go
+insert into t_level_user
+    (id_level, description_level)
+values
+    ('Admin','Un admin peut acceder a tous les menus'),
+    ('User','Can only access restricted areas')
+go
+create table t_login
+(
+    num_login int identity,
+    nom_utilisateur nvarchar(50),
+    mot_de_passe nvarchar(50),
+    id_level nvarchar(50),
+    user_active int,
+    constraint pk_login primary key(num_login)
+)
+go
+insert into t_login
+    (nom_utilisateur, mot_de_passe, id_level, user_active)
+values
+    ('LensCorp','123456','Admin',1),
+    ('Ruben','1234','Admin',1),
+    ('Ruth','1234','User',1)
+go

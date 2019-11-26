@@ -326,6 +326,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="mediator.ico" />
+    <None Include="Resources\cancel_80px1.png" />
+    <None Include="Resources\scales_104px1.png" />
+    <None Include="Resources\scales_104px.png" />
+    <None Include="Resources\mediation.png" />
     <None Include="Resources\good_quality_80px.png" />
     <None Include="Resources\hypertension_80px.png" />
     <None Include="Resources\courthouse_80px.png" />

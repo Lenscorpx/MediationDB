@@ -103,6 +103,16 @@ namespace MediationDB.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cancel_80px1 {
+            get {
+                object obj = ResourceManager.GetObject("cancel_80px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap collaboration_80px {
             get {
                 object obj = ResourceManager.GetObject("collaboration_80px", resourceCulture);
@@ -193,6 +203,16 @@ namespace MediationDB.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mediation {
+            get {
+                object obj = ResourceManager.GetObject("mediation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mediator {
             get {
                 object obj = ResourceManager.GetObject("mediator", resourceCulture);
@@ -276,6 +296,26 @@ namespace MediationDB.Properties {
         internal static System.Drawing.Bitmap racism_80px1 {
             get {
                 object obj = ResourceManager.GetObject("racism_80px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap scales_104px {
+            get {
+                object obj = ResourceManager.GetObject("scales_104px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap scales_104px1 {
+            get {
+                object obj = ResourceManager.GetObject("scales_104px1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
