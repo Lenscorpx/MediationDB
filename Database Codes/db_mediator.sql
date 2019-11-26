@@ -901,10 +901,3 @@ create table t_login
     constraint pk_login primary key(num_login)
 )
 go
-insert into t_login
-    (nom_utilisateur, mot_de_passe, id_level, user_active)
-values
-    ('LensCorp','123456','Admin',1),
-    ('Ruben','1234','Admin',1),
-    ('Ruth','1234','User',1)
-go
