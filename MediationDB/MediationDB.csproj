@@ -107,6 +107,12 @@
     <Compile Include="FormLibrary\frm_details_conflit.Designer.cs">
       <DependentUpon>frm_details_conflit.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLibrary\frm_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_login.Designer.cs">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLibrary\frm_mediateur.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -201,6 +207,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_details_conflit.resx">
       <DependentUpon>frm_details_conflit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_login.resx">
+      <DependentUpon>frm_login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_mediateur.resx">
       <DependentUpon>frm_mediateur.cs</DependentUpon>

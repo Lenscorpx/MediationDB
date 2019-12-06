@@ -136,5 +136,10 @@ namespace MediationDB.ControlLibrary
                 fr.ShowDialog();
             }            
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
