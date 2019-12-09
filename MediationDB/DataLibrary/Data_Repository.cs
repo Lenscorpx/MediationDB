@@ -1831,7 +1831,6 @@ namespace MediationDB.DataLibrary
                 {
                     CommandType = CommandType.StoredProcedure
                 };
-                //cmd.Parameters.Add(new SqlParameter("complete_name", SqlDbType.NVarChar)).Value = search_name;
                 cmd.ExecuteNonQuery();
                 var da = new SqlDataAdapter(cmd);
                 var dt = new DataTable();
@@ -1928,7 +1927,7 @@ namespace MediationDB.DataLibrary
                 {
                     CommandType = CommandType.StoredProcedure
                 };
-                //cmd.Parameters.Add(new SqlParameter("complete_name", SqlDbType.NVarChar)).Value = search_name;
+                
                 cmd.ExecuteNonQuery();
                 var da = new SqlDataAdapter(cmd);
                 var dt = new DataTable();
