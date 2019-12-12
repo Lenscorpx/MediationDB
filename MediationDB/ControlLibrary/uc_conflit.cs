@@ -141,5 +141,11 @@ namespace MediationDB.ControlLibrary
         {
 
         }
+
+        private void bunifuCustomDataGrid2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            bunifuCustomDataGrid1_CellContentClick(sender, e);
+
+        }
     }
 }
