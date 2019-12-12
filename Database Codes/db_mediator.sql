@@ -231,8 +231,6 @@ create table t_membres
     constraint fk_menage_membre foreign key(id_menage) references t_menages(id_menage)
  )
 go
-alter table t_membres
-add sexe nvarchar(50)
 ------------- types : conflit lie aux concessions, espaces proteges, etc.....
 create table t_type_conflit
 (
