@@ -1,5 +1,5 @@
 use master;
-    if exists(select * from sys.databases where name='db_iris')
+    if exists(select * from sys.databases where name='db_mediator')
         drop database db_mediator;
 create database db_mediator;
 use db_mediator;
