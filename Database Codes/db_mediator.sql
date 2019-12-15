@@ -723,13 +723,11 @@ create table t_mediation
     noms_mediateur nvarchar(50),
     lieu nvarchar(50),
     appreciation nvarchar(500),
+	date_fin_mediation date,
     constraint pk_mediation primary key(num_mediation),
     constraint fk_mediateur_mediation foreign key(id_mediateur) references t_mediateur(id_mediateur),
     constraint fk_mediation_conflit foreign key(num_conflit) references t_conflit(num_conflit)
 )
-go
-alter table t_mediation
-add date_fin_mediation date
 go
 create procedure afficher_mediation
 @num_conflit int
