@@ -889,6 +889,13 @@ values
     ('Admin','Un admin peut acceder a tous les menus'),
     ('User','Can only access restricted areas')
 go
+create table t_organisation
+(
+	code_organisation nvarchar(50),
+	description_organisation nvarchar(500),
+	constraint pk_organisation primary key(code_organisation)
+)
+go
 create table t_login
 (
     num_login int identity,
@@ -899,3 +906,7 @@ create table t_login
     constraint pk_login primary key(num_login)
 )
 go
+alter table t_login
+add code_organisation nvarchar(50),
+add constraint fk_organisation_login foreign key(code_organisation) references t_organisation
+
