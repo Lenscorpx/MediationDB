@@ -326,6 +326,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="mediator.ico" />
+    <None Include="Resources\Feronia-portada.jpg" />
     <None Include="Resources\Fermer_window.png" />
     <None Include="Resources\cancel_80px1.png" />
     <None Include="Resources\scales_104px1.png" />

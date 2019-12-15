@@ -163,6 +163,16 @@ namespace MediationDB.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Feronia_portada {
+            get {
+                object obj = ResourceManager.GetObject("Feronia-portada", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap good_quality_80px {
             get {
                 object obj = ResourceManager.GetObject("good_quality_80px", resourceCulture);
