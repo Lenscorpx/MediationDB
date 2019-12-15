@@ -34,7 +34,7 @@
     <StartupObject>MediationDB.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>mediator.ico</ApplicationIcon>
+    <ApplicationIcon>LOGO-SCC-2019-PNG.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BunifuDataViz">
@@ -325,7 +325,9 @@
     <None Include="Resources\cancel_80px.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="LOGO-SCC-2019-PNG.ico" />
     <Content Include="mediator.ico" />
+    <None Include="Resources\LOGO-SCC-2019-PNG.png" />
     <None Include="Resources\Feronia-portada.jpg" />
     <None Include="Resources\Fermer_window.png" />
     <None Include="Resources\cancel_80px1.png" />
