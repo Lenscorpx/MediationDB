@@ -1,8 +1,9 @@
 use master;
-    if exists(select * from sys.databases where name='db_mediator')
-        drop database db_mediator;
-create database db_mediator;
+if not exists(select * from sys.databases where name='db_mediator')
+	create database db_mediator;
+go
 use db_mediator;
+go
 create table t_pays
 (
     code_pays nvarchar(50),
@@ -782,16 +783,6 @@ as
         where num_mediation = @num_mediation
 go
 ------------------------------Fin codes de mediation-----------------------------------------------------------------
-create table t_logs
-(
-    num_log int identity,
-    date_log date,
-    username nvarchar(50),
-    mot_de_passe nvarchar(50),
-    ops_done nvarchar(50),
-    constraint pk_logs primary key(num_log)
-)
-go
 create table t_sensibilisation
 (
     num_sensibilisation int identity,
@@ -903,6 +894,19 @@ create table t_login
     user_active int,
 	code_organisation nvarchar(50),
     constraint pk_login primary key(num_login),
+	constraint fk_level_user_login foreign key(id_level) references t_level_user(id_level) on delete cascade on update cascade,
 	constraint fk_organisation_login foreign key(code_organisation) references t_organisation(code_organisation) on delete cascade on update cascade
+)
+go
+create table t_logs
+(
+    num_log int identity,
+    date_log date,
+    username nvarchar(50),
+    mot_de_passe nvarchar(50),
+    ops_done nvarchar(50),
+	num_login int,
+    constraint pk_logs primary key(num_log),
+	constraint fk_logs_logged foreign key(num_login) references t_login(num_login) on delete cascade on update cascade
 )
 go
