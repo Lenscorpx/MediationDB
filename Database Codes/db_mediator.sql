@@ -903,10 +903,8 @@ create table t_login
     mot_de_passe nvarchar(50),
     id_level nvarchar(50),
     user_active int,
-    constraint pk_login primary key(num_login)
+	code_organisation nvarchar(50),
+    constraint pk_login primary key(num_login),
+	constraint fk_organisation_login foreign key(code_organisation) references t_organisation(code_organisation) on delete cascade on update cascade
 )
 go
-alter table t_login
-add code_organisation nvarchar(50),
-add constraint fk_organisation_login foreign key(code_organisation) references t_organisation
-
