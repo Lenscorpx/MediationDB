@@ -131,16 +131,6 @@ namespace MediationDB.FormLibrary
             }
         }
 
-        private void bunifuTileButton5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_conflits_Click(object sender, EventArgs e)
         {
             var fr = new frm_conflit();
@@ -162,6 +152,12 @@ namespace MediationDB.FormLibrary
         private void btn_resolutions_Click(object sender, EventArgs e)
         {
             var fr = new frm_resolutions();
+            fr.ShowDialog();
+        }
+
+        private void btn_nature_conflit_Click(object sender, EventArgs e)
+        {
+            var fr = new frm_nature_conflit();
             fr.ShowDialog();
         }
     }
