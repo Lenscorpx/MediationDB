@@ -30,7 +30,7 @@ namespace MediationDB.FormLibrary
             txt_description.ResetText();
             txt_id_situation.ResetText();
             panel1.Focus();
-            rps.afficher_situation_menage(bunifuCustomDataGrid1);
+            rps.afficher_situation_menage(bunifuCustomDataGrid2);
         }
 
         private void btn_enregistrer_Click(object sender, EventArgs e)
@@ -48,7 +48,7 @@ namespace MediationDB.FormLibrary
 
         private void txt_id_situation_OnValueChanged(object sender, EventArgs e)
         {
-            rps.search_situation(bunifuCustomDataGrid1, txt_id_situation.Text);
+            rps.search_situation(bunifuCustomDataGrid2, txt_id_situation.Text);
         }
 
         private void btn_supprimer_Click(object sender, EventArgs e)
@@ -71,8 +71,12 @@ namespace MediationDB.FormLibrary
 
         private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            txt_id_situation.Text = bunifuCustomDataGrid1.SelectedRows[0].Cells[0].Value.ToString();
-            txt_description.Text = bunifuCustomDataGrid1.SelectedRows[0].Cells[1].Value.ToString();
+        }
+
+        private void bunifuCustomDataGrid2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+                txt_id_situation.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[0].Value.ToString();
+                txt_description.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[1].Value.ToString();
+            }
         }
     }
-}
