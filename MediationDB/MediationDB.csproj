@@ -34,7 +34,7 @@
     <StartupObject>MediationDB.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>LOGO-SCC-2019-PNG.ico</ApplicationIcon>
+    <ApplicationIcon>mediationlogo.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BunifuDataViz">
@@ -299,6 +299,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LOGO-SCC-2019-PNG.ico" />
+    <Content Include="mediationlogo.ico" />
     <Content Include="mediator.ico" />
     <None Include="Resources\typesdeconflit.png" />
     <None Include="Resources\location_96px1.png" />

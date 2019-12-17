@@ -21,14 +21,14 @@ namespace MediationDB.FormLibrary
         }
         private void refresh()
         {
-            rps.afficher_type_conflit(bunifuCustomDataGrid1);
+            rps.afficher_type_conflit(bunifuCustomDataGrid2);
             txt_description.ResetText();
             txt_id_typeconflit.ResetText();
         }
 
         private void txt_id_typeconflit_OnValueChanged(object sender, EventArgs e)
         {
-            rps.search_type_conflit(bunifuCustomDataGrid1, txt_id_typeconflit.Text);
+            rps.search_type_conflit(bunifuCustomDataGrid2, txt_id_typeconflit.Text);
         }
 
         private void btn_enregistrer_Click(object sender, EventArgs e)
