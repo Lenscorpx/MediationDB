@@ -30,7 +30,7 @@ namespace MediationDB.DataLibrary
             //prms.Mot_de_passe = "123456789";
             prms.Serveur = "DESKTOP-PO0I2OH";
             prms.Base_de_donnees = "db_mediator";
-            prms.Nom_user = "Lens";
+            prms.Nom_user = "sa";
             prms.Mot_de_passe = "Windy@2019.com?";
             //prms.Serveur = "DESKTOP-3M7GUQ9";
             //prms.Base_de_donnees = "db_kkdependants";
