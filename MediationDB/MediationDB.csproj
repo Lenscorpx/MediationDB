@@ -300,6 +300,7 @@
   <ItemGroup>
     <Content Include="LOGO-SCC-2019-PNG.ico" />
     <Content Include="mediator.ico" />
+    <None Include="Resources\typesdeconflit.png" />
     <None Include="Resources\location_96px1.png" />
     <None Include="Resources\location_96px.png" />
     <None Include="Resources\vulnera.png" />
