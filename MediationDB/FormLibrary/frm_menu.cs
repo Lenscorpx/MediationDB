@@ -162,7 +162,19 @@ namespace MediationDB.FormLibrary
         private void btn_params_causes_Click(object sender, EventArgs e)
         {
             var fr = new frm_causes_conflit();
-            fr.Show();
+            fr.ShowDialog();
+        }
+
+        private void btn_objets_Click(object sender, EventArgs e)
+        {
+            var fr = new frm_objet_conflit();
+            fr.ShowDialog();
+        }
+
+        private void btn_resolutions_Click(object sender, EventArgs e)
+        {
+            var fr = new frm_resolutions();
+            fr.ShowDialog();
         }
     }
 }
