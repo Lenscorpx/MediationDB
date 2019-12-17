@@ -22,8 +22,7 @@ namespace MediationDB.FormLibrary
 
         private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            txt_id_nature_conflit.Text = bunifuCustomDataGrid1.SelectedRows[0].Cells[0].Value.ToString();
-            txt_description.Text = bunifuCustomDataGrid1.SelectedRows[0].Cells[1].Value.ToString();
+            
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
@@ -33,7 +32,7 @@ namespace MediationDB.FormLibrary
 
         private void refresh()
         {
-            rps.afficher_nature_conflit(bunifuCustomDataGrid1);
+            rps.afficher_nature_conflit(bunifuCustomDataGrid2);
             txt_description.ResetText();
             txt_id_nature_conflit.ResetText();
         }
@@ -67,6 +66,12 @@ namespace MediationDB.FormLibrary
                     refresh();
                 }
             }
+        }
+
+        private void bunifuCustomDataGrid2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txt_id_nature_conflit.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[0].Value.ToString();
+            txt_description.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[1].Value.ToString();
         }
     }
 }

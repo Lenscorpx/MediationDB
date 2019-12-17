@@ -547,7 +547,7 @@
             this.btn_menages.Name = "btn_menages";
             this.btn_menages.Size = new System.Drawing.Size(191, 162);
             this.btn_menages.TabIndex = 4;
-            this.btn_menages.Click += new System.EventHandler(this.bunifuTileButton5_Click);
+            //this.btn_menages.Click += new System.EventHandler(this.bunifuTileButton5_Click);
             // 
             // btn_conflits
             // 
