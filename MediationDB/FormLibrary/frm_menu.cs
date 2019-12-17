@@ -158,5 +158,11 @@ namespace MediationDB.FormLibrary
             var fr = new frm_conflit();
             fr.ShowDialog();
         }
+
+        private void btn_params_causes_Click(object sender, EventArgs e)
+        {
+            var fr = new frm_causes_conflit();
+            fr.Show();
+        }
     }
 }
