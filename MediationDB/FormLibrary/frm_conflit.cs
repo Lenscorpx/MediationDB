@@ -32,7 +32,7 @@ namespace MediationDB.FormLibrary
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Hide();
         }
 
         private void bunifuCustomDataGrid2_CellContentClick(object sender, DataGridViewCellEventArgs e)

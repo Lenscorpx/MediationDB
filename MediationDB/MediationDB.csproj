@@ -336,6 +336,16 @@
   <ItemGroup>
     <Content Include="LOGO-SCC-2019-PNG.ico" />
     <Content Include="mediator.ico" />
+    <None Include="Resources\location_96px1.png" />
+    <None Include="Resources\location_96px.png" />
+    <None Include="Resources\vulnera.png" />
+    <None Include="Resources\types de parties.png" />
+    <None Include="Resources\situationsMenages.png" />
+    <None Include="Resources\natures conflit.png" />
+    <None Include="Resources\users.png" />
+    <None Include="Resources\etat_participants.png" />
+    <None Include="Resources\resolutions.png" />
+    <None Include="Resources\objets_confl.png" />
     <None Include="Resources\causes.png" />
     <None Include="Resources\menages 2.png" />
     <None Include="Resources\statistics_report_96px.png" />

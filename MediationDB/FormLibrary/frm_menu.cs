@@ -147,5 +147,16 @@ namespace MediationDB.FormLibrary
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_conflits_Click(object sender, EventArgs e)
+        {
+            var fr = new frm_conflit();
+            fr.ShowDialog();
+        }
     }
 }
