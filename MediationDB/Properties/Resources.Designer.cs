@@ -393,6 +393,16 @@ namespace MediationDB.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap natures_conflit {
+            get {
+                object obj = ResourceManager.GetObject("natures conflit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap new_slide_80px {
             get {
                 object obj = ResourceManager.GetObject("new_slide_80px", resourceCulture);
@@ -503,6 +513,16 @@ namespace MediationDB.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap situationsMenages {
+            get {
+                object obj = ResourceManager.GetObject("situationsMenages", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap speaker_notes_80px {
             get {
                 object obj = ResourceManager.GetObject("speaker_notes_80px", resourceCulture);
@@ -576,6 +596,16 @@ namespace MediationDB.Properties {
         internal static System.Drawing.Bitmap user_groups_80px {
             get {
                 object obj = ResourceManager.GetObject("user_groups_80px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap users {
+            get {
+                object obj = ResourceManager.GetObject("users", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
