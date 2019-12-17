@@ -223,6 +223,16 @@ namespace MediationDB.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Logo_SCC {
+            get {
+                object obj = ResourceManager.GetObject("Logo_SCC", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LOGO_SCC_2019_PNG {
             get {
                 object obj = ResourceManager.GetObject("LOGO-SCC-2019-PNG", resourceCulture);
