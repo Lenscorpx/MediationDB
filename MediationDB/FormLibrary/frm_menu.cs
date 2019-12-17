@@ -17,10 +17,10 @@ namespace MediationDB.FormLibrary
         {
             InitializeComponent();
             //charger_splash();
-            MessageBox.Show("Bienvenu(e) " + lbl_nom_user.Text +
-                "\nMerci encore pour l'utilisation de ce logiciel de gestion d'informations sur les médiations foncières" +
-                " sur le bas du formulaire veuillez trouver les boutons qui vous permettront de consulter les différents" +
-                " formulaires sur les médiations foncières ainsi que les sensibilisations");
+            //MessageBox.Show("Bienvenu(e) " + lbl_nom_user.Text +
+            //    "\nMerci encore pour l'utilisation de ce logiciel de gestion d'informations sur les médiations foncières" +
+            //    " sur le bas du formulaire veuillez trouver les boutons qui vous permettront de consulter les différents" +
+            //    " formulaires sur les médiations foncières ainsi que les sensibilisations");
         }
 
         private void frm_menu_Load(object sender, EventArgs e)

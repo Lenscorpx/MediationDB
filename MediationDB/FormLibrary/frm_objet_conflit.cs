@@ -21,7 +21,7 @@ namespace MediationDB.FormLibrary
         }
         private void refresh()
         {
-            rps.afficher_objet_conflit(bunifuCustomDataGrid1);
+            rps.afficher_objet_conflit(bunifuCustomDataGrid2);
             txt_description.ResetText();
             txt_id_objet_conflit.ResetText();
         }
@@ -33,13 +33,12 @@ namespace MediationDB.FormLibrary
 
         private void txt_id_objet_conflit_OnValueChanged(object sender, EventArgs e)
         {
-            rps.search_objet_conflit(bunifuCustomDataGrid1, txt_id_objet_conflit.Text);
+            rps.search_objet_conflit(bunifuCustomDataGrid2, txt_id_objet_conflit.Text);
         }
 
         private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            txt_id_objet_conflit.Text = bunifuCustomDataGrid1.SelectedRows[0].Cells[0].Value.ToString();
-            txt_description.Text = bunifuCustomDataGrid1.SelectedRows[0].Cells[1].Value.ToString();
+            
         }
 
         private void btn_enregistrer_Click(object sender, EventArgs e)
@@ -71,6 +70,12 @@ namespace MediationDB.FormLibrary
                     refresh();
                 }
             }
+        }
+
+        private void bunifuCustomDataGrid2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txt_id_objet_conflit.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[0].Value.ToString();
+            txt_description.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[1].Value.ToString();
         }
     }
 }
