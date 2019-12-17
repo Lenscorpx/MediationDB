@@ -63,29 +63,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ControlLibrary\uc_conflit.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ControlLibrary\uc_conflit.Designer.cs">
-      <DependentUpon>uc_conflit.cs</DependentUpon>
-    </Compile>
     <Compile Include="ControlLibrary\uc_menage.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ControlLibrary\uc_menage.Designer.cs">
       <DependentUpon>uc_menage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ControlLibrary\uc_parametres.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ControlLibrary\uc_parametres.Designer.cs">
-      <DependentUpon>uc_parametres.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ControlLibrary\uc_splash.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ControlLibrary\uc_splash.Designer.cs">
-      <DependentUpon>uc_splash.cs</DependentUpon>
     </Compile>
     <Compile Include="DataLibrary\Data_Repository.cs" />
     <Compile Include="DataLibrary\Params.cs" />
@@ -161,12 +143,6 @@
     <Compile Include="FormLibrary\frm_situation_menage.Designer.cs">
       <DependentUpon>frm_situation_menage.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormLibrary\frm_splash.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormLibrary\frm_splash.Designer.cs">
-      <DependentUpon>frm_splash.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormLibrary\frm_types_partie.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,17 +163,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ControlLibrary\uc_conflit.resx">
-      <DependentUpon>uc_conflit.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ControlLibrary\uc_menage.resx">
       <DependentUpon>uc_menage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ControlLibrary\uc_parametres.resx">
-      <DependentUpon>uc_parametres.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ControlLibrary\uc_splash.resx">
-      <DependentUpon>uc_splash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_causes_conflit.resx">
       <DependentUpon>frm_causes_conflit.cs</DependentUpon>
@@ -234,9 +201,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_situation_menage.resx">
       <DependentUpon>frm_situation_menage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormLibrary\frm_splash.resx">
-      <DependentUpon>frm_splash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_types_partie.resx">
       <DependentUpon>frm_types_partie.cs</DependentUpon>
