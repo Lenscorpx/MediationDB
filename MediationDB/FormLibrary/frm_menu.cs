@@ -16,7 +16,7 @@ namespace MediationDB.FormLibrary
         public frm_menu()
         {
             InitializeComponent();
-            charger_splash();
+            //charger_splash();
             MessageBox.Show("Bienvenu(e) " + lbl_nom_user.Text +
                 "\nMerci encore pour l'utilisation de ce logiciel de gestion d'informations sur les médiations foncières" +
                 " sur le bas du formulaire veuillez trouver les boutons qui vous permettront de consulter les différents" +
