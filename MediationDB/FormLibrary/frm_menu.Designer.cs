@@ -41,10 +41,10 @@
             this.bunifuTileButton12 = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuTileButton11 = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuTileButton5 = new Bunifu.Framework.UI.BunifuTileButton();
-            this.bunifuTileButton6 = new Bunifu.Framework.UI.BunifuTileButton();
-            this.bunifuTileButton7 = new Bunifu.Framework.UI.BunifuTileButton();
-            this.bunifuTileButton8 = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btn_ = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btn_groupement = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btn_localite = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btn_vulnerabilites = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btn_types_parties = new Bunifu.Framework.UI.BunifuTileButton();
             this.btn_situation = new Bunifu.Framework.UI.BunifuTileButton();
             this.btn_nature_conflit = new Bunifu.Framework.UI.BunifuTileButton();
             this.btn_users = new Bunifu.Framework.UI.BunifuTileButton();
@@ -159,10 +159,10 @@
             this.panel2.Controls.Add(this.bunifuTileButton12);
             this.panel2.Controls.Add(this.bunifuTileButton11);
             this.panel2.Controls.Add(this.bunifuTileButton5);
-            this.panel2.Controls.Add(this.bunifuTileButton6);
-            this.panel2.Controls.Add(this.bunifuTileButton7);
-            this.panel2.Controls.Add(this.bunifuTileButton8);
-            this.panel2.Controls.Add(this.btn_);
+            this.panel2.Controls.Add(this.btn_groupement);
+            this.panel2.Controls.Add(this.btn_localite);
+            this.panel2.Controls.Add(this.btn_vulnerabilites);
+            this.panel2.Controls.Add(this.btn_types_parties);
             this.panel2.Controls.Add(this.btn_situation);
             this.panel2.Controls.Add(this.btn_nature_conflit);
             this.panel2.Controls.Add(this.btn_users);
@@ -240,89 +240,89 @@
             this.bunifuTileButton5.Size = new System.Drawing.Size(128, 101);
             this.bunifuTileButton5.TabIndex = 71;
             // 
-            // bunifuTileButton6
+            // btn_groupement
             // 
-            this.bunifuTileButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.bunifuTileButton6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bunifuTileButton6.color = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.bunifuTileButton6.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuTileButton6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.bunifuTileButton6, BunifuAnimatorNS.DecorationType.Custom);
-            this.bunifuTileButton6.Font = new System.Drawing.Font("Century Gothic", 8F);
-            this.bunifuTileButton6.ForeColor = System.Drawing.Color.White;
-            this.bunifuTileButton6.Image = ((System.Drawing.Image)(resources.GetObject("bunifuTileButton6.Image")));
-            this.bunifuTileButton6.ImagePosition = 14;
-            this.bunifuTileButton6.ImageZoom = 50;
-            this.bunifuTileButton6.LabelPosition = 27;
-            this.bunifuTileButton6.LabelText = "Tile 1";
-            this.bunifuTileButton6.Location = new System.Drawing.Point(580, 131);
-            this.bunifuTileButton6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.bunifuTileButton6.Name = "bunifuTileButton6";
-            this.bunifuTileButton6.Size = new System.Drawing.Size(128, 101);
-            this.bunifuTileButton6.TabIndex = 70;
+            this.btn_groupement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.btn_groupement.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btn_groupement.color = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.btn_groupement.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.btn_groupement.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.btn_groupement, BunifuAnimatorNS.DecorationType.Custom);
+            this.btn_groupement.Font = new System.Drawing.Font("Century Gothic", 8F);
+            this.btn_groupement.ForeColor = System.Drawing.Color.White;
+            this.btn_groupement.Image = global::MediationDB.Properties.Resources.location_96px1;
+            this.btn_groupement.ImagePosition = 14;
+            this.btn_groupement.ImageZoom = 50;
+            this.btn_groupement.LabelPosition = 27;
+            this.btn_groupement.LabelText = "Groupements";
+            this.btn_groupement.Location = new System.Drawing.Point(580, 131);
+            this.btn_groupement.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_groupement.Name = "btn_groupement";
+            this.btn_groupement.Size = new System.Drawing.Size(128, 101);
+            this.btn_groupement.TabIndex = 70;
             // 
-            // bunifuTileButton7
+            // btn_localite
             // 
-            this.bunifuTileButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.bunifuTileButton7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bunifuTileButton7.color = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.bunifuTileButton7.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuTileButton7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.bunifuTileButton7, BunifuAnimatorNS.DecorationType.Custom);
-            this.bunifuTileButton7.Font = new System.Drawing.Font("Century Gothic", 8F);
-            this.bunifuTileButton7.ForeColor = System.Drawing.Color.White;
-            this.bunifuTileButton7.Image = ((System.Drawing.Image)(resources.GetObject("bunifuTileButton7.Image")));
-            this.bunifuTileButton7.ImagePosition = 14;
-            this.bunifuTileButton7.ImageZoom = 50;
-            this.bunifuTileButton7.LabelPosition = 27;
-            this.bunifuTileButton7.LabelText = "Tile 1";
-            this.bunifuTileButton7.Location = new System.Drawing.Point(405, 131);
-            this.bunifuTileButton7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.bunifuTileButton7.Name = "bunifuTileButton7";
-            this.bunifuTileButton7.Size = new System.Drawing.Size(128, 101);
-            this.bunifuTileButton7.TabIndex = 69;
+            this.btn_localite.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.btn_localite.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btn_localite.color = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.btn_localite.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.btn_localite.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.btn_localite, BunifuAnimatorNS.DecorationType.Custom);
+            this.btn_localite.Font = new System.Drawing.Font("Century Gothic", 8F);
+            this.btn_localite.ForeColor = System.Drawing.Color.White;
+            this.btn_localite.Image = global::MediationDB.Properties.Resources.location_96px;
+            this.btn_localite.ImagePosition = 14;
+            this.btn_localite.ImageZoom = 50;
+            this.btn_localite.LabelPosition = 27;
+            this.btn_localite.LabelText = "Localités";
+            this.btn_localite.Location = new System.Drawing.Point(405, 131);
+            this.btn_localite.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_localite.Name = "btn_localite";
+            this.btn_localite.Size = new System.Drawing.Size(128, 101);
+            this.btn_localite.TabIndex = 69;
             // 
-            // bunifuTileButton8
+            // btn_vulnerabilites
             // 
-            this.bunifuTileButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.bunifuTileButton8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bunifuTileButton8.color = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.bunifuTileButton8.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuTileButton8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.bunifuTileButton8, BunifuAnimatorNS.DecorationType.Custom);
-            this.bunifuTileButton8.Font = new System.Drawing.Font("Century Gothic", 8F);
-            this.bunifuTileButton8.ForeColor = System.Drawing.Color.White;
-            this.bunifuTileButton8.Image = ((System.Drawing.Image)(resources.GetObject("bunifuTileButton8.Image")));
-            this.bunifuTileButton8.ImagePosition = 14;
-            this.bunifuTileButton8.ImageZoom = 50;
-            this.bunifuTileButton8.LabelPosition = 27;
-            this.bunifuTileButton8.LabelText = "Tile 1";
-            this.bunifuTileButton8.Location = new System.Drawing.Point(234, 131);
-            this.bunifuTileButton8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.bunifuTileButton8.Name = "bunifuTileButton8";
-            this.bunifuTileButton8.Size = new System.Drawing.Size(128, 101);
-            this.bunifuTileButton8.TabIndex = 68;
+            this.btn_vulnerabilites.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.btn_vulnerabilites.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btn_vulnerabilites.color = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.btn_vulnerabilites.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.btn_vulnerabilites.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.btn_vulnerabilites, BunifuAnimatorNS.DecorationType.Custom);
+            this.btn_vulnerabilites.Font = new System.Drawing.Font("Century Gothic", 8F);
+            this.btn_vulnerabilites.ForeColor = System.Drawing.Color.White;
+            this.btn_vulnerabilites.Image = global::MediationDB.Properties.Resources.vulnera;
+            this.btn_vulnerabilites.ImagePosition = 14;
+            this.btn_vulnerabilites.ImageZoom = 50;
+            this.btn_vulnerabilites.LabelPosition = 27;
+            this.btn_vulnerabilites.LabelText = "Vulnerabilites";
+            this.btn_vulnerabilites.Location = new System.Drawing.Point(234, 131);
+            this.btn_vulnerabilites.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_vulnerabilites.Name = "btn_vulnerabilites";
+            this.btn_vulnerabilites.Size = new System.Drawing.Size(128, 101);
+            this.btn_vulnerabilites.TabIndex = 68;
             // 
-            // btn_
+            // btn_types_parties
             // 
-            this.btn_.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.btn_.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btn_.color = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.btn_.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.btn_.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.btn_, BunifuAnimatorNS.DecorationType.Custom);
-            this.btn_.Font = new System.Drawing.Font("Century Gothic", 8F);
-            this.btn_.ForeColor = System.Drawing.Color.White;
-            this.btn_.Image = ((System.Drawing.Image)(resources.GetObject("btn_.Image")));
-            this.btn_.ImagePosition = 14;
-            this.btn_.ImageZoom = 50;
-            this.btn_.LabelPosition = 27;
-            this.btn_.LabelText = "Tile 1";
-            this.btn_.Location = new System.Drawing.Point(62, 131);
-            this.btn_.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_.Name = "btn_";
-            this.btn_.Size = new System.Drawing.Size(128, 101);
-            this.btn_.TabIndex = 67;
+            this.btn_types_parties.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.btn_types_parties.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btn_types_parties.color = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.btn_types_parties.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.btn_types_parties.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.btn_types_parties, BunifuAnimatorNS.DecorationType.Custom);
+            this.btn_types_parties.Font = new System.Drawing.Font("Century Gothic", 8F);
+            this.btn_types_parties.ForeColor = System.Drawing.Color.White;
+            this.btn_types_parties.Image = global::MediationDB.Properties.Resources.types_de_parties;
+            this.btn_types_parties.ImagePosition = 14;
+            this.btn_types_parties.ImageZoom = 50;
+            this.btn_types_parties.LabelPosition = 27;
+            this.btn_types_parties.LabelText = "Types de parties";
+            this.btn_types_parties.Location = new System.Drawing.Point(62, 131);
+            this.btn_types_parties.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_types_parties.Name = "btn_types_parties";
+            this.btn_types_parties.Size = new System.Drawing.Size(128, 101);
+            this.btn_types_parties.TabIndex = 67;
             // 
             // btn_situation
             // 
@@ -694,10 +694,10 @@
         public Bunifu.Framework.UI.BunifuTileButton bunifuTileButton12;
         public Bunifu.Framework.UI.BunifuTileButton bunifuTileButton11;
         public Bunifu.Framework.UI.BunifuTileButton bunifuTileButton5;
-        public Bunifu.Framework.UI.BunifuTileButton bunifuTileButton6;
-        public Bunifu.Framework.UI.BunifuTileButton bunifuTileButton7;
-        public Bunifu.Framework.UI.BunifuTileButton bunifuTileButton8;
-        public Bunifu.Framework.UI.BunifuTileButton btn_;
+        public Bunifu.Framework.UI.BunifuTileButton btn_groupement;
+        public Bunifu.Framework.UI.BunifuTileButton btn_localite;
+        public Bunifu.Framework.UI.BunifuTileButton btn_vulnerabilites;
+        public Bunifu.Framework.UI.BunifuTileButton btn_types_parties;
         public Bunifu.Framework.UI.BunifuTileButton btn_situation;
         public Bunifu.Framework.UI.BunifuTileButton btn_nature_conflit;
         public Bunifu.Framework.UI.BunifuTileButton btn_users;

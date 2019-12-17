@@ -273,6 +273,26 @@ namespace MediationDB.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap location_96px {
+            get {
+                object obj = ResourceManager.GetObject("location_96px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap location_96px1 {
+            get {
+                object obj = ResourceManager.GetObject("location_96px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logo_SCC {
             get {
                 object obj = ResourceManager.GetObject("Logo_SCC", resourceCulture);
@@ -593,6 +613,16 @@ namespace MediationDB.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap types_de_parties {
+            get {
+                object obj = ResourceManager.GetObject("types de parties", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap user_groups_80px {
             get {
                 object obj = ResourceManager.GetObject("user_groups_80px", resourceCulture);
@@ -606,6 +636,16 @@ namespace MediationDB.Properties {
         internal static System.Drawing.Bitmap users {
             get {
                 object obj = ResourceManager.GetObject("users", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vulnera {
+            get {
+                object obj = ResourceManager.GetObject("vulnera", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
