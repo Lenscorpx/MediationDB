@@ -804,7 +804,47 @@ as
 	from t_sensibilisation
 		order by num_sensibilisation desc
 go
-		
+create procedure inserer_sensibilisation
+@date_debut date,
+@date_fin date,
+@id_localite nvarchar(50)
+as
+	insert into t_sensibilisation
+		(date_debut,date_fin,id_localite)
+	values
+		(@date_debut,@date_fin,@id_localite);
+go
+create procedure modifier_sensibilisation
+@num_sensibilisation int,
+@date_debut date,
+@date_fin date,
+@id_localite nvarchar(50)
+as
+	update t_sensibilisation
+		set
+			date_debut=@date_debut,
+			date_fin=@date_fin,
+			id_localite=@id_localite
+		where
+			num_sensibilisation like @num_sensibilisation
+go
+create procedure supprimer_sensibilisation
+@num_sensibilisation int
+as
+	delete from t_sensibilisation
+		where num_sensibilisation like @num_sensibilisation
+go
+create procedure rechercher_sensibilisation
+@id_localite nvarchar(50)
+as
+	select top 50 
+		num_sensibilisation as 'Num',
+		date_debut as 'Debut de sensibilisation',
+		date_fin as 'Fin de sensibilisation',
+		id_localite as 'Lieu'
+	from t_sensibilisation
+		order by num_sensibilisation desc
+go
 ------------------------------Fin codes sensibilisation--------------------------------------------------------------
 create table t_atelier
 (
