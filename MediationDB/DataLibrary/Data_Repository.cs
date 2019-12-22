@@ -2114,38 +2114,6 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        
-        public void liste_dependants_structure(DataGridView dtg)
-        {
-            cnx = new SqlConnection(prms.ToString());
-            try
-            {
-                if (cnx.State == ConnectionState.Closed)
-                    cnx.Open();
-                var cmd = new SqlCommand("liste_dependants_structure", cnx)
-                {
-                    CommandType = CommandType.StoredProcedure
-                };
-                cmd.ExecuteNonQuery();
-                var da = new SqlDataAdapter(cmd);
-                var dt = new DataTable();
-                da.Fill(dt);
-                dtg.DataSource = dt;
-            }
-            catch (Exception exct)
-            {
-                var rs = new DialogResult();
-                rs = MessageBox.Show("Want to see error code?", "Errors ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (rs == DialogResult.Yes)
-                {
-                    MessageBox.Show(exct.ToString());
-                }
-            }
-            finally
-            {
-                cnx.Close(); cnx.Dispose();
-            }
-        }
         public void rechercher_dependants_structure_paragent(DataGridView dtg, string noms_agent)
         {
             cnx = new SqlConnection(prms.ToString());
