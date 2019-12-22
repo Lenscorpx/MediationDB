@@ -2117,38 +2117,7 @@ namespace MediationDB.DataLibrary
         
         
         
-        public void rechercher_dependents(DataGridView dtg, string code_agent)
-        {
-            cnx = new SqlConnection(prms.ToString());
-            try
-            {
-                if (cnx.State == ConnectionState.Closed)
-                    cnx.Open();
-                var cmd = new SqlCommand("rechercher_dependents", cnx)
-                {
-                    CommandType = CommandType.StoredProcedure
-                };
-                cmd.Parameters.Add(new SqlParameter("code_agent", SqlDbType.NVarChar)).Value = code_agent;
-                cmd.ExecuteNonQuery();
-                var da = new SqlDataAdapter(cmd);
-                var dt = new DataTable();
-                da.Fill(dt);
-                dtg.DataSource = dt;
-            }
-            catch (Exception exct)
-            {
-                var rs = new DialogResult();
-                rs = MessageBox.Show("Want to see error code?", "Errors ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (rs == DialogResult.Yes)
-                {
-                    MessageBox.Show(exct.ToString());
-                }
-            }
-            finally
-            {
-                cnx.Close(); cnx.Dispose();
-            }
-        }
+        
         public void rechercher_nom_dependents(DataGridView dtg, string noms)
         {
             cnx = new SqlConnection(prms.ToString());
