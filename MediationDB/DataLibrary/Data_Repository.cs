@@ -2115,61 +2115,6 @@ namespace MediationDB.DataLibrary
             }
         }
         
-        
-        
-        
-        
-        
-        
-        public void remplir_treeview(TreeView trvw)
-        {
-            cnx = new SqlConnection(prms.ToString());
-            try
-            {
-                if (cnx.State == ConnectionState.Closed)
-                    cnx.Open();
-                const string requete = "treeview_distinct";
-                var cmd = new SqlCommand(requete, cnx)
-                {
-                    CommandType = CommandType.StoredProcedure
-                };
-                cmd.ExecuteNonQuery();
-                var da = new SqlDataAdapter(cmd);
-                var dt = new DataTable();
-                da.Fill(dt);
-
-                trvw.Nodes.Clear();
-                foreach (DataRow dr in dt.Rows)
-                {
-                    //if ((int)dr[2]==0)
-                    //{
-                    //TreeNode tnParent = new TreeNode();
-                    //tnParent.Text = dr[1].ToString();
-                    //string value = dr[0].ToString();
-                    //tnParent.Expand();
-                    //trvw.Nodes.Add(tnParent);
-                    //remplir_node_enfant(tnParent, value);
-                    //}
-                    TreeNode node = new TreeNode(dr[0].ToString() + " - " + dr[1].ToString());
-                    node.Nodes.Add(dr[2].ToString());
-                    trvw.Nodes.Add(node);
-                }
-            }
-            catch (Exception etr)
-            {
-                MessageBox.Show("Erreur lors du chargement!", "Echec", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                var rs = new DialogResult();
-                rs = MessageBox.Show("Voulez vous consulter le message d'erreur?", "Message d'erreur", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (rs == DialogResult.Yes)
-                {
-                    MessageBox.Show(etr.ToString());
-                }
-            }
-            finally
-            {
-                cnx.Close(); cnx.Dispose();
-            }
-        }
         public void liste_dependants_structure(DataGridView dtg)
         {
             cnx = new SqlConnection(prms.ToString());
