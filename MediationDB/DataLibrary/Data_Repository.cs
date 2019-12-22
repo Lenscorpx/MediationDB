@@ -2120,52 +2120,7 @@ namespace MediationDB.DataLibrary
         
         
         
-        public void remplir_node_enfant(TreeNode node_parent, string noms_agent)
-        {
-            cnx = new SqlConnection(prms.ToString());
-            try
-            {
-                if (cnx.State == ConnectionState.Closed)
-                    cnx.Open();
-                var cmd = new SqlCommand("treeview_charge_byname", cnx)
-                {
-                    CommandType = CommandType.StoredProcedure
-                };
-                cmd.Parameters.Add(new SqlParameter("noms", SqlDbType.Int)).Value = noms_agent;
-
-                cmd.ExecuteNonQuery();
-                var da = new SqlDataAdapter(cmd);
-                var dt = new DataTable();
-                da.Fill(dt);
-
-                foreach (DataRow dr in dt.Rows)
-                {
-                    {
-                        TreeNode child = new TreeNode();
-                        child.Text = dr["Name"].ToString().Trim();
-                        string temp = dr["IID"].ToString();
-                        child.Collapse();
-                        node_parent.Nodes.Add(child);
-                        remplir_node_enfant(child, temp);
-                    }
-                }
-            }
-            catch (Exception etr)
-            {
-                MessageBox.Show("Erreur lors du chargement!", "Echec", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                var rs = new DialogResult();
-                rs = MessageBox.Show("Voulez vous consulter le message d'erreur?", "Message d'erreur", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (rs == DialogResult.Yes)
-                {
-                    MessageBox.Show(etr.ToString());
-                }
-            }
-            finally
-            {
-                cnx.Close(); cnx.Dispose();
-            }
-
-        }
+        
         public void remplir_treeview(TreeView trvw)
         {
             cnx = new SqlConnection(prms.ToString());
