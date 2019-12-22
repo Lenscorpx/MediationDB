@@ -783,6 +783,7 @@ as
         where num_mediation = @num_mediation
 go
 ------------------------------Fin codes de mediation-----------------------------------------------------------------
+------------------------------Debut codes sensibilisation -----------------------------------------------------------
 create table t_sensibilisation
 (
     num_sensibilisation int identity,
@@ -793,6 +794,18 @@ create table t_sensibilisation
     constraint fk_localite_sensibil foreign key(id_localite) references t_localite(id_localite)
 )
 go
+create procedure afficher_sensibilisation
+as
+	select top 50
+		num_sensibilisation as 'Num',
+		date_debut as 'Debut de sensibilisation',
+		date_fin as 'Fin de sensibilisation',
+		id_localite as 'Lieu'
+	from t_sensibilisation
+		order by num_sensibilisation desc
+go
+		
+------------------------------Fin codes sensibilisation--------------------------------------------------------------
 create table t_atelier
 (
     id_atelier nvarchar(50),
