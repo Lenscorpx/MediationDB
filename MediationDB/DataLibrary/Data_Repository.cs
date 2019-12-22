@@ -2114,36 +2114,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void charts_nombre_conjoint(Label nombre_conjoint)
-        {
-            cnx = new SqlConnection(prms.ToString());
-            try
-            {
-                if (cnx.State == ConnectionState.Closed)
-                    cnx.Open();
-                var cmd = new SqlCommand("charts_nombre_conjoint", cnx)
-                {
-                    CommandType = CommandType.StoredProcedure
-                };
-                cmd.ExecuteNonQuery();
-                var da = new SqlDataAdapter(cmd);
-                var dt = new DataTable();
-                da.Fill(dt);
-                foreach (DataRow dr in dt.Rows)
-                {
-                    nombre_conjoint.Text = Convert.ToString(dr[0]);
-                    cnx.Close(); cnx.Dispose();
-                }
-            }
-            catch (Exception tdf)
-            {
-                MessageBox.Show("Connection failed!\n" + tdf);
-            }
-            finally
-            {
-                cnx.Close(); cnx.Dispose();
-            }
-        }
+        
         public void charts_nombre_dependants(Label nombre_dependant)
         {
             cnx = new SqlConnection(prms.ToString());
