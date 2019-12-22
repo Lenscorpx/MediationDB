@@ -27,15 +27,14 @@ namespace MediationDB.FormLibrary
 
         private void refresh()
         {
-            rps.afficher_mediateur(bunifuCustomDataGrid1);
+            rps.afficher_mediateur(bunifuCustomDataGrid2);
             txt_id_mediateur.ResetText();
             txt_description.ResetText();
         }
 
         private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            txt_id_mediateur.Text=bunifuCustomDataGrid1.SelectedRows[0].Cells[0].Value.ToString();
-            txt_description.Text= bunifuCustomDataGrid1.SelectedRows[0].Cells[1].Value.ToString();
+            
         }
 
         private void btn_enregistrer_Click(object sender, EventArgs e)
@@ -71,7 +70,13 @@ namespace MediationDB.FormLibrary
 
         private void txt_id_mediateur_OnValueChanged(object sender, EventArgs e)
         {
-            rps.search_mediateur(bunifuCustomDataGrid1,txt_id_mediateur.Text);
+            rps.search_mediateur(bunifuCustomDataGrid2,txt_id_mediateur.Text);
+        }
+
+        private void bunifuCustomDataGrid2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txt_id_mediateur.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[0].Value.ToString();
+            txt_description.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[1].Value.ToString();
         }
     }
     
