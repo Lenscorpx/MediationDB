@@ -2021,37 +2021,7 @@ namespace MediationDB.DataLibrary
 
 
 
-        public void recuperer_combobox_lien(MetroComboBox cbx)
-        {
-            cnx = new SqlConnection(prms.ToString());
-            try
-            {
-                if (cnx.State == ConnectionState.Closed)
-                    cnx.Open();
-                var cmd = new SqlCommand("recuperer_combobox_lien", cnx)
-                {
-                    CommandType = CommandType.StoredProcedure
-                };
-                
-                cmd.ExecuteNonQuery();
-                var da = new SqlDataAdapter(cmd);
-                var dt = new DataTable();
-                da.Fill(dt);
-                cbx.Items.Clear();
-                foreach (DataRow dr in dt.Rows)
-                {
-                    cbx.Items.Add(Convert.ToString(dr[0]));
-                }
-            }
-            catch (Exception tdf)
-            {
-                MessageBox.Show("Connection failed!\n" + tdf);
-            }
-            finally
-            {
-                cnx.Close(); cnx.Dispose();
-            }
-        }
+        
         public void recuperer_combo_structure(MetroComboBox cbx, string id_ville)
         {
             cnx = new SqlConnection(prms.ToString());
