@@ -167,7 +167,7 @@
             this.txt_description.BackColor = System.Drawing.Color.White;
             this.txt_description.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_description.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txt_description.ForeColor = System.Drawing.Color.White;
+            this.txt_description.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.txt_description.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.txt_description.HintText = "Description de situation de menage";
             this.txt_description.isPassword = false;
@@ -187,7 +187,7 @@
             this.txt_id_situation.BackColor = System.Drawing.Color.White;
             this.txt_id_situation.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_id_situation.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txt_id_situation.ForeColor = System.Drawing.Color.White;
+            this.txt_id_situation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.txt_id_situation.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.txt_id_situation.HintText = "Completez une situation de menage";
             this.txt_id_situation.isPassword = false;
