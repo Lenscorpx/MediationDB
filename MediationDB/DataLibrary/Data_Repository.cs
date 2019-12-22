@@ -2114,44 +2114,6 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void rechercher_login(string username, string pwd, int y)
-        {
-            cnx = new SqlConnection(prms.ToString());
-            try
-            {
-                if (cnx.State == ConnectionState.Closed)
-                    cnx.Open();
-                var cmd = new SqlCommand("rechercher_login", cnx)
-                {
-                    CommandType = CommandType.StoredProcedure
-                };
-                cmd.Parameters.Add(new SqlParameter("@username", SqlDbType.NVarChar)).Value = username;
-                cmd.Parameters.Add(new SqlParameter("@pwd", SqlDbType.NVarChar)).Value = pwd;
-                cmd.ExecuteNonQuery();
-                var da = new SqlDataAdapter(cmd);
-                var dt = new DataTable();
-                da.Fill(dt);
-                if (dt.Rows.Count == 1)
-                {
-                    y = 1;
-                    var fr = new frm_menu ();
-                    fr.Show();
-                    cnx.Close(); cnx.Dispose();
-                }
-                else
-                {
-                    MessageBox.Show("Vous n'avez pas acces a cette application, Veuillez consulter le DSI!");
-                }
-            }
-            catch (Exception tdf)
-            {
-                MessageBox.Show("Connection failed!\n" + tdf);
-            }
-            finally
-            {
-                cnx.Close(); cnx.Dispose();
-            }
-        }
         public void charts_nombre_agent(Label nombre_agent)
         {
             cnx = new SqlConnection(prms.ToString());
