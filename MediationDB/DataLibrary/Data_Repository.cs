@@ -2114,37 +2114,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void afficher_dependents(DataGridView dtg)
-        {
-            cnx = new SqlConnection(prms.ToString());
-            try
-            {
-                if (cnx.State == ConnectionState.Closed)
-                    cnx.Open();
-                var cmd = new SqlCommand("afficher_dependents", cnx)
-                {
-                    CommandType = CommandType.StoredProcedure
-                };
-                cmd.ExecuteNonQuery();
-                var da = new SqlDataAdapter(cmd);
-                var dt = new DataTable();
-                da.Fill(dt);
-                dtg.DataSource = dt;
-            }
-            catch (Exception exct)
-            {
-                var rs = new DialogResult();
-                rs = MessageBox.Show("Want to see error code?", "Errors ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (rs == DialogResult.Yes)
-                {
-                    MessageBox.Show(exct.ToString());
-                }
-            }
-            finally
-            {
-                cnx.Close(); cnx.Dispose();
-            }
-        }
+        
         public void enregistrer_dependent(string id_dependents, string noms, DateTime date_naissance,
                         string sexe, string adresse, string id_lien, byte[] photo, string code_agent)
         {
