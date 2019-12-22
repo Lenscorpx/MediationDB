@@ -834,7 +834,7 @@ as
 	delete from t_sensibilisation
 		where num_sensibilisation like @num_sensibilisation
 go
-create procedure rechercher_sensibilisation
+create procedure search_sensibilisation
 @id_localite nvarchar(50)
 as
 	select top 50 
