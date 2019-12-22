@@ -2115,44 +2115,7 @@ namespace MediationDB.DataLibrary
             }
         }
         
-        public void enregistrer_dependent(string id_dependents, string noms, DateTime date_naissance,
-                        string sexe, string adresse, string id_lien, byte[] photo, string code_agent)
-        {
-            cnx = new SqlConnection(prms.ToString());
-            try
-            {
-                if (cnx.State == ConnectionState.Closed)
-                    cnx.Open();
-                var cmd = new SqlCommand("enregistrer_dependent", cnx)
-                {
-                    CommandType = CommandType.StoredProcedure
-                };
-                cmd.Parameters.Add(new SqlParameter("id_dependents", SqlDbType.NVarChar)).Value = id_dependents;
-                cmd.Parameters.Add(new SqlParameter("noms", SqlDbType.NVarChar)).Value = noms;
-                cmd.Parameters.Add(new SqlParameter("date_naissance", SqlDbType.Date)).Value = date_naissance;
-                cmd.Parameters.Add(new SqlParameter("sexe", SqlDbType.NVarChar)).Value = sexe;
-                cmd.Parameters.Add(new SqlParameter("adresse", SqlDbType.NVarChar)).Value = adresse;
-                cmd.Parameters.Add(new SqlParameter("id_lien", SqlDbType.NVarChar)).Value = id_lien;
-                cmd.Parameters.Add(new SqlParameter("photo", SqlDbType.Image)).Value = photo;
-                cmd.Parameters.Add(new SqlParameter("code_agent", SqlDbType.NVarChar)).Value = code_agent;
-                cmd.ExecuteNonQuery();
-                //afficher_frais(dtg);
-                MessageBox.Show("Enregistrement avec succès!", "Enregistrement", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception tdf)
-            {
-                var rs = new DialogResult();
-                rs = MessageBox.Show("Voulez vous voir le code d'erreur?", "Erreurs ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (rs == DialogResult.Yes)
-                {
-                    MessageBox.Show(tdf.ToString());
-                }
-            }
-            finally
-            {
-                cnx.Close(); cnx.Dispose();
-            }
-        }
+        
         public void supprimer_dependents(string id_dependents)
         {
             cnx = new SqlConnection(prms.ToString());
