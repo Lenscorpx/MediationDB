@@ -1855,8 +1855,6 @@ namespace MediationDB.DataLibrary
             }
         }
 
-
-
         public void recuperer_combobox_lien(MetroComboBox cbx)
         {
             cnx = new SqlConnection(prms.ToString());
