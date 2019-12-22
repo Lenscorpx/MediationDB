@@ -2012,80 +2012,8 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-
-
-
-
-
-
-
-
-
         
-        
-        public void recherche_listbox_agent(ListBox lst, string search_name)
-        {
-            cnx = new SqlConnection(prms.ToString());
-            try
-            {
-                if (cnx.State == ConnectionState.Closed)
-                    cnx.Open();
-                var cmd = new SqlCommand("recherche_listbox_agent", cnx)
-                {
-                    CommandType = CommandType.StoredProcedure
-                };
-                cmd.Parameters.Add(new SqlParameter("@searchname", SqlDbType.NVarChar)).Value = search_name;
-                cmd.ExecuteNonQuery();
-                var da = new SqlDataAdapter(cmd);
-                var dt = new DataTable();
-                da.Fill(dt);
-                lst.Items.Clear();
-                foreach (DataRow dr in dt.Rows)
-                {
-                    lst.Items.Add(Convert.ToString(dr[0]));
-                }
-            }
-            catch (Exception tdf)
-            {
-                MessageBox.Show("Connection failed!\n" + tdf);
-            }
-            finally
-            {
-                cnx.Close(); cnx.Dispose();
-            }
-        }
-        
-        
-        public void charts_nombre_enfants(Label nombre_enfant)
-        {
-            cnx = new SqlConnection(prms.ToString());
-            try
-            {
-                if (cnx.State == ConnectionState.Closed)
-                    cnx.Open();
-                var cmd = new SqlCommand("charts_nombre_enfants", cnx)
-                {
-                    CommandType = CommandType.StoredProcedure
-                };
-                cmd.ExecuteNonQuery();
-                var da = new SqlDataAdapter(cmd);
-                var dt = new DataTable();
-                da.Fill(dt);
-                foreach (DataRow dr in dt.Rows)
-                {
-                    nombre_enfant.Text = Convert.ToString(dr[0]);
-                    cnx.Close(); cnx.Dispose();
-                }
-            }
-            catch (Exception tdf)
-            {
-                MessageBox.Show("Connection failed!\n" + tdf);
-            }
-            finally
-            {
-                cnx.Close(); cnx.Dispose();
-            }
-        }
+       
         public void charts_nombre_familles(Label nombre_famille)
         {
             cnx = new SqlConnection(prms.ToString());
