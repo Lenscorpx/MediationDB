@@ -2114,37 +2114,6 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void rechercher_code_agent(MaterialSingleLineTextField txt, string search_name)
-        {
-            cnx = new SqlConnection(prms.ToString());
-            try
-            {
-                if (cnx.State == ConnectionState.Closed)
-                    cnx.Open();
-                var cmd = new SqlCommand("rechercher_code_agent", cnx)
-                {
-                    CommandType = CommandType.StoredProcedure
-                };
-                cmd.Parameters.Add(new SqlParameter("noms", SqlDbType.NVarChar)).Value = search_name;
-                cmd.ExecuteNonQuery();
-                var da = new SqlDataAdapter(cmd);
-                var dt = new DataTable();
-                da.Fill(dt);
-                txt.Clear();
-                foreach (DataRow dr in dt.Rows)
-                {
-                    txt.Text = Convert.ToString(dr[0]);
-                }
-            }
-            catch (Exception tdf)
-            {
-                MessageBox.Show("Connection failed!\n" + tdf);
-            }
-            finally
-            {
-                cnx.Close(); cnx.Dispose();
-            }
-        }
         public void afficher_dependents(DataGridView dtg)
         {
             cnx = new SqlConnection(prms.ToString());
