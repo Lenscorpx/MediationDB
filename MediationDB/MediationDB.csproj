@@ -155,6 +155,12 @@
     <Compile Include="FormLibrary\frm_resolutions.Designer.cs">
       <DependentUpon>frm_resolutions.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLibrary\frm_search_sensibilisation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_search_sensibilisation.Designer.cs">
+      <DependentUpon>frm_search_sensibilisation.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLibrary\frm_situation_menage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -219,6 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_resolutions.resx">
       <DependentUpon>frm_resolutions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_search_sensibilisation.resx">
+      <DependentUpon>frm_search_sensibilisation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_situation_menage.resx">
       <DependentUpon>frm_situation_menage.cs</DependentUpon>
