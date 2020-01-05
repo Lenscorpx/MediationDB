@@ -783,6 +783,19 @@ as
         where num_mediation = @num_mediation
 go
 ------------------------------Fin codes de mediation-----------------------------------------------------------------
+create table t_documents
+(
+    num_doc int identity,
+    date_enregistrement date,
+    titre_document nvarchar(50),
+    num_mediation int,
+    file_location nvarchar(max),
+    type_fichcier nvarchar(50),
+    file_description nvarchar(100),
+    constraint pk_primary primary key(num_doc),
+    constraint fk_mediation_document foreign key(num_mediation) references t_mediation(num_mediation)
+)
+go
 ------------------------------Debut codes sensibilisation -----------------------------------------------------------
 create table t_sensibilisation
 (
