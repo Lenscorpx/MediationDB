@@ -22,7 +22,6 @@ namespace MediationDB.DataLibrary
             //prms.Nom_user = "LensX";
             //prms.Mot_de_passe = "Cony@2017.com?";
             //prms.Serveur = "JOHNSEVEN";
-            //prms.Nom_user = "sa";
             prms.Serveur = "DESKTOP-PO0I2OH";
             prms.Base_de_donnees = "db_mediator";
             prms.Nom_user = "sa";
