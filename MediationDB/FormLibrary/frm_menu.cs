@@ -194,5 +194,11 @@ namespace MediationDB.FormLibrary
         {
             
         }
+
+        private void btn_ateliers_Click(object sender, EventArgs e)
+        {
+            var fr = new frm_search_ateliers();
+            fr.ShowDialog();
+        }
     }
 }
