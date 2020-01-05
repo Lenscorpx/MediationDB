@@ -783,6 +783,19 @@ as
         where num_mediation = @num_mediation
 go
 ------------------------------Fin codes de mediation-----------------------------------------------------------------
+create table t_documents
+(
+    num_doc int identity,
+    date_enregistrement date,
+    titre_document nvarchar(50),
+    num_mediation int,
+    file_location nvarchar(max),
+    type_fichcier nvarchar(50),
+    file_description nvarchar(100),
+    constraint pk_primary primary key(num_doc),
+    constraint fk_mediation_document foreign key(num_mediation) references t_mediation(num_mediation)
+)
+go
 ------------------------------Debut codes sensibilisation -----------------------------------------------------------
 create table t_sensibilisation
 (
@@ -963,3 +976,93 @@ create table t_logs
 	constraint fk_logs_logged foreign key(num_login) references t_login(num_login) on delete cascade on update cascade
 )
 go
+-------------------------------------Debut des procedures rapports ------------------------------------------------------------------
+create procedure afficher_ateliers_sensibilises
+as
+	select 
+		t_sensibilisation.num_sensibilisation as 'Num. Sensibilisation', 
+		t_sensibilisation.date_debut as 'Debut Sensib.',
+		t_sensibilisation.date_fin as 'Fin Sensib',
+		t_sensibilisation.id_localite as 'Localité',
+		t_atelier.id_atelier as 'Num Atelier',
+		t_atelier.theme_developpe as 'Thème developpé', 
+		t_participation_atelier.num_participation as 'Num. Part.',
+		t_participation_atelier.date_atelier as 'Date Atelier',
+		t_participation_atelier.nom_sensibilisateur as 'Sensibilisateur'
+	from            
+		t_sensibilisation inner join t_participation_atelier on
+			t_sensibilisation.num_sensibilisation = t_participation_atelier.num_sensibilisation inner join 
+				t_atelier on t_participation_atelier.id_atelier = t_atelier.id_atelier
+	order by 
+		t_participation_atelier.date_atelier desc
+
+go
+create procedure rechercher_ateliers_sensibilises_par_dates
+@date_debut date,
+@date_fin date
+as
+	select 
+		t_sensibilisation.num_sensibilisation as 'Num. Sensibilisation', 
+		t_sensibilisation.date_debut as 'Debut Sensib.',
+		t_sensibilisation.date_fin as 'Fin Sensib',
+		t_sensibilisation.id_localite as 'Localité',
+		t_atelier.id_atelier as 'Num Atelier',
+		t_atelier.theme_developpe as 'Thème developpé', 
+		t_participation_atelier.num_participation as 'Num. Part.',
+		t_participation_atelier.date_atelier as 'Date Atelier',
+		t_participation_atelier.nom_sensibilisateur as 'Sensibilisateur'
+	from            
+		t_sensibilisation inner join t_participation_atelier on
+			t_sensibilisation.num_sensibilisation = t_participation_atelier.num_sensibilisation inner join 
+				t_atelier on t_participation_atelier.id_atelier = t_atelier.id_atelier
+	where
+		t_participation_atelier.date_atelier between @date_debut and @date_fin
+	order by 
+		t_participation_atelier.date_atelier desc
+go
+create procedure rechercher_ateliers_sensibilises_par_themes
+@theme nvarchar(50)
+as
+	select 
+		t_sensibilisation.num_sensibilisation as 'Num. Sensibilisation', 
+		t_sensibilisation.date_debut as 'Debut Sensib.',
+		t_sensibilisation.date_fin as 'Fin Sensib',
+		t_sensibilisation.id_localite as 'Localité',
+		t_atelier.id_atelier as 'Num Atelier',
+		t_atelier.theme_developpe as 'Thème developpé', 
+		t_participation_atelier.num_participation as 'Num. Part.',
+		t_participation_atelier.date_atelier as 'Date Atelier',
+		t_participation_atelier.nom_sensibilisateur as 'Sensibilisateur'
+	from            
+		t_sensibilisation inner join t_participation_atelier on
+			t_sensibilisation.num_sensibilisation = t_participation_atelier.num_sensibilisation inner join 
+				t_atelier on t_participation_atelier.id_atelier = t_atelier.id_atelier
+	where
+		t_atelier.theme_developpe like '%' + @theme + '%'
+	order by 
+		t_participation_atelier.date_atelier desc
+go
+create procedure rechercher_ateliers_sensibilises_par_localite
+@localite nvarchar(50)
+as
+	select 
+		t_sensibilisation.num_sensibilisation as 'Num. Sensibilisation', 
+		t_sensibilisation.date_debut as 'Debut Sensib.',
+		t_sensibilisation.date_fin as 'Fin Sensib',
+		t_sensibilisation.id_localite as 'Localité',
+		t_atelier.id_atelier as 'Num Atelier',
+		t_atelier.theme_developpe as 'Thème developpé', 
+		t_participation_atelier.num_participation as 'Num. Part.',
+		t_participation_atelier.date_atelier as 'Date Atelier',
+		t_participation_atelier.nom_sensibilisateur as 'Sensibilisateur'
+	from            
+		t_sensibilisation inner join t_participation_atelier on
+			t_sensibilisation.num_sensibilisation = t_participation_atelier.num_sensibilisation inner join 
+				t_atelier on t_participation_atelier.id_atelier = t_atelier.id_atelier
+	where
+		t_sensibilisation.id_localite like '%' + @localite + '%'
+	order by 
+		t_participation_atelier.date_atelier desc
+go
+
+
