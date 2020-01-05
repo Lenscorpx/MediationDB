@@ -24,7 +24,6 @@ namespace MediationDB.DataLibrary
             //prms.Serveur = "JOHNSEVEN";
             //prms.Base_de_donnees = "db_kkdependants";
             //prms.Nom_user = "sa";
-            //prms.Mot_de_passe = "123456789";
             prms.Serveur = "DESKTOP-PO0I2OH";
             prms.Base_de_donnees = "db_mediator";
             prms.Nom_user = "sa";
