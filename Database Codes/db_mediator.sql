@@ -997,6 +997,11 @@ as
 		t_participation_atelier.date_atelier desc
 
 go
-create procedure rechercher_ateliers_sensibilises
+create procedure rechercher_ateliers_sensibilises_par_dates
+@date_debut date,
+@date_fin date
+as
+	
+
 
 
