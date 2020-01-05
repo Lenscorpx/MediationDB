@@ -1001,7 +1001,22 @@ create procedure rechercher_ateliers_sensibilises_par_dates
 @date_debut date,
 @date_fin date
 as
-	
+	select 
+		t_sensibilisation.num_sensibilisation as 'Num. Sensibilisation', 
+		t_sensibilisation.date_debut as 'Debut Sensib.',
+		t_sensibilisation.date_fin as 'Fin Sensib',
+		t_sensibilisation.id_localite as 'Localité',
+		t_atelier.id_atelier as 'Num Atelier',
+		t_atelier.theme_developpe as 'Thème developpé', 
+		t_participation_atelier.num_participation as 'Num. Part.',
+		t_participation_atelier.date_atelier as 'Date Atelier',
+		t_participation_atelier.nom_sensibilisateur as 'Sensibilisateur'
+	from            
+		t_sensibilisation inner join t_participation_atelier on
+			t_sensibilisation.num_sensibilisation = t_participation_atelier.num_sensibilisation inner join 
+				t_atelier on t_participation_atelier.id_atelier = t_atelier.id_atelier
+	order by 
+		t_participation_atelier.date_atelier desc
 
 
 
