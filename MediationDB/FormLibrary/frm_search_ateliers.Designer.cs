@@ -28,8 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.label1 = new System.Windows.Forms.Label();
+            this.txt_id_localite = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,23 +54,52 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(453, 12);
+            this.label1.Location = new System.Drawing.Point(452, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(390, 36);
             this.label1.TabIndex = 3;
             this.label1.Text = "Informations sur les ateliers";
+            // 
+            // txt_id_localite
+            // 
+            this.txt_id_localite.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_id_localite.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_id_localite.ForeColor = System.Drawing.Color.White;
+            this.txt_id_localite.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_id_localite.HintText = "Recherchez une localité";
+            this.txt_id_localite.isPassword = false;
+            this.txt_id_localite.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.txt_id_localite.LineIdleColor = System.Drawing.Color.White;
+            this.txt_id_localite.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.txt_id_localite.LineThickness = 2;
+            this.txt_id_localite.Location = new System.Drawing.Point(40, 72);
+            this.txt_id_localite.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_id_localite.Name = "txt_id_localite";
+            this.txt_id_localite.Size = new System.Drawing.Size(433, 44);
+            this.txt_id_localite.TabIndex = 31;
+            this.txt_id_localite.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this;
+            this.bunifuDragControl1.Vertical = true;
             // 
             // frm_search_ateliers
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.ClientSize = new System.Drawing.Size(1300, 714);
+            this.Controls.Add(this.txt_id_localite);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bunifuImageButton1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "frm_search_ateliers";
+            this.Opacity = 0.97D;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -77,5 +109,7 @@
         #endregion
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private System.Windows.Forms.Label label1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_id_localite;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }
