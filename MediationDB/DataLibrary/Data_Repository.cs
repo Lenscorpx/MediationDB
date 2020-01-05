@@ -21,7 +21,6 @@ namespace MediationDB.DataLibrary
             //prms.Serveur = "tcp:conebase.database.windows.net";                    
             //prms.Nom_user = "LensX";
             //prms.Mot_de_passe = "Cony@2017.com?";
-            //prms.Serveur = "JOHNSEVEN";
             prms.Serveur = "DESKTOP-PO0I2OH";
             prms.Base_de_donnees = "db_mediator";
             prms.Nom_user = "sa";
