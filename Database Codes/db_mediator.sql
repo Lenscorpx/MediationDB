@@ -1015,8 +1015,11 @@ as
 		t_sensibilisation inner join t_participation_atelier on
 			t_sensibilisation.num_sensibilisation = t_participation_atelier.num_sensibilisation inner join 
 				t_atelier on t_participation_atelier.id_atelier = t_atelier.id_atelier
+	where
+		t_participation_atelier.date_atelier between @date_debut and @date_fin
 	order by 
 		t_participation_atelier.date_atelier desc
+go
 
 
 
