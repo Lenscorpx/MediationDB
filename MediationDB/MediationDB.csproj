@@ -83,6 +83,12 @@
     </Compile>
     <Compile Include="DataLibrary\Data_Repository.cs" />
     <Compile Include="DataLibrary\Params.cs" />
+    <Compile Include="FormLibrary\frm_atelier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_atelier.Designer.cs">
+      <DependentUpon>frm_atelier.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLibrary\frm_causes_conflit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -195,6 +201,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ControlLibrary\uc_menage.resx">
       <DependentUpon>uc_menage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_atelier.resx">
+      <DependentUpon>frm_atelier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_causes_conflit.resx">
       <DependentUpon>frm_causes_conflit.cs</DependentUpon>
@@ -341,6 +350,10 @@
     <Content Include="LOGO-SCC-2019-PNG.ico" />
     <Content Include="mediationlogo.ico" />
     <Content Include="mediator.ico" />
+    <None Include="Resources\modifier.png" />
+    <None Include="Resources\observation.png" />
+    <None Include="Resources\ateliers.png" />
+    <None Include="Resources\participants.png" />
     <None Include="Resources\help_96px.png" />
     <None Include="Resources\typesdeconflit.png" />
     <None Include="Resources\location_96px1.png" />

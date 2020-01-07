@@ -127,8 +127,8 @@
   <data name="vulnera" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vulnera.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cancel_80px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cancel_80px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="participants" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\participants.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="location_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\location_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,6 +154,9 @@
   <data name="courthouse_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\courthouse_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="observation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\observation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="group_foreground_selected_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\group_foreground_selected_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -162,6 +165,9 @@
   </data>
   <data name="speaker_notes_80px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\speaker_notes_80px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mediator" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mediator.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,11 +196,14 @@
   <data name="types de parties" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\types de parties.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="speed_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\speed_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="organization_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\organization_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="speed_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\speed_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cancel_80px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancel_80px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="users" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\users.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,14 +235,14 @@
   <data name="location_96px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\location_96px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="scales_104px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\scales_104px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ateliers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ateliers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="presentation_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\presentation_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="edit_property_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\edit_property_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="scales_104px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\scales_104px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="handshake_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\handshake_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -250,11 +259,14 @@
   <data name="idea_sharing_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\idea_sharing_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="add_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="collaboration_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\collaboration_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LOGO-SCC-2019-PNG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LOGO-SCC-2019-PNG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_property_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit_property_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mediateurs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mediateurs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -289,8 +301,8 @@
   <data name="sensibilisation" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sensibilisation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="collaboration_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\collaboration_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="add_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="menages" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menages.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -298,7 +310,7 @@
   <data name="resolutions" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\resolutions.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="help_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\help_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="modifier" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\modifier.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
