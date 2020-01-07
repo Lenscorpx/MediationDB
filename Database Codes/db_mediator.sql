@@ -887,17 +887,21 @@ create table t_participation_atelier
     num_participation int identity,
     date_atelier date,
     num_sensibilisation int,
-    id_participant nvarchar(50),
     id_atelier nvarchar(50),
     nom_sensibilisateur nvarchar(50),
-    id_etat_part nvarchar(50), 
+	lieu_organisation nvarchar(50),
     constraint pk_participation_atelier primary key(num_participation),
     constraint fk_atelier_participation foreign key(id_atelier) references t_atelier(id_atelier),
-    constraint fk_sensibilisation_participation foreign key(num_sensibilisation) references t_sensibilisation(num_sensibilisation),
-    constraint fk_participant_part foreign key(id_participant) references t_participants(id_participant),
-    constraint fk_etat_part foreign key(id_etat_part) references t_etat_participant(id_etat_part)
+    constraint fk_sensibilisation_participation foreign key(num_sensibilisation) references t_sensibilisation(num_sensibilisation)
 )
 go
+create table t_liste_participants_ateliers
+(	
+	num_ordre int identity,
+	num_participation int,
+	id_participant nvarchar(50),
+	id_etat_part nvarchar(50),
+)
 create table t_atelier_masse
 (
     num_atelier_masse int identity,
@@ -1064,5 +1068,3 @@ as
 	order by 
 		t_participation_atelier.date_atelier desc
 go
-
-
