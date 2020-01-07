@@ -13,14 +13,48 @@ create table t_pays
     constraint pk_pays primary key(code_pays)
 )
 go
+	insert into t_pays
+		(code_pays, nom_pays_eng, nom_pays_fr, capitale)
+	values
+		('+243','Democratic Republic of Congo','Republique Democratique du Congo','Kinshasa')
+go
 create table t_province
 (
-    id_province nvarchar(50),
-    descr_province nvarchar(100),
-    code_pays nvarchar(50),
-    constraint pk_province primary key (id_province),
-    constraint fk_pays foreign key(code_pays) references t_pays(code_pays)
+	id_province nvarchar(50),
+	descr_province nvarchar(100),
+	code_pays nvarchar(50),
+	constraint pk_province primary key (id_province),
+	constraint fk_pays foreign key(code_pays) references t_pays(code_pays)
 )
+go
+	insert into t_province
+		(id_province,descr_province,code_pays)
+	values
+		('Nord Kivu', 'Province du Nord Kivu','+243'),
+		('Sud Kivu', 'Province du Sud Kivu','+243'),
+		('Sud Ubangi', 'Province du Sud Ubangi','+243'),
+		('Nord Ubangi', 'Province du Nord Ubangi','+243'),
+		('Nord Uele', 'Province du Nord Uele','+243'),
+		('SUd Uele', 'Province du Sud Uele','+243'),
+		('Ituri', 'Province Ituri','+243'),
+		('Maniema', 'Province du Maniema','+243'),
+		('Kinshasa', 'Province de Kinshasa','+243'),
+		('Kongo Central', 'Province du Kongo Central','+243'),
+		('Kasai Central', 'Province du Kasai Central','+243'),
+		('Kasai Oriental', 'Province du Kasai Oriental','+243'),
+		('Lualaba', 'Province du Lualaba','+243'),
+		('Haut Katanga', 'Province du Haut Katanga','+243'),
+		('Tanganyika', 'Province du Tanganyika','+243'),
+		('Kwango', 'Province du Kwango','+243'),
+		('Mai Ndombe', 'Province du Mai Ndombe','+243'),
+		('Tshopo', 'Province du Tshopo','+243'),
+		('Tshuapa', 'Province du Tshuapa','+243'),
+		('Kwilu', 'Province du Kwilu','+243'),
+		('Sankuru', 'Province du Sankuru','+243'),
+		('Mongala', 'Province du Mongala','+243'),
+		('Lomami', 'Province du Lomami','+243'),
+		('Haut Lomami', 'Province du Haut Lomami','+243'),
+		('Equateur', 'Province Equateur','+243')
 go
 create table t_territoire
 (
@@ -31,6 +65,18 @@ create table t_territoire
     constraint fk_province foreign key(id_province) references t_province(id_province)
 )
 go
+	insert into t_territoire
+		(id_territoire,descr_territoire,id_province)
+	values
+		('Goma','Ville de Goma','Nord Kivu'),
+		('Nyiragongo','Territoire de Nyiragongo','Nord Kivu'),
+		('Butembo','Ville de Butembo','Nord Kivu'),
+		('Lubero','Territoire de Lubero','Nord Kivu'),
+		('Rutshuru','Territoire de Rutshure','Nord Kivu'),
+		('Masisi','Territoire de Masisi','Nord Kivu'),
+		('Walikale','Territoire de Walikale','Nord Kivu'),
+		('Beni','Ville de Beni','Nord Kivu')
+go
 create table t_chefferie
 (
     id_chefferie nvarchar(50),
@@ -40,6 +86,13 @@ create table t_chefferie
     constraint fk_territoire foreign key(id_territoire) references t_territoire(id_territoire)
 )
 go
+	insert into t_chefferie
+	values
+		('Bashali','Chefferie de Bashali','Masisi'),
+		('Bwisha','Chefferie de Bwisha','Rutshuru'),
+		('Bwito','Chefferie de Bwito','Rutshuru'),
+		('Wanianga','Chefferie de Wanianga','Walikale')
+go
 create table t_groupement
 (
     id_groupement nvarchar(50),
@@ -48,6 +101,16 @@ create table t_groupement
     constraint pk_groupement primary key(id_groupement),
     constraint fk_chefferie foreign key(id_chefferie) references t_chefferie(id_chefferie)
 )
+go
+	insert into t_groupement
+	values
+		('Bashali Mukoto','Groupement de Bashali Mukoto','Bashali'),
+		('Bashali Kaembe','Groupement de Bashali Kaembe','Bashali'),
+		('Bukombo','Groupement de Bukombo','Bwito'),
+		('Mutanda','Groupement de Mutanda','Bwito'),
+		('Bishusha','Groupement de Bishusha','Bwito'),
+		('Kihondo','Groupement de Kihondo','Bwito'),
+		('Kitshimba','Groupement de Kitshimba','Wanianga')
 go
 --------------------------Debut codes localite-----------------------------------------------------------
 create table t_localite
@@ -59,6 +122,33 @@ create table t_localite
     constraint fk_groupement foreign key(id_groupement) references t_groupement(id_groupement)
 )
 go
+	insert into t_localite
+	values
+		('Burungu','Localite de Burungu','Bashali Kaembe'),
+		('Nyamitaba','Localite de Nyamitaba','Bashali Kaembe'),
+		('Kitshanga','Localite de Kitshanga','Bashali Mukoto'),
+		('Muhanga','Localite de Muhanga','Bashali Mukoto'),
+		('Mweso','Localite de Mweso','Bashali Mukoto'),
+		('Kalembe','Localite de Kalembe','Bashali Mukoto'),
+		('Kirumbu','Localite de Kirumbu','Bashali Mukoto'),
+		('Busumba/lupfunda','Localite de Busumba/lupfunda','Bashali Mukoto'),
+		('Butole','Localite de Butole','Bashali Mukoto'),
+		('Kahira','Localite de Kahira','Bashali Mukoto'),
+		('Nyange','Localite de Nyange','Bashali Mukoto'),
+		('Bushimoo','Localite de Bushimoo','Bashali Mukoto'),
+		('Kalungu','Localite de Kalungu','Bashali Mukoto'),
+		('Bulende','Localite de Bulende','Bashali Mukoto'),
+		('Kitshimba','Localite de Kitshimba','Bishusha'),
+		('Katsiru','Localite de Katsiru','Kihondo'),
+		('Nyanzale','Localite de Nyanzale','Mutanda'),
+		('Kishishe','Localite de Kishishe','Mutanda'),
+		('Pinga','Localite de Pinga','Kitshimba'),
+		('Katsiru de Bukombo','Localite de Katsiru','Bukombo'),
+		('Kyahemba','Localite de Kyahemba','Bukombo'),
+		('CISA','Localite de CISA','Bukombo'),
+		('Mubirubiru','Localite de Mubirubiru','Bukombo')
+go
+
 create procedure recuperer_localite
 as
     select top 50 id_localite from t_localite
@@ -901,7 +991,12 @@ create table t_liste_participants_ateliers
 	num_participation int,
 	id_participant nvarchar(50),
 	id_etat_part nvarchar(50),
+	constraint pk_liste_participants primary key(num_ordre),
+	constraint fk_participant_liste foreign key(id_participant) references t_participants(id_participant),
+	constraint fk_etat_participant foreign key(id_etat_part) references t_etat_participant(id_etat_part),
+	constraint fk_particpation_liste foreign key(num_participation) references t_participation_atelier(num_participation)
 )
+go
 create table t_atelier_masse
 (
     num_atelier_masse int identity,
