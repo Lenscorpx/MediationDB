@@ -1,4 +1,7 @@
 use master;
+go
+drop database db_mediator
+go
 if not exists(select * from sys.databases where name='db_mediator')
 	create database db_mediator;
 go
@@ -7,7 +10,7 @@ go
 create table t_pays
 (
     code_pays nvarchar(50),
-    nom_pays_eng nvarchar(50),s
+    nom_pays_eng nvarchar(50),
     nom_pays_fr nvarchar(50),
     capitale nvarchar(50),
     constraint pk_pays primary key(code_pays)
