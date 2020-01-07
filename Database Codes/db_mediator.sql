@@ -7,7 +7,7 @@ go
 create table t_pays
 (
     code_pays nvarchar(50),
-    nom_pays_eng nvarchar(50),
+    nom_pays_eng nvarchar(50),s
     nom_pays_fr nvarchar(50),
     capitale nvarchar(50),
     constraint pk_pays primary key(code_pays)
@@ -985,14 +985,14 @@ create table t_participation_atelier
     constraint fk_sensibilisation_participation foreign key(num_sensibilisation) references t_sensibilisation(num_sensibilisation)
 )
 go
-create table t_liste_participants_ateliers
+create table t_details_participation
 (	
 	num_ordre int identity,
 	num_participation int,
 	id_participant nvarchar(50),
 	id_etat_part nvarchar(50),
-	constraint pk_liste_participants primary key(num_ordre),
-	constraint fk_participant_liste foreign key(id_participant) references t_participants(id_participant),
+	constraint pk_details_participation primary key(num_ordre),
+	constraint fk_participation_part foreign key(id_participant) references t_participants(id_participant),
 	constraint fk_etat_participant foreign key(id_etat_part) references t_etat_participant(id_etat_part),
 	constraint fk_particpation_liste foreign key(num_participation) references t_participation_atelier(num_participation)
 )
