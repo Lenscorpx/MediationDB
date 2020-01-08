@@ -200,5 +200,15 @@ namespace MediationDB.FormLibrary
             var fr = new frm_search_ateliers();
             fr.ShowDialog();
         }
+
+        private void panel1_Paint_2(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btn_menages_Click(object sender, EventArgs e)
+        {
+            //var fr=new 
+        }
     }
 }
