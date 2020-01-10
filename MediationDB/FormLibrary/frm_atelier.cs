@@ -19,7 +19,7 @@ namespace MediationDB.FormLibrary
 
         private void bunifuImageButton2_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }
