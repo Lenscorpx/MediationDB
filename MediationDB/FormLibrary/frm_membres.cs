@@ -21,5 +21,10 @@ namespace MediationDB.FormLibrary
         {
             this.Close();
         }
+
+        private void bunifuCustomDataGrid2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
