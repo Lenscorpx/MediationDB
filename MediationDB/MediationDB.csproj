@@ -161,6 +161,12 @@
     <Compile Include="FormLibrary\frm_objet_conflit.Designer.cs">
       <DependentUpon>frm_objet_conflit.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLibrary\frm_organisation_atelier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_organisation_atelier.Designer.cs">
+      <DependentUpon>frm_organisation_atelier.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLibrary\frm_resolutions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -246,6 +252,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_objet_conflit.resx">
       <DependentUpon>frm_objet_conflit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_organisation_atelier.resx">
+      <DependentUpon>frm_organisation_atelier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_resolutions.resx">
       <DependentUpon>frm_resolutions.cs</DependentUpon>
@@ -359,6 +368,7 @@
     <Content Include="LOGO-SCC-2019-PNG.ico" />
     <Content Include="mediationlogo.ico" />
     <Content Include="mediator.ico" />
+    <None Include="Resources\schedule_104px.png" />
     <None Include="Resources\modifier.png" />
     <None Include="Resources\observation.png" />
     <None Include="Resources\ateliers.png" />
