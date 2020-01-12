@@ -33,5 +33,10 @@ namespace MediationDB.FormLibrary
         {
 
         }
+
+        private void btn_rechercher_Click(object sender, EventArgs e)
+        {
+            rps.rechercher_ateliers_sensibilises_par_dates(bunifuCustomDataGrid2, dt_debut.Value, dt_fin.Value);
+        }
     }
 }
