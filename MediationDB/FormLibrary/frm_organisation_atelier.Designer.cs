@@ -38,10 +38,10 @@
             this.bunifuCustomDataGrid2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.txt_num_participation = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txt_num_sensibilisation = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox3 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_noms_sensibilisateur = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_lieu_organisation = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txt_theme_descr = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.dt_debut = new MetroFramework.Controls.MetroDateTime();
+            this.date_participation = new MetroFramework.Controls.MetroDateTime();
             this.cbx_themes = new MetroFramework.Controls.MetroComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).BeginInit();
@@ -146,10 +146,10 @@
             this.txt_num_participation.LineIdleColor = System.Drawing.Color.White;
             this.txt_num_participation.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_num_participation.LineThickness = 2;
-            this.txt_num_participation.Location = new System.Drawing.Point(24, 68);
+            this.txt_num_participation.Location = new System.Drawing.Point(36, 139);
             this.txt_num_participation.Margin = new System.Windows.Forms.Padding(4);
             this.txt_num_participation.Name = "txt_num_participation";
-            this.txt_num_participation.Size = new System.Drawing.Size(311, 44);
+            this.txt_num_participation.Size = new System.Drawing.Size(279, 44);
             this.txt_num_participation.TabIndex = 74;
             this.txt_num_participation.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -165,50 +165,50 @@
             this.txt_num_sensibilisation.LineIdleColor = System.Drawing.Color.White;
             this.txt_num_sensibilisation.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_num_sensibilisation.LineThickness = 2;
-            this.txt_num_sensibilisation.Location = new System.Drawing.Point(357, 68);
+            this.txt_num_sensibilisation.Location = new System.Drawing.Point(36, 191);
             this.txt_num_sensibilisation.Margin = new System.Windows.Forms.Padding(4);
             this.txt_num_sensibilisation.Name = "txt_num_sensibilisation";
-            this.txt_num_sensibilisation.Size = new System.Drawing.Size(311, 44);
+            this.txt_num_sensibilisation.Size = new System.Drawing.Size(279, 44);
             this.txt_num_sensibilisation.TabIndex = 75;
             this.txt_num_sensibilisation.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // bunifuMaterialTextbox2
+            // txt_noms_sensibilisateur
             // 
-            this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuMaterialTextbox2.HintText = "Recherchez une localité";
-            this.bunifuMaterialTextbox2.isPassword = false;
-            this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuMaterialTextbox2.LineThickness = 2;
-            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(24, 172);
-            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
-            this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(311, 44);
-            this.bunifuMaterialTextbox2.TabIndex = 76;
-            this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_noms_sensibilisateur.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_noms_sensibilisateur.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_noms_sensibilisateur.ForeColor = System.Drawing.Color.White;
+            this.txt_noms_sensibilisateur.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_noms_sensibilisateur.HintText = "Entrez le nom du sensibilisateur";
+            this.txt_noms_sensibilisateur.isPassword = false;
+            this.txt_noms_sensibilisateur.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.txt_noms_sensibilisateur.LineIdleColor = System.Drawing.Color.White;
+            this.txt_noms_sensibilisateur.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.txt_noms_sensibilisateur.LineThickness = 2;
+            this.txt_noms_sensibilisateur.Location = new System.Drawing.Point(435, 190);
+            this.txt_noms_sensibilisateur.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_noms_sensibilisateur.Name = "txt_noms_sensibilisateur";
+            this.txt_noms_sensibilisateur.Size = new System.Drawing.Size(479, 44);
+            this.txt_noms_sensibilisateur.TabIndex = 76;
+            this.txt_noms_sensibilisateur.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // bunifuMaterialTextbox3
+            // txt_lieu_organisation
             // 
-            this.bunifuMaterialTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox3.ForeColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox3.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuMaterialTextbox3.HintText = "Recherchez une localité";
-            this.bunifuMaterialTextbox3.isPassword = false;
-            this.bunifuMaterialTextbox3.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuMaterialTextbox3.LineIdleColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuMaterialTextbox3.LineThickness = 2;
-            this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(24, 224);
-            this.bunifuMaterialTextbox3.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox3.Name = "bunifuMaterialTextbox3";
-            this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(311, 44);
-            this.bunifuMaterialTextbox3.TabIndex = 77;
-            this.bunifuMaterialTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_lieu_organisation.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_lieu_organisation.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_lieu_organisation.ForeColor = System.Drawing.Color.White;
+            this.txt_lieu_organisation.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_lieu_organisation.HintText = "Entrez le lieu d\'organisation";
+            this.txt_lieu_organisation.isPassword = false;
+            this.txt_lieu_organisation.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.txt_lieu_organisation.LineIdleColor = System.Drawing.Color.White;
+            this.txt_lieu_organisation.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.txt_lieu_organisation.LineThickness = 2;
+            this.txt_lieu_organisation.Location = new System.Drawing.Point(922, 191);
+            this.txt_lieu_organisation.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_lieu_organisation.Name = "txt_lieu_organisation";
+            this.txt_lieu_organisation.Size = new System.Drawing.Size(297, 44);
+            this.txt_lieu_organisation.TabIndex = 77;
+            this.txt_lieu_organisation.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // txt_theme_descr
             // 
@@ -222,22 +222,22 @@
             this.txt_theme_descr.LineIdleColor = System.Drawing.Color.White;
             this.txt_theme_descr.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_theme_descr.LineThickness = 2;
-            this.txt_theme_descr.Location = new System.Drawing.Point(409, 211);
+            this.txt_theme_descr.Location = new System.Drawing.Point(435, 138);
             this.txt_theme_descr.Margin = new System.Windows.Forms.Padding(4);
             this.txt_theme_descr.Name = "txt_theme_descr";
-            this.txt_theme_descr.Size = new System.Drawing.Size(311, 44);
+            this.txt_theme_descr.Size = new System.Drawing.Size(784, 44);
             this.txt_theme_descr.TabIndex = 78;
             this.txt_theme_descr.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // dt_debut
+            // date_participation
             // 
-            this.dt_debut.Location = new System.Drawing.Point(553, 343);
-            this.dt_debut.MinimumSize = new System.Drawing.Size(0, 29);
-            this.dt_debut.Name = "dt_debut";
-            this.dt_debut.Size = new System.Drawing.Size(195, 29);
-            this.dt_debut.Style = MetroFramework.MetroColorStyle.Blue;
-            this.dt_debut.TabIndex = 79;
-            this.dt_debut.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.date_participation.Location = new System.Drawing.Point(36, 102);
+            this.date_participation.MinimumSize = new System.Drawing.Size(0, 29);
+            this.date_participation.Name = "date_participation";
+            this.date_participation.Size = new System.Drawing.Size(279, 29);
+            this.date_participation.Style = MetroFramework.MetroColorStyle.Blue;
+            this.date_participation.TabIndex = 79;
+            this.date_participation.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // cbx_themes
             // 
@@ -246,10 +246,10 @@
             this.cbx_themes.ForeColor = System.Drawing.Color.White;
             this.cbx_themes.FormattingEnabled = true;
             this.cbx_themes.ItemHeight = 23;
-            this.cbx_themes.Location = new System.Drawing.Point(357, 147);
+            this.cbx_themes.Location = new System.Drawing.Point(321, 102);
             this.cbx_themes.Name = "cbx_themes";
             this.cbx_themes.PromptText = "Choisissez le theme de l\'atelier";
-            this.cbx_themes.Size = new System.Drawing.Size(319, 29);
+            this.cbx_themes.Size = new System.Drawing.Size(311, 29);
             this.cbx_themes.Style = MetroFramework.MetroColorStyle.Blue;
             this.cbx_themes.TabIndex = 80;
             this.cbx_themes.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -261,10 +261,10 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.ClientSize = new System.Drawing.Size(1300, 714);
             this.Controls.Add(this.cbx_themes);
-            this.Controls.Add(this.dt_debut);
+            this.Controls.Add(this.date_participation);
             this.Controls.Add(this.txt_theme_descr);
-            this.Controls.Add(this.bunifuMaterialTextbox3);
-            this.Controls.Add(this.bunifuMaterialTextbox2);
+            this.Controls.Add(this.txt_lieu_organisation);
+            this.Controls.Add(this.txt_noms_sensibilisateur);
             this.Controls.Add(this.txt_num_sensibilisation);
             this.Controls.Add(this.txt_num_participation);
             this.Controls.Add(this.bunifuCustomDataGrid2);
@@ -289,10 +289,10 @@
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid2;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_num_participation;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_num_sensibilisation;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox3;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_noms_sensibilisateur;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_lieu_organisation;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_theme_descr;
-        private MetroFramework.Controls.MetroDateTime dt_debut;
+        private MetroFramework.Controls.MetroDateTime date_participation;
         private MetroFramework.Controls.MetroComboBox cbx_themes;
     }
 }
