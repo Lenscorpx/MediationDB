@@ -36,8 +36,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuCustomDataGrid2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.txt_id_localite = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_num_participation = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_num_sensibilisation = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuMaterialTextbox3 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuMaterialTextbox4 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -134,43 +134,43 @@
             this.bunifuCustomDataGrid2.Size = new System.Drawing.Size(1300, 377);
             this.bunifuCustomDataGrid2.TabIndex = 73;
             // 
-            // txt_id_localite
+            // txt_num_participation
             // 
-            this.txt_id_localite.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_id_localite.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txt_id_localite.ForeColor = System.Drawing.Color.White;
-            this.txt_id_localite.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txt_id_localite.HintText = "Recherchez une localité";
-            this.txt_id_localite.isPassword = false;
-            this.txt_id_localite.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_id_localite.LineIdleColor = System.Drawing.Color.White;
-            this.txt_id_localite.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_id_localite.LineThickness = 2;
-            this.txt_id_localite.Location = new System.Drawing.Point(24, 80);
-            this.txt_id_localite.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_id_localite.Name = "txt_id_localite";
-            this.txt_id_localite.Size = new System.Drawing.Size(311, 44);
-            this.txt_id_localite.TabIndex = 74;
-            this.txt_id_localite.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_num_participation.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_num_participation.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_num_participation.ForeColor = System.Drawing.Color.White;
+            this.txt_num_participation.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_num_participation.HintText = "Entrez l\'ID Participation";
+            this.txt_num_participation.isPassword = false;
+            this.txt_num_participation.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.txt_num_participation.LineIdleColor = System.Drawing.Color.White;
+            this.txt_num_participation.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.txt_num_participation.LineThickness = 2;
+            this.txt_num_participation.Location = new System.Drawing.Point(24, 68);
+            this.txt_num_participation.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_num_participation.Name = "txt_num_participation";
+            this.txt_num_participation.Size = new System.Drawing.Size(311, 44);
+            this.txt_num_participation.TabIndex = 74;
+            this.txt_num_participation.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // bunifuMaterialTextbox1
+            // txt_num_sensibilisation
             // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuMaterialTextbox1.HintText = "Recherchez une localité";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuMaterialTextbox1.LineThickness = 2;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(24, 132);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(311, 44);
-            this.bunifuMaterialTextbox1.TabIndex = 75;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_num_sensibilisation.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_num_sensibilisation.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_num_sensibilisation.ForeColor = System.Drawing.Color.White;
+            this.txt_num_sensibilisation.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_num_sensibilisation.HintText = "Entrez le numero de sensibilisation";
+            this.txt_num_sensibilisation.isPassword = false;
+            this.txt_num_sensibilisation.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.txt_num_sensibilisation.LineIdleColor = System.Drawing.Color.White;
+            this.txt_num_sensibilisation.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.txt_num_sensibilisation.LineThickness = 2;
+            this.txt_num_sensibilisation.Location = new System.Drawing.Point(357, 68);
+            this.txt_num_sensibilisation.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_num_sensibilisation.Name = "txt_num_sensibilisation";
+            this.txt_num_sensibilisation.Size = new System.Drawing.Size(311, 44);
+            this.txt_num_sensibilisation.TabIndex = 75;
+            this.txt_num_sensibilisation.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuMaterialTextbox2
             // 
@@ -184,7 +184,7 @@
             this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.White;
             this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.bunifuMaterialTextbox2.LineThickness = 2;
-            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(24, 184);
+            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(24, 172);
             this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
             this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(311, 44);
@@ -203,7 +203,7 @@
             this.bunifuMaterialTextbox3.LineIdleColor = System.Drawing.Color.White;
             this.bunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.bunifuMaterialTextbox3.LineThickness = 2;
-            this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(24, 236);
+            this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(24, 224);
             this.bunifuMaterialTextbox3.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox3.Name = "bunifuMaterialTextbox3";
             this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(311, 44);
@@ -222,7 +222,7 @@
             this.bunifuMaterialTextbox4.LineIdleColor = System.Drawing.Color.White;
             this.bunifuMaterialTextbox4.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.bunifuMaterialTextbox4.LineThickness = 2;
-            this.bunifuMaterialTextbox4.Location = new System.Drawing.Point(357, 80);
+            this.bunifuMaterialTextbox4.Location = new System.Drawing.Point(409, 211);
             this.bunifuMaterialTextbox4.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox4.Name = "bunifuMaterialTextbox4";
             this.bunifuMaterialTextbox4.Size = new System.Drawing.Size(311, 44);
@@ -265,8 +265,8 @@
             this.Controls.Add(this.bunifuMaterialTextbox4);
             this.Controls.Add(this.bunifuMaterialTextbox3);
             this.Controls.Add(this.bunifuMaterialTextbox2);
-            this.Controls.Add(this.bunifuMaterialTextbox1);
-            this.Controls.Add(this.txt_id_localite);
+            this.Controls.Add(this.txt_num_sensibilisation);
+            this.Controls.Add(this.txt_num_participation);
             this.Controls.Add(this.bunifuCustomDataGrid2);
             this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.label1);
@@ -287,8 +287,8 @@
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_id_localite;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_num_participation;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_num_sensibilisation;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox3;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox4;
