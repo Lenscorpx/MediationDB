@@ -31,7 +31,6 @@ namespace MediationDB.DataLibrary
             //prms.Mot_de_passe = "Server@2019.com?";
             
         }
-        c
         public void enregistrer_mediateur(string id_mediateur, string descr_mediateur)
         {
             cnx = new SqlConnection(prms.ToString());

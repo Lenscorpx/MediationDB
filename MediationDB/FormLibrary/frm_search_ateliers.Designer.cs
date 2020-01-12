@@ -379,14 +379,14 @@
             this.btn_rechercher.IconVisible = true;
             this.btn_rechercher.IconZoom = 50D;
             this.btn_rechercher.IsTab = true;
-            this.btn_rechercher.Location = new System.Drawing.Point(1091, 132);
+            this.btn_rechercher.Location = new System.Drawing.Point(1091, 124);
             this.btn_rechercher.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btn_rechercher.Name = "btn_rechercher";
             this.btn_rechercher.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.btn_rechercher.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_rechercher.OnHoverTextColor = System.Drawing.Color.White;
             this.btn_rechercher.selected = false;
-            this.btn_rechercher.Size = new System.Drawing.Size(152, 31);
+            this.btn_rechercher.Size = new System.Drawing.Size(173, 45);
             this.btn_rechercher.TabIndex = 71;
             this.btn_rechercher.Text = "     Rechercher";
             this.btn_rechercher.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -427,7 +427,7 @@
             this.Controls.Add(this.bunifuImageButton1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "frm_search_ateliers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).EndInit();
