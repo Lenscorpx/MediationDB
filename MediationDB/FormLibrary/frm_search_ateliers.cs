@@ -48,5 +48,10 @@ namespace MediationDB.FormLibrary
         {
             rps.rechercher_ateliers_sensibilises_par_themes(bunifuCustomDataGrid2, txt_theme.Text);
         }
+
+        private void bunifuCustomDataGrid2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
