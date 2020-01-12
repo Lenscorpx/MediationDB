@@ -43,5 +43,10 @@ namespace MediationDB.FormLibrary
         {
             rps.rechercher_ateliers_sensibilises_par_localite(bunifuCustomDataGrid2, txt_id_localite.Text);
         }
+
+        private void txt_theme_OnValueChanged(object sender, EventArgs e)
+        {
+            rps.rechercher_ateliers_sensibilises_par_themes(bunifuCustomDataGrid2, txt_theme.Text);
+        }
     }
 }
