@@ -42,7 +42,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.dt_fin = new MetroFramework.Controls.MetroDateTime();
             this.bunifuCustomDataGrid2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.bunifuFlatButton4 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_consulter = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_rechercher = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).BeginInit();
@@ -72,7 +72,7 @@
             this.txt_id_localite.LineIdleColor = System.Drawing.Color.White;
             this.txt_id_localite.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_id_localite.LineThickness = 2;
-            this.txt_id_localite.Location = new System.Drawing.Point(14, 142);
+            this.txt_id_localite.Location = new System.Drawing.Point(11, 83);
             this.txt_id_localite.Margin = new System.Windows.Forms.Padding(4);
             this.txt_id_localite.Name = "txt_id_localite";
             this.txt_id_localite.Size = new System.Drawing.Size(311, 44);
@@ -99,7 +99,7 @@
             this.txt_theme.LineIdleColor = System.Drawing.Color.White;
             this.txt_theme.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_theme.LineThickness = 2;
-            this.txt_theme.Location = new System.Drawing.Point(333, 142);
+            this.txt_theme.Location = new System.Drawing.Point(330, 83);
             this.txt_theme.Margin = new System.Windows.Forms.Padding(4);
             this.txt_theme.Name = "txt_theme";
             this.txt_theme.Size = new System.Drawing.Size(285, 44);
@@ -109,7 +109,7 @@
             // 
             // dt_debut
             // 
-            this.dt_debut.Location = new System.Drawing.Point(838, 157);
+            this.dt_debut.Location = new System.Drawing.Point(835, 98);
             this.dt_debut.MinimumSize = new System.Drawing.Size(0, 29);
             this.dt_debut.Name = "dt_debut";
             this.dt_debut.Size = new System.Drawing.Size(195, 29);
@@ -123,7 +123,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(659, 163);
+            this.label2.Location = new System.Drawing.Point(656, 104);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(168, 17);
             this.label2.TabIndex = 68;
@@ -131,7 +131,7 @@
             // 
             // dt_fin
             // 
-            this.dt_fin.Location = new System.Drawing.Point(1039, 157);
+            this.dt_fin.Location = new System.Drawing.Point(1088, 98);
             this.dt_fin.MinimumSize = new System.Drawing.Size(0, 29);
             this.dt_fin.Name = "dt_fin";
             this.dt_fin.Size = new System.Drawing.Size(195, 29);
@@ -178,7 +178,7 @@
             this.bunifuCustomDataGrid2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.bunifuCustomDataGrid2.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.bunifuCustomDataGrid2.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuCustomDataGrid2.Location = new System.Drawing.Point(0, 260);
+            this.bunifuCustomDataGrid2.Location = new System.Drawing.Point(0, 201);
             this.bunifuCustomDataGrid2.Name = "bunifuCustomDataGrid2";
             this.bunifuCustomDataGrid2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -198,48 +198,48 @@
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.bunifuCustomDataGrid2.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.bunifuCustomDataGrid2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuCustomDataGrid2.Size = new System.Drawing.Size(1300, 337);
+            this.bunifuCustomDataGrid2.Size = new System.Drawing.Size(1300, 396);
             this.bunifuCustomDataGrid2.TabIndex = 72;
             this.bunifuCustomDataGrid2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid2_CellContentClick);
             // 
-            // bunifuFlatButton4
+            // btn_consulter
             // 
-            this.bunifuFlatButton4.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuFlatButton4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuFlatButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuFlatButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton4.BorderRadius = 0;
-            this.bunifuFlatButton4.ButtonText = "     Modifier infos";
-            this.bunifuFlatButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton4.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton4.ForeColor = System.Drawing.Color.White;
-            this.bunifuFlatButton4.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton4.Iconimage = global::MediationDB.Properties.Resources.modifier;
-            this.bunifuFlatButton4.Iconimage_right = null;
-            this.bunifuFlatButton4.Iconimage_right_Selected = null;
-            this.bunifuFlatButton4.Iconimage_Selected = null;
-            this.bunifuFlatButton4.IconMarginLeft = 0;
-            this.bunifuFlatButton4.IconMarginRight = 0;
-            this.bunifuFlatButton4.IconRightVisible = true;
-            this.bunifuFlatButton4.IconRightZoom = 0D;
-            this.bunifuFlatButton4.IconVisible = true;
-            this.bunifuFlatButton4.IconZoom = 50D;
-            this.bunifuFlatButton4.IsTab = true;
-            this.bunifuFlatButton4.Location = new System.Drawing.Point(14, 211);
-            this.bunifuFlatButton4.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.bunifuFlatButton4.Name = "bunifuFlatButton4";
-            this.bunifuFlatButton4.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuFlatButton4.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.bunifuFlatButton4.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton4.selected = false;
-            this.bunifuFlatButton4.Size = new System.Drawing.Size(169, 40);
-            this.bunifuFlatButton4.TabIndex = 76;
-            this.bunifuFlatButton4.Text = "     Modifier infos";
-            this.bunifuFlatButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton4.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton4.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton4.Click += new System.EventHandler(this.bunifuFlatButton4_Click);
+            this.btn_consulter.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.btn_consulter.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_consulter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.btn_consulter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_consulter.BorderRadius = 0;
+            this.btn_consulter.ButtonText = "     Consulter infos";
+            this.btn_consulter.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_consulter.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_consulter.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_consulter.ForeColor = System.Drawing.Color.White;
+            this.btn_consulter.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_consulter.Iconimage = global::MediationDB.Properties.Resources.modifier;
+            this.btn_consulter.Iconimage_right = null;
+            this.btn_consulter.Iconimage_right_Selected = null;
+            this.btn_consulter.Iconimage_Selected = null;
+            this.btn_consulter.IconMarginLeft = 0;
+            this.btn_consulter.IconMarginRight = 0;
+            this.btn_consulter.IconRightVisible = true;
+            this.btn_consulter.IconRightZoom = 0D;
+            this.btn_consulter.IconVisible = true;
+            this.btn_consulter.IconZoom = 50D;
+            this.btn_consulter.IsTab = true;
+            this.btn_consulter.Location = new System.Drawing.Point(586, 151);
+            this.btn_consulter.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.btn_consulter.Name = "btn_consulter";
+            this.btn_consulter.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.btn_consulter.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.btn_consulter.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_consulter.selected = false;
+            this.btn_consulter.Size = new System.Drawing.Size(169, 40);
+            this.btn_consulter.TabIndex = 76;
+            this.btn_consulter.Text = "     Consulter infos";
+            this.btn_consulter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_consulter.Textcolor = System.Drawing.Color.White;
+            this.btn_consulter.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_consulter.Click += new System.EventHandler(this.bunifuFlatButton4_Click);
             // 
             // btn_rechercher
             // 
@@ -265,7 +265,7 @@
             this.btn_rechercher.IconVisible = true;
             this.btn_rechercher.IconZoom = 50D;
             this.btn_rechercher.IsTab = true;
-            this.btn_rechercher.Location = new System.Drawing.Point(1144, 210);
+            this.btn_rechercher.Location = new System.Drawing.Point(1141, 151);
             this.btn_rechercher.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btn_rechercher.Name = "btn_rechercher";
             this.btn_rechercher.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
@@ -299,7 +299,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.ClientSize = new System.Drawing.Size(1300, 597);
-            this.Controls.Add(this.bunifuFlatButton4);
+            this.Controls.Add(this.btn_consulter);
             this.Controls.Add(this.bunifuCustomDataGrid2);
             this.Controls.Add(this.btn_rechercher);
             this.Controls.Add(this.dt_fin);
@@ -332,6 +332,6 @@
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuFlatButton btn_rechercher;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid2;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton4;
+        private Bunifu.Framework.UI.BunifuFlatButton btn_consulter;
     }
 }
