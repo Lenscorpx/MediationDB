@@ -82,5 +82,10 @@ namespace MediationDB.FormLibrary
         {
             btn_enregistrer_Click(sender, e);
         }
+
+        private void btn_supprimer_Click_1(object sender, EventArgs e)
+        {
+            btn_supprimer_Click(sender, e);
+        }
     }
 }
