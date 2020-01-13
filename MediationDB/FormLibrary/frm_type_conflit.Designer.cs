@@ -86,14 +86,15 @@
             // 
             // txt_description
             // 
+            this.txt_description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.txt_description.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_description.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txt_description.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.txt_description.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.txt_description.ForeColor = System.Drawing.Color.White;
+            this.txt_description.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txt_description.HintText = "Descriptiondu type de conflit";
             this.txt_description.isPassword = false;
             this.txt_description.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.txt_description.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.txt_description.LineIdleColor = System.Drawing.Color.White;
             this.txt_description.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_description.LineThickness = 4;
             this.txt_description.Location = new System.Drawing.Point(436, 60);
@@ -105,14 +106,15 @@
             // 
             // txt_id_typeconflit
             // 
+            this.txt_id_typeconflit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.txt_id_typeconflit.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_id_typeconflit.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txt_id_typeconflit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.txt_id_typeconflit.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.txt_id_typeconflit.ForeColor = System.Drawing.Color.White;
+            this.txt_id_typeconflit.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txt_id_typeconflit.HintText = "Remplissez le code du type de conflit";
             this.txt_id_typeconflit.isPassword = false;
             this.txt_id_typeconflit.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.txt_id_typeconflit.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.txt_id_typeconflit.LineIdleColor = System.Drawing.Color.White;
             this.txt_id_typeconflit.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_id_typeconflit.LineThickness = 4;
             this.txt_id_typeconflit.Location = new System.Drawing.Point(19, 60);
@@ -275,7 +277,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.ClientSize = new System.Drawing.Size(1040, 630);
             this.ControlBox = false;
             this.Controls.Add(this.bunifuCustomDataGrid2);
