@@ -25,7 +25,7 @@ namespace MediationDB.FormLibrary
         }
         private void refresh()
         {
-            rps.afficher_mediation(bunifuCustomDataGrid1, Convert.ToInt32(txt_num_conflit.Text));
+            rps.afficher_mediation(bunifuCustomDataGrid2, Convert.ToInt32(txt_num_conflit.Text));
             rps.recuperer_localite(listBox1);
             rps.recuperer_mediateur(cbx_mediateur);
         }
@@ -96,6 +96,11 @@ namespace MediationDB.FormLibrary
                     refresh();
                 }
             }
+        }
+
+        private void bunifuCustomDataGrid2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
