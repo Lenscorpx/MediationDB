@@ -77,14 +77,19 @@ namespace MediationDB.FormLibrary
 
         private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            txt_num_details.Text = bunifuCustomDataGrid1.SelectedRows[0].Cells[0].Value.ToString();
-            txt_num_conflit .Text = bunifuCustomDataGrid1.SelectedRows[0].Cells[1].Value.ToString();
-            rtxt_descr.Text = bunifuCustomDataGrid1.SelectedRows[0].Cells[2].Value.ToString();
+            
         }
 
         private void frm_details_conflit_Load(object sender, EventArgs e)
         {
             refresh();
+        }
+
+        private void bunifuCustomDataGrid2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txt_num_details.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[0].Value.ToString();
+            txt_num_conflit.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[1].Value.ToString();
+            rtxt_descr.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[2].Value.ToString();
         }
     }
 }
