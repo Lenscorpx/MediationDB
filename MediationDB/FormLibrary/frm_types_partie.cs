@@ -21,14 +21,14 @@ namespace MediationDB.FormLibrary
         }
         private void refresh()
         {
-            rps.afficher_type_partie(bunifuCustomDataGrid1);
+            rps.afficher_type_partie(bunifuCustomDataGrid2);
             txt_description.ResetText();
             txt_type_partie.ResetText();
         }
 
         private void txt_type_partie_OnValueChanged(object sender, EventArgs e)
         {
-            rps.search_type_partie(bunifuCustomDataGrid1, txt_type_partie.Text);
+            rps.search_type_partie(bunifuCustomDataGrid2, txt_type_partie.Text);
         }
 
         private void btn_enregistrer_Click(object sender, EventArgs e)
@@ -75,7 +75,7 @@ namespace MediationDB.FormLibrary
 
         private void bunifuCustomDataGrid2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            bunifuCustomDataGrid1_CellContentClick(sender, e);
         }
     }
 }
