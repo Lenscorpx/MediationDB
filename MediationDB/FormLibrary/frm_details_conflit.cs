@@ -22,7 +22,7 @@ namespace MediationDB.FormLibrary
         private void refresh()
         {
             //MessageBox.Show(txt_num_conflit.Text);
-            rps.afficher_details_conflits(bunifuCustomDataGrid1, Convert.ToInt32(txt_num_conflit.Text));
+            rps.afficher_details_conflits(bunifuCustomDataGrid2, Convert.ToInt32(txt_num_conflit.Text));
         }
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
@@ -90,6 +90,16 @@ namespace MediationDB.FormLibrary
             txt_num_details.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[0].Value.ToString();
             txt_num_conflit.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[1].Value.ToString();
             rtxt_descr.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[2].Value.ToString();
+        }
+
+        private void btn_enregistrer_Click_1(object sender, EventArgs e)
+        {
+            btn_enregistrer_Click(sender, e);
+        }
+
+        private void btn_supprimer_Click_1(object sender, EventArgs e)
+        {
+            btn_supprimer_Click(sender, e);
         }
     }
 }
