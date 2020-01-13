@@ -100,7 +100,14 @@ namespace MediationDB.FormLibrary
 
         private void bunifuCustomDataGrid2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            txt_num_mediation.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[0].Value.ToString();
+            dt_debut_mediation.Text = Convert.ToString(bunifuCustomDataGrid2.SelectedRows[0].Cells[1].Value.ToString());
+            txt_num_conflit.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[2].Value.ToString();
+            cbx_mediateur.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[3].Value.ToString();
+            txt_noms_mediateur.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[4].Value.ToString();
+            txt_localite.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[5].Value.ToString();
+            txt_appreciation.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[6].Value.ToString();
+            dt_fin_mediation.Text = Convert.ToString(bunifuCustomDataGrid2.SelectedRows[0].Cells[7].Value.ToString());
         }
 
         private void btn_enregistrer_Click_1(object sender, EventArgs e)
