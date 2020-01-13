@@ -75,7 +75,12 @@ namespace MediationDB.FormLibrary
 
         private void bunifuCustomDataGrid2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            bunifuCustomDataGrid1_CellContentClick(sender, e);
+        }
 
+        private void btn_enregistrer_Click_1(object sender, EventArgs e)
+        {
+            btn_enregistrer_Click(sender, e);
         }
     }
 }
