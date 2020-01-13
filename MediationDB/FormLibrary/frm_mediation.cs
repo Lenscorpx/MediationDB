@@ -102,5 +102,10 @@ namespace MediationDB.FormLibrary
         {
 
         }
+
+        private void btn_enregistrer_Click_1(object sender, EventArgs e)
+        {
+            btn_enregistrer_Click(sender, e);
+        }
     }
 }
