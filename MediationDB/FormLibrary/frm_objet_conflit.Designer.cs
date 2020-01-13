@@ -86,15 +86,15 @@
             // 
             // txt_description
             // 
-            this.txt_description.BackColor = System.Drawing.Color.White;
+            this.txt_description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.txt_description.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_description.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txt_description.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.txt_description.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.txt_description.ForeColor = System.Drawing.Color.White;
+            this.txt_description.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txt_description.HintText = "Description de l\'objet de  conflit";
             this.txt_description.isPassword = false;
             this.txt_description.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_description.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.txt_description.LineIdleColor = System.Drawing.Color.White;
             this.txt_description.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_description.LineThickness = 4;
             this.txt_description.Location = new System.Drawing.Point(434, 56);
@@ -106,15 +106,15 @@
             // 
             // txt_id_objet_conflit
             // 
-            this.txt_id_objet_conflit.BackColor = System.Drawing.Color.White;
+            this.txt_id_objet_conflit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.txt_id_objet_conflit.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_id_objet_conflit.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txt_id_objet_conflit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.txt_id_objet_conflit.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.txt_id_objet_conflit.ForeColor = System.Drawing.Color.White;
+            this.txt_id_objet_conflit.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txt_id_objet_conflit.HintText = "Remplissez le code de l\'objet de conflit";
             this.txt_id_objet_conflit.isPassword = false;
             this.txt_id_objet_conflit.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_id_objet_conflit.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.txt_id_objet_conflit.LineIdleColor = System.Drawing.Color.White;
             this.txt_id_objet_conflit.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_id_objet_conflit.LineThickness = 4;
             this.txt_id_objet_conflit.Location = new System.Drawing.Point(17, 56);
@@ -277,7 +277,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.ClientSize = new System.Drawing.Size(1040, 630);
             this.ControlBox = false;
             this.Controls.Add(this.bunifuCustomDataGrid2);
