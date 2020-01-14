@@ -31,22 +31,19 @@
             this.pnl_header = new System.Windows.Forms.Panel();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.pnl_header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_header
             // 
             this.pnl_header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.pnl_header.Controls.Add(this.bunifuImageButton2);
             this.pnl_header.Controls.Add(this.bunifuImageButton1);
             this.pnl_header.Controls.Add(this.label1);
             this.pnl_header.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_header.Location = new System.Drawing.Point(0, 0);
             this.pnl_header.Name = "pnl_header";
-            this.pnl_header.Size = new System.Drawing.Size(1011, 56);
+            this.pnl_header.Size = new System.Drawing.Size(1299, 56);
             this.pnl_header.TabIndex = 1;
             // 
             // bunifuImageButton1
@@ -73,26 +70,12 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Informations sur les ateliers";
             // 
-            // bunifuImageButton2
-            // 
-            this.bunifuImageButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.bunifuImageButton2.Image = global::MediationDB.Properties.Resources.Fermer_window;
-            this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(953, 9);
-            this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.Size = new System.Drawing.Size(46, 40);
-            this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.bunifuImageButton2.TabIndex = 5;
-            this.bunifuImageButton2.TabStop = false;
-            this.bunifuImageButton2.Zoom = 10;
-            this.bunifuImageButton2.Click += new System.EventHandler(this.bunifuImageButton2_Click);
-            // 
             // frm_atelier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.ClientSize = new System.Drawing.Size(1011, 551);
+            this.ClientSize = new System.Drawing.Size(1299, 607);
             this.Controls.Add(this.pnl_header);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_atelier";
@@ -100,7 +83,6 @@
             this.pnl_header.ResumeLayout(false);
             this.pnl_header.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -110,6 +92,5 @@
         private System.Windows.Forms.Panel pnl_header;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
     }
 }
