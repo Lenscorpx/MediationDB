@@ -164,15 +164,15 @@
             // 
             // txt_description
             // 
-            this.txt_description.BackColor = System.Drawing.Color.White;
+            this.txt_description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.txt_description.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_description.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txt_description.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.txt_description.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.txt_description.ForeColor = System.Drawing.Color.White;
+            this.txt_description.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txt_description.HintText = "Description de situation de menage";
             this.txt_description.isPassword = false;
             this.txt_description.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.txt_description.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.txt_description.LineIdleColor = System.Drawing.Color.White;
             this.txt_description.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_description.LineThickness = 4;
             this.txt_description.Location = new System.Drawing.Point(439, 56);
@@ -184,15 +184,15 @@
             // 
             // txt_id_situation
             // 
-            this.txt_id_situation.BackColor = System.Drawing.Color.White;
+            this.txt_id_situation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.txt_id_situation.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_id_situation.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txt_id_situation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.txt_id_situation.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.txt_id_situation.ForeColor = System.Drawing.Color.White;
+            this.txt_id_situation.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txt_id_situation.HintText = "Completez une situation de menage";
             this.txt_id_situation.isPassword = false;
             this.txt_id_situation.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.txt_id_situation.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.txt_id_situation.LineIdleColor = System.Drawing.Color.White;
             this.txt_id_situation.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_id_situation.LineThickness = 4;
             this.txt_id_situation.Location = new System.Drawing.Point(22, 56);
@@ -277,7 +277,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.ClientSize = new System.Drawing.Size(1040, 630);
             this.ControlBox = false;
             this.Controls.Add(this.bunifuCustomDataGrid2);
