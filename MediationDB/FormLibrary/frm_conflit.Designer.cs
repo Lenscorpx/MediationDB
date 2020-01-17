@@ -228,7 +228,7 @@
             this.metroDateTime1.Size = new System.Drawing.Size(289, 29);
             this.metroDateTime1.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroDateTime1.TabIndex = 67;
-            this.metroDateTime1.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroDateTime1.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // label4
             // 
@@ -279,7 +279,7 @@
             this.cbx_nature_conflit.Size = new System.Drawing.Size(289, 29);
             this.cbx_nature_conflit.Style = MetroFramework.MetroColorStyle.Blue;
             this.cbx_nature_conflit.TabIndex = 57;
-            this.cbx_nature_conflit.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.cbx_nature_conflit.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.cbx_nature_conflit.UseSelectable = true;
             // 
             // cbx_type_conflit
@@ -295,7 +295,7 @@
             this.cbx_type_conflit.Size = new System.Drawing.Size(289, 29);
             this.cbx_type_conflit.Style = MetroFramework.MetroColorStyle.Blue;
             this.cbx_type_conflit.TabIndex = 56;
-            this.cbx_type_conflit.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.cbx_type_conflit.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.cbx_type_conflit.UseSelectable = true;
             // 
             // bunifuDragControl1
