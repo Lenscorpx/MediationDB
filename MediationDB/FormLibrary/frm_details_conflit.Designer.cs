@@ -309,11 +309,11 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_num_details;
         private System.Windows.Forms.RichTextBox rtxt_descr;
         public Bunifu.Framework.UI.BunifuMaterialTextbox txt_num_conflit;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid2;
         private Bunifu.Framework.UI.BunifuFlatButton btn_supprimer;
         private Bunifu.Framework.UI.BunifuFlatButton btn_enregistrer;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox txt_num_details;
     }
 }

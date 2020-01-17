@@ -137,7 +137,8 @@ namespace MediationDB.FormLibrary
 
         private void btn_causes_Click(object sender, EventArgs e)
         {
-
+            var fr = new frm_details_causes();
+            fr.ShowDialog();
         }
     }
 }

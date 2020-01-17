@@ -35,7 +35,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.cbx_causes = new MetroFramework.Controls.MetroComboBox();
+            this.cbx_objet_conflit = new MetroFramework.Controls.MetroComboBox();
             this.bunifuCustomDataGrid2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.txt_num_details = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txt_num_conflit = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -63,27 +63,27 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(350, 13);
+            this.label1.Location = new System.Drawing.Point(426, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(499, 22);
+            this.label1.Size = new System.Drawing.Size(365, 22);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Completez les details concernant les causes du conflit";
+            this.label1.Text = "Details concernant les objets  du conflit";
             // 
-            // cbx_causes
+            // cbx_objet_conflit
             // 
-            this.cbx_causes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.cbx_causes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbx_causes.ForeColor = System.Drawing.Color.White;
-            this.cbx_causes.FormattingEnabled = true;
-            this.cbx_causes.ItemHeight = 23;
-            this.cbx_causes.Location = new System.Drawing.Point(193, 129);
-            this.cbx_causes.Name = "cbx_causes";
-            this.cbx_causes.PromptText = "Choisissez une causes de conflit";
-            this.cbx_causes.Size = new System.Drawing.Size(755, 29);
-            this.cbx_causes.Style = MetroFramework.MetroColorStyle.Blue;
-            this.cbx_causes.TabIndex = 102;
-            this.cbx_causes.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.cbx_causes.UseSelectable = true;
+            this.cbx_objet_conflit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.cbx_objet_conflit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbx_objet_conflit.ForeColor = System.Drawing.Color.White;
+            this.cbx_objet_conflit.FormattingEnabled = true;
+            this.cbx_objet_conflit.ItemHeight = 23;
+            this.cbx_objet_conflit.Location = new System.Drawing.Point(193, 129);
+            this.cbx_objet_conflit.Name = "cbx_objet_conflit";
+            this.cbx_objet_conflit.PromptText = "Choisissez un objet de conflit";
+            this.cbx_objet_conflit.Size = new System.Drawing.Size(755, 29);
+            this.cbx_objet_conflit.Style = MetroFramework.MetroColorStyle.Blue;
+            this.cbx_objet_conflit.TabIndex = 102;
+            this.cbx_objet_conflit.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.cbx_objet_conflit.UseSelectable = true;
             // 
             // bunifuCustomDataGrid2
             // 
@@ -284,7 +284,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.ClientSize = new System.Drawing.Size(1233, 630);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.cbx_causes);
+            this.Controls.Add(this.cbx_objet_conflit);
             this.Controls.Add(this.btn_supprimer);
             this.Controls.Add(this.btn_enregistrer);
             this.Controls.Add(this.bunifuCustomDataGrid2);
@@ -308,11 +308,11 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
-        private MetroFramework.Controls.MetroComboBox cbx_causes;
+        private MetroFramework.Controls.MetroComboBox cbx_objet_conflit;
         private Bunifu.Framework.UI.BunifuFlatButton btn_supprimer;
         private Bunifu.Framework.UI.BunifuFlatButton btn_enregistrer;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_num_details;
         public Bunifu.Framework.UI.BunifuMaterialTextbox txt_num_conflit;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox txt_num_details;
     }
 }

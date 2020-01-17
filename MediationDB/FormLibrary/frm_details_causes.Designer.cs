@@ -311,8 +311,8 @@
         private Bunifu.Framework.UI.BunifuFlatButton btn_supprimer;
         private Bunifu.Framework.UI.BunifuFlatButton btn_enregistrer;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_num_details;
         public Bunifu.Framework.UI.BunifuMaterialTextbox txt_num_conflit;
         private MetroFramework.Controls.MetroComboBox cbx_causes;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox txt_num_details;
     }
 }
