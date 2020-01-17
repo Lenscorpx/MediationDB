@@ -422,6 +422,7 @@
     <Content Include="LOGO-SCC-2019-PNG.ico" />
     <Content Include="mediationlogo.ico" />
     <Content Include="mediator.ico" />
+    <None Include="Resources\violences_sur_bg.png" />
     <None Include="Resources\combo_chart_80px.png" />
     <None Include="Resources\schedule_104px.png" />
     <None Include="Resources\modifier.png" />

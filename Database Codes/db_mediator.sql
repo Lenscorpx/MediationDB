@@ -970,8 +970,10 @@ create table t_participants
 (
     id_participant nvarchar(50),
     noms nvarchar(50),
+	sexe nvarchar(50),
     num_phone nvarchar(50),
-    sexe nvarchar(50),
+	date_naissance date,
+	adresse nvarchar(500),
     constraint pk_participant primary key(id_participant)
 )
 go
@@ -1173,3 +1175,34 @@ as
 	order by 
 		t_participation_atelier.date_atelier desc
 go
+create table t_categorie_agr
+(
+	id_categorie nvarchar(100),
+	description_categorie nvarchar(200),
+	constraint pk_categorie_agr primary key(id_categorie)
+)
+go
+create table t_agr
+(
+	id_agr nvarchar(50),
+	description_agr nvarchar(100),
+	id_categorie nvarchar(100),
+	constraint pk_agr primary key(id_agr),
+	constraint fk_categorie_agrs foreign key(id_categorie) references t_categorie_agr(id_categorie)
+)
+go
+create table t_beneficiaires
+(
+	id_beneficiaire nvarchar(50),
+	noms nvarchar(100),
+	sexe nvarchar(50),
+	date_naissance date,
+	adresse nvarchar(100),
+	telephone nvarchar(100),
+	constraint pk_beneficiaire primary key(id_beneficiaire)
+)
+go
+create table t_bailleurs
+(	
+	
+)

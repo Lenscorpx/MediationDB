@@ -39,6 +39,8 @@
             this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.bunifuTileButton2 = new Bunifu.Framework.UI.BunifuTileButton();
+            this.bunifuTileButton3 = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuTileButton1 = new Bunifu.Framework.UI.BunifuTileButton();
             this.btn_typep_conflit = new Bunifu.Framework.UI.BunifuTileButton();
             this.btn_pays = new Bunifu.Framework.UI.BunifuTileButton();
@@ -160,6 +162,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(142)))));
+            this.panel1.Controls.Add(this.bunifuTileButton2);
+            this.panel1.Controls.Add(this.bunifuTileButton3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.btn_rapports);
             this.panel1.Controls.Add(this.btn_organisations);
@@ -202,6 +206,46 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1300, 240);
             this.panel2.TabIndex = 60;
+            // 
+            // bunifuTileButton2
+            // 
+            this.bunifuTileButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.bunifuTileButton2.color = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.bunifuTileButton2.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuTileButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.bunifuTileButton2, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTileButton2.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.bunifuTileButton2.ForeColor = System.Drawing.Color.White;
+            this.bunifuTileButton2.Image = global::MediationDB.Properties.Resources.statistics_report_96px;
+            this.bunifuTileButton2.ImagePosition = 18;
+            this.bunifuTileButton2.ImageZoom = 50;
+            this.bunifuTileButton2.LabelPosition = 36;
+            this.bunifuTileButton2.LabelText = "AGR";
+            this.bunifuTileButton2.Location = new System.Drawing.Point(315, 232);
+            this.bunifuTileButton2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuTileButton2.Name = "bunifuTileButton2";
+            this.bunifuTileButton2.Size = new System.Drawing.Size(191, 162);
+            this.bunifuTileButton2.TabIndex = 62;
+            // 
+            // bunifuTileButton3
+            // 
+            this.bunifuTileButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.bunifuTileButton3.color = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.bunifuTileButton3.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuTileButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.bunifuTileButton3, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTileButton3.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.bunifuTileButton3.ForeColor = System.Drawing.Color.White;
+            this.bunifuTileButton3.Image = global::MediationDB.Properties.Resources.violences_sur_bg;
+            this.bunifuTileButton3.ImagePosition = 18;
+            this.bunifuTileButton3.ImageZoom = 50;
+            this.bunifuTileButton3.LabelPosition = 36;
+            this.bunifuTileButton3.LabelText = "Prévention VBG";
+            this.bunifuTileButton3.Location = new System.Drawing.Point(76, 232);
+            this.bunifuTileButton3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuTileButton3.Name = "bunifuTileButton3";
+            this.bunifuTileButton3.Size = new System.Drawing.Size(191, 162);
+            this.bunifuTileButton3.TabIndex = 61;
             // 
             // bunifuTileButton1
             // 
@@ -547,7 +591,7 @@
             this.btn_rapports.ImageZoom = 50;
             this.btn_rapports.LabelPosition = 36;
             this.btn_rapports.LabelText = "Rapports";
-            this.btn_rapports.Location = new System.Drawing.Point(916, 233);
+            this.btn_rapports.Location = new System.Drawing.Point(1026, 232);
             this.btn_rapports.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_rapports.Name = "btn_rapports";
             this.btn_rapports.Size = new System.Drawing.Size(191, 162);
@@ -567,7 +611,7 @@
             this.btn_organisations.ImageZoom = 50;
             this.btn_organisations.LabelPosition = 36;
             this.btn_organisations.LabelText = "Organisations";
-            this.btn_organisations.Location = new System.Drawing.Point(440, 233);
+            this.btn_organisations.Location = new System.Drawing.Point(550, 232);
             this.btn_organisations.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_organisations.Name = "btn_organisations";
             this.btn_organisations.Size = new System.Drawing.Size(191, 162);
@@ -588,7 +632,7 @@
             this.btn_parties.ImageZoom = 50;
             this.btn_parties.LabelPosition = 36;
             this.btn_parties.LabelText = "Statistiques";
-            this.btn_parties.Location = new System.Drawing.Point(678, 233);
+            this.btn_parties.Location = new System.Drawing.Point(788, 232);
             this.btn_parties.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_parties.Name = "btn_parties";
             this.btn_parties.Size = new System.Drawing.Size(191, 162);
@@ -608,7 +652,7 @@
             this.btn_menages.ImageZoom = 50;
             this.btn_menages.LabelPosition = 36;
             this.btn_menages.LabelText = "Menages";
-            this.btn_menages.Location = new System.Drawing.Point(199, 233);
+            this.btn_menages.Location = new System.Drawing.Point(1026, 34);
             this.btn_menages.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_menages.Name = "btn_menages";
             this.btn_menages.Size = new System.Drawing.Size(191, 162);
@@ -629,7 +673,7 @@
             this.btn_conflits.ImageZoom = 50;
             this.btn_conflits.LabelPosition = 36;
             this.btn_conflits.LabelText = "Conflits";
-            this.btn_conflits.Location = new System.Drawing.Point(916, 35);
+            this.btn_conflits.Location = new System.Drawing.Point(791, 34);
             this.btn_conflits.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_conflits.Name = "btn_conflits";
             this.btn_conflits.Size = new System.Drawing.Size(191, 162);
@@ -650,7 +694,7 @@
             this.btn_mediateurs.ImageZoom = 50;
             this.btn_mediateurs.LabelPosition = 36;
             this.btn_mediateurs.LabelText = "Mediateurs";
-            this.btn_mediateurs.Location = new System.Drawing.Point(678, 35);
+            this.btn_mediateurs.Location = new System.Drawing.Point(553, 34);
             this.btn_mediateurs.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_mediateurs.Name = "btn_mediateurs";
             this.btn_mediateurs.Size = new System.Drawing.Size(191, 162);
@@ -671,7 +715,7 @@
             this.btn_sensibilisations.ImageZoom = 50;
             this.btn_sensibilisations.LabelPosition = 36;
             this.btn_sensibilisations.LabelText = "Sensibilisations";
-            this.btn_sensibilisations.Location = new System.Drawing.Point(201, 35);
+            this.btn_sensibilisations.Location = new System.Drawing.Point(76, 34);
             this.btn_sensibilisations.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_sensibilisations.Name = "btn_sensibilisations";
             this.btn_sensibilisations.Size = new System.Drawing.Size(191, 162);
@@ -692,7 +736,7 @@
             this.btn_ateliers.ImageZoom = 50;
             this.btn_ateliers.LabelPosition = 36;
             this.btn_ateliers.LabelText = "Ateliers";
-            this.btn_ateliers.Location = new System.Drawing.Point(440, 35);
+            this.btn_ateliers.Location = new System.Drawing.Point(315, 34);
             this.btn_ateliers.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_ateliers.Name = "btn_ateliers";
             this.btn_ateliers.Size = new System.Drawing.Size(191, 162);
@@ -790,5 +834,7 @@
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
         public System.Windows.Forms.Label lbl_organisation;
         public Bunifu.Framework.UI.BunifuTileButton bunifuTileButton1;
+        public Bunifu.Framework.UI.BunifuTileButton bunifuTileButton2;
+        public Bunifu.Framework.UI.BunifuTileButton bunifuTileButton3;
     }
 }
