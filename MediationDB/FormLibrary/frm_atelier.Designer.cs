@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.pnl_header = new System.Windows.Forms.Panel();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.label1 = new System.Windows.Forms.Label();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.pnl_header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
@@ -46,19 +46,6 @@
             this.pnl_header.Size = new System.Drawing.Size(1299, 56);
             this.pnl_header.TabIndex = 1;
             // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.Fermer_window;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(1242, 5);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(46, 40);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.bunifuImageButton1.TabIndex = 4;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -69,6 +56,19 @@
             this.label1.Size = new System.Drawing.Size(390, 36);
             this.label1.TabIndex = 2;
             this.label1.Text = "Informations sur les ateliers";
+            // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.Fermer_window;
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(1108, 9);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(46, 40);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bunifuImageButton1.TabIndex = 4;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
             // 
             // frm_atelier
             // 
