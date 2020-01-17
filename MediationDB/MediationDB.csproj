@@ -161,6 +161,12 @@
     <Compile Include="FormLibrary\frm_membres.Designer.cs">
       <DependentUpon>frm_membres.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLibrary\frm_menages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_menages.Designer.cs">
+      <DependentUpon>frm_menages.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLibrary\frm_menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -270,6 +276,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_membres.resx">
       <DependentUpon>frm_membres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_menages.resx">
+      <DependentUpon>frm_menages.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_menu.resx">
       <DependentUpon>frm_menu.cs</DependentUpon>
@@ -395,6 +404,7 @@
     <Content Include="LOGO-SCC-2019-PNG.ico" />
     <Content Include="mediationlogo.ico" />
     <Content Include="mediator.ico" />
+    <None Include="Resources\combo_chart_80px.png" />
     <None Include="Resources\schedule_104px.png" />
     <None Include="Resources\modifier.png" />
     <None Include="Resources\observation.png" />

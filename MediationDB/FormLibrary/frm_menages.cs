@@ -16,5 +16,16 @@ namespace MediationDB.FormLibrary
         {
             InitializeComponent();
         }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            var fr = new frm_membres();
+            fr.Show();
+        }
     }
 }

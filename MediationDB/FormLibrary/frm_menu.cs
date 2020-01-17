@@ -208,7 +208,8 @@ namespace MediationDB.FormLibrary
 
         private void btn_menages_Click(object sender, EventArgs e)
         {
-            //var fr=new 
+            var fr = new frm_menages();
+            fr.Show();
         }
 
         private void btn_types_parties_Click(object sender, EventArgs e)
