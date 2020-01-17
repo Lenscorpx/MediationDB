@@ -215,6 +215,12 @@
     <Compile Include="FormLibrary\frm_situation_menage.Designer.cs">
       <DependentUpon>frm_situation_menage.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLibrary\frm_types_atelier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_types_atelier.Designer.cs">
+      <DependentUpon>frm_types_atelier.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLibrary\frm_types_partie.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -303,6 +309,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_situation_menage.resx">
       <DependentUpon>frm_situation_menage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_types_atelier.resx">
+      <DependentUpon>frm_types_atelier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_types_partie.resx">
       <DependentUpon>frm_types_partie.cs</DependentUpon>
