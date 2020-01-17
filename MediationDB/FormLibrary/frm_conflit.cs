@@ -146,5 +146,11 @@ namespace MediationDB.FormLibrary
             var fr = new frm_details_objets_conflits();
             fr.ShowDialog();
         }
+
+        private void btn_parties_Click(object sender, EventArgs e)
+        {
+            var fr = new frm_details_parties_conflits();
+            fr.ShowDialog();
+        }
     }
 }
