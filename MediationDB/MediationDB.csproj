@@ -119,6 +119,12 @@
     <Compile Include="FormLibrary\frm_details_objets_conflits.Designer.cs">
       <DependentUpon>frm_details_objets_conflits.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLibrary\frm_details_parties_conflits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_details_parties_conflits.Designer.cs">
+      <DependentUpon>frm_details_parties_conflits.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLibrary\frm_etat_participant.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -243,6 +249,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_details_objets_conflits.resx">
       <DependentUpon>frm_details_objets_conflits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_details_parties_conflits.resx">
+      <DependentUpon>frm_details_parties_conflits.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_etat_participant.resx">
       <DependentUpon>frm_etat_participant.cs</DependentUpon>
