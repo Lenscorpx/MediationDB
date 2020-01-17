@@ -702,7 +702,7 @@
             this.bunifuTransition1.SetDecoration(this.bunifuImageButton2, BunifuAnimatorNS.DecorationType.Custom);
             this.bunifuImageButton2.Image = global::MediationDB.Properties.Resources.help_96px;
             this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(1159, 5);
+            this.bunifuImageButton2.Location = new System.Drawing.Point(1193, 5);
             this.bunifuImageButton2.Name = "bunifuImageButton2";
             this.bunifuImageButton2.Size = new System.Drawing.Size(46, 40);
             this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
