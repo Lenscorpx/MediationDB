@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_menu));
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.pnl_head = new System.Windows.Forms.Panel();
@@ -173,22 +173,22 @@
             // 
             this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.bunifuTransition1.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.bunifuTransition1.DefaultAnimation = animation2;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation1;
             this.bunifuTransition1.TimeStep = 0.09F;
             // 
             // panel1
@@ -415,7 +415,7 @@
             this.btn_vulnerabilites.ImageZoom = 50;
             this.btn_vulnerabilites.LabelPosition = 27;
             this.btn_vulnerabilites.LabelText = "Fact. marginalisation";
-            this.btn_vulnerabilites.Location = new System.Drawing.Point(346, 123);
+            this.btn_vulnerabilites.Location = new System.Drawing.Point(662, 14);
             this.btn_vulnerabilites.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_vulnerabilites.Name = "btn_vulnerabilites";
             this.btn_vulnerabilites.Size = new System.Drawing.Size(128, 101);
@@ -436,7 +436,7 @@
             this.btn_types_parties.ImageZoom = 50;
             this.btn_types_parties.LabelPosition = 27;
             this.btn_types_parties.LabelText = "Types de parties";
-            this.btn_types_parties.Location = new System.Drawing.Point(190, 123);
+            this.btn_types_parties.Location = new System.Drawing.Point(506, 14);
             this.btn_types_parties.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_types_parties.Name = "btn_types_parties";
             this.btn_types_parties.Size = new System.Drawing.Size(128, 101);
@@ -499,7 +499,7 @@
             this.btn_users.ImageZoom = 50;
             this.btn_users.LabelPosition = 27;
             this.btn_users.LabelText = "Utilisateurs";
-            this.btn_users.Location = new System.Drawing.Point(658, 14);
+            this.btn_users.Location = new System.Drawing.Point(343, 123);
             this.btn_users.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_users.Name = "btn_users";
             this.btn_users.Size = new System.Drawing.Size(128, 101);
@@ -519,7 +519,7 @@
             this.btn_etat_part.ImageZoom = 50;
             this.btn_etat_part.LabelPosition = 27;
             this.btn_etat_part.LabelText = "Etat du participant";
-            this.btn_etat_part.Location = new System.Drawing.Point(499, 14);
+            this.btn_etat_part.Location = new System.Drawing.Point(183, 123);
             this.btn_etat_part.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_etat_part.Name = "btn_etat_part";
             this.btn_etat_part.Size = new System.Drawing.Size(128, 101);
