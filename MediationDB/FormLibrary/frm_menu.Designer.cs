@@ -43,6 +43,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.bunifuTileButton1 = new Bunifu.Framework.UI.BunifuTileButton();
             this.btn_typep_conflit = new Bunifu.Framework.UI.BunifuTileButton();
             this.btn_pays = new Bunifu.Framework.UI.BunifuTileButton();
             this.btn_porvinces = new Bunifu.Framework.UI.BunifuTileButton();
@@ -66,7 +67,6 @@
             this.btn_mediateurs = new Bunifu.Framework.UI.BunifuTileButton();
             this.btn_sensibilisations = new Bunifu.Framework.UI.BunifuTileButton();
             this.btn_ateliers = new Bunifu.Framework.UI.BunifuTileButton();
-            this.bunifuTileButton1 = new Bunifu.Framework.UI.BunifuTileButton();
             this.pnl_head.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
@@ -260,6 +260,26 @@
             this.panel2.Size = new System.Drawing.Size(1300, 240);
             this.panel2.TabIndex = 60;
             // 
+            // bunifuTileButton1
+            // 
+            this.bunifuTileButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.bunifuTileButton1.color = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.bunifuTileButton1.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuTileButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.bunifuTileButton1, BunifuAnimatorNS.DecorationType.Custom);
+            this.bunifuTileButton1.Font = new System.Drawing.Font("Century Gothic", 8F);
+            this.bunifuTileButton1.ForeColor = System.Drawing.Color.White;
+            this.bunifuTileButton1.Image = global::MediationDB.Properties.Resources.schedule_104px;
+            this.bunifuTileButton1.ImagePosition = 14;
+            this.bunifuTileButton1.ImageZoom = 50;
+            this.bunifuTileButton1.LabelPosition = 27;
+            this.bunifuTileButton1.LabelText = "Types d\'ateliers";
+            this.bunifuTileButton1.Location = new System.Drawing.Point(32, 123);
+            this.bunifuTileButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bunifuTileButton1.Name = "bunifuTileButton1";
+            this.bunifuTileButton1.Size = new System.Drawing.Size(128, 101);
+            this.bunifuTileButton1.TabIndex = 54;
+            // 
             // btn_typep_conflit
             // 
             this.btn_typep_conflit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
@@ -400,6 +420,7 @@
             this.btn_vulnerabilites.Name = "btn_vulnerabilites";
             this.btn_vulnerabilites.Size = new System.Drawing.Size(128, 101);
             this.btn_vulnerabilites.TabIndex = 16;
+            this.btn_vulnerabilites.Click += new System.EventHandler(this.btn_vulnerabilites_Click);
             // 
             // btn_types_parties
             // 
@@ -420,6 +441,7 @@
             this.btn_types_parties.Name = "btn_types_parties";
             this.btn_types_parties.Size = new System.Drawing.Size(128, 101);
             this.btn_types_parties.TabIndex = 15;
+            this.btn_types_parties.Click += new System.EventHandler(this.btn_types_parties_Click);
             // 
             // btn_situation
             // 
@@ -730,26 +752,6 @@
             this.btn_ateliers.Size = new System.Drawing.Size(191, 162);
             this.btn_ateliers.TabIndex = 0;
             this.btn_ateliers.Click += new System.EventHandler(this.btn_ateliers_Click);
-            // 
-            // bunifuTileButton1
-            // 
-            this.bunifuTileButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.bunifuTileButton1.color = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.bunifuTileButton1.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuTileButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.bunifuTileButton1, BunifuAnimatorNS.DecorationType.Custom);
-            this.bunifuTileButton1.Font = new System.Drawing.Font("Century Gothic", 8F);
-            this.bunifuTileButton1.ForeColor = System.Drawing.Color.White;
-            this.bunifuTileButton1.Image = global::MediationDB.Properties.Resources.schedule_104px;
-            this.bunifuTileButton1.ImagePosition = 14;
-            this.bunifuTileButton1.ImageZoom = 50;
-            this.bunifuTileButton1.LabelPosition = 27;
-            this.bunifuTileButton1.LabelText = "Types d\'ateliers";
-            this.bunifuTileButton1.Location = new System.Drawing.Point(32, 123);
-            this.bunifuTileButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.bunifuTileButton1.Name = "bunifuTileButton1";
-            this.bunifuTileButton1.Size = new System.Drawing.Size(128, 101);
-            this.bunifuTileButton1.TabIndex = 54;
             // 
             // frm_menu
             // 
