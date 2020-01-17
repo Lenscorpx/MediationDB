@@ -229,5 +229,11 @@ namespace MediationDB.FormLibrary
             var fr = new frm_types_atelier();
             fr.ShowDialog();
         }
+
+        private void btn_etat_part_Click(object sender, EventArgs e)
+        {
+            var fr = new frm_etat_participant();
+            fr.ShowDialog();
+        }
     }
 }
