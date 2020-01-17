@@ -1204,5 +1204,62 @@ create table t_beneficiaires
 go
 create table t_bailleurs
 (	
-	
+	id_bailleurs nvarchar(50),
+	noms nvarchar(100),
+	adresse nvarchar(100),
+	telephone nvarchar(50),
+	email nvarchar(50),
+	site_web nvarchar(50),
+	constraint pk_bailleur primary key(id_bailleurs)
 )
+go
+create table t_executants
+(
+	id_executant nvarchar(50),
+	noms nvarchar(100),
+	adresse nvarchar(100),
+	telephone nvarchar(50),
+	email nvarchar(50),
+	site_web nvarchar(50),
+	constraint pk_executant primary key(id_executant)
+)
+go
+create table t_projets
+(	
+	id_projet nvarchar(50),
+	intitule_projet nvarchar(100),
+	debut_projet date,
+	fin_projet date,
+	constraint pk_projet primary key(id_projet)
+)
+go
+create table t_assignation_bailleurs
+(	
+	num_assignation int identity,
+	date_debut date,
+	id_projet nvarchar(50),
+	id_bailleurs nvarchar(50),
+	constraint pk_assignation primary key(num_assignation),
+	constraint fk_bailleur_ass foreign key(id_bailleurs) references t_bailleurs(id_bailleurs),
+	constraint fk_projet_ass foreign key(id_projet) references t_projets(id_projet)
+)
+go
+create table t_distribution
+(
+	num_distribution int identity,
+	date_distribution date,
+	id_localite nvarchar(50),
+	id_projet nvarchar(50),
+	id_agr nvarchar(50),
+	qte decimal,
+	id_executant nvarchar(50),
+	id_beneficiaire nvarchar(50),
+	observation nvarchar(50),
+	constraint pk_distribution primary key(num_distribution),
+	constraint fk_projet_distribution foreign key(id_projet) references t_projets(id_projet),
+	constraint fk_agr_distribution foreign key(id_agr) references t_agr(id_agr),
+	constraint fk_executant_distr foreign key(id_executant) references t_executants(id_executant),
+	constraint fk_beneficiaire_distr foreign key(id_beneficiaire) references t_beneficiaires(id_beneficiaire),
+	constraint fk_localite_distrib foreign key(id_localite) references t_localite(id_localite)
+)
+go
