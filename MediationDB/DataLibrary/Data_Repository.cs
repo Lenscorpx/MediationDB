@@ -2134,14 +2134,14 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void afficher_membre(DataGridView dtg)
+        public void afficher_membres(DataGridView dtg)
         {
             cnx = new SqlConnection(prms.ToString());
             try
             {
                 if (cnx.State == ConnectionState.Closed)
                     cnx.Open();
-                var cmd = new SqlCommand("afficher_membre", cnx)
+                var cmd = new SqlCommand("afficher_membres", cnx)
                 {
                     CommandType = CommandType.StoredProcedure
                 };
@@ -2249,7 +2249,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void supprimer_membre(int num_sensibilisation)
+        public void supprimer_membre(string id_membre)
         {
             cnx = new SqlConnection(prms.ToString());
             try

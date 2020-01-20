@@ -21,7 +21,7 @@ namespace MediationDB.FormLibrary
         }
         public void refresh()
         {
-            rps.afficher_membre(bunifuCustomDataGrid2);
+            rps.afficher_membres(bunifuCustomDataGrid2);
             rps.recuperer_vulnerabilite(cbx_vulnerabilite);
             txt_adresse.ResetText();
             txt_code_membre.ResetText();
@@ -95,6 +95,24 @@ namespace MediationDB.FormLibrary
         private void frm_membres_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_supprimer_Click(object sender, EventArgs e)
+        {
+            if(txt_code_membre.Text=="")
+            {
+                MessageBox.Show("Veuillez choisir le membre a supprimer!");
+            }
+            else
+            { 
+                DialogResult rs = MessageBox.Show(this, "Voulez vous vraiment supprimer cet élément?", "Confirmation de suppression", 
+                                     MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+                if(rs==DialogResult.Yes)
+                {
+                    rps.supprimer_membre(txt_code_membre.Text);
+
+                }
+            }
         }
     }
 }
