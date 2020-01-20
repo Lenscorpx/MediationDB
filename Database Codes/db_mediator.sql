@@ -358,6 +358,52 @@ as
 		order by
 			date_enregistrement desc, id_membre desc
 go
+create procedure rechercher_membres_parID
+@id_menage nvarchar(200)
+as
+	select top 50 
+		id_membre as 'ID',
+		noms as 'Noms',
+		sexe as 'Genre',
+		date_naissance as 'Date Naissance',
+		etat_civil as 'Etat Civil',
+		id_vulnerabilite as 'Vulnerabilite',
+		provenance as 'Provenance',
+		adresse as 'Adresse',
+		num_tel as 'Telephone',
+		repr_menage as 'Repr. Menage',
+		profession as 'Profession',
+		id_menage as 'Menage',
+		date_enregistrement as 'Enreg.'		
+	from t_membres
+	where 
+		id_menage like '%'+@id_menage+'%'
+		order by
+			date_enregistrement desc, id_membre desc
+go
+create procedure rechercher_membres_parNoms
+@noms nvarchar(200)
+as
+	select top 50 
+		id_membre as 'ID',
+		noms as 'Noms',
+		sexe as 'Genre',
+		date_naissance as 'Date Naissance',
+		etat_civil as 'Etat Civil',
+		id_vulnerabilite as 'Vulnerabilite',
+		provenance as 'Provenance',
+		adresse as 'Adresse',
+		num_tel as 'Telephone',
+		repr_menage as 'Repr. Menage',
+		profession as 'Profession',
+		id_menage as 'Menage',
+		date_enregistrement as 'Enreg.'		
+	from t_membres
+	where 
+		noms like '%'+@noms+'%'
+		order by
+			date_enregistrement desc, id_membre desc
+go
 create procedure inserer_membre
 @id_membre nvarchar(200),
 @noms nvarchar(200),
@@ -435,7 +481,7 @@ as
 	select top 50
 		noms
 	from t_membres
-go		
+go
 ------------- types : conflit lie aux concessions, espaces proteges, etc.....
 create table t_type_conflit
 (
