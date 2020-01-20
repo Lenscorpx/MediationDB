@@ -1753,7 +1753,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void enregistrer_menage(string id_menage, string id_situation)
+        public void enregistrer_menage(string id_menage, string id_situation, int hommes, int femmes, int garcons, int filles)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -1766,6 +1766,10 @@ namespace MediationDB.DataLibrary
                 };
                 cmd.Parameters.Add(new SqlParameter("id_menage", SqlDbType.NVarChar)).Value = id_menage;
                 cmd.Parameters.Add(new SqlParameter("id_situation", SqlDbType.NVarChar)).Value = id_situation;
+                cmd.Parameters.Add(new SqlParameter("hommes", SqlDbType.Int)).Value = hommes;
+                cmd.Parameters.Add(new SqlParameter("femmes", SqlDbType.Int)).Value = femmes;
+                cmd.Parameters.Add(new SqlParameter("garcons", SqlDbType.Int)).Value = garcons;
+                cmd.Parameters.Add(new SqlParameter("filles", SqlDbType.Int)).Value = filles;
                 cmd.ExecuteNonQuery();
                 //afficher_frais(dtg);
                 MessageBox.Show("Enregistrement avec succès!", "Enregistrement", MessageBoxButtons.OK, MessageBoxIcon.Information);
