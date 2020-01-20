@@ -1841,7 +1841,7 @@ namespace MediationDB.DataLibrary
             }
             catch (Exception tdf)
             {
-                MessageBox.Show("Connectin failed!\n" + tdf);
+                MessageBox.Show("Connections failed!\n" + tdf);
             }
             finally
             {
