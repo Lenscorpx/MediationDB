@@ -403,6 +403,14 @@ as
 		where
 			id_membre like @id_membre
 go
+create procedure recuperer_membre
+as
+	select top 50
+		noms
+	from t_membres
+go
+create procedure rechercher_membre
+		
 ------------- types : conflit lie aux concessions, espaces proteges, etc.....
 create table t_type_conflit
 (
