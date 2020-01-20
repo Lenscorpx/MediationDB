@@ -43,7 +43,7 @@
             this.cbx_etat_civil = new MetroFramework.Controls.MetroComboBox();
             this.dt_date_naissance = new MetroFramework.Controls.MetroDateTime();
             this.label2 = new System.Windows.Forms.Label();
-            this = new MetroFramework.Controls.MetroDateTime();
+            this.dt_date_enregistrement = new MetroFramework.Controls.MetroDateTime();
             this.cbx_vulnerabilite = new MetroFramework.Controls.MetroComboBox();
             this.txt_provenance = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txt_telephone = new Bunifu.Framework.UI.BunifuMaterialTextbox();
