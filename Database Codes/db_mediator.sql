@@ -220,19 +220,27 @@ create table t_menages
     id_menage nvarchar(200),
     date_enregistrement date,
     id_situation nvarchar(200),
+	total_homme int,
+	total_femme int,
+	total_garcons int,
+	total_filles int,
     constraint pk_menages primary key(id_menage),
     constraint fk_situation foreign key(id_situation) references t_situation_menage(id_situation)
 )
 go
 create procedure afficher_menages
 as
-    select top 50 id_menage as 'Code Menage', date_enregistrement as 'Date Enr', id_situation as 'Situation Menage' from t_menages
+    select top 50 id_menage as 'Code Menage', date_enregistrement as 'Date Enr', id_situation as 'Situation Menage', total_homme as 'Hommes', total_femme as 'Femmes', total_garcons as 'Garcons', total_filles as 'Filles' from t_menages
     order by  
         date_enregistrement desc, id_menage desc
     go
 create procedure enregistrer_menage
 @id_menage nvarchar(200),
-@id_situation nvarchar(200)
+@id_situation nvarchar(200),
+@hommes int, 
+@femmes int, 
+@filles int, 
+@garcons int
 as 
     merge into t_menages
     using (select @id_menage as x_id) as x_source
@@ -240,12 +248,16 @@ as
     when matched then
         update set
             date_enregistrement=getDate(),
-            id_situation=@id_situation
+            id_situation=@id_situation,
+			total_homme=@hommes,
+			total_femme=@femmes,
+			total_garcons=@garcons,
+			total_filles=@filles
     when not matched then
         insert
-            (id_menage,date_enregistrement,id_situation)
+            (id_menage,date_enregistrement,id_situation, total_homme, total_femme, total_garcons, total_filles)
         values
-            (@id_menage,getDate(),@id_situation);
+            (@id_menage,getDate(),@id_situation, @hommes, @femmes, @garcons, @filles);
 go
 create procedure supprimer_menage
 @id_menage nvarchar(200)
