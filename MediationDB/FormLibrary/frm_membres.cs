@@ -31,5 +31,10 @@ namespace MediationDB.FormLibrary
         {
 
         }
+
+        private void frm_membres_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
