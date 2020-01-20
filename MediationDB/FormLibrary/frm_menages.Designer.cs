@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuCustomDataGrid2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
@@ -46,9 +46,9 @@
             this.cbx_situation_menage = new MetroFramework.Controls.MetroComboBox();
             this.txt_femmes = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_hommes = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.btn_garcons = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.btn_filles = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_hommes = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_garcons = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_filles = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).BeginInit();
@@ -58,37 +58,37 @@
             // 
             // bunifuCustomDataGrid2
             // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.bunifuCustomDataGrid2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.bunifuCustomDataGrid2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.bunifuCustomDataGrid2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.bunifuCustomDataGrid2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.bunifuCustomDataGrid2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bunifuCustomDataGrid2.ColumnHeadersVisible = false;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid2.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid2.DefaultCellStyle = dataGridViewCellStyle3;
             this.bunifuCustomDataGrid2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.bunifuCustomDataGrid2.DoubleBuffered = true;
             this.bunifuCustomDataGrid2.EnableHeadersVisualStyles = false;
@@ -98,22 +98,22 @@
             this.bunifuCustomDataGrid2.Location = new System.Drawing.Point(0, 235);
             this.bunifuCustomDataGrid2.Name = "bunifuCustomDataGrid2";
             this.bunifuCustomDataGrid2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid2.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid2.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid2.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid2.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.bunifuCustomDataGrid2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.bunifuCustomDataGrid2.Size = new System.Drawing.Size(1256, 380);
             this.bunifuCustomDataGrid2.TabIndex = 114;
@@ -198,6 +198,7 @@
             this.btn_enregistrer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_enregistrer.Textcolor = System.Drawing.Color.White;
             this.btn_enregistrer.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_enregistrer.Click += new System.EventHandler(this.btn_enregistrer_Click);
             // 
             // btn_supprimer
             // 
@@ -340,63 +341,63 @@
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
             // 
-            // btn_hommes
+            // txt_hommes
             // 
-            this.btn_hommes.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.btn_hommes.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.btn_hommes.ForeColor = System.Drawing.Color.White;
-            this.btn_hommes.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btn_hommes.HintText = "Nombre d\'hommes";
-            this.btn_hommes.isPassword = false;
-            this.btn_hommes.LineFocusedColor = System.Drawing.Color.DodgerBlue;
-            this.btn_hommes.LineIdleColor = System.Drawing.Color.White;
-            this.btn_hommes.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
-            this.btn_hommes.LineThickness = 1;
-            this.btn_hommes.Location = new System.Drawing.Point(22, 122);
-            this.btn_hommes.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_hommes.Name = "btn_hommes";
-            this.btn_hommes.Size = new System.Drawing.Size(272, 44);
-            this.btn_hommes.TabIndex = 118;
-            this.btn_hommes.Text = "Nombres d\'hommes";
-            this.btn_hommes.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_hommes.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_hommes.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_hommes.ForeColor = System.Drawing.Color.White;
+            this.txt_hommes.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_hommes.HintText = "Nombre d\'hommes";
+            this.txt_hommes.isPassword = false;
+            this.txt_hommes.LineFocusedColor = System.Drawing.Color.DodgerBlue;
+            this.txt_hommes.LineIdleColor = System.Drawing.Color.White;
+            this.txt_hommes.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
+            this.txt_hommes.LineThickness = 1;
+            this.txt_hommes.Location = new System.Drawing.Point(22, 122);
+            this.txt_hommes.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_hommes.Name = "txt_hommes";
+            this.txt_hommes.Size = new System.Drawing.Size(272, 44);
+            this.txt_hommes.TabIndex = 118;
+            this.txt_hommes.Text = "Nombres d\'hommes";
+            this.txt_hommes.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // btn_garcons
+            // txt_garcons
             // 
-            this.btn_garcons.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.btn_garcons.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.btn_garcons.ForeColor = System.Drawing.Color.White;
-            this.btn_garcons.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btn_garcons.HintText = "Nombres de garcons";
-            this.btn_garcons.isPassword = false;
-            this.btn_garcons.LineFocusedColor = System.Drawing.Color.DodgerBlue;
-            this.btn_garcons.LineIdleColor = System.Drawing.Color.White;
-            this.btn_garcons.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
-            this.btn_garcons.LineThickness = 1;
-            this.btn_garcons.Location = new System.Drawing.Point(651, 122);
-            this.btn_garcons.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_garcons.Name = "btn_garcons";
-            this.btn_garcons.Size = new System.Drawing.Size(272, 44);
-            this.btn_garcons.TabIndex = 119;
-            this.btn_garcons.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_garcons.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_garcons.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_garcons.ForeColor = System.Drawing.Color.White;
+            this.txt_garcons.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_garcons.HintText = "Nombres de garcons";
+            this.txt_garcons.isPassword = false;
+            this.txt_garcons.LineFocusedColor = System.Drawing.Color.DodgerBlue;
+            this.txt_garcons.LineIdleColor = System.Drawing.Color.White;
+            this.txt_garcons.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
+            this.txt_garcons.LineThickness = 1;
+            this.txt_garcons.Location = new System.Drawing.Point(651, 122);
+            this.txt_garcons.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_garcons.Name = "txt_garcons";
+            this.txt_garcons.Size = new System.Drawing.Size(272, 44);
+            this.txt_garcons.TabIndex = 119;
+            this.txt_garcons.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // btn_filles
+            // txt_filles
             // 
-            this.btn_filles.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.btn_filles.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.btn_filles.ForeColor = System.Drawing.Color.White;
-            this.btn_filles.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btn_filles.HintText = "Nombres de filles";
-            this.btn_filles.isPassword = false;
-            this.btn_filles.LineFocusedColor = System.Drawing.Color.DodgerBlue;
-            this.btn_filles.LineIdleColor = System.Drawing.Color.White;
-            this.btn_filles.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
-            this.btn_filles.LineThickness = 1;
-            this.btn_filles.Location = new System.Drawing.Point(959, 122);
-            this.btn_filles.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_filles.Name = "btn_filles";
-            this.btn_filles.Size = new System.Drawing.Size(272, 44);
-            this.btn_filles.TabIndex = 120;
-            this.btn_filles.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_filles.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_filles.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_filles.ForeColor = System.Drawing.Color.White;
+            this.txt_filles.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_filles.HintText = "Nombres de filles";
+            this.txt_filles.isPassword = false;
+            this.txt_filles.LineFocusedColor = System.Drawing.Color.DodgerBlue;
+            this.txt_filles.LineIdleColor = System.Drawing.Color.White;
+            this.txt_filles.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
+            this.txt_filles.LineThickness = 1;
+            this.txt_filles.Location = new System.Drawing.Point(959, 122);
+            this.txt_filles.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_filles.Name = "txt_filles";
+            this.txt_filles.Size = new System.Drawing.Size(272, 44);
+            this.txt_filles.TabIndex = 120;
+            this.txt_filles.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label2
             // 
@@ -428,9 +429,9 @@
             this.ClientSize = new System.Drawing.Size(1256, 615);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btn_filles);
-            this.Controls.Add(this.btn_garcons);
-            this.Controls.Add(this.btn_hommes);
+            this.Controls.Add(this.txt_filles);
+            this.Controls.Add(this.txt_garcons);
+            this.Controls.Add(this.txt_hommes);
             this.Controls.Add(this.bunifuFlatButton1);
             this.Controls.Add(this.bunifuCustomDataGrid2);
             this.Controls.Add(this.panel1);
@@ -468,9 +469,9 @@
         private MetroFramework.Controls.MetroComboBox cbx_situation_menage;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_femmes;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox btn_hommes;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox btn_garcons;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox btn_filles;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_hommes;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_garcons;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_filles;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
     }

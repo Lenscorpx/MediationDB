@@ -23,7 +23,10 @@ namespace MediationDB.FormLibrary
         {
             rps.afficher_menages(bunifuCustomDataGrid2);
             txt_code_menage.ResetText();
-            txt_num_conflit.ResetText();
+            txt_femmes.ResetText();
+            txt_filles.ResetText();
+            txt_garcons.ResetText();
+            txt_hommes.ResetText();
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
@@ -35,6 +38,11 @@ namespace MediationDB.FormLibrary
         {
             var fr = new frm_membres();
             fr.Show();
+        }
+
+        private void btn_enregistrer_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
