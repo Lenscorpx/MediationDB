@@ -358,7 +358,7 @@ as
 		order by
 			date_enregistrement desc, id_membre desc
 go
-create procedure enregistrer_membre
+create procedure inserer_membre
 @id_membre nvarchar(200),
 @noms nvarchar(200),
 @date_naissance date,
@@ -373,28 +373,55 @@ create procedure enregistrer_membre
 @date_enregistrement date,
 @sexe nvarchar(200)
 as
-	merge into t_membres
-	using (select @id_membre as x_id)as x_member
-	on(x_member.x_id=t_membre.id_membre)
-	when matched then
-		update set
-			noms=@noms,
-			date_naissance=@date_naissance,
-			etat_civil=@etat_civil,
-			id_vulnerabilite=@id_vulnerabilite,
-			provenance=@provenance,
-			adresse=@adresse,
-			num_tel=@num_tel,
-			repr_menage=@repr_menage,
-			profession=@profession,
-			id_menage=@id_menage,
-			date_enregistrement=@date_enregistrement,
-			sexe=@sexe
-	when not matched then
-		insert 
-			(id_membre, noms, date_naissance, sexe,etat_civil, id_vulnerabilite, provenance, adresse, num_tel, repr_menage, profession, id_menage, date_enregistrement)
-		values
-			(@id_membre, @noms, @date_naissance, @sexe, @etat_civil, @id_vulnerabilite, @provenance, @adresse, @num_tel, @repr_menage, @profession, @id_menage, @date_enregistrement);
+	insert into t_membres
+		(
+			id_membre, 
+			noms, 
+			date_naissance, 
+			sexe,etat_civil, 
+			id_vulnerabilite, 
+			provenance, 
+			adresse, 
+			num_tel, 
+			repr_menage, 
+			profession, 
+			id_menage, 
+			date_enregistrement
+		)
+	values
+		(@id_membre, @noms, @date_naissance, @sexe, @etat_civil, @id_vulnerabilite, @provenance, @adresse, @num_tel, @repr_menage, @profession, @id_menage, @date_enregistrement);
+go
+create procedure modifier_membre
+@id_membre nvarchar(200),
+@noms nvarchar(200),
+@date_naissance date,
+@etat_civil nvarchar(200),
+@id_vulnerabilite nvarchar(200),
+@provenance nvarchar(200),
+@adresse nvarchar(200),
+@num_tel nvarchar(200),
+@repr_menage nvarchar(200),
+@profession nvarchar(200),
+@id_menage nvarchar(200),
+@date_enregistrement date,
+@sexe nvarchar(200)
+as
+	update t_membres 
+	set
+		noms=@noms,
+		date_naissance=@date_naissance,
+		etat_civil=@etat_civil,
+		id_vulnerabilite=@id_vulnerabilite,
+		provenance=@provenance,
+		adresse=@adresse,
+		num_tel=@num_tel,
+		repr_menage=@repr_menage,
+		profession=@profession,
+		id_menage=@id_menage,
+		date_enregistrement=@date_enregistrement,
+		sexe=@sexe
+	where
+		id_membre like @id_membre
 go
 create procedure supprimer_membre
 @id_membre nvarchar(200)
@@ -408,9 +435,7 @@ as
 	select top 50
 		noms
 	from t_membres
-go
-create procedure rechercher_membre
-		
+go		
 ------------- types : conflit lie aux concessions, espaces proteges, etc.....
 create table t_type_conflit
 (
