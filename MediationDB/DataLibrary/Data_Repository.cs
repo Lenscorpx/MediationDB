@@ -28,8 +28,7 @@ namespace MediationDB.DataLibrary
             //prms.Serveur = "DESKTOP-NFR9KTI";
             //prms.Base_de_donnees = "db_mediator";
             //prms.Nom_user = "sa";
-            //prms.Mot_de_passe = "Server@2019.com?";
-            
+            //prms.Mot_de_passe = "Server@2019.com?";            
         }
         public void afficher_mediateur(DataGridView dtg)
         {
