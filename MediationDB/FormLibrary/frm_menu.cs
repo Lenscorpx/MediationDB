@@ -238,7 +238,7 @@ namespace MediationDB.FormLibrary
 
         private void btn_organisations_Click(object sender, EventArgs e)
         {
-            var fr = new frm_organisations();
+            var fr = new frm_membres();
             fr.ShowDialog();
         }
     }
