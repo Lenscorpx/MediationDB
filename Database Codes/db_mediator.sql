@@ -384,8 +384,7 @@ go
 create procedure rechercher_membres_parNoms
 @noms nvarchar(200)
 as
-	select top 50 
-		id_membre as 'ID',
+	select top 50		id_membre as 'ID',
 		noms as 'Noms',
 		sexe as 'Genre',
 		date_naissance as 'Date Naissance',
@@ -699,6 +698,12 @@ as
     from t_objets_conflits
         order by id_objets_conflits asc
 go
+create procedure recuperer_objet_conflit
+as
+    select id_objets_conflits as 'Objet de conflit' 
+    from t_objets_conflits
+        order by id_objets_conflits asc
+go
 create procedure enregistrer_objet_conflit
 @id_objets_conflits nvarchar(200),
 @descr_objet_conflits nvarchar(200)
@@ -741,6 +746,7 @@ create table t_assignation_objets
     constraint fk_conflit_obj foreign key(num_conflit) references t_conflit(num_conflit)
 )
 go
+create procedure afficher_assign_objets
 -----------------------------Debut code cause_conflit--------------------------------------------------
 create table t_causes_conflits
 (
