@@ -21,14 +21,14 @@ namespace MediationDB.DataLibrary
             //prms.Serveur = "tcp:conebase.database.windows.net";                    
             //prms.Nom_user = "LensX";
             //prms.Mot_de_passe = "Cony@2017.com?";
-            prms.Serveur = "DESKTOP-PO0I2OH";
-            prms.Base_de_donnees = "db_mediator";
-            prms.Nom_user = "sa";
-            prms.Mot_de_passe = "Windy@2019.com?";
-            //prms.Serveur = "DESKTOP-NFR9KTI";
+            //prms.Serveur = "DESKTOP-PO0I2OH";
             //prms.Base_de_donnees = "db_mediator";
             //prms.Nom_user = "sa";
-            //prms.Mot_de_passe = "Server@2019.com?";            
+            //prms.Mot_de_passe = "Windy@2019.com?";
+            prms.Serveur = "SCI-CD-L19-430\\SERVEUR";
+            prms.Base_de_donnees = "db_mediator";
+            prms.Nom_user = "sa";
+            prms.Mot_de_passe = "123456789";
         }
         public void afficher_mediateur(DataGridView dtg)
         {
