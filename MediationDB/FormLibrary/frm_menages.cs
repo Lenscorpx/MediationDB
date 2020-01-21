@@ -22,6 +22,7 @@ namespace MediationDB.FormLibrary
         private void refresh()
         {
             rps.afficher_menages(bunifuCustomDataGrid2);
+            rps.recuperer_situation_menage(cbx_situation_menage);
             txt_code_menage.ResetText();
             txt_femmes.ResetText();
             txt_filles.ResetText();

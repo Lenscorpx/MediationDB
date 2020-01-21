@@ -114,5 +114,15 @@ namespace MediationDB.FormLibrary
                 }
             }
         }
+
+        private void txt_id_menage_OnValueChanged(object sender, EventArgs e)
+        {
+            rps.rechercher_membres_parID(bunifuCustomDataGrid2, txt_id_menage.Text);
+        }
+
+        private void txt_noms_membre_OnValueChanged(object sender, EventArgs e)
+        {
+            rps.rechercher_membres_parNoms(bunifuCustomDataGrid2, txt_noms_membre.Text);
+        }
     }
 }
