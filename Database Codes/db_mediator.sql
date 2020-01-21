@@ -747,6 +747,29 @@ create table t_assignation_objets
 )
 go
 create procedure afficher_assign_objets
+as
+	select top 50
+		num_details_objet as 'Num.',
+		date_enreg as 'Date Enr',
+		id_objets_conflits as 'Objets de conflit',
+		num_conflit as 'Conflit',
+		observation as 'Observation'
+	from t_assignation_objets
+		order by num_details_objet desc
+go
+create procedure inserer_objet_conflit
+@date_enreg date,
+@id_objets_conflits nvarchar(200),
+@num_conflit int,
+@observation nvarchar(200)
+as
+	insert into t_assignation_objets
+		(date_enreg, id_objets_conflits,num_conflit,observation)
+	values
+		(@date_enreg, @id_objets_conflits, @num_conflit, @observation)
+go
+create procedure modifier_objet_conflit
+
 -----------------------------Debut code cause_conflit--------------------------------------------------
 create table t_causes_conflits
 (
