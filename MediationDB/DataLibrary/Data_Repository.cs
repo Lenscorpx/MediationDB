@@ -2005,7 +2005,6 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-
         public void afficher_ateliers_sensibilises(DataGridView dtg)
         {
             cnx = new SqlConnection(prms.ToString());
