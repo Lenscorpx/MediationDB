@@ -265,6 +265,15 @@ as
     delete from t_menages
         where id_menage like @id_menage
 go
+create procedure search_menage
+@mot nvarchar(50)
+as
+	select top 50 id_menage as 'Code Menage', date_enregistrement as 'Date Enr', id_situation as 'Situation Menage', total_homme as 'Hommes', total_femme as 'Femmes', total_garcons as 'Garcons', total_filles as 'Filles' from t_menages
+    where
+		id_menage like '%'+@mot+'%'
+	order by  
+        date_enregistrement desc, id_menage desc
+go
 -----------------------------Fin codes menages --------------------------------------------------------------
 
 -----------------------------Debut codes vulnerabilite ---------------------------------------
@@ -863,7 +872,31 @@ as
 		order by num_assignation_causes desc
 go
 create procedure inserer_assignation_causes
-
+@id_cause_conflit nvarchar(50),
+@num_conflit int
+as
+	insert into t_assignation_causes
+		(date_enreg, id_cause_conflit, num_conflit)
+	values
+		(GETDATE(),@id_cause_conflit, @num_conflit)
+go
+create procedure modifier_assignation_causes
+@num_assignation_causes int,
+@id_cause_conflit nvarchar(50),
+@num_conflit int
+as
+	update t_assignation_causes
+		set
+			date_enreg = Getdate(),
+			id_cause_conflit=@id_cause_conflit,
+			num_conflit=@num_conflit
+	where
+		num_assignation_causes like @num_assignation_causes
+go
+create procedure supprimer_assignation_causes
+@num_assignation_causes int
+as
+	delete from t_
 ---cette table permettra de reconnaitre quel type de menages est soit accuse ou plaignant
 --------------------- Debut codes Types Parties ---------------------------------------------------------
 create table t_type_parties 
@@ -1488,3 +1521,13 @@ create table t_distribution
 	constraint fk_localite_distrib foreign key(id_localite) references t_localite(id_localite)
 )
 go
+create procedure chart_nombre_menage
+as
+select count(id_menage) from t_menages
+go
+create procedure chart_nombre_membre
+as
+select count(id_membre) from t_membres
+go
+select * from t_menages
+

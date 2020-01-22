@@ -59,6 +59,16 @@ namespace MediationDB.FormLibrary
             {
                 rps.enregistrer_menage(txt_code_menage.Text, cbx_situation_menage.Text, Convert.ToInt32(txt_hommes.Text), Convert.ToInt32(txt_femmes.Text), Convert.ToInt32(txt_garcons.Text), Convert.ToInt32(txt_filles.Text));
                 refresh();
+                if (txt_code_menage.Text == "")
+                {
+                    MessageBox.Show("Veuillez selectionner le menage auquel vous voulez ajouter un membre!");
+                }
+                else
+                {
+                    var fr = new frm_membres();
+                    fr.txt_id_menage.Text = txt_code_menage.Text;
+                    fr.ShowDialog();
+                }
             }
         }
 
@@ -89,6 +99,11 @@ namespace MediationDB.FormLibrary
             txt_femmes.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[4].Value.ToString();
             txt_garcons.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[5].Value.ToString();
             txt_filles.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[6].Value.ToString();
+        }
+
+        private void txt_code_menage_OnValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
