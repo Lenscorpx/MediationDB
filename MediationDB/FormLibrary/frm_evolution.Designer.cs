@@ -51,7 +51,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1295, 49);
+            this.panel1.Size = new System.Drawing.Size(1137, 49);
             this.panel1.TabIndex = 34;
             // 
             // label1
@@ -59,7 +59,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(411, 10);
+            this.label1.Location = new System.Drawing.Point(280, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(489, 30);
             this.label1.TabIndex = 8;
@@ -70,7 +70,7 @@
             this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.multiply_96px;
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(1246, 8);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(1086, 7);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Size = new System.Drawing.Size(42, 34);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -91,7 +91,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(262, 104);
+            this.label2.Location = new System.Drawing.Point(137, 109);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(767, 65);
             this.label2.TabIndex = 9;
@@ -102,7 +102,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(263, 391);
+            this.label3.Location = new System.Drawing.Point(110, 347);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(766, 65);
             this.label3.TabIndex = 35;
@@ -113,7 +113,7 @@
             this.lbl_nombre_menages.AutoSize = true;
             this.lbl_nombre_menages.Font = new System.Drawing.Font("Century Gothic", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_nombre_menages.ForeColor = System.Drawing.Color.White;
-            this.lbl_nombre_menages.Location = new System.Drawing.Point(618, 237);
+            this.lbl_nombre_menages.Location = new System.Drawing.Point(498, 214);
             this.lbl_nombre_menages.Name = "lbl_nombre_menages";
             this.lbl_nombre_menages.Size = new System.Drawing.Size(72, 81);
             this.lbl_nombre_menages.TabIndex = 36;
@@ -124,7 +124,7 @@
             this.lbl_nombre_membre.AutoSize = true;
             this.lbl_nombre_membre.Font = new System.Drawing.Font("Century Gothic", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_nombre_membre.ForeColor = System.Drawing.Color.White;
-            this.lbl_nombre_membre.Location = new System.Drawing.Point(621, 577);
+            this.lbl_nombre_membre.Location = new System.Drawing.Point(498, 495);
             this.lbl_nombre_membre.Name = "lbl_nombre_membre";
             this.lbl_nombre_membre.Size = new System.Drawing.Size(72, 81);
             this.lbl_nombre_membre.TabIndex = 37;
@@ -150,7 +150,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.ClientSize = new System.Drawing.Size(1295, 651);
+            this.ClientSize = new System.Drawing.Size(1137, 651);
             this.Controls.Add(this.lbl_date);
             this.Controls.Add(this.lbl_nombre_membre);
             this.Controls.Add(this.lbl_nombre_menages);

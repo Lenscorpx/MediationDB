@@ -241,5 +241,11 @@ namespace MediationDB.FormLibrary
             var fr = new frm_membres();
             fr.ShowDialog();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            var fr = new frm_evolution();
+            fr.Show();
+        }
     }
 }

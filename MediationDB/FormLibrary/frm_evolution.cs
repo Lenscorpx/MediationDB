@@ -32,9 +32,17 @@ namespace MediationDB.FormLibrary
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            rps.chart_nombre_membre(lbl_nombre_membre);
-            rps.chart_nombre_menage(lbl_nombre_menages);
-            lbl_date.Text = Convert.ToString(DateTime.Now);
+            try
+            {
+                rps.chart_nombre_membre(lbl_nombre_membre);
+                rps.chart_nombre_menage(lbl_nombre_menages);
+                lbl_date.Text = Convert.ToString(DateTime.Now);
+            }
+            catch
+            {
+
+            }
+            
         }
     }
 }
