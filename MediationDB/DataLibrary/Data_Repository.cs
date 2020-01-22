@@ -2527,7 +2527,7 @@ namespace MediationDB.DataLibrary
             }
             catch (Exception tdf)
             {
-                MessageBox.Show("Connection failed!\n" + tdf);
+                //MessageBox.Show("Connection failed!\n" + tdf);
             }
             finally
             {
@@ -2557,7 +2557,7 @@ namespace MediationDB.DataLibrary
             }
             catch (Exception tdf)
             {
-                MessageBox.Show("Connection failed!\n" + tdf);
+                //MessageBox.Show("Connection failed!\n" + tdf);
             }
             finally
             {
