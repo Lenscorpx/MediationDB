@@ -757,7 +757,7 @@ as
 	from t_assignation_objets
 		order by num_details_objet desc
 go
-create procedure inserer_objet_conflit
+create procedure inserer_assign_objet_conflit
 @date_enreg date,
 @id_objets_conflits nvarchar(200),
 @num_conflit int,
@@ -768,8 +768,29 @@ as
 	values
 		(@date_enreg, @id_objets_conflits, @num_conflit, @observation)
 go
-create procedure modifier_objet_conflit
-
+create procedure modifier_assign_objet_conflit
+@num_details_objet int,
+@date_enreg date,
+@id_objets_conflits nvarchar(200),
+@num_conflit int,
+@observation nvarchar(200)
+as
+	update t_assignation_objets
+		set
+			date_enreg=@date_enreg,
+			id_objets_conflits=@id_objets_conflits,
+			num_conflit=@num_conflit,
+			observation=@observation
+		where
+			num_details_objet like @num_details_objet
+go
+create procedure supprimer_assign_objet_conflit
+@num_details_objet int
+as
+	delete from t_assignation_objets
+		where
+			num_details_objet like @num_details_objet
+go
 -----------------------------Debut code cause_conflit--------------------------------------------------
 create table t_causes_conflits
 (
@@ -813,6 +834,12 @@ as
         from t_causes_conflits
     where id_cause_conflit like '%'+@id_cause_conflit+'%'
 go
+create procedure recuperer_causes_conflits
+as
+	select
+		id_cause_conflit 
+	from t_causes_conflits
+go
 -----------------------------Fin code cause_conflit----------------------------------------------------
 create table t_assignation_causes
 (
@@ -825,6 +852,18 @@ create table t_assignation_causes
     constraint fk_conf_ass_cause foreign key(num_conflit) references t_conflit(num_conflit)
 ) 
 go
+create procedure afficher_assign_causes
+as
+	select top 50
+		num_assignation_causes as 'Num.',
+		date_enreg as 'Date Enr.',
+		id_cause_conflit as 'Causes',
+		num_conflit as 'Conflit Num.'
+	from t_assignation_causes
+		order by num_assignation_causes desc
+go
+create procedure inserer_assignation_causes
+
 ---cette table permettra de reconnaitre quel type de menages est soit accuse ou plaignant
 --------------------- Debut codes Types Parties ---------------------------------------------------------
 create table t_type_parties 
