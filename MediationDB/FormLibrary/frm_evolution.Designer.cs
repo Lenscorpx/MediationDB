@@ -35,9 +35,10 @@
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbl_nombre_menages = new System.Windows.Forms.Label();
+            this.lbl_nombre_membre = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lbl_date = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
@@ -50,7 +51,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1329, 49);
+            this.panel1.Size = new System.Drawing.Size(1295, 49);
             this.panel1.TabIndex = 34;
             // 
             // label1
@@ -69,7 +70,7 @@
             this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.multiply_96px;
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(1278, 7);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(1246, 8);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Size = new System.Drawing.Size(42, 34);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -90,7 +91,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(22, 113);
+            this.label2.Location = new System.Drawing.Point(484, 99);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(348, 30);
             this.label2.TabIndex = 9;
@@ -101,42 +102,58 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(607, 113);
+            this.label3.Location = new System.Drawing.Point(493, 341);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(348, 30);
             this.label3.TabIndex = 35;
             this.label3.Text = "Nombre de membres entrés";
             // 
-            // label4
+            // lbl_nombre_menages
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(117, 173);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 65);
-            this.label4.TabIndex = 36;
-            this.label4.Text = "0";
+            this.lbl_nombre_menages.AutoSize = true;
+            this.lbl_nombre_menages.Font = new System.Drawing.Font("Century Gothic", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nombre_menages.ForeColor = System.Drawing.Color.White;
+            this.lbl_nombre_menages.Location = new System.Drawing.Point(632, 199);
+            this.lbl_nombre_menages.Name = "lbl_nombre_menages";
+            this.lbl_nombre_menages.Size = new System.Drawing.Size(58, 65);
+            this.lbl_nombre_menages.TabIndex = 36;
+            this.lbl_nombre_menages.Text = "0";
             // 
-            // label5
+            // lbl_nombre_membre
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(741, 173);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 65);
-            this.label5.TabIndex = 37;
-            this.label5.Text = "0";
+            this.lbl_nombre_membre.AutoSize = true;
+            this.lbl_nombre_membre.Font = new System.Drawing.Font("Century Gothic", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nombre_membre.ForeColor = System.Drawing.Color.White;
+            this.lbl_nombre_membre.Location = new System.Drawing.Point(632, 447);
+            this.lbl_nombre_membre.Name = "lbl_nombre_membre";
+            this.lbl_nombre_membre.Size = new System.Drawing.Size(58, 65);
+            this.lbl_nombre_membre.TabIndex = 37;
+            this.lbl_nombre_membre.Text = "0";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lbl_date
+            // 
+            this.lbl_date.AutoSize = true;
+            this.lbl_date.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_date.ForeColor = System.Drawing.Color.White;
+            this.lbl_date.Location = new System.Drawing.Point(21, 63);
+            this.lbl_date.Name = "lbl_date";
+            this.lbl_date.Size = new System.Drawing.Size(21, 30);
+            this.lbl_date.TabIndex = 38;
+            this.lbl_date.Text = "-";
             // 
             // frm_evolution
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.ClientSize = new System.Drawing.Size(1329, 564);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.ClientSize = new System.Drawing.Size(1295, 615);
+            this.Controls.Add(this.lbl_date);
+            this.Controls.Add(this.lbl_nombre_membre);
+            this.Controls.Add(this.lbl_nombre_menages);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
@@ -144,6 +161,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frm_evolution";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.frm_evolution_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
@@ -160,8 +179,9 @@
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbl_nombre_menages;
+        private System.Windows.Forms.Label lbl_nombre_membre;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lbl_date;
     }
 }
