@@ -230,7 +230,15 @@ create table t_menages
 go
 create procedure afficher_menages
 as
-    select top 50 id_menage as 'Code Menage', date_enregistrement as 'Date Enr', id_situation as 'Situation Menage', total_homme as 'Hommes', total_femme as 'Femmes', total_garcons as 'Garcons', total_filles as 'Filles' from t_menages
+    select top 50 
+		id_menage as 'Code Menage', 
+		date_enregistrement as 'Date Enr', 
+		id_situation as 'Situation Menage', 
+		total_homme as 'Hommes', 
+		total_femme as 'Femmes', 
+		total_garcons as 'Garcons', 
+		total_filles as 'Filles' 
+	from t_menages
     order by  
         date_enregistrement desc, id_menage desc
     go
@@ -387,6 +395,29 @@ as
 	from t_membres
 	where 
 		id_menage like '%'+@id_menage+'%'
+		order by
+			date_enregistrement desc, id_membre desc
+go
+create procedure rechercher_membres_parCodeMembre
+@id_membre nvarchar(200)
+as
+	select top 50 
+		id_membre as 'ID',
+		noms as 'Noms',
+		sexe as 'Genre',
+		date_naissance as 'Date Naissance',
+		etat_civil as 'Etat Civil',
+		id_vulnerabilite as 'Vulnerabilite',
+		provenance as 'Provenance',
+		adresse as 'Adresse',
+		num_tel as 'Telephone',
+		repr_menage as 'Repr. Menage',
+		profession as 'Profession',
+		id_menage as 'Menage',
+		date_enregistrement as 'Enreg.'		
+	from t_membres
+	where 
+		id_membre like '%'+@id_membre+'%'
 		order by
 			date_enregistrement desc, id_membre desc
 go
@@ -1531,3 +1562,5 @@ select count(id_membre) from t_membres
 go
 select * from t_menages
 
+select * from t_membres 
+where id_menage like 'UNH/A/MNG'+'%'

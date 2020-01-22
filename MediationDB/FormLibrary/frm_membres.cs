@@ -39,7 +39,19 @@ namespace MediationDB.FormLibrary
 
         private void bunifuCustomDataGrid2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            txt_code_membre.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[0].Value.ToString();
+            txt_noms_membre.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[1].Value.ToString();
+            cbx_sexe.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[2].Value.ToString();
+            dt_date_naissance.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[3].Value.ToString();
+            cbx_etat_civil.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[4].Value.ToString();
+            cbx_vulnerabilite.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[5].Value.ToString();
+            txt_provenance.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[6].Value.ToString();
+            txt_adresse.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[7].Value.ToString();
+            txt_telephone.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[8].Value.ToString();
+            //.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[9].Value.ToString();
+            txt_profession.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[10].Value.ToString();
+            txt_id_menage.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[11].Value.ToString();
+            dt_date_enregistrement.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[12].Value.ToString();
         }
 
         private void btn_enregistrer_Click(object sender, EventArgs e)
@@ -103,14 +115,13 @@ namespace MediationDB.FormLibrary
                 if(rs==DialogResult.Yes)
                 {
                     rps.supprimer_membre(txt_code_membre.Text);
-
                 }
             }
         }
 
         private void txt_id_menage_OnValueChanged(object sender, EventArgs e)
         {
-            rps.rechercher_membres_parID(bunifuCustomDataGrid2, txt_id_menage.Text);
+            rps.rechercher_membres_parID(bunifuCustomDataGrid2, txt_id_menage.Text);   
         }
 
         private void txt_noms_membre_OnValueChanged(object sender, EventArgs e)

@@ -1770,6 +1770,9 @@ namespace MediationDB.DataLibrary
                 cmd.Parameters.Add(new SqlParameter("garcons", SqlDbType.Int)).Value = garcons;
                 cmd.Parameters.Add(new SqlParameter("filles", SqlDbType.Int)).Value = filles;
                 cmd.ExecuteNonQuery();
+                var fr = new frm_membres();
+                fr.txt_id_menage.Text = id_menage;
+                fr.ShowDialog();
                 //afficher_frais(dtg);
                 MessageBox.Show("Enregistrement avec succès!", "Enregistrement", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -2522,6 +2525,38 @@ namespace MediationDB.DataLibrary
             catch (Exception tdf)
             {
                 MessageBox.Show("Connection failed!\n" + tdf);
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void search_menage(DataGridView dtg, string mot)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("search_menage", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.Parameters.Add(new SqlParameter("mot", SqlDbType.NVarChar)).Value = mot;
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                dtg.DataSource = dt;
+            }
+            catch (Exception exct)
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show("Want to see error code?", "Errors ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    MessageBox.Show(exct.ToString());
+                }
             }
             finally
             {
