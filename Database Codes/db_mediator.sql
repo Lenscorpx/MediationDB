@@ -623,7 +623,7 @@ go
 ----------------------------Debut codes pour conflit---------------------------------------------------
 create table t_conflit
 (
-    num_conflit int identity,
+    num_conflit nvarchar(200),
     date_enreg date, 
     date_debut_conflit date,
     id_type_conflit nvarchar(200),
@@ -642,6 +642,7 @@ as
                   order by num_conflit desc
 go
 create procedure inserer_conflit
+@num_conflit nvarchar(200),
 @date_debut_conflit date,
 @id_type_conflit nvarchar(200),
 @id_nature_conflit nvarchar(200),
@@ -653,7 +654,7 @@ as
         (getDate(),@date_debut_conflit,@id_type_conflit,@id_nature_conflit,@id_localite)
 go
 create procedure modifier_conflit
-@num_conflit int, 
+@num_conflit nvarchar(200), 
 @date_debut_conflit date,
 @id_type_conflit nvarchar(200),
 @id_nature_conflit nvarchar(200),
@@ -670,7 +671,7 @@ as
             num_conflit=@num_conflit
 go
 create procedure supprimer_conflit
-@num_conflit int
+@num_conflit nvarchar(200)
 as
     delete from t_conflit
         where num_conflit=@num_conflit
@@ -682,13 +683,13 @@ create table t_details_conflits
     num_details_conflits int identity,
     date_enreg date,
     descript_conflit nvarchar(500),
-    num_conflit int,
+    num_conflit nvarchar(200),
     constraint pk_details_conflits primary key(num_details_conflits),
     constraint fk_conflit_details foreign key(num_conflit) references t_conflit(num_conflit)
 )
 go
 create procedure afficher_details_conflits
-@num_conflit int
+@num_conflit nvarchar(200)
 as
     select num_details_conflits as 'Num.', num_conflit as 'Conflit', descript_conflit as 'Details', date_enreg as 'Enreg.' 
     from t_details_conflits
@@ -697,7 +698,7 @@ as
 go
 create procedure inserer_details
 @descript_conflit nvarchar(500),
-@num_conflit int
+@num_conflit nvarchar(200)
 as
     insert into t_details_conflits
         (date_enreg, descript_conflit, num_conflit)
@@ -707,7 +708,7 @@ go
 create procedure modifier_details
 @num_details_conflits int,
 @descript_conflit nvarchar(500),
-@num_conflit int
+@num_conflit nvarchar(200)
 as
     update t_details_conflits
         set
@@ -779,7 +780,7 @@ create table t_assignation_objets
     num_details_objet int identity,
     date_enreg date,
     id_objets_conflits nvarchar(200),
-    num_conflit int,
+    num_conflit nvarchar(200),
     observation nvarchar(200),
     constraint pk_assignation_objet primary key(num_details_objet),
     constraint fk_objet_assign foreign key(id_objets_conflits) references t_objets_conflits(id_objets_conflits),
@@ -800,7 +801,7 @@ go
 create procedure inserer_assign_objet_conflit
 @date_enreg date,
 @id_objets_conflits nvarchar(200),
-@num_conflit int,
+@num_conflit nvarchar(200),
 @observation nvarchar(200)
 as
 	insert into t_assignation_objets
@@ -812,7 +813,7 @@ create procedure modifier_assign_objet_conflit
 @num_details_objet int,
 @date_enreg date,
 @id_objets_conflits nvarchar(200),
-@num_conflit int,
+@num_conflit nvarchar(200),
 @observation nvarchar(200)
 as
 	update t_assignation_objets
@@ -886,7 +887,7 @@ create table t_assignation_causes
     num_assignation_causes int identity,
     date_enreg date,
     id_cause_conflit nvarchar(200),
-    num_conflit int,
+    num_conflit nvarchar(200),
     constraint pk_assign_cause primary key(num_assignation_causes),
     constraint fk_cause_assgn foreign key(id_cause_conflit) references t_causes_conflits(id_cause_conflit),
     constraint fk_conf_ass_cause foreign key(num_conflit) references t_conflit(num_conflit)
@@ -904,7 +905,7 @@ as
 go
 create procedure inserer_assignation_causes
 @id_cause_conflit nvarchar(50),
-@num_conflit int
+@num_conflit nvarchar(200)
 as
 	insert into t_assignation_causes
 		(date_enreg, id_cause_conflit, num_conflit)
@@ -914,7 +915,7 @@ go
 create procedure modifier_assignation_causes
 @num_assignation_causes int,
 @id_cause_conflit nvarchar(50),
-@num_conflit int
+@num_conflit nvarchar(200)
 as
 	update t_assignation_causes
 		set
@@ -979,7 +980,7 @@ create table t_parties
     date_enreg date,
     id_typ_partie nvarchar(200),
     id_menage nvarchar(200),
-    num_conflit int,
+    num_conflit nvarchar(200),
     constraint pk_partie primary key(num_partie),
     constraint fk_conflict_partie foreign key (num_conflit) references t_conflit(num_conflit),
     constraint fk_type_partie_part foreign key(id_typ_partie) references t_type_parties(id_typ_partie),
@@ -1038,7 +1039,7 @@ go
 create table t_assignation_resolution
 (
     num_assign_resol int identity,
-    num_conflit int,
+    num_conflit nvarchar(200),
     id_resolution nvarchar(200),
     date_resolution date,
     commentaires nvarchar(200),
@@ -1101,7 +1102,7 @@ create table t_mediation
 (
     num_mediation int identity,
     date_debut_mediation date,
-    num_conflit int,
+    num_conflit nvarchar(200),
     id_mediateur nvarchar(200),
     noms_mediateur nvarchar(200),
     lieu nvarchar(200),
@@ -1113,7 +1114,7 @@ create table t_mediation
 )
 go
 create procedure afficher_mediation
-@num_conflit int
+@num_conflit nvarchar(200)
 as
     select top 50 
 		num_mediation as 'Num.', 
@@ -1131,7 +1132,7 @@ as
 go
 create procedure inserer_mediation
 @date_debut_mediation date,
-@num_conflit int,
+@num_conflit nvarchar(200),
 @id_mediateur nvarchar(200),
 @noms_mediateur nvarchar(200),
 @lieu nvarchar(200),
@@ -1146,7 +1147,7 @@ go
 create procedure modifier_mediation
 @num_mediation int,
 @date_debut_mediation date,
-@num_conflit int,
+@num_conflit nvarchar(200),
 @id_mediateur nvarchar(200),
 @noms_mediateur nvarchar(200),
 @lieu nvarchar(200),
@@ -1560,7 +1561,15 @@ create procedure chart_nombre_membre
 as
 select count(id_membre) from t_membres
 go
+
 select * from t_menages
 
 select * from t_membres 
-where id_menage like 'UNH/A/MNG'+'%'
+	where id_menage like 'UNH/A/MNG'+'%'
+
+select * from t_menages
+	where
+		id_menage not in (select id_menage from t_membres)
+
+select * from t_menages
+	where id_menage like 'HATEG'+'%'
