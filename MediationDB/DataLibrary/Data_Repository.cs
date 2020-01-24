@@ -27,7 +27,7 @@ namespace MediationDB.DataLibrary
             //prms.Nom_user = "sa";
             //prms.Mot_de_passe = "Windy@2019.com?";
             prms.Serveur = "SCI-CD-L19-430\\SERVEUR";
-            prms.Base_de_donnees = "db_mediator";
+            prms.Base_de_donnees = "db_foncier";
             prms.Nom_user = "sa";
             prms.Mot_de_passe = "123456789";
         }
@@ -1333,17 +1333,18 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void inserer_conflit(DateTime date_debut_conflit, string id_type_conflit, string id_nature_conflit, string id_localite)
+        public void inserer_conflit(string num_conflit,DateTime date_debut_conflit, string id_type_conflit, string id_nature_conflit, string id_localite)
         {
             cnx = new SqlConnection(prms.ToString());
             try
             {
                 if (cnx.State == ConnectionState.Closed)
                     cnx.Open();
-                var cmd = new SqlCommand("inserer_conflit", cnx)
+                var cmd = new SqlCommand("afficher_conflit", cnx)
                 {
                     CommandType = CommandType.StoredProcedure
                 };
+                cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.NVarChar)).Value = num_conflit;
                 cmd.Parameters.Add(new SqlParameter("date_debut_conflit", SqlDbType.Date)).Value = date_debut_conflit;
                 cmd.Parameters.Add(new SqlParameter("id_type_conflit", SqlDbType.NVarChar)).Value = id_type_conflit;
                 cmd.Parameters.Add(new SqlParameter("id_nature_conflit", SqlDbType.NVarChar)).Value = id_nature_conflit;
@@ -1366,7 +1367,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void modifier_conflit(int num_conflit, DateTime date_debut_conflit, string id_type_conflit, string id_nature_conflit, string id_localite)
+        public void modifier_conflit(string num_conflit, DateTime date_debut_conflit, string id_type_conflit, string id_nature_conflit, string id_localite)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -1377,7 +1378,7 @@ namespace MediationDB.DataLibrary
                 {
                     CommandType = CommandType.StoredProcedure
                 };
-                cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.Int)).Value = num_conflit;
+                cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.NVarChar)).Value = num_conflit;
                 cmd.Parameters.Add(new SqlParameter("date_debut_conflit", SqlDbType.Date)).Value = date_debut_conflit;
                 cmd.Parameters.Add(new SqlParameter("id_type_conflit", SqlDbType.NVarChar)).Value = id_type_conflit;
                 cmd.Parameters.Add(new SqlParameter("id_nature_conflit", SqlDbType.NVarChar)).Value = id_nature_conflit;
@@ -1400,7 +1401,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void supprimer_conflit(int num_conflit)
+        public void supprimer_conflit(string num_conflit)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -1411,7 +1412,7 @@ namespace MediationDB.DataLibrary
                 {
                     CommandType = CommandType.StoredProcedure
                 };
-                cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.Int)).Value = num_conflit;
+                cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.NVarChar)).Value = num_conflit;
                 cmd.ExecuteNonQuery();
                 //afficher_frais(dtg);
                 MessageBox.Show("Enregistrement avec succès!", "Enregistrement", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -1430,7 +1431,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void afficher_details_conflits(DataGridView dtg, int num_conflit)
+        public void afficher_details_conflits(DataGridView dtg, string num_conflit)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -1441,7 +1442,7 @@ namespace MediationDB.DataLibrary
                 {
                     CommandType = CommandType.StoredProcedure
                 };
-                cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.Int)).Value = num_conflit;
+                cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.NVarChar)).Value = num_conflit;
                 cmd.ExecuteNonQuery();
                 var da = new SqlDataAdapter(cmd);
                 var dt = new DataTable();
@@ -1462,7 +1463,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void inserer_details(string descript_conflit, int num_conflit)
+        public void inserer_details(string descript_conflit, string num_conflit)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -1474,7 +1475,7 @@ namespace MediationDB.DataLibrary
                     CommandType = CommandType.StoredProcedure
                 };
                 cmd.Parameters.Add(new SqlParameter("descript_conflit", SqlDbType.NVarChar)).Value = descript_conflit;
-                cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.Int)).Value = num_conflit;
+                cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.NVarChar)).Value = num_conflit;
                 cmd.ExecuteNonQuery();
                 //afficher_frais(dtg);
                 MessageBox.Show("Enregistrement avec succès!", "Enregistrement", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -1493,7 +1494,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void modifier_details(int num_details_conflits, string descript_conflit, int num_conflit)
+        public void modifier_details(int num_details_conflits, string descript_conflit, string num_conflit)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -1506,7 +1507,7 @@ namespace MediationDB.DataLibrary
                 };
                 cmd.Parameters.Add(new SqlParameter("num_details_conflits", SqlDbType.Int)).Value = num_details_conflits;
                 cmd.Parameters.Add(new SqlParameter("descript_conflit", SqlDbType.NVarChar)).Value = descript_conflit;
-                cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.Int)).Value = num_conflit;
+                cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.NVarChar)).Value = num_conflit;
                 cmd.ExecuteNonQuery();
                 //afficher_frais(dtg);
                 MessageBox.Show("Enregistrement avec succès!", "Enregistrement", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -1555,7 +1556,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void afficher_mediation(DataGridView dtg, int num_conflit)
+        public void afficher_mediation(DataGridView dtg, string num_conflit)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -1566,7 +1567,7 @@ namespace MediationDB.DataLibrary
                 {
                     CommandType = CommandType.StoredProcedure
                 };
-                cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.Int)).Value = num_conflit;
+                cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.NVarChar)).Value = num_conflit;
                 cmd.ExecuteNonQuery();
                 var da = new SqlDataAdapter(cmd);
                 var dt = new DataTable();
@@ -1587,7 +1588,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void inserer_mediation(DateTime date_debut_mediation, int num_conflit, string id_mediateur, string noms_mediateur, string lieu, string appreciation, DateTime date_fin_mediation)
+        public void inserer_mediation(DateTime date_debut_mediation, string num_conflit, string id_mediateur, string noms_mediateur, string lieu, string appreciation, DateTime date_fin_mediation)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -1599,7 +1600,7 @@ namespace MediationDB.DataLibrary
                     CommandType = CommandType.StoredProcedure
                 };
                 cmd.Parameters.Add(new SqlParameter("date_debut_mediation", SqlDbType.Date)).Value = date_debut_mediation;
-                cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.Int)).Value = num_conflit;
+                cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.NVarChar)).Value = num_conflit;
                 cmd.Parameters.Add(new SqlParameter("id_mediateur", SqlDbType.NVarChar)).Value = id_mediateur;
                 cmd.Parameters.Add(new SqlParameter("noms_mediateur", SqlDbType.NVarChar)).Value = noms_mediateur;
                 cmd.Parameters.Add(new SqlParameter("lieu", SqlDbType.NVarChar)).Value = lieu;
@@ -1623,7 +1624,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void modifier_mediation(int num_mediation, DateTime date_debut_mediation, int num_conflit, string id_mediateur, string noms_mediateur, string lieu, string appreciation, DateTime date_fin_mediation)
+        public void modifier_mediation(int num_mediation, DateTime date_debut_mediation, string num_conflit, string id_mediateur, string noms_mediateur, string lieu, string appreciation, DateTime date_fin_mediation)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -1636,7 +1637,7 @@ namespace MediationDB.DataLibrary
                 };
                 cmd.Parameters.Add(new SqlParameter("num_mediation", SqlDbType.Int)).Value = num_mediation;
                 cmd.Parameters.Add(new SqlParameter("date_debut_mediation", SqlDbType.Date)).Value = date_debut_mediation;
-                cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.Int)).Value = num_conflit;
+                cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.NVarChar)).Value = num_conflit;
                 cmd.Parameters.Add(new SqlParameter("id_mediateur", SqlDbType.NVarChar)).Value = id_mediateur;
                 cmd.Parameters.Add(new SqlParameter("noms_mediateur", SqlDbType.NVarChar)).Value = noms_mediateur;
                 cmd.Parameters.Add(new SqlParameter("lieu", SqlDbType.NVarChar)).Value = lieu;
@@ -2380,7 +2381,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        //public void afficher_details_conflits(DataGridView dtg, int num_conflit)
+        //public void afficher_details_conflits(DataGridView dtg, string num_conflit)
         //{
         //    cnx = new SqlConnection(prms.ToString());
         //    try
@@ -2391,7 +2392,7 @@ namespace MediationDB.DataLibrary
         //        {
         //            CommandType = CommandType.StoredProcedure
         //        };
-        //        cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.Int)).Value = num_conflit;
+        //        cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.NVarChar)).Value = num_conflit;
         //        cmd.ExecuteNonQuery();
         //        var da = new SqlDataAdapter(cmd);
         //        var dt = new DataTable();
@@ -2412,7 +2413,7 @@ namespace MediationDB.DataLibrary
         //        cnx.Close(); cnx.Dispose();
         //    }
         //}
-        //public void inserer_details(string descript_conflit, int num_conflit)
+        //public void inserer_details(string descript_conflit, string num_conflit)
         //{
         //    cnx = new SqlConnection(prms.ToString());
         //    try
@@ -2424,7 +2425,7 @@ namespace MediationDB.DataLibrary
         //            CommandType = CommandType.StoredProcedure
         //        };
         //        cmd.Parameters.Add(new SqlParameter("descript_conflit", SqlDbType.NVarChar)).Value = descript_conflit;
-        //        cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.Int)).Value = num_conflit;
+        //        cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.NVarChar)).Value = num_conflit;
         //        cmd.ExecuteNonQuery();
         //        //afficher_frais(dtg);
         //        MessageBox.Show("Enregistrement avec succès!", "Enregistrement", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -2443,7 +2444,7 @@ namespace MediationDB.DataLibrary
         //        cnx.Close(); cnx.Dispose();
         //    }
         //}
-        //public void modifier_details(int num_details_conflits, string descript_conflit, int num_conflit)
+        //public void modifier_details(int num_details_conflits, string descript_conflit, string num_conflit)
         //{
         //    cnx = new SqlConnection(prms.ToString());
         //    try
@@ -2456,7 +2457,7 @@ namespace MediationDB.DataLibrary
         //        };
         //        cmd.Parameters.Add(new SqlParameter("num_details_conflits", SqlDbType.Int)).Value = num_details_conflits;
         //        cmd.Parameters.Add(new SqlParameter("descript_conflit", SqlDbType.NVarChar)).Value = descript_conflit;
-        //        cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.Int)).Value = num_conflit;
+        //        cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.NVarChar)).Value = num_conflit;
         //        cmd.ExecuteNonQuery();
         //        //afficher_frais(dtg);
         //        MessageBox.Show("Enregistrement avec succès!", "Enregistrement", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -2786,7 +2787,7 @@ namespace MediationDB.DataLibrary
                 {
                     CommandType = CommandType.StoredProcedure
                 };
-                //cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.Int)).Value = num_conflit;
+                //cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.NVarChar)).Value = num_conflit;
                 cmd.ExecuteNonQuery();
                 var da = new SqlDataAdapter(cmd);
                 var dt = new DataTable();
@@ -2818,7 +2819,7 @@ namespace MediationDB.DataLibrary
                 {
                     CommandType = CommandType.StoredProcedure
                 };
-                cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.Int)).Value = num_conflit;
+                cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.NVarChar)).Value = num_conflit;
                 cmd.Parameters.Add(new SqlParameter("id_typ_partie", SqlDbType.NVarChar)).Value = id_typ_partie;
                 cmd.Parameters.Add(new SqlParameter("id_menage", SqlDbType.NVarChar)).Value = id_menage;
                 cmd.ExecuteNonQuery();
@@ -2851,7 +2852,7 @@ namespace MediationDB.DataLibrary
                     CommandType = CommandType.StoredProcedure
                 };
                 cmd.Parameters.Add(new SqlParameter("num_partie", SqlDbType.NVarChar)).Value = num_partie;
-                cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.Int)).Value = num_conflit;
+                cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.NVarChar)).Value = num_conflit;
                 cmd.Parameters.Add(new SqlParameter("id_typ_partie", SqlDbType.NVarChar)).Value = id_typ_partie;
                 cmd.Parameters.Add(new SqlParameter("id_menage", SqlDbType.NVarChar)).Value = id_menage;
                 cmd.ExecuteNonQuery();
@@ -2914,7 +2915,7 @@ namespace MediationDB.DataLibrary
                 {
                     CommandType = CommandType.StoredProcedure
                 };
-                cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.Int)).Value = num_conflit;
+                cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.NVarChar)).Value = num_conflit;
                 cmd.ExecuteNonQuery();
                 var da = new SqlDataAdapter(cmd);
                 var dt = new DataTable();
@@ -2946,7 +2947,7 @@ namespace MediationDB.DataLibrary
                 {
                     CommandType = CommandType.StoredProcedure
                 };
-                cmd.Parameters.Add(new SqlParameter("id_menage", SqlDbType.Int)).Value = id_menage;
+                cmd.Parameters.Add(new SqlParameter("id_menage", SqlDbType.NVarChar)).Value = id_menage;
                 cmd.ExecuteNonQuery();
                 var da = new SqlDataAdapter(cmd);
                 var dt = new DataTable();

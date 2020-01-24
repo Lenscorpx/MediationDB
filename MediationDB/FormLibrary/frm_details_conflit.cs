@@ -22,7 +22,7 @@ namespace MediationDB.FormLibrary
         private void refresh()
         {
             //MessageBox.Show(txt_num_conflit.Text);
-            rps.afficher_details_conflits(bunifuCustomDataGrid2, Convert.ToInt32(txt_num_conflit.Text));
+            rps.afficher_details_conflits(bunifuCustomDataGrid2, txt_num_conflit.Text);
         }
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
@@ -39,7 +39,7 @@ namespace MediationDB.FormLibrary
                 }
                 else
                 {
-                    rps.inserer_details(rtxt_descr.Text, Convert.ToInt32(txt_num_conflit.Text));
+                    rps.inserer_details(rtxt_descr.Text, txt_num_conflit.Text);
                     refresh();
                 }
             }
@@ -51,7 +51,7 @@ namespace MediationDB.FormLibrary
                 }
                 else
                 {
-                    rps.modifier_details(Convert.ToInt32(txt_num_details.Text),rtxt_descr.Text, Convert.ToInt32(txt_num_conflit.Text));
+                    rps.modifier_details(Convert.ToInt32(txt_num_details.Text),rtxt_descr.Text, txt_num_conflit.Text);
                     refresh();
                 }
             }

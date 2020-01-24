@@ -71,7 +71,7 @@ namespace MediationDB.FormLibrary
                 }
                 else
                 {
-                    rps.inserer_conflit(metroDateTime1.Value, cbx_type_conflit.Text, cbx_nature_conflit.Text, txt_localite.Text);
+                    rps.inserer_conflit(txt_num_conflit.Text,metroDateTime1.Value, cbx_type_conflit.Text, cbx_nature_conflit.Text, txt_localite.Text);
                     refresh();
                 }
             }
@@ -83,7 +83,7 @@ namespace MediationDB.FormLibrary
                 }
                 else
                 {
-                    rps.modifier_conflit(Convert.ToInt32(txt_num_conflit.Text), metroDateTime1.Value, cbx_type_conflit.Text, cbx_nature_conflit.Text, txt_localite.Text);
+                    rps.modifier_conflit(txt_num_conflit.Text, metroDateTime1.Value, cbx_type_conflit.Text, cbx_nature_conflit.Text, txt_localite.Text);
                     refresh();
                 }
             }
@@ -101,7 +101,7 @@ namespace MediationDB.FormLibrary
                 rs = MessageBox.Show(this, "Voulez vous vraiment supprimer cette information?", "Message de confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (rs == DialogResult.Yes)
                 {
-                    rps.supprimer_conflit(Convert.ToInt32(txt_num_conflit.Text));
+                    rps.supprimer_conflit(txt_num_conflit.Text);
                     refresh();
                 }
             }
@@ -151,6 +151,11 @@ namespace MediationDB.FormLibrary
         {
             var fr = new frm_details_parties_conflits();
             fr.ShowDialog();
+        }
+
+        private void txt_num_conflit_OnValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

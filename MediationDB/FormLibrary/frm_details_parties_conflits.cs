@@ -25,6 +25,10 @@ namespace MediationDB.FormLibrary
             rps.charger_membres(listBox1);
             rps.recuperer_type_partie(cbx_type_partie);
             rps.afficher_partie(bunifuCustomDataGrid2);
+            txt_num_partie.ResetText();
+            txt_code_menage.ResetText();
+            txt_id_membre.ResetText();
+            txt_num_conflit.ResetText();
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
@@ -52,6 +56,44 @@ namespace MediationDB.FormLibrary
         private void txt_noms_OnValueChanged(object sender, EventArgs e)
         {
             rps.search_membres_parNoms(txt_id_membre, txt_code_menage, txt_noms.Text);
+        }
+
+        private void txt_code_menage_OnValueChanged(object sender, EventArgs e)
+        {
+            rps.search_partie_byMenage(bunifuCustomDataGrid2, txt_code_menage.Text);
+        }
+
+        private void txt_num_conflit_OnValueChanged(object sender, EventArgs e)
+        {
+            rps.search_partie_byConflit(bunifuCustomDataGrid2, txt_num_conflit.Text);
+        }
+
+        private void btn_enregistrer_Click(object sender, EventArgs e)
+        {
+            if(txt_num_partie.Text=="")
+            {
+                if(txt_num_conflit.Text==""||cbx_type_partie.Text==""||txt_code_menage.Text=="")
+                {
+                    MessageBox.Show("Remplissez les informations manquantes!");
+                }
+                else
+                {
+                    rps.inserer_partie(cbx_type_partie.Text, txt_code_menage.Text, txt_num_conflit.Text);
+                    refresh();
+                }
+            }
+            else
+            {
+                if (txt_num_conflit.Text == "" || cbx_type_partie.Text == "" || txt_code_menage.Text == "")
+                {
+                    MessageBox.Show("Remplissez les informations manquantes!");
+                }
+                else
+                {
+                    rps.modifier_partie(Convert.ToInt32(txt_num_partie.Text),cbx_type_partie.Text, txt_code_menage.Text, txt_num_conflit.Text);
+                    refresh();
+                }
+            }
         }
     }
 }

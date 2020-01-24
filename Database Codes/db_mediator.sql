@@ -688,28 +688,22 @@ create procedure inserer_conflit
 @id_type_conflit nvarchar(200),
 @id_nature_conflit nvarchar(200),
 @id_localite nvarchar(200)
-as
-    insert into t_conflit
-        (num_conflit, date_enreg,date_debut_conflit,id_type_conflit,id_nature_conflit,id_localite)
-    values
-        (@num_conflit, getDate(),@date_debut_conflit,@id_type_conflit,@id_nature_conflit,@id_localite)
-go
-create procedure modifier_conflit
-@num_conflit nvarchar(200), 
-@date_debut_conflit date,
-@id_type_conflit nvarchar(200),
-@id_nature_conflit nvarchar(200),
-@id_localite nvarchar(200)
-as
-    update t_conflit
-        set
+as 
+	merge into t_conflit
+	using (select @num_conflit as x_id) as x_table
+	on(x_table.x_id=t_conflit.num_conflit)
+	when matched then
+		update set
             date_enreg=getDate(),
             date_debut_conflit=@date_debut_conflit,
             id_type_conflit=@id_type_conflit,
             id_nature_conflit=@id_nature_conflit,
             id_localite=@id_localite
-        where
-            num_conflit=@num_conflit
+	when not matched then
+		insert
+			(num_conflit, date_enreg,date_debut_conflit,id_type_conflit,id_nature_conflit,id_localite)
+		values
+			(@num_conflit, getDate(),@date_debut_conflit,@id_type_conflit,@id_nature_conflit,@id_localite);
 go
 create procedure supprimer_conflit
 @num_conflit nvarchar(200)
@@ -1693,3 +1687,4 @@ select * from t_menages
 
 select * from t_menages
 	where id_menage like 'HATEG'+'%'
+

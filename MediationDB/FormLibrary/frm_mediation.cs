@@ -25,7 +25,7 @@ namespace MediationDB.FormLibrary
         }
         private void refresh()
         {
-            rps.afficher_mediation(bunifuCustomDataGrid2, Convert.ToInt32(txt_num_conflit.Text));
+            rps.afficher_mediation(bunifuCustomDataGrid2, txt_num_conflit.Text);
             rps.recuperer_localite(listBox1);
             rps.recuperer_mediateur(cbx_mediateur);
         }
@@ -45,7 +45,7 @@ namespace MediationDB.FormLibrary
                 }
                 else
                 {
-                    rps.inserer_mediation(dt_debut_mediation.Value, Convert.ToInt32(txt_num_conflit.Text), cbx_mediateur.Text, txt_noms_mediateur.Text, txt_localite.Text, txt_appreciation.Text, dt_fin_mediation.Value);
+                    rps.inserer_mediation(dt_debut_mediation.Value, txt_num_conflit.Text, cbx_mediateur.Text, txt_noms_mediateur.Text, txt_localite.Text, txt_appreciation.Text, dt_fin_mediation.Value);
                     refresh();
                 }
             }
@@ -57,7 +57,7 @@ namespace MediationDB.FormLibrary
                 }
                 else
                 {
-                    rps.modifier_mediation(Convert.ToInt32(txt_num_mediation),dt_debut_mediation.Value, Convert.ToInt32(txt_num_conflit.Text), cbx_mediateur.Text, txt_noms_mediateur.Text, txt_localite.Text, txt_appreciation.Text, dt_fin_mediation.Value);
+                    rps.modifier_mediation(Convert.ToInt32(txt_num_mediation),dt_debut_mediation.Value, txt_num_conflit.Text, cbx_mediateur.Text, txt_noms_mediateur.Text, txt_localite.Text, txt_appreciation.Text, dt_fin_mediation.Value);
                     refresh();
                 }
             }
