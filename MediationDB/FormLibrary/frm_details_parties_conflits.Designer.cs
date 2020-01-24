@@ -177,11 +177,11 @@
             this.txt_id_chef_menage.Size = new System.Drawing.Size(217, 44);
             this.txt_id_chef_menage.TabIndex = 97;
             this.txt_id_chef_menage.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_id_chef_menage.OnValueChanged += new System.EventHandler(this.txt_id_chef_menage_OnValueChanged);
             // 
             // txt_code_menage
             // 
             this.txt_code_menage.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_code_menage.Enabled = false;
             this.txt_code_menage.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_code_menage.ForeColor = System.Drawing.Color.White;
             this.txt_code_menage.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -354,7 +354,6 @@
             // txt_id_membre
             // 
             this.txt_id_membre.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_id_membre.Enabled = false;
             this.txt_id_membre.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_id_membre.ForeColor = System.Drawing.Color.White;
             this.txt_id_membre.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));

@@ -2596,5 +2596,135 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
+        public void search_membres_parNoms(string code_membre, string code_menage, string noms)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("search_membres_parNoms", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.Parameters.Add(new SqlParameter("noms", SqlDbType.NVarChar)).Value = noms;
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                code_membre = dt.Rows[0].ToString();
+                code_menage = dt.Rows[2].ToString();
+            }
+            catch (Exception exct)
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show("Want to see error code?", "Errors ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    MessageBox.Show(exct.ToString());
+                }
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void search_membres_parNoms(string code_membre, string code_menage, string noms)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("search_membres_parNoms", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.Parameters.Add(new SqlParameter("noms", SqlDbType.NVarChar)).Value = noms;
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                code_membre = dt.Rows[0].ToString();
+                code_menage = dt.Rows[2].ToString();
+            }
+            catch (Exception exct)
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show("Want to see error code?", "Errors ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    MessageBox.Show(exct.ToString());
+                }
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void charger_membres(ListBox dtg)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("charger_membres", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                //cmd.Parameters.Add(new SqlParameter("texte", SqlDbType.NVarChar)).Value = texte_a_chercher;
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                dtg.DataSource = dt;
+            }
+            catch (Exception exct)
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show("Want to see error code?", "Errors ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    MessageBox.Show(exct.ToString());
+                }
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void rechercher_nom_membre(ListBox dtg, string texte_a_chercher)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("rechercher_nom_membre", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.Parameters.Add(new SqlParameter("texte", SqlDbType.NVarChar)).Value = texte_a_chercher;
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                dtg.DataSource = dt;
+            }
+            catch (Exception exct)
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show("Want to see error code?", "Errors ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    MessageBox.Show(exct.ToString());
+                }
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
     }
 }

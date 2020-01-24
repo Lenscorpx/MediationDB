@@ -444,7 +444,7 @@ as
 		order by
 			date_enregistrement desc, id_membre desc
 go
-alter procedure search_membres_parNoms
+create procedure search_membres_parNoms
 @noms nvarchar(200)
 as
 	select		
