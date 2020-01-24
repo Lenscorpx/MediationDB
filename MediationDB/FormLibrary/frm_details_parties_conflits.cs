@@ -14,7 +14,6 @@ namespace MediationDB.FormLibrary
     public partial class frm_details_parties_conflits : Form
     {
         Data_Repository rps = new Data_Repository();
-        string id_membre, code_menage;
         public frm_details_parties_conflits()
         {
             InitializeComponent();
@@ -24,6 +23,7 @@ namespace MediationDB.FormLibrary
         public void refresh()
         {
             rps.charger_membres(listBox1);
+            rps.recuperer_type_partie(cbx_type_partie);
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
