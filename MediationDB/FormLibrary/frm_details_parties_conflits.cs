@@ -24,6 +24,7 @@ namespace MediationDB.FormLibrary
         {
             rps.charger_membres(listBox1);
             rps.recuperer_type_partie(cbx_type_partie);
+            rps.afficher_partie(bunifuCustomDataGrid2);
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
