@@ -1016,6 +1016,12 @@ as
     from t_type_parties
         where id_typ_partie like '%'+@id_typ_partie+'%'
 go
+create procedure recuperer_type_partie
+as
+	select
+		id_typ_partie
+	from t_type_parties
+go
 ---------------------- Fin Codes Types Parties ----------------------------------------------------------------
 create table t_parties
 (
@@ -1029,6 +1035,77 @@ create table t_parties
     constraint fk_type_partie_part foreign key(id_typ_partie) references t_type_parties(id_typ_partie),
     constraint fk_menage_partie foreign key(id_menage) references t_menages(id_menage)
 )
+go
+create procedure afficher_partie
+as
+	select top 50
+		num_partie as 'Enr.',
+		date_enreg as 'Date',
+		id_typ_partie as 'Role',
+		id_menage as 'Menage',
+		num_conflit as 'Code Conflit' 		
+	from t_parties
+	order by
+		num_partie desc
+go
+create procedure search_partie_byConflit
+@num_conflit nvarchar(50)
+as
+	select top 50
+		num_partie as 'Enr.',
+		date_enreg as 'Date',
+		id_typ_partie as 'Role',
+		id_menage as 'Menage',
+		num_conflit as 'Code Conflit' 		
+	from t_parties
+		where num_conflit like '%'+@num_conflit+'%'
+	order by
+		num_partie desc
+go
+create procedure search_partie_byMenage
+@id_menage nvarchar(50)
+as
+	select top 50
+		num_partie as 'Enr.',
+		date_enreg as 'Date',
+		id_typ_partie as 'Role',
+		id_menage as 'Menage',
+		num_conflit as 'Code Conflit' 		
+	from t_parties
+		where id_menage like '%'+@id_menage+'%'
+	order by
+		num_partie desc
+go
+create procedure inserer_partie
+@id_typ_partie nvarchar(200),
+@id_menage nvarchar(200),
+@num_conflit nvarchar(200)
+as
+	insert into t_parties
+		(id_typ_partie, id_menage, num_conflit)
+	values
+		(@id_typ_partie, @id_menage, @num_conflit)
+go
+create procedure modifier_partie
+@num_partie int,
+@id_typ_partie nvarchar(200),
+@id_menage nvarchar(200),
+@num_conflit nvarchar(200)
+as
+	update t_parties
+		set
+			id_typ_partie = @id_typ_partie,
+			id_menage=@id_menage,
+			num_conflit=@num_conflit
+		where
+			num_partie like @num_partie
+go
+create procedure supprimer_partie
+@num_partie int
+as
+	delete from t_parties
+		where
+			num_partie like @num_partie
 go
 -------------------------Debut codes Resolutions--------------------------------------------------------
 create table t_resolutions
