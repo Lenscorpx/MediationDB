@@ -1,4 +1,5 @@
-﻿using MaterialSkin.Controls;
+﻿using Bunifu.Framework.UI;
+using MaterialSkin.Controls;
 using MetroFramework.Controls;
 using System;
 using System.Collections.Generic;
@@ -2596,7 +2597,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void search_membres_parNoms(string code_membre, string code_menage, string noms)
+        public void search_membres_parNoms(BunifuMaterialTextbox code_membre, BunifuMaterialTextbox code_menage, string noms)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -2612,8 +2613,12 @@ namespace MediationDB.DataLibrary
                 var da = new SqlDataAdapter(cmd);
                 var dt = new DataTable();
                 da.Fill(dt);
-                code_membre = dt.Rows[0].ToString();
-                code_menage = dt.Rows[2].ToString();
+                foreach (DataRow dr in dt.Rows)
+                {
+                    code_membre.Text = Convert.ToString(dr[0]);
+                    code_menage.Text = Convert.ToString(dr[1]);
+                }
+                
             }
             catch (Exception exct)
             {

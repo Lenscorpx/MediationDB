@@ -14,6 +14,7 @@ namespace MediationDB.FormLibrary
     public partial class frm_details_parties_conflits : Form
     {
         Data_Repository rps = new Data_Repository();
+        string id_membre, code_menage;
         public frm_details_parties_conflits()
         {
             InitializeComponent();
@@ -33,6 +34,23 @@ namespace MediationDB.FormLibrary
         private void txt_id_chef_menage_OnValueChanged(object sender, EventArgs e)
         {
             rps.rechercher_nom_membre(listBox1, txt_recherche.Text);
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                txt_noms.Text = listBox1.SelectedItem.ToString();
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void txt_noms_OnValueChanged(object sender, EventArgs e)
+        {
+            rps.search_membres_parNoms(txt_id_membre, txt_code_menage, txt_noms.Text);
         }
     }
 }

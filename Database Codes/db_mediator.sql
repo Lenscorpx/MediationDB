@@ -480,7 +480,7 @@ as
 		id_menage		
 	from t_membres
 	where 
-		id_membre like '%'+@noms+'%'
+		id_membre like '%'+@id_membre+'%'
 		order by
 			date_enregistrement desc, id_membre desc
 go
