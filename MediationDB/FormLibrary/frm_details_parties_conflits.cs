@@ -78,8 +78,8 @@ namespace MediationDB.FormLibrary
                 }
                 else
                 {
-                    rps.inserer_partie(cbx_type_partie.Text, txt_code_menage.Text, txt_num_conflit.Text);
-                    refresh();
+                    rps.inserer_partie(cbx_type_partie.Text, txt_code_menage.Text, txt_num_conflit.Text);                   
+                    
                 }
             }
             else
@@ -116,6 +116,14 @@ namespace MediationDB.FormLibrary
                     rps.supprimer_partie(Convert.ToInt32(txt_num_partie.Text));
                     refresh();
             }
+        }
+
+        private void btn_next_Click(object sender, EventArgs e)
+        {
+            var fr = new frm_details_conflit();
+            fr.txt_num_conflit.Text = txt_num_conflit.Text;
+            fr.ShowDialog();
+            refresh();
         }
     }
 }

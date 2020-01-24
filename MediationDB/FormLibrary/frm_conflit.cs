@@ -76,7 +76,11 @@ namespace MediationDB.FormLibrary
                 else
                 {
                     rps.inserer_conflit(txt_num_conflit.Text, metroDateTime1.Value, cbx_type_conflit.Text, cbx_nature_conflit.Text, txt_localite.Text);
+                    var fr = new frm_details_parties_conflits();
+                    fr.txt_num_conflit.Text = txt_num_conflit.Text;
+                    fr.ShowDialog();
                     refresh();
+                    
                 }
             }
                 
