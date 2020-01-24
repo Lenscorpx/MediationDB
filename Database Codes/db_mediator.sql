@@ -444,8 +444,35 @@ as
 		order by
 			date_enregistrement desc, id_membre desc
 go
+create procedure charger_membres
+as
+	select top 50
+		noms
+	from t_membres
+go
+create procedure rechercher_nom_membre
+@noms nvarchar(50)
+as
+	select top 50
+		noms
+	from t_membres
+		where
+			noms like '%'+@noms+'%'
+go
 create procedure search_membres_parNoms
 @noms nvarchar(200)
+as
+	select		
+		id_membre,
+		id_menage		
+	from t_membres
+	where 
+		noms like '%'+@noms+'%'
+		order by
+			date_enregistrement desc, id_membre desc
+go
+create procedure search_membres_parID_membre
+@id_membre nvarchar(200)
 as
 	select		
 		id_membre,
@@ -453,7 +480,7 @@ as
 		id_menage		
 	from t_membres
 	where 
-		noms like '%'+@noms+'%'
+		id_membre like '%'+@noms+'%'
 		order by
 			date_enregistrement desc, id_membre desc
 go
