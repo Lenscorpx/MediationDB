@@ -682,6 +682,21 @@ as
                   id_nature_conflit as 'Nature conflit', id_localite as 'Lieu' from t_conflit
                   order by num_conflit desc
 go
+create procedure search_conflit
+@num_conflit nvarchar(50)
+as
+    select top 50 
+		num_conflit as 'Num.', 
+		date_enreg as 'Date Enr.', 
+		date_debut_conflit as 'Debut conflit', 
+		id_type_conflit as 'Type Conflit',
+        id_nature_conflit as 'Nature conflit', 
+		id_localite as 'Lieu' 
+	from t_conflit
+	where
+		num_conflit like '%'+num_conflit+'%'
+    order by num_conflit desc
+go
 create procedure inserer_conflit
 @num_conflit nvarchar(200),
 @date_debut_conflit date,
@@ -834,7 +849,6 @@ as
 		order by num_details_objet desc
 go
 create procedure inserer_assign_objet_conflit
-@date_enreg date,
 @id_objets_conflits nvarchar(200),
 @num_conflit nvarchar(200),
 @observation nvarchar(200)
@@ -842,7 +856,7 @@ as
 	insert into t_assignation_objets
 		(date_enreg, id_objets_conflits,num_conflit,observation)
 	values
-		(@date_enreg, @id_objets_conflits, @num_conflit, @observation)
+		(getdate(), @id_objets_conflits, @num_conflit, @observation)
 go
 create procedure modifier_assign_objet_conflit
 @num_details_objet int,
@@ -1076,9 +1090,9 @@ create procedure inserer_partie
 @num_conflit nvarchar(200)
 as
 	insert into t_parties
-		(id_typ_partie, id_menage, num_conflit)
+		(date_enreg,id_typ_partie, id_menage, num_conflit)
 	values
-		(@id_typ_partie, @id_menage, @num_conflit)
+		(getdate(),@id_typ_partie, @id_menage, @num_conflit)
 go
 create procedure modifier_partie
 @num_partie int,

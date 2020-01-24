@@ -28,7 +28,7 @@ namespace MediationDB.FormLibrary
             txt_num_partie.ResetText();
             txt_code_menage.ResetText();
             txt_id_membre.ResetText();
-            txt_num_conflit.ResetText();
+            //txt_num_conflit.ResetText();
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
@@ -93,6 +93,28 @@ namespace MediationDB.FormLibrary
                     rps.modifier_partie(Convert.ToInt32(txt_num_partie.Text),cbx_type_partie.Text, txt_code_menage.Text, txt_num_conflit.Text);
                     refresh();
                 }
+            }
+        }
+
+        private void bunifuCustomDataGrid2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txt_num_partie.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[0].Value.ToString();
+            dt_debut_mediation.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[1].Value.ToString();
+            cbx_type_partie.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[2].Value.ToString();
+            txt_code_menage.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[3].Value.ToString();
+            txt_num_conflit.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[4].Value.ToString();
+        }
+
+        private void btn_supprimer_Click(object sender, EventArgs e)
+        {
+            if (txt_num_partie.Text == "")
+            {                
+                    MessageBox.Show("Remplissez les informations manquantes!");               
+            }
+            else
+            {                
+                    rps.supprimer_partie(Convert.ToInt32(txt_num_partie.Text));
+                    refresh();
             }
         }
     }
