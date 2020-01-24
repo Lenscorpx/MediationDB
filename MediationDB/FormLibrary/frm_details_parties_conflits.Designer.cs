@@ -39,7 +39,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.txt_id_chef_menage = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_recherche = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txt_code_menage = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txt_num_conflit = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.dt_debut_mediation = new MetroFramework.Controls.MetroDateTime();
@@ -159,25 +159,25 @@
             this.bunifuImageButton1.Zoom = 10;
             this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
-            // txt_id_chef_menage
+            // txt_recherche
             // 
-            this.txt_id_chef_menage.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_id_chef_menage.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txt_id_chef_menage.ForeColor = System.Drawing.Color.White;
-            this.txt_id_chef_menage.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txt_id_chef_menage.HintText = "Rechercher un representant";
-            this.txt_id_chef_menage.isPassword = false;
-            this.txt_id_chef_menage.LineFocusedColor = System.Drawing.Color.DodgerBlue;
-            this.txt_id_chef_menage.LineIdleColor = System.Drawing.Color.White;
-            this.txt_id_chef_menage.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
-            this.txt_id_chef_menage.LineThickness = 1;
-            this.txt_id_chef_menage.Location = new System.Drawing.Point(0, 56);
-            this.txt_id_chef_menage.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_id_chef_menage.Name = "txt_id_chef_menage";
-            this.txt_id_chef_menage.Size = new System.Drawing.Size(217, 44);
-            this.txt_id_chef_menage.TabIndex = 97;
-            this.txt_id_chef_menage.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txt_id_chef_menage.OnValueChanged += new System.EventHandler(this.txt_id_chef_menage_OnValueChanged);
+            this.txt_recherche.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_recherche.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_recherche.ForeColor = System.Drawing.Color.White;
+            this.txt_recherche.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_recherche.HintText = "Rechercher un representant";
+            this.txt_recherche.isPassword = false;
+            this.txt_recherche.LineFocusedColor = System.Drawing.Color.DodgerBlue;
+            this.txt_recherche.LineIdleColor = System.Drawing.Color.White;
+            this.txt_recherche.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
+            this.txt_recherche.LineThickness = 1;
+            this.txt_recherche.Location = new System.Drawing.Point(0, 56);
+            this.txt_recherche.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_recherche.Name = "txt_recherche";
+            this.txt_recherche.Size = new System.Drawing.Size(328, 44);
+            this.txt_recherche.TabIndex = 97;
+            this.txt_recherche.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_recherche.OnValueChanged += new System.EventHandler(this.txt_id_chef_menage_OnValueChanged);
             // 
             // txt_code_menage
             // 
@@ -191,10 +191,10 @@
             this.txt_code_menage.LineIdleColor = System.Drawing.Color.White;
             this.txt_code_menage.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
             this.txt_code_menage.LineThickness = 1;
-            this.txt_code_menage.Location = new System.Drawing.Point(972, 56);
+            this.txt_code_menage.Location = new System.Drawing.Point(1029, 56);
             this.txt_code_menage.Margin = new System.Windows.Forms.Padding(4);
             this.txt_code_menage.Name = "txt_code_menage";
-            this.txt_code_menage.Size = new System.Drawing.Size(309, 44);
+            this.txt_code_menage.Size = new System.Drawing.Size(252, 44);
             this.txt_code_menage.TabIndex = 95;
             this.txt_code_menage.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -210,19 +210,19 @@
             this.txt_num_conflit.LineIdleColor = System.Drawing.Color.White;
             this.txt_num_conflit.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
             this.txt_num_conflit.LineThickness = 1;
-            this.txt_num_conflit.Location = new System.Drawing.Point(224, 108);
+            this.txt_num_conflit.Location = new System.Drawing.Point(336, 107);
             this.txt_num_conflit.Margin = new System.Windows.Forms.Padding(4);
             this.txt_num_conflit.Name = "txt_num_conflit";
-            this.txt_num_conflit.Size = new System.Drawing.Size(423, 44);
+            this.txt_num_conflit.Size = new System.Drawing.Size(391, 44);
             this.txt_num_conflit.TabIndex = 94;
             this.txt_num_conflit.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // dt_debut_mediation
             // 
-            this.dt_debut_mediation.Location = new System.Drawing.Point(972, 123);
+            this.dt_debut_mediation.Location = new System.Drawing.Point(1029, 123);
             this.dt_debut_mediation.MinimumSize = new System.Drawing.Size(0, 29);
             this.dt_debut_mediation.Name = "dt_debut_mediation";
-            this.dt_debut_mediation.Size = new System.Drawing.Size(309, 29);
+            this.dt_debut_mediation.Size = new System.Drawing.Size(252, 29);
             this.dt_debut_mediation.Style = MetroFramework.MetroColorStyle.Blue;
             this.dt_debut_mediation.TabIndex = 93;
             this.dt_debut_mediation.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -234,10 +234,10 @@
             this.cbx_type_partie.ForeColor = System.Drawing.Color.White;
             this.cbx_type_partie.FormattingEnabled = true;
             this.cbx_type_partie.ItemHeight = 23;
-            this.cbx_type_partie.Location = new System.Drawing.Point(655, 123);
+            this.cbx_type_partie.Location = new System.Drawing.Point(734, 123);
             this.cbx_type_partie.Name = "cbx_type_partie";
             this.cbx_type_partie.PromptText = "Choisissez le type de partie";
-            this.cbx_type_partie.Size = new System.Drawing.Size(309, 29);
+            this.cbx_type_partie.Size = new System.Drawing.Size(277, 29);
             this.cbx_type_partie.Style = MetroFramework.MetroColorStyle.Blue;
             this.cbx_type_partie.TabIndex = 92;
             this.cbx_type_partie.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -252,7 +252,7 @@
             this.listBox1.ItemHeight = 17;
             this.listBox1.Location = new System.Drawing.Point(0, 107);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(217, 187);
+            this.listBox1.Size = new System.Drawing.Size(328, 187);
             this.listBox1.TabIndex = 96;
             // 
             // txt_noms
@@ -268,10 +268,10 @@
             this.txt_noms.LineIdleColor = System.Drawing.Color.White;
             this.txt_noms.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
             this.txt_noms.LineThickness = 1;
-            this.txt_noms.Location = new System.Drawing.Point(224, 56);
+            this.txt_noms.Location = new System.Drawing.Point(336, 56);
             this.txt_noms.Margin = new System.Windows.Forms.Padding(4);
             this.txt_noms.Name = "txt_noms";
-            this.txt_noms.Size = new System.Drawing.Size(423, 44);
+            this.txt_noms.Size = new System.Drawing.Size(390, 44);
             this.txt_noms.TabIndex = 91;
             this.txt_noms.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -363,10 +363,10 @@
             this.txt_id_membre.LineIdleColor = System.Drawing.Color.White;
             this.txt_id_membre.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
             this.txt_id_membre.LineThickness = 1;
-            this.txt_id_membre.Location = new System.Drawing.Point(655, 56);
+            this.txt_id_membre.Location = new System.Drawing.Point(734, 56);
             this.txt_id_membre.Margin = new System.Windows.Forms.Padding(4);
             this.txt_id_membre.Name = "txt_id_membre";
-            this.txt_id_membre.Size = new System.Drawing.Size(309, 44);
+            this.txt_id_membre.Size = new System.Drawing.Size(277, 44);
             this.txt_id_membre.TabIndex = 106;
             this.txt_id_membre.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -380,7 +380,7 @@
             this.Controls.Add(this.btn_enregistrer);
             this.Controls.Add(this.bunifuCustomDataGrid2);
             this.Controls.Add(this.btn_supprimer);
-            this.Controls.Add(this.txt_id_chef_menage);
+            this.Controls.Add(this.txt_recherche);
             this.Controls.Add(this.txt_code_menage);
             this.Controls.Add(this.txt_num_conflit);
             this.Controls.Add(this.dt_debut_mediation);
@@ -410,7 +410,7 @@
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private Bunifu.Framework.UI.BunifuFlatButton btn_supprimer;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_id_chef_menage;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_recherche;
         public Bunifu.Framework.UI.BunifuMaterialTextbox txt_num_conflit;
         private MetroFramework.Controls.MetroDateTime dt_debut_mediation;
         private MetroFramework.Controls.MetroComboBox cbx_type_partie;

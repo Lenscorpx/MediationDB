@@ -17,6 +17,7 @@ namespace MediationDB.FormLibrary
         public frm_details_parties_conflits()
         {
             InitializeComponent();
+            refresh();
         }
 
         public void refresh()
@@ -31,7 +32,7 @@ namespace MediationDB.FormLibrary
 
         private void txt_id_chef_menage_OnValueChanged(object sender, EventArgs e)
         {
-
+            rps.rechercher_nom_membre(listBox1, txt_recherche.Text);
         }
     }
 }
