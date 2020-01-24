@@ -860,14 +860,13 @@ as
 go
 create procedure modifier_assign_objet_conflit
 @num_details_objet int,
-@date_enreg date,
 @id_objets_conflits nvarchar(200),
 @num_conflit nvarchar(200),
 @observation nvarchar(200)
 as
 	update t_assignation_objets
 		set
-			date_enreg=@date_enreg,
+			date_enreg=getdate(),
 			id_objets_conflits=@id_objets_conflits,
 			num_conflit=@num_conflit,
 			observation=@observation
