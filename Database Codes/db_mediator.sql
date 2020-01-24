@@ -1,11 +1,11 @@
 use master;
 go
-drop database db_mediator
+drop database db_foncier
 go
-if not exists(select * from sys.databases where name='db_mediator')
-	create database db_mediator;
+if not exists(select * from sys.databases where name='db_foncier')
+	create database db_foncier;
 go
-use db_mediator;
+use db_foncier;
 go
 create table t_pays
 (
@@ -424,7 +424,8 @@ go
 create procedure rechercher_membres_parNoms
 @noms nvarchar(200)
 as
-	select top 50		id_membre as 'ID',
+	select top 50		
+		id_membre as 'ID',
 		noms as 'Noms',
 		sexe as 'Genre',
 		date_naissance as 'Date Naissance',
@@ -437,6 +438,19 @@ as
 		profession as 'Profession',
 		id_menage as 'Menage',
 		date_enregistrement as 'Enreg.'		
+	from t_membres
+	where 
+		noms like '%'+@noms+'%'
+		order by
+			date_enregistrement desc, id_membre desc
+go
+alter procedure search_membres_parNoms
+@noms nvarchar(200)
+as
+	select		
+		id_membre,
+		noms,
+		id_menage		
 	from t_membres
 	where 
 		noms like '%'+@noms+'%'
@@ -649,9 +663,9 @@ create procedure inserer_conflit
 @id_localite nvarchar(200)
 as
     insert into t_conflit
-        (date_enreg,date_debut_conflit,id_type_conflit,id_nature_conflit,id_localite)
+        (num_conflit, date_enreg,date_debut_conflit,id_type_conflit,id_nature_conflit,id_localite)
     values
-        (getDate(),@date_debut_conflit,@id_type_conflit,@id_nature_conflit,@id_localite)
+        (@num_conflit, getDate(),@date_debut_conflit,@id_type_conflit,@id_nature_conflit,@id_localite)
 go
 create procedure modifier_conflit
 @num_conflit nvarchar(200), 
@@ -928,7 +942,9 @@ go
 create procedure supprimer_assignation_causes
 @num_assignation_causes int
 as
-	delete from t_
+	delete from t_assignation_causes
+		where num_assignation_causes like @num_assignation_causes
+go
 ---cette table permettra de reconnaitre quel type de menages est soit accuse ou plaignant
 --------------------- Debut codes Types Parties ---------------------------------------------------------
 create table t_type_parties 
