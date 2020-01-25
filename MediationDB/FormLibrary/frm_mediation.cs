@@ -122,7 +122,9 @@ namespace MediationDB.FormLibrary
 
         private void btn_resolutions_Click(object sender, EventArgs e)
         {
-
+            var fr = new frm_assign_resolutions();
+            fr.txt_num_conflit.Text = txt_num_conflit.Text;
+            fr.ShowDialog();
         }
     }
 }
