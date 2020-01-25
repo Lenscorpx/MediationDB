@@ -36,6 +36,7 @@ namespace MediationDB.FormLibrary
             {
                 rps.chart_nombre_membre(lbl_nombre_membre);
                 rps.chart_nombre_menage(lbl_nombre_menages);
+                rps.chart_nombre_conflits(lbl_conflits);
                 lbl_date.Text = Convert.ToString(DateTime.Now);
             }
             catch

@@ -78,8 +78,7 @@ namespace MediationDB.FormLibrary
                 }
                 else
                 {
-                    rps.inserer_partie(cbx_type_partie.Text, txt_code_menage.Text, txt_num_conflit.Text);                   
-                    
+                    rps.inserer_partie(cbx_type_partie.Text, txt_code_menage.Text, txt_num_conflit.Text);                                  
                 }
             }
             else

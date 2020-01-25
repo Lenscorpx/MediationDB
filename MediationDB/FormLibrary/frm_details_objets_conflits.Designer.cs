@@ -35,17 +35,18 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.cbx_objet_conflit = new MetroFramework.Controls.MetroComboBox();
             this.bunifuCustomDataGrid2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.txt_num_details = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txt_num_conflit = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_observation = new System.Windows.Forms.RichTextBox();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.btn_supprimer = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_enregistrer = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.txt_observation = new System.Windows.Forms.RichTextBox();
+            this.btn_next = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -69,20 +70,6 @@
             this.label1.Size = new System.Drawing.Size(365, 22);
             this.label1.TabIndex = 8;
             this.label1.Text = "Details concernant les objets  du conflit";
-            // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.multiply_96px;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(1180, 8);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(42, 34);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 7;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // cbx_objet_conflit
             // 
@@ -203,6 +190,30 @@
             this.txt_num_conflit.TabIndex = 97;
             this.txt_num_conflit.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
+            // txt_observation
+            // 
+            this.txt_observation.BackColor = System.Drawing.Color.Black;
+            this.txt_observation.ForeColor = System.Drawing.Color.White;
+            this.txt_observation.Location = new System.Drawing.Point(12, 142);
+            this.txt_observation.Name = "txt_observation";
+            this.txt_observation.Size = new System.Drawing.Size(1209, 113);
+            this.txt_observation.TabIndex = 103;
+            this.txt_observation.Text = "";
+            // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.multiply_96px;
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(1180, 8);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(42, 34);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton1.TabIndex = 7;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            // 
             // btn_supprimer
             // 
             this.btn_supprimer.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
@@ -227,7 +238,7 @@
             this.btn_supprimer.IconVisible = true;
             this.btn_supprimer.IconZoom = 50D;
             this.btn_supprimer.IsTab = true;
-            this.btn_supprimer.Location = new System.Drawing.Point(599, 264);
+            this.btn_supprimer.Location = new System.Drawing.Point(193, 264);
             this.btn_supprimer.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btn_supprimer.Name = "btn_supprimer";
             this.btn_supprimer.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
@@ -266,7 +277,7 @@
             this.btn_enregistrer.IconVisible = true;
             this.btn_enregistrer.IconZoom = 50D;
             this.btn_enregistrer.IsTab = true;
-            this.btn_enregistrer.Location = new System.Drawing.Point(420, 264);
+            this.btn_enregistrer.Location = new System.Drawing.Point(14, 264);
             this.btn_enregistrer.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btn_enregistrer.Name = "btn_enregistrer";
             this.btn_enregistrer.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
@@ -281,15 +292,44 @@
             this.btn_enregistrer.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_enregistrer.Click += new System.EventHandler(this.btn_enregistrer_Click);
             // 
-            // txt_observation
+            // btn_next
             // 
-            this.txt_observation.BackColor = System.Drawing.Color.Black;
-            this.txt_observation.ForeColor = System.Drawing.Color.White;
-            this.txt_observation.Location = new System.Drawing.Point(12, 142);
-            this.txt_observation.Name = "txt_observation";
-            this.txt_observation.Size = new System.Drawing.Size(1209, 113);
-            this.txt_observation.TabIndex = 103;
-            this.txt_observation.Text = "";
+            this.btn_next.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.btn_next.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_next.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.btn_next.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_next.BorderRadius = 0;
+            this.btn_next.ButtonText = "Suivant";
+            this.btn_next.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_next.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_next.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_next.ForeColor = System.Drawing.Color.White;
+            this.btn_next.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_next.Iconimage = global::MediationDB.Properties.Resources.next;
+            this.btn_next.Iconimage_right = null;
+            this.btn_next.Iconimage_right_Selected = null;
+            this.btn_next.Iconimage_Selected = null;
+            this.btn_next.IconMarginLeft = 0;
+            this.btn_next.IconMarginRight = 0;
+            this.btn_next.IconRightVisible = true;
+            this.btn_next.IconRightZoom = 0D;
+            this.btn_next.IconVisible = true;
+            this.btn_next.IconZoom = 50D;
+            this.btn_next.IsTab = true;
+            this.btn_next.Location = new System.Drawing.Point(1091, 264);
+            this.btn_next.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.btn_next.Name = "btn_next";
+            this.btn_next.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.btn_next.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.btn_next.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_next.selected = false;
+            this.btn_next.Size = new System.Drawing.Size(128, 40);
+            this.btn_next.TabIndex = 108;
+            this.btn_next.Text = "Suivant";
+            this.btn_next.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_next.Textcolor = System.Drawing.Color.White;
+            this.btn_next.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_next.Click += new System.EventHandler(this.btn_next_Click);
             // 
             // frm_details_objets_conflits
             // 
@@ -297,6 +337,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.ClientSize = new System.Drawing.Size(1233, 630);
+            this.Controls.Add(this.btn_next);
             this.Controls.Add(this.txt_observation);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.cbx_objet_conflit);
@@ -312,8 +353,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -330,5 +371,6 @@
         public Bunifu.Framework.UI.BunifuMaterialTextbox txt_num_conflit;
         public Bunifu.Framework.UI.BunifuMaterialTextbox txt_num_details;
         private System.Windows.Forms.RichTextBox txt_observation;
+        private Bunifu.Framework.UI.BunifuFlatButton btn_next;
     }
 }

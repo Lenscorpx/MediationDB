@@ -39,8 +39,7 @@ namespace MediationDB.FormLibrary
                 }
                 else
                 {
-                    rps.inserer_details(rtxt_descr.Text, txt_num_conflit.Text);
-                    refresh();
+                    rps.inserer_details(rtxt_descr.Text, txt_num_conflit.Text); refresh();                   
                 }
             }
             else
@@ -100,6 +99,13 @@ namespace MediationDB.FormLibrary
         private void btn_supprimer_Click_1(object sender, EventArgs e)
         {
             btn_supprimer_Click(sender, e);
+        }
+
+        private void btn_next_Click(object sender, EventArgs e)
+        {
+            var fr = new frm_details_objets_conflits();
+            fr.txt_num_conflit.Text = txt_num_conflit.Text;
+            fr.ShowDialog();
         }
     }
 }

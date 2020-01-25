@@ -467,6 +467,7 @@
             this.btn_resolutions.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_resolutions.Textcolor = System.Drawing.Color.White;
             this.btn_resolutions.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_resolutions.Click += new System.EventHandler(this.btn_resolutions_Click);
             // 
             // frm_mediation
             // 

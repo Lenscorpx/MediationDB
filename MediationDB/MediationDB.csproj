@@ -83,6 +83,12 @@
     </Compile>
     <Compile Include="DataLibrary\Data_Repository.cs" />
     <Compile Include="DataLibrary\Params.cs" />
+    <Compile Include="FormLibrary\frm_assign_resolutions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_assign_resolutions.Designer.cs">
+      <DependentUpon>frm_assign_resolutions.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLibrary\frm_atelier.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -255,6 +261,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ControlLibrary\uc_menage.resx">
       <DependentUpon>uc_menage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_assign_resolutions.resx">
+      <DependentUpon>frm_assign_resolutions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_atelier.resx">
       <DependentUpon>frm_atelier.cs</DependentUpon>

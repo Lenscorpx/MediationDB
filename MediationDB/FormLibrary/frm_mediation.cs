@@ -119,5 +119,10 @@ namespace MediationDB.FormLibrary
         {
             btn_supprimer_Click(sender, e);
         }
+
+        private void btn_resolutions_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

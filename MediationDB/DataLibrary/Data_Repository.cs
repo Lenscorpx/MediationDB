@@ -2598,6 +2598,36 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
+        public void chart_nombre_conflits(Label cbx)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("chart_nombre_conflits", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                //cmd.Parameters.Add(new SqlParameter("complete_name", SqlDbType.NVarChar)).Value = search_name;
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                foreach (DataRow dr in dt.Rows)
+                {
+                    cbx.Text = Convert.ToString(dr[0]);
+                }
+            }
+            catch (Exception tdf)
+            {
+                //MessageBox.Show("Connection failed!\n" + tdf);
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
         public void search_menage(DataGridView dtg, string mot)
         {
             cnx = new SqlConnection(prms.ToString());

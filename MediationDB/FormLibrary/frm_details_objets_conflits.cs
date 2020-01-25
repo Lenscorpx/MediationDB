@@ -80,5 +80,12 @@ namespace MediationDB.FormLibrary
             txt_num_conflit.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[3].Value.ToString();
             txt_observation.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[4].Value.ToString();
         }
+
+        private void btn_next_Click(object sender, EventArgs e)
+        {
+            var fr = new frm_mediation();
+            fr.txt_num_conflit.Text = txt_num_conflit.Text;
+            fr.ShowDialog();
+        }
     }
 }
