@@ -1175,6 +1175,15 @@ create table t_assignation_resolution
     constraint fk_resol_assign_res foreign key(id_resolution) references t_resolutions(id_resolution)
 )
 go
+create procedure afficher_resolutions
+as
+	select top 50
+		num_assign_resol int,
+		num_conflit nvarchar(200),
+		id_resolution nvarchar(200),
+		date_resolution date,
+		commentaires nvarchar(200)
+	from t_assignation_resolution
 ------------------------------- Codes mediateur---------------------------------------------
 create table t_mediateur
 (
@@ -1688,6 +1697,13 @@ create procedure chart_nombre_membre
 as
 select count(id_membre) from t_membres
 go
+
+create procedure chart_nombre_conflits
+as
+select count(num_conflit) from t_conflit
+go
+
+
 
 select * from t_menages
 
