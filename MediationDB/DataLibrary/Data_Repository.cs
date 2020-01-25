@@ -2243,49 +2243,7 @@ namespace MediationDB.DataLibrary
             {
                 cnx.Close(); cnx.Dispose();
             }
-        }
-        public void modifier_membre(string id_membre, string noms, DateTime date_naissance, string sexe, string etat_civil, string id_vulnerabilite, string provenance,
-                                   string adresse, string num_tel, string repr_menage, string profession, string id_menage, DateTime date_enregistrement)
-        {
-            cnx = new SqlConnection(prms.ToString());
-            try
-            {
-                if (cnx.State == ConnectionState.Closed)
-                    cnx.Open();
-                var cmd = new SqlCommand("modifier_membre", cnx)
-                {
-                    CommandType = CommandType.StoredProcedure
-                };
-                cmd.Parameters.Add(new SqlParameter("id_membre", SqlDbType.NVarChar)).Value = id_membre;
-                cmd.Parameters.Add(new SqlParameter("noms", SqlDbType.NVarChar)).Value = noms;
-                cmd.Parameters.Add(new SqlParameter("date_naissance", SqlDbType.Date)).Value = date_naissance;
-                cmd.Parameters.Add(new SqlParameter("sexe", SqlDbType.NVarChar)).Value = sexe;
-                cmd.Parameters.Add(new SqlParameter("etat_civil", SqlDbType.NVarChar)).Value = etat_civil;
-                cmd.Parameters.Add(new SqlParameter("id_vulnerabilite", SqlDbType.NVarChar)).Value = id_vulnerabilite;
-                cmd.Parameters.Add(new SqlParameter("provenance", SqlDbType.NVarChar)).Value = provenance;
-                cmd.Parameters.Add(new SqlParameter("adresse", SqlDbType.NVarChar)).Value = adresse;
-                cmd.Parameters.Add(new SqlParameter("num_tel", SqlDbType.NVarChar)).Value = num_tel;
-                cmd.Parameters.Add(new SqlParameter("profession", SqlDbType.NVarChar)).Value = profession;
-                cmd.Parameters.Add(new SqlParameter("id_menage", SqlDbType.NVarChar)).Value = id_menage;
-                cmd.Parameters.Add(new SqlParameter("date_enregistrement", SqlDbType.Date)).Value = date_enregistrement;
-                cmd.ExecuteNonQuery();
-                //afficher_frais(dtg);
-                MessageBox.Show("Enregistrement avec succès!", "Enregistrement", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception tdf)
-            {
-                var rs = new DialogResult();
-                rs = MessageBox.Show("Voulez vous voir le code d'erreur?", "Erreurs ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (rs == DialogResult.Yes)
-                {
-                    MessageBox.Show(tdf.ToString());
-                }
-            }
-            finally
-            {
-                cnx.Close(); cnx.Dispose();
-            }
-        }
+        }        
         public void supprimer_membre(string id_membre)
         {
             cnx = new SqlConnection(prms.ToString());

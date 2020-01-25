@@ -58,42 +58,23 @@ namespace MediationDB.FormLibrary
         {
             if (txt_code_membre.Text != "")
             {
-                if (txt_id_menage.Text ==""||txt_noms_membre.Text==""||cbx_sexe.Text==""||cbx_etat_civil.Text==""||cbx_vulnerabilite.Text=="")
+                MessageBox.Show("Veuillez completer le code membre");
+            }
+            else
+            {
+
+                if (txt_id_menage.Text == "" || txt_noms_membre.Text == "" || cbx_sexe.Text == "" || cbx_etat_civil.Text == "")
                 {
                     MessageBox.Show("Veuillez completer les champs importants!");
                 }
                 else
-                {                    
-                        rps.inserer_membre(txt_code_membre.Text, txt_noms_membre.Text, Convert.ToDateTime(dt_date_naissance.Text),
-                                       cbx_sexe.Text, cbx_etat_civil.Text, cbx_vulnerabilite.Text, txt_provenance.Text, 
-                                       txt_adresse.Text, txt_telephone.Text, "Yes", txt_profession.Text, txt_id_menage.Text, DateTime.Now);
+                {
+                    rps.inserer_membre(txt_code_membre.Text, txt_noms_membre.Text, Convert.ToDateTime(dt_date_naissance.Text),
+                                   cbx_sexe.Text, cbx_etat_civil.Text, cbx_vulnerabilite.Text, txt_provenance.Text,
+                                   txt_adresse.Text, txt_telephone.Text, "Yes", txt_profession.Text, txt_id_menage.Text, DateTime.Now);
                     refresh();
-                    
-                }
-            }
-            else
-            {
-                //if (txt_id_menage.Text == "" || txt_noms_membre.Text == "" || cbx_sexe.Text == "" || cbx_etat_civil.Text == "" || cbx_vulnerabilite.Text == "")
-                //{
-                //    MessageBox.Show("Veuillez completer les champs importants!");
-                //}
-                //else
-                //{
-                //    if (rd_btn_yes.Checked == true)
-                //    {
-                //        rps.modifier_membre(txt_code_membre.Text, txt_noms_membre.Text, Convert.ToDateTime(dt_date_naissance.Text),
-                //                       cbx_sexe.Text, cbx_etat_civil.Text, cbx_vulnerabilite.Text, txt_provenance.Text,
-                //                       txt_adresse.Text, txt_telephone.Text, "Yes", txt_profession.Text, txt_id_menage.Text, DateTime.Now);
-                //    }
-                //    else
-                //    {
-                //        rps.modifier_membre(txt_code_membre.Text, txt_noms_membre.Text, Convert.ToDateTime(dt_date_naissance.Text),
-                //                       cbx_sexe.Text, cbx_etat_civil.Text, cbx_vulnerabilite.Text, txt_provenance.Text,
-                //                       txt_adresse.Text, txt_telephone.Text, "No", txt_profession.Text, txt_id_menage.Text, DateTime.Now);
-                //    }
 
-                //}
-                MessageBox.Show("Veuillez completer le code du membre");
+                }
             }
         }
 

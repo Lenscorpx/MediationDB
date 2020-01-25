@@ -53,5 +53,37 @@ namespace MediationDB.FormLibrary
                 }
             }
         }
+
+        private void btn_supprimer_Click(object sender, EventArgs e)
+        {
+            if (txt_num_details.Text == "")
+            {
+                MessageBox.Show("Completez le code de resolutions a supprimer");
+            }
+            else
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show(this, "Voulez vous vraiment supprimer cette information?", "Message de confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    rps.supprimer_assign_resolutions(Convert.ToInt32(txt_num_details.Text));
+                    refresh();
+                }
+            }
+        }
+
+        private void bunifuCustomDataGrid2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txt_num_details.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[0].Value.ToString();
+            txt_num_conflit.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[1].Value.ToString();
+            cbx_resolutions.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[2].Value.ToString();
+            dt_date_resolution.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[3].Value.ToString();
+            rtxt_descr.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[4].Value.ToString();
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

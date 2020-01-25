@@ -499,7 +499,11 @@ create procedure inserer_membre
 @date_enregistrement date,
 @sexe nvarchar(200)
 as
-	insert into t_membres
+	merge into t_membres
+	using (select @id_membre as x_id) as x_source
+	on(x_source.x_id=t_membres.id_membre)
+	when not matched then
+		insert
 		(
 			id_membre, 
 			noms, 
@@ -515,7 +519,36 @@ as
 			date_enregistrement
 		)
 	values
-		(@id_membre, @noms, @date_naissance, @sexe, @etat_civil, @id_vulnerabilite, @provenance, @adresse, @num_tel, @repr_menage, @profession, @id_menage, @date_enregistrement);
+		(
+			@id_membre, 
+			@noms, 
+			@date_naissance, 
+			@sexe, 
+			@etat_civil, 
+			@id_vulnerabilite, 
+			@provenance, 
+			@adresse, 
+			@num_tel, 
+			@repr_menage, 
+			@profession, 
+			@id_menage, 
+			@date_enregistrement
+		)
+	when matched then
+		update
+			set
+				noms=@noms,
+				date_naissance=@date_naissance,
+				etat_civil=@etat_civil,
+				id_vulnerabilite=@id_vulnerabilite,
+				provenance=@provenance,
+				adresse=@adresse,
+				num_tel=@num_tel,
+				repr_menage=@repr_menage,
+				profession=@profession,
+				id_menage=@id_menage,
+				date_enregistrement=@date_enregistrement,
+				sexe=@sexe;
 go
 create procedure modifier_membre
 @id_membre nvarchar(200),
@@ -1175,15 +1208,59 @@ create table t_assignation_resolution
     constraint fk_resol_assign_res foreign key(id_resolution) references t_resolutions(id_resolution)
 )
 go
-create procedure afficher_resolutions
+create procedure afficher_assign_resolutions
 as
 	select top 50
-		num_assign_resol int,
-		num_conflit nvarchar(200),
-		id_resolution nvarchar(200),
-		date_resolution date,
-		commentaires nvarchar(200)
+		num_assign_resol,
+		num_conflit,
+		id_resolution,
+		date_resolution,
+		commentaires
 	from t_assignation_resolution
+		order by
+			num_assign_resol desc
+go
+create procedure inserer_assign_resolutions
+--@num_assign_resol int,
+@num_conflit nvarchar(200),
+@id_resolution nvarchar(200),
+@date_resolution date,
+@commentaires nvarchar(200)
+as
+	insert into t_assignation_resolution
+		(num_conflit, id_resolution, date_resolution, commentaires)
+	values
+		(@num_conflit, @id_resolution, @date_resolution, @commentaires)
+go
+create procedure modifier_assign_resolutions
+@num_assign_resol int,
+@num_conflit nvarchar(200),
+@id_resolution nvarchar(200),
+@date_resolution date,
+@commentaires nvarchar(200)
+as
+	update t_assignation_resolution
+		set
+			num_conflit=@num_conflit, 
+			id_resolution=@id_resolution, 
+			date_resolution=@date_resolution, 
+			commentaires=@commentaires
+		where
+			num_assign_resol like @num_assign_resol
+go
+create procedure supprimer_assign_resolutions
+@num_assign_resol int
+as
+	delete from t_assignation_resolution
+		where num_assign_resol like @num_assign_resol
+go
+create procedure recuperer_resolutions
+as
+	select
+		id_resolution		
+	from t_resolutions
+		order by id_resolution asc
+go
 ------------------------------- Codes mediateur---------------------------------------------
 create table t_mediateur
 (
