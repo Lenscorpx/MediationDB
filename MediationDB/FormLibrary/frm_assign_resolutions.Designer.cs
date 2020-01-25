@@ -42,7 +42,7 @@
             this.rtxt_descr = new System.Windows.Forms.RichTextBox();
             this.txt_num_details = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txt_num_conflit = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.metroDateTime1 = new MetroFramework.Controls.MetroDateTime();
+            this.dt_date_resolution = new MetroFramework.Controls.MetroDateTime();
             this.label3 = new System.Windows.Forms.Label();
             this.cbx_resolutions = new MetroFramework.Controls.MetroComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -172,6 +172,7 @@
             this.btn_enregistrer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_enregistrer.Textcolor = System.Drawing.Color.White;
             this.btn_enregistrer.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_enregistrer.Click += new System.EventHandler(this.btn_enregistrer_Click);
             // 
             // rtxt_descr
             // 
@@ -223,15 +224,15 @@
             this.txt_num_conflit.TabIndex = 110;
             this.txt_num_conflit.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // metroDateTime1
+            // dt_date_resolution
             // 
-            this.metroDateTime1.Location = new System.Drawing.Point(393, 107);
-            this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 29);
-            this.metroDateTime1.Name = "metroDateTime1";
-            this.metroDateTime1.Size = new System.Drawing.Size(253, 29);
-            this.metroDateTime1.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroDateTime1.TabIndex = 119;
-            this.metroDateTime1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.dt_date_resolution.Location = new System.Drawing.Point(393, 107);
+            this.dt_date_resolution.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dt_date_resolution.Name = "dt_date_resolution";
+            this.dt_date_resolution.Size = new System.Drawing.Size(253, 29);
+            this.dt_date_resolution.Style = MetroFramework.MetroColorStyle.Blue;
+            this.dt_date_resolution.TabIndex = 119;
+            this.dt_date_resolution.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // label3
             // 
@@ -341,7 +342,7 @@
             this.ClientSize = new System.Drawing.Size(1300, 665);
             this.Controls.Add(this.bunifuCustomDataGrid2);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.metroDateTime1);
+            this.Controls.Add(this.dt_date_resolution);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cbx_resolutions);
             this.Controls.Add(this.label2);
@@ -377,7 +378,7 @@
         private System.Windows.Forms.RichTextBox rtxt_descr;
         public Bunifu.Framework.UI.BunifuMaterialTextbox txt_num_details;
         public Bunifu.Framework.UI.BunifuMaterialTextbox txt_num_conflit;
-        private MetroFramework.Controls.MetroDateTime metroDateTime1;
+        private MetroFramework.Controls.MetroDateTime dt_date_resolution;
         private System.Windows.Forms.Label label3;
         private MetroFramework.Controls.MetroComboBox cbx_resolutions;
         private System.Windows.Forms.Label label4;
