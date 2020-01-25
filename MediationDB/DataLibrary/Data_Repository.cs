@@ -3192,5 +3192,169 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
+        public void recuperer_resolutions(ComboBox dtg)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("recuperer_resolutions", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                //cmd.Parameters.Add(new SqlParameter("texte", SqlDbType.NVarChar)).Value = texte_a_chercher;
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                dtg.Items.Clear();
+                foreach (DataRow dr in dt.Rows)
+                {
+                    dtg.Items.Add(Convert.ToString(dr[0]));
+                }
+            }
+            catch (Exception exct)
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show("Want to see error code?", "Errors ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    MessageBox.Show(exct.ToString());
+                }
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void afficher_assign_resolutions(DataGridView dtg)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("afficher_assign_resolutions", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                dtg.DataSource = dt;
+            }
+            catch (Exception exct)
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show("Want to see error code?", "Errors ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    MessageBox.Show(exct.ToString());
+                }
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void inserer_assign_resolutions(string id_resolution, string num_conflit,  DateTime date_resolution, string commentaires)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("inserer_assign_resolutions", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.Parameters.Add(new SqlParameter("id_objets_conflits", SqlDbType.NVarChar)).Value = id_resolution;
+                cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.NVarChar)).Value = num_conflit;
+                cmd.Parameters.Add(new SqlParameter("commentaires", SqlDbType.NVarChar)).Value = commentaires;
+                cmd.Parameters.Add(new SqlParameter("date_resolution", SqlDbType.DateTime)).Value = date_resolution;
+                cmd.ExecuteNonQuery();
+                //afficher_frais(dtg);
+                MessageBox.Show("Enregistrement avec succès!", "Enregistrement", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception tdf)
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show("Voulez vous voir le code d'erreur?", "Erreurs ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    MessageBox.Show(tdf.ToString());
+                }
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void modifier_assign_resolutions(int num_assign_resol, string id_resolution, string num_conflit, DateTime date_resolution, string commentaires)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("modifier_assign_resolutions", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };                
+                cmd.Parameters.Add(new SqlParameter("num_assign_resol", SqlDbType.Int)).Value = num_assign_resol;
+                cmd.Parameters.Add(new SqlParameter("id_objets_conflits", SqlDbType.NVarChar)).Value = id_resolution;
+                cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.NVarChar)).Value = num_conflit;
+                cmd.Parameters.Add(new SqlParameter("commentaires", SqlDbType.NVarChar)).Value = commentaires;
+                cmd.Parameters.Add(new SqlParameter("date_resolution", SqlDbType.DateTime)).Value = date_resolution;
+                cmd.ExecuteNonQuery();
+                //afficher_frais(dtg);
+                MessageBox.Show("Enregistrement avec succès!", "Enregistrement", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception tdf)
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show("Voulez vous voir le code d'erreur?", "Erreurs ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    MessageBox.Show(tdf.ToString());
+                }
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void supprimer_assign_resolutions(int num_assign_resol)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("supprimer_assign_resolutions", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.Parameters.Add(new SqlParameter("num_assign_resol", SqlDbType.Int)).Value = num_assign_resol;
+                cmd.ExecuteNonQuery();
+                //afficher_frais(dtg);
+                MessageBox.Show("Enregistrement avec succès!", "Enregistrement", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception tdf)
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show("Voulez vous voir le code d'erreur?", "Erreurs ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    MessageBox.Show(tdf.ToString());
+                }
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
     }
 }

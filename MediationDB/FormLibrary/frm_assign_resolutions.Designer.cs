@@ -44,7 +44,7 @@
             this.txt_num_conflit = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.metroDateTime1 = new MetroFramework.Controls.MetroDateTime();
             this.label3 = new System.Windows.Forms.Label();
-            this.cbx_nature_conflit = new MetroFramework.Controls.MetroComboBox();
+            this.cbx_resolutions = new MetroFramework.Controls.MetroComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.bunifuCustomDataGrid2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.panel1.SuspendLayout();
@@ -245,21 +245,21 @@
             this.label3.TabIndex = 117;
             this.label3.Text = "Date de resolutions";
             // 
-            // cbx_nature_conflit
+            // cbx_resolutions
             // 
-            this.cbx_nature_conflit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.cbx_nature_conflit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbx_nature_conflit.ForeColor = System.Drawing.Color.White;
-            this.cbx_nature_conflit.FormattingEnabled = true;
-            this.cbx_nature_conflit.ItemHeight = 23;
-            this.cbx_nature_conflit.Location = new System.Drawing.Point(746, 107);
-            this.cbx_nature_conflit.Name = "cbx_nature_conflit";
-            this.cbx_nature_conflit.PromptText = "Choisissez la nature du conflit";
-            this.cbx_nature_conflit.Size = new System.Drawing.Size(296, 29);
-            this.cbx_nature_conflit.Style = MetroFramework.MetroColorStyle.Blue;
-            this.cbx_nature_conflit.TabIndex = 118;
-            this.cbx_nature_conflit.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.cbx_nature_conflit.UseSelectable = true;
+            this.cbx_resolutions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.cbx_resolutions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbx_resolutions.ForeColor = System.Drawing.Color.White;
+            this.cbx_resolutions.FormattingEnabled = true;
+            this.cbx_resolutions.ItemHeight = 23;
+            this.cbx_resolutions.Location = new System.Drawing.Point(746, 107);
+            this.cbx_resolutions.Name = "cbx_resolutions";
+            this.cbx_resolutions.PromptText = "Completez la résolution pour ce conflit";
+            this.cbx_resolutions.Size = new System.Drawing.Size(296, 29);
+            this.cbx_resolutions.Style = MetroFramework.MetroColorStyle.Blue;
+            this.cbx_resolutions.TabIndex = 118;
+            this.cbx_resolutions.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.cbx_resolutions.UseSelectable = true;
             // 
             // label4
             // 
@@ -343,7 +343,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.metroDateTime1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.cbx_nature_conflit);
+            this.Controls.Add(this.cbx_resolutions);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btn_supprimer);
             this.Controls.Add(this.btn_enregistrer);
@@ -379,7 +379,7 @@
         public Bunifu.Framework.UI.BunifuMaterialTextbox txt_num_conflit;
         private MetroFramework.Controls.MetroDateTime metroDateTime1;
         private System.Windows.Forms.Label label3;
-        private MetroFramework.Controls.MetroComboBox cbx_nature_conflit;
+        private MetroFramework.Controls.MetroComboBox cbx_resolutions;
         private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid2;
     }
