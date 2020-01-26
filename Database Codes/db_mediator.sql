@@ -1211,11 +1211,11 @@ go
 create procedure afficher_assign_resolutions
 as
 	select top 50
-		num_assign_resol,
-		num_conflit,
-		id_resolution,
-		date_resolution,
-		commentaires
+		num_assign_resol as 'Num.',
+		num_conflit as 'Conflit',
+		id_resolution as 'Etat Conflit',
+		date_resolution as 'Date',
+		commentaires as 'Commentaires'
 	from t_assignation_resolution
 		order by
 			num_assign_resol desc
