@@ -1484,6 +1484,21 @@ as
 		date_fin as 'Fin de sensibilisation',
 		id_localite as 'Lieu'
 	from t_sensibilisation
+	where
+		id_localite like '%'+@id_localite+'%'
+		order by num_sensibilisation desc
+go
+create procedure search_sensibilisation_bycode_sensibilisation
+@num_sensibilisation nvarchar(200)
+as
+	select top 50 
+		num_sensibilisation as 'Num',
+		date_debut as 'Debut de sensibilisation',
+		date_fin as 'Fin de sensibilisation',
+		id_localite as 'Lieu'
+	from t_sensibilisation
+	where
+		num_sensibilisation like '%'+@num_sensibilisation+'%'
 		order by num_sensibilisation desc
 go
 ------------------------------Fin codes sensibilisation--------------------------------------------------------------
@@ -1560,6 +1575,124 @@ create table t_atelier_masse
     constraint pk_atelier_masse primary key(num_atelier_masse),
     constraint fk_sensibilisation_masse foreign key(num_sensibilisation) references t_sensibilisation(num_sensibilisation)
 )
+go
+create procedure afficher_atelier_masse
+as
+	select top 50 
+		num_atelier_masse as 'Num',
+		date_atelier as 'Date',
+		num_sensibilisation as 'Num. Sens',
+		nbre_hommes as 'Hommes',
+		nbre_femmes as 'Femmes',
+		nbre_filles as 'Filles',
+		nbre_garcons as 'Garcons',
+		nbre_autorite_femmes as 'Autorité Femme',
+		nbre_autorite_hommes as 'Autorité Homme',
+		nbre_menages_deplaces as 'Menages deplacés',
+		nbre_menages_retournes as 'Menages retournés',
+		nbre_menages_locaux as 'Menages locaux', 
+		nbre_menages_rapatrie as 'Menages rappatriés',
+		theme_developpe as 'Thème',    
+		observation as 'Observation',
+		noms_sensibilisateur as 'Noms sensibilisateurs',
+		commentaires as 'Commentaires',
+		telephone_sensibilisateur as 'Telephone'
+	from t_atelier_masse
+		order by num_atelier_masse desc
+go
+create procedure search_atelier_masse_bysensibilisation
+@num_sensibilisation nvarchar(20)
+as
+	select top 50 
+		num_atelier_masse as 'Num',
+		date_atelier as 'Date',
+		num_sensibilisation as 'Num. Sens',
+		nbre_hommes as 'Hommes',
+		nbre_femmes as 'Femmes',
+		nbre_filles as 'Filles',
+		nbre_garcons as 'Garcons',
+		nbre_autorite_femmes as 'Autorité Femme',
+		nbre_autorite_hommes as 'Autorité Homme',
+		nbre_menages_deplaces as 'Menages deplacés',
+		nbre_menages_retournes as 'Menages retournés',
+		nbre_menages_locaux as 'Menages locaux', 
+		nbre_menages_rapatrie as 'Menages rappatriés',
+		theme_developpe as 'Thème',    
+		observation as 'Observation',
+		noms_sensibilisateur as 'Noms sensibilisateurs',
+		commentaires as 'Commentaires',
+		telephone_sensibilisateur as 'Telephone'
+	from t_atelier_masse
+	where
+		num_sensibilisation like '%'+@num_sensibilisation+'%'
+	order by num_atelier_masse desc
+go
+create procedure inserer_atelier_masse
+@date_atelier date,
+@num_sensibilisation nvarchar(200),
+@nbre_hommes int,
+@nbre_femmes int,
+@nbre_filles int,
+@nbre_garcons int,
+@nbre_autorite_femmes int,
+@nbre_autorite_hommes int,
+@nbre_menages_deplaces int,
+@nbre_menages_retournes int,
+@nbre_menages_locaux int, 
+@nbre_menages_rapatrie int,
+@theme_developpe nvarchar(200),    
+@observation nvarchar(max),
+@noms_sensibilisateur nvarchar(200),
+@commentaires nvarchar(max),
+@telephone_sensibilisateur nvarchar(50)
+as
+	insert into t_atelier_masse
+		(
+			date_atelier,
+			num_sensibilisation,
+			nbre_hommes,
+			nbre_femmes,
+			nbre_filles,
+			nbre_garcons,
+			nbre_autorite_femmes,
+			nbre_autorite_hommes,
+			nbre_menages_deplaces,
+			nbre_menages_retournes,
+			nbre_menages_locaux,
+			nbre_menages_rapatrie,
+			theme_developpe,
+			observation,
+			noms_sensibilisateur,
+			commentaires,
+			telephone_sensibilisateur		
+		)
+	values
+		(
+			@date_atelier,
+			@num_sensibilisation,
+			@nbre_hommes,
+			@nbre_femmes,
+			@nbre_filles,
+			@nbre_garcons,
+			@nbre_autorite_femmes,
+			@nbre_autorite_hommes,
+			@nbre_menages_deplaces,
+			@nbre_menages_retournes,
+			@nbre_menages_locaux,
+			@nbre_menages_rapatrie,
+			@theme_developpe,
+			@observation,
+			@noms_sensibilisateur,
+			@commentaires,
+			@telephone_sensibilisateur		
+		)
+go
+create procedure supprimer_atelier_masse
+@num_atelier_masse int
+as
+	delete from t_atelier_masse
+		where
+			num_atelier_masse like @num_atelier_masse
 go
 create table t_type_observation ------- question pertinente ou reponse_pertinente
 (

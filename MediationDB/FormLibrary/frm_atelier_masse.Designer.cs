@@ -37,19 +37,27 @@
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuCustomDataGrid2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dt_fin_sensibilisation = new MetroFramework.Controls.MetroDateTime();
-            this.txt_localite = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.txt_id_localite = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.label3 = new System.Windows.Forms.Label();
             this.txt_code_sensibilisation = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.dt_debut_sensibilisations = new MetroFramework.Controls.MetroDateTime();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_enregistrer = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_supprimer = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.txt_filles = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_garcons = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_hommes = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_femmes = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_menages_rap = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_menages_locaux = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_menages_depl = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_menages_retournes = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_autorite_homme = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_autorite_femme = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_num_atelier = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_noms_sensibilisateurs = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_telephone = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_themes = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_observation = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_commentaires = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
@@ -59,11 +67,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(403, 5);
+            this.label1.Location = new System.Drawing.Point(378, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(491, 36);
+            this.label1.Size = new System.Drawing.Size(545, 36);
             this.label1.TabIndex = 142;
-            this.label1.Text = "Informations sur les sensibilisations";
+            this.label1.Text = "Informations sur les ateliers de masses";
             // 
             // bunifuDragControl1
             // 
@@ -82,8 +90,6 @@
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.bunifuCustomDataGrid2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.bunifuCustomDataGrid2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.bunifuCustomDataGrid2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.bunifuCustomDataGrid2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.bunifuCustomDataGrid2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -110,7 +116,7 @@
             this.bunifuCustomDataGrid2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.bunifuCustomDataGrid2.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.bunifuCustomDataGrid2.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuCustomDataGrid2.Location = new System.Drawing.Point(0, 347);
+            this.bunifuCustomDataGrid2.Location = new System.Drawing.Point(0, 312);
             this.bunifuCustomDataGrid2.Name = "bunifuCustomDataGrid2";
             this.bunifuCustomDataGrid2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -130,92 +136,9 @@
             dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.bunifuCustomDataGrid2.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.bunifuCustomDataGrid2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuCustomDataGrid2.Size = new System.Drawing.Size(1300, 367);
+            this.bunifuCustomDataGrid2.Size = new System.Drawing.Size(1300, 402);
             this.bunifuCustomDataGrid2.TabIndex = 156;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(683, 104);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 17);
-            this.label2.TabIndex = 154;
-            this.label2.Text = "Date Fin";
-            // 
-            // dt_fin_sensibilisation
-            // 
-            this.dt_fin_sensibilisation.Location = new System.Drawing.Point(712, 129);
-            this.dt_fin_sensibilisation.MinimumSize = new System.Drawing.Size(0, 29);
-            this.dt_fin_sensibilisation.Name = "dt_fin_sensibilisation";
-            this.dt_fin_sensibilisation.Size = new System.Drawing.Size(287, 29);
-            this.dt_fin_sensibilisation.Style = MetroFramework.MetroColorStyle.Blue;
-            this.dt_fin_sensibilisation.TabIndex = 153;
-            this.dt_fin_sensibilisation.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // txt_localite
-            // 
-            this.txt_localite.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_localite.Enabled = false;
-            this.txt_localite.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txt_localite.ForeColor = System.Drawing.Color.White;
-            this.txt_localite.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txt_localite.HintText = "Localite ou se trouve le conflit";
-            this.txt_localite.isPassword = false;
-            this.txt_localite.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_localite.LineIdleColor = System.Drawing.Color.White;
-            this.txt_localite.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_localite.LineThickness = 4;
-            this.txt_localite.Location = new System.Drawing.Point(264, 53);
-            this.txt_localite.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_localite.Name = "txt_localite";
-            this.txt_localite.Size = new System.Drawing.Size(319, 44);
-            this.txt_localite.TabIndex = 152;
-            this.txt_localite.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // listBox1
-            // 
-            this.listBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBox1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.ForeColor = System.Drawing.Color.White;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 17;
-            this.listBox1.Location = new System.Drawing.Point(17, 99);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(235, 238);
-            this.listBox1.TabIndex = 150;
-            // 
-            // txt_id_localite
-            // 
-            this.txt_id_localite.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_id_localite.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txt_id_localite.ForeColor = System.Drawing.Color.White;
-            this.txt_id_localite.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txt_id_localite.HintText = "Recherchez une localité";
-            this.txt_id_localite.isPassword = false;
-            this.txt_id_localite.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_id_localite.LineIdleColor = System.Drawing.Color.White;
-            this.txt_id_localite.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_id_localite.LineThickness = 4;
-            this.txt_id_localite.Location = new System.Drawing.Point(13, 53);
-            this.txt_id_localite.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_id_localite.Name = "txt_id_localite";
-            this.txt_id_localite.Size = new System.Drawing.Size(243, 44);
-            this.txt_id_localite.TabIndex = 151;
-            this.txt_id_localite.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(267, 104);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 17);
-            this.label3.TabIndex = 149;
-            this.label3.Text = "Date Debut";
+            this.bunifuCustomDataGrid2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid2_CellContentClick);
             // 
             // txt_code_sensibilisation
             // 
@@ -229,16 +152,17 @@
             this.txt_code_sensibilisation.LineIdleColor = System.Drawing.Color.White;
             this.txt_code_sensibilisation.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
             this.txt_code_sensibilisation.LineThickness = 1;
-            this.txt_code_sensibilisation.Location = new System.Drawing.Point(678, 53);
+            this.txt_code_sensibilisation.Location = new System.Drawing.Point(205, 53);
             this.txt_code_sensibilisation.Margin = new System.Windows.Forms.Padding(4);
             this.txt_code_sensibilisation.Name = "txt_code_sensibilisation";
-            this.txt_code_sensibilisation.Size = new System.Drawing.Size(321, 44);
+            this.txt_code_sensibilisation.Size = new System.Drawing.Size(205, 44);
             this.txt_code_sensibilisation.TabIndex = 145;
             this.txt_code_sensibilisation.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_code_sensibilisation.OnValueChanged += new System.EventHandler(this.txt_code_sensibilisation_OnValueChanged);
             // 
             // dt_debut_sensibilisations
             // 
-            this.dt_debut_sensibilisations.Location = new System.Drawing.Point(296, 129);
+            this.dt_debut_sensibilisations.Location = new System.Drawing.Point(983, 68);
             this.dt_debut_sensibilisations.MinimumSize = new System.Drawing.Size(0, 29);
             this.dt_debut_sensibilisations.Name = "dt_debut_sensibilisations";
             this.dt_debut_sensibilisations.Size = new System.Drawing.Size(287, 29);
@@ -258,82 +182,7 @@
             this.bunifuImageButton1.TabIndex = 143;
             this.bunifuImageButton1.TabStop = false;
             this.bunifuImageButton1.Zoom = 10;
-            // 
-            // bunifuFlatButton2
-            // 
-            this.bunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuFlatButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuFlatButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton2.BorderRadius = 0;
-            this.bunifuFlatButton2.ButtonText = "Ateliers";
-            this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton2.ForeColor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.Iconimage = global::MediationDB.Properties.Resources.add_96px;
-            this.bunifuFlatButton2.Iconimage_right = null;
-            this.bunifuFlatButton2.Iconimage_right_Selected = null;
-            this.bunifuFlatButton2.Iconimage_Selected = null;
-            this.bunifuFlatButton2.IconMarginLeft = 0;
-            this.bunifuFlatButton2.IconMarginRight = 0;
-            this.bunifuFlatButton2.IconRightVisible = true;
-            this.bunifuFlatButton2.IconRightZoom = 0D;
-            this.bunifuFlatButton2.IconVisible = true;
-            this.bunifuFlatButton2.IconZoom = 50D;
-            this.bunifuFlatButton2.IsTab = true;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(1046, 133);
-            this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.bunifuFlatButton2.Name = "bunifuFlatButton2";
-            this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.selected = false;
-            this.bunifuFlatButton2.Size = new System.Drawing.Size(227, 40);
-            this.bunifuFlatButton2.TabIndex = 155;
-            this.bunifuFlatButton2.Text = "Ateliers";
-            this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // bunifuFlatButton1
-            // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuFlatButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "Sensibilisation de masse";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton1.ForeColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = global::MediationDB.Properties.Resources.add_96px;
-            this.bunifuFlatButton1.Iconimage_right = null;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.IconZoom = 50D;
-            this.bunifuFlatButton1.IsTab = true;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(1046, 81);
-            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(227, 40);
-            this.bunifuFlatButton1.TabIndex = 148;
-            this.bunifuFlatButton1.Text = "Sensibilisation de masse";
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // btn_enregistrer
             // 
@@ -359,7 +208,7 @@
             this.btn_enregistrer.IconVisible = true;
             this.btn_enregistrer.IconZoom = 50D;
             this.btn_enregistrer.IsTab = true;
-            this.btn_enregistrer.Location = new System.Drawing.Point(268, 180);
+            this.btn_enregistrer.Location = new System.Drawing.Point(922, 263);
             this.btn_enregistrer.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btn_enregistrer.Name = "btn_enregistrer";
             this.btn_enregistrer.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
@@ -372,6 +221,7 @@
             this.btn_enregistrer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_enregistrer.Textcolor = System.Drawing.Color.White;
             this.btn_enregistrer.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_enregistrer.Click += new System.EventHandler(this.btn_enregistrer_Click);
             // 
             // btn_supprimer
             // 
@@ -397,7 +247,7 @@
             this.btn_supprimer.IconVisible = true;
             this.btn_supprimer.IconZoom = 50D;
             this.btn_supprimer.IsTab = true;
-            this.btn_supprimer.Location = new System.Drawing.Point(447, 180);
+            this.btn_supprimer.Location = new System.Drawing.Point(1101, 263);
             this.btn_supprimer.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btn_supprimer.Name = "btn_supprimer";
             this.btn_supprimer.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
@@ -410,6 +260,313 @@
             this.btn_supprimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_supprimer.Textcolor = System.Drawing.Color.White;
             this.btn_supprimer.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_supprimer.Click += new System.EventHandler(this.btn_supprimer_Click);
+            // 
+            // txt_filles
+            // 
+            this.txt_filles.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_filles.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_filles.ForeColor = System.Drawing.Color.White;
+            this.txt_filles.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_filles.HintText = "Nombres de filles";
+            this.txt_filles.isPassword = false;
+            this.txt_filles.LineFocusedColor = System.Drawing.Color.DodgerBlue;
+            this.txt_filles.LineIdleColor = System.Drawing.Color.White;
+            this.txt_filles.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
+            this.txt_filles.LineThickness = 1;
+            this.txt_filles.Location = new System.Drawing.Point(745, 157);
+            this.txt_filles.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_filles.Name = "txt_filles";
+            this.txt_filles.Size = new System.Drawing.Size(232, 44);
+            this.txt_filles.TabIndex = 160;
+            this.txt_filles.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txt_garcons
+            // 
+            this.txt_garcons.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_garcons.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_garcons.ForeColor = System.Drawing.Color.White;
+            this.txt_garcons.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_garcons.HintText = "Nombres de garcons";
+            this.txt_garcons.isPassword = false;
+            this.txt_garcons.LineFocusedColor = System.Drawing.Color.DodgerBlue;
+            this.txt_garcons.LineIdleColor = System.Drawing.Color.White;
+            this.txt_garcons.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
+            this.txt_garcons.LineThickness = 1;
+            this.txt_garcons.Location = new System.Drawing.Point(505, 157);
+            this.txt_garcons.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_garcons.Name = "txt_garcons";
+            this.txt_garcons.Size = new System.Drawing.Size(232, 44);
+            this.txt_garcons.TabIndex = 159;
+            this.txt_garcons.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txt_hommes
+            // 
+            this.txt_hommes.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_hommes.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_hommes.ForeColor = System.Drawing.Color.White;
+            this.txt_hommes.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_hommes.HintText = "Nombre d\'hommes";
+            this.txt_hommes.isPassword = false;
+            this.txt_hommes.LineFocusedColor = System.Drawing.Color.DodgerBlue;
+            this.txt_hommes.LineIdleColor = System.Drawing.Color.White;
+            this.txt_hommes.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
+            this.txt_hommes.LineThickness = 1;
+            this.txt_hommes.Location = new System.Drawing.Point(25, 157);
+            this.txt_hommes.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_hommes.Name = "txt_hommes";
+            this.txt_hommes.Size = new System.Drawing.Size(232, 44);
+            this.txt_hommes.TabIndex = 158;
+            this.txt_hommes.Text = "Nombres d\'hommes";
+            this.txt_hommes.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txt_femmes
+            // 
+            this.txt_femmes.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_femmes.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_femmes.ForeColor = System.Drawing.Color.White;
+            this.txt_femmes.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_femmes.HintText = "Nombres de femmes";
+            this.txt_femmes.isPassword = false;
+            this.txt_femmes.LineFocusedColor = System.Drawing.Color.DodgerBlue;
+            this.txt_femmes.LineIdleColor = System.Drawing.Color.White;
+            this.txt_femmes.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
+            this.txt_femmes.LineThickness = 1;
+            this.txt_femmes.Location = new System.Drawing.Point(265, 157);
+            this.txt_femmes.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_femmes.Name = "txt_femmes";
+            this.txt_femmes.Size = new System.Drawing.Size(232, 44);
+            this.txt_femmes.TabIndex = 157;
+            this.txt_femmes.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txt_menages_rap
+            // 
+            this.txt_menages_rap.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_menages_rap.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_menages_rap.ForeColor = System.Drawing.Color.White;
+            this.txt_menages_rap.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_menages_rap.HintText = "Menages Rappatriés";
+            this.txt_menages_rap.isPassword = false;
+            this.txt_menages_rap.LineFocusedColor = System.Drawing.Color.DodgerBlue;
+            this.txt_menages_rap.LineIdleColor = System.Drawing.Color.White;
+            this.txt_menages_rap.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
+            this.txt_menages_rap.LineThickness = 1;
+            this.txt_menages_rap.Location = new System.Drawing.Point(745, 209);
+            this.txt_menages_rap.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_menages_rap.Name = "txt_menages_rap";
+            this.txt_menages_rap.Size = new System.Drawing.Size(232, 44);
+            this.txt_menages_rap.TabIndex = 164;
+            this.txt_menages_rap.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txt_menages_locaux
+            // 
+            this.txt_menages_locaux.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_menages_locaux.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_menages_locaux.ForeColor = System.Drawing.Color.White;
+            this.txt_menages_locaux.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_menages_locaux.HintText = "Menages Locaux";
+            this.txt_menages_locaux.isPassword = false;
+            this.txt_menages_locaux.LineFocusedColor = System.Drawing.Color.DodgerBlue;
+            this.txt_menages_locaux.LineIdleColor = System.Drawing.Color.White;
+            this.txt_menages_locaux.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
+            this.txt_menages_locaux.LineThickness = 1;
+            this.txt_menages_locaux.Location = new System.Drawing.Point(505, 209);
+            this.txt_menages_locaux.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_menages_locaux.Name = "txt_menages_locaux";
+            this.txt_menages_locaux.Size = new System.Drawing.Size(232, 44);
+            this.txt_menages_locaux.TabIndex = 163;
+            this.txt_menages_locaux.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txt_menages_depl
+            // 
+            this.txt_menages_depl.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_menages_depl.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_menages_depl.ForeColor = System.Drawing.Color.White;
+            this.txt_menages_depl.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_menages_depl.HintText = "Menages deplacés";
+            this.txt_menages_depl.isPassword = false;
+            this.txt_menages_depl.LineFocusedColor = System.Drawing.Color.DodgerBlue;
+            this.txt_menages_depl.LineIdleColor = System.Drawing.Color.White;
+            this.txt_menages_depl.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
+            this.txt_menages_depl.LineThickness = 1;
+            this.txt_menages_depl.Location = new System.Drawing.Point(25, 209);
+            this.txt_menages_depl.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_menages_depl.Name = "txt_menages_depl";
+            this.txt_menages_depl.Size = new System.Drawing.Size(232, 44);
+            this.txt_menages_depl.TabIndex = 162;
+            this.txt_menages_depl.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txt_menages_retournes
+            // 
+            this.txt_menages_retournes.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_menages_retournes.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_menages_retournes.ForeColor = System.Drawing.Color.White;
+            this.txt_menages_retournes.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_menages_retournes.HintText = "Menages Retournés";
+            this.txt_menages_retournes.isPassword = false;
+            this.txt_menages_retournes.LineFocusedColor = System.Drawing.Color.DodgerBlue;
+            this.txt_menages_retournes.LineIdleColor = System.Drawing.Color.White;
+            this.txt_menages_retournes.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
+            this.txt_menages_retournes.LineThickness = 1;
+            this.txt_menages_retournes.Location = new System.Drawing.Point(265, 209);
+            this.txt_menages_retournes.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_menages_retournes.Name = "txt_menages_retournes";
+            this.txt_menages_retournes.Size = new System.Drawing.Size(232, 44);
+            this.txt_menages_retournes.TabIndex = 161;
+            this.txt_menages_retournes.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txt_autorite_homme
+            // 
+            this.txt_autorite_homme.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_autorite_homme.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_autorite_homme.ForeColor = System.Drawing.Color.White;
+            this.txt_autorite_homme.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_autorite_homme.HintText = "Autorité Homme";
+            this.txt_autorite_homme.isPassword = false;
+            this.txt_autorite_homme.LineFocusedColor = System.Drawing.Color.DodgerBlue;
+            this.txt_autorite_homme.LineIdleColor = System.Drawing.Color.White;
+            this.txt_autorite_homme.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
+            this.txt_autorite_homme.LineThickness = 1;
+            this.txt_autorite_homme.Location = new System.Drawing.Point(998, 157);
+            this.txt_autorite_homme.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_autorite_homme.Name = "txt_autorite_homme";
+            this.txt_autorite_homme.Size = new System.Drawing.Size(272, 44);
+            this.txt_autorite_homme.TabIndex = 166;
+            this.txt_autorite_homme.Text = "Autorité hommes";
+            this.txt_autorite_homme.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txt_autorite_femme
+            // 
+            this.txt_autorite_femme.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_autorite_femme.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_autorite_femme.ForeColor = System.Drawing.Color.White;
+            this.txt_autorite_femme.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_autorite_femme.HintText = "Autorité Femmes";
+            this.txt_autorite_femme.isPassword = false;
+            this.txt_autorite_femme.LineFocusedColor = System.Drawing.Color.DodgerBlue;
+            this.txt_autorite_femme.LineIdleColor = System.Drawing.Color.White;
+            this.txt_autorite_femme.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
+            this.txt_autorite_femme.LineThickness = 1;
+            this.txt_autorite_femme.Location = new System.Drawing.Point(998, 209);
+            this.txt_autorite_femme.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_autorite_femme.Name = "txt_autorite_femme";
+            this.txt_autorite_femme.Size = new System.Drawing.Size(272, 44);
+            this.txt_autorite_femme.TabIndex = 165;
+            this.txt_autorite_femme.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txt_num_atelier
+            // 
+            this.txt_num_atelier.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_num_atelier.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_num_atelier.ForeColor = System.Drawing.Color.White;
+            this.txt_num_atelier.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_num_atelier.HintText = "Num Ateliers Masse";
+            this.txt_num_atelier.isPassword = false;
+            this.txt_num_atelier.LineFocusedColor = System.Drawing.Color.DodgerBlue;
+            this.txt_num_atelier.LineIdleColor = System.Drawing.Color.White;
+            this.txt_num_atelier.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
+            this.txt_num_atelier.LineThickness = 1;
+            this.txt_num_atelier.Location = new System.Drawing.Point(29, 53);
+            this.txt_num_atelier.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_num_atelier.Name = "txt_num_atelier";
+            this.txt_num_atelier.Size = new System.Drawing.Size(168, 44);
+            this.txt_num_atelier.TabIndex = 169;
+            this.txt_num_atelier.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txt_noms_sensibilisateurs
+            // 
+            this.txt_noms_sensibilisateurs.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_noms_sensibilisateurs.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_noms_sensibilisateurs.ForeColor = System.Drawing.Color.White;
+            this.txt_noms_sensibilisateurs.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_noms_sensibilisateurs.HintText = "Noms du sensibilisateurs";
+            this.txt_noms_sensibilisateurs.isPassword = false;
+            this.txt_noms_sensibilisateurs.LineFocusedColor = System.Drawing.Color.DodgerBlue;
+            this.txt_noms_sensibilisateurs.LineIdleColor = System.Drawing.Color.White;
+            this.txt_noms_sensibilisateurs.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
+            this.txt_noms_sensibilisateurs.LineThickness = 1;
+            this.txt_noms_sensibilisateurs.Location = new System.Drawing.Point(418, 53);
+            this.txt_noms_sensibilisateurs.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_noms_sensibilisateurs.Name = "txt_noms_sensibilisateurs";
+            this.txt_noms_sensibilisateurs.Size = new System.Drawing.Size(272, 44);
+            this.txt_noms_sensibilisateurs.TabIndex = 170;
+            this.txt_noms_sensibilisateurs.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txt_telephone
+            // 
+            this.txt_telephone.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_telephone.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_telephone.ForeColor = System.Drawing.Color.White;
+            this.txt_telephone.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_telephone.HintText = "Telephone du sensibilisateur";
+            this.txt_telephone.isPassword = false;
+            this.txt_telephone.LineFocusedColor = System.Drawing.Color.DodgerBlue;
+            this.txt_telephone.LineIdleColor = System.Drawing.Color.White;
+            this.txt_telephone.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
+            this.txt_telephone.LineThickness = 1;
+            this.txt_telephone.Location = new System.Drawing.Point(700, 53);
+            this.txt_telephone.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_telephone.Name = "txt_telephone";
+            this.txt_telephone.Size = new System.Drawing.Size(272, 44);
+            this.txt_telephone.TabIndex = 171;
+            this.txt_telephone.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txt_themes
+            // 
+            this.txt_themes.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_themes.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_themes.ForeColor = System.Drawing.Color.White;
+            this.txt_themes.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_themes.HintText = "Thème développé";
+            this.txt_themes.isPassword = false;
+            this.txt_themes.LineFocusedColor = System.Drawing.Color.DodgerBlue;
+            this.txt_themes.LineIdleColor = System.Drawing.Color.White;
+            this.txt_themes.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
+            this.txt_themes.LineThickness = 1;
+            this.txt_themes.Location = new System.Drawing.Point(29, 105);
+            this.txt_themes.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_themes.Name = "txt_themes";
+            this.txt_themes.Size = new System.Drawing.Size(381, 44);
+            this.txt_themes.TabIndex = 172;
+            this.txt_themes.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txt_observation
+            // 
+            this.txt_observation.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_observation.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_observation.ForeColor = System.Drawing.Color.White;
+            this.txt_observation.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_observation.HintText = "Observation";
+            this.txt_observation.isPassword = false;
+            this.txt_observation.LineFocusedColor = System.Drawing.Color.DodgerBlue;
+            this.txt_observation.LineIdleColor = System.Drawing.Color.White;
+            this.txt_observation.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
+            this.txt_observation.LineThickness = 1;
+            this.txt_observation.Location = new System.Drawing.Point(418, 105);
+            this.txt_observation.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_observation.Name = "txt_observation";
+            this.txt_observation.Size = new System.Drawing.Size(463, 44);
+            this.txt_observation.TabIndex = 173;
+            this.txt_observation.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txt_commentaires
+            // 
+            this.txt_commentaires.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_commentaires.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_commentaires.ForeColor = System.Drawing.Color.White;
+            this.txt_commentaires.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_commentaires.HintText = "Commentaires";
+            this.txt_commentaires.isPassword = false;
+            this.txt_commentaires.LineFocusedColor = System.Drawing.Color.DodgerBlue;
+            this.txt_commentaires.LineIdleColor = System.Drawing.Color.White;
+            this.txt_commentaires.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
+            this.txt_commentaires.LineThickness = 1;
+            this.txt_commentaires.Location = new System.Drawing.Point(889, 105);
+            this.txt_commentaires.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_commentaires.Name = "txt_commentaires";
+            this.txt_commentaires.Size = new System.Drawing.Size(381, 44);
+            this.txt_commentaires.TabIndex = 174;
+            this.txt_commentaires.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // frm_atelier_masse
             // 
@@ -417,24 +574,32 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.ClientSize = new System.Drawing.Size(1300, 714);
+            this.Controls.Add(this.txt_commentaires);
+            this.Controls.Add(this.txt_observation);
+            this.Controls.Add(this.txt_themes);
+            this.Controls.Add(this.txt_telephone);
+            this.Controls.Add(this.txt_noms_sensibilisateurs);
+            this.Controls.Add(this.txt_num_atelier);
+            this.Controls.Add(this.txt_autorite_homme);
+            this.Controls.Add(this.txt_autorite_femme);
+            this.Controls.Add(this.txt_menages_rap);
+            this.Controls.Add(this.txt_menages_locaux);
+            this.Controls.Add(this.txt_menages_depl);
+            this.Controls.Add(this.txt_menages_retournes);
+            this.Controls.Add(this.txt_filles);
+            this.Controls.Add(this.txt_garcons);
+            this.Controls.Add(this.txt_hommes);
+            this.Controls.Add(this.txt_femmes);
             this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bunifuCustomDataGrid2);
-            this.Controls.Add(this.bunifuFlatButton2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.dt_fin_sensibilisation);
-            this.Controls.Add(this.txt_localite);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.txt_id_localite);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.bunifuFlatButton1);
             this.Controls.Add(this.btn_enregistrer);
             this.Controls.Add(this.btn_supprimer);
             this.Controls.Add(this.txt_code_sensibilisation);
             this.Controls.Add(this.dt_debut_sensibilisations);
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_atelier_masse";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_atelier_masse";
@@ -451,17 +616,25 @@
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid2;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
-        private System.Windows.Forms.Label label2;
-        private MetroFramework.Controls.MetroDateTime dt_fin_sensibilisation;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_localite;
-        private System.Windows.Forms.ListBox listBox1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_id_localite;
-        private System.Windows.Forms.Label label3;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private Bunifu.Framework.UI.BunifuFlatButton btn_enregistrer;
         private Bunifu.Framework.UI.BunifuFlatButton btn_supprimer;
         public Bunifu.Framework.UI.BunifuMaterialTextbox txt_code_sensibilisation;
         private MetroFramework.Controls.MetroDateTime dt_debut_sensibilisations;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_autorite_homme;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_autorite_femme;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_menages_rap;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_menages_locaux;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_menages_depl;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_menages_retournes;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_filles;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_garcons;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_hommes;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_femmes;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_commentaires;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_observation;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_themes;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_telephone;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_noms_sensibilisateurs;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox txt_num_atelier;
     }
 }

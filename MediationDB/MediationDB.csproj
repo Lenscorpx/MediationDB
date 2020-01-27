@@ -245,6 +245,12 @@
     <Compile Include="FormLibrary\frm_situation_menage.Designer.cs">
       <DependentUpon>frm_situation_menage.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLibrary\frm_stats_conflits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_stats_conflits.Designer.cs">
+      <DependentUpon>frm_stats_conflits.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLibrary\frm_types_atelier.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -354,6 +360,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_situation_menage.resx">
       <DependentUpon>frm_situation_menage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_stats_conflits.resx">
+      <DependentUpon>frm_stats_conflits.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_types_atelier.resx">
       <DependentUpon>frm_types_atelier.cs</DependentUpon>

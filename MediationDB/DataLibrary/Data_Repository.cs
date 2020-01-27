@@ -3378,5 +3378,417 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
+        public void afficher_atelier_masse(DataGridView dtg)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("afficher_atelier_masse", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                dtg.DataSource = dt;
+            }
+            catch (Exception exct)
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show("Want to see error code?", "Errors ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    MessageBox.Show(exct.ToString());
+                }
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void search_atelier_masse_bysensibilisation(DataGridView dtg, string num_sensibilisation)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("search_atelier_masse_bysensibilisation", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.Parameters.Add(new SqlParameter("num_sensibilisation", SqlDbType.NVarChar)).Value = num_sensibilisation;
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                dtg.DataSource = dt;
+            }
+            catch (Exception exct)
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show("Want to see error code?", "Errors ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    MessageBox.Show(exct.ToString());
+                }
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void inserer_atelier_masse(string code_sensibilisation, DateTime date_atelier, int hommes, 
+            int femmes, int filles, int garcons, int autorite_femmes, int autorite_hommes, 
+            int menages_deplaces, int menages_retournes, int menages_locaux, int menages_rapatries, 
+            string themes, string observation, string noms_sensibilisateurs, string commentaires, string telephone)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("inserer_atelier_masse", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.Parameters.Add(new SqlParameter("date_atelier", SqlDbType.DateTime)).Value = date_atelier;
+                cmd.Parameters.Add(new SqlParameter("num_sensibilisation", SqlDbType.NVarChar)).Value = code_sensibilisation;
+                cmd.Parameters.Add(new SqlParameter("nbre_hommes", SqlDbType.Int)).Value = hommes;
+                cmd.Parameters.Add(new SqlParameter("nbre_femmes", SqlDbType.Int)).Value = femmes;
+                cmd.Parameters.Add(new SqlParameter("nbre_filles", SqlDbType.Int)).Value = filles;
+                cmd.Parameters.Add(new SqlParameter("nbre_garcons", SqlDbType.Int)).Value = garcons;
+                cmd.Parameters.Add(new SqlParameter("nbre_autorite_femmes", SqlDbType.Int)).Value = autorite_femmes;
+                cmd.Parameters.Add(new SqlParameter("nbre_autorite_hommes", SqlDbType.Int)).Value = autorite_hommes;
+                cmd.Parameters.Add(new SqlParameter("nbre_menages_deplaces", SqlDbType.Int)).Value = menages_deplaces;
+                cmd.Parameters.Add(new SqlParameter("nbre_menages_retournes", SqlDbType.Int)).Value = menages_retournes;
+                cmd.Parameters.Add(new SqlParameter("nbre_menages_locaux", SqlDbType.Int)).Value = menages_locaux;
+                cmd.Parameters.Add(new SqlParameter("nbre_menages_rapatrie", SqlDbType.Int)).Value = menages_rapatries;
+                cmd.Parameters.Add(new SqlParameter("theme_developpe", SqlDbType.NVarChar)).Value = themes;
+                cmd.Parameters.Add(new SqlParameter("observation", SqlDbType.NVarChar)).Value = observation;
+                cmd.Parameters.Add(new SqlParameter("noms_sensibilisateur", SqlDbType.NVarChar)).Value = noms_sensibilisateurs;
+                cmd.Parameters.Add(new SqlParameter("commentaires", SqlDbType.NVarChar)).Value = commentaires;
+                cmd.Parameters.Add(new SqlParameter("telephone_sensibilisateur", SqlDbType.NVarChar)).Value = telephone;
+                cmd.ExecuteNonQuery();
+                //afficher_frais(dtg);
+                MessageBox.Show("Enregistrement avec succès!", "Enregistrement", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception tdf)
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show("Voulez vous voir le code d'erreur?", "Erreurs ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    MessageBox.Show(tdf.ToString());
+                }
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void supprimer_atelier_masse(int num_atelier_masse)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("supprimer_atelier_masse", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.Parameters.Add(new SqlParameter("num_atelier_masse", SqlDbType.Int)).Value = num_atelier_masse;                
+                cmd.ExecuteNonQuery();
+                //afficher_frais(dtg);
+                MessageBox.Show("Enregistrement avec succès!", "Enregistrement", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception tdf)
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show("Voulez vous voir le code d'erreur?", "Erreurs ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    MessageBox.Show(tdf.ToString());
+                }
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void chart_nombre_conflits_resolus(Label cbx)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("chart_nombre_conflits_resolus", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                //cmd.Parameters.Add(new SqlParameter("complete_name", SqlDbType.NVarChar)).Value = search_name;
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                foreach (DataRow dr in dt.Rows)
+                {
+                    cbx.Text = Convert.ToString(dr[0]);
+                }
+            }
+            catch (Exception tdf)
+            {
+                //MessageBox.Show("Connection failed!\n" + tdf);
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void chart_nombre_conflits_encours(Label cbx)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("chart_nombre_conflits_encours", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                //cmd.Parameters.Add(new SqlParameter("complete_name", SqlDbType.NVarChar)).Value = search_name;
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                foreach (DataRow dr in dt.Rows)
+                {
+                    cbx.Text = Convert.ToString(dr[0]);
+                }
+            }
+            catch (Exception tdf)
+            {
+                //MessageBox.Show("Connection failed!\n" + tdf);
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void chart_nombre_conflits_refere(Label cbx)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("chart_nombre_conflits_refere", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                //cmd.Parameters.Add(new SqlParameter("complete_name", SqlDbType.NVarChar)).Value = search_name;
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                foreach (DataRow dr in dt.Rows)
+                {
+                    cbx.Text = Convert.ToString(dr[0]);
+                }
+            }
+            catch (Exception tdf)
+            {
+                //MessageBox.Show("Connection failed!\n" + tdf);
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void chart_nombre_conflits_classe(Label cbx)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("chart_nombre_conflits_classe", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                //cmd.Parameters.Add(new SqlParameter("complete_name", SqlDbType.NVarChar)).Value = search_name;
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                foreach (DataRow dr in dt.Rows)
+                {
+                    cbx.Text = Convert.ToString(dr[0]);
+                }
+            }
+            catch (Exception tdf)
+            {
+                //MessageBox.Show("Connection failed!\n" + tdf);
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void chart_nombre_sensibilisations(Label cbx)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("chart_nombre_sensibilisations", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                //cmd.Parameters.Add(new SqlParameter("complete_name", SqlDbType.NVarChar)).Value = search_name;
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                foreach (DataRow dr in dt.Rows)
+                {
+                    cbx.Text = Convert.ToString(dr[0]);
+                }
+            }
+            catch (Exception tdf)
+            {
+                //MessageBox.Show("Connection failed!\n" + tdf);
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void chart_nombre_hommes_sensibilises(Label cbx)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("chart_nombre_hommes_sensibilises", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                //cmd.Parameters.Add(new SqlParameter("complete_name", SqlDbType.NVarChar)).Value = search_name;
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                foreach (DataRow dr in dt.Rows)
+                {
+                    cbx.Text = Convert.ToString(dr[0]);
+                }
+            }
+            catch (Exception tdf)
+            {
+                //MessageBox.Show("Connection failed!\n" + tdf);
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void chart_nombre_femmes_sensibilises(Label cbx)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("chart_nombre_femmes_sensibilises", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                //cmd.Parameters.Add(new SqlParameter("complete_name", SqlDbType.NVarChar)).Value = search_name;
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                foreach (DataRow dr in dt.Rows)
+                {
+                    cbx.Text = Convert.ToString(dr[0]);
+                }
+            }
+            catch (Exception tdf)
+            {
+                //MessageBox.Show("Connection failed!\n" + tdf);
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void chart_nombre_filles_sensibilises(Label cbx)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("chart_nombre_filles_sensibilises", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                //cmd.Parameters.Add(new SqlParameter("complete_name", SqlDbType.NVarChar)).Value = search_name;
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                foreach (DataRow dr in dt.Rows)
+                {
+                    cbx.Text = Convert.ToString(dr[0]);
+                }
+            }
+            catch (Exception tdf)
+            {
+                //MessageBox.Show("Connection failed!\n" + tdf);
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void chart_nombre_garcons_sensibilises(Label cbx)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("chart_nombre_garcons_sensibilises", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                //cmd.Parameters.Add(new SqlParameter("complete_name", SqlDbType.NVarChar)).Value = search_name;
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                foreach (DataRow dr in dt.Rows)
+                {
+                    cbx.Text = Convert.ToString(dr[0]);
+                }
+            }
+            catch (Exception tdf)
+            {
+                //MessageBox.Show("Connection failed!\n" + tdf);
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }        
     }
 }

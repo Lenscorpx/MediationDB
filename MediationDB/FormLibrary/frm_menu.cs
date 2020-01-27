@@ -245,6 +245,11 @@ namespace MediationDB.FormLibrary
 
         private void label1_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void btn_parties_Click(object sender, EventArgs e)
+        {
             var fr = new frm_evolution();
             fr.Show();
         }

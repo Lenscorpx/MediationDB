@@ -24,6 +24,7 @@ namespace MediationDB.FormLibrary
         {
             rps.afficher_sensibilisation(bunifuCustomDataGrid2);
             rps.recuperer_localite(listBox1);
+            txt_id_localite.ResetText();
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
@@ -66,10 +67,10 @@ namespace MediationDB.FormLibrary
                 else
                 {
                     rps.inserer_sensibilisation(txt_code_sensibilisation.Text, dt_debut_sensibilisations.Value, dt_fin_sensibilisation.Value, txt_localite.Text);
+                    refresh();
                     var fr = new frm_atelier_masse();
                     fr.txt_code_sensibilisation.Text = txt_code_sensibilisation.Text;
-                    fr.ShowDialog();
-                    refresh();
+                    fr.ShowDialog();                    
                 }
             }
         }
@@ -98,6 +99,20 @@ namespace MediationDB.FormLibrary
             dt_debut_sensibilisations.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[1].Value.ToString();
             dt_fin_sensibilisation.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[2].Value.ToString();
             txt_localite.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[3].Value.ToString();
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            if (txt_code_sensibilisation.Text == "")
+            {
+                MessageBox.Show("Selectionnez le code de sensibilisation!");
+            }
+            else
+            {
+                var fr = new frm_atelier_masse();
+                fr.txt_code_sensibilisation.Text = txt_code_sensibilisation.Text;
+                fr.ShowDialog();
+            }
         }
     }
 }
