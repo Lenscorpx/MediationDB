@@ -1340,7 +1340,21 @@ as
 		date_fin_mediation as 'Fin Mediation'
     from t_mediation
         where
-            num_conflit=@num_conflit
+            num_conflit like '%'+@num_conflit+'%'
+        order by num_mediation desc
+go
+create procedure afficher_mediation_all
+as
+    select top 50 
+		num_mediation as 'Num.', 
+		date_debut_mediation as 'Debut Mediation', 
+		num_conflit as 'Conflit',
+        id_mediateur as 'Mediateur', 
+		noms_mediateur as 'Resp. Mediation', 
+		lieu as 'Lieu', 
+		appreciation as 'Commentaire', 
+		date_fin_mediation as 'Fin Mediation'
+    from t_mediation
         order by num_mediation desc
 go
 create procedure inserer_mediation

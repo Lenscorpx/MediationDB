@@ -95,6 +95,12 @@
     <Compile Include="FormLibrary\frm_atelier.Designer.cs">
       <DependentUpon>frm_atelier.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLibrary\frm_atelier_masse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_atelier_masse.Designer.cs">
+      <DependentUpon>frm_atelier_masse.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLibrary\frm_causes_conflit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -227,6 +233,12 @@
     <Compile Include="FormLibrary\frm_search_sensibilisation.Designer.cs">
       <DependentUpon>frm_search_sensibilisation.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLibrary\frm_sensibilisation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_sensibilisation.Designer.cs">
+      <DependentUpon>frm_sensibilisation.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLibrary\frm_situation_menage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -267,6 +279,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_atelier.resx">
       <DependentUpon>frm_atelier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_atelier_masse.resx">
+      <DependentUpon>frm_atelier_masse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_causes_conflit.resx">
       <DependentUpon>frm_causes_conflit.cs</DependentUpon>
@@ -333,6 +348,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_search_sensibilisation.resx">
       <DependentUpon>frm_search_sensibilisation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_sensibilisation.resx">
+      <DependentUpon>frm_sensibilisation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_situation_menage.resx">
       <DependentUpon>frm_situation_menage.cs</DependentUpon>

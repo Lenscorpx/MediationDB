@@ -25,7 +25,7 @@ namespace MediationDB.FormLibrary
         }
         private void refresh()
         {
-            rps.afficher_mediation(bunifuCustomDataGrid2, txt_num_conflit.Text);
+            rps.afficher_mediation_all(bunifuCustomDataGrid2);
             rps.recuperer_localite(listBox1);
             rps.recuperer_mediateur(cbx_mediateur);
         }
@@ -125,6 +125,11 @@ namespace MediationDB.FormLibrary
             var fr = new frm_assign_resolutions();
             fr.txt_num_conflit.Text = txt_num_conflit.Text;
             fr.ShowDialog();
+        }
+
+        private void txt_num_conflit_OnValueChanged(object sender, EventArgs e)
+        {
+            rps.afficher_mediation(bunifuCustomDataGrid2, txt_num_conflit.Text);
         }
     }
 }
