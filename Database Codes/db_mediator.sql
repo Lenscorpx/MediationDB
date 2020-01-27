@@ -1402,7 +1402,7 @@ go
 ------------------------------Debut codes sensibilisation -----------------------------------------------------------
 create table t_sensibilisation
 (
-    num_sensibilisation int identity,
+    num_sensibilisation nvarchar(200),
     date_debut date,
     date_fin date,
     id_localite nvarchar(200),
@@ -1421,17 +1421,18 @@ as
 		order by num_sensibilisation desc
 go
 create procedure inserer_sensibilisation
+@num_sensibilisation nvarchar(200),
 @date_debut date,
 @date_fin date,
 @id_localite nvarchar(200)
 as
 	insert into t_sensibilisation
-		(date_debut,date_fin,id_localite)
+		(num_sensibilisation,date_debut,date_fin,id_localite)
 	values
-		(@date_debut,@date_fin,@id_localite);
+		(@num_sensibilisation, @date_debut,@date_fin,@id_localite);
 go
 create procedure modifier_sensibilisation
-@num_sensibilisation int,
+@num_sensibilisation nvarchar(200),
 @date_debut date,
 @date_fin date,
 @id_localite nvarchar(200)
@@ -1445,7 +1446,7 @@ as
 			num_sensibilisation like @num_sensibilisation
 go
 create procedure supprimer_sensibilisation
-@num_sensibilisation int
+@num_sensibilisation nvarchar(200)
 as
 	delete from t_sensibilisation
 		where num_sensibilisation like @num_sensibilisation
@@ -1491,7 +1492,7 @@ create table t_participation_atelier
 (
     num_participation int identity,
     date_atelier date,
-    num_sensibilisation int,
+    num_sensibilisation nvarchar(200),
     id_atelier nvarchar(200),
     nom_sensibilisateur nvarchar(200),
 	lieu_organisation nvarchar(200),
@@ -1516,10 +1517,15 @@ create table t_atelier_masse
 (
     num_atelier_masse int identity,
     date_atelier date,
-    num_sensibilisation int,
+    num_sensibilisation nvarchar(200),
     nbre_hommes int,
     nbre_femmes int,
-    nbre_enfants int,
+    nbre_filles int,
+	nbre_garcons int,
+	nbre_menages_deplaces int,
+	nbre_menages_retournes int,
+	nbre_menages_locaux int, 
+	nbre_menages_rapatrie int,
     theme_developpe nvarchar(200),    
     observation nvarchar(500),
     noms_sensibilisateur nvarchar(200),
