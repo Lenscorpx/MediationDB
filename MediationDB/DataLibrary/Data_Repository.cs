@@ -1946,7 +1946,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void inserer_sensibilisation(DateTime date_debut, DateTime date_fin, string id_localite)
+        public void inserer_sensibilisation(string num_sensibilisation, DateTime date_debut, DateTime date_fin, string id_localite)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -1957,6 +1957,7 @@ namespace MediationDB.DataLibrary
                 {
                     CommandType = CommandType.StoredProcedure
                 };
+                cmd.Parameters.Add(new SqlParameter("num_sensibilisation", SqlDbType.NVarChar)).Value = num_sensibilisation;
                 cmd.Parameters.Add(new SqlParameter("date_debut", SqlDbType.Date)).Value = date_debut;
                 cmd.Parameters.Add(new SqlParameter("date_fin", SqlDbType.Date)).Value = date_fin;
                 cmd.Parameters.Add(new SqlParameter("id_localite", SqlDbType.NVarChar)).Value = id_localite;
@@ -2011,7 +2012,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void supprimer_sensibilisation(int num_sensibilisation)
+        public void supprimer_sensibilisation(string num_sensibilisation)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -2022,7 +2023,7 @@ namespace MediationDB.DataLibrary
                 {
                     CommandType = CommandType.StoredProcedure
                 };
-                cmd.Parameters.Add(new SqlParameter("num_sensibilisation", SqlDbType.Int)).Value = num_sensibilisation;
+                cmd.Parameters.Add(new SqlParameter("num_sensibilisation", SqlDbType.NVarChar)).Value = num_sensibilisation;
                 cmd.ExecuteNonQuery();
                 //afficher_frais(dtg);
                 MessageBox.Show("Enregistrement avec succès!", "Enregistrement", MessageBoxButtons.OK, MessageBoxIcon.Information);
