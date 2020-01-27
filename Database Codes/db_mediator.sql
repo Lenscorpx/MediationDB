@@ -1440,10 +1440,20 @@ create procedure inserer_sensibilisation
 @date_fin date,
 @id_localite nvarchar(200)
 as
-	insert into t_sensibilisation
-		(num_sensibilisation,date_debut,date_fin,id_localite)
-	values
-		(@num_sensibilisation, @date_debut,@date_fin,@id_localite);
+	merge into t_sensibilisation
+	using ( select @num_sensibilisation as x_id) as x_source
+	on(x_source.x_id=t_sensibilisation.num_sensibilisation)
+	when matched then
+		update
+			set
+				date_debut=@date_debut,
+				date_fin=@date_fin,
+				id_localite=@id_localite
+	when not matched then
+		insert
+			(num_sensibilisation,date_debut,date_fin,id_localite)
+		values
+			(@num_sensibilisation, @date_debut,@date_fin,@id_localite);
 go
 create procedure modifier_sensibilisation
 @num_sensibilisation nvarchar(200),

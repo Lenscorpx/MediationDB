@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MediationDB.DataLibrary;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace MediationDB.FormLibrary
 {
     public partial class frm_atelier_masse : Form
     {
+        Data_Repository rps = new Data_Repository();
         public frm_atelier_masse()
         {
             InitializeComponent();
