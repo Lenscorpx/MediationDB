@@ -1522,13 +1522,17 @@ create table t_atelier_masse
     nbre_femmes int,
     nbre_filles int,
 	nbre_garcons int,
+	nbre_autorite_femmes int,
+	nbre_autorite_hommes int,
 	nbre_menages_deplaces int,
 	nbre_menages_retournes int,
 	nbre_menages_locaux int, 
 	nbre_menages_rapatrie int,
     theme_developpe nvarchar(200),    
-    observation nvarchar(500),
+    observation nvarchar(max),
     noms_sensibilisateur nvarchar(200),
+	commentaires nvarchar(max),
+	telephone_sensibilisateur nvarchar(50),
     constraint pk_atelier_masse primary key(num_atelier_masse),
     constraint fk_sensibilisation_masse foreign key(num_sensibilisation) references t_sensibilisation(num_sensibilisation)
 )
