@@ -298,6 +298,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportsLibrary\liste_conflits.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLibrary\liste_conflits.Designer.cs">
+      <DependentUpon>liste_conflits.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportsLibrary\rpt_liste_conflits_resolus.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -414,6 +420,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReportsLibrary\liste_conflits.resx">
+      <DependentUpon>liste_conflits.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReportsLibrary\rpt_liste_conflits_resolus.resx">
       <DependentUpon>rpt_liste_conflits_resolus.cs</DependentUpon>
     </EmbeddedResource>
