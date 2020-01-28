@@ -177,7 +177,7 @@
             // 
             this.lbl_resolu.AutoSize = true;
             this.lbl_resolu.Font = new System.Drawing.Font("Century Gothic", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_resolu.ForeColor = System.Drawing.Color.White;
+            this.lbl_resolu.ForeColor = System.Drawing.Color.Yellow;
             this.lbl_resolu.Location = new System.Drawing.Point(159, 363);
             this.lbl_resolu.Name = "lbl_resolu";
             this.lbl_resolu.Size = new System.Drawing.Size(37, 42);
@@ -188,7 +188,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.ForeColor = System.Drawing.Color.Yellow;
             this.label6.Location = new System.Drawing.Point(103, 284);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(140, 42);
