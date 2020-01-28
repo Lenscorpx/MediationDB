@@ -1933,22 +1933,303 @@ create table t_distribution
 	constraint fk_localite_distrib foreign key(id_localite) references t_localite(id_localite)
 )
 go
+create procedure afficher_rapport_conflit
+as
+	select
+		t_conflit.num_conflit as 'Code conflit', 
+		t_conflit.id_type_conflit as 'Type Conflit', 
+		t_conflit.id_nature_conflit as 'Nature du conflit', 
+		t_conflit.date_debut_conflit as 'Debut Conflit', 
+		t_conflit.id_localite as 'Localite', 
+		t_localite.id_groupement as 'Groupement', 
+		t_assignation_resolution.id_resolution as 'Etat resolution', 
+        t_assignation_resolution.date_resolution as 'Date Resolution'
+	from
+		t_localite inner join
+        t_conflit inner join
+        t_mediation on t_conflit.num_conflit = t_mediation.num_conflit inner join
+        t_assignation_resolution on t_conflit.num_conflit = t_assignation_resolution.num_conflit 
+								 on t_localite.id_localite = t_conflit.id_localite
+	order by
+		t_assignation_resolution.date_resolution desc
+go
+create procedure search_rapport_conflit_by_localite
+@id_localite nvarchar(50)
+as
+	select
+		t_conflit.num_conflit as 'Code conflit', 
+		t_conflit.id_type_conflit as 'Type Conflit', 
+		t_conflit.id_nature_conflit as 'Nature du conflit', 
+		t_conflit.date_debut_conflit as 'Debut Conflit', 
+		t_conflit.id_localite as 'Localite', 
+		t_localite.id_groupement as 'Groupement', 
+		t_assignation_resolution.id_resolution as 'Etat resolution', 
+        t_assignation_resolution.date_resolution as 'Date Resolution'
+	from
+		t_localite inner join
+        t_conflit inner join
+        t_mediation on t_conflit.num_conflit = t_mediation.num_conflit inner join
+        t_assignation_resolution on t_conflit.num_conflit = t_assignation_resolution.num_conflit 
+								 on t_localite.id_localite = t_conflit.id_localite
+	where
+		t_conflit.id_localite like '%'+@id_localite+'%'
+	order by
+		t_assignation_resolution.date_resolution desc
+go
+create procedure search_rapport_conflit_by_conflit
+@num_conflit nvarchar(50)
+as
+	select
+		t_conflit.num_conflit as 'Code conflit', 
+		t_conflit.id_type_conflit as 'Type Conflit', 
+		t_conflit.id_nature_conflit as 'Nature du conflit', 
+		t_conflit.date_debut_conflit as 'Debut Conflit', 
+		t_conflit.id_localite as 'Localite', 
+		t_localite.id_groupement as 'Groupement', 
+		t_assignation_resolution.id_resolution as 'Etat resolution', 
+        t_assignation_resolution.date_resolution as 'Date Resolution'
+	from
+		t_localite inner join
+        t_conflit inner join
+        t_mediation on t_conflit.num_conflit = t_mediation.num_conflit inner join
+        t_assignation_resolution on t_conflit.num_conflit = t_assignation_resolution.num_conflit 
+								 on t_localite.id_localite = t_conflit.id_localite
+	where
+		t_conflit.num_conflit like '%'+@num_conflit+'%'
+	order by
+		t_assignation_resolution.date_resolution desc
+go
+create procedure search_rapport_conflit_by_typeconflit
+@type_conflit nvarchar(50)
+as
+	select
+		t_conflit.num_conflit as 'Code conflit', 
+		t_conflit.id_type_conflit as 'Type Conflit', 
+		t_conflit.id_nature_conflit as 'Nature du conflit', 
+		t_conflit.date_debut_conflit as 'Debut Conflit', 
+		t_conflit.id_localite as 'Localite', 
+		t_localite.id_groupement as 'Groupement', 
+		t_assignation_resolution.id_resolution as 'Etat resolution', 
+        t_assignation_resolution.date_resolution as 'Date Resolution'
+	from
+		t_localite inner join
+        t_conflit inner join
+        t_mediation on t_conflit.num_conflit = t_mediation.num_conflit inner join
+        t_assignation_resolution on t_conflit.num_conflit = t_assignation_resolution.num_conflit 
+								 on t_localite.id_localite = t_conflit.id_localite
+	where
+		t_conflit.id_type_conflit like '%'+@type_conflit+'%'
+	order by
+		t_assignation_resolution.date_resolution desc
+go
+create procedure search_rapport_conflit_by_natureconflit
+@nature_conflit nvarchar(50)
+as
+	select
+		t_conflit.num_conflit as 'Code conflit', 
+		t_conflit.id_type_conflit as 'Type Conflit', 
+		t_conflit.id_nature_conflit as 'Nature du conflit', 
+		t_conflit.date_debut_conflit as 'Debut Conflit', 
+		t_conflit.id_localite as 'Localite', 
+		t_localite.id_groupement as 'Groupement', 
+		t_assignation_resolution.id_resolution as 'Etat resolution', 
+        t_assignation_resolution.date_resolution as 'Date Resolution'
+	from
+		t_localite inner join
+        t_conflit inner join
+        t_mediation on t_conflit.num_conflit = t_mediation.num_conflit inner join
+        t_assignation_resolution on t_conflit.num_conflit = t_assignation_resolution.num_conflit 
+								 on t_localite.id_localite = t_conflit.id_localite
+	where
+		t_conflit.id_nature_conflit like '%'+@nature_conflit+'%'
+	order by
+		t_assignation_resolution.date_resolution desc
+go
+create procedure search_rapport_conflit_by_groupement
+@id_groupement nvarchar(50)
+as
+	select
+		t_conflit.num_conflit as 'Code conflit', 
+		t_conflit.id_type_conflit as 'Type Conflit', 
+		t_conflit.id_nature_conflit as 'Nature du conflit', 
+		t_conflit.date_debut_conflit as 'Debut Conflit', 
+		t_conflit.id_localite as 'Localite', 
+		t_localite.id_groupement as 'Groupement', 
+		t_assignation_resolution.id_resolution as 'Etat resolution', 
+        t_assignation_resolution.date_resolution as 'Date Resolution'
+	from
+		t_localite inner join
+        t_conflit inner join
+        t_mediation on t_conflit.num_conflit = t_mediation.num_conflit inner join
+        t_assignation_resolution on t_conflit.num_conflit = t_assignation_resolution.num_conflit 
+								 on t_localite.id_localite = t_conflit.id_localite
+	where
+		t_localite.id_groupement like '%'+@id_groupement+'%'
+	order by
+		t_assignation_resolution.date_resolution desc
+go
+create procedure search_rapport_conflit_by_etat
+@etat nvarchar(50)
+as
+	select
+		t_conflit.num_conflit as 'Code conflit', 
+		t_conflit.id_type_conflit as 'Type Conflit', 
+		t_conflit.id_nature_conflit as 'Nature du conflit', 
+		t_conflit.date_debut_conflit as 'Debut Conflit', 
+		t_conflit.id_localite as 'Localite', 
+		t_localite.id_groupement as 'Groupement', 
+		t_assignation_resolution.id_resolution as 'Etat resolution', 
+        t_assignation_resolution.date_resolution as 'Date Resolution'
+	from
+		t_localite inner join
+        t_conflit inner join
+        t_mediation on t_conflit.num_conflit = t_mediation.num_conflit inner join
+        t_assignation_resolution on t_conflit.num_conflit = t_assignation_resolution.num_conflit 
+								 on t_localite.id_localite = t_conflit.id_localite
+	where
+		t_assignation_resolution.id_resolution  like '%'+@etat+'%'
+	order by
+		t_assignation_resolution.date_resolution desc
+go
+create procedure search_rapport_conflit_by_date_conflit
+@date_un date,
+@date_deux date
+as
+	select
+		t_conflit.num_conflit as 'Code conflit', 
+		t_conflit.id_type_conflit as 'Type Conflit', 
+		t_conflit.id_nature_conflit as 'Nature du conflit', 
+		t_conflit.date_debut_conflit as 'Debut Conflit', 
+		t_conflit.id_localite as 'Localite', 
+		t_localite.id_groupement as 'Groupement', 
+		t_assignation_resolution.id_resolution as 'Etat resolution', 
+        t_assignation_resolution.date_resolution as 'Date Resolution'
+	from
+		t_localite inner join
+        t_conflit inner join
+        t_mediation on t_conflit.num_conflit = t_mediation.num_conflit inner join
+        t_assignation_resolution on t_conflit.num_conflit = t_assignation_resolution.num_conflit 
+								 on t_localite.id_localite = t_conflit.id_localite
+	where
+		t_conflit.date_debut_conflit  between @date_un and @date_deux
+	order by
+		t_conflit.date_debut_conflit desc
+go
+create procedure search_rapport_conflit_by_date_resolution
+@date_un date,
+@date_deux date
+as
+	select
+		t_conflit.num_conflit as 'Code conflit', 
+		t_conflit.id_type_conflit as 'Type Conflit', 
+		t_conflit.id_nature_conflit as 'Nature du conflit', 
+		t_conflit.date_debut_conflit as 'Debut Conflit', 
+		t_conflit.id_localite as 'Localite', 
+		t_localite.id_groupement as 'Groupement', 
+		t_assignation_resolution.id_resolution as 'Etat resolution', 
+        t_assignation_resolution.date_resolution as 'Date Resolution'
+	from
+		t_localite inner join
+        t_conflit inner join
+        t_mediation on t_conflit.num_conflit = t_mediation.num_conflit inner join
+        t_assignation_resolution on t_conflit.num_conflit = t_assignation_resolution.num_conflit 
+								 on t_localite.id_localite = t_conflit.id_localite
+	where
+		t_assignation_resolution.date_resolution  between @date_un and @date_deux
+	order by 
+		t_assignation_resolution.date_resolution desc
+go
 create procedure chart_nombre_menage
 as
-select count(id_menage) from t_menages
+	select count(id_menage) from t_menages
 go
 create procedure chart_nombre_membre
 as
-select count(id_membre) from t_membres
+	select count(id_membre) from t_membres
 go
 
 create procedure chart_nombre_conflits
 as
-select count(num_conflit) from t_conflit
+	select count(num_conflit) from t_conflit
 go
 
-
-
+create procedure chart_nombre_conflits_resolus
+as
+select count(*)
+from t_assignation_resolution 
+	inner join
+        t_conflit on t_assignation_resolution.num_conflit = t_conflit.num_conflit
+	where
+		t_assignation_resolution.id_resolution like 'Résolu'
+go
+create procedure chart_nombre_conflits_encours
+as
+select count(*)
+from t_assignation_resolution 
+	inner join
+        t_conflit on t_assignation_resolution.num_conflit = t_conflit.num_conflit
+	where
+		t_assignation_resolution.id_resolution like 'En cours'
+go
+create procedure chart_nombre_conflits_refere
+as
+select count(*)
+from t_assignation_resolution 
+	inner join
+        t_conflit on t_assignation_resolution.num_conflit = t_conflit.num_conflit
+	where
+		t_assignation_resolution.id_resolution like 'Referé'
+go
+create procedure chart_nombre_conflits_classe
+as
+select count(*)
+from t_assignation_resolution 
+	inner join
+        t_conflit on t_assignation_resolution.num_conflit = t_conflit.num_conflit
+	where
+		t_assignation_resolution.id_resolution like 'Classé'
+go
+create procedure chart_nombre_sensibilisations
+as
+	select count(distinct num_sensibilisation)
+	from t_sensibilisation 	
+go
+create procedure chart_nombre_hommes_sensibilises
+as
+select 
+	sum(t_atelier_masse.nbre_hommes)
+from            
+	t_atelier_masse 
+			inner join
+                 t_sensibilisation on t_atelier_masse.num_sensibilisation = t_sensibilisation.num_sensibilisation
+go
+create procedure chart_nombre_femmes_sensibilises
+as
+select 
+	sum(t_atelier_masse.nbre_femmes)
+from            
+	t_atelier_masse 
+			inner join
+				t_sensibilisation on t_atelier_masse.num_sensibilisation = t_sensibilisation.num_sensibilisation
+go
+create procedure chart_nombre_filles_sensibilises
+as
+select 
+	sum(t_atelier_masse.nbre_filles)
+from            
+	t_atelier_masse 
+			inner join
+				t_sensibilisation on t_atelier_masse.num_sensibilisation = t_sensibilisation.num_sensibilisation
+go
+create procedure chart_nombre_garcons_sensibilises
+as
+select 
+	sum(t_atelier_masse.nbre_garcons)
+from            
+	t_atelier_masse 
+			inner join
+				t_sensibilisation on t_atelier_masse.num_sensibilisation = t_sensibilisation.num_sensibilisation
+go
 select * from t_menages
 
 select * from t_membres 

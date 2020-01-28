@@ -3789,6 +3789,296 @@ namespace MediationDB.DataLibrary
             {
                 cnx.Close(); cnx.Dispose();
             }
-        }        
+        }
+        public void afficher_rapport_conflit(DataGridView dtg)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("afficher_rapport_conflit", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                dtg.DataSource = dt;
+            }
+            catch (Exception exct)
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show("Want to see error code?", "Errors ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    MessageBox.Show(exct.ToString());
+                }
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void search_rapport_conflit_by_localite(DataGridView dtg, string id_localite)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("search_rapport_conflit_by_localite", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.Parameters.Add(new SqlParameter("id_localite", SqlDbType.NVarChar)).Value = id_localite;
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                dtg.DataSource = dt;
+            }
+            catch (Exception exct)
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show("Want to see error code?", "Errors ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    MessageBox.Show(exct.ToString());
+                }
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        
+        public void search_rapport_conflit_by_conflit(DataGridView dtg, string num_conflit)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("search_rapport_conflit_by_conflit", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.Parameters.Add(new SqlParameter("num_conflit", SqlDbType.NVarChar)).Value = num_conflit;
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                dtg.DataSource = dt;
+            }
+            catch (Exception exct)
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show("Want to see error code?", "Errors ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    MessageBox.Show(exct.ToString());
+                }
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void search_rapport_conflit_by_typeconflit(DataGridView dtg, string type_conflit)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("search_rapport_conflit_by_typeconflit", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.Parameters.Add(new SqlParameter("type_conflit", SqlDbType.NVarChar)).Value = type_conflit;
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                dtg.DataSource = dt;
+            }
+            catch (Exception exct)
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show("Want to see error code?", "Errors ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    MessageBox.Show(exct.ToString());
+                }
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void search_rapport_conflit_by_natureconflit(DataGridView dtg, string nature_conflit)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("search_rapport_conflit_by_natureconflit", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.Parameters.Add(new SqlParameter("nature_conflit", SqlDbType.NVarChar)).Value = nature_conflit;
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                dtg.DataSource = dt;
+            }
+            catch (Exception exct)
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show("Want to see error code?", "Errors ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    MessageBox.Show(exct.ToString());
+                }
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void search_rapport_conflit_by_groupement(DataGridView dtg, string id_groupement)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("search_rapport_conflit_by_groupement", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.Parameters.Add(new SqlParameter("id_groupement", SqlDbType.NVarChar)).Value = id_groupement;
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                dtg.DataSource = dt;
+            }
+            catch (Exception exct)
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show("Want to see error code?", "Errors ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    MessageBox.Show(exct.ToString());
+                }
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void search_rapport_conflit_by_etat(DataGridView dtg, string etat)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("search_rapport_conflit_by_etat", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.Parameters.Add(new SqlParameter("etat", SqlDbType.NVarChar)).Value = etat;
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                dtg.DataSource = dt;
+            }
+            catch (Exception exct)
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show("Want to see error code?", "Errors ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    MessageBox.Show(exct.ToString());
+                }
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void search_rapporsearch_rapport_conflit_by_date_conflit(DataGridView dtg, DateTime date_un, DateTime date_deux)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("search_rapport_conflit_by_date_conflit", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.Parameters.Add(new SqlParameter("date_un", SqlDbType.DateTime)).Value = date_un;
+                cmd.Parameters.Add(new SqlParameter("date_deux", SqlDbType.DateTime)).Value = date_deux;
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                dtg.DataSource = dt;
+            }
+            catch (Exception exct)
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show("Want to see error code?", "Errors ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    MessageBox.Show(exct.ToString());
+                }
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void search_rapport_conflit_by_date_resolution(DataGridView dtg, DateTime date_un, DateTime date_deux)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("search_rapport_conflit_by_date_resolution", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.Parameters.Add(new SqlParameter("date_un", SqlDbType.DateTime)).Value = date_un;
+                cmd.Parameters.Add(new SqlParameter("date_deux", SqlDbType.DateTime)).Value = date_deux;
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                dtg.DataSource = dt;
+            }
+            catch (Exception exct)
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show("Want to see error code?", "Errors ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    MessageBox.Show(exct.ToString());
+                }
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
     }
 }

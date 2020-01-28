@@ -117,30 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="sqlDataSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="customSqlQuery1.Sql" xml:space="preserve">
-    <value>select 
-	t_conflit.num_conflit,
-	t_conflit.date_debut_conflit,
-	t_conflit.id_type_conflit, 
-	t_conflit.id_nature_conflit, 
-	t_conflit.id_localite, 
-	t_parties.id_typ_partie, 
-	t_membres.noms, 
-      t_assignation_resolution.id_resolution, 
-	t_assignation_resolution.date_resolution
-from
-	t_menages inner join
-                t_membres on t_menages.id_menage = t_membres.id_menage inner join
-                         t_parties on t_menages.id_menage = t_parties.id_menage inner join
-                         t_conflit inner join
-                         t_mediation on dbo.t_conflit.num_conflit = t_mediation.num_conflit inner join
-                         t_assignation_resolution on t_conflit.num_conflit = t_assignation_resolution.num_conflit 
-					on t_parties.num_conflit = t_conflit.num_conflit</value>
-  </data>
-  <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
-    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlF1ZXJ5Ij48RmllbGQgTmFtZT0ibnVtX2NvbmZsaXQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iZGF0ZV9kZWJ1dF9jb25mbGl0IiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iaWRfdHlwZV9jb25mbGl0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImlkX25hdHVyZV9jb25mbGl0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImlkX2xvY2FsaXRlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImlkX3R5cF9wYXJ0aWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0ibm9tcyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJpZF9yZXNvbHV0aW9uIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImRhdGVfcmVzb2x1dGlvbiIgVHlwZT0iRGF0ZVRpbWUiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
-  </data>
 </root>

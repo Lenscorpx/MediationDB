@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="family_man_woman_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\family_man_woman_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="next" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\next.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="edit_property_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\edit_property_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,6 +217,9 @@
   <data name="speed_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\speed_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="family_man_woman_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\family_man_woman_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="courthouse_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\courthouse_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -246,9 +249,6 @@
   </data>
   <data name="mediator" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mediator.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="next" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\next.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="multiply_96px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\multiply_96px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -289,6 +289,9 @@
   <data name="menages" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menages.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="multiply_96px2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\multiply_96px2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="add_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -325,7 +328,7 @@
   <data name="Feronia-portada" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Feronia-portada.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="multiply_96px2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\multiply_96px2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="search_more_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search_more_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
