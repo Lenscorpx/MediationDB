@@ -293,6 +293,16 @@ namespace MediationDB.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ISSSS {
+            get {
+                object obj = ResourceManager.GetObject("ISSSS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap joining_queue_96px {
             get {
                 object obj = ResourceManager.GetObject("joining_queue_96px", resourceCulture);
@@ -726,6 +736,26 @@ namespace MediationDB.Properties {
         internal static System.Drawing.Bitmap typesdeconflit {
             get {
                 object obj = ResourceManager.GetObject("typesdeconflit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UN_Habitat {
+            get {
+                object obj = ResourceManager.GetObject("UN-Habitat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UNHABITAT_svg {
+            get {
+                object obj = ResourceManager.GetObject("UNHABITAT.svg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
