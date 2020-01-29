@@ -10,7 +10,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MediationDB.FormLibrary;
-using DevExpress.DocumentView;
+using DevExpress.XtraPrinting.Preview;
+using DevExpress.XtraReports;
 
 namespace MediationDB.DataLibrary
 {
@@ -4080,6 +4081,38 @@ namespace MediationDB.DataLibrary
             {
                 cnx.Close(); cnx.Dispose();
             }
-        }        
+        }
+        public DataTable liste_conflits_par_groupements()
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("liste_conflits_par_groupements", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                DataTable ds = new DataTable();
+                da.Fill(ds);                                
+                return ds;
+            }
+            catch (Exception exct)
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show("Want to see error code?", "Errors ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    MessageBox.Show(exct.ToString());
+                }
+                return null;
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
     }
 }

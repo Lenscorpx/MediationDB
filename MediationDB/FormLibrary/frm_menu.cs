@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MediationDB.ControlLibrary;
+using MediationDB.ReportsLibrary;
 
 namespace MediationDB.FormLibrary
 {
@@ -256,7 +257,7 @@ namespace MediationDB.FormLibrary
 
         private void btn_rapports_Click(object sender, EventArgs e)
         {
-            var fr = new frm_reports();
+            var fr = new frm_report_conflits_list();
             fr.ShowDialog();
         }
     }
