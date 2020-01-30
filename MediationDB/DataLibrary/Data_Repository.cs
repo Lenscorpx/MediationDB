@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using MediationDB.FormLibrary;
 using DevExpress.XtraPrinting.Preview;
 using DevExpress.XtraReports;
+using MediationDB.ReportsLibrary;
 
 namespace MediationDB.DataLibrary
 {
@@ -4082,22 +4083,27 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public DataTable liste_conflits_par_groupements()
+        public void liste_conflits_par_groupements(DocumentViewer dcv)
         {
             cnx = new SqlConnection(prms.ToString());
             try
             {
                 if (cnx.State == ConnectionState.Closed)
                     cnx.Open();
-                var cmd = new SqlCommand("liste_conflits_par_groupements", cnx)
+                var cmd = new SqlCommand("afficher_rapport_conflit", cnx)
                 {
                     CommandType = CommandType.StoredProcedure
                 };
                 cmd.ExecuteNonQuery();
                 var da = new SqlDataAdapter(cmd);
-                DataTable ds = new DataTable();
-                da.Fill(ds);                                
-                return ds;
+                var rpt = new rpt_conflits();
+                DataSet dt = new DataSet();
+                da.Fill(dt, "afficher_rapport_conflit");
+                rpt.DataSource = dt;
+                //rpt.SetDataSource(dt.Tables["rechercher_pay_bill"]);                    
+                dcv.DocumentSource = rpt;
+                rpt.CreateDocument();
+                dcv.Refresh();
             }
             catch (Exception exct)
             {
@@ -4107,7 +4113,6 @@ namespace MediationDB.DataLibrary
                 {
                     MessageBox.Show(exct.ToString());
                 }
-                return null;
             }
             finally
             {

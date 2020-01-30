@@ -123,4 +123,16 @@
   <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9Imxpc3RlX2NvbmZsaXRzIj48RmllbGQgTmFtZT0ibnVtX2NvbmZsaXQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iaWRfdHlwZV9jb25mbGl0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImlkX25hdHVyZV9jb25mbGl0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImRhdGVfZGVidXRfY29uZmxpdCIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9ImlkX2xvY2FsaXRlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImlkX2dyb3VwZW1lbnQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iaWRfcmVzb2x1dGlvbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJkYXRlX3Jlc29sdXRpb24iIFR5cGU9IkRhdGVUaW1lIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
   </data>
+  <metadata name="sqlDataSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
+  <data name="sqlDataSource2.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTIiPjxWaWV3IE5hbWU9ImFmZmljaGVyX3JhcHBvcnRfY29uZmxpdCI+PEZpZWxkIE5hbWU9IkNvZGUgY29uZmxpdCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUeXBlIENvbmZsaXQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTmF0dXJlIGR1IGNvbmZsaXQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGVidXQgQ29uZmxpdCIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkxvY2FsaXRlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ikdyb3VwZW1lbnQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRXRhdCByZXNvbHV0aW9uIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRhdGUgUmVzb2x1dGlvbiIgVHlwZT0iRGF0ZVRpbWUiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
+  <metadata name="dataSet11.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 95</value>
+  </metadata>
+  <metadata name="afficher_rapport_conflitTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 134</value>
+  </metadata>
 </root>

@@ -22,5 +22,16 @@ namespace MediationDB.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SCI-CD-L19-430\\SERVEUR;Initial Catalog=db_foncier;Persist Security In" +
+            "fo=True;User ID=SA;Password=123456789")]
+        public string db_foncierConnectionString {
+            get {
+                return ((string)(this["db_foncierConnectionString"]));
+            }
+        }
     }
 }
