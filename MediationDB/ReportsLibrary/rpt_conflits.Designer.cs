@@ -96,13 +96,13 @@
             this.tableCell10 = new DevExpress.XtraReports.UI.XRTableCell();
             this.GroupFooter1 = new DevExpress.XtraReports.UI.GroupFooterBand();
             this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
-            this.dataSet11 = new MediationDB.ReportsLibrary.DataSet1();
-            this.afficher_rapport_conflitTableAdapter = new MediationDB.ReportsLibrary.DataSet1TableAdapters.afficher_rapport_conflitTableAdapter();
+            //this.dataSet11 = new MediationDB.ReportsLibrary.DataSet1();
+            //this.afficher_rapport_conflitTableAdapter = new MediationDB.ReportsLibrary.DataSet1TableAdapters.afficher_rapport_conflitTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.table1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // sqlDataSource1
@@ -705,13 +705,13 @@
             // 
             // dataSet11
             // 
-            this.dataSet11.DataSetName = "DataSet1";
-            this.dataSet11.EnforceConstraints = false;
-            this.dataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            //this.dataSet11.DataSetName = "DataSet1";
+            //this.dataSet11.EnforceConstraints = false;
+            //this.dataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // afficher_rapport_conflitTableAdapter
             // 
-            this.afficher_rapport_conflitTableAdapter.ClearBeforeFill = true;
+            //this.afficher_rapport_conflitTableAdapter.ClearBeforeFill = true;
             // 
             // rpt_conflits
             // 
@@ -724,13 +724,13 @@
             this.GroupHeader3,
             this.Detail,
             this.GroupFooter1});
-            this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
-            this.sqlDataSource1,
-            this.sqlDataSource2,
-            this.dataSet11});
-            this.DataAdapter = this.afficher_rapport_conflitTableAdapter;
-            this.DataMember = "afficher_rapport_conflit";
-            this.DataSource = this.dataSet11;
+            //this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
+            //this.sqlDataSource1,
+            //this.sqlDataSource2,
+            //this.dataSet11});
+            //this.DataAdapter = this.afficher_rapport_conflitTableAdapter;
+            //this.DataMember = "afficher_rapport_conflit";
+            //this.DataSource = this.dataSet11;
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.Landscape = true;
             this.Margins = new System.Drawing.Printing.Margins(100, 100, 228, 100);
@@ -750,7 +750,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.table2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.table4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.table3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.dataSet11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
@@ -804,7 +804,6 @@
         private DevExpress.XtraReports.UI.XRPictureBox xrPictureBox2;
         private DevExpress.XtraReports.UI.XRLabel xrLabel2;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource2;
-        private DataSet1 dataSet11;
-        private DataSet1TableAdapters.afficher_rapport_conflitTableAdapter afficher_rapport_conflitTableAdapter;
+       
     }
 }
