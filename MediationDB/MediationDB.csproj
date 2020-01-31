@@ -274,6 +274,12 @@
     <Compile Include="FormLibrary\frm_situation_menage.Designer.cs">
       <DependentUpon>frm_situation_menage.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLibrary\frm_splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_splash.Designer.cs">
+      <DependentUpon>frm_splash.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLibrary\frm_stats_conflits.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -306,11 +312,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReportsLibrary\DataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="ReportsLibrary\frm_report_conflits_list.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -410,6 +411,9 @@
     <EmbeddedResource Include="FormLibrary\frm_situation_menage.resx">
       <DependentUpon>frm_situation_menage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_splash.resx">
+      <DependentUpon>frm_splash.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_stats_conflits.resx">
       <DependentUpon>frm_stats_conflits.cs</DependentUpon>
     </EmbeddedResource>
@@ -457,17 +461,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ReportsLibrary\DataSet1.xsc">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="ReportsLibrary\DataSet1.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="ReportsLibrary\DataSet1.xss">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </None>
     <None Include="Resources\speed_80px.png" />
   </ItemGroup>
   <ItemGroup>

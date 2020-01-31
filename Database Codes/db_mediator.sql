@@ -2230,6 +2230,23 @@ from
 			inner join
 				t_sensibilisation on t_atelier_masse.num_sensibilisation = t_sensibilisation.num_sensibilisation
 go
+create procedure liste_conflits_par_groupements
+as
+select
+	t_conflit.num_conflit, 
+	t_conflit.id_type_conflit, 
+	t_conflit.id_nature_conflit, 
+	t_conflit.date_debut_conflit, 
+	t_conflit.id_localite, 
+	t_localite.id_groupement, 
+	t_assignation_resolution.id_resolution, 
+    t_assignation_resolution.date_resolution
+from           
+	t_localite inner join
+    t_conflit inner join
+    t_mediation on t_conflit.num_conflit = t_mediation.num_conflit inner join
+    t_assignation_resolution on t_conflit.num_conflit = t_assignation_resolution.num_conflit on t_localite.id_localite = t_conflit.id_localite
+go
 select * from t_menages
 
 select * from t_membres 
