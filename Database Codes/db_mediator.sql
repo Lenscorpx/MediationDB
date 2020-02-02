@@ -1922,15 +1922,25 @@ create table t_distribution
 	id_projet nvarchar(200),
 	id_agr nvarchar(200),
 	qte decimal,
+	valeur decimal,
 	id_executant nvarchar(200),
-	id_beneficiaire nvarchar(200),
 	observation nvarchar(200),
 	constraint pk_distribution primary key(num_distribution),
 	constraint fk_projet_distribution foreign key(id_projet) references t_projets(id_projet),
 	constraint fk_agr_distribution foreign key(id_agr) references t_agr(id_agr),
 	constraint fk_executant_distr foreign key(id_executant) references t_executants(id_executant),
-	constraint fk_beneficiaire_distr foreign key(id_beneficiaire) references t_beneficiaires(id_beneficiaire),
 	constraint fk_localite_distrib foreign key(id_localite) references t_localite(id_localite)
+)
+go
+create table t_assignation_beneficiaires
+(
+	num_assignation_benef int identity,
+	id_beneficiaire nvarchar(200),
+	num_distribution int,
+	date_assignation date,
+	constraint pk_assignation_benef primary key(num_assignation_benef),
+	constraint fk_benef_assgn foreign key(id_beneficiaire) references t_beneficiaires(id_beneficiaire),
+	constraint fk_distrib_ass foreign key(num_distribution) references t_distribution(num_distribution)
 )
 go
 create procedure afficher_rapport_conflit
