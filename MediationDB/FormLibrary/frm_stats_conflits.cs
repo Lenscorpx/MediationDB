@@ -16,5 +16,10 @@ namespace MediationDB.FormLibrary
         {
             InitializeComponent();
         }
+
+        private void lbl_nbre_conflits_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
