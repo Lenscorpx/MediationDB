@@ -68,6 +68,12 @@
     <Reference Include="DevExpress.XtraPrinting.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraReports.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraReports.v19.1.Extensions, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="LiveCharts">
+      <HintPath>..\..\..\..\..\Desktop\Mes Frameworks\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms">
+      <HintPath>..\..\..\..\..\Desktop\Mes Frameworks\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
     <Reference Include="MaterialSkin">
       <HintPath>H:\Data Center\Projects Datas\CodeLabs\Mes Frameworks\MaterialSkin.dll</HintPath>
     </Reference>
@@ -78,6 +84,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
