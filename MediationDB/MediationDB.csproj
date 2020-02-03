@@ -369,6 +369,9 @@
     <EmbeddedResource Include="FormLibrary\frm_details_parties_conflits.resx">
       <DependentUpon>frm_details_parties_conflits.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_distribution.resx">
+      <DependentUpon>frm_distribution.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_etat_participant.resx">
       <DependentUpon>frm_etat_participant.cs</DependentUpon>
     </EmbeddedResource>
