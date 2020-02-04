@@ -228,6 +228,34 @@ create table t_menages
     constraint fk_situation foreign key(id_situation) references t_situation_menage(id_situation)
 )
 go
+create procedure charts_somme_menages_homme
+as
+	select sum(total_homme) as total_homme 
+		from t_menages
+	where
+		id_menage in (select id_menage from t_parties)
+go
+create procedure charts_somme_menages_femme
+as
+	select sum(total_femme) as total_femme 
+		from t_menages
+	where
+		id_menage in (select id_menage from t_parties)
+go
+create procedure charts_somme_menages_filles
+as
+	select sum(total_filles) as total_filles 
+		from t_menages
+	where
+		id_menage in (select id_menage from t_parties)
+go
+create procedure charts_somme_menages_garcons
+as
+	select sum(total_garcons) as total_garcons 
+		from t_menages
+	where
+		id_menage in (select id_menage from t_parties)
+go
 create procedure afficher_menages
 as
     select top 50 
