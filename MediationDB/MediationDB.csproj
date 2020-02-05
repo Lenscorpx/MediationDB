@@ -115,6 +115,12 @@
     </Compile>
     <Compile Include="DataLibrary\Data_Repository.cs" />
     <Compile Include="DataLibrary\Params.cs" />
+    <Compile Include="FormLibrary\frm_assignation_bailleurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_assignation_bailleurs.Designer.cs">
+      <DependentUpon>frm_assignation_bailleurs.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLibrary\frm_assign_resolutions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -347,6 +353,9 @@
     </Compile>
     <EmbeddedResource Include="ControlLibrary\uc_menage.resx">
       <DependentUpon>uc_menage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_assignation_bailleurs.resx">
+      <DependentUpon>frm_assignation_bailleurs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_assign_resolutions.resx">
       <DependentUpon>frm_assign_resolutions.cs</DependentUpon>
