@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MediationDB.FormLibrary;
+using MediationDB.ReportsLibrary;
 
 namespace MediationDB
 {
@@ -17,7 +18,7 @@ namespace MediationDB
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_distribution());
+            Application.Run(new frm_rapporrt_conflit());
         }
     }
 }

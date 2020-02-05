@@ -71,6 +71,7 @@
             this.bunifuImageButton1.TabIndex = 7;
             this.bunifuImageButton1.TabStop = false;
             this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // frm_rapporrt_conflit
             // 
