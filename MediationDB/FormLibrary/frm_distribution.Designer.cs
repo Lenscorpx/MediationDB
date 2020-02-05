@@ -28,27 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.txt_id_localite = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_search_localite = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuCustomDataGrid2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.metroDateTime1 = new MetroFramework.Controls.MetroDateTime();
+            this.dt_date_distribution = new MetroFramework.Controls.MetroDateTime();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.cbx_nature_conflit = new MetroFramework.Controls.MetroComboBox();
-            this.cbx_type_conflit = new MetroFramework.Controls.MetroComboBox();
+            this.cbx_projet = new MetroFramework.Controls.MetroComboBox();
+            this.cbx_executant = new MetroFramework.Controls.MetroComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txt_nature_conflit = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.cbx_agr = new MetroFramework.Controls.MetroComboBox();
+            this.txt_num_distribution = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_id_localite = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_qte_recue = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_observation = new System.Windows.Forms.RichTextBox();
+            this.txt_valeur = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).BeginInit();
@@ -88,6 +90,7 @@
             this.bunifuImageButton1.TabIndex = 7;
             this.bunifuImageButton1.TabStop = false;
             this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // listBox1
             // 
@@ -101,97 +104,97 @@
             this.listBox1.ItemHeight = 17;
             this.listBox1.Location = new System.Drawing.Point(4, 102);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(235, 255);
+            this.listBox1.Size = new System.Drawing.Size(235, 306);
             this.listBox1.TabIndex = 35;
             // 
-            // txt_id_localite
+            // txt_search_localite
             // 
-            this.txt_id_localite.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_id_localite.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txt_id_localite.ForeColor = System.Drawing.Color.White;
-            this.txt_id_localite.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txt_id_localite.HintText = "Recherchez une localité";
-            this.txt_id_localite.isPassword = false;
-            this.txt_id_localite.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_id_localite.LineIdleColor = System.Drawing.Color.White;
-            this.txt_id_localite.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_id_localite.LineThickness = 4;
-            this.txt_id_localite.Location = new System.Drawing.Point(4, 56);
-            this.txt_id_localite.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_id_localite.Name = "txt_id_localite";
-            this.txt_id_localite.Size = new System.Drawing.Size(243, 44);
-            this.txt_id_localite.TabIndex = 36;
-            this.txt_id_localite.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_search_localite.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_search_localite.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_search_localite.ForeColor = System.Drawing.Color.White;
+            this.txt_search_localite.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_search_localite.HintText = "Recherchez une localité";
+            this.txt_search_localite.isPassword = false;
+            this.txt_search_localite.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.txt_search_localite.LineIdleColor = System.Drawing.Color.White;
+            this.txt_search_localite.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.txt_search_localite.LineThickness = 4;
+            this.txt_search_localite.Location = new System.Drawing.Point(4, 56);
+            this.txt_search_localite.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_search_localite.Name = "txt_search_localite";
+            this.txt_search_localite.Size = new System.Drawing.Size(243, 44);
+            this.txt_search_localite.TabIndex = 36;
+            this.txt_search_localite.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuCustomDataGrid2
             // 
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.bunifuCustomDataGrid2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.bunifuCustomDataGrid2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.bunifuCustomDataGrid2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuCustomDataGrid2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.bunifuCustomDataGrid2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            dataGridViewCellStyle22.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.bunifuCustomDataGrid2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid2.DefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid2.DefaultCellStyle = dataGridViewCellStyle8;
             this.bunifuCustomDataGrid2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.bunifuCustomDataGrid2.DoubleBuffered = true;
             this.bunifuCustomDataGrid2.EnableHeadersVisualStyles = false;
             this.bunifuCustomDataGrid2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.bunifuCustomDataGrid2.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.bunifuCustomDataGrid2.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuCustomDataGrid2.Location = new System.Drawing.Point(0, 395);
+            this.bunifuCustomDataGrid2.Location = new System.Drawing.Point(0, 363);
             this.bunifuCustomDataGrid2.Name = "bunifuCustomDataGrid2";
             this.bunifuCustomDataGrid2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid2.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid2.RowsDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid2.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid2.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.bunifuCustomDataGrid2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuCustomDataGrid2.Size = new System.Drawing.Size(1263, 193);
+            this.bunifuCustomDataGrid2.Size = new System.Drawing.Size(1263, 286);
             this.bunifuCustomDataGrid2.TabIndex = 53;
             // 
-            // metroDateTime1
+            // dt_date_distribution
             // 
-            this.metroDateTime1.Location = new System.Drawing.Point(937, 71);
-            this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 29);
-            this.metroDateTime1.Name = "metroDateTime1";
-            this.metroDateTime1.Size = new System.Drawing.Size(289, 29);
-            this.metroDateTime1.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroDateTime1.TabIndex = 73;
-            this.metroDateTime1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.dt_date_distribution.Location = new System.Drawing.Point(937, 71);
+            this.dt_date_distribution.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dt_date_distribution.Name = "dt_date_distribution";
+            this.dt_date_distribution.Size = new System.Drawing.Size(289, 29);
+            this.dt_date_distribution.Style = MetroFramework.MetroColorStyle.Blue;
+            this.dt_date_distribution.TabIndex = 73;
+            this.dt_date_distribution.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // label4
             // 
@@ -201,9 +204,9 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(252, 104);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(117, 17);
+            this.label4.Size = new System.Drawing.Size(45, 17);
             this.label4.TabIndex = 72;
-            this.label4.Text = "Nature de conflit";
+            this.label4.Text = "Projet";
             // 
             // label3
             // 
@@ -213,41 +216,41 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(579, 104);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 17);
+            this.label3.Size = new System.Drawing.Size(153, 17);
             this.label3.TabIndex = 71;
-            this.label3.Text = "Type de conflit";
+            this.label3.Text = "Partenaire d\'éxecution";
             // 
-            // cbx_nature_conflit
+            // cbx_projet
             // 
-            this.cbx_nature_conflit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.cbx_nature_conflit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbx_nature_conflit.ForeColor = System.Drawing.Color.White;
-            this.cbx_nature_conflit.FormattingEnabled = true;
-            this.cbx_nature_conflit.ItemHeight = 23;
-            this.cbx_nature_conflit.Location = new System.Drawing.Point(285, 133);
-            this.cbx_nature_conflit.Name = "cbx_nature_conflit";
-            this.cbx_nature_conflit.PromptText = "Choisissez la nature du conflit";
-            this.cbx_nature_conflit.Size = new System.Drawing.Size(289, 29);
-            this.cbx_nature_conflit.Style = MetroFramework.MetroColorStyle.Blue;
-            this.cbx_nature_conflit.TabIndex = 70;
-            this.cbx_nature_conflit.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.cbx_nature_conflit.UseSelectable = true;
+            this.cbx_projet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.cbx_projet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbx_projet.ForeColor = System.Drawing.Color.White;
+            this.cbx_projet.FormattingEnabled = true;
+            this.cbx_projet.ItemHeight = 23;
+            this.cbx_projet.Location = new System.Drawing.Point(285, 133);
+            this.cbx_projet.Name = "cbx_projet";
+            this.cbx_projet.PromptText = "Choisissez le projet lié à cette distribution";
+            this.cbx_projet.Size = new System.Drawing.Size(289, 29);
+            this.cbx_projet.Style = MetroFramework.MetroColorStyle.Blue;
+            this.cbx_projet.TabIndex = 70;
+            this.cbx_projet.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.cbx_projet.UseSelectable = true;
             // 
-            // cbx_type_conflit
+            // cbx_executant
             // 
-            this.cbx_type_conflit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.cbx_type_conflit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbx_type_conflit.ForeColor = System.Drawing.Color.White;
-            this.cbx_type_conflit.FormattingEnabled = true;
-            this.cbx_type_conflit.ItemHeight = 23;
-            this.cbx_type_conflit.Location = new System.Drawing.Point(612, 133);
-            this.cbx_type_conflit.Name = "cbx_type_conflit";
-            this.cbx_type_conflit.PromptText = "Choisissez le type de conflit";
-            this.cbx_type_conflit.Size = new System.Drawing.Size(289, 29);
-            this.cbx_type_conflit.Style = MetroFramework.MetroColorStyle.Blue;
-            this.cbx_type_conflit.TabIndex = 69;
-            this.cbx_type_conflit.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.cbx_type_conflit.UseSelectable = true;
+            this.cbx_executant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.cbx_executant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbx_executant.ForeColor = System.Drawing.Color.White;
+            this.cbx_executant.FormattingEnabled = true;
+            this.cbx_executant.ItemHeight = 23;
+            this.cbx_executant.Location = new System.Drawing.Point(612, 133);
+            this.cbx_executant.Name = "cbx_executant";
+            this.cbx_executant.PromptText = "Choisissez le partenaire d\'éxecuion";
+            this.cbx_executant.Size = new System.Drawing.Size(289, 29);
+            this.cbx_executant.Style = MetroFramework.MetroColorStyle.Blue;
+            this.cbx_executant.TabIndex = 69;
+            this.cbx_executant.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.cbx_executant.UseSelectable = true;
             // 
             // label5
             // 
@@ -257,103 +260,132 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(920, 104);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(101, 17);
+            this.label5.Size = new System.Drawing.Size(82, 17);
             this.label5.TabIndex = 75;
-            this.label5.Text = "Type de conflit";
+            this.label5.Text = "AGR donné";
             // 
-            // metroComboBox1
+            // cbx_agr
             // 
-            this.metroComboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.metroComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.metroComboBox1.ForeColor = System.Drawing.Color.White;
-            this.metroComboBox1.FormattingEnabled = true;
-            this.metroComboBox1.ItemHeight = 23;
-            this.metroComboBox1.Location = new System.Drawing.Point(937, 133);
-            this.metroComboBox1.Name = "metroComboBox1";
-            this.metroComboBox1.PromptText = "Choisissez le type de conflit";
-            this.metroComboBox1.Size = new System.Drawing.Size(289, 29);
-            this.metroComboBox1.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroComboBox1.TabIndex = 74;
-            this.metroComboBox1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroComboBox1.UseSelectable = true;
+            this.cbx_agr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.cbx_agr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbx_agr.ForeColor = System.Drawing.Color.White;
+            this.cbx_agr.FormattingEnabled = true;
+            this.cbx_agr.ItemHeight = 23;
+            this.cbx_agr.Location = new System.Drawing.Point(937, 133);
+            this.cbx_agr.Name = "cbx_agr";
+            this.cbx_agr.PromptText = "Selectionnez l\'AGR donné";
+            this.cbx_agr.Size = new System.Drawing.Size(289, 29);
+            this.cbx_agr.Style = MetroFramework.MetroColorStyle.Blue;
+            this.cbx_agr.TabIndex = 74;
+            this.cbx_agr.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.cbx_agr.UseSelectable = true;
             // 
-            // bunifuMaterialTextbox1
+            // txt_num_distribution
             // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuMaterialTextbox1.HintText = "Code conflit";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuMaterialTextbox1.LineThickness = 4;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(582, 56);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(319, 44);
-            this.bunifuMaterialTextbox1.TabIndex = 77;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_num_distribution.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_num_distribution.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_num_distribution.ForeColor = System.Drawing.Color.White;
+            this.txt_num_distribution.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_num_distribution.HintText = "Num. Distribution";
+            this.txt_num_distribution.isPassword = false;
+            this.txt_num_distribution.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.txt_num_distribution.LineIdleColor = System.Drawing.Color.White;
+            this.txt_num_distribution.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.txt_num_distribution.LineThickness = 4;
+            this.txt_num_distribution.Location = new System.Drawing.Point(582, 56);
+            this.txt_num_distribution.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_num_distribution.Name = "txt_num_distribution";
+            this.txt_num_distribution.Size = new System.Drawing.Size(319, 44);
+            this.txt_num_distribution.TabIndex = 77;
+            this.txt_num_distribution.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // bunifuMaterialTextbox2
+            // txt_id_localite
             // 
-            this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox2.Enabled = false;
-            this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuMaterialTextbox2.HintText = "Localite ou se trouve le conflit";
-            this.bunifuMaterialTextbox2.isPassword = false;
-            this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuMaterialTextbox2.LineThickness = 4;
-            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(255, 56);
-            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
-            this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(319, 44);
-            this.bunifuMaterialTextbox2.TabIndex = 76;
-            this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_id_localite.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_id_localite.Enabled = false;
+            this.txt_id_localite.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_id_localite.ForeColor = System.Drawing.Color.White;
+            this.txt_id_localite.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_id_localite.HintText = "Selectionnez la localité dans la liste";
+            this.txt_id_localite.isPassword = false;
+            this.txt_id_localite.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.txt_id_localite.LineIdleColor = System.Drawing.Color.White;
+            this.txt_id_localite.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.txt_id_localite.LineThickness = 4;
+            this.txt_id_localite.Location = new System.Drawing.Point(255, 56);
+            this.txt_id_localite.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_id_localite.Name = "txt_id_localite";
+            this.txt_id_localite.Size = new System.Drawing.Size(319, 44);
+            this.txt_id_localite.TabIndex = 76;
+            this.txt_id_localite.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // txt_nature_conflit
+            // txt_qte_recue
             // 
-            this.txt_nature_conflit.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_nature_conflit.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txt_nature_conflit.ForeColor = System.Drawing.Color.White;
-            this.txt_nature_conflit.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txt_nature_conflit.HintText = "Recherche par nature conflit";
-            this.txt_nature_conflit.isPassword = false;
-            this.txt_nature_conflit.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_nature_conflit.LineIdleColor = System.Drawing.Color.White;
-            this.txt_nature_conflit.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_nature_conflit.LineThickness = 4;
-            this.txt_nature_conflit.Location = new System.Drawing.Point(771, 252);
-            this.txt_nature_conflit.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_nature_conflit.Name = "txt_nature_conflit";
-            this.txt_nature_conflit.Size = new System.Drawing.Size(319, 44);
-            this.txt_nature_conflit.TabIndex = 78;
-            this.txt_nature_conflit.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_qte_recue.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_qte_recue.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_qte_recue.ForeColor = System.Drawing.Color.White;
+            this.txt_qte_recue.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_qte_recue.HintText = "Specifiez la quantité donnée";
+            this.txt_qte_recue.isPassword = false;
+            this.txt_qte_recue.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.txt_qte_recue.LineIdleColor = System.Drawing.Color.White;
+            this.txt_qte_recue.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.txt_qte_recue.LineThickness = 4;
+            this.txt_qte_recue.Location = new System.Drawing.Point(285, 169);
+            this.txt_qte_recue.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_qte_recue.Name = "txt_qte_recue";
+            this.txt_qte_recue.Size = new System.Drawing.Size(289, 44);
+            this.txt_qte_recue.TabIndex = 78;
+            this.txt_qte_recue.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txt_observation
+            // 
+            this.txt_observation.Location = new System.Drawing.Point(907, 169);
+            this.txt_observation.Name = "txt_observation";
+            this.txt_observation.Size = new System.Drawing.Size(344, 188);
+            this.txt_observation.TabIndex = 79;
+            this.txt_observation.Text = "";
+            // 
+            // txt_valeur
+            // 
+            this.txt_valeur.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_valeur.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_valeur.ForeColor = System.Drawing.Color.White;
+            this.txt_valeur.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_valeur.HintText = "Spécifiez si possible la valeur  en monnaie";
+            this.txt_valeur.isPassword = false;
+            this.txt_valeur.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.txt_valeur.LineIdleColor = System.Drawing.Color.White;
+            this.txt_valeur.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.txt_valeur.LineThickness = 4;
+            this.txt_valeur.Location = new System.Drawing.Point(285, 221);
+            this.txt_valeur.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_valeur.Name = "txt_valeur";
+            this.txt_valeur.Size = new System.Drawing.Size(289, 44);
+            this.txt_valeur.TabIndex = 80;
+            this.txt_valeur.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // frm_distribution
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.ClientSize = new System.Drawing.Size(1263, 588);
-            this.Controls.Add(this.txt_nature_conflit);
-            this.Controls.Add(this.bunifuMaterialTextbox1);
-            this.Controls.Add(this.bunifuMaterialTextbox2);
+            this.ClientSize = new System.Drawing.Size(1263, 649);
+            this.Controls.Add(this.txt_valeur);
+            this.Controls.Add(this.txt_observation);
+            this.Controls.Add(this.txt_qte_recue);
+            this.Controls.Add(this.txt_num_distribution);
+            this.Controls.Add(this.txt_id_localite);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.metroComboBox1);
-            this.Controls.Add(this.metroDateTime1);
+            this.Controls.Add(this.cbx_agr);
+            this.Controls.Add(this.dt_date_distribution);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.cbx_nature_conflit);
-            this.Controls.Add(this.cbx_type_conflit);
+            this.Controls.Add(this.cbx_projet);
+            this.Controls.Add(this.cbx_executant);
             this.Controls.Add(this.bunifuCustomDataGrid2);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.txt_id_localite);
+            this.Controls.Add(this.txt_search_localite);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -376,17 +408,19 @@
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private System.Windows.Forms.ListBox listBox1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_id_localite;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_search_localite;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid2;
-        private MetroFramework.Controls.MetroDateTime metroDateTime1;
+        private MetroFramework.Controls.MetroDateTime dt_date_distribution;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private MetroFramework.Controls.MetroComboBox cbx_nature_conflit;
-        private MetroFramework.Controls.MetroComboBox cbx_type_conflit;
+        private MetroFramework.Controls.MetroComboBox cbx_projet;
+        private MetroFramework.Controls.MetroComboBox cbx_executant;
         private System.Windows.Forms.Label label5;
-        private MetroFramework.Controls.MetroComboBox metroComboBox1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_nature_conflit;
+        private MetroFramework.Controls.MetroComboBox cbx_agr;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_num_distribution;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_id_localite;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_qte_recue;
+        private System.Windows.Forms.RichTextBox txt_observation;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_valeur;
     }
 }
