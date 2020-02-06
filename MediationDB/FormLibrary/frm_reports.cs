@@ -79,5 +79,10 @@ namespace MediationDB.FormLibrary
         {
             rps.search_rapport_conflit_by_date_resolution(bunifuCustomDataGrid2, dt_resol_1.Value, dt_resol_2.Value);
         }
+
+        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

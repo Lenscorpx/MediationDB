@@ -590,6 +590,9 @@
     <Content Include="LOGO-SCC-2019-PNG.ico" />
     <Content Include="mediationlogo.ico" />
     <Content Include="mediator.ico" />
+    <None Include="Resources\Picture1.png" />
+    <None Include="Resources\printer_104px.png" />
+    <None Include="Resources\print_96px.png" />
     <None Include="Resources\UNHABITAT.svg.png" />
     <None Include="Resources\ISSSS.png" />
     <None Include="Resources\UN-Habitat.png" />
