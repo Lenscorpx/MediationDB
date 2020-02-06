@@ -143,6 +143,7 @@
             this.label28 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrPictureBox2 = new DevExpress.XtraReports.UI.XRPictureBox();
             this.xrPictureBox1 = new DevExpress.XtraReports.UI.XRPictureBox();
+            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.table1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table3)).BeginInit();
@@ -342,18 +343,19 @@
             this.GroupHeader1.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
             new DevExpress.XtraReports.UI.GroupField("num_conflit", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
             this.GroupHeader1.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader1.HeightF = 68.58F;
+            this.GroupHeader1.HeightF = 165.8999F;
             this.GroupHeader1.Name = "GroupHeader1";
             // 
             // GroupHeader2
             // 
             this.GroupHeader2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLabel1,
             this.table2});
             this.GroupHeader2.Dpi = 254F;
             this.GroupHeader2.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
             new DevExpress.XtraReports.UI.GroupField("id_localite", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
             this.GroupHeader2.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader2.HeightF = 105.3976F;
+            this.GroupHeader2.HeightF = 157.3025F;
             this.GroupHeader2.Level = 1;
             this.GroupHeader2.Name = "GroupHeader2";
             // 
@@ -431,25 +433,25 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.label1.Dpi = 254F;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.label1.LocationFloat = new DevExpress.Utils.PointFloat(661.4012F, 289.3252F);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.LocationFloat = new DevExpress.Utils.PointFloat(661.4012F, 257.5752F);
             this.label1.Name = "label1";
-            this.label1.SizeF = new System.Drawing.SizeF(1674.444F, 79.375F);
+            this.label1.SizeF = new System.Drawing.SizeF(1674.444F, 111.125F);
             this.label1.StyleName = "Title";
             this.label1.StylePriority.UseBackColor = false;
             this.label1.StylePriority.UseFont = false;
             this.label1.StylePriority.UseForeColor = false;
             this.label1.StylePriority.UseTextAlignment = false;
             this.label1.Text = "Liste des conflits et menages impliqués par localité";
-            this.label1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            this.label1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // table1
             // 
             this.table1.Dpi = 254F;
-            this.table1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 5.08F);
+            this.table1.LocationFloat = new DevExpress.Utils.PointFloat(15.24001F, 36.83004F);
             this.table1.Name = "table1";
             this.table1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.tableRow1});
@@ -484,11 +486,13 @@
             // table2
             // 
             this.table2.Dpi = 254F;
-            this.table2.LocationFloat = new DevExpress.Utils.PointFloat(24.99999F, 0F);
+            this.table2.LocationFloat = new DevExpress.Utils.PointFloat(383.4022F, 25.00001F);
             this.table2.Name = "table2";
             this.table2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.tableRow2});
-            this.table2.SizeF = new System.Drawing.SizeF(698.8035F, 105.3976F);
+            this.table2.SizeF = new System.Drawing.SizeF(453.2357F, 105.3975F);
+            this.table2.StylePriority.UseTextAlignment = false;
+            this.table2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // tableRow2
             // 
@@ -501,6 +505,8 @@
             // tableCell4
             // 
             this.tableCell4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.tableCell4.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.tableCell4.BorderWidth = 1F;
             this.tableCell4.Dpi = 254F;
             this.tableCell4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[id_localite]")});
@@ -508,6 +514,8 @@
             this.tableCell4.Name = "tableCell4";
             this.tableCell4.StyleName = "GroupData1";
             this.tableCell4.StylePriority.UseBackColor = false;
+            this.tableCell4.StylePriority.UseBorders = false;
+            this.tableCell4.StylePriority.UseBorderWidth = false;
             this.tableCell4.StylePriority.UseFont = false;
             this.tableCell4.StylePriority.UseTextAlignment = false;
             this.tableCell4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
@@ -1208,7 +1216,7 @@
             this.xrPictureBox2.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource(global::MediationDB.Properties.Resources.ISSSS, true);
             this.xrPictureBox2.LocationFloat = new DevExpress.Utils.PointFloat(15.24001F, 10.98334F);
             this.xrPictureBox2.Name = "xrPictureBox2";
-            this.xrPictureBox2.SizeF = new System.Drawing.SizeF(767.9267F, 246.5919F);
+            this.xrPictureBox2.SizeF = new System.Drawing.SizeF(767.9267F, 230.446F);
             this.xrPictureBox2.Sizing = DevExpress.XtraPrinting.ImageSizeMode.StretchImage;
             // 
             // xrPictureBox1
@@ -1219,6 +1227,23 @@
             this.xrPictureBox1.Name = "xrPictureBox1";
             this.xrPictureBox1.SizeF = new System.Drawing.SizeF(655.7205F, 216.4293F);
             this.xrPictureBox1.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
+            // 
+            // xrLabel1
+            // 
+            this.xrLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.xrLabel1.Dpi = 254F;
+            this.xrLabel1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.xrLabel1.ForeColor = System.Drawing.Color.White;
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(15.99999F, 25.00001F);
+            this.xrLabel1.Name = "xrLabel1";
+            this.xrLabel1.SizeF = new System.Drawing.SizeF(367.4022F, 105.3976F);
+            this.xrLabel1.StyleName = "Title";
+            this.xrLabel1.StylePriority.UseBackColor = false;
+            this.xrLabel1.StylePriority.UseFont = false;
+            this.xrLabel1.StylePriority.UseForeColor = false;
+            this.xrLabel1.StylePriority.UseTextAlignment = false;
+            this.xrLabel1.Text = "Conflits enregistrés à ";
+            this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // rpt_liste_menages_detailles_conflit_par_dates
             // 
@@ -1371,5 +1396,6 @@
         private DevExpress.XtraReports.UI.XRLabel label28;
         private DevExpress.XtraReports.UI.XRPictureBox xrPictureBox2;
         private DevExpress.XtraReports.UI.XRPictureBox xrPictureBox1;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel1;
     }
 }
