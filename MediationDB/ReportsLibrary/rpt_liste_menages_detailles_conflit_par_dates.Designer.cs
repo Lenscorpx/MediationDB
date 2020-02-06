@@ -81,21 +81,6 @@
             this.table2 = new DevExpress.XtraReports.UI.XRTable();
             this.tableRow2 = new DevExpress.XtraReports.UI.XRTableRow();
             this.tableCell4 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.table3 = new DevExpress.XtraReports.UI.XRTable();
-            this.tableRow3 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.tableCell5 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell6 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell7 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell8 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell9 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell10 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell11 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell12 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell13 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell14 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell15 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell16 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell17 = new DevExpress.XtraReports.UI.XRTableCell();
             this.table4 = new DevExpress.XtraReports.UI.XRTable();
             this.tableRow4 = new DevExpress.XtraReports.UI.XRTableRow();
             this.tableCell18 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -144,9 +129,12 @@
             this.xrPictureBox2 = new DevExpress.XtraReports.UI.XRPictureBox();
             this.xrPictureBox1 = new DevExpress.XtraReports.UI.XRPictureBox();
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.table1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
@@ -316,7 +304,7 @@
             this.xrPictureBox1});
             this.TopMargin.Dpi = 254F;
             this.TopMargin.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.TopMargin.HeightF = 393.7002F;
+            this.TopMargin.HeightF = 394F;
             this.TopMargin.Name = "TopMargin";
             this.TopMargin.StylePriority.UseFont = false;
             // 
@@ -326,7 +314,7 @@
             this.pageInfo1,
             this.pageInfo2});
             this.BottomMargin.Dpi = 254F;
-            this.BottomMargin.HeightF = 74.42F;
+            this.BottomMargin.HeightF = 74F;
             this.BottomMargin.Name = "BottomMargin";
             // 
             // ReportHeader
@@ -343,7 +331,7 @@
             this.GroupHeader1.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
             new DevExpress.XtraReports.UI.GroupField("num_conflit", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
             this.GroupHeader1.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader1.HeightF = 165.8999F;
+            this.GroupHeader1.HeightF = 112.0805F;
             this.GroupHeader1.Name = "GroupHeader1";
             // 
             // GroupHeader2
@@ -355,7 +343,7 @@
             this.GroupHeader2.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
             new DevExpress.XtraReports.UI.GroupField("id_localite", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
             this.GroupHeader2.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader2.HeightF = 157.3025F;
+            this.GroupHeader2.HeightF = 116.6033F;
             this.GroupHeader2.Level = 1;
             this.GroupHeader2.Name = "GroupHeader2";
             // 
@@ -370,10 +358,13 @@
             // Detail
             // 
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table3,
+            this.xrLabel5,
+            this.xrLabel4,
+            this.xrLabel3,
+            this.xrLabel2,
             this.table4});
             this.Detail.Dpi = 254F;
-            this.Detail.HeightF = 467.7705F;
+            this.Detail.HeightF = 151.0047F;
             this.Detail.HierarchyPrintOptions.Indent = 50.8F;
             this.Detail.Name = "Detail";
             // 
@@ -451,11 +442,11 @@
             // table1
             // 
             this.table1.Dpi = 254F;
-            this.table1.LocationFloat = new DevExpress.Utils.PointFloat(15.24001F, 36.83004F);
+            this.table1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.table1.Name = "table1";
             this.table1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.tableRow1});
-            this.table1.SizeF = new System.Drawing.SizeF(2870F, 63.5F);
+            this.table1.SizeF = new System.Drawing.SizeF(821.3979F, 101.7292F);
             // 
             // tableRow1
             // 
@@ -468,25 +459,41 @@
             // 
             // tableCell1
             // 
+            this.tableCell1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.tableCell1.Dpi = 254F;
+            this.tableCell1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.tableCell1.ForeColor = System.Drawing.Color.White;
             this.tableCell1.Name = "tableCell1";
             this.tableCell1.StyleName = "GroupCaption1";
-            this.tableCell1.Text = "NUM CONFLIT";
-            this.tableCell1.Weight = 0.076815540699177912D;
+            this.tableCell1.StylePriority.UseBackColor = false;
+            this.tableCell1.StylePriority.UseFont = false;
+            this.tableCell1.StylePriority.UseForeColor = false;
+            this.tableCell1.StylePriority.UseTextAlignment = false;
+            this.tableCell1.Text = "Code conflit";
+            this.tableCell1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.tableCell1.Weight = 0.087626910986490392D;
             // 
             // tableCell2
             // 
+            this.tableCell2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.tableCell2.Dpi = 254F;
             this.tableCell2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[num_conflit]")});
+            this.tableCell2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.tableCell2.ForeColor = System.Drawing.Color.White;
             this.tableCell2.Name = "tableCell2";
             this.tableCell2.StyleName = "GroupData1";
-            this.tableCell2.Weight = 0.92318442740091466D;
+            this.tableCell2.StylePriority.UseBackColor = false;
+            this.tableCell2.StylePriority.UseFont = false;
+            this.tableCell2.StylePriority.UseForeColor = false;
+            this.tableCell2.StylePriority.UseTextAlignment = false;
+            this.tableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.tableCell2.Weight = 0.19857442933486455D;
             // 
             // table2
             // 
             this.table2.Dpi = 254F;
-            this.table2.LocationFloat = new DevExpress.Utils.PointFloat(383.4022F, 25.00001F);
+            this.table2.LocationFloat = new DevExpress.Utils.PointFloat(368.1622F, 0F);
             this.table2.Name = "table2";
             this.table2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.tableRow2});
@@ -521,160 +528,19 @@
             this.tableCell4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.tableCell4.Weight = 0.92937394517639371D;
             // 
-            // table3
-            // 
-            this.table3.Dpi = 254F;
-            this.table3.LocationFloat = new DevExpress.Utils.PointFloat(8.074442E-05F, 63.41998F);
-            this.table3.Name = "table3";
-            this.table3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.tableRow3});
-            this.table3.SizeF = new System.Drawing.SizeF(2870F, 71.12F);
-            // 
-            // tableRow3
-            // 
-            this.tableRow3.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.tableCell5,
-            this.tableCell6,
-            this.tableCell7,
-            this.tableCell8,
-            this.tableCell9,
-            this.tableCell10,
-            this.tableCell11,
-            this.tableCell12,
-            this.tableCell13,
-            this.tableCell14,
-            this.tableCell15,
-            this.tableCell16,
-            this.tableCell17});
-            this.tableRow3.Dpi = 254F;
-            this.tableRow3.Name = "tableRow3";
-            this.tableRow3.Weight = 1D;
-            // 
-            // tableCell5
-            // 
-            this.tableCell5.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.tableCell5.Dpi = 254F;
-            this.tableCell5.Name = "tableCell5";
-            this.tableCell5.StyleName = "DetailCaption1";
-            this.tableCell5.StylePriority.UseBorders = false;
-            this.tableCell5.Text = "date debut mediation";
-            this.tableCell5.Weight = 0.1270219756335747D;
-            // 
-            // tableCell6
-            // 
-            this.tableCell6.Dpi = 254F;
-            this.tableCell6.Name = "tableCell6";
-            this.tableCell6.StyleName = "DetailCaption1";
-            this.tableCell6.Text = "id type conflit";
-            this.tableCell6.Weight = 0.086936849667220165D;
-            // 
-            // tableCell7
-            // 
-            this.tableCell7.Dpi = 254F;
-            this.tableCell7.Name = "tableCell7";
-            this.tableCell7.StyleName = "DetailCaption1";
-            this.tableCell7.Text = "id typ partie";
-            this.tableCell7.Weight = 0.07755264122727025D;
-            // 
-            // tableCell8
-            // 
-            this.tableCell8.Dpi = 254F;
-            this.tableCell8.Name = "tableCell8";
-            this.tableCell8.StyleName = "DetailCaption1";
-            this.tableCell8.Text = "id menage";
-            this.tableCell8.Weight = 0.069417824562418337D;
-            // 
-            // tableCell9
-            // 
-            this.tableCell9.Dpi = 254F;
-            this.tableCell9.Name = "tableCell9";
-            this.tableCell9.StyleName = "DetailCaption1";
-            this.tableCell9.Text = "noms";
-            this.tableCell9.Weight = 0.043730963730230561D;
-            // 
-            // tableCell10
-            // 
-            this.tableCell10.Dpi = 254F;
-            this.tableCell10.Name = "tableCell10";
-            this.tableCell10.StyleName = "DetailCaption1";
-            this.tableCell10.Text = "id situation";
-            this.tableCell10.Weight = 0.073782444332534849D;
-            // 
-            // tableCell11
-            // 
-            this.tableCell11.Dpi = 254F;
-            this.tableCell11.Name = "tableCell11";
-            this.tableCell11.StyleName = "DetailCaption1";
-            this.tableCell11.StylePriority.UseTextAlignment = false;
-            this.tableCell11.Text = "total homme";
-            this.tableCell11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.tableCell11.Weight = 0.080678874690358227D;
-            // 
-            // tableCell12
-            // 
-            this.tableCell12.Dpi = 254F;
-            this.tableCell12.Name = "tableCell12";
-            this.tableCell12.StyleName = "DetailCaption1";
-            this.tableCell12.StylePriority.UseTextAlignment = false;
-            this.tableCell12.Text = "total femme";
-            this.tableCell12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.tableCell12.Weight = 0.076930694048413D;
-            // 
-            // tableCell13
-            // 
-            this.tableCell13.Dpi = 254F;
-            this.tableCell13.Name = "tableCell13";
-            this.tableCell13.StyleName = "DetailCaption1";
-            this.tableCell13.StylePriority.UseTextAlignment = false;
-            this.tableCell13.Text = "total garcons";
-            this.tableCell13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.tableCell13.Weight = 0.08444356353440767D;
-            // 
-            // tableCell14
-            // 
-            this.tableCell14.Dpi = 254F;
-            this.tableCell14.Name = "tableCell14";
-            this.tableCell14.StyleName = "DetailCaption1";
-            this.tableCell14.StylePriority.UseTextAlignment = false;
-            this.tableCell14.Text = "total filles";
-            this.tableCell14.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.tableCell14.Weight = 0.066280580314609649D;
-            // 
-            // tableCell15
-            // 
-            this.tableCell15.Dpi = 254F;
-            this.tableCell15.Name = "tableCell15";
-            this.tableCell15.StyleName = "DetailCaption1";
-            this.tableCell15.StylePriority.UseTextAlignment = false;
-            this.tableCell15.Text = "total";
-            this.tableCell15.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.tableCell15.Weight = 0.037461983285299164D;
-            // 
-            // tableCell16
-            // 
-            this.tableCell16.Dpi = 254F;
-            this.tableCell16.Name = "tableCell16";
-            this.tableCell16.StyleName = "DetailCaption1";
-            this.tableCell16.Text = "id resolution";
-            this.tableCell16.Weight = 0.081300821869215487D;
-            // 
-            // tableCell17
-            // 
-            this.tableCell17.Dpi = 254F;
-            this.tableCell17.Name = "tableCell17";
-            this.tableCell17.StyleName = "DetailCaption1";
-            this.tableCell17.Text = "date resolution";
-            this.tableCell17.Weight = 0.0944608150043554D;
-            // 
             // table4
             // 
+            this.table4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.table4.Dpi = 254F;
-            this.table4.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.table4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
+            this.table4.LocationFloat = new DevExpress.Utils.PointFloat(0F, 79.375F);
             this.table4.Name = "table4";
             this.table4.OddStyleName = "DetailData3_Odd";
             this.table4.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.tableRow4});
             this.table4.SizeF = new System.Drawing.SizeF(2870F, 63.42F);
+            this.table4.StylePriority.UseBackColor = false;
+            this.table4.StylePriority.UseFont = false;
             // 
             // tableRow4
             // 
@@ -698,132 +564,288 @@
             // 
             // tableCell18
             // 
-            this.tableCell18.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.tableCell18.BackColor = System.Drawing.Color.White;
+            this.tableCell18.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.tableCell18.BorderWidth = 1F;
             this.tableCell18.Dpi = 254F;
             this.tableCell18.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[date_debut_mediation]")});
+            this.tableCell18.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
+            this.tableCell18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.tableCell18.Name = "tableCell18";
             this.tableCell18.StyleName = "DetailData1";
+            this.tableCell18.StylePriority.UseBackColor = false;
             this.tableCell18.StylePriority.UseBorders = false;
-            this.tableCell18.Weight = 0.1270219756335747D;
+            this.tableCell18.StylePriority.UseBorderWidth = false;
+            this.tableCell18.StylePriority.UseFont = false;
+            this.tableCell18.StylePriority.UseForeColor = false;
+            this.tableCell18.TextFormatString = "{0:dd/MM/yyyy}";
+            this.tableCell18.Weight = 0.062489469171377758D;
             // 
             // tableCell19
             // 
+            this.tableCell19.BackColor = System.Drawing.Color.White;
+            this.tableCell19.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.tableCell19.BorderWidth = 1F;
             this.tableCell19.Dpi = 254F;
             this.tableCell19.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[id_type_conflit]")});
+            this.tableCell19.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
+            this.tableCell19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.tableCell19.Name = "tableCell19";
             this.tableCell19.StyleName = "DetailData1";
-            this.tableCell19.Weight = 0.08693684435056892D;
+            this.tableCell19.StylePriority.UseBackColor = false;
+            this.tableCell19.StylePriority.UseBorders = false;
+            this.tableCell19.StylePriority.UseBorderWidth = false;
+            this.tableCell19.StylePriority.UseFont = false;
+            this.tableCell19.StylePriority.UseForeColor = false;
+            this.tableCell19.Weight = 0.13856286068529428D;
             // 
             // tableCell20
             // 
+            this.tableCell20.BackColor = System.Drawing.Color.White;
+            this.tableCell20.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.tableCell20.BorderWidth = 1F;
             this.tableCell20.Dpi = 254F;
             this.tableCell20.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[id_typ_partie]")});
+            this.tableCell20.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
+            this.tableCell20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.tableCell20.Name = "tableCell20";
             this.tableCell20.StyleName = "DetailData1";
-            this.tableCell20.Weight = 0.07755264122727025D;
+            this.tableCell20.StylePriority.UseBackColor = false;
+            this.tableCell20.StylePriority.UseBorders = false;
+            this.tableCell20.StylePriority.UseBorderWidth = false;
+            this.tableCell20.StylePriority.UseFont = false;
+            this.tableCell20.StylePriority.UseForeColor = false;
+            this.tableCell20.Weight = 0.064646119199890648D;
             // 
             // tableCell21
             // 
+            this.tableCell21.BackColor = System.Drawing.Color.White;
+            this.tableCell21.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.tableCell21.BorderWidth = 1F;
             this.tableCell21.Dpi = 254F;
             this.tableCell21.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[id_menage]")});
+            this.tableCell21.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
+            this.tableCell21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.tableCell21.Name = "tableCell21";
             this.tableCell21.StyleName = "DetailData1";
-            this.tableCell21.Weight = 0.069417824562418337D;
+            this.tableCell21.StylePriority.UseBackColor = false;
+            this.tableCell21.StylePriority.UseBorders = false;
+            this.tableCell21.StylePriority.UseBorderWidth = false;
+            this.tableCell21.StylePriority.UseFont = false;
+            this.tableCell21.StylePriority.UseForeColor = false;
+            this.tableCell21.Weight = 0.0952308048173615D;
             // 
             // tableCell22
             // 
+            this.tableCell22.BackColor = System.Drawing.Color.White;
+            this.tableCell22.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.tableCell22.BorderWidth = 1F;
             this.tableCell22.Dpi = 254F;
             this.tableCell22.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[noms]")});
+            this.tableCell22.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
+            this.tableCell22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.tableCell22.Name = "tableCell22";
             this.tableCell22.StyleName = "DetailData1";
-            this.tableCell22.Weight = 0.043730961071904946D;
+            this.tableCell22.StylePriority.UseBackColor = false;
+            this.tableCell22.StylePriority.UseBorders = false;
+            this.tableCell22.StylePriority.UseBorderWidth = false;
+            this.tableCell22.StylePriority.UseFont = false;
+            this.tableCell22.StylePriority.UseForeColor = false;
+            this.tableCell22.Weight = 0.2149417975514796D;
             // 
             // tableCell23
             // 
+            this.tableCell23.BackColor = System.Drawing.Color.White;
+            this.tableCell23.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.tableCell23.BorderWidth = 1F;
             this.tableCell23.Dpi = 254F;
             this.tableCell23.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[id_situation]")});
+            this.tableCell23.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
+            this.tableCell23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.tableCell23.Name = "tableCell23";
             this.tableCell23.StyleName = "DetailData1";
-            this.tableCell23.Weight = 0.073782444332534849D;
+            this.tableCell23.StylePriority.UseBackColor = false;
+            this.tableCell23.StylePriority.UseBorders = false;
+            this.tableCell23.StylePriority.UseBorderWidth = false;
+            this.tableCell23.StylePriority.UseFont = false;
+            this.tableCell23.StylePriority.UseForeColor = false;
+            this.tableCell23.Weight = 0.054159577433197166D;
             // 
             // tableCell24
             // 
+            this.tableCell24.BackColor = System.Drawing.Color.White;
+            this.tableCell24.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.tableCell24.BorderWidth = 1F;
             this.tableCell24.Dpi = 254F;
             this.tableCell24.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[total_homme]")});
+            this.tableCell24.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
+            this.tableCell24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.tableCell24.Name = "tableCell24";
             this.tableCell24.StyleName = "DetailData1";
+            this.tableCell24.StylePriority.UseBackColor = false;
+            this.tableCell24.StylePriority.UseBorders = false;
+            this.tableCell24.StylePriority.UseBorderWidth = false;
+            this.tableCell24.StylePriority.UseFont = false;
+            this.tableCell24.StylePriority.UseForeColor = false;
             this.tableCell24.StylePriority.UseTextAlignment = false;
             this.tableCell24.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.tableCell24.Weight = 0.080678874690358227D;
+            this.tableCell24.Weight = 0.043408457630721257D;
             // 
             // tableCell25
             // 
+            this.tableCell25.BackColor = System.Drawing.Color.White;
+            this.tableCell25.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.tableCell25.BorderWidth = 1F;
             this.tableCell25.Dpi = 254F;
             this.tableCell25.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[total_femme]")});
+            this.tableCell25.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
+            this.tableCell25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.tableCell25.Name = "tableCell25";
             this.tableCell25.StyleName = "DetailData1";
+            this.tableCell25.StylePriority.UseBackColor = false;
+            this.tableCell25.StylePriority.UseBorders = false;
+            this.tableCell25.StylePriority.UseBorderWidth = false;
+            this.tableCell25.StylePriority.UseFont = false;
+            this.tableCell25.StylePriority.UseForeColor = false;
             this.tableCell25.StylePriority.UseTextAlignment = false;
             this.tableCell25.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.tableCell25.Weight = 0.076930694048413D;
+            this.tableCell25.Weight = 0.047056658783707975D;
             // 
             // tableCell26
             // 
+            this.tableCell26.BackColor = System.Drawing.Color.White;
+            this.tableCell26.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.tableCell26.BorderWidth = 1F;
             this.tableCell26.Dpi = 254F;
             this.tableCell26.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[total_garcons]")});
+            this.tableCell26.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
+            this.tableCell26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.tableCell26.Name = "tableCell26";
             this.tableCell26.StyleName = "DetailData1";
+            this.tableCell26.StylePriority.UseBackColor = false;
+            this.tableCell26.StylePriority.UseBorders = false;
+            this.tableCell26.StylePriority.UseBorderWidth = false;
+            this.tableCell26.StylePriority.UseFont = false;
+            this.tableCell26.StylePriority.UseForeColor = false;
             this.tableCell26.StylePriority.UseTextAlignment = false;
             this.tableCell26.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.tableCell26.Weight = 0.084443558217756426D;
+            this.tableCell26.Weight = 0.054391643749161583D;
             // 
             // tableCell27
             // 
+            this.tableCell27.BackColor = System.Drawing.Color.White;
+            this.tableCell27.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.tableCell27.BorderWidth = 1F;
             this.tableCell27.Dpi = 254F;
             this.tableCell27.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[total_filles]")});
+            this.tableCell27.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
+            this.tableCell27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.tableCell27.Name = "tableCell27";
             this.tableCell27.StyleName = "DetailData1";
+            this.tableCell27.StylePriority.UseBackColor = false;
+            this.tableCell27.StylePriority.UseBorders = false;
+            this.tableCell27.StylePriority.UseBorderWidth = false;
+            this.tableCell27.StylePriority.UseFont = false;
+            this.tableCell27.StylePriority.UseForeColor = false;
             this.tableCell27.StylePriority.UseTextAlignment = false;
             this.tableCell27.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.tableCell27.Weight = 0.066280580314609649D;
+            this.tableCell27.Weight = 0.045077120821685752D;
             // 
             // tableCell28
             // 
+            this.tableCell28.BackColor = System.Drawing.Color.White;
+            this.tableCell28.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.tableCell28.BorderWidth = 1F;
             this.tableCell28.Dpi = 254F;
             this.tableCell28.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[total]")});
+            this.tableCell28.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
+            this.tableCell28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.tableCell28.Name = "tableCell28";
             this.tableCell28.StyleName = "DetailData1";
+            this.tableCell28.StylePriority.UseBackColor = false;
+            this.tableCell28.StylePriority.UseBorders = false;
+            this.tableCell28.StylePriority.UseBorderWidth = false;
+            this.tableCell28.StylePriority.UseFont = false;
+            this.tableCell28.StylePriority.UseForeColor = false;
             this.tableCell28.StylePriority.UseTextAlignment = false;
             this.tableCell28.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.tableCell28.Weight = 0.037461983285299164D;
+            this.tableCell28.Weight = 0.044837321774226523D;
             // 
             // tableCell29
             // 
+            this.tableCell29.BackColor = System.Drawing.Color.White;
+            this.tableCell29.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.tableCell29.BorderWidth = 1F;
             this.tableCell29.Dpi = 254F;
             this.tableCell29.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[id_resolution]")});
+            this.tableCell29.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
+            this.tableCell29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.tableCell29.Name = "tableCell29";
             this.tableCell29.StyleName = "DetailData1";
-            this.tableCell29.Weight = 0.081300821869215487D;
+            this.tableCell29.StylePriority.UseBackColor = false;
+            this.tableCell29.StylePriority.UseBorders = false;
+            this.tableCell29.StylePriority.UseBorderWidth = false;
+            this.tableCell29.StylePriority.UseFont = false;
+            this.tableCell29.StylePriority.UseForeColor = false;
+            this.tableCell29.Weight = 0.070237811477498788D;
             // 
             // tableCell30
             // 
+            this.tableCell30.BackColor = System.Drawing.Color.White;
+            this.tableCell30.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.tableCell30.BorderWidth = 1F;
             this.tableCell30.Dpi = 254F;
             this.tableCell30.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[date_resolution]")});
+            this.tableCell30.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
+            this.tableCell30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.tableCell30.Name = "tableCell30";
             this.tableCell30.StyleName = "DetailData1";
-            this.tableCell30.Weight = 0.0944608150043554D;
+            this.tableCell30.StylePriority.UseBackColor = false;
+            this.tableCell30.StylePriority.UseBorders = false;
+            this.tableCell30.StylePriority.UseBorderWidth = false;
+            this.tableCell30.StylePriority.UseFont = false;
+            this.tableCell30.StylePriority.UseForeColor = false;
+            this.tableCell30.TextFormatString = "{0:dd/MM/yyyy}";
+            this.tableCell30.Weight = 0.0649603755126765D;
             // 
             // label2
             // 
@@ -1234,7 +1256,7 @@
             this.xrLabel1.Dpi = 254F;
             this.xrLabel1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.xrLabel1.ForeColor = System.Drawing.Color.White;
-            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(15.99999F, 25.00001F);
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.SizeF = new System.Drawing.SizeF(367.4022F, 105.3976F);
             this.xrLabel1.StyleName = "Title";
@@ -1244,6 +1266,74 @@
             this.xrLabel1.StylePriority.UseTextAlignment = false;
             this.xrLabel1.Text = "Conflits enregistrés à ";
             this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // xrLabel2
+            // 
+            this.xrLabel2.BackColor = System.Drawing.Color.Empty;
+            this.xrLabel2.Dpi = 254F;
+            this.xrLabel2.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold);
+            this.xrLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(1808.188F, 0F);
+            this.xrLabel2.Name = "xrLabel2";
+            this.xrLabel2.SizeF = new System.Drawing.SizeF(124.5823F, 58.20833F);
+            this.xrLabel2.StyleName = "Title";
+            this.xrLabel2.StylePriority.UseBackColor = false;
+            this.xrLabel2.StylePriority.UseFont = false;
+            this.xrLabel2.StylePriority.UseForeColor = false;
+            this.xrLabel2.StylePriority.UseTextAlignment = false;
+            this.xrLabel2.Text = "Hommes";
+            this.xrLabel2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel3
+            // 
+            this.xrLabel3.BackColor = System.Drawing.Color.Empty;
+            this.xrLabel3.Dpi = 254F;
+            this.xrLabel3.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold);
+            this.xrLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(1943.241F, 0F);
+            this.xrLabel3.Name = "xrLabel3";
+            this.xrLabel3.SizeF = new System.Drawing.SizeF(124.5823F, 58.20833F);
+            this.xrLabel3.StyleName = "Title";
+            this.xrLabel3.StylePriority.UseBackColor = false;
+            this.xrLabel3.StylePriority.UseFont = false;
+            this.xrLabel3.StylePriority.UseForeColor = false;
+            this.xrLabel3.StylePriority.UseTextAlignment = false;
+            this.xrLabel3.Text = "Femmes";
+            this.xrLabel3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel4
+            // 
+            this.xrLabel4.BackColor = System.Drawing.Color.Empty;
+            this.xrLabel4.Dpi = 254F;
+            this.xrLabel4.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold);
+            this.xrLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(2099.344F, 0F);
+            this.xrLabel4.Name = "xrLabel4";
+            this.xrLabel4.SizeF = new System.Drawing.SizeF(124.5823F, 58.20833F);
+            this.xrLabel4.StyleName = "Title";
+            this.xrLabel4.StylePriority.UseBackColor = false;
+            this.xrLabel4.StylePriority.UseFont = false;
+            this.xrLabel4.StylePriority.UseForeColor = false;
+            this.xrLabel4.StylePriority.UseTextAlignment = false;
+            this.xrLabel4.Text = "Garcons";
+            this.xrLabel4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel5
+            // 
+            this.xrLabel5.BackColor = System.Drawing.Color.Empty;
+            this.xrLabel5.Dpi = 254F;
+            this.xrLabel5.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold);
+            this.xrLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(2241.945F, 0F);
+            this.xrLabel5.Name = "xrLabel5";
+            this.xrLabel5.SizeF = new System.Drawing.SizeF(124.5823F, 58.20833F);
+            this.xrLabel5.StyleName = "Title";
+            this.xrLabel5.StylePriority.UseBackColor = false;
+            this.xrLabel5.StylePriority.UseFont = false;
+            this.xrLabel5.StylePriority.UseForeColor = false;
+            this.xrLabel5.StylePriority.UseTextAlignment = false;
+            this.xrLabel5.Text = "Filles";
+            this.xrLabel5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // rpt_liste_menages_detailles_conflit_par_dates
             // 
@@ -1290,7 +1380,6 @@
             this.Version = "19.1";
             ((System.ComponentModel.ISupportInitialize)(this.table1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.table2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.table4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
@@ -1329,21 +1418,6 @@
         private DevExpress.XtraReports.UI.XRTableRow tableRow2;
         private DevExpress.XtraReports.UI.XRTableCell tableCell4;
         private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader3;
-        private DevExpress.XtraReports.UI.XRTable table3;
-        private DevExpress.XtraReports.UI.XRTableRow tableRow3;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell5;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell6;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell7;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell8;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell9;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell10;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell11;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell12;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell13;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell14;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell15;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell16;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell17;
         private DevExpress.XtraReports.UI.DetailBand Detail;
         private DevExpress.XtraReports.UI.XRTable table4;
         private DevExpress.XtraReports.UI.XRTableRow tableRow4;
@@ -1397,5 +1471,9 @@
         private DevExpress.XtraReports.UI.XRPictureBox xrPictureBox2;
         private DevExpress.XtraReports.UI.XRPictureBox xrPictureBox1;
         private DevExpress.XtraReports.UI.XRLabel xrLabel1;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel5;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel4;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel3;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel2;
     }
 }
