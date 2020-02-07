@@ -2335,4 +2335,40 @@ select * from t_menages
 
 select * from t_menages
 	where id_menage like 'HATEG'+'%'
+go
+create procedure infos_general_conflits
+as
+	select        
+		t_territoire.id_province as 'Province', 
+		t_chefferie.id_territoire as 'Territoire', 
+		t_groupement.id_chefferie as 'Chefferie', 
+		t_localite.id_groupement as 'Groupement', 
+		t_conflit.id_localite as 'Localite', 
+		t_conflit.num_conflit as 'Code Conflit', 
+		t_conflit.id_type_conflit as 'Type Conflit', 
+        t_conflit.id_nature_conflit as 'Nature Conflit', 
+		t_assignation_resolution.id_resolution as 'Etat Resolution', 
+		t_parties.id_typ_partie as 'Partie', 
+		t_parties.id_menage, t_menages.id_situation as 'Sit. Men', 
+		t_menages.total_homme as 'Total Hommes', 
+		t_menages.total_femme as 'Total Femmes', 
+        t_menages.total_garcons as 'Total Garcons', 
+		t_menages.total_filles as 'Total Filles',
+		total_homme + total_femme + total_filles + total_garcons as 'Total Menage' 
+	from            
+		t_chefferie 
+			inner join
+        t_territoire on t_chefferie.id_territoire = t_territoire.id_territoire 
+			inner join
+		t_groupement on t_chefferie.id_chefferie = t_groupement.id_chefferie 
+			inner join
+		t_localite on t_groupement.id_groupement = t_localite.id_groupement 
+			inner join
+		t_conflit on t_localite.id_localite = t_conflit.id_localite 
+			inner join
+		t_parties on t_conflit.num_conflit = t_parties.num_conflit 
+			inner join
+		t_menages on t_parties.id_menage = t_menages.id_menage 
+			inner join
+		t_assignation_resolution on t_conflit.num_conflit = t_assignation_resolution.num_conflit
 
