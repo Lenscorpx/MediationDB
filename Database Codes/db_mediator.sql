@@ -1894,6 +1894,7 @@ create table t_beneficiaires
 	id_beneficiaire nvarchar(200),
 	noms nvarchar(200),
 	sexe nvarchar(200),
+	vulnerabilite nvarchar(200),
 	date_naissance date,
 	adresse nvarchar(200),
 	telephone nvarchar(200),
@@ -1944,7 +1945,7 @@ create table t_assignation_bailleurs
 go
 create table t_distribution
 (
-	num_distribution int identity,
+	code_distribution nvarchar(200),
 	date_distribution date,
 	id_localite nvarchar(200),
 	id_projet nvarchar(200),
@@ -1953,7 +1954,7 @@ create table t_distribution
 	valeur decimal,
 	id_executant nvarchar(200),
 	observation nvarchar(200),
-	constraint pk_distribution primary key(num_distribution),
+	constraint pk_distribution primary key(code_distribution),
 	constraint fk_projet_distribution foreign key(id_projet) references t_projets(id_projet),
 	constraint fk_agr_distribution foreign key(id_agr) references t_agr(id_agr),
 	constraint fk_executant_distr foreign key(id_executant) references t_executants(id_executant),
@@ -1964,11 +1965,11 @@ create table t_assignation_beneficiaires
 (
 	num_assignation_benef int identity,
 	id_beneficiaire nvarchar(200),
-	num_distribution int,
+	code_distribution nvarchar(200),
 	date_assignation date,
 	constraint pk_assignation_benef primary key(num_assignation_benef),
 	constraint fk_benef_assgn foreign key(id_beneficiaire) references t_beneficiaires(id_beneficiaire),
-	constraint fk_distrib_ass foreign key(num_distribution) references t_distribution(num_distribution)
+	constraint fk_distrib_ass foreign key(code_distribution) references t_distribution(code_distribution)
 )
 go
 create procedure afficher_rapport_conflit
@@ -2284,6 +2285,44 @@ from
     t_conflit inner join
     t_mediation on t_conflit.num_conflit = t_mediation.num_conflit inner join
     t_assignation_resolution on t_conflit.num_conflit = t_assignation_resolution.num_conflit on t_localite.id_localite = t_conflit.id_localite
+go
+
+create procedure details_menages_par_conflit
+@date_un date,
+@date_deux date
+as
+select        
+	t_conflit.num_conflit, 
+	t_mediation.date_debut_mediation, 
+	t_conflit.id_type_conflit, 
+	t_conflit.id_localite, 
+	t_parties.id_typ_partie, 
+	t_menages.id_menage, 
+	t_membres.noms, 
+	t_menages.id_situation, 
+    t_menages.total_homme, 
+	t_menages.total_femme, 
+	t_menages.total_garcons, 
+	t_menages.total_filles, 
+	t_menages.total_homme + t_menages.total_femme + t_menages.total_garcons + t_menages.total_filles as total,
+	t_assignation_resolution.id_resolution, 
+	t_assignation_resolution.date_resolution	
+from            
+	t_conflit 
+		inner join
+			t_parties on t_conflit.num_conflit = t_parties.num_conflit 
+		inner join
+			t_menages on t_parties.id_menage = t_menages.id_menage 
+		inner join
+			t_membres on t_menages.id_menage = t_membres.id_menage 
+		inner join
+			t_mediation on t_conflit.num_conflit = t_mediation.num_conflit 
+		inner join
+			t_assignation_resolution on t_conflit.num_conflit = t_assignation_resolution.num_conflit
+	where 
+		t_mediation.date_debut_mediation between @date_un and @date_deux
+	order by
+		t_conflit.num_conflit asc
 go
 select * from t_menages
 
