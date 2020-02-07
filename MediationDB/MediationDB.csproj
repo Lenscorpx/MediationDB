@@ -363,11 +363,23 @@
     <Compile Include="ReportsLibrary\rpt_fiche_conflit.Designer.cs">
       <DependentUpon>rpt_fiche_conflit.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReportsLibrary\rpt_infos_general.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLibrary\rpt_infos_general.Designer.cs">
+      <DependentUpon>rpt_infos_general.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportsLibrary\rpt_liste_menages_detailles_conflit_par_dates.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="ReportsLibrary\rpt_liste_menages_detailles_conflit_par_dates.Designer.cs">
       <DependentUpon>rpt_liste_menages_detailles_conflit_par_dates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsLibrary\rpt_rapport_general_sur_conflit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLibrary\rpt_rapport_general_sur_conflit.Designer.cs">
+      <DependentUpon>rpt_rapport_general_sur_conflit.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="ControlLibrary\uc_menage.resx">
       <DependentUpon>uc_menage.cs</DependentUpon>
@@ -506,8 +518,14 @@
     <EmbeddedResource Include="ReportsLibrary\rpt_fiche_conflit.resx">
       <DependentUpon>rpt_fiche_conflit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLibrary\rpt_infos_general.resx">
+      <DependentUpon>rpt_infos_general.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReportsLibrary\rpt_liste_menages_detailles_conflit_par_dates.resx">
       <DependentUpon>rpt_liste_menages_detailles_conflit_par_dates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLibrary\rpt_rapport_general_sur_conflit.resx">
+      <DependentUpon>rpt_rapport_general_sur_conflit.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
