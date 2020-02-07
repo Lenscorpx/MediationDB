@@ -31,11 +31,6 @@
             this.components = new System.ComponentModel.Container();
             DevExpress.DataAccess.Sql.StoredProcQuery storedProcQuery1 = new DevExpress.DataAccess.Sql.StoredProcQuery();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rpt_rapport_general_sur_conflit));
-            DevExpress.XtraReports.UI.XRSummary xrSummary1 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary2 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary3 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary4 = new DevExpress.XtraReports.UI.XRSummary();
-            DevExpress.XtraReports.UI.XRSummary xrSummary5 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary6 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary7 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary8 = new DevExpress.XtraReports.UI.XRSummary();
@@ -81,6 +76,11 @@
             DevExpress.XtraReports.UI.XRSummary xrSummary48 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary49 = new DevExpress.XtraReports.UI.XRSummary();
             DevExpress.XtraReports.UI.XRSummary xrSummary50 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary5 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary4 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary3 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary2 = new DevExpress.XtraReports.UI.XRSummary();
+            DevExpress.XtraReports.UI.XRSummary xrSummary1 = new DevExpress.XtraReports.UI.XRSummary();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.Title = new DevExpress.XtraReports.UI.XRControlStyle();
             this.GroupCaption1 = new DevExpress.XtraReports.UI.XRControlStyle();
@@ -123,7 +123,6 @@
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
             this.pageInfo1 = new DevExpress.XtraReports.UI.XRPageInfo();
             this.pageInfo2 = new DevExpress.XtraReports.UI.XRPageInfo();
-            this.label1 = new DevExpress.XtraReports.UI.XRLabel();
             this.table1 = new DevExpress.XtraReports.UI.XRTable();
             this.tableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
             this.tableCell1 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -265,18 +264,6 @@
             this.label77 = new DevExpress.XtraReports.UI.XRLabel();
             this.label78 = new DevExpress.XtraReports.UI.XRLabel();
             this.label79 = new DevExpress.XtraReports.UI.XRLabel();
-            this.panel8 = new DevExpress.XtraReports.UI.XRPanel();
-            this.label80 = new DevExpress.XtraReports.UI.XRLabel();
-            this.label81 = new DevExpress.XtraReports.UI.XRLabel();
-            this.label82 = new DevExpress.XtraReports.UI.XRLabel();
-            this.label83 = new DevExpress.XtraReports.UI.XRLabel();
-            this.label84 = new DevExpress.XtraReports.UI.XRLabel();
-            this.label85 = new DevExpress.XtraReports.UI.XRLabel();
-            this.label86 = new DevExpress.XtraReports.UI.XRLabel();
-            this.label87 = new DevExpress.XtraReports.UI.XRLabel();
-            this.label88 = new DevExpress.XtraReports.UI.XRLabel();
-            this.label89 = new DevExpress.XtraReports.UI.XRLabel();
-            this.label90 = new DevExpress.XtraReports.UI.XRLabel();
             this.panel9 = new DevExpress.XtraReports.UI.XRPanel();
             this.label91 = new DevExpress.XtraReports.UI.XRLabel();
             this.label92 = new DevExpress.XtraReports.UI.XRLabel();
@@ -300,6 +287,19 @@
             this.label109 = new DevExpress.XtraReports.UI.XRLabel();
             this.label110 = new DevExpress.XtraReports.UI.XRLabel();
             this.label111 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrPictureBox1 = new DevExpress.XtraReports.UI.XRPictureBox();
+            this.xrPictureBox2 = new DevExpress.XtraReports.UI.XRPictureBox();
+            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label81 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label83 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label85 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label87 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label89 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.table1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table3)).BeginInit();
@@ -465,8 +465,12 @@
             // 
             // TopMargin
             // 
+            this.TopMargin.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLabel1,
+            this.xrPictureBox1,
+            this.xrPictureBox2});
             this.TopMargin.Dpi = 254F;
-            this.TopMargin.HeightF = 20F;
+            this.TopMargin.HeightF = 289.875F;
             this.TopMargin.Name = "TopMargin";
             // 
             // BottomMargin
@@ -480,10 +484,8 @@
             // 
             // ReportHeader
             // 
-            this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.label1});
             this.ReportHeader.Dpi = 254F;
-            this.ReportHeader.HeightF = 152.4F;
+            this.ReportHeader.HeightF = 5.400026F;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // GroupHeader1
@@ -573,12 +575,22 @@
             // GroupHeader8
             // 
             this.GroupHeader8.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLabel6,
+            this.xrLabel5,
+            this.xrLabel4,
+            this.xrLabel3,
+            this.xrLabel2,
+            this.label89,
+            this.label87,
+            this.label85,
+            this.label83,
+            this.label81,
             this.table8});
             this.GroupHeader8.Dpi = 254F;
             this.GroupHeader8.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
             new DevExpress.XtraReports.UI.GroupField("Territoire", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
             this.GroupHeader8.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader8.HeightF = 68.58F;
+            this.GroupHeader8.HeightF = 238.9773F;
             this.GroupHeader8.Level = 8;
             this.GroupHeader8.Name = "GroupHeader8";
             // 
@@ -598,7 +610,7 @@
             // 
             this.GroupHeader10.Dpi = 254F;
             this.GroupHeader10.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader10.HeightF = 71.12F;
+            this.GroupHeader10.HeightF = 13.97F;
             this.GroupHeader10.Level = 10;
             this.GroupHeader10.Name = "GroupHeader10";
             // 
@@ -686,8 +698,6 @@
             // 
             // GroupFooter9
             // 
-            this.GroupFooter9.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.panel8});
             this.GroupFooter9.Dpi = 254F;
             this.GroupFooter9.HeightF = 142.6689F;
             this.GroupFooter9.Level = 8;
@@ -728,15 +738,6 @@
             this.pageInfo2.StyleName = "PageInfo";
             this.pageInfo2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.pageInfo2.TextFormatString = "Page {0} of {1}";
-            // 
-            // label1
-            // 
-            this.label1.Dpi = 254F;
-            this.label1.LocationFloat = new DevExpress.Utils.PointFloat(16F, 16F);
-            this.label1.Name = "label1";
-            this.label1.SizeF = new System.Drawing.SizeF(2898F, 61.45361F);
-            this.label1.StyleName = "Title";
-            this.label1.Text = "Informations générales sur les conflits";
             // 
             // table1
             // 
@@ -936,8 +937,8 @@
             this.tableCell11.Dpi = 254F;
             this.tableCell11.Name = "tableCell11";
             this.tableCell11.StyleName = "GroupCaption1";
-            this.tableCell11.Text = "GROUPEMENT";
-            this.tableCell11.Weight = 0.078016829246547029D;
+            this.tableCell11.Text = "Groupement de";
+            this.tableCell11.Weight = 0.087949972681041974D;
             // 
             // tableCell12
             // 
@@ -946,7 +947,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Groupement]")});
             this.tableCell12.Name = "tableCell12";
             this.tableCell12.StyleName = "GroupData1";
-            this.tableCell12.Weight = 0.92198315513011941D;
+            this.tableCell12.Weight = 0.91205001169562439D;
             // 
             // table7
             // 
@@ -990,7 +991,7 @@
             this.table8.Name = "table8";
             this.table8.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.tableRow8});
-            this.table8.SizeF = new System.Drawing.SizeF(2930F, 63.5F);
+            this.table8.SizeF = new System.Drawing.SizeF(789.5205F, 63.5F);
             // 
             // tableRow8
             // 
@@ -1003,20 +1004,28 @@
             // 
             // tableCell15
             // 
+            this.tableCell15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.tableCell15.Dpi = 254F;
+            this.tableCell15.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.tableCell15.Name = "tableCell15";
             this.tableCell15.StyleName = "GroupCaption1";
-            this.tableCell15.Text = "TERRITOIRE";
-            this.tableCell15.Weight = 0.066977824448725465D;
+            this.tableCell15.StylePriority.UseBackColor = false;
+            this.tableCell15.StylePriority.UseFont = false;
+            this.tableCell15.Text = "Territoire de ";
+            this.tableCell15.Weight = 0.0785648902162811D;
             // 
             // tableCell16
             // 
+            this.tableCell16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.tableCell16.Dpi = 254F;
             this.tableCell16.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Territoire]")});
+            this.tableCell16.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.tableCell16.Name = "tableCell16";
             this.tableCell16.StyleName = "GroupData1";
-            this.tableCell16.Weight = 0.9330221443046075D;
+            this.tableCell16.StylePriority.UseBackColor = false;
+            this.tableCell16.StylePriority.UseFont = false;
+            this.tableCell16.Weight = 0.19089602553205187D;
             // 
             // table9
             // 
@@ -1025,7 +1034,7 @@
             this.table9.Name = "table9";
             this.table9.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.tableRow9});
-            this.table9.SizeF = new System.Drawing.SizeF(2930F, 63.5F);
+            this.table9.SizeF = new System.Drawing.SizeF(789.5208F, 63.5F);
             // 
             // tableRow9
             // 
@@ -1038,20 +1047,28 @@
             // 
             // tableCell17
             // 
+            this.tableCell17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.tableCell17.Dpi = 254F;
+            this.tableCell17.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.tableCell17.Name = "tableCell17";
             this.tableCell17.StyleName = "GroupCaption1";
-            this.tableCell17.Text = "PROVINCE";
-            this.tableCell17.Weight = 0.058708274242414142D;
+            this.tableCell17.StylePriority.UseBackColor = false;
+            this.tableCell17.StylePriority.UseFont = false;
+            this.tableCell17.Text = "Province du ";
+            this.tableCell17.Weight = 0.078564891302200235D;
             // 
             // tableCell18
             // 
+            this.tableCell18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.tableCell18.Dpi = 254F;
             this.tableCell18.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Province]")});
+            this.tableCell18.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.tableCell18.Name = "tableCell18";
             this.tableCell18.StyleName = "GroupData1";
-            this.tableCell18.Weight = 0.9412917622120307D;
+            this.tableCell18.StylePriority.UseBackColor = false;
+            this.tableCell18.StylePriority.UseFont = false;
+            this.tableCell18.Weight = 0.19089614684449746D;
             // 
             // table10
             // 
@@ -1085,7 +1102,7 @@
             this.tableCell19.StyleName = "DetailCaption1";
             this.tableCell19.StylePriority.UseBorders = false;
             this.tableCell19.Text = "Code Conflit";
-            this.tableCell19.Weight = 0.12935587912289356D;
+            this.tableCell19.Weight = 0.071091191160504774D;
             // 
             // tableCell20
             // 
@@ -1093,7 +1110,7 @@
             this.tableCell20.Name = "tableCell20";
             this.tableCell20.StyleName = "DetailCaption1";
             this.tableCell20.Text = "Partie";
-            this.tableCell20.Weight = 0.072160167498800123D;
+            this.tableCell20.Weight = 0.118685680189702D;
             // 
             // tableCell21
             // 
@@ -1101,7 +1118,7 @@
             this.tableCell21.Name = "tableCell21";
             this.tableCell21.StyleName = "DetailCaption1";
             this.tableCell21.Text = "id menage";
-            this.tableCell21.Weight = 0.11132334425994561D;
+            this.tableCell21.Weight = 0.12306251953143253D;
             // 
             // tableCell22
             // 
@@ -1189,7 +1206,7 @@
             this.tableCell27.StyleName = "DetailData1";
             this.tableCell27.StylePriority.UseBorders = false;
             this.tableCell27.StylePriority.UseFont = false;
-            this.tableCell27.Weight = 0.12935587912289356D;
+            this.tableCell27.Weight = 0.071432490894057885D;
             // 
             // tableCell28
             // 
@@ -1200,7 +1217,7 @@
             this.tableCell28.Name = "tableCell28";
             this.tableCell28.StyleName = "DetailData1";
             this.tableCell28.StylePriority.UseFont = false;
-            this.tableCell28.Weight = 0.072160167498800123D;
+            this.tableCell28.Weight = 0.11868568733583641D;
             // 
             // tableCell29
             // 
@@ -1211,7 +1228,7 @@
             this.tableCell29.Name = "tableCell29";
             this.tableCell29.StyleName = "DetailData1";
             this.tableCell29.StylePriority.UseFont = false;
-            this.tableCell29.Weight = 0.11132334425994561D;
+            this.tableCell29.Weight = 0.122721212651745D;
             // 
             // tableCell30
             // 
@@ -1311,11 +1328,11 @@
             // label3
             // 
             this.label3.Dpi = 254F;
-            this.label3.LocationFloat = new DevExpress.Utils.PointFloat(916.6194F, 8.636001F);
+            this.label3.LocationFloat = new DevExpress.Utils.PointFloat(773.7443F, 8.63594F);
             this.label3.Name = "label3";
-            this.label3.SizeF = new System.Drawing.SizeF(84.67433F, 37.80647F);
+            this.label3.SizeF = new System.Drawing.SizeF(227.5494F, 37.80647F);
             this.label3.StyleName = "TotalCaption1";
-            this.label3.Text = "SUM";
+            this.label3.Text = "Total Hommes";
             // 
             // label4
             // 
@@ -1328,8 +1345,9 @@
             this.label4.SizeF = new System.Drawing.SizeF(344.4841F, 37.80647F);
             this.label4.StyleName = "TotalData1";
             this.label4.StylePriority.UseTextAlignment = false;
-            xrSummary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label4.Summary = xrSummary1;
+            xrSummary6.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label4.Summary = xrSummary6;
+            this.label4.Text = "Total Hommes";
             this.label4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label4.WordWrap = false;
             // 
@@ -1353,8 +1371,8 @@
             this.label6.SizeF = new System.Drawing.SizeF(335.6912F, 37.80647F);
             this.label6.StyleName = "TotalData1";
             this.label6.StylePriority.UseTextAlignment = false;
-            xrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label6.Summary = xrSummary2;
+            xrSummary7.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label6.Summary = xrSummary7;
             this.label6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label6.WordWrap = false;
             // 
@@ -1378,8 +1396,8 @@
             this.label8.SizeF = new System.Drawing.SizeF(335.6653F, 37.80647F);
             this.label8.StyleName = "TotalData1";
             this.label8.StylePriority.UseTextAlignment = false;
-            xrSummary3.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label8.Summary = xrSummary3;
+            xrSummary8.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label8.Summary = xrSummary8;
             this.label8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label8.WordWrap = false;
             // 
@@ -1403,8 +1421,8 @@
             this.label10.SizeF = new System.Drawing.SizeF(256.1924F, 37.80647F);
             this.label10.StyleName = "TotalData1";
             this.label10.StylePriority.UseTextAlignment = false;
-            xrSummary4.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label10.Summary = xrSummary4;
+            xrSummary9.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label10.Summary = xrSummary9;
             this.label10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label10.WordWrap = false;
             // 
@@ -1428,8 +1446,8 @@
             this.label12.SizeF = new System.Drawing.SizeF(317.9761F, 37.80647F);
             this.label12.StyleName = "TotalData1";
             this.label12.StylePriority.UseTextAlignment = false;
-            xrSummary5.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label12.Summary = xrSummary5;
+            xrSummary10.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label12.Summary = xrSummary10;
             this.label12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label12.WordWrap = false;
             // 
@@ -1484,8 +1502,8 @@
             this.label15.SizeF = new System.Drawing.SizeF(344.4841F, 37.80647F);
             this.label15.StyleName = "TotalData1";
             this.label15.StylePriority.UseTextAlignment = false;
-            xrSummary6.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label15.Summary = xrSummary6;
+            xrSummary11.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label15.Summary = xrSummary11;
             this.label15.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label15.WordWrap = false;
             // 
@@ -1509,8 +1527,8 @@
             this.label17.SizeF = new System.Drawing.SizeF(335.6912F, 37.80647F);
             this.label17.StyleName = "TotalData1";
             this.label17.StylePriority.UseTextAlignment = false;
-            xrSummary7.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label17.Summary = xrSummary7;
+            xrSummary12.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label17.Summary = xrSummary12;
             this.label17.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label17.WordWrap = false;
             // 
@@ -1534,8 +1552,8 @@
             this.label19.SizeF = new System.Drawing.SizeF(335.6653F, 37.80647F);
             this.label19.StyleName = "TotalData1";
             this.label19.StylePriority.UseTextAlignment = false;
-            xrSummary8.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label19.Summary = xrSummary8;
+            xrSummary13.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label19.Summary = xrSummary13;
             this.label19.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label19.WordWrap = false;
             // 
@@ -1559,8 +1577,8 @@
             this.label21.SizeF = new System.Drawing.SizeF(256.1924F, 37.80647F);
             this.label21.StyleName = "TotalData1";
             this.label21.StylePriority.UseTextAlignment = false;
-            xrSummary9.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label21.Summary = xrSummary9;
+            xrSummary14.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label21.Summary = xrSummary14;
             this.label21.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label21.WordWrap = false;
             // 
@@ -1584,8 +1602,8 @@
             this.label23.SizeF = new System.Drawing.SizeF(317.9761F, 37.80647F);
             this.label23.StyleName = "TotalData1";
             this.label23.StylePriority.UseTextAlignment = false;
-            xrSummary10.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label23.Summary = xrSummary10;
+            xrSummary15.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label23.Summary = xrSummary15;
             this.label23.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label23.WordWrap = false;
             // 
@@ -1640,8 +1658,8 @@
             this.label26.SizeF = new System.Drawing.SizeF(344.4841F, 37.80647F);
             this.label26.StyleName = "TotalData1";
             this.label26.StylePriority.UseTextAlignment = false;
-            xrSummary11.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label26.Summary = xrSummary11;
+            xrSummary16.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label26.Summary = xrSummary16;
             this.label26.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label26.WordWrap = false;
             // 
@@ -1665,8 +1683,8 @@
             this.label28.SizeF = new System.Drawing.SizeF(335.6912F, 37.80647F);
             this.label28.StyleName = "TotalData1";
             this.label28.StylePriority.UseTextAlignment = false;
-            xrSummary12.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label28.Summary = xrSummary12;
+            xrSummary17.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label28.Summary = xrSummary17;
             this.label28.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label28.WordWrap = false;
             // 
@@ -1690,8 +1708,8 @@
             this.label30.SizeF = new System.Drawing.SizeF(335.6653F, 37.80647F);
             this.label30.StyleName = "TotalData1";
             this.label30.StylePriority.UseTextAlignment = false;
-            xrSummary13.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label30.Summary = xrSummary13;
+            xrSummary18.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label30.Summary = xrSummary18;
             this.label30.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label30.WordWrap = false;
             // 
@@ -1715,8 +1733,8 @@
             this.label32.SizeF = new System.Drawing.SizeF(256.1924F, 37.80647F);
             this.label32.StyleName = "TotalData1";
             this.label32.StylePriority.UseTextAlignment = false;
-            xrSummary14.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label32.Summary = xrSummary14;
+            xrSummary19.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label32.Summary = xrSummary19;
             this.label32.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label32.WordWrap = false;
             // 
@@ -1740,8 +1758,8 @@
             this.label34.SizeF = new System.Drawing.SizeF(317.9761F, 37.80647F);
             this.label34.StyleName = "TotalData1";
             this.label34.StylePriority.UseTextAlignment = false;
-            xrSummary15.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label34.Summary = xrSummary15;
+            xrSummary20.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label34.Summary = xrSummary20;
             this.label34.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label34.WordWrap = false;
             // 
@@ -1796,8 +1814,8 @@
             this.label37.SizeF = new System.Drawing.SizeF(344.4841F, 37.80647F);
             this.label37.StyleName = "TotalData1";
             this.label37.StylePriority.UseTextAlignment = false;
-            xrSummary16.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label37.Summary = xrSummary16;
+            xrSummary21.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label37.Summary = xrSummary21;
             this.label37.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label37.WordWrap = false;
             // 
@@ -1821,8 +1839,8 @@
             this.label39.SizeF = new System.Drawing.SizeF(335.6912F, 37.80647F);
             this.label39.StyleName = "TotalData1";
             this.label39.StylePriority.UseTextAlignment = false;
-            xrSummary17.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label39.Summary = xrSummary17;
+            xrSummary22.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label39.Summary = xrSummary22;
             this.label39.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label39.WordWrap = false;
             // 
@@ -1846,8 +1864,8 @@
             this.label41.SizeF = new System.Drawing.SizeF(335.6653F, 37.80647F);
             this.label41.StyleName = "TotalData1";
             this.label41.StylePriority.UseTextAlignment = false;
-            xrSummary18.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label41.Summary = xrSummary18;
+            xrSummary23.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label41.Summary = xrSummary23;
             this.label41.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label41.WordWrap = false;
             // 
@@ -1871,8 +1889,8 @@
             this.label43.SizeF = new System.Drawing.SizeF(256.1924F, 37.80647F);
             this.label43.StyleName = "TotalData1";
             this.label43.StylePriority.UseTextAlignment = false;
-            xrSummary19.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label43.Summary = xrSummary19;
+            xrSummary24.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label43.Summary = xrSummary24;
             this.label43.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label43.WordWrap = false;
             // 
@@ -1896,8 +1914,8 @@
             this.label45.SizeF = new System.Drawing.SizeF(317.9761F, 37.80647F);
             this.label45.StyleName = "TotalData1";
             this.label45.StylePriority.UseTextAlignment = false;
-            xrSummary20.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label45.Summary = xrSummary20;
+            xrSummary25.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label45.Summary = xrSummary25;
             this.label45.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label45.WordWrap = false;
             // 
@@ -1952,8 +1970,8 @@
             this.label48.SizeF = new System.Drawing.SizeF(344.4841F, 37.80647F);
             this.label48.StyleName = "TotalData1";
             this.label48.StylePriority.UseTextAlignment = false;
-            xrSummary21.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label48.Summary = xrSummary21;
+            xrSummary26.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label48.Summary = xrSummary26;
             this.label48.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label48.WordWrap = false;
             // 
@@ -1977,8 +1995,8 @@
             this.label50.SizeF = new System.Drawing.SizeF(335.6912F, 37.80647F);
             this.label50.StyleName = "TotalData1";
             this.label50.StylePriority.UseTextAlignment = false;
-            xrSummary22.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label50.Summary = xrSummary22;
+            xrSummary27.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label50.Summary = xrSummary27;
             this.label50.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label50.WordWrap = false;
             // 
@@ -2002,8 +2020,8 @@
             this.label52.SizeF = new System.Drawing.SizeF(335.6653F, 37.80647F);
             this.label52.StyleName = "TotalData1";
             this.label52.StylePriority.UseTextAlignment = false;
-            xrSummary23.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label52.Summary = xrSummary23;
+            xrSummary28.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label52.Summary = xrSummary28;
             this.label52.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label52.WordWrap = false;
             // 
@@ -2027,8 +2045,8 @@
             this.label54.SizeF = new System.Drawing.SizeF(256.1924F, 37.80647F);
             this.label54.StyleName = "TotalData1";
             this.label54.StylePriority.UseTextAlignment = false;
-            xrSummary24.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label54.Summary = xrSummary24;
+            xrSummary29.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label54.Summary = xrSummary29;
             this.label54.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label54.WordWrap = false;
             // 
@@ -2052,8 +2070,8 @@
             this.label56.SizeF = new System.Drawing.SizeF(317.9761F, 37.80647F);
             this.label56.StyleName = "TotalData1";
             this.label56.StylePriority.UseTextAlignment = false;
-            xrSummary25.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label56.Summary = xrSummary25;
+            xrSummary30.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label56.Summary = xrSummary30;
             this.label56.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label56.WordWrap = false;
             // 
@@ -2108,8 +2126,8 @@
             this.label59.SizeF = new System.Drawing.SizeF(344.4841F, 37.80647F);
             this.label59.StyleName = "TotalData1";
             this.label59.StylePriority.UseTextAlignment = false;
-            xrSummary26.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label59.Summary = xrSummary26;
+            xrSummary31.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label59.Summary = xrSummary31;
             this.label59.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label59.WordWrap = false;
             // 
@@ -2133,8 +2151,8 @@
             this.label61.SizeF = new System.Drawing.SizeF(335.6912F, 37.80647F);
             this.label61.StyleName = "TotalData1";
             this.label61.StylePriority.UseTextAlignment = false;
-            xrSummary27.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label61.Summary = xrSummary27;
+            xrSummary32.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label61.Summary = xrSummary32;
             this.label61.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label61.WordWrap = false;
             // 
@@ -2158,8 +2176,8 @@
             this.label63.SizeF = new System.Drawing.SizeF(335.6653F, 37.80647F);
             this.label63.StyleName = "TotalData1";
             this.label63.StylePriority.UseTextAlignment = false;
-            xrSummary28.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label63.Summary = xrSummary28;
+            xrSummary33.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label63.Summary = xrSummary33;
             this.label63.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label63.WordWrap = false;
             // 
@@ -2183,8 +2201,8 @@
             this.label65.SizeF = new System.Drawing.SizeF(256.1924F, 37.80647F);
             this.label65.StyleName = "TotalData1";
             this.label65.StylePriority.UseTextAlignment = false;
-            xrSummary29.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label65.Summary = xrSummary29;
+            xrSummary34.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label65.Summary = xrSummary34;
             this.label65.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label65.WordWrap = false;
             // 
@@ -2208,8 +2226,8 @@
             this.label67.SizeF = new System.Drawing.SizeF(317.9761F, 37.80647F);
             this.label67.StyleName = "TotalData1";
             this.label67.StylePriority.UseTextAlignment = false;
-            xrSummary30.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label67.Summary = xrSummary30;
+            xrSummary35.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label67.Summary = xrSummary35;
             this.label67.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label67.WordWrap = false;
             // 
@@ -2264,8 +2282,8 @@
             this.label70.SizeF = new System.Drawing.SizeF(344.4841F, 37.80647F);
             this.label70.StyleName = "TotalData1";
             this.label70.StylePriority.UseTextAlignment = false;
-            xrSummary31.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label70.Summary = xrSummary31;
+            xrSummary36.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label70.Summary = xrSummary36;
             this.label70.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label70.WordWrap = false;
             // 
@@ -2289,8 +2307,8 @@
             this.label72.SizeF = new System.Drawing.SizeF(335.6912F, 37.80647F);
             this.label72.StyleName = "TotalData1";
             this.label72.StylePriority.UseTextAlignment = false;
-            xrSummary32.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label72.Summary = xrSummary32;
+            xrSummary37.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label72.Summary = xrSummary37;
             this.label72.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label72.WordWrap = false;
             // 
@@ -2314,8 +2332,8 @@
             this.label74.SizeF = new System.Drawing.SizeF(335.6653F, 37.80647F);
             this.label74.StyleName = "TotalData1";
             this.label74.StylePriority.UseTextAlignment = false;
-            xrSummary33.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label74.Summary = xrSummary33;
+            xrSummary38.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label74.Summary = xrSummary38;
             this.label74.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label74.WordWrap = false;
             // 
@@ -2339,8 +2357,8 @@
             this.label76.SizeF = new System.Drawing.SizeF(256.1924F, 37.80647F);
             this.label76.StyleName = "TotalData1";
             this.label76.StylePriority.UseTextAlignment = false;
-            xrSummary34.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label76.Summary = xrSummary34;
+            xrSummary39.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label76.Summary = xrSummary39;
             this.label76.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label76.WordWrap = false;
             // 
@@ -2364,8 +2382,8 @@
             this.label78.SizeF = new System.Drawing.SizeF(317.9761F, 37.80647F);
             this.label78.StyleName = "TotalData1";
             this.label78.StylePriority.UseTextAlignment = false;
-            xrSummary35.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label78.Summary = xrSummary35;
+            xrSummary40.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label78.Summary = xrSummary40;
             this.label78.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label78.WordWrap = false;
             // 
@@ -2379,162 +2397,6 @@
             this.label79.StylePriority.UseTextAlignment = false;
             this.label79.Text = "Chefferie [Chefferie]";
             this.label79.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.label80,
-            this.label81,
-            this.label82,
-            this.label83,
-            this.label84,
-            this.label85,
-            this.label86,
-            this.label87,
-            this.label88,
-            this.label89,
-            this.label90});
-            this.panel8.Dpi = 254F;
-            this.panel8.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
-            this.panel8.Name = "panel8";
-            this.panel8.SizeF = new System.Drawing.SizeF(2930F, 142.6689F);
-            this.panel8.StyleName = "TotalBackground1";
-            // 
-            // label80
-            // 
-            this.label80.Dpi = 254F;
-            this.label80.LocationFloat = new DevExpress.Utils.PointFloat(916.6194F, 8.636001F);
-            this.label80.Name = "label80";
-            this.label80.SizeF = new System.Drawing.SizeF(84.67433F, 37.80647F);
-            this.label80.StyleName = "TotalCaption1";
-            this.label80.Text = "SUM";
-            // 
-            // label81
-            // 
-            this.label81.CanGrow = false;
-            this.label81.Dpi = 254F;
-            this.label81.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([Total Hommes])")});
-            this.label81.LocationFloat = new DevExpress.Utils.PointFloat(1001.294F, 8.636001F);
-            this.label81.Name = "label81";
-            this.label81.SizeF = new System.Drawing.SizeF(344.4841F, 37.80647F);
-            this.label81.StyleName = "TotalData1";
-            this.label81.StylePriority.UseTextAlignment = false;
-            xrSummary36.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label81.Summary = xrSummary36;
-            this.label81.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.label81.WordWrap = false;
-            // 
-            // label82
-            // 
-            this.label82.Dpi = 254F;
-            this.label82.LocationFloat = new DevExpress.Utils.PointFloat(1345.778F, 8.636001F);
-            this.label82.Name = "label82";
-            this.label82.SizeF = new System.Drawing.SizeF(84.67433F, 37.80647F);
-            this.label82.StyleName = "TotalCaption1";
-            this.label82.Text = "SUM";
-            // 
-            // label83
-            // 
-            this.label83.CanGrow = false;
-            this.label83.Dpi = 254F;
-            this.label83.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([Total Femmes])")});
-            this.label83.LocationFloat = new DevExpress.Utils.PointFloat(1430.452F, 8.636001F);
-            this.label83.Name = "label83";
-            this.label83.SizeF = new System.Drawing.SizeF(335.6912F, 37.80647F);
-            this.label83.StyleName = "TotalData1";
-            this.label83.StylePriority.UseTextAlignment = false;
-            xrSummary37.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label83.Summary = xrSummary37;
-            this.label83.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.label83.WordWrap = false;
-            // 
-            // label84
-            // 
-            this.label84.Dpi = 254F;
-            this.label84.LocationFloat = new DevExpress.Utils.PointFloat(1766.143F, 8.636001F);
-            this.label84.Name = "label84";
-            this.label84.SizeF = new System.Drawing.SizeF(84.67433F, 37.80647F);
-            this.label84.StyleName = "TotalCaption1";
-            this.label84.Text = "SUM";
-            // 
-            // label85
-            // 
-            this.label85.CanGrow = false;
-            this.label85.Dpi = 254F;
-            this.label85.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([Total Garcons])")});
-            this.label85.LocationFloat = new DevExpress.Utils.PointFloat(1850.818F, 8.636001F);
-            this.label85.Name = "label85";
-            this.label85.SizeF = new System.Drawing.SizeF(335.6653F, 37.80647F);
-            this.label85.StyleName = "TotalData1";
-            this.label85.StylePriority.UseTextAlignment = false;
-            xrSummary38.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label85.Summary = xrSummary38;
-            this.label85.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.label85.WordWrap = false;
-            // 
-            // label86
-            // 
-            this.label86.Dpi = 254F;
-            this.label86.LocationFloat = new DevExpress.Utils.PointFloat(2186.483F, 8.636001F);
-            this.label86.Name = "label86";
-            this.label86.SizeF = new System.Drawing.SizeF(84.67433F, 37.80647F);
-            this.label86.StyleName = "TotalCaption1";
-            this.label86.Text = "SUM";
-            // 
-            // label87
-            // 
-            this.label87.CanGrow = false;
-            this.label87.Dpi = 254F;
-            this.label87.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([Total Filles])")});
-            this.label87.LocationFloat = new DevExpress.Utils.PointFloat(2271.157F, 8.636001F);
-            this.label87.Name = "label87";
-            this.label87.SizeF = new System.Drawing.SizeF(256.1924F, 37.80647F);
-            this.label87.StyleName = "TotalData1";
-            this.label87.StylePriority.UseTextAlignment = false;
-            xrSummary39.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label87.Summary = xrSummary39;
-            this.label87.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.label87.WordWrap = false;
-            // 
-            // label88
-            // 
-            this.label88.Dpi = 254F;
-            this.label88.LocationFloat = new DevExpress.Utils.PointFloat(2527.35F, 8.636001F);
-            this.label88.Name = "label88";
-            this.label88.SizeF = new System.Drawing.SizeF(84.67433F, 37.80647F);
-            this.label88.StyleName = "TotalCaption1";
-            this.label88.Text = "SUM";
-            // 
-            // label89
-            // 
-            this.label89.CanGrow = false;
-            this.label89.Dpi = 254F;
-            this.label89.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([Total Menage])")});
-            this.label89.LocationFloat = new DevExpress.Utils.PointFloat(2612.024F, 8.636001F);
-            this.label89.Name = "label89";
-            this.label89.SizeF = new System.Drawing.SizeF(317.9761F, 37.80647F);
-            this.label89.StyleName = "TotalData1";
-            this.label89.StylePriority.UseTextAlignment = false;
-            xrSummary40.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
-            this.label89.Summary = xrSummary40;
-            this.label89.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.label89.WordWrap = false;
-            // 
-            // label90
-            // 
-            this.label90.Dpi = 254F;
-            this.label90.LocationFloat = new DevExpress.Utils.PointFloat(15.24F, 75.65247F);
-            this.label90.Name = "label90";
-            this.label90.SizeF = new System.Drawing.SizeF(2899.52F, 37.80647F);
-            this.label90.StyleName = "TotalCaption1";
-            this.label90.StylePriority.UseTextAlignment = false;
-            this.label90.Text = "Territoire [Territoire]";
-            this.label90.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
             // panel9
             // 
@@ -2836,6 +2698,221 @@
             this.label111.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label111.WordWrap = false;
             // 
+            // xrPictureBox1
+            // 
+            this.xrPictureBox1.Dpi = 254F;
+            this.xrPictureBox1.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource(global::MediationDB.Properties.Resources.Picture1, true);
+            this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(2250.28F, 25.00001F);
+            this.xrPictureBox1.Name = "xrPictureBox1";
+            this.xrPictureBox1.SizeF = new System.Drawing.SizeF(655.7205F, 216.4293F);
+            this.xrPictureBox1.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
+            // 
+            // xrPictureBox2
+            // 
+            this.xrPictureBox2.Dpi = 254F;
+            this.xrPictureBox2.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource(global::MediationDB.Properties.Resources.ISSSS, true);
+            this.xrPictureBox2.LocationFloat = new DevExpress.Utils.PointFloat(15.24001F, 10.98334F);
+            this.xrPictureBox2.Name = "xrPictureBox2";
+            this.xrPictureBox2.SizeF = new System.Drawing.SizeF(767.9267F, 230.446F);
+            this.xrPictureBox2.Sizing = DevExpress.XtraPrinting.ImageSizeMode.StretchImage;
+            // 
+            // xrLabel1
+            // 
+            this.xrLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.xrLabel1.Dpi = 254F;
+            this.xrLabel1.Font = new System.Drawing.Font("Century Gothic", 18F);
+            this.xrLabel1.ForeColor = System.Drawing.Color.White;
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(842.5361F, 88.79166F);
+            this.xrLabel1.Name = "xrLabel1";
+            this.xrLabel1.SizeF = new System.Drawing.SizeF(1293.443F, 111.125F);
+            this.xrLabel1.StyleName = "Title";
+            this.xrLabel1.StylePriority.UseBackColor = false;
+            this.xrLabel1.StylePriority.UseFont = false;
+            this.xrLabel1.StylePriority.UseForeColor = false;
+            this.xrLabel1.StylePriority.UseTextAlignment = false;
+            this.xrLabel1.Text = "Informations générales sur les conflits";
+            this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // label81
+            // 
+            this.label81.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label81.CanGrow = false;
+            this.label81.Dpi = 254F;
+            this.label81.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([Total Hommes])")});
+            this.label81.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.label81.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.label81.LocationFloat = new DevExpress.Utils.PointFloat(1294.86F, 78.80414F);
+            this.label81.Name = "label81";
+            this.label81.SizeF = new System.Drawing.SizeF(437.0885F, 56.3273F);
+            this.label81.StyleName = "TotalData1";
+            this.label81.StylePriority.UseBackColor = false;
+            this.label81.StylePriority.UseFont = false;
+            this.label81.StylePriority.UseForeColor = false;
+            this.label81.StylePriority.UseTextAlignment = false;
+            xrSummary5.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label81.Summary = xrSummary5;
+            this.label81.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.label81.WordWrap = false;
+            // 
+            // label83
+            // 
+            this.label83.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label83.CanGrow = false;
+            this.label83.Dpi = 254F;
+            this.label83.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([Total Femmes])")});
+            this.label83.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.label83.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.label83.LocationFloat = new DevExpress.Utils.PointFloat(1294.86F, 178.2874F);
+            this.label83.Name = "label83";
+            this.label83.SizeF = new System.Drawing.SizeF(437.0885F, 56.32732F);
+            this.label83.StyleName = "TotalData1";
+            this.label83.StylePriority.UseBackColor = false;
+            this.label83.StylePriority.UseFont = false;
+            this.label83.StylePriority.UseForeColor = false;
+            this.label83.StylePriority.UseTextAlignment = false;
+            xrSummary4.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label83.Summary = xrSummary4;
+            this.label83.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.label83.WordWrap = false;
+            // 
+            // label85
+            // 
+            this.label85.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label85.CanGrow = false;
+            this.label85.Dpi = 254F;
+            this.label85.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([Total Garcons])")});
+            this.label85.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.label85.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.label85.LocationFloat = new DevExpress.Utils.PointFloat(2271.157F, 74.61883F);
+            this.label85.Name = "label85";
+            this.label85.SizeF = new System.Drawing.SizeF(512.9365F, 56.32732F);
+            this.label85.StyleName = "TotalData1";
+            this.label85.StylePriority.UseBackColor = false;
+            this.label85.StylePriority.UseFont = false;
+            this.label85.StylePriority.UseForeColor = false;
+            this.label85.StylePriority.UseTextAlignment = false;
+            xrSummary3.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label85.Summary = xrSummary3;
+            this.label85.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.label85.WordWrap = false;
+            // 
+            // label87
+            // 
+            this.label87.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label87.CanGrow = false;
+            this.label87.Dpi = 254F;
+            this.label87.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([Total Filles])")});
+            this.label87.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.label87.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.label87.LocationFloat = new DevExpress.Utils.PointFloat(2271.157F, 176.1948F);
+            this.label87.Name = "label87";
+            this.label87.SizeF = new System.Drawing.SizeF(512.9365F, 56.3273F);
+            this.label87.StyleName = "TotalData1";
+            this.label87.StylePriority.UseBackColor = false;
+            this.label87.StylePriority.UseFont = false;
+            this.label87.StylePriority.UseForeColor = false;
+            this.label87.StylePriority.UseTextAlignment = false;
+            xrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label87.Summary = xrSummary2;
+            this.label87.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.label87.WordWrap = false;
+            // 
+            // label89
+            // 
+            this.label89.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label89.CanGrow = false;
+            this.label89.Dpi = 254F;
+            this.label89.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([Total Menage])")});
+            this.label89.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.label89.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.label89.LocationFloat = new DevExpress.Utils.PointFloat(146.1227F, 157.7736F);
+            this.label89.Name = "label89";
+            this.label89.SizeF = new System.Drawing.SizeF(473.6042F, 56.32732F);
+            this.label89.StyleName = "TotalData1";
+            this.label89.StylePriority.UseBackColor = false;
+            this.label89.StylePriority.UseFont = false;
+            this.label89.StylePriority.UseForeColor = false;
+            this.label89.StylePriority.UseTextAlignment = false;
+            xrSummary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
+            this.label89.Summary = xrSummary1;
+            this.label89.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.label89.WordWrap = false;
+            // 
+            // xrLabel2
+            // 
+            this.xrLabel2.Dpi = 254F;
+            this.xrLabel2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(773.7443F, 76.71156F);
+            this.xrLabel2.Multiline = true;
+            this.xrLabel2.Name = "xrLabel2";
+            this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrLabel2.SizeF = new System.Drawing.SizeF(521.1161F, 58.41998F);
+            this.xrLabel2.StylePriority.UseFont = false;
+            this.xrLabel2.StylePriority.UseTextAlignment = false;
+            this.xrLabel2.Text = "Total de menages hommes";
+            this.xrLabel2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel3
+            // 
+            this.xrLabel3.Dpi = 254F;
+            this.xrLabel3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(773.7443F, 176.1948F);
+            this.xrLabel3.Multiline = true;
+            this.xrLabel3.Name = "xrLabel3";
+            this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.xrLabel3.SizeF = new System.Drawing.SizeF(521.1161F, 58.41998F);
+            this.xrLabel3.StylePriority.UseFont = false;
+            this.xrLabel3.StylePriority.UseTextAlignment = false;
+            this.xrLabel3.Text = "Total de menages femmes";
+            this.xrLabel3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel4
+            // 
+            this.xrLabel4.Dpi = 254F;
+            this.xrLabel4.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(1797.553F, 74.61875F);
+            this.xrLabel4.Multiline = true;
+            this.xrLabel4.Name = "xrLabel4";
+            this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.xrLabel4.SizeF = new System.Drawing.SizeF(473.6041F, 58.41998F);
+            this.xrLabel4.StylePriority.UseFont = false;
+            this.xrLabel4.StylePriority.UseTextAlignment = false;
+            this.xrLabel4.Text = "Total de menages garcons";
+            this.xrLabel4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel5
+            // 
+            this.xrLabel5.Dpi = 254F;
+            this.xrLabel5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(1797.553F, 174.102F);
+            this.xrLabel5.Multiline = true;
+            this.xrLabel5.Name = "xrLabel5";
+            this.xrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.xrLabel5.SizeF = new System.Drawing.SizeF(473.6041F, 58.41998F);
+            this.xrLabel5.StylePriority.UseFont = false;
+            this.xrLabel5.StylePriority.UseTextAlignment = false;
+            this.xrLabel5.Text = "Total de menages filles";
+            this.xrLabel5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrLabel6
+            // 
+            this.xrLabel6.Dpi = 254F;
+            this.xrLabel6.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(83.44205F, 84.45503F);
+            this.xrLabel6.Multiline = true;
+            this.xrLabel6.Name = "xrLabel6";
+            this.xrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.xrLabel6.SizeF = new System.Drawing.SizeF(607.1204F, 58.41998F);
+            this.xrLabel6.StylePriority.UseFont = false;
+            this.xrLabel6.StylePriority.UseTextAlignment = false;
+            this.xrLabel6.Text = "Total de menages dans le territoire";
+            this.xrLabel6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
             // rpt_rapport_general_sur_conflit
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -2871,7 +2948,7 @@
             this.Dpi = 254F;
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.Landscape = true;
-            this.Margins = new System.Drawing.Printing.Margins(19, 20, 20, 74);
+            this.Margins = new System.Drawing.Printing.Margins(19, 20, 290, 74);
             this.PageHeight = 2100;
             this.PageWidth = 2970;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
@@ -2930,7 +3007,6 @@
         private DevExpress.XtraReports.UI.XRPageInfo pageInfo1;
         private DevExpress.XtraReports.UI.XRPageInfo pageInfo2;
         private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
-        private DevExpress.XtraReports.UI.XRLabel label1;
         private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader1;
         private DevExpress.XtraReports.UI.XRTable table1;
         private DevExpress.XtraReports.UI.XRTableRow tableRow1;
@@ -3092,18 +3168,6 @@
         private DevExpress.XtraReports.UI.XRLabel label78;
         private DevExpress.XtraReports.UI.XRLabel label79;
         private DevExpress.XtraReports.UI.GroupFooterBand GroupFooter9;
-        private DevExpress.XtraReports.UI.XRPanel panel8;
-        private DevExpress.XtraReports.UI.XRLabel label80;
-        private DevExpress.XtraReports.UI.XRLabel label81;
-        private DevExpress.XtraReports.UI.XRLabel label82;
-        private DevExpress.XtraReports.UI.XRLabel label83;
-        private DevExpress.XtraReports.UI.XRLabel label84;
-        private DevExpress.XtraReports.UI.XRLabel label85;
-        private DevExpress.XtraReports.UI.XRLabel label86;
-        private DevExpress.XtraReports.UI.XRLabel label87;
-        private DevExpress.XtraReports.UI.XRLabel label88;
-        private DevExpress.XtraReports.UI.XRLabel label89;
-        private DevExpress.XtraReports.UI.XRLabel label90;
         private DevExpress.XtraReports.UI.GroupFooterBand GroupFooter10;
         private DevExpress.XtraReports.UI.XRPanel panel9;
         private DevExpress.XtraReports.UI.XRLabel label91;
@@ -3129,5 +3193,18 @@
         private DevExpress.XtraReports.UI.XRLabel label109;
         private DevExpress.XtraReports.UI.XRLabel label110;
         private DevExpress.XtraReports.UI.XRLabel label111;
+        private DevExpress.XtraReports.UI.XRPictureBox xrPictureBox1;
+        private DevExpress.XtraReports.UI.XRPictureBox xrPictureBox2;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel1;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel6;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel5;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel4;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel3;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel2;
+        private DevExpress.XtraReports.UI.XRLabel label89;
+        private DevExpress.XtraReports.UI.XRLabel label87;
+        private DevExpress.XtraReports.UI.XRLabel label85;
+        private DevExpress.XtraReports.UI.XRLabel label83;
+        private DevExpress.XtraReports.UI.XRLabel label81;
     }
 }
