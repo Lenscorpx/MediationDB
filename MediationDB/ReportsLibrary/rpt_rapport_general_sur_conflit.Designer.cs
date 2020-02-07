@@ -464,7 +464,7 @@
             this.xrPictureBox1,
             this.xrPictureBox2});
             this.TopMargin.Dpi = 254F;
-            this.TopMargin.HeightF = 290F;
+            this.TopMargin.HeightF = 316.4583F;
             this.TopMargin.Name = "TopMargin";
             // 
             // BottomMargin
@@ -479,7 +479,7 @@
             // ReportHeader
             // 
             this.ReportHeader.Dpi = 254F;
-            this.ReportHeader.HeightF = 5.400026F;
+            this.ReportHeader.HeightF = 19.67088F;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // GroupHeader1
@@ -2360,7 +2360,7 @@
             this.xrLabel1.Dpi = 254F;
             this.xrLabel1.Font = new System.Drawing.Font("Century Gothic", 18F);
             this.xrLabel1.ForeColor = System.Drawing.Color.White;
-            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(842.5361F, 88.79166F);
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(850.4736F, 194.75F);
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.SizeF = new System.Drawing.SizeF(1293.443F, 111.125F);
             this.xrLabel1.StyleName = "Title";
@@ -2911,14 +2911,14 @@
             this.label48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.label48.LocationFloat = new DevExpress.Utils.PointFloat(1406.183F, 76.71156F);
             this.label48.Name = "label48";
-            this.label48.SizeF = new System.Drawing.SizeF(344.4841F, 56.32722F);
+            this.label48.SizeF = new System.Drawing.SizeF(444.6344F, 56.32722F);
             this.label48.StyleName = "TotalData1";
             this.label48.StylePriority.UseFont = false;
             this.label48.StylePriority.UseForeColor = false;
             this.label48.StylePriority.UseTextAlignment = false;
             xrSummary5.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
             this.label48.Summary = xrSummary5;
-            this.label48.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.label48.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.label48.WordWrap = false;
             // 
             // label50
@@ -2931,14 +2931,14 @@
             this.label50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.label50.LocationFloat = new DevExpress.Utils.PointFloat(1406.183F, 151.5109F);
             this.label50.Name = "label50";
-            this.label50.SizeF = new System.Drawing.SizeF(335.6913F, 64.26482F);
+            this.label50.SizeF = new System.Drawing.SizeF(447.672F, 64.26482F);
             this.label50.StyleName = "TotalData1";
             this.label50.StylePriority.UseFont = false;
             this.label50.StylePriority.UseForeColor = false;
             this.label50.StylePriority.UseTextAlignment = false;
             xrSummary4.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
             this.label50.Summary = xrSummary4;
-            this.label50.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.label50.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.label50.WordWrap = false;
             // 
             // label52
@@ -2951,14 +2951,14 @@
             this.label52.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.label52.LocationFloat = new DevExpress.Utils.PointFloat(2382.48F, 74.61883F);
             this.label52.Name = "label52";
-            this.label52.SizeF = new System.Drawing.SizeF(409.7485F, 58.41996F);
+            this.label52.SizeF = new System.Drawing.SizeF(510.2903F, 58.41996F);
             this.label52.StyleName = "TotalData1";
             this.label52.StylePriority.UseFont = false;
             this.label52.StylePriority.UseForeColor = false;
             this.label52.StylePriority.UseTextAlignment = false;
             xrSummary3.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
             this.label52.Summary = xrSummary3;
-            this.label52.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.label52.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.label52.WordWrap = false;
             // 
             // label54
@@ -2971,14 +2971,14 @@
             this.label54.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.label54.LocationFloat = new DevExpress.Utils.PointFloat(2382.48F, 155.6811F);
             this.label54.Name = "label54";
-            this.label54.SizeF = new System.Drawing.SizeF(420.2344F, 60.0947F);
+            this.label54.SizeF = new System.Drawing.SizeF(510.2903F, 60.0947F);
             this.label54.StyleName = "TotalData1";
             this.label54.StylePriority.UseFont = false;
             this.label54.StylePriority.UseForeColor = false;
             this.label54.StylePriority.UseTextAlignment = false;
             xrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
             this.label54.Summary = xrSummary2;
-            this.label54.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.label54.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.label54.WordWrap = false;
             // 
             // label56
@@ -3106,7 +3106,7 @@
             this.Dpi = 254F;
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.Landscape = true;
-            this.Margins = new System.Drawing.Printing.Margins(19, 20, 290, 74);
+            this.Margins = new System.Drawing.Printing.Margins(19, 20, 316, 74);
             this.PageHeight = 2100;
             this.PageWidth = 2970;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
