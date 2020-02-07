@@ -475,7 +475,7 @@
             this.pageInfo1,
             this.pageInfo2});
             this.BottomMargin.Dpi = 254F;
-            this.BottomMargin.HeightF = 74.42F;
+            this.BottomMargin.HeightF = 74F;
             this.BottomMargin.Name = "BottomMargin";
             // 
             // ReportHeader
@@ -596,8 +596,6 @@
             // 
             // GroupHeader10
             // 
-            this.GroupHeader10.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table10});
             this.GroupHeader10.Dpi = 254F;
             this.GroupHeader10.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
             this.GroupHeader10.HeightF = 71.12F;
@@ -607,9 +605,10 @@
             // Detail
             // 
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.table10,
             this.table11});
             this.Detail.Dpi = 254F;
-            this.Detail.HeightF = 63.42F;
+            this.Detail.HeightF = 146.398F;
             this.Detail.HierarchyPrintOptions.Indent = 50.8F;
             this.Detail.Name = "Detail";
             // 
@@ -1057,7 +1056,7 @@
             // table10
             // 
             this.table10.Dpi = 254F;
-            this.table10.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.table10.LocationFloat = new DevExpress.Utils.PointFloat(1F, 0F);
             this.table10.Name = "table10";
             this.table10.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.tableRow10});
@@ -1157,7 +1156,7 @@
             // table11
             // 
             this.table11.Dpi = 254F;
-            this.table11.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.table11.LocationFloat = new DevExpress.Utils.PointFloat(0F, 74.08334F);
             this.table11.Name = "table11";
             this.table11.OddStyleName = "DetailData3_Odd";
             this.table11.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
@@ -1185,9 +1184,11 @@
             this.tableCell27.Dpi = 254F;
             this.tableCell27.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Code Conflit]")});
+            this.tableCell27.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.tableCell27.Name = "tableCell27";
             this.tableCell27.StyleName = "DetailData1";
             this.tableCell27.StylePriority.UseBorders = false;
+            this.tableCell27.StylePriority.UseFont = false;
             this.tableCell27.Weight = 0.12935587912289356D;
             // 
             // tableCell28
@@ -1195,8 +1196,10 @@
             this.tableCell28.Dpi = 254F;
             this.tableCell28.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Partie]")});
+            this.tableCell28.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.tableCell28.Name = "tableCell28";
             this.tableCell28.StyleName = "DetailData1";
+            this.tableCell28.StylePriority.UseFont = false;
             this.tableCell28.Weight = 0.072160167498800123D;
             // 
             // tableCell29
@@ -1204,8 +1207,10 @@
             this.tableCell29.Dpi = 254F;
             this.tableCell29.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[id_menage]")});
+            this.tableCell29.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.tableCell29.Name = "tableCell29";
             this.tableCell29.StyleName = "DetailData1";
+            this.tableCell29.StylePriority.UseFont = false;
             this.tableCell29.Weight = 0.11132334425994561D;
             // 
             // tableCell30
@@ -1213,8 +1218,10 @@
             this.tableCell30.Dpi = 254F;
             this.tableCell30.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Total Hommes]")});
+            this.tableCell30.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.tableCell30.Name = "tableCell30";
             this.tableCell30.StyleName = "DetailData1";
+            this.tableCell30.StylePriority.UseFont = false;
             this.tableCell30.StylePriority.UseTextAlignment = false;
             this.tableCell30.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.tableCell30.Weight = 0.14647045981761944D;
@@ -1224,8 +1231,10 @@
             this.tableCell31.Dpi = 254F;
             this.tableCell31.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Total Femmes]")});
+            this.tableCell31.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.tableCell31.Name = "tableCell31";
             this.tableCell31.StyleName = "DetailData1";
+            this.tableCell31.StylePriority.UseFont = false;
             this.tableCell31.StylePriority.UseTextAlignment = false;
             this.tableCell31.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.tableCell31.Weight = 0.14346945700791916D;
@@ -1235,8 +1244,10 @@
             this.tableCell32.Dpi = 254F;
             this.tableCell32.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Total Garcons]")});
+            this.tableCell32.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.tableCell32.Name = "tableCell32";
             this.tableCell32.StyleName = "DetailData1";
+            this.tableCell32.StylePriority.UseFont = false;
             this.tableCell32.StylePriority.UseTextAlignment = false;
             this.tableCell32.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.tableCell32.Weight = 0.14346063503226322D;
@@ -1246,8 +1257,10 @@
             this.tableCell33.Dpi = 254F;
             this.tableCell33.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Total Filles]")});
+            this.tableCell33.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.tableCell33.Name = "tableCell33";
             this.tableCell33.StyleName = "DetailData1";
+            this.tableCell33.StylePriority.UseFont = false;
             this.tableCell33.StylePriority.UseTextAlignment = false;
             this.tableCell33.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.tableCell33.Weight = 0.11633678865920968D;
@@ -1257,8 +1270,10 @@
             this.tableCell34.Dpi = 254F;
             this.tableCell34.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Total Menage]")});
+            this.tableCell34.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.tableCell34.Name = "tableCell34";
             this.tableCell34.StyleName = "DetailData1";
+            this.tableCell34.StylePriority.UseFont = false;
             this.tableCell34.StylePriority.UseTextAlignment = false;
             this.tableCell34.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.tableCell34.Weight = 0.13742334151023891D;
@@ -2856,7 +2871,7 @@
             this.Dpi = 254F;
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.Landscape = true;
-            this.Margins = new System.Drawing.Printing.Margins(20, 20, 20, 74);
+            this.Margins = new System.Drawing.Printing.Margins(19, 20, 20, 74);
             this.PageHeight = 2100;
             this.PageWidth = 2970;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
