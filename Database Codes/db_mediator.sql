@@ -2371,4 +2371,7 @@ as
 		t_menages on t_parties.id_menage = t_menages.id_menage 
 			inner join
 		t_assignation_resolution on t_conflit.num_conflit = t_assignation_resolution.num_conflit
+		where
+			t_chefferie.id_territoire like 'Masisi'
+go
 
