@@ -74,6 +74,7 @@
             // 
             // bunifuImageButton1
             // 
+            this.bunifuImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.Fermer_window;
             this.bunifuImageButton1.ImageActive = null;
@@ -159,6 +160,7 @@
             // 
             // listBox1
             // 
+            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.listBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listBox1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -193,9 +195,7 @@
             // 
             // txt_code_conflit
             // 
-            this.txt_code_conflit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_code_conflit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_code_conflit.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_code_conflit.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_code_conflit.ForeColor = System.Drawing.Color.White;
@@ -216,9 +216,7 @@
             // 
             // txt_localite
             // 
-            this.txt_localite.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_localite.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_localite.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_localite.Enabled = false;
             this.txt_localite.Font = new System.Drawing.Font("Century Gothic", 9.75F);
@@ -240,9 +238,7 @@
             // 
             // txt_typesconflit
             // 
-            this.txt_typesconflit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_typesconflit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_typesconflit.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_typesconflit.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_typesconflit.ForeColor = System.Drawing.Color.White;
@@ -263,9 +259,7 @@
             // 
             // txt_nature_conflit
             // 
-            this.txt_nature_conflit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_nature_conflit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_nature_conflit.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_nature_conflit.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_nature_conflit.ForeColor = System.Drawing.Color.White;
@@ -286,9 +280,7 @@
             // 
             // txt_groupement
             // 
-            this.txt_groupement.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_groupement.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_groupement.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_groupement.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_groupement.ForeColor = System.Drawing.Color.White;
@@ -309,9 +301,7 @@
             // 
             // txt_etat
             // 
-            this.txt_etat.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_etat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_etat.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_etat.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_etat.ForeColor = System.Drawing.Color.White;
@@ -332,9 +322,7 @@
             // 
             // dt_conf_1
             // 
-            this.dt_conf_1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dt_conf_1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dt_conf_1.Location = new System.Drawing.Point(271, 202);
             this.dt_conf_1.MinimumSize = new System.Drawing.Size(0, 29);
             this.dt_conf_1.Name = "dt_conf_1";
@@ -345,9 +333,7 @@
             // 
             // label2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -360,9 +346,7 @@
             // 
             // dt_conf_2
             // 
-            this.dt_conf_2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dt_conf_2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dt_conf_2.Location = new System.Drawing.Point(464, 202);
             this.dt_conf_2.MinimumSize = new System.Drawing.Size(0, 29);
             this.dt_conf_2.Name = "dt_conf_2";
@@ -373,9 +357,7 @@
             // 
             // dt_resol_2
             // 
-            this.dt_resol_2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dt_resol_2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dt_resol_2.Location = new System.Drawing.Point(1058, 202);
             this.dt_resol_2.MinimumSize = new System.Drawing.Size(0, 29);
             this.dt_resol_2.Name = "dt_resol_2";
@@ -386,9 +368,7 @@
             // 
             // dt_resol_1
             // 
-            this.dt_resol_1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dt_resol_1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dt_resol_1.Location = new System.Drawing.Point(865, 202);
             this.dt_resol_1.MinimumSize = new System.Drawing.Size(0, 29);
             this.dt_resol_1.Name = "dt_resol_1";
@@ -399,9 +379,7 @@
             // 
             // label3
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -414,9 +392,7 @@
             // 
             // bunifuImageButton2
             // 
-            this.bunifuImageButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuImageButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuImageButton2.BackColor = System.Drawing.Color.White;
             this.bunifuImageButton2.Image = global::MediationDB.Properties.Resources.printer_104px;
             this.bunifuImageButton2.ImageActive = null;
@@ -432,9 +408,7 @@
             // bunifuFlatButton1
             // 
             this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuFlatButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuFlatButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton1.BorderRadius = 0;
@@ -473,9 +447,7 @@
             // btn_enregistrer
             // 
             this.btn_enregistrer.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.btn_enregistrer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_enregistrer.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_enregistrer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.btn_enregistrer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_enregistrer.BorderRadius = 0;
@@ -543,6 +515,7 @@
             this.Opacity = 0.97D;
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.pnl_head.ResumeLayout(false);
             this.pnl_head.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
