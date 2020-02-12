@@ -41,10 +41,10 @@ namespace MediationDB.FormLibrary
             {
                 count++;
                 Opacity = count * 0.10;
-                pictureBox1.Show();
+                pictureBox4.Show();
                 pictureBox2.Hide();
                 pictureBox3.Hide();
-                pictureBox4.Hide();
+                pictureBox1.Hide();
             }
         }
 
@@ -54,7 +54,7 @@ namespace MediationDB.FormLibrary
             pictureBox1.Hide();
             pictureBox3.Hide();
             pictureBox4.Hide();
-            if (buffer == 30)
+            if (buffer == 25)
             {
                 timer3.Start();
                 timer2.Stop();
@@ -71,7 +71,7 @@ namespace MediationDB.FormLibrary
             pictureBox1.Hide();
             pictureBox2.Hide();
             pictureBox4.Hide();
-            if (buffer == 30)
+            if (buffer == 25)
             {
                 timer4.Start();
                 timer3.Stop();
@@ -95,9 +95,10 @@ namespace MediationDB.FormLibrary
             {
                 count--;
                 Opacity = count * 0.10;
-                pictureBox3.Show();
+                pictureBox1.Show();
                 pictureBox2.Hide();
-                pictureBox1.Hide();
+                pictureBox4.Hide();
+                pictureBox3.Hide();
             }
         }
     }
