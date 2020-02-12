@@ -30,22 +30,73 @@ namespace MediationDB.FormLibrary
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-
+            if (Opacity == 1)
+            {
+                timer2.Start();
+                timer1.Stop();
+            }
+            else
+            {
+                count++;
+                Opacity = count * 0.10;
+                pictureBox1.Show();
+                pictureBox2.Hide();
+                pictureBox3.Hide();
+                pictureBox4.Hide();
+            }
         }
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-
+            pictureBox2.Show();
+            pictureBox1.Hide();
+            pictureBox3.Hide();
+            pictureBox4.Hide();
+            if (buffer == 30)
+            {
+                timer3.Start();
+                timer2.Stop();
+            }
+            else
+            {
+                buffer++;
+            }
         }
 
         private void timer3_Tick(object sender, EventArgs e)
         {
-
+            pictureBox3.Show();
+            pictureBox1.Hide();
+            pictureBox2.Hide();
+            pictureBox4.Hide();
+            if (buffer == 30)
+            {
+                timer4.Start();
+                timer3.Stop();
+            }
+            else
+            {
+                buffer++;
+            }
         }
 
         private void timer4_Tick(object sender, EventArgs e)
         {
-
+            if (Opacity == 0)
+            {
+                this.Hide();
+                var m = new frm_menu();
+                m.Show();
+                timer4.Stop();
+            }
+            else
+            {
+                count--;
+                Opacity = count * 0.10;
+                pictureBox3.Show();
+                pictureBox2.Hide();
+                pictureBox1.Hide();
+            }
         }
     }
 }
