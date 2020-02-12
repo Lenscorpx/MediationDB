@@ -12,6 +12,7 @@ namespace MediationDB.FormLibrary
 {
     public partial class frm_splash : Form
     {
+        int count = 0, buffer = 0;
         public frm_splash()
         {
             InitializeComponent();
@@ -23,6 +24,26 @@ namespace MediationDB.FormLibrary
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer4_Tick(object sender, EventArgs e)
         {
 
         }
