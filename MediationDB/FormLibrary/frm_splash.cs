@@ -16,6 +16,8 @@ namespace MediationDB.FormLibrary
         public frm_splash()
         {
             InitializeComponent();
+            Opacity = 0;
+            timer1.Start();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
