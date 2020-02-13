@@ -64,7 +64,7 @@ namespace MediationDB.FormLibrary
                 buffer++;
             }
         }
-
+            
         private void timer3_Tick(object sender, EventArgs e)
         {
             pictureBox3.Show();
