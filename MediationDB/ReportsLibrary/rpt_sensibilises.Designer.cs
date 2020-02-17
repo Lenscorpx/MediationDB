@@ -2371,7 +2371,7 @@
             this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(131.4407F, 96.49998F);
             this.xrLabel6.Name = "xrLabel6";
             this.xrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F);
-            this.xrLabel6.SizeF = new System.Drawing.SizeF(215.1986F, 25F);
+            this.xrLabel6.SizeF = new System.Drawing.SizeF(163.3654F, 25F);
             this.xrLabel6.StyleName = "DetailData1";
             this.xrLabel6.StylePriority.UseBackColor = false;
             this.xrLabel6.StylePriority.UseBorderColor = false;
@@ -2398,7 +2398,7 @@
             this.xrLabel7.LocationFloat = new DevExpress.Utils.PointFloat(131.4407F, 126.5833F);
             this.xrLabel7.Name = "xrLabel7";
             this.xrLabel7.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F);
-            this.xrLabel7.SizeF = new System.Drawing.SizeF(215.1985F, 25F);
+            this.xrLabel7.SizeF = new System.Drawing.SizeF(163.3653F, 24.99999F);
             this.xrLabel7.StyleName = "DetailData1";
             this.xrLabel7.StylePriority.UseBackColor = false;
             this.xrLabel7.StylePriority.UseBorderColor = false;
@@ -2425,7 +2425,7 @@
             this.xrLabel8.LocationFloat = new DevExpress.Utils.PointFloat(131.4407F, 154.5833F);
             this.xrLabel8.Name = "xrLabel8";
             this.xrLabel8.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F);
-            this.xrLabel8.SizeF = new System.Drawing.SizeF(215.1985F, 25F);
+            this.xrLabel8.SizeF = new System.Drawing.SizeF(163.3652F, 25F);
             this.xrLabel8.StyleName = "DetailData1";
             this.xrLabel8.StylePriority.UseBackColor = false;
             this.xrLabel8.StylePriority.UseBorderColor = false;
@@ -2452,7 +2452,7 @@
             this.xrLabel9.LocationFloat = new DevExpress.Utils.PointFloat(131.4407F, 182.5833F);
             this.xrLabel9.Name = "xrLabel9";
             this.xrLabel9.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F);
-            this.xrLabel9.SizeF = new System.Drawing.SizeF(215.1985F, 24.99999F);
+            this.xrLabel9.SizeF = new System.Drawing.SizeF(163.3653F, 24.99998F);
             this.xrLabel9.StyleName = "DetailData1";
             this.xrLabel9.StylePriority.UseBackColor = false;
             this.xrLabel9.StylePriority.UseBorderColor = false;
@@ -2976,10 +2976,10 @@
             this.xrLabel29.BorderWidth = 2F;
             this.xrLabel29.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.xrLabel29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(70)))), ((int)(((byte)(80)))));
-            this.xrLabel29.LocationFloat = new DevExpress.Utils.PointFloat(354.6719F, 123.5833F);
+            this.xrLabel29.LocationFloat = new DevExpress.Utils.PointFloat(333.0855F, 123.5833F);
             this.xrLabel29.Name = "xrLabel29";
             this.xrLabel29.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F);
-            this.xrLabel29.SizeF = new System.Drawing.SizeF(173.9981F, 28F);
+            this.xrLabel29.SizeF = new System.Drawing.SizeF(195.5845F, 27.99999F);
             this.xrLabel29.StyleName = "DetailCaption1";
             this.xrLabel29.StylePriority.UseBackColor = false;
             this.xrLabel29.StylePriority.UseBorderColor = false;
@@ -3002,10 +3002,10 @@
             this.xrLabel30.BorderWidth = 2F;
             this.xrLabel30.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.xrLabel30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(70)))), ((int)(((byte)(80)))));
-            this.xrLabel30.LocationFloat = new DevExpress.Utils.PointFloat(354.1663F, 151.5833F);
+            this.xrLabel30.LocationFloat = new DevExpress.Utils.PointFloat(332.5799F, 151.5833F);
             this.xrLabel30.Name = "xrLabel30";
             this.xrLabel30.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F);
-            this.xrLabel30.SizeF = new System.Drawing.SizeF(173.4925F, 28F);
+            this.xrLabel30.SizeF = new System.Drawing.SizeF(195.0789F, 28F);
             this.xrLabel30.StyleName = "DetailCaption1";
             this.xrLabel30.StylePriority.UseBackColor = false;
             this.xrLabel30.StylePriority.UseBorderColor = false;
@@ -3028,10 +3028,10 @@
             this.xrLabel31.BorderWidth = 2F;
             this.xrLabel31.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.xrLabel31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(70)))), ((int)(((byte)(80)))));
-            this.xrLabel31.LocationFloat = new DevExpress.Utils.PointFloat(354.1663F, 93.49998F);
+            this.xrLabel31.LocationFloat = new DevExpress.Utils.PointFloat(332.5799F, 93.49998F);
             this.xrLabel31.Name = "xrLabel31";
             this.xrLabel31.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F);
-            this.xrLabel31.SizeF = new System.Drawing.SizeF(173.9981F, 28F);
+            this.xrLabel31.SizeF = new System.Drawing.SizeF(195.5845F, 28F);
             this.xrLabel31.StyleName = "DetailCaption1";
             this.xrLabel31.StylePriority.UseBackColor = false;
             this.xrLabel31.StylePriority.UseBorderColor = false;
@@ -3054,10 +3054,10 @@
             this.xrLabel32.BorderWidth = 2F;
             this.xrLabel32.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.xrLabel32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(70)))), ((int)(((byte)(80)))));
-            this.xrLabel32.LocationFloat = new DevExpress.Utils.PointFloat(354.6719F, 179.5833F);
+            this.xrLabel32.LocationFloat = new DevExpress.Utils.PointFloat(333.0856F, 179.5833F);
             this.xrLabel32.Name = "xrLabel32";
             this.xrLabel32.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F);
-            this.xrLabel32.SizeF = new System.Drawing.SizeF(173.9981F, 28.00002F);
+            this.xrLabel32.SizeF = new System.Drawing.SizeF(195.5845F, 28.00002F);
             this.xrLabel32.StyleName = "DetailCaption1";
             this.xrLabel32.StylePriority.UseBackColor = false;
             this.xrLabel32.StylePriority.UseBorderColor = false;
