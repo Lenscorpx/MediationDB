@@ -27,7 +27,7 @@ namespace MediationDB.FormLibrary
             rps.afficher_conflit(bunifuCustomDataGrid2);
             txt_id_localite.ResetText();
             txt_localite.ResetText();
-            txt_num_conflit.ResetText();
+            txt_code_conflit.ResetText();
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
@@ -37,7 +37,7 @@ namespace MediationDB.FormLibrary
 
         private void bunifuCustomDataGrid2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            txt_num_conflit.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[0].Value.ToString();
+            txt_code_conflit.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[0].Value.ToString();
             metroDateTime1.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[2].Value.ToString();
             cbx_type_conflit.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[3].Value.ToString();
             cbx_nature_conflit.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[4].Value.ToString();
@@ -63,7 +63,7 @@ namespace MediationDB.FormLibrary
 
         private void btn_enregistrer_Click(object sender, EventArgs e)
         {
-            if(txt_num_conflit.Text=="")
+            if(txt_code_conflit.Text=="")
             {
                 MessageBox.Show("Veuillez completer les champs manquants");                
             }
@@ -75,9 +75,9 @@ namespace MediationDB.FormLibrary
                 }
                 else
                 {
-                    rps.inserer_conflit(txt_num_conflit.Text, metroDateTime1.Value, cbx_type_conflit.Text, cbx_nature_conflit.Text, txt_localite.Text);
+                    rps.inserer_conflit(txt_code_conflit.Text, metroDateTime1.Value, cbx_type_conflit.Text, cbx_nature_conflit.Text, txt_localite.Text);
                     var fr = new frm_details_parties_conflits();
-                    fr.txt_num_conflit.Text = txt_num_conflit.Text;
+                    fr.txt_num_conflit.Text = txt_code_conflit.Text;
                     fr.ShowDialog();
                     refresh();
                     
@@ -88,7 +88,7 @@ namespace MediationDB.FormLibrary
 
         private void btn_supprimer_Click(object sender, EventArgs e)
         {
-            if (txt_num_conflit.Text == "")
+            if (txt_code_conflit.Text == "")
             {
                 MessageBox.Show("Completez le code du conflit a supprimer");
             }
@@ -98,7 +98,7 @@ namespace MediationDB.FormLibrary
                 rs = MessageBox.Show(this, "Voulez vous vraiment supprimer cette information?", "Message de confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (rs == DialogResult.Yes)
                 {
-                    rps.supprimer_conflit(txt_num_conflit.Text);
+                    rps.supprimer_conflit(txt_code_conflit.Text);
                     refresh();
                 }
             }
@@ -113,70 +113,75 @@ namespace MediationDB.FormLibrary
             //else
             //{
                 var fr = new frm_mediation();
-                fr.txt_num_conflit.Text = txt_num_conflit.Text;
+                fr.txt_num_conflit.Text = txt_code_conflit.Text;
                 fr.ShowDialog();
             //}
         }
 
         private void btn_details_Click(object sender, EventArgs e)
         {
-            if (txt_num_conflit.Text == "")
+            if (txt_code_conflit.Text == "")
             {
                 MessageBox.Show("Choisissez le conflit auquel vous voulez ajouter des details!");
             }
             else
             {
                 var fr = new frm_details_conflit();
-                fr.txt_num_conflit.Text = txt_num_conflit.Text;
+                fr.txt_num_conflit.Text = txt_code_conflit.Text;
                 fr.ShowDialog();
             }
         }
 
         private void btn_causes_Click(object sender, EventArgs e)
         {
-            if (txt_num_conflit.Text == "")
+            if (txt_code_conflit.Text == "")
             {
                 MessageBox.Show("Choisissez le conflit auquel vous voulez ajouter des details!");
             }
             else
             {
                 var fr = new frm_details_causes();
-                fr.txt_num_conflit.Text = txt_num_conflit.Text;
+                fr.txt_num_conflit.Text = txt_code_conflit.Text;
                 fr.ShowDialog();
             }
         }
 
         private void btn_objets_Click(object sender, EventArgs e)
         {
-            if (txt_num_conflit.Text == "")
+            if (txt_code_conflit.Text == "")
             {
                 MessageBox.Show("Choisissez le conflit auquel vous voulez ajouter des details!");
             }
             else
             {
                 var fr = new frm_details_objets_conflits();
-                fr.txt_num_conflit.Text = txt_num_conflit.Text;
+                fr.txt_num_conflit.Text = txt_code_conflit.Text;
                 fr.ShowDialog();
             }                       
         }
 
         private void btn_parties_Click(object sender, EventArgs e)
         {
-            if (txt_num_conflit.Text == "")
+            if (txt_code_conflit.Text == "")
             {
                 MessageBox.Show("Choisissez le conflit auquel vous voulez ajouter des details!");
             }
             else
             {
                 var fr = new frm_details_parties_conflits();
-                fr.txt_num_conflit.Text = txt_num_conflit.Text;
+                fr.txt_num_conflit.Text = txt_code_conflit.Text;
                 fr.ShowDialog();
             }
         }
 
         private void txt_num_conflit_OnValueChanged(object sender, EventArgs e)
         {
-            rps.search_conflit(bunifuCustomDataGrid2, txt_num_conflit.Text);
+            
+        }
+
+        private void txt_code_conflit_OnValueChanged(object sender, EventArgs e)
+        {
+            rps.search_conflit(bunifuCustomDataGrid2, txt_code_conflit.Text);
         }
     }
 }
