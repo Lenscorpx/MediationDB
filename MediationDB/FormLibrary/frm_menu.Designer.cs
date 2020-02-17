@@ -821,7 +821,6 @@
             this.Opacity = 0.96D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mediator - SCC";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frm_menu_Load);
             this.pnl_head.ResumeLayout(false);
             this.pnl_head.PerformLayout();

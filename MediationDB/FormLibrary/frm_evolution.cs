@@ -34,8 +34,8 @@ namespace MediationDB.FormLibrary
         {
             try
             {
-                rps.chart_nombre_membre(lbl_nombre_membre);
-                rps.chart_nombre_menage(lbl_nombre_menages);
+                //rps.chart_nombre_membre(lbl_nombre_membre);
+                //rps.chart_nombre_menage(lbl_nombre_menages);
                 rps.chart_nombre_conflits(lbl_conflits);
                 rps.chart_nombre_conflits_classe(lbl_classed);
                 rps.chart_nombre_conflits_encours(lbl_encours);
