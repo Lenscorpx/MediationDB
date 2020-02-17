@@ -329,6 +329,7 @@
             this.xrLabel96 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel97 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel98 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel99 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.table1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table3)).BeginInit();
@@ -822,6 +823,7 @@
             // ReportFooter
             // 
             this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLabel99,
             this.xrLabel98,
             this.xrLabel97,
             this.xrLabel96,
@@ -2020,9 +2022,9 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([nbre_autorite_femmes])")});
             this.label96.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.label96.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.label96.LocationFloat = new DevExpress.Utils.PointFloat(583.3644F, 134.8885F);
+            this.label96.LocationFloat = new DevExpress.Utils.PointFloat(830.4087F, 156.3357F);
             this.label96.Name = "label96";
-            this.label96.SizeF = new System.Drawing.SizeF(203.9713F, 14.88443F);
+            this.label96.SizeF = new System.Drawing.SizeF(79.54755F, 14.88443F);
             this.label96.StyleName = "GrandTotalData1";
             this.label96.StylePriority.UseFont = false;
             this.label96.StylePriority.UseForeColor = false;
@@ -4055,6 +4057,22 @@
             this.xrLabel98.Text = "reprises, et des autorités femmes à ";
             this.xrLabel98.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
+            // xrLabel99
+            // 
+            this.xrLabel99.BackColor = System.Drawing.Color.White;
+            this.xrLabel99.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.xrLabel99.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.xrLabel99.LocationFloat = new DevExpress.Utils.PointFloat(909.9562F, 156.3357F);
+            this.xrLabel99.Name = "xrLabel99";
+            this.xrLabel99.SizeF = new System.Drawing.SizeF(182.3771F, 14.88443F);
+            this.xrLabel99.StyleName = "TotalCaption1";
+            this.xrLabel99.StylePriority.UseBackColor = false;
+            this.xrLabel99.StylePriority.UseFont = false;
+            this.xrLabel99.StylePriority.UseForeColor = false;
+            this.xrLabel99.StylePriority.UseTextAlignment = false;
+            this.xrLabel99.Text = "reprises.";
+            this.xrLabel99.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
             // rpt_sensibilises
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -4311,5 +4329,6 @@
         private DevExpress.XtraReports.UI.XRLabel xrLabel92;
         private DevExpress.XtraReports.UI.XRLabel xrLabel91;
         private DevExpress.XtraReports.UI.XRLabel xrLabel90;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel99;
     }
 }
