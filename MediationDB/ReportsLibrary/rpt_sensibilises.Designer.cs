@@ -819,7 +819,7 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Empty;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 24F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.label1.LocationFloat = new DevExpress.Utils.PointFloat(346.877F, 52.09907F);
             this.label1.Name = "label1";
