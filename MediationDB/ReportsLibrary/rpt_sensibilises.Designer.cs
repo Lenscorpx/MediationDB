@@ -1236,7 +1236,7 @@
             this.label23.ForeColor = System.Drawing.Color.White;
             this.label23.LocationFloat = new DevExpress.Utils.PointFloat(326.655F, 0F);
             this.label23.Name = "label23";
-            this.label23.SizeF = new System.Drawing.SizeF(193.7366F, 31.58557F);
+            this.label23.SizeF = new System.Drawing.SizeF(305.8878F, 31.58557F);
             this.label23.StyleName = "TotalCaption1";
             this.label23.StylePriority.UseBackColor = false;
             this.label23.StylePriority.UseFont = false;
