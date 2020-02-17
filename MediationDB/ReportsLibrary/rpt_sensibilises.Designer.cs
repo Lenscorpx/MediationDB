@@ -1730,7 +1730,7 @@
             this.label65.StylePriority.UseFont = false;
             this.label65.StylePriority.UseForeColor = false;
             this.label65.StylePriority.UseTextAlignment = false;
-            this.label65.Text = "id_chefferie [id_chefferie]";
+            this.label65.Text = "[id_chefferie]";
             this.label65.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // label67
@@ -1936,7 +1936,7 @@
             this.label86.StylePriority.UseFont = false;
             this.label86.StylePriority.UseForeColor = false;
             this.label86.StylePriority.UseTextAlignment = false;
-            this.label86.Text = "id_territoire [id_territoire]";
+            this.label86.Text = "[id_territoire]";
             this.label86.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // label88
