@@ -707,7 +707,7 @@
             this.label4,
             this.label22,
             this.label23});
-            this.GroupFooter2.HeightF = 179.3261F;
+            this.GroupFooter2.HeightF = 143.2013F;
             this.GroupFooter2.Level = 1;
             this.GroupFooter2.Name = "GroupFooter2";
             // 
@@ -924,7 +924,7 @@
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label3.LocationFloat = new DevExpress.Utils.PointFloat(5.999994F, 67.99278F);
+            this.label3.LocationFloat = new DevExpress.Utils.PointFloat(168.1933F, 79.45112F);
             this.label3.Name = "label3";
             this.label3.SizeF = new System.Drawing.SizeF(101.6606F, 14.88444F);
             this.label3.StyleName = "TotalCaption1";
@@ -941,7 +941,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([nbre_hommes])")});
             this.label4.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label4.LocationFloat = new DevExpress.Utils.PointFloat(107.6605F, 67.99278F);
+            this.label4.LocationFloat = new DevExpress.Utils.PointFloat(269.8539F, 79.45112F);
             this.label4.Name = "label4";
             this.label4.SizeF = new System.Drawing.SizeF(56.80112F, 14.88444F);
             this.label4.StyleName = "TotalData1";
@@ -959,7 +959,7 @@
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label5.LocationFloat = new DevExpress.Utils.PointFloat(5.999994F, 82.87722F);
+            this.label5.LocationFloat = new DevExpress.Utils.PointFloat(168.1933F, 94.33556F);
             this.label5.Name = "label5";
             this.label5.SizeF = new System.Drawing.SizeF(101.6606F, 14.88444F);
             this.label5.StyleName = "TotalCaption1";
@@ -976,7 +976,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([nbre_femmes])")});
             this.label6.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label6.LocationFloat = new DevExpress.Utils.PointFloat(107.6605F, 82.87722F);
+            this.label6.LocationFloat = new DevExpress.Utils.PointFloat(269.8538F, 94.33556F);
             this.label6.Name = "label6";
             this.label6.SizeF = new System.Drawing.SizeF(56.80116F, 14.88444F);
             this.label6.StyleName = "TotalData1";
@@ -994,7 +994,7 @@
             this.label7.BackColor = System.Drawing.Color.White;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label7.LocationFloat = new DevExpress.Utils.PointFloat(6.00001F, 97.76167F);
+            this.label7.LocationFloat = new DevExpress.Utils.PointFloat(330.5128F, 79.45112F);
             this.label7.Name = "label7";
             this.label7.SizeF = new System.Drawing.SizeF(99.57971F, 14.88444F);
             this.label7.StyleName = "TotalCaption1";
@@ -1011,7 +1011,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([nbre_filles])")});
             this.label8.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label8.LocationFloat = new DevExpress.Utils.PointFloat(107.6605F, 97.76167F);
+            this.label8.LocationFloat = new DevExpress.Utils.PointFloat(432.1733F, 79.45112F);
             this.label8.Name = "label8";
             this.label8.SizeF = new System.Drawing.SizeF(56.80116F, 14.88444F);
             this.label8.StyleName = "TotalData1";
@@ -1032,7 +1032,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([nbre_garcons])")});
             this.label10.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label10.LocationFloat = new DevExpress.Utils.PointFloat(107.6605F, 112.6461F);
+            this.label10.LocationFloat = new DevExpress.Utils.PointFloat(432.1733F, 94.33556F);
             this.label10.Name = "label10";
             this.label10.SizeF = new System.Drawing.SizeF(56.80112F, 14.88443F);
             this.label10.StyleName = "TotalData1";
@@ -1053,9 +1053,9 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([nbre_autorite_femmes])")});
             this.label12.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label12.LocationFloat = new DevExpress.Utils.PointFloat(284.6341F, 142.2011F);
+            this.label12.LocationFloat = new DevExpress.Utils.PointFloat(322.7984F, 109.22F);
             this.label12.Name = "label12";
-            this.label12.SizeF = new System.Drawing.SizeF(193.2497F, 14.88445F);
+            this.label12.SizeF = new System.Drawing.SizeF(70.53229F, 14.88445F);
             this.label12.StyleName = "TotalData1";
             this.label12.StylePriority.UseBackColor = false;
             this.label12.StylePriority.UseFont = false;
@@ -1074,9 +1074,9 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([nbre_autorite_hommes])")});
             this.label14.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label14.LocationFloat = new DevExpress.Utils.PointFloat(504.4258F, 120.7522F);
+            this.label14.LocationFloat = new DevExpress.Utils.PointFloat(322.4217F, 124.1044F);
             this.label14.Name = "label14";
-            this.label14.SizeF = new System.Drawing.SizeF(178.2006F, 14.88444F);
+            this.label14.SizeF = new System.Drawing.SizeF(70.90895F, 14.88444F);
             this.label14.StyleName = "TotalData1";
             this.label14.StylePriority.UseBackColor = false;
             this.label14.StylePriority.UseFont = false;
@@ -1095,9 +1095,9 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([nbre_menages_deplaces])")});
             this.label16.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label16.LocationFloat = new DevExpress.Utils.PointFloat(504.4258F, 94.71054F);
+            this.label16.LocationFloat = new DevExpress.Utils.PointFloat(637.7743F, 94.71054F);
             this.label16.Name = "label16";
-            this.label16.SizeF = new System.Drawing.SizeF(212.209F, 14.88444F);
+            this.label16.SizeF = new System.Drawing.SizeF(226.6347F, 14.88444F);
             this.label16.StyleName = "TotalData1";
             this.label16.StylePriority.UseBackColor = false;
             this.label16.StylePriority.UseFont = false;
@@ -1116,9 +1116,9 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([nbre_menages_retournes])")});
             this.label18.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label18.LocationFloat = new DevExpress.Utils.PointFloat(504.4258F, 142.2011F);
+            this.label18.LocationFloat = new DevExpress.Utils.PointFloat(637.7743F, 79.45112F);
             this.label18.Name = "label18";
-            this.label18.SizeF = new System.Drawing.SizeF(212.209F, 14.88445F);
+            this.label18.SizeF = new System.Drawing.SizeF(226.6347F, 14.88445F);
             this.label18.StyleName = "TotalData1";
             this.label18.StylePriority.UseBackColor = false;
             this.label18.StylePriority.UseFont = false;
@@ -1126,7 +1126,7 @@
             this.label18.StylePriority.UseTextAlignment = false;
             xrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
             this.label18.Summary = xrSummary2;
-            this.label18.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.label18.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.label18.WordWrap = false;
             // 
             // label20
@@ -1137,7 +1137,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([nbre_menages_locaux])")});
             this.label20.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label20.LocationFloat = new DevExpress.Utils.PointFloat(722.5267F, 94.71054F);
+            this.label20.LocationFloat = new DevExpress.Utils.PointFloat(637.7743F, 109.595F);
             this.label20.Name = "label20";
             this.label20.SizeF = new System.Drawing.SizeF(226.6347F, 14.88444F);
             this.label20.StyleName = "TotalData1";
@@ -1147,7 +1147,7 @@
             this.label20.StylePriority.UseTextAlignment = false;
             xrSummary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
             this.label20.Summary = xrSummary1;
-            this.label20.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.label20.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.label20.WordWrap = false;
             // 
             // label22
@@ -1158,9 +1158,9 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "sumSum([nbre_menages_rapatrie])")});
             this.label22.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label22.LocationFloat = new DevExpress.Utils.PointFloat(722.5267F, 120.7522F);
+            this.label22.LocationFloat = new DevExpress.Utils.PointFloat(637.7743F, 124.4794F);
             this.label22.Name = "label22";
-            this.label22.SizeF = new System.Drawing.SizeF(226.6347F, 14.88443F);
+            this.label22.SizeF = new System.Drawing.SizeF(226.6347F, 14.88444F);
             this.label22.StyleName = "TotalData1";
             this.label22.StylePriority.UseBackColor = false;
             this.label22.StylePriority.UseFont = false;
@@ -1168,7 +1168,7 @@
             this.label22.StylePriority.UseTextAlignment = false;
             xrSummary10.Running = DevExpress.XtraReports.UI.SummaryRunning.Group;
             this.label22.Summary = xrSummary10;
-            this.label22.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.label22.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.label22.WordWrap = false;
             // 
             // label23
@@ -3213,9 +3213,9 @@
             this.xrLabel37.BackColor = System.Drawing.Color.White;
             this.xrLabel37.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.xrLabel37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.xrLabel37.LocationFloat = new DevExpress.Utils.PointFloat(734.582F, 24.88445F);
+            this.xrLabel37.LocationFloat = new DevExpress.Utils.PointFloat(502.7877F, 109.595F);
             this.xrLabel37.Name = "xrLabel37";
-            this.xrLabel37.SizeF = new System.Drawing.SizeF(131.5098F, 14.88444F);
+            this.xrLabel37.SizeF = new System.Drawing.SizeF(107.5862F, 14.88444F);
             this.xrLabel37.StyleName = "TotalCaption1";
             this.xrLabel37.StylePriority.UseBackColor = false;
             this.xrLabel37.StylePriority.UseFont = false;
@@ -3227,9 +3227,9 @@
             this.xrLabel38.BackColor = System.Drawing.Color.White;
             this.xrLabel38.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.xrLabel38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.xrLabel38.LocationFloat = new DevExpress.Utils.PointFloat(849.5817F, 39.76889F);
+            this.xrLabel38.LocationFloat = new DevExpress.Utils.PointFloat(503.816F, 124.4794F);
             this.xrLabel38.Name = "xrLabel38";
-            this.xrLabel38.SizeF = new System.Drawing.SizeF(99.57971F, 14.88444F);
+            this.xrLabel38.SizeF = new System.Drawing.SizeF(121.4583F, 14.88444F);
             this.xrLabel38.StyleName = "TotalCaption1";
             this.xrLabel38.StylePriority.UseBackColor = false;
             this.xrLabel38.StylePriority.UseFont = false;
@@ -3241,7 +3241,7 @@
             this.xrLabel39.BackColor = System.Drawing.Color.White;
             this.xrLabel39.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.xrLabel39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.xrLabel39.LocationFloat = new DevExpress.Utils.PointFloat(722.5266F, 10.00001F);
+            this.xrLabel39.LocationFloat = new DevExpress.Utils.PointFloat(503.816F, 94.71054F);
             this.xrLabel39.Name = "xrLabel39";
             this.xrLabel39.SizeF = new System.Drawing.SizeF(121.4583F, 14.88444F);
             this.xrLabel39.StyleName = "TotalCaption1";
@@ -3255,7 +3255,7 @@
             this.xrLabel40.BackColor = System.Drawing.Color.White;
             this.xrLabel40.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.xrLabel40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.xrLabel40.LocationFloat = new DevExpress.Utils.PointFloat(162.1475F, 154.4417F);
+            this.xrLabel40.LocationFloat = new DevExpress.Utils.PointFloat(502.7877F, 79.45112F);
             this.xrLabel40.Name = "xrLabel40";
             this.xrLabel40.SizeF = new System.Drawing.SizeF(122.4866F, 14.88444F);
             this.xrLabel40.StyleName = "TotalCaption1";
@@ -3269,9 +3269,9 @@
             this.xrLabel41.BackColor = System.Drawing.Color.White;
             this.xrLabel41.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.xrLabel41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.xrLabel41.LocationFloat = new DevExpress.Utils.PointFloat(345.8008F, 164.4416F);
+            this.xrLabel41.LocationFloat = new DevExpress.Utils.PointFloat(131.4407F, 109.22F);
             this.xrLabel41.Name = "xrLabel41";
-            this.xrLabel41.SizeF = new System.Drawing.SizeF(216.9279F, 14.88444F);
+            this.xrLabel41.SizeF = new System.Drawing.SizeF(188.7678F, 14.88444F);
             this.xrLabel41.StyleName = "TotalCaption1";
             this.xrLabel41.StylePriority.UseBackColor = false;
             this.xrLabel41.StylePriority.UseFont = false;
@@ -3297,9 +3297,9 @@
             this.xrLabel43.BackColor = System.Drawing.Color.White;
             this.xrLabel43.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.xrLabel43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.xrLabel43.LocationFloat = new DevExpress.Utils.PointFloat(722.5267F, 142.2011F);
+            this.xrLabel43.LocationFloat = new DevExpress.Utils.PointFloat(131.4407F, 124.1044F);
             this.xrLabel43.Name = "xrLabel43";
-            this.xrLabel43.SizeF = new System.Drawing.SizeF(165.5915F, 14.88444F);
+            this.xrLabel43.SizeF = new System.Drawing.SizeF(188.7678F, 14.88444F);
             this.xrLabel43.StyleName = "TotalCaption1";
             this.xrLabel43.StylePriority.UseBackColor = false;
             this.xrLabel43.StylePriority.UseFont = false;
@@ -3327,7 +3327,7 @@
             this.xrLabel45.BackColor = System.Drawing.Color.White;
             this.xrLabel45.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.xrLabel45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.xrLabel45.LocationFloat = new DevExpress.Utils.PointFloat(5.999994F, 112.6461F);
+            this.xrLabel45.LocationFloat = new DevExpress.Utils.PointFloat(330.5128F, 94.33556F);
             this.xrLabel45.Name = "xrLabel45";
             this.xrLabel45.SizeF = new System.Drawing.SizeF(99.57971F, 14.88444F);
             this.xrLabel45.StyleName = "TotalCaption1";
