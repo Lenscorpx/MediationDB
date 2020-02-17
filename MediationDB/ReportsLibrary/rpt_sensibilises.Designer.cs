@@ -576,7 +576,7 @@
             // 
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.label1});
-            this.ReportHeader.HeightF = 60F;
+            this.ReportHeader.HeightF = 60.00001F;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // GroupHeader1
@@ -737,11 +737,19 @@
             // 
             // label1
             // 
-            this.label1.LocationFloat = new DevExpress.Utils.PointFloat(6F, 6F);
+            this.label1.BackColor = System.Drawing.Color.Empty;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 28F);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.label1.LocationFloat = new DevExpress.Utils.PointFloat(6.00001F, 5.999994F);
             this.label1.Name = "label1";
-            this.label1.SizeF = new System.Drawing.SizeF(957F, 24.19433F);
+            this.label1.SizeF = new System.Drawing.SizeF(957F, 54.00002F);
             this.label1.StyleName = "Title";
+            this.label1.StylePriority.UseBackColor = false;
+            this.label1.StylePriority.UseFont = false;
+            this.label1.StylePriority.UseForeColor = false;
+            this.label1.StylePriority.UseTextAlignment = false;
             this.label1.Text = "Liste des sensibilisations";
+            this.label1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
             // table1
             // 
@@ -2505,7 +2513,7 @@
             this.xrLabel12.BorderWidth = 2F;
             this.xrLabel12.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[nbre_menages_deplaces]")});
-            this.xrLabel12.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.xrLabel12.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.xrLabel12.ForeColor = System.Drawing.Color.Black;
             this.xrLabel12.LocationFloat = new DevExpress.Utils.PointFloat(745.8564F, 99.74998F);
             this.xrLabel12.Name = "xrLabel12";
@@ -2532,7 +2540,7 @@
             this.xrLabel13.BorderWidth = 2F;
             this.xrLabel13.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[nbre_menages_retournes]")});
-            this.xrLabel13.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.xrLabel13.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.xrLabel13.ForeColor = System.Drawing.Color.Black;
             this.xrLabel13.LocationFloat = new DevExpress.Utils.PointFloat(745.8564F, 126.8333F);
             this.xrLabel13.Name = "xrLabel13";
@@ -2559,7 +2567,7 @@
             this.xrLabel14.BorderWidth = 2F;
             this.xrLabel14.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[nbre_menages_locaux]")});
-            this.xrLabel14.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.xrLabel14.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.xrLabel14.ForeColor = System.Drawing.Color.Black;
             this.xrLabel14.LocationFloat = new DevExpress.Utils.PointFloat(745.8566F, 151.8333F);
             this.xrLabel14.Name = "xrLabel14";
@@ -2586,7 +2594,7 @@
             this.xrLabel15.BorderWidth = 2F;
             this.xrLabel15.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[nbre_menages_rapatrie]")});
-            this.xrLabel15.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.xrLabel15.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.xrLabel15.ForeColor = System.Drawing.Color.Black;
             this.xrLabel15.LocationFloat = new DevExpress.Utils.PointFloat(745.8564F, 176.8333F);
             this.xrLabel15.Name = "xrLabel15";
