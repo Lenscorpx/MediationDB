@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.pnl_menu = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnl_header = new System.Windows.Forms.Panel();
             this.pnl_container = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
@@ -41,13 +41,13 @@
             this.pnl_menu.Size = new System.Drawing.Size(230, 714);
             this.pnl_menu.TabIndex = 0;
             // 
-            // panel1
+            // pnl_header
             // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(230, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1070, 43);
-            this.panel1.TabIndex = 1;
+            this.pnl_header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_header.Location = new System.Drawing.Point(230, 0);
+            this.pnl_header.Name = "pnl_header";
+            this.pnl_header.Size = new System.Drawing.Size(1070, 43);
+            this.pnl_header.TabIndex = 1;
             // 
             // pnl_container
             // 
@@ -63,7 +63,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.ClientSize = new System.Drawing.Size(1300, 714);
             this.Controls.Add(this.pnl_container);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnl_header);
             this.Controls.Add(this.pnl_menu);
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -80,7 +80,7 @@
         #endregion
 
         private System.Windows.Forms.Panel pnl_menu;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnl_header;
         private System.Windows.Forms.Panel pnl_container;
     }
 }
