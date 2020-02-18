@@ -31,6 +31,9 @@
             this.pnl_menu = new System.Windows.Forms.Panel();
             this.pnl_header = new System.Windows.Forms.Panel();
             this.pnl_container = new System.Windows.Forms.Panel();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.pnl_header.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_menu
@@ -43,19 +46,34 @@
             // 
             // pnl_header
             // 
+            this.pnl_header.Controls.Add(this.bunifuImageButton1);
             this.pnl_header.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_header.Location = new System.Drawing.Point(230, 0);
             this.pnl_header.Name = "pnl_header";
-            this.pnl_header.Size = new System.Drawing.Size(1070, 43);
+            this.pnl_header.Size = new System.Drawing.Size(1070, 50);
             this.pnl_header.TabIndex = 1;
             // 
             // pnl_container
             // 
             this.pnl_container.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_container.Location = new System.Drawing.Point(230, 43);
+            this.pnl_container.Location = new System.Drawing.Point(230, 50);
             this.pnl_container.Name = "pnl_container";
-            this.pnl_container.Size = new System.Drawing.Size(1070, 671);
+            this.pnl_container.Size = new System.Drawing.Size(1070, 664);
             this.pnl_container.TabIndex = 2;
+            // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.Fermer_window;
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(1020, 4);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(46, 40);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bunifuImageButton1.TabIndex = 3;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // frm_report_dashboard
             // 
@@ -73,6 +91,8 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.pnl_header.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -82,5 +102,6 @@
         private System.Windows.Forms.Panel pnl_menu;
         private System.Windows.Forms.Panel pnl_header;
         private System.Windows.Forms.Panel pnl_container;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
     }
 }
