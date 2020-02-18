@@ -259,7 +259,7 @@ namespace MediationDB.FormLibrary
 
         private void btn_rapports_Click(object sender, EventArgs e)
         {
-            var fr = new frm_report_conflits_list();
+            var fr = new frm_report_dashboard();
             fr.ShowDialog();
         }
     }
