@@ -287,7 +287,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(874, 16);
+            this.label3.Location = new System.Drawing.Point(837, 16);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(188, 17);
             this.label3.TabIndex = 80;
@@ -1717,6 +1717,7 @@
             this.bunifuImageButton1.TabIndex = 8;
             this.bunifuImageButton1.TabStop = false;
             this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // frm_stats_conflits
             // 

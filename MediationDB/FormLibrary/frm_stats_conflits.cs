@@ -37,5 +37,10 @@ namespace MediationDB.FormLibrary
         {
             txt_localite.Text = listBox1.SelectedItem.ToString();
         }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
