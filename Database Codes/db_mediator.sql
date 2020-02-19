@@ -1614,13 +1614,13 @@ as
 		nbre_femmes as 'Femmes',
 		nbre_filles as 'Filles',
 		nbre_garcons as 'Garcons',
-		nbre_autorite_femmes as 'Autorité Femme',
-		nbre_autorite_hommes as 'Autorité Homme',
-		nbre_menages_deplaces as 'Menages deplacés',
-		nbre_menages_retournes as 'Menages retournés',
+		nbre_autorite_femmes as 'Autoritï¿½ Femme',
+		nbre_autorite_hommes as 'Autoritï¿½ Homme',
+		nbre_menages_deplaces as 'Menages deplacï¿½s',
+		nbre_menages_retournes as 'Menages retournï¿½s',
 		nbre_menages_locaux as 'Menages locaux', 
-		nbre_menages_rapatrie as 'Menages rappatriés',
-		theme_developpe as 'Thème',    
+		nbre_menages_rapatrie as 'Menages rappatriï¿½s',
+		theme_developpe as 'Thï¿½me',    
 		observation as 'Observation',
 		noms_sensibilisateur as 'Noms sensibilisateurs',
 		commentaires as 'Commentaires',
@@ -1639,13 +1639,13 @@ as
 		nbre_femmes as 'Femmes',
 		nbre_filles as 'Filles',
 		nbre_garcons as 'Garcons',
-		nbre_autorite_femmes as 'Autorité Femme',
-		nbre_autorite_hommes as 'Autorité Homme',
-		nbre_menages_deplaces as 'Menages deplacés',
-		nbre_menages_retournes as 'Menages retournés',
+		nbre_autorite_femmes as 'Autoritï¿½ Femme',
+		nbre_autorite_hommes as 'Autoritï¿½ Homme',
+		nbre_menages_deplaces as 'Menages deplacï¿½s',
+		nbre_menages_retournes as 'Menages retournï¿½s',
 		nbre_menages_locaux as 'Menages locaux', 
-		nbre_menages_rapatrie as 'Menages rappatriés',
-		theme_developpe as 'Thème',    
+		nbre_menages_rapatrie as 'Menages rappatriï¿½s',
+		theme_developpe as 'Thï¿½me',    
 		observation as 'Observation',
 		noms_sensibilisateur as 'Noms sensibilisateurs',
 		commentaires as 'Commentaires',
@@ -1792,9 +1792,9 @@ as
 		t_sensibilisation.num_sensibilisation as 'Num. Sensibilisation', 
 		t_sensibilisation.date_debut as 'Debut Sensib.',
 		t_sensibilisation.date_fin as 'Fin Sensib',
-		t_sensibilisation.id_localite as 'Localité',
+		t_sensibilisation.id_localite as 'Localitï¿½',
 		t_atelier.id_atelier as 'Num Atelier',
-		t_atelier.theme_developpe as 'Thème developpé', 
+		t_atelier.theme_developpe as 'Thï¿½me developpï¿½', 
 		t_participation_atelier.num_participation as 'Num. Part.',
 		t_participation_atelier.date_atelier as 'Date Atelier',
 		t_participation_atelier.nom_sensibilisateur as 'Sensibilisateur'
@@ -1814,9 +1814,9 @@ as
 		t_sensibilisation.num_sensibilisation as 'Num. Sensibilisation', 
 		t_sensibilisation.date_debut as 'Debut Sensib.',
 		t_sensibilisation.date_fin as 'Fin Sensib',
-		t_sensibilisation.id_localite as 'Localité',
+		t_sensibilisation.id_localite as 'Localitï¿½',
 		t_atelier.id_atelier as 'Num Atelier',
-		t_atelier.theme_developpe as 'Thème developpé', 
+		t_atelier.theme_developpe as 'Thï¿½me developpï¿½', 
 		t_participation_atelier.num_participation as 'Num. Part.',
 		t_participation_atelier.date_atelier as 'Date Atelier',
 		t_participation_atelier.nom_sensibilisateur as 'Sensibilisateur'
@@ -1836,9 +1836,9 @@ as
 		t_sensibilisation.num_sensibilisation as 'Num. Sensibilisation', 
 		t_sensibilisation.date_debut as 'Debut Sensib.',
 		t_sensibilisation.date_fin as 'Fin Sensib',
-		t_sensibilisation.id_localite as 'Localité',
+		t_sensibilisation.id_localite as 'Localitï¿½',
 		t_atelier.id_atelier as 'Num Atelier',
-		t_atelier.theme_developpe as 'Thème developpé', 
+		t_atelier.theme_developpe as 'Thï¿½me developpï¿½', 
 		t_participation_atelier.num_participation as 'Num. Part.',
 		t_participation_atelier.date_atelier as 'Date Atelier',
 		t_participation_atelier.nom_sensibilisateur as 'Sensibilisateur'
@@ -1858,9 +1858,9 @@ as
 		t_sensibilisation.num_sensibilisation as 'Num. Sensibilisation', 
 		t_sensibilisation.date_debut as 'Debut Sensib.',
 		t_sensibilisation.date_fin as 'Fin Sensib',
-		t_sensibilisation.id_localite as 'Localité',
+		t_sensibilisation.id_localite as 'Localitï¿½',
 		t_atelier.id_atelier as 'Num Atelier',
-		t_atelier.theme_developpe as 'Thème developpé', 
+		t_atelier.theme_developpe as 'Thï¿½me developpï¿½', 
 		t_participation_atelier.num_participation as 'Num. Part.',
 		t_participation_atelier.date_atelier as 'Date Atelier',
 		t_participation_atelier.nom_sensibilisateur as 'Sensibilisateur'
@@ -2199,7 +2199,7 @@ from t_assignation_resolution
 	inner join
         t_conflit on t_assignation_resolution.num_conflit = t_conflit.num_conflit
 	where
-		t_assignation_resolution.id_resolution like 'Résolu'
+		t_assignation_resolution.id_resolution like 'Rï¿½solu'
 go
 create procedure chart_nombre_conflits_encours
 as
@@ -2217,7 +2217,7 @@ from t_assignation_resolution
 	inner join
         t_conflit on t_assignation_resolution.num_conflit = t_conflit.num_conflit
 	where
-		t_assignation_resolution.id_resolution like 'Referé'
+		t_assignation_resolution.id_resolution like 'Referï¿½'
 go
 create procedure chart_nombre_conflits_classe
 as
@@ -2226,7 +2226,7 @@ from t_assignation_resolution
 	inner join
         t_conflit on t_assignation_resolution.num_conflit = t_conflit.num_conflit
 	where
-		t_assignation_resolution.id_resolution like 'Classé'
+		t_assignation_resolution.id_resolution like 'Classï¿½'
 go
 create procedure chart_nombre_sensibilisations
 as
@@ -2374,4 +2374,60 @@ as
 		where
 			t_chefferie.id_territoire like 'Masisi'
 go
-
+---------------- Toutes les recherches par periode sur le nombre de conflits------------------------------------------------------------------
+create procedure stats_total_conflit_parperiode
+@date_un date,
+@date_deux date
+	as
+		select  count(distinct t_conflit.num_conflit)      
+			--t_conflit.id_localite, 
+			--t_conflit.num_conflit, 
+			--t_mediation.date_debut_mediation, 
+			--t_mediation.date_fin_mediation, 
+			--t_assignation_resolution.id_resolution, 
+			--t_parties.id_typ_partie, 
+            --t_menages.total_homme, 
+			--t_menages.total_femme, 
+			--t_menages.total_garcons, 
+			--t_menages.total_filles
+		from            
+			t_conflit 
+				inner join
+            		t_assignation_resolution on t_conflit.num_conflit = t_assignation_resolution.num_conflit 
+				inner join
+            		t_mediation on t_conflit.num_conflit = t_mediation.num_conflit 
+				inner join
+            		t_parties on t_conflit.num_conflit = t_parties.num_conflit 
+				inner join
+            		t_menages on t_parties.id_menage = t_menages.id_menage
+		where
+			t_mediation.date_debut_mediation between @date_un and @date_deux
+go
+create procedure stats_total_conflit_parperiode
+@date_un date,
+@date_deux date
+	as
+		select  count(distinct t_conflit.num_conflit)      
+			--t_conflit.id_localite, 
+			--t_conflit.num_conflit, 
+			--t_mediation.date_debut_mediation, 
+			--t_mediation.date_fin_mediation, 
+			--t_assignation_resolution.id_resolution, 
+			--t_parties.id_typ_partie, 
+            --t_menages.total_homme, 
+			--t_menages.total_femme, 
+			--t_menages.total_garcons, 
+			--t_menages.total_filles
+		from            
+			t_conflit 
+				inner join
+            		t_assignation_resolution on t_conflit.num_conflit = t_assignation_resolution.num_conflit 
+				inner join
+            		t_mediation on t_conflit.num_conflit = t_mediation.num_conflit 
+				inner join
+            		t_parties on t_conflit.num_conflit = t_parties.num_conflit 
+				inner join
+            		t_menages on t_parties.id_menage = t_menages.id_menage
+		where
+			t_mediation.date_debut_mediation between @date_un and @date_deux
+go
