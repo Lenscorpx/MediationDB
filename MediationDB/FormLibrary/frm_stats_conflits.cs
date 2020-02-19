@@ -128,7 +128,14 @@ namespace MediationDB.FormLibrary
             }
             try
             {
-                chart_refered.Value = (Convert.ToInt32(txt_total_referes.Text) * 100) / Convert.ToInt32(txt_nombre_conflit.Text);
+                if (txt_conflits_referes.Text == "")
+                {
+                    chart_refered.Value = 0;
+                }
+                else
+                {
+                    chart_refered.Value = (Convert.ToInt32(txt_total_referes.Text) * 100) / Convert.ToInt32(txt_nombre_conflit.Text);
+                }
             }
             catch
             {
