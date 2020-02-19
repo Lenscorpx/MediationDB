@@ -66,6 +66,32 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuMaterialTextbox3 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuMaterialTextbox4 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuMaterialTextbox5 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.bunifuMaterialTextbox6 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuMaterialTextbox7 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuMaterialTextbox8 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuMaterialTextbox9 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuMaterialTextbox10 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuMaterialTextbox11 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuMaterialTextbox12 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuMaterialTextbox13 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuMaterialTextbox14 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuMaterialTextbox15 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuMaterialTextbox16 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuMaterialTextbox17 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuMaterialTextbox18 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuMaterialTextbox19 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuMaterialTextbox20 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuMaterialTextbox21 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuMaterialTextbox22 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuMaterialTextbox23 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuMaterialTextbox24 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuMaterialTextbox25 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.pnl_header.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
@@ -110,6 +136,32 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.bunifuMaterialTextbox21);
+            this.panel1.Controls.Add(this.bunifuMaterialTextbox22);
+            this.panel1.Controls.Add(this.bunifuMaterialTextbox23);
+            this.panel1.Controls.Add(this.bunifuMaterialTextbox24);
+            this.panel1.Controls.Add(this.bunifuMaterialTextbox25);
+            this.panel1.Controls.Add(this.bunifuMaterialTextbox16);
+            this.panel1.Controls.Add(this.bunifuMaterialTextbox17);
+            this.panel1.Controls.Add(this.bunifuMaterialTextbox18);
+            this.panel1.Controls.Add(this.bunifuMaterialTextbox19);
+            this.panel1.Controls.Add(this.bunifuMaterialTextbox20);
+            this.panel1.Controls.Add(this.bunifuMaterialTextbox11);
+            this.panel1.Controls.Add(this.bunifuMaterialTextbox12);
+            this.panel1.Controls.Add(this.bunifuMaterialTextbox13);
+            this.panel1.Controls.Add(this.bunifuMaterialTextbox14);
+            this.panel1.Controls.Add(this.bunifuMaterialTextbox15);
+            this.panel1.Controls.Add(this.bunifuMaterialTextbox6);
+            this.panel1.Controls.Add(this.bunifuMaterialTextbox7);
+            this.panel1.Controls.Add(this.bunifuMaterialTextbox8);
+            this.panel1.Controls.Add(this.bunifuMaterialTextbox9);
+            this.panel1.Controls.Add(this.bunifuMaterialTextbox10);
+            this.panel1.Controls.Add(this.label16);
+            this.panel1.Controls.Add(this.bunifuMaterialTextbox5);
+            this.panel1.Controls.Add(this.bunifuMaterialTextbox4);
+            this.panel1.Controls.Add(this.bunifuMaterialTextbox3);
+            this.panel1.Controls.Add(this.bunifuMaterialTextbox2);
+            this.panel1.Controls.Add(this.bunifuMaterialTextbox1);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.label13);
@@ -676,6 +728,542 @@
             this.label15.TabIndex = 142;
             this.label15.Text = "Conflits classés";
             // 
+            // bunifuMaterialTextbox1
+            // 
+            this.bunifuMaterialTextbox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox1.Enabled = false;
+            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuMaterialTextbox1.HintText = "Total conflits";
+            this.bunifuMaterialTextbox1.isPassword = false;
+            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox1.LineThickness = 4;
+            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(719, 129);
+            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
+            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(105, 44);
+            this.bunifuMaterialTextbox1.TabIndex = 143;
+            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuMaterialTextbox2
+            // 
+            this.bunifuMaterialTextbox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox2.Enabled = false;
+            this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuMaterialTextbox2.HintText = "Total conflits";
+            this.bunifuMaterialTextbox2.isPassword = false;
+            this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox2.LineThickness = 4;
+            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(1170, 129);
+            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
+            this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(105, 44);
+            this.bunifuMaterialTextbox2.TabIndex = 144;
+            this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuMaterialTextbox3
+            // 
+            this.bunifuMaterialTextbox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuMaterialTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox3.Enabled = false;
+            this.bunifuMaterialTextbox3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox3.ForeColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox3.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuMaterialTextbox3.HintText = "Total conflits";
+            this.bunifuMaterialTextbox3.isPassword = false;
+            this.bunifuMaterialTextbox3.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox3.LineIdleColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox3.LineThickness = 4;
+            this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(832, 129);
+            this.bunifuMaterialTextbox3.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox3.Name = "bunifuMaterialTextbox3";
+            this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(105, 44);
+            this.bunifuMaterialTextbox3.TabIndex = 144;
+            this.bunifuMaterialTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuMaterialTextbox4
+            // 
+            this.bunifuMaterialTextbox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuMaterialTextbox4.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox4.Enabled = false;
+            this.bunifuMaterialTextbox4.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox4.ForeColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox4.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuMaterialTextbox4.HintText = "Total conflits";
+            this.bunifuMaterialTextbox4.isPassword = false;
+            this.bunifuMaterialTextbox4.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox4.LineIdleColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox4.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox4.LineThickness = 4;
+            this.bunifuMaterialTextbox4.Location = new System.Drawing.Point(945, 129);
+            this.bunifuMaterialTextbox4.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox4.Name = "bunifuMaterialTextbox4";
+            this.bunifuMaterialTextbox4.Size = new System.Drawing.Size(105, 44);
+            this.bunifuMaterialTextbox4.TabIndex = 145;
+            this.bunifuMaterialTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuMaterialTextbox5
+            // 
+            this.bunifuMaterialTextbox5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuMaterialTextbox5.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox5.Enabled = false;
+            this.bunifuMaterialTextbox5.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox5.ForeColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox5.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuMaterialTextbox5.HintText = "Total conflits";
+            this.bunifuMaterialTextbox5.isPassword = false;
+            this.bunifuMaterialTextbox5.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox5.LineIdleColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox5.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox5.LineThickness = 4;
+            this.bunifuMaterialTextbox5.Location = new System.Drawing.Point(1058, 129);
+            this.bunifuMaterialTextbox5.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox5.Name = "bunifuMaterialTextbox5";
+            this.bunifuMaterialTextbox5.Size = new System.Drawing.Size(105, 44);
+            this.bunifuMaterialTextbox5.TabIndex = 146;
+            this.bunifuMaterialTextbox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(556, 107);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(84, 19);
+            this.label16.TabIndex = 147;
+            this.label16.Text = "impliquant";
+            // 
+            // bunifuMaterialTextbox6
+            // 
+            this.bunifuMaterialTextbox6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuMaterialTextbox6.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox6.Enabled = false;
+            this.bunifuMaterialTextbox6.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox6.ForeColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox6.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuMaterialTextbox6.HintText = "Total conflits";
+            this.bunifuMaterialTextbox6.isPassword = false;
+            this.bunifuMaterialTextbox6.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox6.LineIdleColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox6.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox6.LineThickness = 4;
+            this.bunifuMaterialTextbox6.Location = new System.Drawing.Point(1058, 200);
+            this.bunifuMaterialTextbox6.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox6.Name = "bunifuMaterialTextbox6";
+            this.bunifuMaterialTextbox6.Size = new System.Drawing.Size(105, 44);
+            this.bunifuMaterialTextbox6.TabIndex = 152;
+            this.bunifuMaterialTextbox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuMaterialTextbox7
+            // 
+            this.bunifuMaterialTextbox7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuMaterialTextbox7.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox7.Enabled = false;
+            this.bunifuMaterialTextbox7.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox7.ForeColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox7.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuMaterialTextbox7.HintText = "Total conflits";
+            this.bunifuMaterialTextbox7.isPassword = false;
+            this.bunifuMaterialTextbox7.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox7.LineIdleColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox7.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox7.LineThickness = 4;
+            this.bunifuMaterialTextbox7.Location = new System.Drawing.Point(945, 200);
+            this.bunifuMaterialTextbox7.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox7.Name = "bunifuMaterialTextbox7";
+            this.bunifuMaterialTextbox7.Size = new System.Drawing.Size(105, 44);
+            this.bunifuMaterialTextbox7.TabIndex = 151;
+            this.bunifuMaterialTextbox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuMaterialTextbox8
+            // 
+            this.bunifuMaterialTextbox8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuMaterialTextbox8.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox8.Enabled = false;
+            this.bunifuMaterialTextbox8.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox8.ForeColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox8.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuMaterialTextbox8.HintText = "Total conflits";
+            this.bunifuMaterialTextbox8.isPassword = false;
+            this.bunifuMaterialTextbox8.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox8.LineIdleColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox8.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox8.LineThickness = 4;
+            this.bunifuMaterialTextbox8.Location = new System.Drawing.Point(832, 200);
+            this.bunifuMaterialTextbox8.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox8.Name = "bunifuMaterialTextbox8";
+            this.bunifuMaterialTextbox8.Size = new System.Drawing.Size(105, 44);
+            this.bunifuMaterialTextbox8.TabIndex = 149;
+            this.bunifuMaterialTextbox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuMaterialTextbox9
+            // 
+            this.bunifuMaterialTextbox9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuMaterialTextbox9.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox9.Enabled = false;
+            this.bunifuMaterialTextbox9.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox9.ForeColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox9.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuMaterialTextbox9.HintText = "Total conflits";
+            this.bunifuMaterialTextbox9.isPassword = false;
+            this.bunifuMaterialTextbox9.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox9.LineIdleColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox9.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox9.LineThickness = 4;
+            this.bunifuMaterialTextbox9.Location = new System.Drawing.Point(1170, 200);
+            this.bunifuMaterialTextbox9.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox9.Name = "bunifuMaterialTextbox9";
+            this.bunifuMaterialTextbox9.Size = new System.Drawing.Size(105, 44);
+            this.bunifuMaterialTextbox9.TabIndex = 150;
+            this.bunifuMaterialTextbox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuMaterialTextbox10
+            // 
+            this.bunifuMaterialTextbox10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuMaterialTextbox10.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox10.Enabled = false;
+            this.bunifuMaterialTextbox10.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox10.ForeColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox10.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuMaterialTextbox10.HintText = "Total conflits";
+            this.bunifuMaterialTextbox10.isPassword = false;
+            this.bunifuMaterialTextbox10.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox10.LineIdleColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox10.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox10.LineThickness = 4;
+            this.bunifuMaterialTextbox10.Location = new System.Drawing.Point(719, 200);
+            this.bunifuMaterialTextbox10.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox10.Name = "bunifuMaterialTextbox10";
+            this.bunifuMaterialTextbox10.Size = new System.Drawing.Size(105, 44);
+            this.bunifuMaterialTextbox10.TabIndex = 148;
+            this.bunifuMaterialTextbox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuMaterialTextbox11
+            // 
+            this.bunifuMaterialTextbox11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuMaterialTextbox11.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox11.Enabled = false;
+            this.bunifuMaterialTextbox11.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox11.ForeColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox11.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuMaterialTextbox11.HintText = "Total conflits";
+            this.bunifuMaterialTextbox11.isPassword = false;
+            this.bunifuMaterialTextbox11.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox11.LineIdleColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox11.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox11.LineThickness = 4;
+            this.bunifuMaterialTextbox11.Location = new System.Drawing.Point(1058, 271);
+            this.bunifuMaterialTextbox11.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox11.Name = "bunifuMaterialTextbox11";
+            this.bunifuMaterialTextbox11.Size = new System.Drawing.Size(105, 44);
+            this.bunifuMaterialTextbox11.TabIndex = 157;
+            this.bunifuMaterialTextbox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuMaterialTextbox12
+            // 
+            this.bunifuMaterialTextbox12.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuMaterialTextbox12.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox12.Enabled = false;
+            this.bunifuMaterialTextbox12.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox12.ForeColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox12.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuMaterialTextbox12.HintText = "Total conflits";
+            this.bunifuMaterialTextbox12.isPassword = false;
+            this.bunifuMaterialTextbox12.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox12.LineIdleColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox12.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox12.LineThickness = 4;
+            this.bunifuMaterialTextbox12.Location = new System.Drawing.Point(945, 271);
+            this.bunifuMaterialTextbox12.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox12.Name = "bunifuMaterialTextbox12";
+            this.bunifuMaterialTextbox12.Size = new System.Drawing.Size(105, 44);
+            this.bunifuMaterialTextbox12.TabIndex = 156;
+            this.bunifuMaterialTextbox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuMaterialTextbox13
+            // 
+            this.bunifuMaterialTextbox13.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuMaterialTextbox13.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox13.Enabled = false;
+            this.bunifuMaterialTextbox13.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox13.ForeColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox13.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuMaterialTextbox13.HintText = "Total conflits";
+            this.bunifuMaterialTextbox13.isPassword = false;
+            this.bunifuMaterialTextbox13.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox13.LineIdleColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox13.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox13.LineThickness = 4;
+            this.bunifuMaterialTextbox13.Location = new System.Drawing.Point(832, 271);
+            this.bunifuMaterialTextbox13.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox13.Name = "bunifuMaterialTextbox13";
+            this.bunifuMaterialTextbox13.Size = new System.Drawing.Size(105, 44);
+            this.bunifuMaterialTextbox13.TabIndex = 154;
+            this.bunifuMaterialTextbox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuMaterialTextbox14
+            // 
+            this.bunifuMaterialTextbox14.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuMaterialTextbox14.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox14.Enabled = false;
+            this.bunifuMaterialTextbox14.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox14.ForeColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox14.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuMaterialTextbox14.HintText = "Total conflits";
+            this.bunifuMaterialTextbox14.isPassword = false;
+            this.bunifuMaterialTextbox14.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox14.LineIdleColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox14.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox14.LineThickness = 4;
+            this.bunifuMaterialTextbox14.Location = new System.Drawing.Point(1170, 271);
+            this.bunifuMaterialTextbox14.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox14.Name = "bunifuMaterialTextbox14";
+            this.bunifuMaterialTextbox14.Size = new System.Drawing.Size(105, 44);
+            this.bunifuMaterialTextbox14.TabIndex = 155;
+            this.bunifuMaterialTextbox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuMaterialTextbox15
+            // 
+            this.bunifuMaterialTextbox15.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuMaterialTextbox15.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox15.Enabled = false;
+            this.bunifuMaterialTextbox15.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox15.ForeColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox15.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuMaterialTextbox15.HintText = "Total conflits";
+            this.bunifuMaterialTextbox15.isPassword = false;
+            this.bunifuMaterialTextbox15.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox15.LineIdleColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox15.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox15.LineThickness = 4;
+            this.bunifuMaterialTextbox15.Location = new System.Drawing.Point(719, 271);
+            this.bunifuMaterialTextbox15.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox15.Name = "bunifuMaterialTextbox15";
+            this.bunifuMaterialTextbox15.Size = new System.Drawing.Size(105, 44);
+            this.bunifuMaterialTextbox15.TabIndex = 153;
+            this.bunifuMaterialTextbox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuMaterialTextbox16
+            // 
+            this.bunifuMaterialTextbox16.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuMaterialTextbox16.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox16.Enabled = false;
+            this.bunifuMaterialTextbox16.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox16.ForeColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox16.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuMaterialTextbox16.HintText = "Total conflits";
+            this.bunifuMaterialTextbox16.isPassword = false;
+            this.bunifuMaterialTextbox16.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox16.LineIdleColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox16.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox16.LineThickness = 4;
+            this.bunifuMaterialTextbox16.Location = new System.Drawing.Point(1058, 342);
+            this.bunifuMaterialTextbox16.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox16.Name = "bunifuMaterialTextbox16";
+            this.bunifuMaterialTextbox16.Size = new System.Drawing.Size(105, 44);
+            this.bunifuMaterialTextbox16.TabIndex = 162;
+            this.bunifuMaterialTextbox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuMaterialTextbox17
+            // 
+            this.bunifuMaterialTextbox17.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuMaterialTextbox17.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox17.Enabled = false;
+            this.bunifuMaterialTextbox17.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox17.ForeColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox17.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuMaterialTextbox17.HintText = "Total conflits";
+            this.bunifuMaterialTextbox17.isPassword = false;
+            this.bunifuMaterialTextbox17.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox17.LineIdleColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox17.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox17.LineThickness = 4;
+            this.bunifuMaterialTextbox17.Location = new System.Drawing.Point(945, 342);
+            this.bunifuMaterialTextbox17.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox17.Name = "bunifuMaterialTextbox17";
+            this.bunifuMaterialTextbox17.Size = new System.Drawing.Size(105, 44);
+            this.bunifuMaterialTextbox17.TabIndex = 161;
+            this.bunifuMaterialTextbox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuMaterialTextbox18
+            // 
+            this.bunifuMaterialTextbox18.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuMaterialTextbox18.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox18.Enabled = false;
+            this.bunifuMaterialTextbox18.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox18.ForeColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox18.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuMaterialTextbox18.HintText = "Total conflits";
+            this.bunifuMaterialTextbox18.isPassword = false;
+            this.bunifuMaterialTextbox18.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox18.LineIdleColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox18.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox18.LineThickness = 4;
+            this.bunifuMaterialTextbox18.Location = new System.Drawing.Point(832, 342);
+            this.bunifuMaterialTextbox18.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox18.Name = "bunifuMaterialTextbox18";
+            this.bunifuMaterialTextbox18.Size = new System.Drawing.Size(105, 44);
+            this.bunifuMaterialTextbox18.TabIndex = 159;
+            this.bunifuMaterialTextbox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuMaterialTextbox19
+            // 
+            this.bunifuMaterialTextbox19.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuMaterialTextbox19.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox19.Enabled = false;
+            this.bunifuMaterialTextbox19.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox19.ForeColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox19.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuMaterialTextbox19.HintText = "Total conflits";
+            this.bunifuMaterialTextbox19.isPassword = false;
+            this.bunifuMaterialTextbox19.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox19.LineIdleColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox19.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox19.LineThickness = 4;
+            this.bunifuMaterialTextbox19.Location = new System.Drawing.Point(1170, 342);
+            this.bunifuMaterialTextbox19.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox19.Name = "bunifuMaterialTextbox19";
+            this.bunifuMaterialTextbox19.Size = new System.Drawing.Size(105, 44);
+            this.bunifuMaterialTextbox19.TabIndex = 160;
+            this.bunifuMaterialTextbox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuMaterialTextbox20
+            // 
+            this.bunifuMaterialTextbox20.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuMaterialTextbox20.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox20.Enabled = false;
+            this.bunifuMaterialTextbox20.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox20.ForeColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox20.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuMaterialTextbox20.HintText = "Total conflits";
+            this.bunifuMaterialTextbox20.isPassword = false;
+            this.bunifuMaterialTextbox20.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox20.LineIdleColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox20.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox20.LineThickness = 4;
+            this.bunifuMaterialTextbox20.Location = new System.Drawing.Point(719, 342);
+            this.bunifuMaterialTextbox20.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox20.Name = "bunifuMaterialTextbox20";
+            this.bunifuMaterialTextbox20.Size = new System.Drawing.Size(105, 44);
+            this.bunifuMaterialTextbox20.TabIndex = 158;
+            this.bunifuMaterialTextbox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuMaterialTextbox21
+            // 
+            this.bunifuMaterialTextbox21.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuMaterialTextbox21.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox21.Enabled = false;
+            this.bunifuMaterialTextbox21.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox21.ForeColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox21.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuMaterialTextbox21.HintText = "Total conflits";
+            this.bunifuMaterialTextbox21.isPassword = false;
+            this.bunifuMaterialTextbox21.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox21.LineIdleColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox21.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox21.LineThickness = 4;
+            this.bunifuMaterialTextbox21.Location = new System.Drawing.Point(1058, 413);
+            this.bunifuMaterialTextbox21.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox21.Name = "bunifuMaterialTextbox21";
+            this.bunifuMaterialTextbox21.Size = new System.Drawing.Size(105, 44);
+            this.bunifuMaterialTextbox21.TabIndex = 167;
+            this.bunifuMaterialTextbox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuMaterialTextbox22
+            // 
+            this.bunifuMaterialTextbox22.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuMaterialTextbox22.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox22.Enabled = false;
+            this.bunifuMaterialTextbox22.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox22.ForeColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox22.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuMaterialTextbox22.HintText = "Total conflits";
+            this.bunifuMaterialTextbox22.isPassword = false;
+            this.bunifuMaterialTextbox22.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox22.LineIdleColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox22.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox22.LineThickness = 4;
+            this.bunifuMaterialTextbox22.Location = new System.Drawing.Point(945, 413);
+            this.bunifuMaterialTextbox22.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox22.Name = "bunifuMaterialTextbox22";
+            this.bunifuMaterialTextbox22.Size = new System.Drawing.Size(105, 44);
+            this.bunifuMaterialTextbox22.TabIndex = 166;
+            this.bunifuMaterialTextbox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuMaterialTextbox23
+            // 
+            this.bunifuMaterialTextbox23.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuMaterialTextbox23.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox23.Enabled = false;
+            this.bunifuMaterialTextbox23.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox23.ForeColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox23.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuMaterialTextbox23.HintText = "Total conflits";
+            this.bunifuMaterialTextbox23.isPassword = false;
+            this.bunifuMaterialTextbox23.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox23.LineIdleColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox23.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox23.LineThickness = 4;
+            this.bunifuMaterialTextbox23.Location = new System.Drawing.Point(832, 413);
+            this.bunifuMaterialTextbox23.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox23.Name = "bunifuMaterialTextbox23";
+            this.bunifuMaterialTextbox23.Size = new System.Drawing.Size(105, 44);
+            this.bunifuMaterialTextbox23.TabIndex = 164;
+            this.bunifuMaterialTextbox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuMaterialTextbox24
+            // 
+            this.bunifuMaterialTextbox24.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuMaterialTextbox24.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox24.Enabled = false;
+            this.bunifuMaterialTextbox24.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox24.ForeColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox24.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuMaterialTextbox24.HintText = "Total conflits";
+            this.bunifuMaterialTextbox24.isPassword = false;
+            this.bunifuMaterialTextbox24.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox24.LineIdleColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox24.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox24.LineThickness = 4;
+            this.bunifuMaterialTextbox24.Location = new System.Drawing.Point(1170, 413);
+            this.bunifuMaterialTextbox24.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox24.Name = "bunifuMaterialTextbox24";
+            this.bunifuMaterialTextbox24.Size = new System.Drawing.Size(105, 44);
+            this.bunifuMaterialTextbox24.TabIndex = 165;
+            this.bunifuMaterialTextbox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuMaterialTextbox25
+            // 
+            this.bunifuMaterialTextbox25.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuMaterialTextbox25.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox25.Enabled = false;
+            this.bunifuMaterialTextbox25.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox25.ForeColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox25.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuMaterialTextbox25.HintText = "Total conflits";
+            this.bunifuMaterialTextbox25.isPassword = false;
+            this.bunifuMaterialTextbox25.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox25.LineIdleColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox25.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuMaterialTextbox25.LineThickness = 4;
+            this.bunifuMaterialTextbox25.Location = new System.Drawing.Point(719, 413);
+            this.bunifuMaterialTextbox25.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox25.Name = "bunifuMaterialTextbox25";
+            this.bunifuMaterialTextbox25.Size = new System.Drawing.Size(105, 44);
+            this.bunifuMaterialTextbox25.TabIndex = 163;
+            this.bunifuMaterialTextbox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
             // frm_stats_conflits
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -735,5 +1323,31 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label2;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox21;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox22;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox23;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox24;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox25;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox16;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox17;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox18;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox19;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox20;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox11;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox12;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox13;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox14;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox15;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox6;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox7;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox8;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox9;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox10;
+        private System.Windows.Forms.Label label16;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox5;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox4;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox3;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
     }
 }
