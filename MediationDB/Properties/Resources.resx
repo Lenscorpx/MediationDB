@@ -154,9 +154,6 @@
   <data name="violences_sur_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\violences_sur_bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pandora" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pandora.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ateliers" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ateliers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -178,8 +175,8 @@
   <data name="location_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\location_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ISSSS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ISSSS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pandora" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pandora.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="menages 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menages 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -277,9 +274,6 @@
   <data name="multiply_96px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\multiply_96px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="add_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="combo_chart_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\combo_chart_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -319,6 +313,9 @@
   <data name="multiply_96px2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\multiply_96px2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="add_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="LOGO-SCC-2019-PNG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LOGO-SCC-2019-PNG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -328,11 +325,17 @@
   <data name="mediator-red" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mediator-red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pandora 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pandora 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="statistics_report_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\statistics_report_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="idea_sharing_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\idea_sharing_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ISSSS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ISSSS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="racism_80px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\racism_80px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -355,7 +358,7 @@
   <data name="Feronia-portada" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Feronia-portada.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pandora 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pandora 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="refresh_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\refresh_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
