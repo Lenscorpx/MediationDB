@@ -2739,3 +2739,365 @@ go
 ------------ 1. End of block -----------------------------------------------------------------------------------------------------------------
 
 ------------ 2. Total informations generales sur le conflit et les menages impliques dedans par localite--------------------------------------
+create procedure stats_total_conflit_parlocalite
+@date_un date,
+@date_deux date,
+@id_localite nvarchar(50)
+	as
+		select  count(distinct t_conflit.num_conflit)      
+			--t_conflit.id_localite, 
+			--t_conflit.num_conflit, 
+			--t_mediation.date_debut_mediation, 
+			--t_mediation.date_fin_mediation, 
+			--t_assignation_resolution.id_resolution, 
+			--t_parties.id_typ_partie, 
+            --t_menages.total_homme, 
+			--t_menages.total_femme, 
+			--t_menages.total_garcons, 
+			--t_menages.total_filles
+		from            
+			t_conflit 
+				inner join
+            		t_assignation_resolution on t_conflit.num_conflit = t_assignation_resolution.num_conflit 
+				inner join
+            		t_mediation on t_conflit.num_conflit = t_mediation.num_conflit 
+				inner join
+            		t_parties on t_conflit.num_conflit = t_parties.num_conflit 
+				inner join
+            		t_menages on t_parties.id_menage = t_menages.id_menage
+		where
+			id_localite like @id_localite and t_mediation.date_debut_mediation between @date_un and @date_deux
+go
+
+
+create procedure stats_total_hommes_conflit_parlocalite
+@date_un date,
+@date_deux date,
+@id_localite nvarchar(50)
+	as
+		select  
+			--count(distinct t_conflit.num_conflit)      
+			--t_conflit.id_localite, 
+			--t_conflit.num_conflit, 
+			--t_mediation.date_debut_mediation, 
+			--t_mediation.date_fin_mediation, 
+			--t_assignation_resolution.id_resolution, 
+			--t_parties.id_typ_partie, 
+            sum(t_menages.total_homme)--, 
+			--t_menages.total_femme, 
+			--t_menages.total_garcons, 
+			--t_menages.total_filles
+		from            
+			t_conflit 
+				inner join
+            		t_assignation_resolution on t_conflit.num_conflit = t_assignation_resolution.num_conflit 
+				inner join
+            		t_mediation on t_conflit.num_conflit = t_mediation.num_conflit 
+				inner join
+            		t_parties on t_conflit.num_conflit = t_parties.num_conflit 
+				inner join
+            		t_menages on t_parties.id_menage = t_menages.id_menage
+		where
+			id_localite like @id_localite and t_mediation.date_debut_mediation between @date_un and @date_deux
+go
+
+create procedure stats_total_femmes_conflit_parperiode
+@date_un date,
+@date_deux date
+	as
+		select  
+			--count(distinct t_conflit.num_conflit)      
+			--t_conflit.id_localite, 
+			--t_conflit.num_conflit, 
+			--t_mediation.date_debut_mediation, 
+			--t_mediation.date_fin_mediation, 
+			--t_assignation_resolution.id_resolution, 
+			--t_parties.id_typ_partie, 
+            --sum(t_menages.total_homme)--, 
+			sum(t_menages.total_femme)--, 
+			--t_menages.total_garcons, 
+			--t_menages.total_filles
+		from            
+			t_conflit 
+				inner join
+            		t_assignation_resolution on t_conflit.num_conflit = t_assignation_resolution.num_conflit 
+				inner join
+            		t_mediation on t_conflit.num_conflit = t_mediation.num_conflit 
+				inner join
+            		t_parties on t_conflit.num_conflit = t_parties.num_conflit 
+				inner join
+            		t_menages on t_parties.id_menage = t_menages.id_menage
+		where
+			t_mediation.date_debut_mediation between @date_un and @date_deux
+go
+create procedure stats_total_filles_conflit_parperiode
+@date_un date,
+@date_deux date
+	as
+		select  
+			--count(distinct t_conflit.num_conflit)      
+			--t_conflit.id_localite, 
+			--t_conflit.num_conflit, 
+			--t_mediation.date_debut_mediation, 
+			--t_mediation.date_fin_mediation, 
+			--t_assignation_resolution.id_resolution, 
+			--t_parties.id_typ_partie, 
+            --sum(t_menages.total_homme)--, 
+			--sum(t_menages.total_femme)--, 
+			--t_menages.total_garcons, 
+			sum(t_menages.total_filles)
+		from            
+			t_conflit 
+				inner join
+            		t_assignation_resolution on t_conflit.num_conflit = t_assignation_resolution.num_conflit 
+				inner join
+            		t_mediation on t_conflit.num_conflit = t_mediation.num_conflit 
+				inner join
+            		t_parties on t_conflit.num_conflit = t_parties.num_conflit 
+				inner join
+            		t_menages on t_parties.id_menage = t_menages.id_menage
+		where
+			t_mediation.date_debut_mediation between @date_un and @date_deux
+go
+create procedure stats_total_garcons_conflit_parperiode
+@date_un date,
+@date_deux date
+	as
+		select  
+			--count(distinct t_conflit.num_conflit)      
+			--t_conflit.id_localite, 
+			--t_conflit.num_conflit, 
+			--t_mediation.date_debut_mediation, 
+			--t_mediation.date_fin_mediation, 
+			--t_assignation_resolution.id_resolution, 
+			--t_parties.id_typ_partie, 
+            --sum(t_menages.total_homme)--, 
+			--sum(t_menages.total_femme)--, 
+			sum(t_menages.total_garcons)--, 
+			--sum(t_menages.total_filles)
+		from            
+			t_conflit 
+				inner join
+            		t_assignation_resolution on t_conflit.num_conflit = t_assignation_resolution.num_conflit 
+				inner join
+            		t_mediation on t_conflit.num_conflit = t_mediation.num_conflit 
+				inner join
+            		t_parties on t_conflit.num_conflit = t_parties.num_conflit 
+				inner join
+            		t_menages on t_parties.id_menage = t_menages.id_menage
+		where
+			t_mediation.date_debut_mediation between @date_un and @date_deux
+go
+create procedure stats_total_menages_conflit_parperiode
+@date_un date,
+@date_deux date
+	as
+		select  
+			--count(distinct t_conflit.num_conflit)      
+			--t_conflit.id_localite, 
+			--t_conflit.num_conflit, 
+			--t_mediation.date_debut_mediation, 
+			--t_mediation.date_fin_mediation, 
+			--t_assignation_resolution.id_resolution, 
+			--t_parties.id_typ_partie, 
+            --sum(t_menages.total_homme)--, 
+			--sum(t_menages.total_femme)--, 
+			--sum(t_menages.total_garcons)--, 
+			--sum(t_menages.total_filles),
+			sum(total_femme) + sum(total_filles) + sum(total_garcons) + sum(total_homme) as total_menage
+		from            
+			t_conflit 
+				inner join
+            		t_assignation_resolution on t_conflit.num_conflit = t_assignation_resolution.num_conflit 
+				inner join
+            		t_mediation on t_conflit.num_conflit = t_mediation.num_conflit 
+				inner join
+            		t_parties on t_conflit.num_conflit = t_parties.num_conflit 
+				inner join
+            		t_menages on t_parties.id_menage = t_menages.id_menage
+		where
+			t_mediation.date_debut_mediation between @date_un and @date_deux
+go
+create procedure stats_conflit_resolu_parperiode
+@date_un date,
+@date_deux date,
+@id_resolution nvarchar(50)
+	as
+		select  count(distinct t_conflit.num_conflit)      
+			--t_conflit.id_localite, 
+			--t_conflit.num_conflit, 
+			--t_mediation.date_debut_mediation, 
+			--t_mediation.date_fin_mediation, 
+			--t_assignation_resolution.id_resolution, 
+			--t_parties.id_typ_partie, 
+            --t_menages.total_homme, 
+			--t_menages.total_femme, 
+			--t_menages.total_garcons, 
+			--t_menages.total_filles
+		from            
+			t_conflit 
+				inner join
+            		t_assignation_resolution on t_conflit.num_conflit = t_assignation_resolution.num_conflit 
+				inner join
+            		t_mediation on t_conflit.num_conflit = t_mediation.num_conflit 
+				inner join
+            		t_parties on t_conflit.num_conflit = t_parties.num_conflit 
+				inner join
+            		t_menages on t_parties.id_menage = t_menages.id_menage
+		where
+			id_resolution like @id_resolution and t_mediation.date_debut_mediation between @date_un and @date_deux
+go
+
+
+create procedure stats_hommes_conflit_resolu_parperiode
+@date_un date,
+@date_deux date,
+@id_resolution nvarchar(50)
+	as
+		select  
+			--count(distinct t_conflit.num_conflit)      
+			--t_conflit.id_localite, 
+			--t_conflit.num_conflit, 
+			--t_mediation.date_debut_mediation, 
+			--t_mediation.date_fin_mediation, 
+			--t_assignation_resolution.id_resolution, 
+			--t_parties.id_typ_partie, 
+            sum(t_menages.total_homme)--, 
+			--t_menages.total_femme, 
+			--t_menages.total_garcons, 
+			--t_menages.total_filles
+		from            
+			t_conflit 
+				inner join
+            		t_assignation_resolution on t_conflit.num_conflit = t_assignation_resolution.num_conflit 
+				inner join
+            		t_mediation on t_conflit.num_conflit = t_mediation.num_conflit 
+				inner join
+            		t_parties on t_conflit.num_conflit = t_parties.num_conflit 
+				inner join
+            		t_menages on t_parties.id_menage = t_menages.id_menage
+		where
+			id_resolution like @id_resolution and t_mediation.date_debut_mediation between @date_un and @date_deux
+go
+
+create procedure stats_femmes_conflit_resolus_parperiode
+@date_un date,
+@date_deux date,
+@id_resolution nvarchar(50)
+	as
+		select  
+			--count(distinct t_conflit.num_conflit)      
+			--t_conflit.id_localite, 
+			--t_conflit.num_conflit, 
+			--t_mediation.date_debut_mediation, 
+			--t_mediation.date_fin_mediation, 
+			--t_assignation_resolution.id_resolution, 
+			--t_parties.id_typ_partie, 
+            --sum(t_menages.total_homme)--, 
+			sum(t_menages.total_femme)--, 
+			--t_menages.total_garcons, 
+			--t_menages.total_filles
+		from            
+			t_conflit 
+				inner join
+            		t_assignation_resolution on t_conflit.num_conflit = t_assignation_resolution.num_conflit 
+				inner join
+            		t_mediation on t_conflit.num_conflit = t_mediation.num_conflit 
+				inner join
+            		t_parties on t_conflit.num_conflit = t_parties.num_conflit 
+				inner join
+            		t_menages on t_parties.id_menage = t_menages.id_menage
+		where
+			id_resolution like @id_resolution and t_mediation.date_debut_mediation between @date_un and @date_deux
+go
+create procedure stats_filles_conflit_resolus_parperiode
+@date_un date,
+@date_deux date,
+@id_resolution nvarchar(50)
+	as
+		select  
+			--count(distinct t_conflit.num_conflit)      
+			--t_conflit.id_localite, 
+			--t_conflit.num_conflit, 
+			--t_mediation.date_debut_mediation, 
+			--t_mediation.date_fin_mediation, 
+			--t_assignation_resolution.id_resolution, 
+			--t_parties.id_typ_partie, 
+            --sum(t_menages.total_homme)--, 
+			--sum(t_menages.total_femme)--, 
+			--t_menages.total_garcons, 
+			sum(t_menages.total_filles)
+		from            
+			t_conflit 
+				inner join
+            		t_assignation_resolution on t_conflit.num_conflit = t_assignation_resolution.num_conflit 
+				inner join
+            		t_mediation on t_conflit.num_conflit = t_mediation.num_conflit 
+				inner join
+            		t_parties on t_conflit.num_conflit = t_parties.num_conflit 
+				inner join
+            		t_menages on t_parties.id_menage = t_menages.id_menage
+		where
+			id_resolution like @id_resolution and t_mediation.date_debut_mediation between @date_un and @date_deux
+go
+create procedure stats_garcons_conflit_resolus_parperiode
+@date_un date,
+@date_deux date,
+@id_resolution nvarchar(50)
+	as
+		select  
+			--count(distinct t_conflit.num_conflit)      
+			--t_conflit.id_localite, 
+			--t_conflit.num_conflit, 
+			--t_mediation.date_debut_mediation, 
+			--t_mediation.date_fin_mediation, 
+			--t_assignation_resolution.id_resolution, 
+			--t_parties.id_typ_partie, 
+            --sum(t_menages.total_homme)--, 
+			--sum(t_menages.total_femme)--, 
+			sum(t_menages.total_garcons)--, 
+			--sum(t_menages.total_filles)
+		from            
+			t_conflit 
+				inner join
+            		t_assignation_resolution on t_conflit.num_conflit = t_assignation_resolution.num_conflit 
+				inner join
+            		t_mediation on t_conflit.num_conflit = t_mediation.num_conflit 
+				inner join
+            		t_parties on t_conflit.num_conflit = t_parties.num_conflit 
+				inner join
+            		t_menages on t_parties.id_menage = t_menages.id_menage
+		where
+			id_resolution like @id_resolution and t_mediation.date_debut_mediation between @date_un and @date_deux
+go
+create procedure stats_menages_conflit_resolus_parperiode
+@date_un date,
+@date_deux date,
+@id_resolution nvarchar(50)
+	as
+		select  
+			--count(distinct t_conflit.num_conflit)      
+			--t_conflit.id_localite, 
+			--t_conflit.num_conflit, 
+			--t_mediation.date_debut_mediation, 
+			--t_mediation.date_fin_mediation, 
+			--t_assignation_resolution.id_resolution, 
+			--t_parties.id_typ_partie, 
+            --sum(t_menages.total_homme)--, 
+			--sum(t_menages.total_femme)--, 
+			--sum(t_menages.total_garcons)--, 
+			--sum(t_menages.total_filles),
+			sum(total_femme) + sum(total_filles) + sum(total_garcons) + sum(total_homme) as total_menage
+		from            
+			t_conflit 
+				inner join
+            		t_assignation_resolution on t_conflit.num_conflit = t_assignation_resolution.num_conflit 
+				inner join
+            		t_mediation on t_conflit.num_conflit = t_mediation.num_conflit 
+				inner join
+            		t_parties on t_conflit.num_conflit = t_parties.num_conflit 
+				inner join
+            		t_menages on t_parties.id_menage = t_menages.id_menage
+		where
+			id_resolution like @id_resolution and t_mediation.date_debut_mediation between @date_un and @date_deux
+go
