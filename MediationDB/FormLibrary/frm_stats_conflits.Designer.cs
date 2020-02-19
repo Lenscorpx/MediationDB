@@ -32,9 +32,7 @@
             this.pnl_header = new System.Windows.Forms.Panel();
             this.bunifuGauge1 = new Bunifu.Framework.UI.BunifuGauge();
             this.label2 = new System.Windows.Forms.Label();
-            this.lbl_nbre_conflits = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.label1 = new System.Windows.Forms.Label();
@@ -80,17 +78,6 @@
             this.label2.TabIndex = 41;
             this.label2.Text = "Total conflits";
             // 
-            // lbl_nbre_conflits
-            // 
-            this.lbl_nbre_conflits.AutoSize = true;
-            this.lbl_nbre_conflits.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_nbre_conflits.ForeColor = System.Drawing.Color.White;
-            this.lbl_nbre_conflits.Location = new System.Drawing.Point(230, 19);
-            this.lbl_nbre_conflits.Name = "lbl_nbre_conflits";
-            this.lbl_nbre_conflits.Size = new System.Drawing.Size(26, 30);
-            this.lbl_nbre_conflits.TabIndex = 42;
-            this.lbl_nbre_conflits.Text = "0";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -102,22 +89,9 @@
             this.label4.TabIndex = 43;
             this.label4.Text = "Total conflits";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(298, 109);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(26, 30);
-            this.label3.TabIndex = 44;
-            this.label3.Text = "0";
-            // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.lbl_nbre_conflits);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.bunifuGauge1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -144,11 +118,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(407, 7);
+            this.label1.Location = new System.Drawing.Point(472, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(491, 36);
+            this.label1.Size = new System.Drawing.Size(369, 36);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Informations sur les sensibilisations";
+            this.label1.Text = "Statistiques sur les conflits";
             // 
             // frm_stats_conflits
             // 
@@ -175,9 +149,7 @@
         private System.Windows.Forms.Panel pnl_header;
         private Bunifu.Framework.UI.BunifuGauge bunifuGauge1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lbl_nbre_conflits;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private System.Windows.Forms.Label label1;
