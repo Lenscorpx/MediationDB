@@ -4156,6 +4156,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
+
         public void stats_total_conflit_parperiode(TextBox total, DateTime date_un, DateTime date_deux)
         {
             cnx = new SqlConnection(prms.ToString());
