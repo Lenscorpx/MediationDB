@@ -39,7 +39,6 @@
             this.txt_localite = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.txt_id_localite = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.cbx_resolutions = new MetroFramework.Controls.MetroComboBox();
             this.txt_nombre_conflit = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -115,8 +114,6 @@
             this.txt_total_filles = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txt_total_femmes = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txt_total_hommes = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.btn_sensibilisations = new Bunifu.Framework.UI.BunifuTileButton();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.chart_classed = new Bunifu.Framework.UI.BunifuGauge();
             this.chart_refered = new Bunifu.Framework.UI.BunifuGauge();
             this.chart_encours = new Bunifu.Framework.UI.BunifuGauge();
@@ -151,7 +148,6 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btn_sensibilisations);
             this.panel1.Controls.Add(this.txt_total_general);
             this.panel1.Controls.Add(this.txt_total_garcons);
             this.panel1.Controls.Add(this.txt_total_filles);
@@ -220,7 +216,6 @@
             this.panel1.Controls.Add(this.txt_conflits_referes);
             this.panel1.Controls.Add(this.txt_conflits_encours);
             this.panel1.Controls.Add(this.txt_conflit_resolus);
-            this.panel1.Controls.Add(this.bunifuFlatButton1);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label7);
@@ -230,7 +225,6 @@
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.chart_encours);
             this.panel1.Controls.Add(this.txt_nombre_conflit);
-            this.panel1.Controls.Add(this.cbx_resolutions);
             this.panel1.Controls.Add(this.btn_search_period);
             this.panel1.Controls.Add(this.dt_resol_2);
             this.panel1.Controls.Add(this.dt_resol_1);
@@ -307,10 +301,10 @@
             this.txt_localite.LineIdleColor = System.Drawing.Color.White;
             this.txt_localite.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_localite.LineThickness = 4;
-            this.txt_localite.Location = new System.Drawing.Point(256, 7);
+            this.txt_localite.Location = new System.Drawing.Point(239, 7);
             this.txt_localite.Margin = new System.Windows.Forms.Padding(4);
             this.txt_localite.Name = "txt_localite";
-            this.txt_localite.Size = new System.Drawing.Size(296, 44);
+            this.txt_localite.Size = new System.Drawing.Size(371, 44);
             this.txt_localite.TabIndex = 78;
             this.txt_localite.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -349,22 +343,6 @@
             this.txt_id_localite.TabIndex = 77;
             this.txt_id_localite.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_id_localite.OnValueChanged += new System.EventHandler(this.txt_id_localite_OnValueChanged);
-            // 
-            // cbx_resolutions
-            // 
-            this.cbx_resolutions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.cbx_resolutions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbx_resolutions.ForeColor = System.Drawing.Color.White;
-            this.cbx_resolutions.FormattingEnabled = true;
-            this.cbx_resolutions.ItemHeight = 23;
-            this.cbx_resolutions.Location = new System.Drawing.Point(256, 66);
-            this.cbx_resolutions.Name = "cbx_resolutions";
-            this.cbx_resolutions.PromptText = "Completez la résolution pour ce conflit";
-            this.cbx_resolutions.Size = new System.Drawing.Size(296, 29);
-            this.cbx_resolutions.Style = MetroFramework.MetroColorStyle.Blue;
-            this.cbx_resolutions.TabIndex = 119;
-            this.cbx_resolutions.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.cbx_resolutions.UseSelectable = true;
             // 
             // txt_nombre_conflit
             // 
@@ -1545,64 +1523,6 @@
             this.txt_total_hommes.TabIndex = 221;
             this.txt_total_hommes.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // btn_sensibilisations
-            // 
-            this.btn_sensibilisations.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_sensibilisations.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.btn_sensibilisations.color = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.btn_sensibilisations.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.btn_sensibilisations.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_sensibilisations.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.btn_sensibilisations.ForeColor = System.Drawing.Color.White;
-            this.btn_sensibilisations.Image = global::MediationDB.Properties.Resources.refresh_96px;
-            this.btn_sensibilisations.ImagePosition = 18;
-            this.btn_sensibilisations.ImageZoom = 50;
-            this.btn_sensibilisations.LabelPosition = 36;
-            this.btn_sensibilisations.LabelText = "Actualiser";
-            this.btn_sensibilisations.Location = new System.Drawing.Point(1170, 532);
-            this.btn_sensibilisations.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.btn_sensibilisations.Name = "btn_sensibilisations";
-            this.btn_sensibilisations.Size = new System.Drawing.Size(97, 101);
-            this.btn_sensibilisations.TabIndex = 226;
-            // 
-            // bunifuFlatButton1
-            // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuFlatButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "Rechercher";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton1.ForeColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = global::MediationDB.Properties.Resources.search_more_96px;
-            this.bunifuFlatButton1.Iconimage_right = null;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.IconZoom = 80D;
-            this.bunifuFlatButton1.IsTab = true;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(560, 61);
-            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(162, 40);
-            this.bunifuFlatButton1.TabIndex = 134;
-            this.bunifuFlatButton1.Text = "Rechercher";
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
             // chart_classed
             // 
             this.chart_classed.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chart_classed.BackgroundImage")));
@@ -1763,8 +1683,6 @@
         private System.Windows.Forms.Label label5;
         private Bunifu.Framework.UI.BunifuGauge chart_encours;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_nombre_conflit;
-        private MetroFramework.Controls.MetroComboBox cbx_resolutions;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_conflits_classes;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_conflits_referes;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_conflits_encours;
@@ -1834,6 +1752,5 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_filles_resolus;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_femmes_resolus;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_hommes_resolus;
-        public Bunifu.Framework.UI.BunifuTileButton btn_sensibilisations;
     }
 }
