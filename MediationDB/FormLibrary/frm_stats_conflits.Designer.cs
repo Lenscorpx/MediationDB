@@ -328,6 +328,7 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(226, 561);
             this.listBox1.TabIndex = 76;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // txt_id_localite
             // 
@@ -347,6 +348,7 @@
             this.txt_id_localite.Size = new System.Drawing.Size(226, 44);
             this.txt_id_localite.TabIndex = 77;
             this.txt_id_localite.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_id_localite.OnValueChanged += new System.EventHandler(this.txt_id_localite_OnValueChanged);
             // 
             // cbx_resolutions
             // 
@@ -1594,7 +1596,7 @@
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(141, 40);
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(162, 40);
             this.bunifuFlatButton1.TabIndex = 134;
             this.bunifuFlatButton1.Text = "Rechercher";
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1680,7 +1682,7 @@
             this.btn_search_period.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_search_period.OnHoverTextColor = System.Drawing.Color.White;
             this.btn_search_period.selected = false;
-            this.btn_search_period.Size = new System.Drawing.Size(141, 40);
+            this.btn_search_period.Size = new System.Drawing.Size(155, 40);
             this.btn_search_period.TabIndex = 83;
             this.btn_search_period.Text = "Rechercher";
             this.btn_search_period.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
