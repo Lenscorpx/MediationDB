@@ -4157,7 +4157,7 @@ namespace MediationDB.DataLibrary
             }
         }
 
-        public void stats_total_conflit_parperiode(TextBox total, DateTime date_un, DateTime date_deux)
+        public void stats_total_conflit_parperiode(BunifuMaterialTextbox total, DateTime date_un, DateTime date_deux)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -4188,7 +4188,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void stats_total_hommes_conflit_parperiode(TextBox total, DateTime date_un, DateTime date_deux)
+        public void stats_total_hommes_conflit_parperiode(BunifuMaterialTextbox total, DateTime date_un, DateTime date_deux)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -4219,7 +4219,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void stats_total_femmes_conflit_parperiode(TextBox total, DateTime date_un, DateTime date_deux)
+        public void stats_total_femmes_conflit_parperiode(BunifuMaterialTextbox total, DateTime date_un, DateTime date_deux)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -4250,7 +4250,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void stats_total_filles_conflit_parperiode(TextBox total, DateTime date_un, DateTime date_deux)
+        public void stats_total_filles_conflit_parperiode(BunifuMaterialTextbox total, DateTime date_un, DateTime date_deux)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -4281,7 +4281,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void stats_total_garcons_conflit_parperiode(TextBox total, DateTime date_un, DateTime date_deux)
+        public void stats_total_garcons_conflit_parperiode(BunifuMaterialTextbox total, DateTime date_un, DateTime date_deux)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -4312,7 +4312,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void stats_total_menages_conflit_parperiode(TextBox total, DateTime date_un, DateTime date_deux)
+        public void stats_total_menages_conflit_parperiode(BunifuMaterialTextbox total, DateTime date_un, DateTime date_deux)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -4343,7 +4343,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void stats_conflit_resolu_parperiode(TextBox total, string id_resolution, DateTime date_un, DateTime date_deux)
+        public void stats_conflit_resolu_parperiode(BunifuMaterialTextbox total, string id_resolution, DateTime date_un, DateTime date_deux)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -4375,7 +4375,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void stats_hommes_conflit_resolu_parperiode(TextBox total, string id_resolution, DateTime date_un, DateTime date_deux)
+        public void stats_hommes_conflit_resolu_parperiode(BunifuMaterialTextbox total, string id_resolution, DateTime date_un, DateTime date_deux)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -4407,7 +4407,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void stats_femmes_conflit_resolus_parperiode(TextBox total, string id_resolution, DateTime date_un, DateTime date_deux)
+        public void stats_femmes_conflit_resolus_parperiode(BunifuMaterialTextbox total, string id_resolution, DateTime date_un, DateTime date_deux)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -4439,7 +4439,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void stats_filles_conflit_resolus_parperiode(TextBox total, string id_resolution, DateTime date_un, DateTime date_deux)
+        public void stats_filles_conflit_resolus_parperiode(BunifuMaterialTextbox total, string id_resolution, DateTime date_un, DateTime date_deux)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -4471,7 +4471,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void stats_garcons_conflit_resolus_parperiode(TextBox total, string id_resolution, DateTime date_un, DateTime date_deux)
+        public void stats_garcons_conflit_resolus_parperiode(BunifuMaterialTextbox total, string id_resolution, DateTime date_un, DateTime date_deux)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -4503,7 +4503,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void stats_menages_conflit_resolus_parperiode(TextBox total, string id_resolution, DateTime date_un, DateTime date_deux)
+        public void stats_menages_conflit_resolus_parperiode(BunifuMaterialTextbox total, string id_resolution, DateTime date_un, DateTime date_deux)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -4535,7 +4535,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void stats_total_conflit_parlocalite(TextBox total, string id_localite, DateTime date_un, DateTime date_deux)
+        public void stats_total_conflit_parlocalite(BunifuMaterialTextbox total, string id_localite, DateTime date_un, DateTime date_deux)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -4567,7 +4567,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void stats_total_hommes_conflit_parlocalite(TextBox total, string id_localite, DateTime date_un, DateTime date_deux)
+        public void stats_total_hommes_conflit_parlocalite(BunifuMaterialTextbox total, string id_localite, DateTime date_un, DateTime date_deux)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -4599,7 +4599,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void stats_total_femmes_conflit_parlocalite(TextBox total, string id_localite, DateTime date_un, DateTime date_deux)
+        public void stats_total_femmes_conflit_parlocalite(BunifuMaterialTextbox total, string id_localite, DateTime date_un, DateTime date_deux)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -4631,7 +4631,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void stats_total_filles_conflit_parlocalite(TextBox total, string id_localite, DateTime date_un, DateTime date_deux)
+        public void stats_total_filles_conflit_parlocalite(BunifuMaterialTextbox total, string id_localite, DateTime date_un, DateTime date_deux)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -4663,7 +4663,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void stats_total_garcons_conflit_parlocalite(TextBox total, string id_localite, DateTime date_un, DateTime date_deux)
+        public void stats_total_garcons_conflit_parlocalite(BunifuMaterialTextbox total, string id_localite, DateTime date_un, DateTime date_deux)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -4695,7 +4695,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void stats_total_menages_conflit_parlocalite(TextBox total, string id_localite, DateTime date_un, DateTime date_deux)
+        public void stats_total_menages_conflit_parlocalite(BunifuMaterialTextbox total, string id_localite, DateTime date_un, DateTime date_deux)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -4727,7 +4727,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void stats_conflit_resolu_parlocalite(TextBox total, string id_localite, DateTime date_un, DateTime date_deux)
+        public void stats_conflit_resolu_parlocalite(BunifuMaterialTextbox total, string id_localite, DateTime date_un, DateTime date_deux)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -4759,7 +4759,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void stats_hommes_conflit_resolu_parlocalite(TextBox total, string id_localite, DateTime date_un, DateTime date_deux)
+        public void stats_hommes_conflit_resolu_parlocalite(BunifuMaterialTextbox total, string id_localite, DateTime date_un, DateTime date_deux)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -4791,7 +4791,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void stats_femmes_conflit_resolus_parlocalite(TextBox total,string id_resolution, string id_localite, DateTime date_un, DateTime date_deux)
+        public void stats_femmes_conflit_resolus_parlocalite(BunifuMaterialTextbox total,string id_resolution, string id_localite, DateTime date_un, DateTime date_deux)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -4824,7 +4824,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void stats_filles_conflit_resolus_parlocalite(TextBox total, string id_resolution, string id_localite, DateTime date_un, DateTime date_deux)
+        public void stats_filles_conflit_resolus_parlocalite(BunifuMaterialTextbox total, string id_resolution, string id_localite, DateTime date_un, DateTime date_deux)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -4857,7 +4857,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void stats_garcons_conflit_resolus_parlocalite(TextBox total, string id_resolution, string id_localite, DateTime date_un, DateTime date_deux)
+        public void stats_garcons_conflit_resolus_parlocalite(BunifuMaterialTextbox total, string id_resolution, string id_localite, DateTime date_un, DateTime date_deux)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -4890,7 +4890,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void stats_menages_conflit_resolus_parlocalite(TextBox total, string id_resolution, string id_localite, DateTime date_un, DateTime date_deux)
+        public void stats_menages_conflit_resolus_parlocalite(BunifuMaterialTextbox total, string id_resolution, string id_localite, DateTime date_un, DateTime date_deux)
         {
             cnx = new SqlConnection(prms.ToString());
             try

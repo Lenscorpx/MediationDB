@@ -86,5 +86,10 @@ namespace MediationDB.FormLibrary
         {
             this.Close();
         }
+
+        private void btn_search_period_Click(object sender, EventArgs e)
+        {
+            rps.stats_total_conflit_parperiode(txt_nombre_conflit, dt_resol_1.Value, dt_resol_2.Value);
+        }
     }
 }

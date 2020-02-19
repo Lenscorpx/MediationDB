@@ -1608,6 +1608,7 @@
             this.btn_search_period.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_search_period.Textcolor = System.Drawing.Color.White;
             this.btn_search_period.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_search_period.Click += new System.EventHandler(this.btn_search_period_Click);
             // 
             // chart_resolus
             // 
