@@ -4342,6 +4342,70 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
+        public void stats_conflit_resolu_parperiode(TextBox total, string id_resolution, DateTime date_un, DateTime date_deux)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("stats_conflit_resolu_parperiode", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.Parameters.Add(new SqlParameter("date_un", SqlDbType.DateTime)).Value = date_un;
+                cmd.Parameters.Add(new SqlParameter("date_deux", SqlDbType.DateTime)).Value = date_deux;
+                cmd.Parameters.Add(new SqlParameter("id_resolution", SqlDbType.NVarChar)).Value = id_resolution;
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                foreach (DataRow dr in dt.Rows)
+                {
+                    total.Text = Convert.ToString(dr[0]);
+                }
+            }
+            catch (Exception tdf)
+            {
+                //MessageBox.Show("Connection failed!\n" + tdf);
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void stats_hommes_conflit_resolu_parperiode(TextBox total, string id_resolution, DateTime date_un, DateTime date_deux)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("stats_hommes_conflit_resolu_parperiode", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.Parameters.Add(new SqlParameter("date_un", SqlDbType.DateTime)).Value = date_un;
+                cmd.Parameters.Add(new SqlParameter("date_deux", SqlDbType.DateTime)).Value = date_deux;
+                cmd.Parameters.Add(new SqlParameter("id_resolution", SqlDbType.NVarChar)).Value = id_resolution;
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                foreach (DataRow dr in dt.Rows)
+                {
+                    total.Text = Convert.ToString(dr[0]);
+                }
+            }
+            catch (Exception tdf)
+            {
+                //MessageBox.Show("Connection failed!\n" + tdf);
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
 
 
     }
