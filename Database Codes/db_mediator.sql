@@ -2375,6 +2375,7 @@ as
 			t_chefferie.id_territoire like 'Masisi'
 go
 ---------------- Toutes les recherches par periode sur le nombre de conflits------------------------------------------------------------------
+------------ 1. Total informations sur le conflit et les menages impliques dedans-------------------------------------------------------------
 create procedure stats_total_conflit_parperiode
 @date_un date,
 @date_deux date
