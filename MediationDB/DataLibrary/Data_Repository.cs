@@ -3856,7 +3856,6 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        
         public void search_rapport_conflit_by_conflit(DataGridView dtg, string num_conflit)
         {
             cnx = new SqlConnection(prms.ToString());
@@ -4151,6 +4150,68 @@ namespace MediationDB.DataLibrary
                 {
                     MessageBox.Show(exct.ToString());
                 }
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void stats_total_conflit_parperiode(TextBox total, DateTime date_un, DateTime date_deux)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("stats_total_conflit_parperiode", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.Parameters.Add(new SqlParameter("date_un", SqlDbType.DateTime)).Value = date_un;
+                cmd.Parameters.Add(new SqlParameter("date_deux", SqlDbType.DateTime)).Value = date_deux;
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                foreach (DataRow dr in dt.Rows)
+                {
+                    total.Text = Convert.ToString(dr[0]);
+                }
+            }
+            catch (Exception tdf)
+            {
+                //MessageBox.Show("Connection failed!\n" + tdf);
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void stats_total_conflit_parperiode(TextBox total, DateTime date_un, DateTime date_deux)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("stats_total_conflit_parperiode", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.Parameters.Add(new SqlParameter("date_un", SqlDbType.DateTime)).Value = date_un;
+                cmd.Parameters.Add(new SqlParameter("date_deux", SqlDbType.DateTime)).Value = date_deux;
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var dt = new DataTable();
+                da.Fill(dt);
+                foreach (DataRow dr in dt.Rows)
+                {
+                    total.Text = Convert.ToString(dr[0]);
+                }
+            }
+            catch (Exception tdf)
+            {
+                //MessageBox.Show("Connection failed!\n" + tdf);
             }
             finally
             {
