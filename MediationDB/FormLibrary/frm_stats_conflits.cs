@@ -90,6 +90,71 @@ namespace MediationDB.FormLibrary
         private void btn_search_period_Click(object sender, EventArgs e)
         {
             rps.stats_total_conflit_parperiode(txt_nombre_conflit, dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_conflit_resolu_parperiode(txt_conflit_resolus, "Résolu", dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_conflit_resolu_parperiode(txt_conflits_referes, "Referé", dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_conflit_resolu_parperiode(txt_conflits_classes, "Classé", dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_conflit_resolu_parperiode(txt_conflits_encours, "En cours", dt_resol_1.Value, dt_resol_2.Value);
+
+            try
+            {
+                if(txt_conflit_resolus.Text=="")
+                {
+                    chart_resolus.Value = 0;
+                }
+                else
+                {
+                    chart_resolus.Value = (Convert.ToInt32(txt_conflit_resolus.Text) * 100) / Convert.ToInt32(txt_nombre_conflit.Text);
+                }
+                
+            }
+            catch
+            {
+
+            }
+            try
+            {
+                chart_encours.Value = (Convert.ToInt32(txt_total_encours.Text) * 100) / Convert.ToInt32(txt_nombre_conflit.Text);
+            }
+            catch
+            {
+
+            }
+            try
+            {
+                chart_refered.Value = (Convert.ToInt32(txt_total_referes.Text) * 100) / Convert.ToInt32(txt_nombre_conflit.Text);
+            }
+            catch
+            {
+
+            }
+            try
+            {
+                chart_classed.Value = (Convert.ToInt32(txt_total_classes.Text) * 100) / Convert.ToInt32(txt_nombre_conflit.Text);
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void txt_conflit_resolus_OnValueChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txt_conflits_encours_OnValueChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txt_conflits_referes_OnValueChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txt_conflits_classes_OnValueChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -140,7 +140,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(282, 519);
+            this.label4.Location = new System.Drawing.Point(372, 522);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(134, 21);
             this.label4.TabIndex = 43;
@@ -348,7 +348,6 @@
             // 
             this.txt_nombre_conflit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_nombre_conflit.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_nombre_conflit.Enabled = false;
             this.txt_nombre_conflit.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_nombre_conflit.ForeColor = System.Drawing.Color.White;
             this.txt_nombre_conflit.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -370,7 +369,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(463, 519);
+            this.label5.Location = new System.Drawing.Point(553, 522);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(149, 21);
             this.label5.TabIndex = 123;
@@ -381,7 +380,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(668, 519);
+            this.label6.Location = new System.Drawing.Point(758, 522);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(135, 21);
             this.label6.TabIndex = 125;
@@ -392,7 +391,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(865, 520);
+            this.label7.Location = new System.Drawing.Point(955, 523);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(136, 21);
             this.label7.TabIndex = 127;
@@ -428,7 +427,6 @@
             // 
             this.txt_conflit_resolus.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_conflit_resolus.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_conflit_resolus.Enabled = false;
             this.txt_conflit_resolus.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_conflit_resolus.ForeColor = System.Drawing.Color.White;
             this.txt_conflit_resolus.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -444,12 +442,12 @@
             this.txt_conflit_resolus.Size = new System.Drawing.Size(224, 44);
             this.txt_conflit_resolus.TabIndex = 135;
             this.txt_conflit_resolus.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_conflit_resolus.OnValueChanged += new System.EventHandler(this.txt_conflit_resolus_OnValueChanged);
             // 
             // txt_conflits_encours
             // 
             this.txt_conflits_encours.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_conflits_encours.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_conflits_encours.Enabled = false;
             this.txt_conflits_encours.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_conflits_encours.ForeColor = System.Drawing.Color.White;
             this.txt_conflits_encours.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -465,12 +463,12 @@
             this.txt_conflits_encours.Size = new System.Drawing.Size(224, 44);
             this.txt_conflits_encours.TabIndex = 136;
             this.txt_conflits_encours.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_conflits_encours.OnValueChanged += new System.EventHandler(this.txt_conflits_encours_OnValueChanged);
             // 
             // txt_conflits_referes
             // 
             this.txt_conflits_referes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_conflits_referes.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_conflits_referes.Enabled = false;
             this.txt_conflits_referes.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_conflits_referes.ForeColor = System.Drawing.Color.White;
             this.txt_conflits_referes.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -486,12 +484,12 @@
             this.txt_conflits_referes.Size = new System.Drawing.Size(224, 44);
             this.txt_conflits_referes.TabIndex = 137;
             this.txt_conflits_referes.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_conflits_referes.OnValueChanged += new System.EventHandler(this.txt_conflits_referes_OnValueChanged);
             // 
             // txt_conflits_classes
             // 
             this.txt_conflits_classes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_conflits_classes.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_conflits_classes.Enabled = false;
             this.txt_conflits_classes.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_conflits_classes.ForeColor = System.Drawing.Color.White;
             this.txt_conflits_classes.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -507,6 +505,7 @@
             this.txt_conflits_classes.Size = new System.Drawing.Size(224, 44);
             this.txt_conflits_classes.TabIndex = 138;
             this.txt_conflits_classes.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_conflits_classes.OnValueChanged += new System.EventHandler(this.txt_conflits_classes_OnValueChanged);
             // 
             // label2
             // 
@@ -567,7 +566,6 @@
             // 
             this.txt_hommes_conflits.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_hommes_conflits.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_hommes_conflits.Enabled = false;
             this.txt_hommes_conflits.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_hommes_conflits.ForeColor = System.Drawing.Color.White;
             this.txt_hommes_conflits.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -588,7 +586,6 @@
             // 
             this.txt_total_menages.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_total_menages.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_total_menages.Enabled = false;
             this.txt_total_menages.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_total_menages.ForeColor = System.Drawing.Color.White;
             this.txt_total_menages.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -609,7 +606,6 @@
             // 
             this.txt_femmes_conflits.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_femmes_conflits.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_femmes_conflits.Enabled = false;
             this.txt_femmes_conflits.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_femmes_conflits.ForeColor = System.Drawing.Color.White;
             this.txt_femmes_conflits.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -630,7 +626,6 @@
             // 
             this.txt_filles_conflits.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_filles_conflits.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_filles_conflits.Enabled = false;
             this.txt_filles_conflits.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_filles_conflits.ForeColor = System.Drawing.Color.White;
             this.txt_filles_conflits.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -651,7 +646,6 @@
             // 
             this.txt_garcons.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_garcons.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_garcons.Enabled = false;
             this.txt_garcons.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_garcons.ForeColor = System.Drawing.Color.White;
             this.txt_garcons.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -727,7 +721,6 @@
             // 
             this.txt_garcons_resolus.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_garcons_resolus.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_garcons_resolus.Enabled = false;
             this.txt_garcons_resolus.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_garcons_resolus.ForeColor = System.Drawing.Color.White;
             this.txt_garcons_resolus.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -748,7 +741,6 @@
             // 
             this.txt_filles_resolus.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_filles_resolus.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_filles_resolus.Enabled = false;
             this.txt_filles_resolus.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_filles_resolus.ForeColor = System.Drawing.Color.White;
             this.txt_filles_resolus.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -769,7 +761,6 @@
             // 
             this.txt_femmes_resolus.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_femmes_resolus.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_femmes_resolus.Enabled = false;
             this.txt_femmes_resolus.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_femmes_resolus.ForeColor = System.Drawing.Color.White;
             this.txt_femmes_resolus.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -790,7 +781,6 @@
             // 
             this.txt_hommes_resolus.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_hommes_resolus.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_hommes_resolus.Enabled = false;
             this.txt_hommes_resolus.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_hommes_resolus.ForeColor = System.Drawing.Color.White;
             this.txt_hommes_resolus.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -811,7 +801,6 @@
             // 
             this.txt_garcons_encours.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_garcons_encours.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_garcons_encours.Enabled = false;
             this.txt_garcons_encours.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_garcons_encours.ForeColor = System.Drawing.Color.White;
             this.txt_garcons_encours.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -832,7 +821,6 @@
             // 
             this.txt_filles_encours.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_filles_encours.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_filles_encours.Enabled = false;
             this.txt_filles_encours.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_filles_encours.ForeColor = System.Drawing.Color.White;
             this.txt_filles_encours.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -853,7 +841,6 @@
             // 
             this.txt_femmes_encours.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_femmes_encours.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_femmes_encours.Enabled = false;
             this.txt_femmes_encours.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_femmes_encours.ForeColor = System.Drawing.Color.White;
             this.txt_femmes_encours.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -874,7 +861,6 @@
             // 
             this.txt_hommes_encours.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_hommes_encours.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_hommes_encours.Enabled = false;
             this.txt_hommes_encours.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_hommes_encours.ForeColor = System.Drawing.Color.White;
             this.txt_hommes_encours.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -895,7 +881,6 @@
             // 
             this.txt_garcons_referes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_garcons_referes.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_garcons_referes.Enabled = false;
             this.txt_garcons_referes.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_garcons_referes.ForeColor = System.Drawing.Color.White;
             this.txt_garcons_referes.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -916,7 +901,6 @@
             // 
             this.txt_filles_referes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_filles_referes.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_filles_referes.Enabled = false;
             this.txt_filles_referes.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_filles_referes.ForeColor = System.Drawing.Color.White;
             this.txt_filles_referes.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -937,7 +921,6 @@
             // 
             this.txt_femmes_referes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_femmes_referes.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_femmes_referes.Enabled = false;
             this.txt_femmes_referes.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_femmes_referes.ForeColor = System.Drawing.Color.White;
             this.txt_femmes_referes.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -958,7 +941,6 @@
             // 
             this.txt_hommes_referes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_hommes_referes.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_hommes_referes.Enabled = false;
             this.txt_hommes_referes.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_hommes_referes.ForeColor = System.Drawing.Color.White;
             this.txt_hommes_referes.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -979,7 +961,6 @@
             // 
             this.txt_garcons_classes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_garcons_classes.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_garcons_classes.Enabled = false;
             this.txt_garcons_classes.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_garcons_classes.ForeColor = System.Drawing.Color.White;
             this.txt_garcons_classes.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -1000,7 +981,6 @@
             // 
             this.txt_filles_classes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_filles_classes.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_filles_classes.Enabled = false;
             this.txt_filles_classes.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_filles_classes.ForeColor = System.Drawing.Color.White;
             this.txt_filles_classes.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -1021,7 +1001,6 @@
             // 
             this.txt_femmes_classes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_femmes_classes.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_femmes_classes.Enabled = false;
             this.txt_femmes_classes.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_femmes_classes.ForeColor = System.Drawing.Color.White;
             this.txt_femmes_classes.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -1042,7 +1021,6 @@
             // 
             this.txt_hommes_classes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_hommes_classes.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_hommes_classes.Enabled = false;
             this.txt_hommes_classes.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_hommes_classes.ForeColor = System.Drawing.Color.White;
             this.txt_hommes_classes.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -1063,7 +1041,6 @@
             // 
             this.txt_total_resolus.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_total_resolus.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_total_resolus.Enabled = false;
             this.txt_total_resolus.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_total_resolus.ForeColor = System.Drawing.Color.White;
             this.txt_total_resolus.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -1084,7 +1061,6 @@
             // 
             this.txt_total_encours.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_total_encours.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_total_encours.Enabled = false;
             this.txt_total_encours.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_total_encours.ForeColor = System.Drawing.Color.White;
             this.txt_total_encours.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -1105,7 +1081,6 @@
             // 
             this.txt_total_referes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_total_referes.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_total_referes.Enabled = false;
             this.txt_total_referes.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_total_referes.ForeColor = System.Drawing.Color.White;
             this.txt_total_referes.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -1126,7 +1101,6 @@
             // 
             this.txt_total_classes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_total_classes.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_total_classes.Enabled = false;
             this.txt_total_classes.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_total_classes.ForeColor = System.Drawing.Color.White;
             this.txt_total_classes.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -1422,7 +1396,6 @@
             // 
             this.txt_total_general.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_total_general.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_total_general.Enabled = false;
             this.txt_total_general.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_total_general.ForeColor = System.Drawing.Color.White;
             this.txt_total_general.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -1443,7 +1416,6 @@
             // 
             this.txt_total_garcons.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_total_garcons.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_total_garcons.Enabled = false;
             this.txt_total_garcons.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_total_garcons.ForeColor = System.Drawing.Color.White;
             this.txt_total_garcons.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -1464,7 +1436,6 @@
             // 
             this.txt_total_filles.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_total_filles.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_total_filles.Enabled = false;
             this.txt_total_filles.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_total_filles.ForeColor = System.Drawing.Color.White;
             this.txt_total_filles.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -1485,7 +1456,6 @@
             // 
             this.txt_total_femmes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_total_femmes.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_total_femmes.Enabled = false;
             this.txt_total_femmes.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_total_femmes.ForeColor = System.Drawing.Color.White;
             this.txt_total_femmes.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -1506,7 +1476,6 @@
             // 
             this.txt_total_hommes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_total_hommes.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_total_hommes.Enabled = false;
             this.txt_total_hommes.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txt_total_hommes.ForeColor = System.Drawing.Color.White;
             this.txt_total_hommes.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -1528,7 +1497,7 @@
             this.chart_classed.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chart_classed.BackgroundImage")));
             this.chart_classed.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.chart_classed.ForeColor = System.Drawing.Color.White;
-            this.chart_classed.Location = new System.Drawing.Point(855, 532);
+            this.chart_classed.Location = new System.Drawing.Point(945, 535);
             this.chart_classed.Margin = new System.Windows.Forms.Padding(5);
             this.chart_classed.Name = "chart_classed";
             this.chart_classed.ProgressBgColor = System.Drawing.Color.White;
@@ -1544,7 +1513,7 @@
             this.chart_refered.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chart_refered.BackgroundImage")));
             this.chart_refered.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.chart_refered.ForeColor = System.Drawing.Color.White;
-            this.chart_refered.Location = new System.Drawing.Point(657, 532);
+            this.chart_refered.Location = new System.Drawing.Point(747, 535);
             this.chart_refered.Margin = new System.Windows.Forms.Padding(5);
             this.chart_refered.Name = "chart_refered";
             this.chart_refered.ProgressBgColor = System.Drawing.Color.White;
@@ -1560,7 +1529,7 @@
             this.chart_encours.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chart_encours.BackgroundImage")));
             this.chart_encours.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.chart_encours.ForeColor = System.Drawing.Color.White;
-            this.chart_encours.Location = new System.Drawing.Point(460, 532);
+            this.chart_encours.Location = new System.Drawing.Point(550, 535);
             this.chart_encours.Margin = new System.Windows.Forms.Padding(5);
             this.chart_encours.Name = "chart_encours";
             this.chart_encours.ProgressBgColor = System.Drawing.Color.White;
@@ -1615,7 +1584,7 @@
             this.chart_resolus.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chart_resolus.BackgroundImage")));
             this.chart_resolus.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.chart_resolus.ForeColor = System.Drawing.Color.White;
-            this.chart_resolus.Location = new System.Drawing.Point(263, 532);
+            this.chart_resolus.Location = new System.Drawing.Point(353, 535);
             this.chart_resolus.Margin = new System.Windows.Forms.Padding(5);
             this.chart_resolus.Name = "chart_resolus";
             this.chart_resolus.ProgressBgColor = System.Drawing.Color.White;
