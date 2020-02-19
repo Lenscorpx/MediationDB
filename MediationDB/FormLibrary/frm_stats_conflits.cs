@@ -22,7 +22,7 @@ namespace MediationDB.FormLibrary
         private void refresh()
         {
             rps.recuperer_localite(listBox1);
-            rps.recuperer_resolutions(cbx_resolutions);
+            //rps.recuperer_resolutions(cbx_resolutions);
         }
         private void lbl_nbre_conflits_Click(object sender, EventArgs e)
         {
