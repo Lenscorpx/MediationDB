@@ -2831,9 +2831,10 @@ create procedure stats_total_femmes_conflit_parlocalite
 		where
 			id_localite like @id_localite and t_mediation.date_debut_mediation between @date_un and @date_deux
 go
-create procedure stats_total_filles_conflit_parperiode
+create procedure stats_total_filles_conflit_parlocalite
 @date_un date,
-@date_deux date
+@date_deux date,
+@id_localite nvarchar(50)
 	as
 		select  
 			--count(distinct t_conflit.num_conflit)      
@@ -2858,7 +2859,7 @@ create procedure stats_total_filles_conflit_parperiode
 				inner join
             		t_menages on t_parties.id_menage = t_menages.id_menage
 		where
-			t_mediation.date_debut_mediation between @date_un and @date_deux
+			id_localite like @id_localite and t_mediation.date_debut_mediation between @date_un and @date_deux
 go
 create procedure stats_total_garcons_conflit_parperiode
 @date_un date,
