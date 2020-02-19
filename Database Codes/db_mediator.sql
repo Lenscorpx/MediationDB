@@ -2986,10 +2986,11 @@ create procedure stats_hommes_conflit_resolu_parlocalite
 			id_localite like @id_localite and id_resolution like @id_resolution and t_mediation.date_debut_mediation between @date_un and @date_deux
 go
 
-create procedure stats_femmes_conflit_resolus_parperiode
+create procedure stats_femmes_conflit_resolus_parlocalite
 @date_un date,
 @date_deux date,
-@id_resolution nvarchar(50)
+@id_resolution nvarchar(50),
+@id_localite nvarchar(50)
 	as
 		select  
 			--count(distinct t_conflit.num_conflit)      
@@ -3014,12 +3015,13 @@ create procedure stats_femmes_conflit_resolus_parperiode
 				inner join
             		t_menages on t_parties.id_menage = t_menages.id_menage
 		where
-			id_resolution like @id_resolution and t_mediation.date_debut_mediation between @date_un and @date_deux
+			id_localite like @id_localite and id_resolution like @id_resolution and t_mediation.date_debut_mediation between @date_un and @date_deux
 go
-create procedure stats_filles_conflit_resolus_parperiode
+create procedure stats_filles_conflit_resolus_parlocalite
 @date_un date,
 @date_deux date,
-@id_resolution nvarchar(50)
+@id_resolution nvarchar(50),
+@id_localite nvarchar(50)
 	as
 		select  
 			--count(distinct t_conflit.num_conflit)      
@@ -3044,7 +3046,7 @@ create procedure stats_filles_conflit_resolus_parperiode
 				inner join
             		t_menages on t_parties.id_menage = t_menages.id_menage
 		where
-			id_resolution like @id_resolution and t_mediation.date_debut_mediation between @date_un and @date_deux
+			id_localite like @id_localite and id_resolution like @id_resolution and t_mediation.date_debut_mediation between @date_un and @date_deux
 go
 create procedure stats_garcons_conflit_resolus_parperiode
 @date_un date,
