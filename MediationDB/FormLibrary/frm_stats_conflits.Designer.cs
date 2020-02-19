@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_stats_conflits));
             this.pnl_header = new System.Windows.Forms.Panel();
-            this.bunifuGauge1 = new Bunifu.Framework.UI.BunifuGauge();
+            this.chart_resolus = new Bunifu.Framework.UI.BunifuGauge();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
@@ -45,13 +45,11 @@
             this.cbx_resolutions = new MetroFramework.Controls.MetroComboBox();
             this.txt_nombre_conflit = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label5 = new System.Windows.Forms.Label();
-            this.bunifuGauge2 = new Bunifu.Framework.UI.BunifuGauge();
+            this.chart_encours = new Bunifu.Framework.UI.BunifuGauge();
             this.label6 = new System.Windows.Forms.Label();
-            this.bunifuGauge3 = new Bunifu.Framework.UI.BunifuGauge();
+            this.chart_refered = new Bunifu.Framework.UI.BunifuGauge();
             this.label7 = new System.Windows.Forms.Label();
-            this.bunifuGauge4 = new Bunifu.Framework.UI.BunifuGauge();
-            this.label8 = new System.Windows.Forms.Label();
-            this.bunifuGauge5 = new Bunifu.Framework.UI.BunifuGauge();
+            this.chart_classed = new Bunifu.Framework.UI.BunifuGauge();
             this.label9 = new System.Windows.Forms.Label();
             this.bunifuGauge6 = new Bunifu.Framework.UI.BunifuGauge();
             this.label10 = new System.Windows.Forms.Label();
@@ -92,6 +90,10 @@
             this.bunifuMaterialTextbox23 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuMaterialTextbox24 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuMaterialTextbox25 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.pnl_header.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
@@ -107,35 +109,39 @@
             this.pnl_header.Size = new System.Drawing.Size(1300, 53);
             this.pnl_header.TabIndex = 37;
             // 
-            // bunifuGauge1
+            // chart_resolus
             // 
-            this.bunifuGauge1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGauge1.BackgroundImage")));
-            this.bunifuGauge1.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.bunifuGauge1.ForeColor = System.Drawing.Color.White;
-            this.bunifuGauge1.Location = new System.Drawing.Point(84, 517);
-            this.bunifuGauge1.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuGauge1.Name = "bunifuGauge1";
-            this.bunifuGauge1.ProgressBgColor = System.Drawing.Color.White;
-            this.bunifuGauge1.ProgressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuGauge1.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuGauge1.Size = new System.Drawing.Size(165, 112);
-            this.bunifuGauge1.TabIndex = 39;
-            this.bunifuGauge1.Thickness = 30;
-            this.bunifuGauge1.Value = 78;
+            this.chart_resolus.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chart_resolus.BackgroundImage")));
+            this.chart_resolus.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.chart_resolus.ForeColor = System.Drawing.Color.White;
+            this.chart_resolus.Location = new System.Drawing.Point(240, 517);
+            this.chart_resolus.Margin = new System.Windows.Forms.Padding(5);
+            this.chart_resolus.Name = "chart_resolus";
+            this.chart_resolus.ProgressBgColor = System.Drawing.Color.White;
+            this.chart_resolus.ProgressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.chart_resolus.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.chart_resolus.Size = new System.Drawing.Size(165, 112);
+            this.chart_resolus.TabIndex = 39;
+            this.chart_resolus.Thickness = 30;
+            this.chart_resolus.Value = 0;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(87, 482);
+            this.label4.Location = new System.Drawing.Point(259, 482);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(162, 30);
+            this.label4.Size = new System.Drawing.Size(134, 21);
             this.label4.TabIndex = 43;
-            this.label4.Text = "Total conflits";
+            this.label4.Text = "% conflits résolus";
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label20);
+            this.panel1.Controls.Add(this.label19);
+            this.panel1.Controls.Add(this.label18);
+            this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.bunifuMaterialTextbox21);
             this.panel1.Controls.Add(this.bunifuMaterialTextbox22);
             this.panel1.Controls.Add(this.bunifuMaterialTextbox23);
@@ -175,14 +181,12 @@
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.bunifuGauge6);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.bunifuGauge5);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.bunifuGauge4);
+            this.panel1.Controls.Add(this.chart_classed);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.bunifuGauge3);
+            this.panel1.Controls.Add(this.chart_refered);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.bunifuGauge2);
+            this.panel1.Controls.Add(this.chart_encours);
             this.panel1.Controls.Add(this.txt_nombre_conflit);
             this.panel1.Controls.Add(this.cbx_resolutions);
             this.panel1.Controls.Add(this.btn_search_period);
@@ -194,7 +198,7 @@
             this.panel1.Controls.Add(this.txt_id_localite);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.bunifuGauge1);
+            this.panel1.Controls.Add(this.chart_resolus);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 53);
             this.panel1.Name = "panel1";
@@ -331,7 +335,7 @@
             this.listBox1.ItemHeight = 17;
             this.listBox1.Location = new System.Drawing.Point(5, 52);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(243, 187);
+            this.listBox1.Size = new System.Drawing.Size(226, 561);
             this.listBox1.TabIndex = 76;
             // 
             // txt_id_localite
@@ -349,7 +353,7 @@
             this.txt_id_localite.Location = new System.Drawing.Point(5, 6);
             this.txt_id_localite.Margin = new System.Windows.Forms.Padding(4);
             this.txt_id_localite.Name = "txt_id_localite";
-            this.txt_id_localite.Size = new System.Drawing.Size(243, 44);
+            this.txt_id_localite.Size = new System.Drawing.Size(226, 44);
             this.txt_id_localite.TabIndex = 77;
             this.txt_id_localite.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -383,7 +387,7 @@
             this.txt_nombre_conflit.LineIdleColor = System.Drawing.Color.White;
             this.txt_nombre_conflit.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_nombre_conflit.LineThickness = 4;
-            this.txt_nombre_conflit.Location = new System.Drawing.Point(281, 129);
+            this.txt_nombre_conflit.Location = new System.Drawing.Point(386, 129);
             this.txt_nombre_conflit.Margin = new System.Windows.Forms.Padding(4);
             this.txt_nombre_conflit.Name = "txt_nombre_conflit";
             this.txt_nombre_conflit.Size = new System.Drawing.Size(224, 44);
@@ -393,119 +397,92 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(284, 482);
+            this.label5.Location = new System.Drawing.Point(440, 482);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(162, 30);
+            this.label5.Size = new System.Drawing.Size(149, 21);
             this.label5.TabIndex = 123;
-            this.label5.Text = "Total conflits";
+            this.label5.Text = "% conflits en cours";
             // 
-            // bunifuGauge2
+            // chart_encours
             // 
-            this.bunifuGauge2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGauge2.BackgroundImage")));
-            this.bunifuGauge2.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.bunifuGauge2.ForeColor = System.Drawing.Color.White;
-            this.bunifuGauge2.Location = new System.Drawing.Point(281, 517);
-            this.bunifuGauge2.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuGauge2.Name = "bunifuGauge2";
-            this.bunifuGauge2.ProgressBgColor = System.Drawing.Color.White;
-            this.bunifuGauge2.ProgressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuGauge2.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuGauge2.Size = new System.Drawing.Size(165, 112);
-            this.bunifuGauge2.TabIndex = 122;
-            this.bunifuGauge2.Thickness = 30;
-            this.bunifuGauge2.Value = 78;
+            this.chart_encours.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chart_encours.BackgroundImage")));
+            this.chart_encours.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.chart_encours.ForeColor = System.Drawing.Color.White;
+            this.chart_encours.Location = new System.Drawing.Point(437, 517);
+            this.chart_encours.Margin = new System.Windows.Forms.Padding(5);
+            this.chart_encours.Name = "chart_encours";
+            this.chart_encours.ProgressBgColor = System.Drawing.Color.White;
+            this.chart_encours.ProgressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.chart_encours.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.chart_encours.Size = new System.Drawing.Size(165, 112);
+            this.chart_encours.TabIndex = 122;
+            this.chart_encours.Thickness = 30;
+            this.chart_encours.Value = 0;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(481, 482);
+            this.label6.Location = new System.Drawing.Point(637, 482);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(162, 30);
+            this.label6.Size = new System.Drawing.Size(135, 21);
             this.label6.TabIndex = 125;
-            this.label6.Text = "Total conflits";
+            this.label6.Text = "% conflits référés";
             // 
-            // bunifuGauge3
+            // chart_refered
             // 
-            this.bunifuGauge3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGauge3.BackgroundImage")));
-            this.bunifuGauge3.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.bunifuGauge3.ForeColor = System.Drawing.Color.White;
-            this.bunifuGauge3.Location = new System.Drawing.Point(478, 517);
-            this.bunifuGauge3.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuGauge3.Name = "bunifuGauge3";
-            this.bunifuGauge3.ProgressBgColor = System.Drawing.Color.White;
-            this.bunifuGauge3.ProgressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuGauge3.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuGauge3.Size = new System.Drawing.Size(165, 112);
-            this.bunifuGauge3.TabIndex = 124;
-            this.bunifuGauge3.Thickness = 30;
-            this.bunifuGauge3.Value = 78;
+            this.chart_refered.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chart_refered.BackgroundImage")));
+            this.chart_refered.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.chart_refered.ForeColor = System.Drawing.Color.White;
+            this.chart_refered.Location = new System.Drawing.Point(634, 517);
+            this.chart_refered.Margin = new System.Windows.Forms.Padding(5);
+            this.chart_refered.Name = "chart_refered";
+            this.chart_refered.ProgressBgColor = System.Drawing.Color.White;
+            this.chart_refered.ProgressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.chart_refered.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.chart_refered.Size = new System.Drawing.Size(165, 112);
+            this.chart_refered.TabIndex = 124;
+            this.chart_refered.Thickness = 30;
+            this.chart_refered.Value = 0;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(679, 482);
+            this.label7.Location = new System.Drawing.Point(835, 482);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(162, 30);
+            this.label7.Size = new System.Drawing.Size(136, 21);
             this.label7.TabIndex = 127;
-            this.label7.Text = "Total conflits";
+            this.label7.Text = "% conflits classés";
             // 
-            // bunifuGauge4
+            // chart_classed
             // 
-            this.bunifuGauge4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGauge4.BackgroundImage")));
-            this.bunifuGauge4.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.bunifuGauge4.ForeColor = System.Drawing.Color.White;
-            this.bunifuGauge4.Location = new System.Drawing.Point(676, 517);
-            this.bunifuGauge4.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuGauge4.Name = "bunifuGauge4";
-            this.bunifuGauge4.ProgressBgColor = System.Drawing.Color.White;
-            this.bunifuGauge4.ProgressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuGauge4.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuGauge4.Size = new System.Drawing.Size(165, 112);
-            this.bunifuGauge4.TabIndex = 126;
-            this.bunifuGauge4.Thickness = 30;
-            this.bunifuGauge4.Value = 78;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(867, 482);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(162, 30);
-            this.label8.TabIndex = 129;
-            this.label8.Text = "Total conflits";
-            // 
-            // bunifuGauge5
-            // 
-            this.bunifuGauge5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGauge5.BackgroundImage")));
-            this.bunifuGauge5.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.bunifuGauge5.ForeColor = System.Drawing.Color.White;
-            this.bunifuGauge5.Location = new System.Drawing.Point(864, 517);
-            this.bunifuGauge5.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuGauge5.Name = "bunifuGauge5";
-            this.bunifuGauge5.ProgressBgColor = System.Drawing.Color.White;
-            this.bunifuGauge5.ProgressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuGauge5.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuGauge5.Size = new System.Drawing.Size(165, 112);
-            this.bunifuGauge5.TabIndex = 128;
-            this.bunifuGauge5.Thickness = 30;
-            this.bunifuGauge5.Value = 78;
+            this.chart_classed.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chart_classed.BackgroundImage")));
+            this.chart_classed.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.chart_classed.ForeColor = System.Drawing.Color.White;
+            this.chart_classed.Location = new System.Drawing.Point(832, 517);
+            this.chart_classed.Margin = new System.Windows.Forms.Padding(5);
+            this.chart_classed.Name = "chart_classed";
+            this.chart_classed.ProgressBgColor = System.Drawing.Color.White;
+            this.chart_classed.ProgressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.chart_classed.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.chart_classed.Size = new System.Drawing.Size(165, 112);
+            this.chart_classed.TabIndex = 126;
+            this.chart_classed.Thickness = 30;
+            this.chart_classed.Value = 0;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(1053, 482);
+            this.label9.Location = new System.Drawing.Point(1146, 482);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(162, 30);
+            this.label9.Size = new System.Drawing.Size(107, 21);
             this.label9.TabIndex = 131;
             this.label9.Text = "Total conflits";
             // 
@@ -514,7 +491,7 @@
             this.bunifuGauge6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGauge6.BackgroundImage")));
             this.bunifuGauge6.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.bunifuGauge6.ForeColor = System.Drawing.Color.White;
-            this.bunifuGauge6.Location = new System.Drawing.Point(1050, 517);
+            this.bunifuGauge6.Location = new System.Drawing.Point(1113, 517);
             this.bunifuGauge6.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuGauge6.Name = "bunifuGauge6";
             this.bunifuGauge6.ProgressBgColor = System.Drawing.Color.White;
@@ -603,7 +580,7 @@
             this.txt_conflit_resolus.LineIdleColor = System.Drawing.Color.White;
             this.txt_conflit_resolus.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_conflit_resolus.LineThickness = 4;
-            this.txt_conflit_resolus.Location = new System.Drawing.Point(281, 200);
+            this.txt_conflit_resolus.Location = new System.Drawing.Point(386, 200);
             this.txt_conflit_resolus.Margin = new System.Windows.Forms.Padding(4);
             this.txt_conflit_resolus.Name = "txt_conflit_resolus";
             this.txt_conflit_resolus.Size = new System.Drawing.Size(224, 44);
@@ -624,7 +601,7 @@
             this.txt_conflits_encours.LineIdleColor = System.Drawing.Color.White;
             this.txt_conflits_encours.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_conflits_encours.LineThickness = 4;
-            this.txt_conflits_encours.Location = new System.Drawing.Point(281, 271);
+            this.txt_conflits_encours.Location = new System.Drawing.Point(386, 271);
             this.txt_conflits_encours.Margin = new System.Windows.Forms.Padding(4);
             this.txt_conflits_encours.Name = "txt_conflits_encours";
             this.txt_conflits_encours.Size = new System.Drawing.Size(224, 44);
@@ -645,7 +622,7 @@
             this.txt_conflits_referes.LineIdleColor = System.Drawing.Color.White;
             this.txt_conflits_referes.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_conflits_referes.LineThickness = 4;
-            this.txt_conflits_referes.Location = new System.Drawing.Point(281, 342);
+            this.txt_conflits_referes.Location = new System.Drawing.Point(386, 342);
             this.txt_conflits_referes.Margin = new System.Windows.Forms.Padding(4);
             this.txt_conflits_referes.Name = "txt_conflits_referes";
             this.txt_conflits_referes.Size = new System.Drawing.Size(224, 44);
@@ -666,7 +643,7 @@
             this.txt_conflits_classes.LineIdleColor = System.Drawing.Color.White;
             this.txt_conflits_classes.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_conflits_classes.LineThickness = 4;
-            this.txt_conflits_classes.Location = new System.Drawing.Point(281, 413);
+            this.txt_conflits_classes.Location = new System.Drawing.Point(386, 413);
             this.txt_conflits_classes.Margin = new System.Windows.Forms.Padding(4);
             this.txt_conflits_classes.Name = "txt_conflits_classes";
             this.txt_conflits_classes.Size = new System.Drawing.Size(224, 44);
@@ -678,7 +655,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(255, 106);
+            this.label2.Location = new System.Drawing.Point(252, 144);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(92, 19);
             this.label2.TabIndex = 41;
@@ -689,7 +666,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(255, 177);
+            this.label12.Location = new System.Drawing.Point(257, 214);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(106, 19);
             this.label12.TabIndex = 139;
@@ -700,7 +677,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(255, 248);
+            this.label13.Location = new System.Drawing.Point(257, 284);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(120, 19);
             this.label13.TabIndex = 140;
@@ -711,18 +688,18 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(255, 319);
+            this.label14.Location = new System.Drawing.Point(255, 355);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(120, 19);
+            this.label14.Size = new System.Drawing.Size(128, 19);
             this.label14.TabIndex = 141;
-            this.label14.Text = "Conflits en cours";
+            this.label14.Text = "Conflits en référés";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(255, 390);
+            this.label15.Location = new System.Drawing.Point(257, 427);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(108, 19);
             this.label15.TabIndex = 142;
@@ -838,7 +815,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(556, 107);
+            this.label16.Location = new System.Drawing.Point(623, 140);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(84, 19);
             this.label16.TabIndex = 147;
@@ -1264,6 +1241,50 @@
             this.bunifuMaterialTextbox25.TabIndex = 163;
             this.bunifuMaterialTextbox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(623, 213);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(84, 19);
+            this.label17.TabIndex = 168;
+            this.label17.Text = "impliquant";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(623, 284);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(84, 19);
+            this.label18.TabIndex = 169;
+            this.label18.Text = "impliquant";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Location = new System.Drawing.Point(623, 355);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(84, 19);
+            this.label19.TabIndex = 170;
+            this.label19.Text = "impliquant";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(623, 427);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(84, 19);
+            this.label20.TabIndex = 171;
+            this.label20.Text = "impliquant";
+            // 
             // frm_stats_conflits
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1287,7 +1308,7 @@
 
         #endregion
         private System.Windows.Forms.Panel pnl_header;
-        private Bunifu.Framework.UI.BunifuGauge bunifuGauge1;
+        private Bunifu.Framework.UI.BunifuGauge chart_resolus;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
@@ -1303,14 +1324,12 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private Bunifu.Framework.UI.BunifuGauge bunifuGauge6;
-        private System.Windows.Forms.Label label8;
-        private Bunifu.Framework.UI.BunifuGauge bunifuGauge5;
         private System.Windows.Forms.Label label7;
-        private Bunifu.Framework.UI.BunifuGauge bunifuGauge4;
+        private Bunifu.Framework.UI.BunifuGauge chart_classed;
         private System.Windows.Forms.Label label6;
-        private Bunifu.Framework.UI.BunifuGauge bunifuGauge3;
+        private Bunifu.Framework.UI.BunifuGauge chart_refered;
         private System.Windows.Forms.Label label5;
-        private Bunifu.Framework.UI.BunifuGauge bunifuGauge2;
+        private Bunifu.Framework.UI.BunifuGauge chart_encours;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_nombre_conflit;
         private MetroFramework.Controls.MetroComboBox cbx_resolutions;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
@@ -1349,5 +1368,9 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox3;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
     }
 }
