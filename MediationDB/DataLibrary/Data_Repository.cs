@@ -4187,14 +4187,14 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void stats_total_conflit_parperiode(TextBox total, DateTime date_un, DateTime date_deux)
+        public void stats_total_hommes_conflit_parperiode(TextBox total, DateTime date_un, DateTime date_deux)
         {
             cnx = new SqlConnection(prms.ToString());
             try
             {
                 if (cnx.State == ConnectionState.Closed)
                     cnx.Open();
-                var cmd = new SqlCommand("stats_total_conflit_parperiode", cnx)
+                var cmd = new SqlCommand("stats_total_hommes_conflit_parperiode", cnx)
                 {
                     CommandType = CommandType.StoredProcedure
                 };
