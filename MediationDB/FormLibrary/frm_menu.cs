@@ -250,10 +250,8 @@ namespace MediationDB.FormLibrary
 
         private void btn_parties_Click(object sender, EventArgs e)
         {
-            var fr = new frm_evolution();
+            var fr = new frm_stats_dashboard();
             fr.Show();
-            var fr2 = new frm_reports();
-            fr2.Show();
         }
 
         private void btn_rapports_Click(object sender, EventArgs e)

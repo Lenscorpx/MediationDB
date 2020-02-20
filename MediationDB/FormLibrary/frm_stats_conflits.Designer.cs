@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_stats_conflits));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.pnl_header = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -128,12 +125,10 @@
             this.chart_encours = new Bunifu.Framework.UI.BunifuGauge();
             this.chart_referes = new Bunifu.Framework.UI.BunifuGauge();
             this.chart_classes = new Bunifu.Framework.UI.BunifuGauge();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.pnl_header.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_header
@@ -162,7 +157,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(281, 522);
+            this.label4.Location = new System.Drawing.Point(355, 513);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(119, 19);
             this.label4.TabIndex = 43;
@@ -170,7 +165,6 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.chart1);
             this.panel1.Controls.Add(this.chart_classes);
             this.panel1.Controls.Add(this.chart_referes);
             this.panel1.Controls.Add(this.chart_encours);
@@ -1392,7 +1386,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(756, 523);
+            this.label7.Location = new System.Drawing.Point(1086, 514);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(121, 19);
             this.label7.TabIndex = 127;
@@ -1403,7 +1397,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(608, 523);
+            this.label6.Location = new System.Drawing.Point(847, 514);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(119, 19);
             this.label6.TabIndex = 125;
@@ -1414,7 +1408,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(439, 522);
+            this.label5.Location = new System.Drawing.Point(597, 513);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(133, 19);
             this.label5.TabIndex = 123;
@@ -1566,7 +1560,7 @@
             this.chart_resolus.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chart_resolus.BackgroundImage")));
             this.chart_resolus.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.chart_resolus.ForeColor = System.Drawing.Color.White;
-            this.chart_resolus.Location = new System.Drawing.Point(275, 561);
+            this.chart_resolus.Location = new System.Drawing.Point(349, 552);
             this.chart_resolus.Margin = new System.Windows.Forms.Padding(5);
             this.chart_resolus.Name = "chart_resolus";
             this.chart_resolus.ProgressBgColor = System.Drawing.Color.White;
@@ -1651,7 +1645,7 @@
             this.chart_encours.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chart_encours.BackgroundImage")));
             this.chart_encours.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.chart_encours.ForeColor = System.Drawing.Color.White;
-            this.chart_encours.Location = new System.Drawing.Point(443, 561);
+            this.chart_encours.Location = new System.Drawing.Point(601, 552);
             this.chart_encours.Margin = new System.Windows.Forms.Padding(5);
             this.chart_encours.Name = "chart_encours";
             this.chart_encours.ProgressBgColor = System.Drawing.Color.White;
@@ -1667,7 +1661,7 @@
             this.chart_referes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chart_referes.BackgroundImage")));
             this.chart_referes.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.chart_referes.ForeColor = System.Drawing.Color.White;
-            this.chart_referes.Location = new System.Drawing.Point(601, 561);
+            this.chart_referes.Location = new System.Drawing.Point(840, 552);
             this.chart_referes.Margin = new System.Windows.Forms.Padding(5);
             this.chart_referes.Name = "chart_referes";
             this.chart_referes.ProgressBgColor = System.Drawing.Color.White;
@@ -1683,7 +1677,7 @@
             this.chart_classes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chart_classes.BackgroundImage")));
             this.chart_classes.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.chart_classes.ForeColor = System.Drawing.Color.White;
-            this.chart_classes.Location = new System.Drawing.Point(754, 561);
+            this.chart_classes.Location = new System.Drawing.Point(1084, 552);
             this.chart_classes.Margin = new System.Windows.Forms.Padding(5);
             this.chart_classes.Name = "chart_classes";
             this.chart_classes.ProgressBgColor = System.Drawing.Color.White;
@@ -1693,30 +1687,6 @@
             this.chart_classes.TabIndex = 235;
             this.chart_classes.Thickness = 30;
             this.chart_classes.Value = 0;
-            // 
-            // chart1
-            // 
-            this.chart1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.chart1.BorderlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(907, 513);
-            this.chart1.Name = "chart1";
-            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
-            this.chart1.PaletteCustomColors = new System.Drawing.Color[] {
-        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(142))))),
-        System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65))))),
-        System.Drawing.Color.Gold,
-        System.Drawing.Color.White};
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(381, 127);
-            this.chart1.TabIndex = 236;
-            this.chart1.Text = "chart1";
             // 
             // frm_stats_conflits
             // 
@@ -1736,7 +1706,6 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1838,6 +1807,5 @@
         private Bunifu.Framework.UI.BunifuGauge chart_classes;
         private Bunifu.Framework.UI.BunifuGauge chart_referes;
         private Bunifu.Framework.UI.BunifuGauge chart_encours;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }
