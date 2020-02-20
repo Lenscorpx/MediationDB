@@ -138,11 +138,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(372, 522);
+            this.label4.Location = new System.Drawing.Point(281, 522);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(134, 21);
+            this.label4.Size = new System.Drawing.Size(119, 19);
             this.label4.TabIndex = 43;
             this.label4.Text = "% conflits résolus";
             // 
@@ -320,7 +320,7 @@
             this.listBox1.ItemHeight = 17;
             this.listBox1.Location = new System.Drawing.Point(5, 52);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(226, 561);
+            this.listBox1.Size = new System.Drawing.Size(226, 578);
             this.listBox1.TabIndex = 76;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -348,7 +348,7 @@
             // 
             this.txt_nombre_conflit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_nombre_conflit.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_nombre_conflit.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_nombre_conflit.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.txt_nombre_conflit.ForeColor = System.Drawing.Color.White;
             this.txt_nombre_conflit.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txt_nombre_conflit.HintText = "Total conflits";
@@ -356,44 +356,45 @@
             this.txt_nombre_conflit.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_nombre_conflit.LineIdleColor = System.Drawing.Color.White;
             this.txt_nombre_conflit.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_nombre_conflit.LineThickness = 4;
-            this.txt_nombre_conflit.Location = new System.Drawing.Point(386, 129);
-            this.txt_nombre_conflit.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_nombre_conflit.LineThickness = 5;
+            this.txt_nombre_conflit.Location = new System.Drawing.Point(391, 129);
+            this.txt_nombre_conflit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txt_nombre_conflit.Name = "txt_nombre_conflit";
-            this.txt_nombre_conflit.Size = new System.Drawing.Size(224, 44);
+            this.txt_nombre_conflit.Size = new System.Drawing.Size(185, 54);
             this.txt_nombre_conflit.TabIndex = 120;
             this.txt_nombre_conflit.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_nombre_conflit.OnValueChanged += new System.EventHandler(this.txt_nombre_conflit_OnValueChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(553, 522);
+            this.label5.Location = new System.Drawing.Point(474, 522);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(149, 21);
+            this.label5.Size = new System.Drawing.Size(133, 19);
             this.label5.TabIndex = 123;
             this.label5.Text = "% conflits en cours";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(758, 522);
+            this.label6.Location = new System.Drawing.Point(678, 522);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(135, 21);
+            this.label6.Size = new System.Drawing.Size(119, 19);
             this.label6.TabIndex = 125;
             this.label6.Text = "% conflits référés";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(955, 523);
+            this.label7.Location = new System.Drawing.Point(871, 523);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(136, 21);
+            this.label7.Size = new System.Drawing.Size(121, 19);
             this.label7.TabIndex = 127;
             this.label7.Text = "% conflits classés";
             // 
@@ -427,7 +428,7 @@
             // 
             this.txt_conflit_resolus.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_conflit_resolus.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_conflit_resolus.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_conflit_resolus.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.txt_conflit_resolus.ForeColor = System.Drawing.Color.White;
             this.txt_conflit_resolus.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txt_conflit_resolus.HintText = "Conflits resolus";
@@ -435,11 +436,11 @@
             this.txt_conflit_resolus.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_conflit_resolus.LineIdleColor = System.Drawing.Color.White;
             this.txt_conflit_resolus.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_conflit_resolus.LineThickness = 4;
-            this.txt_conflit_resolus.Location = new System.Drawing.Point(386, 200);
-            this.txt_conflit_resolus.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_conflit_resolus.LineThickness = 5;
+            this.txt_conflit_resolus.Location = new System.Drawing.Point(391, 193);
+            this.txt_conflit_resolus.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txt_conflit_resolus.Name = "txt_conflit_resolus";
-            this.txt_conflit_resolus.Size = new System.Drawing.Size(224, 44);
+            this.txt_conflit_resolus.Size = new System.Drawing.Size(185, 54);
             this.txt_conflit_resolus.TabIndex = 135;
             this.txt_conflit_resolus.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_conflit_resolus.OnValueChanged += new System.EventHandler(this.txt_conflit_resolus_OnValueChanged);
@@ -448,7 +449,7 @@
             // 
             this.txt_conflits_encours.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_conflits_encours.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_conflits_encours.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_conflits_encours.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.txt_conflits_encours.ForeColor = System.Drawing.Color.White;
             this.txt_conflits_encours.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txt_conflits_encours.HintText = "Conflits en cours";
@@ -456,11 +457,11 @@
             this.txt_conflits_encours.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_conflits_encours.LineIdleColor = System.Drawing.Color.White;
             this.txt_conflits_encours.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_conflits_encours.LineThickness = 4;
-            this.txt_conflits_encours.Location = new System.Drawing.Point(386, 271);
-            this.txt_conflits_encours.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_conflits_encours.LineThickness = 5;
+            this.txt_conflits_encours.Location = new System.Drawing.Point(391, 257);
+            this.txt_conflits_encours.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txt_conflits_encours.Name = "txt_conflits_encours";
-            this.txt_conflits_encours.Size = new System.Drawing.Size(224, 44);
+            this.txt_conflits_encours.Size = new System.Drawing.Size(185, 54);
             this.txt_conflits_encours.TabIndex = 136;
             this.txt_conflits_encours.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_conflits_encours.OnValueChanged += new System.EventHandler(this.txt_conflits_encours_OnValueChanged);
@@ -469,7 +470,7 @@
             // 
             this.txt_conflits_referes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_conflits_referes.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_conflits_referes.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_conflits_referes.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.txt_conflits_referes.ForeColor = System.Drawing.Color.White;
             this.txt_conflits_referes.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txt_conflits_referes.HintText = "Conflits reférés";
@@ -477,11 +478,11 @@
             this.txt_conflits_referes.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_conflits_referes.LineIdleColor = System.Drawing.Color.White;
             this.txt_conflits_referes.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_conflits_referes.LineThickness = 4;
-            this.txt_conflits_referes.Location = new System.Drawing.Point(386, 342);
-            this.txt_conflits_referes.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_conflits_referes.LineThickness = 5;
+            this.txt_conflits_referes.Location = new System.Drawing.Point(391, 332);
+            this.txt_conflits_referes.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txt_conflits_referes.Name = "txt_conflits_referes";
-            this.txt_conflits_referes.Size = new System.Drawing.Size(224, 44);
+            this.txt_conflits_referes.Size = new System.Drawing.Size(185, 54);
             this.txt_conflits_referes.TabIndex = 137;
             this.txt_conflits_referes.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_conflits_referes.OnValueChanged += new System.EventHandler(this.txt_conflits_referes_OnValueChanged);
@@ -490,7 +491,7 @@
             // 
             this.txt_conflits_classes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_conflits_classes.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_conflits_classes.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_conflits_classes.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.txt_conflits_classes.ForeColor = System.Drawing.Color.White;
             this.txt_conflits_classes.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txt_conflits_classes.HintText = "Conflits classés";
@@ -498,11 +499,11 @@
             this.txt_conflits_classes.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_conflits_classes.LineIdleColor = System.Drawing.Color.White;
             this.txt_conflits_classes.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_conflits_classes.LineThickness = 4;
-            this.txt_conflits_classes.Location = new System.Drawing.Point(386, 413);
-            this.txt_conflits_classes.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_conflits_classes.LineThickness = 5;
+            this.txt_conflits_classes.Location = new System.Drawing.Point(391, 403);
+            this.txt_conflits_classes.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txt_conflits_classes.Name = "txt_conflits_classes";
-            this.txt_conflits_classes.Size = new System.Drawing.Size(224, 44);
+            this.txt_conflits_classes.Size = new System.Drawing.Size(185, 54);
             this.txt_conflits_classes.TabIndex = 138;
             this.txt_conflits_classes.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_conflits_classes.OnValueChanged += new System.EventHandler(this.txt_conflits_classes_OnValueChanged);
@@ -1497,7 +1498,7 @@
             this.chart_classed.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chart_classed.BackgroundImage")));
             this.chart_classed.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.chart_classed.ForeColor = System.Drawing.Color.White;
-            this.chart_classed.Location = new System.Drawing.Point(945, 535);
+            this.chart_classed.Location = new System.Drawing.Point(854, 535);
             this.chart_classed.Margin = new System.Windows.Forms.Padding(5);
             this.chart_classed.Name = "chart_classed";
             this.chart_classed.ProgressBgColor = System.Drawing.Color.White;
@@ -1513,7 +1514,7 @@
             this.chart_refered.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chart_refered.BackgroundImage")));
             this.chart_refered.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.chart_refered.ForeColor = System.Drawing.Color.White;
-            this.chart_refered.Location = new System.Drawing.Point(747, 535);
+            this.chart_refered.Location = new System.Drawing.Point(656, 535);
             this.chart_refered.Margin = new System.Windows.Forms.Padding(5);
             this.chart_refered.Name = "chart_refered";
             this.chart_refered.ProgressBgColor = System.Drawing.Color.White;
@@ -1529,7 +1530,7 @@
             this.chart_encours.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chart_encours.BackgroundImage")));
             this.chart_encours.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.chart_encours.ForeColor = System.Drawing.Color.White;
-            this.chart_encours.Location = new System.Drawing.Point(550, 535);
+            this.chart_encours.Location = new System.Drawing.Point(459, 535);
             this.chart_encours.Margin = new System.Windows.Forms.Padding(5);
             this.chart_encours.Name = "chart_encours";
             this.chart_encours.ProgressBgColor = System.Drawing.Color.White;
@@ -1584,7 +1585,7 @@
             this.chart_resolus.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chart_resolus.BackgroundImage")));
             this.chart_resolus.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.chart_resolus.ForeColor = System.Drawing.Color.White;
-            this.chart_resolus.Location = new System.Drawing.Point(353, 535);
+            this.chart_resolus.Location = new System.Drawing.Point(262, 535);
             this.chart_resolus.Margin = new System.Windows.Forms.Padding(5);
             this.chart_resolus.Name = "chart_resolus";
             this.chart_resolus.ProgressBgColor = System.Drawing.Color.White;
