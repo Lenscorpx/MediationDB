@@ -4176,7 +4176,15 @@ namespace MediationDB.DataLibrary
                 da.Fill(dt);
                 foreach (DataRow dr in dt.Rows)
                 {
-                    total.Text = Convert.ToString(dr[0]);
+                    if(dr[0].ToString()=="")
+                    {
+                        total.Text = "0";
+                    }
+                    else
+                    {
+                        total.Text = Convert.ToString(dr[0]);
+                    }
+                    
                 }
             }
             catch (Exception tdf)
@@ -4207,7 +4215,14 @@ namespace MediationDB.DataLibrary
                 da.Fill(dt);
                 foreach (DataRow dr in dt.Rows)
                 {
-                    total.Text = Convert.ToString(dr[0]);
+                    if (dr[0].ToString() == "")
+                    {
+                        total.Text = "0";
+                    }
+                    else
+                    {
+                        total.Text = Convert.ToString(dr[0]);
+                    }
                 }
             }
             catch (Exception tdf)
@@ -4238,7 +4253,14 @@ namespace MediationDB.DataLibrary
                 da.Fill(dt);
                 foreach (DataRow dr in dt.Rows)
                 {
-                    total.Text = Convert.ToString(dr[0]);
+                    if (dr[0].ToString() == "")
+                    {
+                        total.Text = "0";
+                    }
+                    else
+                    {
+                        total.Text = Convert.ToString(dr[0]);
+                    }
                 }
             }
             catch (Exception tdf)
@@ -4269,7 +4291,14 @@ namespace MediationDB.DataLibrary
                 da.Fill(dt);
                 foreach (DataRow dr in dt.Rows)
                 {
-                    total.Text = Convert.ToString(dr[0]);
+                    if (dr[0].ToString() == "")
+                    {
+                        total.Text = "0";
+                    }
+                    else
+                    {
+                        total.Text = Convert.ToString(dr[0]);
+                    }
                 }
             }
             catch (Exception tdf)
@@ -4300,7 +4329,14 @@ namespace MediationDB.DataLibrary
                 da.Fill(dt);
                 foreach (DataRow dr in dt.Rows)
                 {
-                    total.Text = Convert.ToString(dr[0]);
+                    if (dr[0].ToString() == "")
+                    {
+                        total.Text = "0";
+                    }
+                    else
+                    {
+                        total.Text = Convert.ToString(dr[0]);
+                    }
                 }
             }
             catch (Exception tdf)
@@ -4331,7 +4367,14 @@ namespace MediationDB.DataLibrary
                 da.Fill(dt);
                 foreach (DataRow dr in dt.Rows)
                 {
-                    total.Text = Convert.ToString(dr[0]);
+                    if (dr[0].ToString() == "")
+                    {
+                        total.Text = "0";
+                    }
+                    else
+                    {
+                        total.Text = Convert.ToString(dr[0]);
+                    }
                 }
             }
             catch (Exception tdf)
@@ -4363,7 +4406,14 @@ namespace MediationDB.DataLibrary
                 da.Fill(dt);
                 foreach (DataRow dr in dt.Rows)
                 {
-                    total.Text = Convert.ToString(dr[0]);
+                    if (dr[0].ToString() == "")
+                    {
+                        total.Text = "0";
+                    }
+                    else
+                    {
+                        total.Text = Convert.ToString(dr[0]);
+                    }
                 }
             }
             catch (Exception tdf)
@@ -4395,7 +4445,14 @@ namespace MediationDB.DataLibrary
                 da.Fill(dt);
                 foreach (DataRow dr in dt.Rows)
                 {
-                    total.Text = Convert.ToString(dr[0]);
+                    if (dr[0].ToString() == "")
+                    {
+                        total.Text = "0";
+                    }
+                    else
+                    {
+                        total.Text = Convert.ToString(dr[0]);
+                    }
                 }
             }
             catch (Exception tdf)
@@ -4427,7 +4484,14 @@ namespace MediationDB.DataLibrary
                 da.Fill(dt);
                 foreach (DataRow dr in dt.Rows)
                 {
-                    total.Text = Convert.ToString(dr[0]);
+                    if (dr[0].ToString() == "")
+                    {
+                        total.Text = "0";
+                    }
+                    else
+                    {
+                        total.Text = Convert.ToString(dr[0]);
+                    }
                 }
             }
             catch (Exception tdf)
@@ -4459,7 +4523,14 @@ namespace MediationDB.DataLibrary
                 da.Fill(dt);
                 foreach (DataRow dr in dt.Rows)
                 {
-                    total.Text = Convert.ToString(dr[0]);
+                    if (dr[0].ToString() == "")
+                    {
+                        total.Text = "0";
+                    }
+                    else
+                    {
+                        total.Text = Convert.ToString(dr[0]);
+                    }
                 }
             }
             catch (Exception tdf)
@@ -4491,7 +4562,14 @@ namespace MediationDB.DataLibrary
                 da.Fill(dt);
                 foreach (DataRow dr in dt.Rows)
                 {
-                    total.Text = Convert.ToString(dr[0]);
+                    if (dr[0].ToString() == "")
+                    {
+                        total.Text = "0";
+                    }
+                    else
+                    {
+                        total.Text = Convert.ToString(dr[0]);
+                    }
                 }
             }
             catch (Exception tdf)
@@ -4523,7 +4601,14 @@ namespace MediationDB.DataLibrary
                 da.Fill(dt);
                 foreach (DataRow dr in dt.Rows)
                 {
-                    total.Text = Convert.ToString(dr[0]);
+                    if (dr[0].ToString() == "")
+                    {
+                        total.Text = "0";
+                    }
+                    else
+                    {
+                        total.Text = Convert.ToString(dr[0]);
+                    }
                 }
             }
             catch (Exception tdf)
@@ -4555,7 +4640,14 @@ namespace MediationDB.DataLibrary
                 da.Fill(dt);
                 foreach (DataRow dr in dt.Rows)
                 {
-                    total.Text = Convert.ToString(dr[0]);
+                    if (dr[0].ToString() == "")
+                    {
+                        total.Text = "0";
+                    }
+                    else
+                    {
+                        total.Text = Convert.ToString(dr[0]);
+                    }
                 }
             }
             catch (Exception tdf)
@@ -4587,7 +4679,14 @@ namespace MediationDB.DataLibrary
                 da.Fill(dt);
                 foreach (DataRow dr in dt.Rows)
                 {
-                    total.Text = Convert.ToString(dr[0]);
+                    if (dr[0].ToString() == "")
+                    {
+                        total.Text = "0";
+                    }
+                    else
+                    {
+                        total.Text = Convert.ToString(dr[0]);
+                    }
                 }
             }
             catch (Exception tdf)
@@ -4619,7 +4718,14 @@ namespace MediationDB.DataLibrary
                 da.Fill(dt);
                 foreach (DataRow dr in dt.Rows)
                 {
-                    total.Text = Convert.ToString(dr[0]);
+                    if (dr[0].ToString() == "")
+                    {
+                        total.Text = "0";
+                    }
+                    else
+                    {
+                        total.Text = Convert.ToString(dr[0]);
+                    }
                 }
             }
             catch (Exception tdf)
@@ -4651,7 +4757,14 @@ namespace MediationDB.DataLibrary
                 da.Fill(dt);
                 foreach (DataRow dr in dt.Rows)
                 {
-                    total.Text = Convert.ToString(dr[0]);
+                    if (dr[0].ToString() == "")
+                    {
+                        total.Text = "0";
+                    }
+                    else
+                    {
+                        total.Text = Convert.ToString(dr[0]);
+                    }
                 }
             }
             catch (Exception tdf)
@@ -4683,7 +4796,14 @@ namespace MediationDB.DataLibrary
                 da.Fill(dt);
                 foreach (DataRow dr in dt.Rows)
                 {
-                    total.Text = Convert.ToString(dr[0]);
+                    if (dr[0].ToString() == "")
+                    {
+                        total.Text = "0";
+                    }
+                    else
+                    {
+                        total.Text = Convert.ToString(dr[0]);
+                    }
                 }
             }
             catch (Exception tdf)
@@ -4715,7 +4835,14 @@ namespace MediationDB.DataLibrary
                 da.Fill(dt);
                 foreach (DataRow dr in dt.Rows)
                 {
-                    total.Text = Convert.ToString(dr[0]);
+                    if (dr[0].ToString() == "")
+                    {
+                        total.Text = "0";
+                    }
+                    else
+                    {
+                        total.Text = Convert.ToString(dr[0]);
+                    }
                 }
             }
             catch (Exception tdf)
@@ -4747,7 +4874,14 @@ namespace MediationDB.DataLibrary
                 da.Fill(dt);
                 foreach (DataRow dr in dt.Rows)
                 {
-                    total.Text = Convert.ToString(dr[0]);
+                    if (dr[0].ToString() == "")
+                    {
+                        total.Text = "0";
+                    }
+                    else
+                    {
+                        total.Text = Convert.ToString(dr[0]);
+                    }
                 }
             }
             catch (Exception tdf)
@@ -4779,7 +4913,14 @@ namespace MediationDB.DataLibrary
                 da.Fill(dt);
                 foreach (DataRow dr in dt.Rows)
                 {
-                    total.Text = Convert.ToString(dr[0]);
+                    if (dr[0].ToString() == "")
+                    {
+                        total.Text = "0";
+                    }
+                    else
+                    {
+                        total.Text = Convert.ToString(dr[0]);
+                    }
                 }
             }
             catch (Exception tdf)
@@ -4812,7 +4953,14 @@ namespace MediationDB.DataLibrary
                 da.Fill(dt);
                 foreach (DataRow dr in dt.Rows)
                 {
-                    total.Text = Convert.ToString(dr[0]);
+                    if (dr[0].ToString() == "")
+                    {
+                        total.Text = "0";
+                    }
+                    else
+                    {
+                        total.Text = Convert.ToString(dr[0]);
+                    }
                 }
             }
             catch (Exception tdf)
@@ -4845,7 +4993,14 @@ namespace MediationDB.DataLibrary
                 da.Fill(dt);
                 foreach (DataRow dr in dt.Rows)
                 {
-                    total.Text = Convert.ToString(dr[0]);
+                    if (dr[0].ToString() == "")
+                    {
+                        total.Text = "0";
+                    }
+                    else
+                    {
+                        total.Text = Convert.ToString(dr[0]);
+                    }
                 }
             }
             catch (Exception tdf)
@@ -4878,7 +5033,14 @@ namespace MediationDB.DataLibrary
                 da.Fill(dt);
                 foreach (DataRow dr in dt.Rows)
                 {
-                    total.Text = Convert.ToString(dr[0]);
+                    if (dr[0].ToString() == "")
+                    {
+                        total.Text = "0";
+                    }
+                    else
+                    {
+                        total.Text = Convert.ToString(dr[0]);
+                    }
                 }
             }
             catch (Exception tdf)
@@ -4911,7 +5073,14 @@ namespace MediationDB.DataLibrary
                 da.Fill(dt);
                 foreach (DataRow dr in dt.Rows)
                 {
-                    total.Text = Convert.ToString(dr[0]);
+                    if (dr[0].ToString() == "")
+                    {
+                        total.Text = "0";
+                    }
+                    else
+                    {
+                        total.Text = Convert.ToString(dr[0]);
+                    }
                 }
             }
             catch (Exception tdf)

@@ -109,7 +109,6 @@
             this.txt_nombre_conflit = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.dt_resol_2 = new MetroFramework.Controls.MetroDateTime();
             this.dt_resol_1 = new MetroFramework.Controls.MetroDateTime();
-            this.label3 = new System.Windows.Forms.Label();
             this.txt_localite = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.txt_id_localite = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -125,10 +124,12 @@
             this.chart_encours = new Bunifu.Framework.UI.BunifuGauge();
             this.chart_referes = new Bunifu.Framework.UI.BunifuGauge();
             this.chart_classes = new Bunifu.Framework.UI.BunifuGauge();
+            this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
             this.pnl_header.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_header
@@ -165,6 +166,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.bunifuImageButton3);
             this.panel1.Controls.Add(this.chart_classes);
             this.panel1.Controls.Add(this.chart_referes);
             this.panel1.Controls.Add(this.chart_encours);
@@ -250,7 +252,6 @@
             this.panel1.Controls.Add(this.txt_nombre_conflit);
             this.panel1.Controls.Add(this.dt_resol_2);
             this.panel1.Controls.Add(this.dt_resol_1);
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.txt_localite);
             this.panel1.Controls.Add(this.listBox1);
             this.panel1.Controls.Add(this.txt_id_localite);
@@ -1362,7 +1363,7 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(939, 33);
+            this.label11.Location = new System.Drawing.Point(951, 21);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(80, 17);
             this.label11.TabIndex = 133;
@@ -1375,7 +1376,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(629, 36);
+            this.label10.Location = new System.Drawing.Point(641, 24);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(104, 17);
             this.label10.TabIndex = 132;
@@ -1440,7 +1441,7 @@
             // 
             this.dt_resol_2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dt_resol_2.FontSize = MetroFramework.MetroDateTimeSize.Small;
-            this.dt_resol_2.Location = new System.Drawing.Point(1032, 30);
+            this.dt_resol_2.Location = new System.Drawing.Point(1044, 18);
             this.dt_resol_2.MinimumSize = new System.Drawing.Size(0, 25);
             this.dt_resol_2.Name = "dt_resol_2";
             this.dt_resol_2.Size = new System.Drawing.Size(180, 25);
@@ -1452,26 +1453,13 @@
             // 
             this.dt_resol_1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dt_resol_1.FontSize = MetroFramework.MetroDateTimeSize.Small;
-            this.dt_resol_1.Location = new System.Drawing.Point(742, 30);
+            this.dt_resol_1.Location = new System.Drawing.Point(754, 18);
             this.dt_resol_1.MinimumSize = new System.Drawing.Size(0, 25);
             this.dt_resol_1.Name = "dt_resol_1";
             this.dt_resol_1.Size = new System.Drawing.Size(180, 25);
             this.dt_resol_1.Style = MetroFramework.MetroColorStyle.Red;
             this.dt_resol_1.TabIndex = 81;
             this.dt_resol_1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(883, 6);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(188, 17);
-            this.label3.TabIndex = 80;
-            this.label3.Text = "Recherche entre deux dates";
             // 
             // txt_localite
             // 
@@ -1490,7 +1478,7 @@
             this.txt_localite.Location = new System.Drawing.Point(239, 7);
             this.txt_localite.Margin = new System.Windows.Forms.Padding(4);
             this.txt_localite.Name = "txt_localite";
-            this.txt_localite.Size = new System.Drawing.Size(371, 44);
+            this.txt_localite.Size = new System.Drawing.Size(299, 44);
             this.txt_localite.TabIndex = 78;
             this.txt_localite.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1546,7 +1534,7 @@
             this.bunifuImageButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.bunifuImageButton2.Image = global::MediationDB.Properties.Resources.google_web_search_96px;
             this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(1225, 23);
+            this.bunifuImageButton2.Location = new System.Drawing.Point(1246, 13);
             this.bunifuImageButton2.Name = "bunifuImageButton2";
             this.bunifuImageButton2.Size = new System.Drawing.Size(45, 37);
             this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1688,6 +1676,19 @@
             this.chart_classes.Thickness = 30;
             this.chart_classes.Value = 0;
             // 
+            // bunifuImageButton3
+            // 
+            this.bunifuImageButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuImageButton3.Image = global::MediationDB.Properties.Resources.google_web_search_96px;
+            this.bunifuImageButton3.ImageActive = null;
+            this.bunifuImageButton3.Location = new System.Drawing.Point(545, 13);
+            this.bunifuImageButton3.Name = "bunifuImageButton3";
+            this.bunifuImageButton3.Size = new System.Drawing.Size(45, 37);
+            this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton3.TabIndex = 236;
+            this.bunifuImageButton3.TabStop = false;
+            this.bunifuImageButton3.Zoom = 10;
+            // 
             // frm_stats_conflits
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1706,6 +1707,7 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1719,7 +1721,6 @@
         private System.Windows.Forms.Label label1;
         private MetroFramework.Controls.MetroDateTime dt_resol_2;
         private MetroFramework.Controls.MetroDateTime dt_resol_1;
-        private System.Windows.Forms.Label label3;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_localite;
         private System.Windows.Forms.ListBox listBox1;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_id_localite;
@@ -1807,5 +1808,6 @@
         private Bunifu.Framework.UI.BunifuGauge chart_classes;
         private Bunifu.Framework.UI.BunifuGauge chart_referes;
         private Bunifu.Framework.UI.BunifuGauge chart_encours;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
     }
 }

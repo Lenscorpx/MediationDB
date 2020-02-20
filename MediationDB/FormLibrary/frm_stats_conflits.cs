@@ -182,12 +182,40 @@ namespace MediationDB.FormLibrary
             rps.stats_conflit_resolu_parperiode(txt_conflits_referes, "Referé", dt_resol_1.Value, dt_resol_2.Value);
             rps.stats_conflit_resolu_parperiode(txt_conflits_classes, "Classé", dt_resol_1.Value, dt_resol_2.Value);
             rps.stats_conflit_resolu_parperiode(txt_conflits_encours, "En cours", dt_resol_1.Value, dt_resol_2.Value);
+
+
             rps.stats_total_menages_conflit_parperiode(txt_total_menages, dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_menages_conflit_resolus_parperiode(txt_total_resolus, "Résolu", dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_menages_conflit_resolus_parperiode(txt_total_referes, "Referé", dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_menages_conflit_resolus_parperiode(txt_total_classes, "Classé", dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_menages_conflit_resolus_parperiode(txt_total_encours, "En cours", dt_resol_1.Value, dt_resol_2.Value);
+
+
             rps.stats_total_hommes_conflit_parperiode(txt_hommes_conflits, dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_hommes_conflit_resolu_parperiode(txt_hommes_resolus, "Résolu", dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_hommes_conflit_resolu_parperiode(txt_hommes_referes, "Referé", dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_hommes_conflit_resolu_parperiode(txt_hommes_classes, "Classé", dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_hommes_conflit_resolu_parperiode(txt_hommes_encours, "En cours", dt_resol_1.Value, dt_resol_2.Value);
+
+
             rps.stats_total_femmes_conflit_parperiode(txt_femmes_conflits, dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_femmes_conflit_resolus_parperiode(txt_femmes_resolus, "Résolu", dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_femmes_conflit_resolus_parperiode(txt_femmes_referes, "Referé", dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_femmes_conflit_resolus_parperiode(txt_femmes_classes, "Classé", dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_femmes_conflit_resolus_parperiode(txt_femmes_encours, "En cours", dt_resol_1.Value, dt_resol_2.Value);
+
+
             rps.stats_total_filles_conflit_parperiode(txt_filles_conflits, dt_resol_1.Value, dt_resol_2.Value);
-            rps.stats_total_garcons_conflit_parperiode(txt_garcons, dt_resol_1.Value, dt_resol_2.Value);
-            //rps.stats_total_hommes_conflit_parperiode(txt_hommes_conflits, dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_filles_conflit_resolus_parperiode(txt_filles_resolus, "Résolu", dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_filles_conflit_resolus_parperiode(txt_filles_referes, "Referé", dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_filles_conflit_resolus_parperiode(txt_filles_classes, "Classé", dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_filles_conflit_resolus_parperiode(txt_filles_encours, "En cours", dt_resol_1.Value, dt_resol_2.Value);
+
+            rps.stats_total_garcons_conflit_parperiode(txt_garcons, dt_resol_1.Value, dt_resol_2.Value); 
+            rps.stats_garcons_conflit_resolus_parperiode(txt_garcons_resolus, "Résolu", dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_garcons_conflit_resolus_parperiode(txt_garcons_referes, "Referé", dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_garcons_conflit_resolus_parperiode(txt_garcons_classes, "Classé", dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_garcons_conflit_resolus_parperiode(txt_garcons_encours, "En cours", dt_resol_1.Value, dt_resol_2.Value);
         }
     }
 }
