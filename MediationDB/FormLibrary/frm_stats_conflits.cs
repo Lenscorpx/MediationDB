@@ -138,11 +138,11 @@ namespace MediationDB.FormLibrary
             {
                 if (txt_conflits_referes.Text == "")
                 {
-                    chart_refered.Value = 0;
+                    chart_referes.Value = 0;
                 }
                 else
                 {
-                    chart_refered.Value = (Convert.ToInt32(txt_conflits_referes.Text) * 100) / Convert.ToInt32(txt_nombre_conflit.Text);
+                    chart_referes.Value = (Convert.ToInt32(txt_conflits_referes.Text) * 100) / Convert.ToInt32(txt_nombre_conflit.Text);
                 }
             }
             catch
@@ -157,11 +157,11 @@ namespace MediationDB.FormLibrary
             {
                 if (txt_conflits_classes.Text == "")
                 {
-                    chart_classed.Value = 0;
+                    chart_classes.Value = 0;
                 }
                 else
                 {
-                    chart_classed.Value = (Convert.ToInt32(txt_conflits_classes.Text) * 100) / Convert.ToInt32(txt_nombre_conflit.Text);
+                    chart_classes.Value = (Convert.ToInt32(txt_conflits_classes.Text) * 100) / Convert.ToInt32(txt_nombre_conflit.Text);
                 }
             }
             catch
