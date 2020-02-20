@@ -182,7 +182,12 @@ namespace MediationDB.FormLibrary
             rps.stats_conflit_resolu_parperiode(txt_conflits_referes, "Referé", dt_resol_1.Value, dt_resol_2.Value);
             rps.stats_conflit_resolu_parperiode(txt_conflits_classes, "Classé", dt_resol_1.Value, dt_resol_2.Value);
             rps.stats_conflit_resolu_parperiode(txt_conflits_encours, "En cours", dt_resol_1.Value, dt_resol_2.Value);
-            rps.stats
+            rps.stats_total_menages_conflit_parperiode(txt_total_menages, dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_total_hommes_conflit_parperiode(txt_hommes_conflits, dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_total_femmes_conflit_parperiode(txt_femmes_conflits, dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_total_filles_conflit_parperiode(txt_filles_conflits, dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_total_garcons_conflit_parperiode(txt_garcons, dt_resol_1.Value, dt_resol_2.Value);
+            //rps.stats_total_hommes_conflit_parperiode(txt_hommes_conflits, dt_resol_1.Value, dt_resol_2.Value);
         }
     }
 }
