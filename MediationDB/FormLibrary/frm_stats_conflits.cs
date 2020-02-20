@@ -89,12 +89,7 @@ namespace MediationDB.FormLibrary
 
         private void btn_search_period_Click(object sender, EventArgs e)
         {
-            rps.stats_total_conflit_parperiode(txt_nombre_conflit, dt_resol_1.Value, dt_resol_2.Value);
-            rps.stats_conflit_resolu_parperiode(txt_conflit_resolus, "Résolu", dt_resol_1.Value, dt_resol_2.Value);
-            rps.stats_conflit_resolu_parperiode(txt_conflits_referes, "Referé", dt_resol_1.Value, dt_resol_2.Value);
-            rps.stats_conflit_resolu_parperiode(txt_conflits_classes, "Classé", dt_resol_1.Value, dt_resol_2.Value);
-            rps.stats_conflit_resolu_parperiode(txt_conflits_encours, "En cours", dt_resol_1.Value, dt_resol_2.Value); 
-            rps.stats
+            
         }
 
         private void txt_conflit_resolus_OnValueChanged(object sender, EventArgs e)
@@ -182,7 +177,12 @@ namespace MediationDB.FormLibrary
 
         private void bunifuImageButton2_Click(object sender, EventArgs e)
         {
-
+            rps.stats_total_conflit_parperiode(txt_nombre_conflit, dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_conflit_resolu_parperiode(txt_conflit_resolus, "Résolu", dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_conflit_resolu_parperiode(txt_conflits_referes, "Referé", dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_conflit_resolu_parperiode(txt_conflits_classes, "Classé", dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats_conflit_resolu_parperiode(txt_conflits_encours, "En cours", dt_resol_1.Value, dt_resol_2.Value);
+            rps.stats
         }
     }
 }
