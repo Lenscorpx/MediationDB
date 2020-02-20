@@ -119,12 +119,12 @@
             this.label44 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
             this.chart_encours = new Bunifu.Framework.UI.BunifuGauge();
             this.chart_referes = new Bunifu.Framework.UI.BunifuGauge();
             this.chart_classes = new Bunifu.Framework.UI.BunifuGauge();
             this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.label3 = new System.Windows.Forms.Label();
             this.pnl_header.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
@@ -166,12 +166,12 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.bunifuImageButton3);
             this.panel1.Controls.Add(this.chart_classes);
             this.panel1.Controls.Add(this.chart_referes);
             this.panel1.Controls.Add(this.chart_encours);
             this.panel1.Controls.Add(this.label48);
-            this.panel1.Controls.Add(this.label47);
             this.panel1.Controls.Add(this.label46);
             this.panel1.Controls.Add(this.label45);
             this.panel1.Controls.Add(this.label44);
@@ -275,14 +275,15 @@
             this.txt_total_general.HintText = "Total menage";
             this.txt_total_general.isPassword = false;
             this.txt_total_general.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_total_general.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(142)))));
+            this.txt_total_general.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_total_general.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_total_general.LineThickness = 3;
+            this.txt_total_general.LineThickness = 4;
             this.txt_total_general.Location = new System.Drawing.Point(928, 452);
             this.txt_total_general.Margin = new System.Windows.Forms.Padding(4);
             this.txt_total_general.Name = "txt_total_general";
             this.txt_total_general.Size = new System.Drawing.Size(117, 44);
             this.txt_total_general.TabIndex = 225;
+            this.txt_total_general.Text = "0";
             this.txt_total_general.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txt_total_garcons
@@ -296,14 +297,15 @@
             this.txt_total_garcons.HintText = "Garcons";
             this.txt_total_garcons.isPassword = false;
             this.txt_total_garcons.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_total_garcons.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(142)))));
+            this.txt_total_garcons.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_total_garcons.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_total_garcons.LineThickness = 3;
+            this.txt_total_garcons.LineThickness = 4;
             this.txt_total_garcons.Location = new System.Drawing.Point(815, 452);
             this.txt_total_garcons.Margin = new System.Windows.Forms.Padding(4);
             this.txt_total_garcons.Name = "txt_total_garcons";
             this.txt_total_garcons.Size = new System.Drawing.Size(105, 44);
             this.txt_total_garcons.TabIndex = 224;
+            this.txt_total_garcons.Text = "0";
             this.txt_total_garcons.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txt_total_filles
@@ -317,14 +319,15 @@
             this.txt_total_filles.HintText = "Filles";
             this.txt_total_filles.isPassword = false;
             this.txt_total_filles.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_total_filles.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(142)))));
+            this.txt_total_filles.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_total_filles.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_total_filles.LineThickness = 3;
+            this.txt_total_filles.LineThickness = 4;
             this.txt_total_filles.Location = new System.Drawing.Point(702, 452);
             this.txt_total_filles.Margin = new System.Windows.Forms.Padding(4);
             this.txt_total_filles.Name = "txt_total_filles";
             this.txt_total_filles.Size = new System.Drawing.Size(105, 44);
             this.txt_total_filles.TabIndex = 223;
+            this.txt_total_filles.Text = "0";
             this.txt_total_filles.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txt_total_femmes
@@ -338,14 +341,15 @@
             this.txt_total_femmes.HintText = "Femmes";
             this.txt_total_femmes.isPassword = false;
             this.txt_total_femmes.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_total_femmes.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(142)))));
+            this.txt_total_femmes.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_total_femmes.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_total_femmes.LineThickness = 3;
+            this.txt_total_femmes.LineThickness = 4;
             this.txt_total_femmes.Location = new System.Drawing.Point(589, 452);
             this.txt_total_femmes.Margin = new System.Windows.Forms.Padding(4);
             this.txt_total_femmes.Name = "txt_total_femmes";
             this.txt_total_femmes.Size = new System.Drawing.Size(105, 44);
             this.txt_total_femmes.TabIndex = 222;
+            this.txt_total_femmes.Text = "0";
             this.txt_total_femmes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txt_total_hommes
@@ -359,14 +363,15 @@
             this.txt_total_hommes.HintText = "Hommes";
             this.txt_total_hommes.isPassword = false;
             this.txt_total_hommes.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_total_hommes.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(142)))));
+            this.txt_total_hommes.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_total_hommes.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_total_hommes.LineThickness = 3;
+            this.txt_total_hommes.LineThickness = 4;
             this.txt_total_hommes.Location = new System.Drawing.Point(476, 452);
             this.txt_total_hommes.Margin = new System.Windows.Forms.Padding(4);
             this.txt_total_hommes.Name = "txt_total_hommes";
             this.txt_total_hommes.Size = new System.Drawing.Size(105, 44);
             this.txt_total_hommes.TabIndex = 221;
+            this.txt_total_hommes.Text = "0";
             this.txt_total_hommes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label39
@@ -1069,7 +1074,7 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(555, 383);
+            this.label20.Location = new System.Drawing.Point(555, 390);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(81, 17);
             this.label20.TabIndex = 171;
@@ -1080,7 +1085,7 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(555, 310);
+            this.label19.Location = new System.Drawing.Point(555, 319);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(81, 17);
             this.label19.TabIndex = 170;
@@ -1091,7 +1096,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(555, 239);
+            this.label18.Location = new System.Drawing.Point(555, 247);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(81, 17);
             this.label18.TabIndex = 169;
@@ -1102,7 +1107,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(555, 168);
+            this.label17.Location = new System.Drawing.Point(555, 175);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(81, 17);
             this.label17.TabIndex = 168;
@@ -1113,7 +1118,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(555, 98);
+            this.label16.Location = new System.Drawing.Point(555, 105);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(81, 17);
             this.label16.TabIndex = 147;
@@ -1229,7 +1234,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(259, 383);
+            this.label15.Location = new System.Drawing.Point(259, 392);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(111, 17);
             this.label15.TabIndex = 142;
@@ -1240,7 +1245,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(259, 310);
+            this.label14.Location = new System.Drawing.Point(259, 319);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(128, 17);
             this.label14.TabIndex = 141;
@@ -1251,7 +1256,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(257, 238);
+            this.label13.Location = new System.Drawing.Point(257, 247);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(119, 17);
             this.label13.TabIndex = 140;
@@ -1262,7 +1267,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(257, 168);
+            this.label12.Location = new System.Drawing.Point(257, 177);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(108, 17);
             this.label12.TabIndex = 139;
@@ -1282,10 +1287,10 @@
             this.txt_conflits_classes.LineIdleColor = System.Drawing.Color.White;
             this.txt_conflits_classes.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_conflits_classes.LineThickness = 4;
-            this.txt_conflits_classes.Location = new System.Drawing.Point(390, 383);
+            this.txt_conflits_classes.Location = new System.Drawing.Point(394, 383);
             this.txt_conflits_classes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_conflits_classes.Name = "txt_conflits_classes";
-            this.txt_conflits_classes.Size = new System.Drawing.Size(148, 32);
+            this.txt_conflits_classes.Size = new System.Drawing.Size(144, 32);
             this.txt_conflits_classes.TabIndex = 138;
             this.txt_conflits_classes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_conflits_classes.OnValueChanged += new System.EventHandler(this.txt_conflits_classes_OnValueChanged);
@@ -1304,10 +1309,10 @@
             this.txt_conflits_referes.LineIdleColor = System.Drawing.Color.White;
             this.txt_conflits_referes.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_conflits_referes.LineThickness = 4;
-            this.txt_conflits_referes.Location = new System.Drawing.Point(390, 310);
+            this.txt_conflits_referes.Location = new System.Drawing.Point(394, 310);
             this.txt_conflits_referes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_conflits_referes.Name = "txt_conflits_referes";
-            this.txt_conflits_referes.Size = new System.Drawing.Size(148, 34);
+            this.txt_conflits_referes.Size = new System.Drawing.Size(144, 34);
             this.txt_conflits_referes.TabIndex = 137;
             this.txt_conflits_referes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_conflits_referes.OnValueChanged += new System.EventHandler(this.txt_conflits_referes_OnValueChanged);
@@ -1326,10 +1331,10 @@
             this.txt_conflits_encours.LineIdleColor = System.Drawing.Color.White;
             this.txt_conflits_encours.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_conflits_encours.LineThickness = 4;
-            this.txt_conflits_encours.Location = new System.Drawing.Point(390, 239);
+            this.txt_conflits_encours.Location = new System.Drawing.Point(394, 239);
             this.txt_conflits_encours.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_conflits_encours.Name = "txt_conflits_encours";
-            this.txt_conflits_encours.Size = new System.Drawing.Size(148, 34);
+            this.txt_conflits_encours.Size = new System.Drawing.Size(144, 34);
             this.txt_conflits_encours.TabIndex = 136;
             this.txt_conflits_encours.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_conflits_encours.OnValueChanged += new System.EventHandler(this.txt_conflits_encours_OnValueChanged);
@@ -1348,10 +1353,10 @@
             this.txt_conflit_resolus.LineIdleColor = System.Drawing.Color.White;
             this.txt_conflit_resolus.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_conflit_resolus.LineThickness = 4;
-            this.txt_conflit_resolus.Location = new System.Drawing.Point(390, 168);
+            this.txt_conflit_resolus.Location = new System.Drawing.Point(394, 168);
             this.txt_conflit_resolus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_conflit_resolus.Name = "txt_conflit_resolus";
-            this.txt_conflit_resolus.Size = new System.Drawing.Size(148, 34);
+            this.txt_conflit_resolus.Size = new System.Drawing.Size(144, 34);
             this.txt_conflit_resolus.TabIndex = 135;
             this.txt_conflit_resolus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_conflit_resolus.OnValueChanged += new System.EventHandler(this.txt_conflit_resolus_OnValueChanged);
@@ -1429,10 +1434,10 @@
             this.txt_nombre_conflit.LineIdleColor = System.Drawing.Color.White;
             this.txt_nombre_conflit.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_nombre_conflit.LineThickness = 4;
-            this.txt_nombre_conflit.Location = new System.Drawing.Point(390, 98);
+            this.txt_nombre_conflit.Location = new System.Drawing.Point(394, 98);
             this.txt_nombre_conflit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_nombre_conflit.Name = "txt_nombre_conflit";
-            this.txt_nombre_conflit.Size = new System.Drawing.Size(148, 33);
+            this.txt_nombre_conflit.Size = new System.Drawing.Size(144, 33);
             this.txt_nombre_conflit.TabIndex = 120;
             this.txt_nombre_conflit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_nombre_conflit.OnValueChanged += new System.EventHandler(this.txt_nombre_conflit_OnValueChanged);
@@ -1445,7 +1450,7 @@
             this.dt_resol_2.MinimumSize = new System.Drawing.Size(0, 25);
             this.dt_resol_2.Name = "dt_resol_2";
             this.dt_resol_2.Size = new System.Drawing.Size(180, 25);
-            this.dt_resol_2.Style = MetroFramework.MetroColorStyle.Red;
+            this.dt_resol_2.Style = MetroFramework.MetroColorStyle.Blue;
             this.dt_resol_2.TabIndex = 82;
             this.dt_resol_2.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
@@ -1457,7 +1462,7 @@
             this.dt_resol_1.MinimumSize = new System.Drawing.Size(0, 25);
             this.dt_resol_1.Name = "dt_resol_1";
             this.dt_resol_1.Size = new System.Drawing.Size(180, 25);
-            this.dt_resol_1.Style = MetroFramework.MetroColorStyle.Red;
+            this.dt_resol_1.Style = MetroFramework.MetroColorStyle.Blue;
             this.dt_resol_1.TabIndex = 81;
             this.dt_resol_1.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
@@ -1523,7 +1528,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(259, 98);
+            this.label2.Location = new System.Drawing.Point(259, 105);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(92, 17);
             this.label2.TabIndex = 41;
@@ -1548,13 +1553,13 @@
             this.chart_resolus.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chart_resolus.BackgroundImage")));
             this.chart_resolus.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.chart_resolus.ForeColor = System.Drawing.Color.White;
-            this.chart_resolus.Location = new System.Drawing.Point(349, 552);
+            this.chart_resolus.Location = new System.Drawing.Point(349, 536);
             this.chart_resolus.Margin = new System.Windows.Forms.Padding(5);
             this.chart_resolus.Name = "chart_resolus";
             this.chart_resolus.ProgressBgColor = System.Drawing.Color.White;
             this.chart_resolus.ProgressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.chart_resolus.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.chart_resolus.Size = new System.Drawing.Size(138, 95);
+            this.chart_resolus.Size = new System.Drawing.Size(177, 120);
             this.chart_resolus.TabIndex = 39;
             this.chart_resolus.Thickness = 30;
             this.chart_resolus.Value = 0;
@@ -1606,17 +1611,6 @@
             this.label46.TabIndex = 230;
             this.label46.Text = "Filles";
             // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.ForeColor = System.Drawing.Color.White;
-            this.label47.Location = new System.Drawing.Point(850, 431);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(42, 17);
-            this.label47.TabIndex = 231;
-            this.label47.Text = "Filles";
-            // 
             // label48
             // 
             this.label48.AutoSize = true;
@@ -1633,13 +1627,13 @@
             this.chart_encours.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chart_encours.BackgroundImage")));
             this.chart_encours.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.chart_encours.ForeColor = System.Drawing.Color.White;
-            this.chart_encours.Location = new System.Drawing.Point(601, 552);
+            this.chart_encours.Location = new System.Drawing.Point(575, 536);
             this.chart_encours.Margin = new System.Windows.Forms.Padding(5);
             this.chart_encours.Name = "chart_encours";
             this.chart_encours.ProgressBgColor = System.Drawing.Color.White;
             this.chart_encours.ProgressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.chart_encours.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.chart_encours.Size = new System.Drawing.Size(138, 95);
+            this.chart_encours.Size = new System.Drawing.Size(177, 120);
             this.chart_encours.TabIndex = 233;
             this.chart_encours.Thickness = 30;
             this.chart_encours.Value = 0;
@@ -1649,13 +1643,13 @@
             this.chart_referes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chart_referes.BackgroundImage")));
             this.chart_referes.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.chart_referes.ForeColor = System.Drawing.Color.White;
-            this.chart_referes.Location = new System.Drawing.Point(840, 552);
+            this.chart_referes.Location = new System.Drawing.Point(815, 536);
             this.chart_referes.Margin = new System.Windows.Forms.Padding(5);
             this.chart_referes.Name = "chart_referes";
             this.chart_referes.ProgressBgColor = System.Drawing.Color.White;
             this.chart_referes.ProgressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.chart_referes.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.chart_referes.Size = new System.Drawing.Size(138, 95);
+            this.chart_referes.Size = new System.Drawing.Size(177, 120);
             this.chart_referes.TabIndex = 234;
             this.chart_referes.Thickness = 30;
             this.chart_referes.Value = 0;
@@ -1665,13 +1659,13 @@
             this.chart_classes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chart_classes.BackgroundImage")));
             this.chart_classes.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.chart_classes.ForeColor = System.Drawing.Color.White;
-            this.chart_classes.Location = new System.Drawing.Point(1084, 552);
+            this.chart_classes.Location = new System.Drawing.Point(1047, 536);
             this.chart_classes.Margin = new System.Windows.Forms.Padding(5);
             this.chart_classes.Name = "chart_classes";
             this.chart_classes.ProgressBgColor = System.Drawing.Color.White;
             this.chart_classes.ProgressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.chart_classes.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.chart_classes.Size = new System.Drawing.Size(138, 95);
+            this.chart_classes.Size = new System.Drawing.Size(177, 120);
             this.chart_classes.TabIndex = 235;
             this.chart_classes.Thickness = 30;
             this.chart_classes.Value = 0;
@@ -1688,6 +1682,17 @@
             this.bunifuImageButton3.TabIndex = 236;
             this.bunifuImageButton3.TabStop = false;
             this.bunifuImageButton3.Zoom = 10;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(834, 431);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(65, 17);
+            this.label3.TabIndex = 237;
+            this.label3.Text = "Garcons";
             // 
             // frm_stats_conflits
             // 
@@ -1803,11 +1808,11 @@
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label46;
         private Bunifu.Framework.UI.BunifuGauge chart_classes;
         private Bunifu.Framework.UI.BunifuGauge chart_referes;
         private Bunifu.Framework.UI.BunifuGauge chart_encours;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
+        private System.Windows.Forms.Label label3;
     }
 }
