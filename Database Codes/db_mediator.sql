@@ -3016,6 +3016,7 @@ create procedure stats_femmes_conflit_resolus_parlocalite
 		where
 			id_localite like @id_localite and id_resolution like @id_resolution and t_mediation.date_debut_mediation between @date_un and @date_deux
 go
+
 create procedure stats_filles_conflit_resolus_parlocalite
 @date_un date,
 @date_deux date,
@@ -3047,6 +3048,7 @@ create procedure stats_filles_conflit_resolus_parlocalite
 		where
 			id_localite like @id_localite and id_resolution like @id_resolution and t_mediation.date_debut_mediation between @date_un and @date_deux
 go
+
 create procedure stats_garcons_conflit_resolus_parlocalite
 @date_un date,
 @date_deux date,
