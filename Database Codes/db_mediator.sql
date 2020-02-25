@@ -3114,3 +3114,18 @@ create procedure stats_menages_conflit_resolus_parlocalite
 			id_localite like @id_localite and id_resolution like @id_resolution and t_mediation.date_debut_mediation between @date_un and @date_deux
 go
 ------------ 2. End of block -----------------------------------------------------------------------------------------------------------------
+create procedure liste_sensibilises
+as
+SELECT        dbo.t_sensibilisation.num_sensibilisation, dbo.t_sensibilisation.date_debut, dbo.t_sensibilisation.date_fin, dbo.t_sensibilisation.id_localite, dbo.t_localite.id_groupement, dbo.t_groupement.id_chefferie, 
+                         dbo.t_chefferie.id_territoire, dbo.t_territoire.id_province, dbo.t_atelier_masse.num_atelier_masse, dbo.t_atelier_masse.noms_sensibilisateur, dbo.t_atelier_masse.nbre_hommes, dbo.t_atelier_masse.nbre_femmes, 
+                         dbo.t_atelier_masse.nbre_filles, dbo.t_atelier_masse.nbre_garcons, dbo.t_atelier_masse.nbre_autorite_femmes, dbo.t_atelier_masse.nbre_autorite_hommes, dbo.t_atelier_masse.nbre_menages_deplaces, 
+                         dbo.t_atelier_masse.nbre_menages_retournes, dbo.t_atelier_masse.nbre_menages_locaux, dbo.t_atelier_masse.nbre_menages_rapatrie, dbo.t_atelier_masse.telephone_sensibilisateur, 
+                         dbo.t_atelier_masse.theme_developpe
+FROM            dbo.t_localite INNER JOIN
+                         dbo.t_sensibilisation ON dbo.t_localite.id_localite = dbo.t_sensibilisation.id_localite INNER JOIN
+                         dbo.t_groupement ON dbo.t_localite.id_groupement = dbo.t_groupement.id_groupement INNER JOIN
+                         dbo.t_chefferie ON dbo.t_groupement.id_chefferie = dbo.t_chefferie.id_chefferie INNER JOIN
+                         dbo.t_territoire ON dbo.t_chefferie.id_territoire = dbo.t_territoire.id_territoire INNER JOIN
+                         dbo.t_province ON dbo.t_territoire.id_province = dbo.t_province.id_province INNER JOIN
+                         dbo.t_atelier_masse ON dbo.t_sensibilisation.num_sensibilisation = dbo.t_atelier_masse.num_sensibilisation
+GO

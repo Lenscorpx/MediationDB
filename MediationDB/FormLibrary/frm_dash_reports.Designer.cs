@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.pnl_header = new System.Windows.Forms.Panel();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.label1 = new System.Windows.Forms.Label();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuTileButton2 = new Bunifu.Framework.UI.BunifuTileButton();
             this.btn_conflits = new Bunifu.Framework.UI.BunifuTileButton();
@@ -51,6 +51,17 @@
             this.pnl_header.Size = new System.Drawing.Size(970, 53);
             this.pnl_header.TabIndex = 74;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(338, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(309, 36);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Dashboard Rapports";
+            // 
             // bunifuImageButton1
             // 
             this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
@@ -64,17 +75,6 @@
             this.bunifuImageButton1.TabStop = false;
             this.bunifuImageButton1.Zoom = 10;
             this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(338, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(309, 36);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Dashboard Rapports";
             // 
             // pictureBox1
             // 
@@ -166,6 +166,7 @@
             this.btn_sensibilisations.Name = "btn_sensibilisations";
             this.btn_sensibilisations.Size = new System.Drawing.Size(249, 154);
             this.btn_sensibilisations.TabIndex = 76;
+            this.btn_sensibilisations.Click += new System.EventHandler(this.btn_sensibilisations_Click);
             // 
             // frm_dash_reports
             // 

@@ -21,11 +21,18 @@ namespace MediationDB.FormLibrary
         private void btn_conflits_Click(object sender, EventArgs e)
         {
             var fr = new frm_report_conflits_list();
+            fr.Show();
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btn_sensibilisations_Click(object sender, EventArgs e)
+        {
+            var fr = new frm_sensibilises();
+            fr.Show();
         }
     }
 }

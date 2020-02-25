@@ -4123,6 +4123,42 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
+        public void Liste_sensibilisationa(DocumentViewer dcv)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("Liste_sensibilisationa", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var rpt = new rpt_sensibilises();
+                DataSet dt = new DataSet();
+                da.Fill(dt, "Liste_sensibilisationa");
+                rpt.DataSource = dt;
+                //rpt.SetDataSource(dt.Tables["rechercher_pay_bill"]);                    
+                dcv.DocumentSource = rpt;
+                rpt.CreateDocument();
+                dcv.Refresh();
+            }
+            catch (Exception exct)
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show("Want to see error code?", "Errors ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    MessageBox.Show(exct.ToString());
+                }
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
         public void details_menages_par_conflit(DocumentViewer dcv, DateTime date_un, DateTime date_deux)
         {
             cnx = new SqlConnection(prms.ToString());
