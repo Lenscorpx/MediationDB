@@ -4100,9 +4100,9 @@ namespace MediationDB.DataLibrary
                 };
                 cmd.ExecuteNonQuery();
                 var da = new SqlDataAdapter(cmd);
-                var rpt = new rpt_conflits();
+                var rpt = new rpt_rapport_general_sur_conflit();
                 DataSet dt = new DataSet();
-                da.Fill(dt, "rpt_rapport_general_sur_conflit");
+                da.Fill(dt, "infos_general_conflits");
                 rpt.DataSource = dt;
                 //rpt.SetDataSource(dt.Tables["rechercher_pay_bill"]);                    
                 dcv.DocumentSource = rpt;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MediationDB.DataLibrary;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,14 @@ namespace MediationDB.ReportsLibrary
 {
     public partial class frm_report_infos_general : Form
     {
+        Data_Repository rps = new Data_Repository();
         public frm_report_infos_general()
         {
             InitializeComponent();
+        }
+        private void refresh()
+        {
+            rps.liste_conflits_par_groupements(documentViewer1);
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
