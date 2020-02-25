@@ -4130,7 +4130,7 @@ namespace MediationDB.DataLibrary
             {
                 if (cnx.State == ConnectionState.Closed)
                     cnx.Open();
-                var cmd = new SqlCommand("Liste_sensibilisationa", cnx)
+                var cmd = new SqlCommand("liste_sensibilises", cnx)
                 {
                     CommandType = CommandType.StoredProcedure
                 };
@@ -4138,7 +4138,7 @@ namespace MediationDB.DataLibrary
                 var da = new SqlDataAdapter(cmd);
                 var rpt = new rpt_sensibilises();
                 DataSet dt = new DataSet();
-                da.Fill(dt, "Liste_sensibilisationa");
+                da.Fill(dt, "liste_sensibilises");
                 rpt.DataSource = dt;
                 //rpt.SetDataSource(dt.Tables["rechercher_pay_bill"]);                    
                 dcv.DocumentSource = rpt;
