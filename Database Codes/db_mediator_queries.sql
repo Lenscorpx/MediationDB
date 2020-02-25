@@ -2,7 +2,8 @@
 insert into t_agr
     (id_agr,description_agr,id_categorie)
 select 
-    distinct AGR,'to be completed',Type_AGR from [db_foncier].[dbo].['Beneficiaires HIA$']
+    distinct AGR,'to be completed',Type_AGR from Tempo_WOA
+        where AGR not in (select id_agr from t_agr)
 
 insert into t_distribution
     (code_distribution,id_localite,id_projet,id_agr,id_executant)
@@ -10,7 +11,7 @@ select CODE_DISTRIBUTION, ADRESSE2, PROJET, AGR, EXECUTANT from TEMPO_BENEF
 
 insert into t_localite
     (id_localite, descr_localite ,id_groupement)
-select distinct ADRESSE2, 'To be completed', 'Bashali Mukoto' from TEMPO_BENEF
+select distinct ADRESSE2, 'To be completed', 'Bashali Mukoto' from Tempo_WOA
     where
         ADRESSE2 not in (select id_localite from t_localite)
 
