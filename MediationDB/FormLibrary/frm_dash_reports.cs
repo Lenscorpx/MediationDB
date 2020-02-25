@@ -22,5 +22,10 @@ namespace MediationDB.FormLibrary
         {
             var fr = new frm_report_conflits_list();
         }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
