@@ -1,12 +1,3 @@
-SELECT TOP (1000) [id_beneficiaire]
-      ,[noms]
-      ,[Type_AGR]
-      ,[AGR]
-      ,[ADRESSE2]
-      ,[CODE DISTRTIBUTION]
-      ,[EXECUTANT]
-      ,[PROJET]
-  FROM [db_foncier].[dbo].['Beneficiaires HIA$']
 
 insert into t_agr
     (id_agr,description_agr,id_categorie)
@@ -28,3 +19,5 @@ select * from t_distribution
 select * from t_assignation_beneficiaires
 
 insert into t_assignation_beneficiaires
+(id_beneficiaire, code_distribution)
+select id_beneficiaire, CODE_DISTRIBUTION from TEMPO_BENEF
