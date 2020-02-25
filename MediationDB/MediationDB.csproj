@@ -357,17 +357,17 @@
     <Compile Include="ReportsLibrary\frm_report_conflits_list.Designer.cs">
       <DependentUpon>frm_report_conflits_list.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReportsLibrary\frm_report_infos_general.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsLibrary\frm_report_infos_general.Designer.cs">
+      <DependentUpon>frm_report_infos_general.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportsLibrary\rpt_conflits.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="ReportsLibrary\rpt_conflits.Designer.cs">
       <DependentUpon>rpt_conflits.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ReportsLibrary\rpt_infos_general.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ReportsLibrary\rpt_infos_general.Designer.cs">
-      <DependentUpon>rpt_infos_general.cs</DependentUpon>
     </Compile>
     <Compile Include="ReportsLibrary\rpt_liste_menages_detailles_conflit_par_dates.cs">
       <SubType>Component</SubType>
@@ -521,11 +521,11 @@
     <EmbeddedResource Include="ReportsLibrary\frm_report_conflits_list.resx">
       <DependentUpon>frm_report_conflits_list.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLibrary\frm_report_infos_general.resx">
+      <DependentUpon>frm_report_infos_general.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReportsLibrary\rpt_conflits.resx">
       <DependentUpon>rpt_conflits.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ReportsLibrary\rpt_infos_general.resx">
-      <DependentUpon>rpt_infos_general.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportsLibrary\rpt_liste_menages_detailles_conflit_par_dates.resx">
       <DependentUpon>rpt_liste_menages_detailles_conflit_par_dates.cs</DependentUpon>

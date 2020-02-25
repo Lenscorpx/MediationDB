@@ -4094,7 +4094,7 @@ namespace MediationDB.DataLibrary
             {
                 if (cnx.State == ConnectionState.Closed)
                     cnx.Open();
-                var cmd = new SqlCommand("afficher_rapport_conflit", cnx)
+                var cmd = new SqlCommand("infos_general_conflits", cnx)
                 {
                     CommandType = CommandType.StoredProcedure
                 };
@@ -4102,7 +4102,7 @@ namespace MediationDB.DataLibrary
                 var da = new SqlDataAdapter(cmd);
                 var rpt = new rpt_conflits();
                 DataSet dt = new DataSet();
-                da.Fill(dt, "afficher_rapport_conflit");
+                da.Fill(dt, "rpt_rapport_general_sur_conflit");
                 rpt.DataSource = dt;
                 //rpt.SetDataSource(dt.Tables["rechercher_pay_bill"]);                    
                 dcv.DocumentSource = rpt;
