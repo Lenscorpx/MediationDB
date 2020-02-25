@@ -369,6 +369,12 @@
     <Compile Include="ReportsLibrary\frm_report_infos_general.Designer.cs">
       <DependentUpon>frm_report_infos_general.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReportsLibrary\frm_sensibilises.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsLibrary\frm_sensibilises.Designer.cs">
+      <DependentUpon>frm_sensibilises.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportsLibrary\rpt_conflits.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -532,6 +538,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReportsLibrary\frm_report_infos_general.resx">
       <DependentUpon>frm_report_infos_general.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLibrary\frm_sensibilises.resx">
+      <DependentUpon>frm_sensibilises.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportsLibrary\rpt_conflits.resx">
       <DependentUpon>rpt_conflits.cs</DependentUpon>
