@@ -18,7 +18,14 @@ values
 -------fin insertion
 insert into t_distribution
     (code_distribution,id_localite,id_projet,id_agr,id_executant)
-select CODE_DISTRIBUTION, ADRESSE2, PROJET, AGR, EXECUTANT from TEMPO_BENEF
+select CODE_DISTRIBUTION, ADRESSE2, PROJET, AGR, EXECUTANT from Tempo_WOA
+
+insert into t_distribution
+    (code_distribution,id_localite,id_projet,id_agr,id_executant)
+select distinct CODE_AGR_COLLECTIF, ADRESSE2, PROJET, AGR_COLLECTIF, EXECUTANT from Tempo_WOA
+    where
+        CODE_AGR_COLLECTIF is not null
+---------------------------------------------------------------------
 
 insert into t_localite
     (id_localite, descr_localite ,id_groupement)
