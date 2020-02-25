@@ -251,12 +251,13 @@
             this.bunifuTileButton3.ImagePosition = 18;
             this.bunifuTileButton3.ImageZoom = 50;
             this.bunifuTileButton3.LabelPosition = 36;
-            this.bunifuTileButton3.LabelText = "Prévention VBG";
+            this.bunifuTileButton3.LabelText = "Recherches";
             this.bunifuTileButton3.Location = new System.Drawing.Point(314, 232);
             this.bunifuTileButton3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuTileButton3.Name = "bunifuTileButton3";
             this.bunifuTileButton3.Size = new System.Drawing.Size(191, 162);
             this.bunifuTileButton3.TabIndex = 61;
+            this.bunifuTileButton3.Click += new System.EventHandler(this.bunifuTileButton3_Click);
             // 
             // panel2
             // 
