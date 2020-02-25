@@ -21,3 +21,10 @@ select * from t_assignation_beneficiaires
 insert into t_assignation_beneficiaires
 (id_beneficiaire, code_distribution)
 select id_beneficiaire, CODE_DISTRIBUTION from TEMPO_BENEF
+
+select * from t_beneficiaires
+insert into t_beneficiaires
+    (id_beneficiaire,noms,sexe,vulnerabilite,date_naissance,adresse)
+select id_beneficiaire, noms, SEXE, VULNERABILITE, DATE_NAISSANCE, ADRESSE_PHYSIQUE from Tempo_WOA
+
+
