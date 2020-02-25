@@ -100,7 +100,7 @@
             this.bunifuTileButton2.ImageZoom = 40;
             this.bunifuTileButton2.LabelPosition = 27;
             this.bunifuTileButton2.LabelText = "AGR";
-            this.bunifuTileButton2.Location = new System.Drawing.Point(603, 92);
+            this.bunifuTileButton2.Location = new System.Drawing.Point(510, 263);
             this.bunifuTileButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuTileButton2.Name = "bunifuTileButton2";
             this.bunifuTileButton2.Size = new System.Drawing.Size(249, 154);
@@ -120,7 +120,7 @@
             this.btn_conflits.ImageZoom = 40;
             this.btn_conflits.LabelPosition = 27;
             this.btn_conflits.LabelText = "Rapport détaillé sur les conflits";
-            this.btn_conflits.Location = new System.Drawing.Point(154, 92);
+            this.btn_conflits.Location = new System.Drawing.Point(253, 101);
             this.btn_conflits.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_conflits.Name = "btn_conflits";
             this.btn_conflits.Size = new System.Drawing.Size(249, 154);
@@ -141,7 +141,7 @@
             this.btn_mediateurs.ImageZoom = 40;
             this.btn_mediateurs.LabelPosition = 27;
             this.btn_mediateurs.LabelText = "Rapports sur les beneficiaires";
-            this.btn_mediateurs.Location = new System.Drawing.Point(603, 299);
+            this.btn_mediateurs.Location = new System.Drawing.Point(253, 263);
             this.btn_mediateurs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_mediateurs.Name = "btn_mediateurs";
             this.btn_mediateurs.Size = new System.Drawing.Size(249, 154);
@@ -161,7 +161,7 @@
             this.btn_sensibilisations.ImageZoom = 40;
             this.btn_sensibilisations.LabelPosition = 27;
             this.btn_sensibilisations.LabelText = "Rapport sur les sensibilisations";
-            this.btn_sensibilisations.Location = new System.Drawing.Point(154, 299);
+            this.btn_sensibilisations.Location = new System.Drawing.Point(510, 101);
             this.btn_sensibilisations.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_sensibilisations.Name = "btn_sensibilisations";
             this.btn_sensibilisations.Size = new System.Drawing.Size(249, 154);
