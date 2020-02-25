@@ -363,12 +363,6 @@
     <Compile Include="ReportsLibrary\rpt_conflits.Designer.cs">
       <DependentUpon>rpt_conflits.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReportsLibrary\rpt_fiche_conflit.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ReportsLibrary\rpt_fiche_conflit.Designer.cs">
-      <DependentUpon>rpt_fiche_conflit.cs</DependentUpon>
-    </Compile>
     <Compile Include="ReportsLibrary\rpt_infos_general.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -529,9 +523,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReportsLibrary\rpt_conflits.resx">
       <DependentUpon>rpt_conflits.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ReportsLibrary\rpt_fiche_conflit.resx">
-      <DependentUpon>rpt_fiche_conflit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportsLibrary\rpt_infos_general.resx">
       <DependentUpon>rpt_infos_general.cs</DependentUpon>
