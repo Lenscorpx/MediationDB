@@ -151,6 +151,12 @@
     <Compile Include="FormLibrary\frm_conflit.Designer.cs">
       <DependentUpon>frm_conflit.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLibrary\frm_dash_reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_dash_reports.Designer.cs">
+      <DependentUpon>frm_dash_reports.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLibrary\frm_details_causes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -407,6 +413,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_conflit.resx">
       <DependentUpon>frm_conflit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_dash_reports.resx">
+      <DependentUpon>frm_dash_reports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_details_causes.resx">
       <DependentUpon>frm_details_causes.cs</DependentUpon>
