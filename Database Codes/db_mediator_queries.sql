@@ -1,10 +1,21 @@
-
+select * from t_agr
 insert into t_agr
     (id_agr,description_agr,id_categorie)
 select 
     distinct AGR,'to be completed',Type_AGR from Tempo_WOA
         where AGR not in (select id_agr from t_agr)
-
+----- insertion des agrs collectifs
+insert into t_agr
+    (id_agr,description_agr,id_categorie)
+select 
+     distinct AGR_COLLECTIF,'to be completed','Collectif' from Tempo_WOA
+    where AGR_COLLECTIF is not null and AGR_COLLECTIF not in (select id_agr from t_agr) and AGR_COLLECTIF != 'MOULIN COMMUNAUTAIRE'
+go
+insert into t_agr
+values
+    ('MOULIN COMMUNAUTAIRE', 'To be completed','Collectif')
+    go
+-------fin insertion
 insert into t_distribution
     (code_distribution,id_localite,id_projet,id_agr,id_executant)
 select CODE_DISTRIBUTION, ADRESSE2, PROJET, AGR, EXECUTANT from TEMPO_BENEF
