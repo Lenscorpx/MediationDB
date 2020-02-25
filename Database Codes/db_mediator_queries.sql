@@ -26,7 +26,7 @@ select distinct CODE_AGR_COLLECTIF, ADRESSE2, PROJET, AGR_COLLECTIF, EXECUTANT f
     where
         CODE_AGR_COLLECTIF is not null
 ---------------------------------------------------------------------
-
+insert into t_assignation_beneficiaires
 insert into t_localite
     (id_localite, descr_localite ,id_groupement)
 select distinct ADRESSE2, 'To be completed', 'Bashali Mukoto' from Tempo_WOA
@@ -39,7 +39,13 @@ select * from t_assignation_beneficiaires
 
 insert into t_assignation_beneficiaires
 (id_beneficiaire, code_distribution)
-select id_beneficiaire, CODE_DISTRIBUTION from TEMPO_BENEF
+select id_beneficiaire, CODE_DISTRIBUTION from Tempo_WOA
+
+insert into t_assignation_beneficiaires
+(id_beneficiaire, code_distribution)
+select id_beneficiaire, CODE_AGR_COLLECTIF from Tempo_WOA
+    where
+        CODE_AGR_COLLECTIF is not null
 
 select * from t_beneficiaires
 insert into t_beneficiaires
