@@ -103,6 +103,26 @@ namespace MediationDB.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bailleurs {
+            get {
+                object obj = ResourceManager.GetObject("bailleurs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap beneficiaires {
+            get {
+                object obj = ResourceManager.GetObject("beneficiaires", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cancel_80px {
             get {
                 object obj = ResourceManager.GetObject("cancel_80px", resourceCulture);
@@ -116,6 +136,16 @@ namespace MediationDB.Properties {
         internal static System.Drawing.Bitmap cancel_80px1 {
             get {
                 object obj = ResourceManager.GetObject("cancel_80px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap categorize_104px {
+            get {
+                object obj = ResourceManager.GetObject("categorize_104px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,6 +203,16 @@ namespace MediationDB.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap distribution {
+            get {
+                object obj = ResourceManager.GetObject("distribution", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap edit_property_80px {
             get {
                 object obj = ResourceManager.GetObject("edit_property_80px", resourceCulture);
@@ -186,6 +226,16 @@ namespace MediationDB.Properties {
         internal static System.Drawing.Bitmap etat_participants {
             get {
                 object obj = ResourceManager.GetObject("etat_participants", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap executants {
+            get {
+                object obj = ResourceManager.GetObject("executants", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -356,6 +406,16 @@ namespace MediationDB.Properties {
         internal static System.Drawing.Bitmap LOGO_SCC_2019_PNG {
             get {
                 object obj = ResourceManager.GetObject("LOGO-SCC-2019-PNG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap magazine_104px {
+            get {
+                object obj = ResourceManager.GetObject("magazine_104px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -796,6 +856,16 @@ namespace MediationDB.Properties {
         internal static System.Drawing.Bitmap strike_80px1 {
             get {
                 object obj = ResourceManager.GetObject("strike_80px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap type_agr {
+            get {
+                object obj = ResourceManager.GetObject("type_agr", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
