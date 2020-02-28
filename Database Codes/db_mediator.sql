@@ -3130,32 +3130,5 @@ FROM            dbo.t_localite INNER JOIN
                          dbo.t_atelier_masse ON dbo.t_sensibilisation.num_sensibilisation = dbo.t_atelier_masse.num_sensibilisation
 GO
 
-select * from t_mediation where
-		num_mediation like 384
 
-select * from t_mediation 
-where
-	num_conflit like 'UNH/J%'
-
-select * from t_mediation 
-	where
-		date_debut_mediation between '2018-01-01' and '2018-06-30' and date_fin_mediation between '2019-01-01' and '2019-12-31'
-		order by date_fin_mediation desc	
-		
-update t_mediation
-	set
-		date_debut_mediation = '2019-08-09'--,
-		--date_fin_mediation = '2019-11-26'
-	where
-		date_debut_mediation between '2018-01-01' and '2018-06-30' and date_fin_mediation between '2019-01-01' and '2019-12-31'
-		order by date_fin_mediation desc
-	
-	select * from t_beneficiaires
-	update t_membres
-		set
-			date_naissance = null
-	update t_beneficiaires
-		set date_naissance = null
-	where
-		date_naissance like '2020-02-10'
 		
