@@ -109,6 +109,12 @@
   <ItemGroup>
     <Compile Include="DataLibrary\Data_Repository.cs" />
     <Compile Include="DataLibrary\Params.cs" />
+    <Compile Include="FormLibrary\frm_accueil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_accueil.Designer.cs">
+      <DependentUpon>frm_accueil.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLibrary\frm_assignation_bailleurs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -417,6 +423,9 @@
     <Compile Include="ReportsLibrary\rpt_sensibilises.Designer.cs">
       <DependentUpon>rpt_sensibilises.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormLibrary\frm_accueil.resx">
+      <DependentUpon>frm_accueil.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_assignation_bailleurs.resx">
       <DependentUpon>frm_assignation_bailleurs.cs</DependentUpon>
     </EmbeddedResource>
