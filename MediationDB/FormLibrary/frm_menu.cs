@@ -265,5 +265,11 @@ namespace MediationDB.FormLibrary
             var fr = new frm_reports();
             fr.Show();
         }
+
+        private void bunifuTileButton2_Click(object sender, EventArgs e)
+        {
+            var fr = new frm_distribution();
+            fr.Show();
+        }
     }
 }
