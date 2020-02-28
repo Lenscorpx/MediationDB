@@ -16,5 +16,15 @@ namespace MediationDB.FormLibrary
         {
             InitializeComponent();
         }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            var rs = new DialogResult();
+            rs = MessageBox.Show(this, "Voulez vous quitter?", "Fermeture de l'application", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            if(rs==DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
     }
 }
