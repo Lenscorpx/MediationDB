@@ -35,7 +35,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.txt_search_localite = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuCustomDataGrid2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
@@ -48,14 +47,15 @@
             this.txt_qte_recue = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txt_observation = new System.Windows.Forms.RichTextBox();
             this.txt_valeur = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.btn_supprimer = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_enregistrer = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btn_beneficiaires = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_supprimer = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_enregistrer = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -80,21 +80,6 @@
             this.label1.Size = new System.Drawing.Size(473, 30);
             this.label1.TabIndex = 8;
             this.label1.Text = "Informations sur les distrtibutions d\'AGR";
-            // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.multiply_96px;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(1213, 7);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(42, 34);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 7;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // listBox1
             // 
@@ -345,6 +330,68 @@
             this.txt_valeur.TabIndex = 80;
             this.txt_valeur.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(626, 56);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(218, 19);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Completez ici les observations!";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(644, 234);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(150, 19);
+            this.label3.TabIndex = 83;
+            this.label3.Text = "Date de distrtibution";
+            // 
+            // btn_beneficiaires
+            // 
+            this.btn_beneficiaires.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.btn_beneficiaires.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_beneficiaires.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.btn_beneficiaires.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_beneficiaires.BorderRadius = 0;
+            this.btn_beneficiaires.ButtonText = "Ajouter des beneficiaires";
+            this.btn_beneficiaires.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_beneficiaires.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_beneficiaires.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_beneficiaires.ForeColor = System.Drawing.Color.White;
+            this.btn_beneficiaires.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_beneficiaires.Iconimage = global::MediationDB.Properties.Resources.add_96px;
+            this.btn_beneficiaires.Iconimage_right = null;
+            this.btn_beneficiaires.Iconimage_right_Selected = null;
+            this.btn_beneficiaires.Iconimage_Selected = null;
+            this.btn_beneficiaires.IconMarginLeft = 0;
+            this.btn_beneficiaires.IconMarginRight = 0;
+            this.btn_beneficiaires.IconRightVisible = true;
+            this.btn_beneficiaires.IconRightZoom = 0D;
+            this.btn_beneficiaires.IconVisible = true;
+            this.btn_beneficiaires.IconZoom = 50D;
+            this.btn_beneficiaires.IsTab = true;
+            this.btn_beneficiaires.Location = new System.Drawing.Point(1003, 236);
+            this.btn_beneficiaires.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.btn_beneficiaires.Name = "btn_beneficiaires";
+            this.btn_beneficiaires.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.btn_beneficiaires.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.btn_beneficiaires.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_beneficiaires.selected = false;
+            this.btn_beneficiaires.Size = new System.Drawing.Size(246, 39);
+            this.btn_beneficiaires.TabIndex = 84;
+            this.btn_beneficiaires.Text = "Ajouter des beneficiaires";
+            this.btn_beneficiaires.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_beneficiaires.Textcolor = System.Drawing.Color.White;
+            this.btn_beneficiaires.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
             // btn_supprimer
             // 
             this.btn_supprimer.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
@@ -422,67 +469,20 @@
             this.btn_enregistrer.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_enregistrer.Click += new System.EventHandler(this.btn_enregistrer_Click);
             // 
-            // label2
+            // bunifuImageButton1
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(626, 56);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(218, 19);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Completez ici les observations!";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(644, 234);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(150, 19);
-            this.label3.TabIndex = 83;
-            this.label3.Text = "Date de distrtibution";
-            // 
-            // btn_beneficiaires
-            // 
-            this.btn_beneficiaires.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.btn_beneficiaires.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_beneficiaires.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.btn_beneficiaires.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_beneficiaires.BorderRadius = 0;
-            this.btn_beneficiaires.ButtonText = "Ajouter des beneficiaires";
-            this.btn_beneficiaires.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_beneficiaires.DisabledColor = System.Drawing.Color.Gray;
-            this.btn_beneficiaires.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_beneficiaires.ForeColor = System.Drawing.Color.White;
-            this.btn_beneficiaires.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_beneficiaires.Iconimage = global::MediationDB.Properties.Resources.add_96px;
-            this.btn_beneficiaires.Iconimage_right = null;
-            this.btn_beneficiaires.Iconimage_right_Selected = null;
-            this.btn_beneficiaires.Iconimage_Selected = null;
-            this.btn_beneficiaires.IconMarginLeft = 0;
-            this.btn_beneficiaires.IconMarginRight = 0;
-            this.btn_beneficiaires.IconRightVisible = true;
-            this.btn_beneficiaires.IconRightZoom = 0D;
-            this.btn_beneficiaires.IconVisible = true;
-            this.btn_beneficiaires.IconZoom = 50D;
-            this.btn_beneficiaires.IsTab = true;
-            this.btn_beneficiaires.Location = new System.Drawing.Point(1003, 236);
-            this.btn_beneficiaires.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.btn_beneficiaires.Name = "btn_beneficiaires";
-            this.btn_beneficiaires.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.btn_beneficiaires.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.btn_beneficiaires.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_beneficiaires.selected = false;
-            this.btn_beneficiaires.Size = new System.Drawing.Size(246, 39);
-            this.btn_beneficiaires.TabIndex = 84;
-            this.btn_beneficiaires.Text = "Ajouter des beneficiaires";
-            this.btn_beneficiaires.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_beneficiaires.Textcolor = System.Drawing.Color.White;
-            this.btn_beneficiaires.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.multiply_96px;
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(1213, 7);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(42, 34);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton1.TabIndex = 7;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // frm_distribution
             // 
@@ -514,11 +514,10 @@
             this.Name = "frm_distribution";
             this.Opacity = 0.96D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

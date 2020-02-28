@@ -28,5 +28,10 @@ namespace MediationDB.FormLibrary
             var fr = new frm_beneficiaires();
             fr.Show();
         }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
