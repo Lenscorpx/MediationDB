@@ -662,6 +662,13 @@
     <Content Include="LOGO-SCC-2019-PNG.ico" />
     <Content Include="mediationlogo.ico" />
     <Content Include="mediator.ico" />
+    <None Include="Resources\distribution.png" />
+    <None Include="Resources\categorize_104px.png" />
+    <None Include="Resources\type_agr.png" />
+    <None Include="Resources\beneficiaires.png" />
+    <None Include="Resources\executants.png" />
+    <None Include="Resources\bailleurs.png" />
+    <None Include="Resources\magazine_104px.png" />
     <None Include="Resources\google_web_search_96px.png" />
     <None Include="Resources\refresh_96px.png" />
     <None Include="Resources\pandora 2.png" />

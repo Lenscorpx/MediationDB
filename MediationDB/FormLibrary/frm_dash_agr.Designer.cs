@@ -115,6 +115,7 @@
             this.btn_distribution_agr.Name = "btn_distribution_agr";
             this.btn_distribution_agr.Size = new System.Drawing.Size(153, 131);
             this.btn_distribution_agr.TabIndex = 81;
+            this.btn_distribution_agr.Click += new System.EventHandler(this.btn_distribution_agr_Click);
             // 
             // btn_categorie_agr
             // 
@@ -175,6 +176,7 @@
             this.btn_beneficiaires.Name = "btn_beneficiaires";
             this.btn_beneficiaires.Size = new System.Drawing.Size(153, 131);
             this.btn_beneficiaires.TabIndex = 78;
+            this.btn_beneficiaires.Click += new System.EventHandler(this.btn_beneficiaires_Click);
             // 
             // btn_executants
             // 
@@ -210,7 +212,7 @@
             this.btn_projets.ImageZoom = 50;
             this.btn_projets.LabelPosition = 27;
             this.btn_projets.LabelText = "Projets";
-            this.btn_projets.Location = new System.Drawing.Point(75, 122);
+            this.btn_projets.Location = new System.Drawing.Point(301, 122);
             this.btn_projets.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_projets.Name = "btn_projets";
             this.btn_projets.Size = new System.Drawing.Size(153, 131);
@@ -230,7 +232,7 @@
             this.btn_bailleurs.ImageZoom = 50;
             this.btn_bailleurs.LabelPosition = 27;
             this.btn_bailleurs.LabelText = "Bailleurs";
-            this.btn_bailleurs.Location = new System.Drawing.Point(301, 122);
+            this.btn_bailleurs.Location = new System.Drawing.Point(75, 122);
             this.btn_bailleurs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_bailleurs.Name = "btn_bailleurs";
             this.btn_bailleurs.Size = new System.Drawing.Size(153, 131);

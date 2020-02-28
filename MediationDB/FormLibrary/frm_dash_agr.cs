@@ -16,5 +16,17 @@ namespace MediationDB.FormLibrary
         {
             InitializeComponent();
         }
+
+        private void btn_distribution_agr_Click(object sender, EventArgs e)
+        {
+            var fr = new frm_distribution();
+            fr.Show();
+        }
+
+        private void btn_beneficiaires_Click(object sender, EventArgs e)
+        {
+            var fr = new frm_beneficiaires();
+            fr.Show();
+        }
     }
 }
