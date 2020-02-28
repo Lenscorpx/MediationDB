@@ -3135,15 +3135,20 @@ select * from t_mediation where
 
 select * from t_mediation 
 where
-	date_debut_mediation between '2018-01-01' and '2018-06-30'
-		
+	num_conflit like 'UNH/J%'
+
+select * from t_mediation 
+	where
+		date_debut_mediation between '2018-01-01' and '2018-06-30' and date_fin_mediation between '2019-01-01' and '2019-12-31'
+		order by date_fin_mediation desc	
 		
 update t_mediation
 	set
-		date_debut_mediation = '2018-05-09'--,
+		date_debut_mediation = '2019-08-09'--,
 		--date_fin_mediation = '2019-11-26'
 	where
-		num_mediation like 324
+		date_debut_mediation between '2018-01-01' and '2018-06-30' and date_fin_mediation between '2019-01-01' and '2019-12-31'
+		order by date_fin_mediation desc
 	
 	select * from t_beneficiaires
 	update t_membres
