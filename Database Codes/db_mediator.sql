@@ -3129,3 +3129,12 @@ FROM            dbo.t_localite INNER JOIN
                          dbo.t_province ON dbo.t_territoire.id_province = dbo.t_province.id_province INNER JOIN
                          dbo.t_atelier_masse ON dbo.t_sensibilisation.num_sensibilisation = dbo.t_atelier_masse.num_sensibilisation
 GO
+
+select * from t_mediation where
+		num_mediation like 384
+update t_mediation
+	set
+		date_debut_mediation = '2018-05-09'--,
+		--date_fin_mediation = '2019-11-26'
+	where
+		num_mediation like 324
