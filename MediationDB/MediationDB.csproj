@@ -133,6 +133,12 @@
     <Compile Include="FormLibrary\frm_atelier_masse.Designer.cs">
       <DependentUpon>frm_atelier_masse.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLibrary\frm_beneficiaires.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_beneficiaires.Designer.cs">
+      <DependentUpon>frm_beneficiaires.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLibrary\frm_causes_conflit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +156,12 @@
     </Compile>
     <Compile Include="FormLibrary\frm_conflit.Designer.cs">
       <DependentUpon>frm_conflit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_dash_recherches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_dash_recherches.Designer.cs">
+      <DependentUpon>frm_dash_recherches.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLibrary\frm_dash_reports.cs">
       <SubType>Form</SubType>
@@ -411,6 +423,9 @@
     <EmbeddedResource Include="FormLibrary\frm_atelier_masse.resx">
       <DependentUpon>frm_atelier_masse.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_beneficiaires.resx">
+      <DependentUpon>frm_beneficiaires.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_causes_conflit.resx">
       <DependentUpon>frm_causes_conflit.cs</DependentUpon>
     </EmbeddedResource>
@@ -419,6 +434,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_conflit.resx">
       <DependentUpon>frm_conflit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_dash_recherches.resx">
+      <DependentUpon>frm_dash_recherches.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_dash_reports.resx">
       <DependentUpon>frm_dash_reports.cs</DependentUpon>
