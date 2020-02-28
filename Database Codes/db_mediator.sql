@@ -3129,6 +3129,4 @@ FROM            dbo.t_localite INNER JOIN
                          dbo.t_province ON dbo.t_territoire.id_province = dbo.t_province.id_province INNER JOIN
                          dbo.t_atelier_masse ON dbo.t_sensibilisation.num_sensibilisation = dbo.t_atelier_masse.num_sensibilisation
 GO
-
-
 		
