@@ -3132,9 +3132,25 @@ GO
 
 select * from t_mediation where
 		num_mediation like 384
+
+select * from t_mediation 
+where
+	date_debut_mediation between '2018-01-01' and '2018-06-30'
+		
+		
 update t_mediation
 	set
 		date_debut_mediation = '2018-05-09'--,
 		--date_fin_mediation = '2019-11-26'
 	where
 		num_mediation like 324
+	
+	select * from t_beneficiaires
+	update t_membres
+		set
+			date_naissance = null
+	update t_beneficiaires
+		set date_naissance = null
+	where
+		date_naissance like '2020-02-10'
+		
