@@ -180,6 +180,7 @@
             this.btn_fonciers.Name = "btn_fonciers";
             this.btn_fonciers.Size = new System.Drawing.Size(249, 215);
             this.btn_fonciers.TabIndex = 79;
+            this.btn_fonciers.Click += new System.EventHandler(this.btn_fonciers_Click);
             // 
             // bunifuImageButton1
             // 

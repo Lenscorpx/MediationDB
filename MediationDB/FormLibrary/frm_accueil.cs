@@ -26,5 +26,10 @@ namespace MediationDB.FormLibrary
                 this.Close();
             }
         }
+
+        private void btn_fonciers_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
