@@ -1933,7 +1933,10 @@ create table t_projets
 	constraint pk_projet primary key(id_projet)
 )
 go
-
+create procedure recuperer_projet
+as
+	select id_projet from t_projets
+go
 -------------------------------------------Fin de codes pour projet------------------------------------------------------
 create table t_assignation_bailleurs
 (	
