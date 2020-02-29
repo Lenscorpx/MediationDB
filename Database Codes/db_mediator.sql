@@ -1912,6 +1912,7 @@ create table t_bailleurs
 	constraint pk_bailleur primary key(id_bailleurs)
 )
 go
+------------------------------------------Debut codes Executants------------------------------------------------------------
 create table t_executants
 (
 	id_executant nvarchar(200),
@@ -1923,6 +1924,11 @@ create table t_executants
 	constraint pk_executant primary key(id_executant)
 )
 go
+create procedure recuperer_executants
+as
+	select id_executant from t_executants
+go
+------------------------------------------Fin codes Executants------------------------------------------------------------
 -------------------------------------------Debut de codes pour projet------------------------------------------------------
 create table t_projets
 (	
