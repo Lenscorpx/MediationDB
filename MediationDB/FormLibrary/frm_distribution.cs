@@ -7,14 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MediationDB.DataLibrary;
 
 namespace MediationDB.FormLibrary
 {
     public partial class frm_distribution : Form
     {
+        Data_Repository rps = new Data_Repository();
         public frm_distribution()
         {
             InitializeComponent();
+            refresh();
+        }
+        private void refresh()
+        {
+            rps.recuperer_projet(cbx_projet);
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
