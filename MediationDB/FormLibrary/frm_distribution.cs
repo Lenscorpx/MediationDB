@@ -23,6 +23,7 @@ namespace MediationDB.FormLibrary
         {
             rps.recuperer_projet(cbx_projet);
             rps.recuperer_executants(cbx_executant);
+            rps.recuperer_localite(listBox1);
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
