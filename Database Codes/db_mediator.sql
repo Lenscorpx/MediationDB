@@ -1890,6 +1890,11 @@ create table t_agr
 	constraint fk_categorie_agrs foreign key(id_categorie) references t_categorie_agr(id_categorie)
 )
 go
+create procedure recuperer_agr
+as
+	select id_agr from t_agr
+go
+-----------------------------------Fin codes agrs----------------------------------------------------------------------
 create table t_beneficiaires
 (
 	id_beneficiaire nvarchar(200),
