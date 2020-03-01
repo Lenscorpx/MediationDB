@@ -1974,6 +1974,10 @@ create table t_distribution
 	constraint fk_localite_distrib foreign key(id_localite) references t_localite(id_localite)
 )
 go
+create procedure afficher_distribution
+as
+	
+--------------------------------------Fin codes distribution---------------------------------------------
 create table t_assignation_beneficiaires
 (
 	num_assignation_benef int identity,
