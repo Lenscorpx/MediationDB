@@ -41,5 +41,10 @@ namespace MediationDB.FormLibrary
         {
             rps.search_localite(listBox1, txt_search_localite.Text);
         }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txt_id_localite.Text = listBox1.SelectedItem.ToString();
+        }
     }
 }
