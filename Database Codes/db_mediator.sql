@@ -1987,6 +1987,8 @@ as
 		id_executant as 'Executant',
 		observation as 'Observation'
 	from t_distribution
+		order by code_distribution desc
+go
 --------------------------------------Fin codes distribution---------------------------------------------
 create table t_assignation_beneficiaires
 (
