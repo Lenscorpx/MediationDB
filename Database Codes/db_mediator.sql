@@ -1955,6 +1955,7 @@ create table t_assignation_bailleurs
 	constraint fk_projet_ass foreign key(id_projet) references t_projets(id_projet)
 )
 go
+-----------------------------------------Debut codes distribution---------------------------------------------
 create table t_distribution
 (
 	code_distribution nvarchar(200),
