@@ -24,6 +24,7 @@ namespace MediationDB.FormLibrary
             rps.recuperer_projet(cbx_projet);
             rps.recuperer_executants(cbx_executant);
             rps.recuperer_localite(listBox1);
+            rps.recuperer_agr(cbx_agr);
             rps.afficher_distribution(bunifuCustomDataGrid2);
         }
 
