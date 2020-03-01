@@ -36,5 +36,10 @@ namespace MediationDB.FormLibrary
         {
 
         }
+
+        private void txt_search_localite_OnValueChanged(object sender, EventArgs e)
+        {
+            rps.search_localite(listBox1, txt_search_localite.Text);
+        }
     }
 }
