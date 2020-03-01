@@ -1880,6 +1880,7 @@ create table t_categorie_agr
 	constraint pk_categorie_agr primary key(id_categorie)
 )
 go
+------------------------------------Debut codes agrs---------------------------------------------------------------------
 create table t_agr
 (
 	id_agr nvarchar(200),
