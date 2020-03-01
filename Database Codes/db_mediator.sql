@@ -1976,7 +1976,17 @@ create table t_distribution
 go
 create procedure afficher_distribution
 as
-	
+	select top 50
+		code_distribution as 'Code',
+		date_distribution as 'Date',
+		id_localite as 'Lieu',
+		id_projet as 'Projet',
+		id_agr as 'AGR',
+		qte as 'Qte',
+		valeur as 'Valeur',
+		id_executant as 'Executant',
+		observation as 'Observation'
+	from t_distribution
 --------------------------------------Fin codes distribution---------------------------------------------
 create table t_assignation_beneficiaires
 (
