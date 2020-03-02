@@ -5369,7 +5369,7 @@ namespace MediationDB.DataLibrary
             {
                 if (cnx.State == ConnectionState.Closed)
                     cnx.Open();
-                var cmd = new SqlCommand("rechercher_distrtibution_parlocalites", cnx)
+                var cmd = new SqlCommand("rechercher_distrtibution_parlocalite", cnx)
                 {
                     CommandType = CommandType.StoredProcedure
                 };
