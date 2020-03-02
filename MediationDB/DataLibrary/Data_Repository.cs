@@ -5300,18 +5300,18 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void supprimer_menage(string id_menage)
+        public void supprimer_distribution(string code_distribution)
         {
             cnx = new SqlConnection(prms.ToString());
             try
             {
                 if (cnx.State == ConnectionState.Closed)
                     cnx.Open();
-                var cmd = new SqlCommand("supprimer_menage", cnx)
+                var cmd = new SqlCommand("supprimer_distribution", cnx)
                 {
                     CommandType = CommandType.StoredProcedure
                 };
-                cmd.Parameters.Add(new SqlParameter("id_menage", SqlDbType.NVarChar)).Value = id_menage;
+                cmd.Parameters.Add(new SqlParameter("code_distribution", SqlDbType.NVarChar)).Value = code_distribution;
                 cmd.ExecuteNonQuery();
                 //afficher_frais(dtg);
                 MessageBox.Show("Enregistrement avec succès!", "Enregistrement", MessageBoxButtons.OK, MessageBoxIcon.Information);
