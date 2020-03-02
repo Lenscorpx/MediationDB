@@ -70,5 +70,18 @@ namespace MediationDB.FormLibrary
         {
             rps.rechercher_distrtibution_parprojet(bunifuCustomDataGrid2, cbx_projet.Text);
         }
+
+        private void btn_supprimer_Click(object sender, EventArgs e)
+        {
+            if (txt_num_distribution.Text == "")
+            {
+                MessageBox.Show("Veuillez selectionner l'element a supprimer!");
+            }
+            else
+            {
+                rps.supprimer_distribution(txt_num_distribution.Text);
+                refresh();
+            }
+        }
     }
 }
