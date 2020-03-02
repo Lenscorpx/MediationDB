@@ -47,5 +47,10 @@ namespace MediationDB.FormLibrary
         {
             txt_id_localite.Text = listBox1.SelectedItem.ToString();
         }
+
+        private void txt_id_localite_OnValueChanged(object sender, EventArgs e)
+        {
+            rps.rechercher_distrtibution_parlocalite(bunifuCustomDataGrid2, txt_id_localite.Text);
+        }
     }
 }

@@ -744,7 +744,7 @@ as
                   order by num_conflit desc
 go
 create procedure search_conflit
-@num_conflit nvarchar(50)
+@num_conflit nvarchar(200)
 as
     select top 50 
 		num_conflit as 'Num.', 
@@ -755,7 +755,7 @@ as
 		id_localite as 'Lieu' 
 	from t_conflit
 	where
-		num_conflit like '%'+num_conflit+'%'
+		num_conflit like '%' + num_conflit + '%'
     order by num_conflit desc
 go
 create procedure inserer_conflit
