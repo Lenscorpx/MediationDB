@@ -83,5 +83,10 @@ namespace MediationDB.FormLibrary
                 refresh();
             }
         }
+
+        private void dt_date_distribution_ValueChanged(object sender, EventArgs e)
+        {
+            rps.rechercher_distribution_pardate(bunifuCustomDataGrid2, dt_date_distribution.Value);
+        }
     }
 }
