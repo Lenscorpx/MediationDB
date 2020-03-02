@@ -2026,7 +2026,12 @@ as
 		values
 			(@code_distribution, @date_distribution, @id_localite, @id_projet, @id_agr, @qte, @valeur, @id_executant, @observation);
 go
-
+create procedure supprimer_distribution
+@code_distribution nvarchar(200)
+as
+	delete from t_distribution
+		where code_distribution like @code_distribution
+go
 --------------------------------------Fin codes distribution---------------------------------------------
 create table t_assignation_beneficiaires
 (
