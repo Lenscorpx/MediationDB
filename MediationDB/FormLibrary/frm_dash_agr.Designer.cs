@@ -237,6 +237,7 @@
             this.btn_bailleurs.Name = "btn_bailleurs";
             this.btn_bailleurs.Size = new System.Drawing.Size(153, 131);
             this.btn_bailleurs.TabIndex = 75;
+            this.btn_bailleurs.Click += new System.EventHandler(this.btn_bailleurs_Click);
             // 
             // bunifuImageButton1
             // 
@@ -270,7 +271,7 @@
             this.Controls.Add(this.pnl_header);
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_dash_agr";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_dash_agr";

@@ -33,5 +33,11 @@ namespace MediationDB.FormLibrary
         {
             this.Close();
         }
+
+        private void btn_bailleurs_Click(object sender, EventArgs e)
+        {
+            var fr = new frm_bailleurs();
+            fr.Show();
+        }
     }
 }
