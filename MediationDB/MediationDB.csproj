@@ -139,6 +139,12 @@
     <Compile Include="FormLibrary\frm_atelier_masse.Designer.cs">
       <DependentUpon>frm_atelier_masse.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLibrary\frm_bailleurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_bailleurs.Designer.cs">
+      <DependentUpon>frm_bailleurs.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLibrary\frm_beneficiaires.cs">
       <SubType>Form</SubType>
     </Compile>
