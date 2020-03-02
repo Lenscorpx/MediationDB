@@ -94,7 +94,7 @@ namespace MediationDB.FormLibrary
             try
             {
                 txt_num_distribution.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[0].Value.ToString();
-                dt_date_distribution.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[1].Value.ToString();
+                //dt_date_distribution.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[1].Value.ToString();
                 txt_id_localite.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[2].Value.ToString();
                 cbx_projet.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[3].Value.ToString();
                 cbx_agr.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[4].Value.ToString();
@@ -103,9 +103,9 @@ namespace MediationDB.FormLibrary
                 cbx_executant.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[7].Value.ToString();
                 txt_observation.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[8].Value.ToString();
             }
-            catch
+            catch(Exception err)
             {
-
+                MessageBox.Show(err.ToString());
             }
             
         }

@@ -5271,9 +5271,9 @@ namespace MediationDB.DataLibrary
                 };
                 cmd.Parameters.Add(new SqlParameter("code_distribution", SqlDbType.NVarChar)).Value = code_distribution;
                 cmd.Parameters.Add(new SqlParameter("date_distribution", SqlDbType.Date)).Value = date_distribution;
-                cmd.Parameters.Add(new SqlParameter("id_localite", SqlDbType.Date)).Value = id_localite;
-                cmd.Parameters.Add(new SqlParameter("id_projet", SqlDbType.Date)).Value = id_projet;
-                cmd.Parameters.Add(new SqlParameter("id_agr", SqlDbType.Date)).Value = id_agr;
+                cmd.Parameters.Add(new SqlParameter("id_localite", SqlDbType.NVarChar)).Value = id_localite;
+                cmd.Parameters.Add(new SqlParameter("id_projet", SqlDbType.NVarChar)).Value = id_projet;
+                cmd.Parameters.Add(new SqlParameter("id_agr", SqlDbType.NVarChar)).Value = id_agr;
                 cmd.Parameters.Add(new SqlParameter("qte", SqlDbType.Decimal)).Value = qte;
                 cmd.Parameters.Add(new SqlParameter("valeur", SqlDbType.Decimal)).Value = valeur;
                 cmd.Parameters.Add(new SqlParameter("id_executant", SqlDbType.NVarChar)).Value = id_executant;
