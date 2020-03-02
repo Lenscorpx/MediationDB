@@ -2032,6 +2032,24 @@ as
 	delete from t_distribution
 		where code_distribution like @code_distribution
 go
+create procedure rechercher_distribution_parcode
+@code_distribution nvarchar(200)
+as
+	select top 50
+		code_distribution as 'Code',
+		date_distribution as 'Date',
+		id_localite as 'Lieu',
+		id_projet as 'Projet',
+		id_agr as 'AGR',
+		qte as 'Qte',
+		valeur as 'Valeur',
+		id_executant as 'Executant',
+		observation as 'Observation'
+	from t_distribution
+	where
+		code_distribution like '%'+@code_distribution+'%'
+	order by code_distribution desc
+go
 --------------------------------------Fin codes distribution---------------------------------------------
 create table t_assignation_beneficiaires
 (
