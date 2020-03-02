@@ -66,7 +66,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1263, 49);
+            this.panel1.Size = new System.Drawing.Size(1300, 49);
             this.panel1.TabIndex = 34;
             // 
             // label1
@@ -75,7 +75,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(406, 9);
+            this.label1.Location = new System.Drawing.Point(425, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(473, 30);
             this.label1.TabIndex = 8;
@@ -87,7 +87,7 @@
             this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.multiply_96px;
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(1213, 7);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(1250, 7);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Size = new System.Drawing.Size(42, 34);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -105,9 +105,9 @@
             this.listBox1.ForeColor = System.Drawing.Color.White;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 17;
-            this.listBox1.Location = new System.Drawing.Point(4, 102);
+            this.listBox1.Location = new System.Drawing.Point(6, 102);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(243, 255);
+            this.listBox1.Size = new System.Drawing.Size(254, 255);
             this.listBox1.TabIndex = 35;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -124,10 +124,10 @@
             this.txt_search_localite.LineIdleColor = System.Drawing.Color.White;
             this.txt_search_localite.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_search_localite.LineThickness = 4;
-            this.txt_search_localite.Location = new System.Drawing.Point(4, 56);
+            this.txt_search_localite.Location = new System.Drawing.Point(6, 56);
             this.txt_search_localite.Margin = new System.Windows.Forms.Padding(4);
             this.txt_search_localite.Name = "txt_search_localite";
-            this.txt_search_localite.Size = new System.Drawing.Size(243, 44);
+            this.txt_search_localite.Size = new System.Drawing.Size(254, 44);
             this.txt_search_localite.TabIndex = 36;
             this.txt_search_localite.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_search_localite.OnValueChanged += new System.EventHandler(this.txt_search_localite_OnValueChanged);
@@ -169,7 +169,7 @@
             this.bunifuCustomDataGrid2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.bunifuCustomDataGrid2.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.bunifuCustomDataGrid2.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuCustomDataGrid2.Location = new System.Drawing.Point(0, 379);
+            this.bunifuCustomDataGrid2.Location = new System.Drawing.Point(0, 376);
             this.bunifuCustomDataGrid2.Name = "bunifuCustomDataGrid2";
             this.bunifuCustomDataGrid2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -189,14 +189,14 @@
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.bunifuCustomDataGrid2.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.bunifuCustomDataGrid2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuCustomDataGrid2.Size = new System.Drawing.Size(1263, 270);
+            this.bunifuCustomDataGrid2.Size = new System.Drawing.Size(1300, 338);
             this.bunifuCustomDataGrid2.TabIndex = 53;
             this.bunifuCustomDataGrid2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid2_CellContentClick);
             // 
             // dt_date_distribution
             // 
             this.dt_date_distribution.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dt_date_distribution.Location = new System.Drawing.Point(669, 262);
+            this.dt_date_distribution.Location = new System.Drawing.Point(682, 262);
             this.dt_date_distribution.MinimumSize = new System.Drawing.Size(0, 29);
             this.dt_date_distribution.Name = "dt_date_distribution";
             this.dt_date_distribution.Size = new System.Drawing.Size(210, 29);
@@ -213,7 +213,7 @@
             this.cbx_projet.ForeColor = System.Drawing.Color.White;
             this.cbx_projet.FormattingEnabled = true;
             this.cbx_projet.ItemHeight = 23;
-            this.cbx_projet.Location = new System.Drawing.Point(253, 161);
+            this.cbx_projet.Location = new System.Drawing.Point(266, 161);
             this.cbx_projet.Name = "cbx_projet";
             this.cbx_projet.PromptText = "Choisissez le projet lié à cette distribution";
             this.cbx_projet.Size = new System.Drawing.Size(361, 29);
@@ -231,7 +231,7 @@
             this.cbx_executant.ForeColor = System.Drawing.Color.White;
             this.cbx_executant.FormattingEnabled = true;
             this.cbx_executant.ItemHeight = 23;
-            this.cbx_executant.Location = new System.Drawing.Point(253, 198);
+            this.cbx_executant.Location = new System.Drawing.Point(266, 198);
             this.cbx_executant.Name = "cbx_executant";
             this.cbx_executant.PromptText = "Choisissez le partenaire d\'éxecuion";
             this.cbx_executant.Size = new System.Drawing.Size(361, 29);
@@ -248,7 +248,7 @@
             this.cbx_agr.ForeColor = System.Drawing.Color.White;
             this.cbx_agr.FormattingEnabled = true;
             this.cbx_agr.ItemHeight = 23;
-            this.cbx_agr.Location = new System.Drawing.Point(253, 235);
+            this.cbx_agr.Location = new System.Drawing.Point(266, 235);
             this.cbx_agr.Name = "cbx_agr";
             this.cbx_agr.PromptText = "Selectionnez l\'AGR donné";
             this.cbx_agr.Size = new System.Drawing.Size(361, 29);
@@ -270,7 +270,7 @@
             this.txt_num_distribution.LineIdleColor = System.Drawing.Color.White;
             this.txt_num_distribution.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_num_distribution.LineThickness = 4;
-            this.txt_num_distribution.Location = new System.Drawing.Point(255, 108);
+            this.txt_num_distribution.Location = new System.Drawing.Point(268, 108);
             this.txt_num_distribution.Margin = new System.Windows.Forms.Padding(4);
             this.txt_num_distribution.Name = "txt_num_distribution";
             this.txt_num_distribution.Size = new System.Drawing.Size(359, 44);
@@ -292,7 +292,7 @@
             this.txt_id_localite.LineIdleColor = System.Drawing.Color.White;
             this.txt_id_localite.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_id_localite.LineThickness = 4;
-            this.txt_id_localite.Location = new System.Drawing.Point(255, 56);
+            this.txt_id_localite.Location = new System.Drawing.Point(268, 56);
             this.txt_id_localite.Margin = new System.Windows.Forms.Padding(4);
             this.txt_id_localite.Name = "txt_id_localite";
             this.txt_id_localite.Size = new System.Drawing.Size(359, 44);
@@ -313,7 +313,7 @@
             this.txt_qte_recue.LineIdleColor = System.Drawing.Color.White;
             this.txt_qte_recue.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_qte_recue.LineThickness = 4;
-            this.txt_qte_recue.Location = new System.Drawing.Point(252, 323);
+            this.txt_qte_recue.Location = new System.Drawing.Point(265, 323);
             this.txt_qte_recue.Margin = new System.Windows.Forms.Padding(4);
             this.txt_qte_recue.Name = "txt_qte_recue";
             this.txt_qte_recue.Size = new System.Drawing.Size(362, 44);
@@ -326,9 +326,9 @@
             this.txt_observation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(142)))));
             this.txt_observation.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_observation.ForeColor = System.Drawing.Color.Black;
-            this.txt_observation.Location = new System.Drawing.Point(669, 89);
+            this.txt_observation.Location = new System.Drawing.Point(682, 89);
             this.txt_observation.Name = "txt_observation";
-            this.txt_observation.Size = new System.Drawing.Size(580, 138);
+            this.txt_observation.Size = new System.Drawing.Size(606, 138);
             this.txt_observation.TabIndex = 79;
             this.txt_observation.Text = "";
             // 
@@ -345,7 +345,7 @@
             this.txt_valeur.LineIdleColor = System.Drawing.Color.White;
             this.txt_valeur.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_valeur.LineThickness = 4;
-            this.txt_valeur.Location = new System.Drawing.Point(253, 271);
+            this.txt_valeur.Location = new System.Drawing.Point(266, 271);
             this.txt_valeur.Margin = new System.Windows.Forms.Padding(4);
             this.txt_valeur.Name = "txt_valeur";
             this.txt_valeur.Size = new System.Drawing.Size(361, 44);
@@ -358,7 +358,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(626, 56);
+            this.label2.Location = new System.Drawing.Point(639, 56);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(218, 19);
             this.label2.TabIndex = 9;
@@ -370,7 +370,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(644, 234);
+            this.label3.Location = new System.Drawing.Point(657, 234);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(150, 19);
             this.label3.TabIndex = 83;
@@ -400,7 +400,7 @@
             this.btn_beneficiaires.IconVisible = true;
             this.btn_beneficiaires.IconZoom = 50D;
             this.btn_beneficiaires.IsTab = true;
-            this.btn_beneficiaires.Location = new System.Drawing.Point(1003, 236);
+            this.btn_beneficiaires.Location = new System.Drawing.Point(1042, 236);
             this.btn_beneficiaires.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btn_beneficiaires.Name = "btn_beneficiaires";
             this.btn_beneficiaires.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
@@ -438,7 +438,7 @@
             this.btn_supprimer.IconVisible = true;
             this.btn_supprimer.IconZoom = 50D;
             this.btn_supprimer.IsTab = true;
-            this.btn_supprimer.Location = new System.Drawing.Point(842, 323);
+            this.btn_supprimer.Location = new System.Drawing.Point(1121, 323);
             this.btn_supprimer.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btn_supprimer.Name = "btn_supprimer";
             this.btn_supprimer.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
@@ -477,7 +477,7 @@
             this.btn_enregistrer.IconVisible = true;
             this.btn_enregistrer.IconZoom = 50D;
             this.btn_enregistrer.IsTab = true;
-            this.btn_enregistrer.Location = new System.Drawing.Point(668, 323);
+            this.btn_enregistrer.Location = new System.Drawing.Point(947, 323);
             this.btn_enregistrer.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btn_enregistrer.Name = "btn_enregistrer";
             this.btn_enregistrer.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
@@ -497,7 +497,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.ClientSize = new System.Drawing.Size(1263, 649);
+            this.ClientSize = new System.Drawing.Size(1300, 714);
             this.Controls.Add(this.btn_beneficiaires);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
