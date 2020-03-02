@@ -5257,5 +5257,78 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
+        public void enregistrer_distribution(string code_distribution, DateTime date_distribution, string id_localite, string id_projet, 
+                                                string id_agr, decimal qte, string valeur, string id_executant, string observation)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("enregistrer_distribution", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.Parameters.Add(new SqlParameter("code_distribution", SqlDbType.NVarChar)).Value = code_distribution;
+                cmd.Parameters.Add(new SqlParameter("date_distribution", SqlDbType.Date)).Value = date_distribution;
+                cmd.Parameters.Add(new SqlParameter("id_localite", SqlDbType.Date)).Value = id_localite;
+                cmd.Parameters.Add(new SqlParameter("id_projet", SqlDbType.Date)).Value = id_projet;
+                cmd.Parameters.Add(new SqlParameter("id_agr", SqlDbType.Date)).Value = id_agr;
+                cmd.Parameters.Add(new SqlParameter("qte", SqlDbType.Decimal)).Value = qte;
+                cmd.Parameters.Add(new SqlParameter("valeur", SqlDbType.Decimal)).Value = valeur;
+                cmd.Parameters.Add(new SqlParameter("id_executant", SqlDbType.NVarChar)).Value = id_executant;
+                cmd.Parameters.Add(new SqlParameter("observation", SqlDbType.NVarChar)).Value = observation;
+
+                cmd.ExecuteNonQuery();
+                //var fr = new frm_membres();
+                //fr.txt_id_menage.Text = id_menage;
+                //fr.ShowDialog();
+                //afficher_frais(dtg);
+                MessageBox.Show("Enregistrement avec succès!", "Enregistrement", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception tdf)
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show("Voulez vous voir le code d'erreur?", "Erreurs ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    MessageBox.Show(tdf.ToString());
+                }
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void supprimer_menage(string id_menage)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("supprimer_menage", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.Parameters.Add(new SqlParameter("id_menage", SqlDbType.NVarChar)).Value = id_menage;
+                cmd.ExecuteNonQuery();
+                //afficher_frais(dtg);
+                MessageBox.Show("Enregistrement avec succès!", "Enregistrement", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception tdf)
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show("Voulez vous voir le code d'erreur?", "Erreurs ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    MessageBox.Show(tdf.ToString());
+                }
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
     }
 }
