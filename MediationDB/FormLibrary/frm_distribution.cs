@@ -57,5 +57,10 @@ namespace MediationDB.FormLibrary
         {
             rps.rechercher_distribution_parcode(bunifuCustomDataGrid2, txt_num_distribution.Text);
         }
+
+        private void cbx_projet_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            rps.rechercher_distrtibution_parprojet(bunifuCustomDataGrid2, cbx_projet.Text);
+        }
     }
 }
