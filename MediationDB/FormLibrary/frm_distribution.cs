@@ -52,5 +52,10 @@ namespace MediationDB.FormLibrary
         {
             rps.rechercher_distrtibution_parlocalite(bunifuCustomDataGrid2, txt_id_localite.Text);
         }
+
+        private void txt_num_distribution_OnValueChanged(object sender, EventArgs e)
+        {
+            rps.rechercher_distribution_parcode(bunifuCustomDataGrid2, txt_num_distribution.Text);
+        }
     }
 }
