@@ -5258,7 +5258,7 @@ namespace MediationDB.DataLibrary
             }
         }
         public void enregistrer_distribution(string code_distribution, DateTime date_distribution, string id_localite, string id_projet, 
-                                                string id_agr, decimal qte, string valeur, string id_executant, string observation)
+                                                string id_agr, decimal qte, decimal valeur, string id_executant, string observation)
         {
             cnx = new SqlConnection(prms.ToString());
             try
