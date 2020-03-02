@@ -269,7 +269,7 @@ namespace MediationDB.FormLibrary
 
         private void bunifuTileButton2_Click(object sender, EventArgs e)
         {
-            var fr = new frm_distribution();
+            var fr = new frm_dash_agr();
             fr.Show();
         }
     }
