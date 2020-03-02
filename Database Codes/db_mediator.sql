@@ -1995,6 +1995,38 @@ as
 	from t_distribution
 		order by code_distribution desc
 go
+create procedure enregistrer_distribution
+@code_distribution nvarchar(200),
+@date_distribution date,
+@id_localite nvarchar(200),
+@id_projet nvarchar(200),
+@id_agr nvarchar(200),
+@qte decimal,
+@valeur decimal,
+@id_executant nvarchar(200),
+@observation nvarchar(200)
+as
+	merge into t_distribution
+	using (select @code_distribution as x_id) as x_source
+	on (x_source.x_id=t_distribution.code_distribution)
+	when matched then
+		update
+			set
+				date_distribution=@date_distribution,
+				id_localite=@id_localite,
+				id_projet=@id_projet,
+				id_agr=@id_agr,
+				qte=@qte,
+				valeur=@valeur,
+				id_executant=@id_executant,
+				observation=@observation
+	when not matched then
+		insert 
+			(code_distribution, date_distribution, id_localite, id_projet, id_agr, qte, valeur, id_executant, observation)
+		values
+			(@code_distribution, @date_distribution, @id_localite, @id_projet, @id_agr, @qte, @valeur, @id_executant, @observation);
+go
+
 --------------------------------------Fin codes distribution---------------------------------------------
 create table t_assignation_beneficiaires
 (
