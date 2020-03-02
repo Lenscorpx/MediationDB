@@ -5270,7 +5270,7 @@ namespace MediationDB.DataLibrary
                     CommandType = CommandType.StoredProcedure
                 };
                 cmd.Parameters.Add(new SqlParameter("code_distribution", SqlDbType.NVarChar)).Value = code_distribution;
-                cmd.Parameters.Add(new SqlParameter("date_distribution", SqlDbType.Date)).Value = date_distribution;
+                cmd.Parameters.Add(new SqlParameter("date_distribution", SqlDbType.DateTime)).Value = date_distribution;
                 cmd.Parameters.Add(new SqlParameter("id_localite", SqlDbType.NVarChar)).Value = id_localite;
                 cmd.Parameters.Add(new SqlParameter("id_projet", SqlDbType.NVarChar)).Value = id_projet;
                 cmd.Parameters.Add(new SqlParameter("id_agr", SqlDbType.NVarChar)).Value = id_agr;
