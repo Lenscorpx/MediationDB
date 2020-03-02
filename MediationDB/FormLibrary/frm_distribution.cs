@@ -91,15 +91,23 @@ namespace MediationDB.FormLibrary
 
         private void bunifuCustomDataGrid2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            txt_num_distribution.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[0].Value.ToString();
-            dt_date_distribution.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[1].Value.ToString();
-            txt_id_localite.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[2].Value.ToString();
-            cbx_projet.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[3].Value.ToString();
-            cbx_agr.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[4].Value.ToString();
-            txt_qte_recue.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[5].Value.ToString();
-            txt_valeur.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[6].Value.ToString();
-            cbx_executant.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[7].Value.ToString();
-            txt_observation.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[8].Value.ToString();
+            try
+            {
+                txt_num_distribution.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[0].Value.ToString();
+                dt_date_distribution.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[1].Value.ToString();
+                txt_id_localite.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[2].Value.ToString();
+                cbx_projet.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[3].Value.ToString();
+                cbx_agr.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[4].Value.ToString();
+                txt_qte_recue.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[5].Value.ToString();
+                txt_valeur.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[6].Value.ToString();
+                cbx_executant.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[7].Value.ToString();
+                txt_observation.Text = bunifuCustomDataGrid2.SelectedRows[0].Cells[8].Value.ToString();
+            }
+            catch
+            {
+
+            }
+            
         }
     }
 }
