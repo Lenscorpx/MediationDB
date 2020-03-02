@@ -2086,7 +2086,7 @@ as
 		id_projet like '%'+@id_projet+'%'
 	order by code_distribution desc
 go
-create procedure rechercher_distrtibution_pardate
+create procedure rechercher_distribution_pardate
 @date_distribution nvarchar(200)
 as
 	select top 50
