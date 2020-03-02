@@ -35,7 +35,15 @@ namespace MediationDB.FormLibrary
 
         private void btn_enregistrer_Click(object sender, EventArgs e)
         {
-
+           if(cbx_projet.Text==""||cbx_executant.Text==""||cbx_agr.Text==""||txt_qte_recue.Text==""||txt_valeur.Text=="")
+            {
+                MessageBox.Show("Veuillez completer les informations manquantes!");
+            }
+           else
+            {
+                rps.enregistrer_distribution(txt_num_distribution.Text, dt_date_distribution.Value, txt_id_localite.Text, cbx_projet.Text, cbx_agr.Text, Convert.ToDecimal(txt_qte_recue.Text), Convert.ToDecimal(txt_valeur.Text), cbx_executant.Text, txt_observation.Text);
+                refresh();
+            }
         }
 
         private void txt_search_localite_OnValueChanged(object sender, EventArgs e)
