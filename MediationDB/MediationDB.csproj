@@ -432,6 +432,9 @@
     <EmbeddedResource Include="FormLibrary\frm_atelier_masse.resx">
       <DependentUpon>frm_atelier_masse.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_bailleurs.resx">
+      <DependentUpon>frm_bailleurs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_beneficiaires.resx">
       <DependentUpon>frm_beneficiaires.cs</DependentUpon>
     </EmbeddedResource>
