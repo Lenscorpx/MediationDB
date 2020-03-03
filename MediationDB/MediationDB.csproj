@@ -169,6 +169,12 @@
     <Compile Include="FormLibrary\frm_dash_agr.Designer.cs">
       <DependentUpon>frm_dash_agr.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLibrary\frm_dash_parameters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_dash_parameters.Designer.cs">
+      <DependentUpon>frm_dash_parameters.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLibrary\frm_dash_recherches.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -446,6 +452,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_dash_agr.resx">
       <DependentUpon>frm_dash_agr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_dash_parameters.resx">
+      <DependentUpon>frm_dash_parameters.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_dash_recherches.resx">
       <DependentUpon>frm_dash_recherches.cs</DependentUpon>
