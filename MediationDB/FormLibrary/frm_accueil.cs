@@ -23,7 +23,7 @@ namespace MediationDB.FormLibrary
             rs = MessageBox.Show(this, "Voulez vous quitter?", "Fermeture de l'application", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
             if(rs==DialogResult.Yes)
             {
-                this.Close();
+                Application.Exit();
             }
         }
 

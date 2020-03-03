@@ -127,7 +127,9 @@ namespace MediationDB.FormLibrary
             rs = MessageBox.Show(this, "Voulez vous vraiment quitter l'application?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
             if(rs==DialogResult.Yes)
             {
-                Application.Exit();
+                this.Close();
+                var fr = new frm_accueil();
+                fr.Show();
             }
         }
 
