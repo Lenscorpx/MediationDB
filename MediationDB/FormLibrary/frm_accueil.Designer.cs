@@ -191,6 +191,7 @@
             this.btn_beneficiaires.Name = "btn_beneficiaires";
             this.btn_beneficiaires.Size = new System.Drawing.Size(249, 215);
             this.btn_beneficiaires.TabIndex = 82;
+            this.btn_beneficiaires.Click += new System.EventHandler(this.btn_beneficiaires_Click);
             // 
             // btn_executants
             // 
