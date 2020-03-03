@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_accueil));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -39,10 +39,11 @@
             this.btn_beneficiaires = new Bunifu.Framework.UI.BunifuTileButton();
             this.btn_executants = new Bunifu.Framework.UI.BunifuTileButton();
             this.btn_fonciers = new Bunifu.Framework.UI.BunifuTileButton();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.btn_projets = new Bunifu.Framework.UI.BunifuTileButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -62,20 +63,26 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(608, 9);
+            this.label1.Location = new System.Drawing.Point(265, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(224, 58);
+            this.label1.Size = new System.Drawing.Size(899, 58);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Pandore";
+            this.label1.Text = "ONU Habitat - Land Datas Dashboard";
             // 
-            // panel2
+            // bunifuImageButton1
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 654);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1370, 43);
-            this.panel2.TabIndex = 83;
+            this.bunifuImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.multiply_96px;
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(1303, 12);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(55, 55);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton1.TabIndex = 7;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // groupBox1
             // 
@@ -86,7 +93,7 @@
             this.groupBox1.Size = new System.Drawing.Size(347, 215);
             this.groupBox1.TabIndex = 84;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Conflits fonciers";
             // 
             // groupBox2
             // 
@@ -97,7 +104,7 @@
             this.groupBox2.Size = new System.Drawing.Size(347, 215);
             this.groupBox2.TabIndex = 85;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            this.groupBox2.Text = "Sensibilisations et ateliers";
             // 
             // groupBox3
             // 
@@ -108,7 +115,7 @@
             this.groupBox3.Size = new System.Drawing.Size(347, 215);
             this.groupBox3.TabIndex = 86;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "groupBox3";
+            this.groupBox3.Text = "Activités génératrices de revenus";
             // 
             // groupBox4
             // 
@@ -119,7 +126,7 @@
             this.groupBox4.Size = new System.Drawing.Size(347, 215);
             this.groupBox4.TabIndex = 86;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "groupBox4";
+            this.groupBox4.Text = "Bénéficiaires";
             // 
             // btn_beneficiaires
             // 
@@ -150,11 +157,11 @@
             this.btn_executants.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_executants.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.btn_executants.ForeColor = System.Drawing.Color.White;
-            this.btn_executants.Image = global::MediationDB.Properties.Resources.executants;
+            this.btn_executants.Image = global::MediationDB.Properties.Resources.distribution;
             this.btn_executants.ImagePosition = 14;
             this.btn_executants.ImageZoom = 50;
             this.btn_executants.LabelPosition = 27;
-            this.btn_executants.LabelText = "Executants";
+            this.btn_executants.LabelText = "AGRs";
             this.btn_executants.Location = new System.Drawing.Point(720, 131);
             this.btn_executants.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_executants.Name = "btn_executants";
@@ -182,21 +189,6 @@
             this.btn_fonciers.TabIndex = 79;
             this.btn_fonciers.Click += new System.EventHandler(this.btn_fonciers_Click);
             // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.multiply_96px;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(1303, 12);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(55, 55);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 7;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
-            // 
             // btn_projets
             // 
             this.btn_projets.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -217,17 +209,27 @@
             this.btn_projets.Size = new System.Drawing.Size(249, 215);
             this.btn_projets.TabIndex = 80;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MediationDB.Properties.Resources.UNHABITAT_svg;
+            this.pictureBox1.Location = new System.Drawing.Point(451, 637);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(549, 56);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 143;
+            this.pictureBox1.TabStop = false;
+            // 
             // frm_accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.ClientSize = new System.Drawing.Size(1370, 697);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.btn_beneficiaires);
             this.Controls.Add(this.btn_executants);
             this.Controls.Add(this.btn_projets);
@@ -236,13 +238,14 @@
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_accueil";
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -255,11 +258,11 @@
         public Bunifu.Framework.UI.BunifuTileButton btn_beneficiaires;
         public Bunifu.Framework.UI.BunifuTileButton btn_executants;
         public Bunifu.Framework.UI.BunifuTileButton btn_fonciers;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
         public Bunifu.Framework.UI.BunifuTileButton btn_projets;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
