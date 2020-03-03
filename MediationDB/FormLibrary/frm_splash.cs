@@ -87,7 +87,7 @@ namespace MediationDB.FormLibrary
             if (Opacity == 0)
             {
                 this.Hide();
-                var m = new frm_menu();
+                var m = new frm_accueil();
                 m.Show();
                 timer4.Stop();
             }
