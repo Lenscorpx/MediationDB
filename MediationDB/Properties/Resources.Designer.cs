@@ -393,6 +393,16 @@ namespace MediationDB.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap IMG_07171 {
+            get {
+                object obj = ResourceManager.GetObject("IMG_07171", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ISSSS {
             get {
                 object obj = ResourceManager.GetObject("ISSSS", resourceCulture);

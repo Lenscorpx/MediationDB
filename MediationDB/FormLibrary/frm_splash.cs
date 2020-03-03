@@ -41,8 +41,8 @@ namespace MediationDB.FormLibrary
             {
                 count++;
                 Opacity = count * 0.05;
-                pictureBox2.Show();
-                pictureBox1.Hide();
+                pictureBox1.Show();
+                pictureBox2.Hide();
                 pictureBox3.Hide();
                 pictureBox4.Hide();
             }
@@ -50,8 +50,8 @@ namespace MediationDB.FormLibrary
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            pictureBox1.Show();
-            pictureBox2.Hide();
+            pictureBox2.Show();
+            pictureBox1.Hide();
             pictureBox3.Hide();
             pictureBox4.Hide();
             if (buffer == 15)

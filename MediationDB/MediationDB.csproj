@@ -662,6 +662,8 @@
     <Content Include="LOGO-SCC-2019-PNG.ico" />
     <Content Include="mediationlogo.ico" />
     <Content Include="mediator.ico" />
+    <None Include="Resources\IMG_07171.JPG" />
+    <None Include="Resources\settings.png" />
     <None Include="Resources\un-un-habitat-1.jpg" />
     <None Include="Resources\UNHABITAT.svg1.png" />
     <None Include="Resources\IMG_05071.JPG" />
