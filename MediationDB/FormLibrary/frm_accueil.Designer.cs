@@ -211,6 +211,7 @@
             this.btn_executants.Name = "btn_executants";
             this.btn_executants.Size = new System.Drawing.Size(249, 215);
             this.btn_executants.TabIndex = 81;
+            this.btn_executants.Click += new System.EventHandler(this.btn_executants_Click);
             // 
             // btn_projets
             // 
