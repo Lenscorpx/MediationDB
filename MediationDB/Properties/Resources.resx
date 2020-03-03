@@ -148,6 +148,9 @@
   <data name="presentation_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\presentation_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="fonciers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fonciers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="print_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\print_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -199,8 +202,8 @@
   <data name="etat_participants" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\etat_participants.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="scales_104px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\scales_104px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="racism_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\racism_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Picture1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Picture1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,8 +232,8 @@
   <data name="new_slide_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\new_slide_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="racism_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\racism_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="idea_sharing_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\idea_sharing_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="UN-Habitat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\UN-Habitat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -241,6 +244,9 @@
   <data name="observation" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\observation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="IMG_05071" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IMG_05071.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="modifier" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\modifier.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -249,6 +255,9 @@
   </data>
   <data name="family_man_woman_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\family_man_woman_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hypertension_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hypertension_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="courthouse_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\courthouse_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -292,8 +301,8 @@
   <data name="multiply_96px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\multiply_96px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="add_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LOGO-SCC-2019-PNG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LOGO-SCC-2019-PNG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="combo_chart_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\combo_chart_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -325,6 +334,9 @@
   <data name="mind_map_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mind_map_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="IMG_0507" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IMG_0507.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="joining_queue_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\joining_queue_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -340,8 +352,14 @@
   <data name="multiply_96px2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\multiply_96px2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LOGO-SCC-2019-PNG" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LOGO-SCC-2019-PNG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="UNHABITAT1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UNHABITAT.svg1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMG_0717" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IMG_0717.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="conflits" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\conflits.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -349,17 +367,14 @@
   <data name="mediator-red" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mediator-red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="refresh_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\refresh_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="pandora 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pandora 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="statistics_report_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\statistics_report_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="idea_sharing_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\idea_sharing_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="scales_104px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\scales_104px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ISSSS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ISSSS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -376,8 +391,8 @@
   <data name="male_user_104px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\male_user_104px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hypertension_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hypertension_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="refresh_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\refresh_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="handshake_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\handshake_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -385,7 +400,7 @@
   <data name="Feronia-portada" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Feronia-portada.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fonciers" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fonciers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="un-un-habitat-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\un-un-habitat-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

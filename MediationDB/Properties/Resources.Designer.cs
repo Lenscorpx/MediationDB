@@ -363,6 +363,36 @@ namespace MediationDB.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap IMG_0507 {
+            get {
+                object obj = ResourceManager.GetObject("IMG_0507", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IMG_05071 {
+            get {
+                object obj = ResourceManager.GetObject("IMG_05071", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IMG_0717 {
+            get {
+                object obj = ResourceManager.GetObject("IMG_0717", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ISSSS {
             get {
                 object obj = ResourceManager.GetObject("ISSSS", resourceCulture);
@@ -913,9 +943,29 @@ namespace MediationDB.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap un_un_habitat_1 {
+            get {
+                object obj = ResourceManager.GetObject("un-un-habitat-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap UNHABITAT_svg {
             get {
                 object obj = ResourceManager.GetObject("UNHABITAT.svg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UNHABITAT1 {
+            get {
+                object obj = ResourceManager.GetObject("UNHABITAT1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
