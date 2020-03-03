@@ -71,11 +71,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(307, 9);
+            this.label1.Location = new System.Drawing.Point(307, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(686, 49);
+            this.label1.Size = new System.Drawing.Size(670, 49);
             this.label1.TabIndex = 8;
-            this.label1.Text = "UN Habitat - Land Datas Gateway";
+            this.label1.Text = "UN Habitat - Land Data Gateway";
             // 
             // groupBox1
             // 
@@ -155,12 +155,12 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(57, 60);
+            this.label5.Location = new System.Drawing.Point(14, 62);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(263, 68);
+            this.label5.Size = new System.Drawing.Size(313, 51);
             this.label5.TabIndex = 2;
-            this.label5.Text = "Ici se trouvent les paramètres et autres \r\nconfigurations nécessaires à l\'utilisa" +
-    "tion \r\ndes données et aux générations des \r\nimprimables";
+            this.label5.Text = "Ici se trouvent les paramètres et autres configu-\r\nrations nécessaires à l\'utilis" +
+    "ation des données et\r\n aux générations des imprimables";
             // 
             // pictureBox1
             // 
