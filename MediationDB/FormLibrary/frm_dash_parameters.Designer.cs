@@ -47,10 +47,8 @@
             this.btn_resolutions = new Bunifu.Framework.UI.BunifuTileButton();
             this.btn_objets = new Bunifu.Framework.UI.BunifuTileButton();
             this.btn_params_causes = new Bunifu.Framework.UI.BunifuTileButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -411,26 +409,13 @@
             this.btn_params_causes.Size = new System.Drawing.Size(180, 151);
             this.btn_params_causes.TabIndex = 8;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::MediationDB.Properties.Resources.UNHABITAT_svg;
-            this.pictureBox1.Location = new System.Drawing.Point(4, 648);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(206, 37);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 143;
-            this.pictureBox1.TabStop = false;
-            // 
             // frm_dash_parameters
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.BackgroundImage = global::MediationDB.Properties.Resources.UN_Habitat;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1300, 690);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.bunifuTileButton1);
             this.Controls.Add(this.btn_typep_conflit);
             this.Controls.Add(this.panel1);
@@ -453,11 +438,12 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_dash_parameters";
+            this.Opacity = 0.96D;
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -483,6 +469,5 @@
         public Bunifu.Framework.UI.BunifuTileButton btn_resolutions;
         public Bunifu.Framework.UI.BunifuTileButton btn_objets;
         public Bunifu.Framework.UI.BunifuTileButton btn_params_causes;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
