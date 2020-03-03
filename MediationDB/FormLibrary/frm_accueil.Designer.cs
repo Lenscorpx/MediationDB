@@ -82,7 +82,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(273, 134);
+            this.groupBox1.Location = new System.Drawing.Point(283, 134);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(347, 215);
             this.groupBox1.TabIndex = 84;
@@ -94,7 +94,7 @@
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(273, 374);
+            this.groupBox2.Location = new System.Drawing.Point(283, 374);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(347, 215);
             this.groupBox2.TabIndex = 85;
@@ -106,7 +106,7 @@
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(904, 134);
+            this.groupBox3.Location = new System.Drawing.Point(914, 134);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(358, 215);
             this.groupBox3.TabIndex = 86;
@@ -118,7 +118,7 @@
             this.groupBox4.Controls.Add(this.label5);
             this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox4.ForeColor = System.Drawing.Color.White;
-            this.groupBox4.Location = new System.Drawing.Point(904, 374);
+            this.groupBox4.Location = new System.Drawing.Point(914, 374);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(358, 215);
             this.groupBox4.TabIndex = 86;
@@ -186,7 +186,7 @@
             this.btn_beneficiaires.ImageZoom = 50;
             this.btn_beneficiaires.LabelPosition = 27;
             this.btn_beneficiaires.LabelText = "Paramètres de l\'application";
-            this.btn_beneficiaires.Location = new System.Drawing.Point(648, 374);
+            this.btn_beneficiaires.Location = new System.Drawing.Point(658, 374);
             this.btn_beneficiaires.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_beneficiaires.Name = "btn_beneficiaires";
             this.btn_beneficiaires.Size = new System.Drawing.Size(249, 215);
@@ -206,7 +206,7 @@
             this.btn_executants.ImageZoom = 50;
             this.btn_executants.LabelPosition = 27;
             this.btn_executants.LabelText = "AGRs";
-            this.btn_executants.Location = new System.Drawing.Point(648, 134);
+            this.btn_executants.Location = new System.Drawing.Point(658, 134);
             this.btn_executants.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_executants.Name = "btn_executants";
             this.btn_executants.Size = new System.Drawing.Size(249, 215);
@@ -226,7 +226,7 @@
             this.btn_projets.ImageZoom = 50;
             this.btn_projets.LabelPosition = 27;
             this.btn_projets.LabelText = "Sensibilisations";
-            this.btn_projets.Location = new System.Drawing.Point(17, 374);
+            this.btn_projets.Location = new System.Drawing.Point(27, 374);
             this.btn_projets.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_projets.Name = "btn_projets";
             this.btn_projets.Size = new System.Drawing.Size(249, 215);
@@ -246,7 +246,7 @@
             this.btn_fonciers.ImageZoom = 50;
             this.btn_fonciers.LabelPosition = 27;
             this.btn_fonciers.LabelText = "Conflits Fonciers";
-            this.btn_fonciers.Location = new System.Drawing.Point(17, 134);
+            this.btn_fonciers.Location = new System.Drawing.Point(27, 134);
             this.btn_fonciers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_fonciers.Name = "btn_fonciers";
             this.btn_fonciers.Size = new System.Drawing.Size(249, 215);
