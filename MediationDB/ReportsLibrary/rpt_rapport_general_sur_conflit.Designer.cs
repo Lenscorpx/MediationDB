@@ -193,7 +193,6 @@
             this.GroupFooter9 = new DevExpress.XtraReports.UI.GroupFooterBand();
             this.GroupFooter10 = new DevExpress.XtraReports.UI.GroupFooterBand();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
-            this.xrPictureBox3 = new DevExpress.XtraReports.UI.XRPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.table1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table3)).BeginInit();
@@ -360,7 +359,6 @@
             // TopMargin
             // 
             this.TopMargin.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrPictureBox3,
             this.xrLabel1,
             this.xrPictureBox1,
             this.xrPictureBox2});
@@ -2207,15 +2205,6 @@
             this.ReportFooter.HeightF = 4.569166F;
             this.ReportFooter.Name = "ReportFooter";
             // 
-            // xrPictureBox3
-            // 
-            this.xrPictureBox3.Dpi = 254F;
-            this.xrPictureBox3.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource(global::MediationDB.Properties.Resources.Logo_SCC, true);
-            this.xrPictureBox3.LocationFloat = new DevExpress.Utils.PointFloat(1276.92F, 25.00001F);
-            this.xrPictureBox3.Name = "xrPictureBox3";
-            this.xrPictureBox3.SizeF = new System.Drawing.SizeF(549.8872F, 216.4293F);
-            this.xrPictureBox3.Sizing = DevExpress.XtraPrinting.ImageSizeMode.StretchImage;
-            // 
             // rpt_rapport_general_sur_conflit
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -2432,6 +2421,5 @@
         private DevExpress.XtraReports.UI.XRLabel xrLabel14;
         private DevExpress.XtraReports.UI.XRLabel xrLabel15;
         private DevExpress.XtraReports.UI.XRLabel xrLabel16;
-        private DevExpress.XtraReports.UI.XRPictureBox xrPictureBox3;
     }
 }
