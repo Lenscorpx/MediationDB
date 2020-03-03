@@ -32,12 +32,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_beneficiaires = new Bunifu.Framework.UI.BunifuTileButton();
@@ -45,6 +45,7 @@
             this.btn_projets = new Bunifu.Framework.UI.BunifuTileButton();
             this.btn_fonciers = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -52,11 +53,13 @@
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.panel1.Controls.Add(this.bunifuImageButton2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.bunifuImageButton1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -89,6 +92,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Conflits fonciers";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(14, 76);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(327, 68);
+            this.label2.TabIndex = 0;
+            this.label2.Text = resources.GetString("label2.Text");
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label4);
@@ -100,6 +112,15 @@
             this.groupBox2.TabIndex = 85;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Sensibilisations et ateliers";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 60);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(335, 68);
+            this.label4.TabIndex = 1;
+            this.label4.Text = resources.GetString("label4.Text");
             // 
             // groupBox3
             // 
@@ -113,6 +134,15 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Activités génératrices de revenus";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(9, 58);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(331, 102);
+            this.label3.TabIndex = 1;
+            this.label3.Text = resources.GetString("label3.Text");
+            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.label5);
@@ -124,33 +154,6 @@
             this.groupBox4.TabIndex = 86;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Paramètres de l\'application";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 76);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(327, 68);
-            this.label2.TabIndex = 0;
-            this.label2.Text = resources.GetString("label2.Text");
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 58);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(331, 102);
-            this.label3.TabIndex = 1;
-            this.label3.Text = resources.GetString("label3.Text");
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 60);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(335, 68);
-            this.label4.TabIndex = 1;
-            this.label4.Text = resources.GetString("label4.Text");
             // 
             // label5
             // 
@@ -270,6 +273,22 @@
             this.bunifuImageButton1.Zoom = 10;
             this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
+            // bunifuImageButton2
+            // 
+            this.bunifuImageButton2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuImageButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.bunifuImageButton2.Image = global::MediationDB.Properties.Resources.help_96px;
+            this.bunifuImageButton2.ImageActive = null;
+            this.bunifuImageButton2.Location = new System.Drawing.Point(1173, 9);
+            this.bunifuImageButton2.Name = "bunifuImageButton2";
+            this.bunifuImageButton2.Size = new System.Drawing.Size(54, 55);
+            this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bunifuImageButton2.TabIndex = 9;
+            this.bunifuImageButton2.TabStop = false;
+            this.bunifuImageButton2.Zoom = 10;
+            this.bunifuImageButton2.Click += new System.EventHandler(this.bunifuImageButton2_Click);
+            // 
             // frm_accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -305,6 +324,7 @@
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -327,5 +347,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
     }
 }

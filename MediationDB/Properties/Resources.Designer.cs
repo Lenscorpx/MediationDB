@@ -363,6 +363,16 @@ namespace MediationDB.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap IMG_0425 {
+            get {
+                object obj = ResourceManager.GetObject("IMG_0425", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap IMG_0507 {
             get {
                 object obj = ResourceManager.GetObject("IMG_0507", resourceCulture);
@@ -1036,6 +1046,16 @@ namespace MediationDB.Properties {
         internal static System.Drawing.Bitmap vulnera {
             get {
                 object obj = ResourceManager.GetObject("vulnera", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WIN_20180203_002135 {
+            get {
+                object obj = ResourceManager.GetObject("WIN_20180203_002135", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

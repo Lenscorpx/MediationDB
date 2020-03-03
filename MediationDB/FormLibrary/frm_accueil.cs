@@ -45,5 +45,11 @@ namespace MediationDB.FormLibrary
             var fr = new frm_dash_parameters();
             fr.Show();
         }
+
+        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        {
+            var fr = new frm_help();
+            fr.Show();
+        }
     }
 }
