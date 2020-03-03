@@ -50,7 +50,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(176, 8);
+            this.label1.Location = new System.Drawing.Point(343, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(622, 36);
             this.label1.TabIndex = 7;
@@ -63,15 +63,15 @@
             this.pnl_header.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_header.Location = new System.Drawing.Point(0, 0);
             this.pnl_header.Name = "pnl_header";
-            this.pnl_header.Size = new System.Drawing.Size(975, 53);
+            this.pnl_header.Size = new System.Drawing.Size(1300, 53);
             this.pnl_header.TabIndex = 74;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::MediationDB.Properties.Resources.UNHABITAT_svg;
-            this.pictureBox1.Location = new System.Drawing.Point(392, 518);
+            this.pictureBox1.Location = new System.Drawing.Point(519, 587);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(188, 40);
+            this.pictureBox1.Size = new System.Drawing.Size(359, 66);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 83;
             this.pictureBox1.TabStop = false;
@@ -90,10 +90,10 @@
             this.btn_stats.ImageZoom = 50;
             this.btn_stats.LabelPosition = 27;
             this.btn_stats.LabelText = "Stats";
-            this.btn_stats.Location = new System.Drawing.Point(746, 317);
+            this.btn_stats.Location = new System.Drawing.Point(1013, 341);
             this.btn_stats.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_stats.Name = "btn_stats";
-            this.btn_stats.Size = new System.Drawing.Size(153, 131);
+            this.btn_stats.Size = new System.Drawing.Size(241, 206);
             this.btn_stats.TabIndex = 82;
             // 
             // btn_distribution_agr
@@ -110,10 +110,10 @@
             this.btn_distribution_agr.ImageZoom = 50;
             this.btn_distribution_agr.LabelPosition = 27;
             this.btn_distribution_agr.LabelText = "Dsitribution AGR";
-            this.btn_distribution_agr.Location = new System.Drawing.Point(527, 317);
+            this.btn_distribution_agr.Location = new System.Drawing.Point(701, 341);
             this.btn_distribution_agr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_distribution_agr.Name = "btn_distribution_agr";
-            this.btn_distribution_agr.Size = new System.Drawing.Size(153, 131);
+            this.btn_distribution_agr.Size = new System.Drawing.Size(241, 206);
             this.btn_distribution_agr.TabIndex = 81;
             this.btn_distribution_agr.Click += new System.EventHandler(this.btn_distribution_agr_Click);
             // 
@@ -131,10 +131,10 @@
             this.btn_categorie_agr.ImageZoom = 50;
             this.btn_categorie_agr.LabelPosition = 27;
             this.btn_categorie_agr.LabelText = "Categorie d\'AGR";
-            this.btn_categorie_agr.Location = new System.Drawing.Point(301, 317);
+            this.btn_categorie_agr.Location = new System.Drawing.Point(373, 341);
             this.btn_categorie_agr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_categorie_agr.Name = "btn_categorie_agr";
-            this.btn_categorie_agr.Size = new System.Drawing.Size(153, 131);
+            this.btn_categorie_agr.Size = new System.Drawing.Size(241, 206);
             this.btn_categorie_agr.TabIndex = 80;
             // 
             // btn_type_agr
@@ -151,10 +151,10 @@
             this.btn_type_agr.ImageZoom = 50;
             this.btn_type_agr.LabelPosition = 27;
             this.btn_type_agr.LabelText = "Elements d\'AGR";
-            this.btn_type_agr.Location = new System.Drawing.Point(75, 317);
+            this.btn_type_agr.Location = new System.Drawing.Point(48, 341);
             this.btn_type_agr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_type_agr.Name = "btn_type_agr";
-            this.btn_type_agr.Size = new System.Drawing.Size(153, 131);
+            this.btn_type_agr.Size = new System.Drawing.Size(241, 206);
             this.btn_type_agr.TabIndex = 79;
             // 
             // btn_beneficiaires
@@ -171,10 +171,10 @@
             this.btn_beneficiaires.ImageZoom = 50;
             this.btn_beneficiaires.LabelPosition = 27;
             this.btn_beneficiaires.LabelText = "Beneficiaires";
-            this.btn_beneficiaires.Location = new System.Drawing.Point(745, 122);
+            this.btn_beneficiaires.Location = new System.Drawing.Point(1013, 95);
             this.btn_beneficiaires.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_beneficiaires.Name = "btn_beneficiaires";
-            this.btn_beneficiaires.Size = new System.Drawing.Size(153, 131);
+            this.btn_beneficiaires.Size = new System.Drawing.Size(241, 206);
             this.btn_beneficiaires.TabIndex = 78;
             this.btn_beneficiaires.Click += new System.EventHandler(this.btn_beneficiaires_Click);
             // 
@@ -192,10 +192,10 @@
             this.btn_executants.ImageZoom = 50;
             this.btn_executants.LabelPosition = 27;
             this.btn_executants.LabelText = "Executants";
-            this.btn_executants.Location = new System.Drawing.Point(527, 122);
+            this.btn_executants.Location = new System.Drawing.Point(702, 95);
             this.btn_executants.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_executants.Name = "btn_executants";
-            this.btn_executants.Size = new System.Drawing.Size(153, 131);
+            this.btn_executants.Size = new System.Drawing.Size(241, 206);
             this.btn_executants.TabIndex = 77;
             // 
             // btn_projets
@@ -212,10 +212,10 @@
             this.btn_projets.ImageZoom = 50;
             this.btn_projets.LabelPosition = 27;
             this.btn_projets.LabelText = "Projets";
-            this.btn_projets.Location = new System.Drawing.Point(301, 122);
+            this.btn_projets.Location = new System.Drawing.Point(374, 95);
             this.btn_projets.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_projets.Name = "btn_projets";
-            this.btn_projets.Size = new System.Drawing.Size(153, 131);
+            this.btn_projets.Size = new System.Drawing.Size(241, 206);
             this.btn_projets.TabIndex = 76;
             // 
             // btn_bailleurs
@@ -232,10 +232,10 @@
             this.btn_bailleurs.ImageZoom = 50;
             this.btn_bailleurs.LabelPosition = 27;
             this.btn_bailleurs.LabelText = "Bailleurs";
-            this.btn_bailleurs.Location = new System.Drawing.Point(75, 122);
+            this.btn_bailleurs.Location = new System.Drawing.Point(49, 95);
             this.btn_bailleurs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_bailleurs.Name = "btn_bailleurs";
-            this.btn_bailleurs.Size = new System.Drawing.Size(153, 131);
+            this.btn_bailleurs.Size = new System.Drawing.Size(241, 206);
             this.btn_bailleurs.TabIndex = 75;
             this.btn_bailleurs.Click += new System.EventHandler(this.btn_bailleurs_Click);
             // 
@@ -244,7 +244,7 @@
             this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.Fermer_window;
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(913, 7);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(1242, 8);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Size = new System.Drawing.Size(46, 40);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -258,7 +258,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.ClientSize = new System.Drawing.Size(975, 570);
+            this.ClientSize = new System.Drawing.Size(1300, 665);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_stats);
             this.Controls.Add(this.btn_distribution_agr);
