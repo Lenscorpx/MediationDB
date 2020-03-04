@@ -17,6 +17,7 @@ namespace MediationDB.FormLibrary
         public frm_beneficiaires()
         {
             InitializeComponent();
+            refresh();
         }
         private void refresh()
         {
