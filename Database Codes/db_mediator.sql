@@ -1908,7 +1908,7 @@ create table t_beneficiaires
 	constraint pk_beneficiaire primary key(id_beneficiaire)
 )
 go
-create procedure afficher_beneficiaire
+create procedure afficher_beneficiaires
 as
 	select top 50
 		id_beneficiaire as 'Code Beneficiaire',
