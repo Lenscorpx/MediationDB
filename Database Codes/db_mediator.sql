@@ -1907,6 +1907,7 @@ create table t_beneficiaires
 	constraint pk_beneficiaire primary key(id_beneficiaire)
 )
 go
+---------------------------------Fin codes beneficiaires--------------------------------------------------------------------
 create table t_bailleurs
 (	
 	id_bailleurs nvarchar(200),
