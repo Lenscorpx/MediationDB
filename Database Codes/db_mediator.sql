@@ -1895,6 +1895,7 @@ as
 	select id_agr from t_agr
 go
 -----------------------------------Fin codes agrs----------------------------------------------------------------------
+-----------------------------------Debut codes beneficiaires -----------------------------------------------------------------
 create table t_beneficiaires
 (
 	id_beneficiaire nvarchar(200),
@@ -1906,6 +1907,20 @@ create table t_beneficiaires
 	telephone nvarchar(200),
 	constraint pk_beneficiaire primary key(id_beneficiaire)
 )
+go
+create procedure afficher_beneficiaire
+as
+	select top 50
+		id_beneficiaire as 'Code Beneficiaire',
+		noms as 'Noms',
+		sexe as 'Sexe',
+		vulnerabilite as 'VNRB',
+		date_naissance as 'Age',
+		adresse as 'Adresse',
+		telephone as 'Contact'
+	from t_beneficiaires
+		order by 
+			id_beneficiaire desc
 go
 ---------------------------------Fin codes beneficiaires--------------------------------------------------------------------
 create table t_bailleurs
