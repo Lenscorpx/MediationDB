@@ -368,6 +368,7 @@
             this.btn_resolutions.Name = "btn_resolutions";
             this.btn_resolutions.Size = new System.Drawing.Size(180, 151);
             this.btn_resolutions.TabIndex = 10;
+            this.btn_resolutions.Click += new System.EventHandler(this.btn_resolutions_Click);
             // 
             // btn_objets
             // 

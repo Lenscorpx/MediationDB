@@ -33,5 +33,11 @@ namespace MediationDB.FormLibrary
             var fr = new frm_objet_conflit();
             fr.ShowDialog();
         }
+
+        private void btn_resolutions_Click(object sender, EventArgs e)
+        {
+            var fr = new frm_resolutions();
+            fr.ShowDialog();
+        }
     }
 }
