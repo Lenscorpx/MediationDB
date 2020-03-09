@@ -92,7 +92,7 @@
             // bunifuTileButton1
             // 
             this.bunifuTileButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuTileButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTileButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.bunifuTileButton1.color = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.bunifuTileButton1.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.bunifuTileButton1.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -112,7 +112,7 @@
             // btn_typep_conflit
             // 
             this.btn_typep_conflit.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_typep_conflit.BackColor = System.Drawing.Color.Transparent;
+            this.btn_typep_conflit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_typep_conflit.color = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_typep_conflit.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.btn_typep_conflit.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -132,7 +132,7 @@
             // btn_pays
             // 
             this.btn_pays.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_pays.BackColor = System.Drawing.Color.Transparent;
+            this.btn_pays.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_pays.color = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_pays.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.btn_pays.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -152,7 +152,7 @@
             // btn_porvinces
             // 
             this.btn_porvinces.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_porvinces.BackColor = System.Drawing.Color.Transparent;
+            this.btn_porvinces.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_porvinces.color = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_porvinces.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.btn_porvinces.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -172,7 +172,7 @@
             // btn_territoire
             // 
             this.btn_territoire.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_territoire.BackColor = System.Drawing.Color.Transparent;
+            this.btn_territoire.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_territoire.color = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_territoire.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.btn_territoire.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -192,7 +192,7 @@
             // btn_groupement
             // 
             this.btn_groupement.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_groupement.BackColor = System.Drawing.Color.Transparent;
+            this.btn_groupement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_groupement.color = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_groupement.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.btn_groupement.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -212,7 +212,7 @@
             // btn_localite
             // 
             this.btn_localite.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_localite.BackColor = System.Drawing.Color.Transparent;
+            this.btn_localite.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_localite.color = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_localite.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.btn_localite.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -232,7 +232,7 @@
             // btn_vulnerabilites
             // 
             this.btn_vulnerabilites.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_vulnerabilites.BackColor = System.Drawing.Color.Transparent;
+            this.btn_vulnerabilites.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_vulnerabilites.color = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_vulnerabilites.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.btn_vulnerabilites.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -252,7 +252,7 @@
             // btn_types_parties
             // 
             this.btn_types_parties.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_types_parties.BackColor = System.Drawing.Color.Transparent;
+            this.btn_types_parties.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_types_parties.color = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_types_parties.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.btn_types_parties.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -272,7 +272,7 @@
             // btn_situation
             // 
             this.btn_situation.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_situation.BackColor = System.Drawing.Color.Transparent;
+            this.btn_situation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_situation.color = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_situation.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.btn_situation.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -292,7 +292,7 @@
             // btn_nature_conflit
             // 
             this.btn_nature_conflit.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_nature_conflit.BackColor = System.Drawing.Color.Transparent;
+            this.btn_nature_conflit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_nature_conflit.color = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_nature_conflit.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.btn_nature_conflit.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -312,7 +312,7 @@
             // btn_users
             // 
             this.btn_users.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_users.BackColor = System.Drawing.Color.Transparent;
+            this.btn_users.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_users.color = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_users.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.btn_users.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -332,7 +332,7 @@
             // btn_etat_part
             // 
             this.btn_etat_part.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_etat_part.BackColor = System.Drawing.Color.Transparent;
+            this.btn_etat_part.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_etat_part.color = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_etat_part.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.btn_etat_part.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -352,7 +352,7 @@
             // btn_resolutions
             // 
             this.btn_resolutions.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_resolutions.BackColor = System.Drawing.Color.Transparent;
+            this.btn_resolutions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_resolutions.color = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_resolutions.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.btn_resolutions.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -372,7 +372,7 @@
             // btn_objets
             // 
             this.btn_objets.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_objets.BackColor = System.Drawing.Color.Transparent;
+            this.btn_objets.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_objets.color = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_objets.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.btn_objets.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -392,7 +392,7 @@
             // btn_params_causes
             // 
             this.btn_params_causes.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_params_causes.BackColor = System.Drawing.Color.Transparent;
+            this.btn_params_causes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_params_causes.color = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.btn_params_causes.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.btn_params_causes.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -408,6 +408,7 @@
             this.btn_params_causes.Name = "btn_params_causes";
             this.btn_params_causes.Size = new System.Drawing.Size(180, 151);
             this.btn_params_causes.TabIndex = 8;
+            this.btn_params_causes.Click += new System.EventHandler(this.btn_params_causes_Click);
             // 
             // frm_dash_parameters
             // 

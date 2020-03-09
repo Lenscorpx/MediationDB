@@ -21,5 +21,11 @@ namespace MediationDB.FormLibrary
         {
             this.Close();
         }
+
+        private void btn_params_causes_Click(object sender, EventArgs e)
+        {
+            var fr = new frm_causes_conflit();
+            fr.ShowDialog();
+        }
     }
 }
