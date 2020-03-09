@@ -36,26 +36,29 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnl_header = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.label2 = new System.Windows.Forms.Label();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuCustomDataGrid2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.label4 = new System.Windows.Forms.Label();
-            this.btn_enregistrer = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_supprimer = new Bunifu.Framework.UI.BunifuFlatButton();
             this.txt_code_sensibilisation = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.dt_debut_sensibilisations = new MetroFramework.Controls.MetroDateTime();
-            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.btn_enregistrer = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_supprimer = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnl_header.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_header
             // 
             this.pnl_header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.pnl_header.Controls.Add(this.pictureBox1);
             this.pnl_header.Controls.Add(this.bunifuImageButton1);
             this.pnl_header.Controls.Add(this.label1);
             this.pnl_header.Dock = System.Windows.Forms.DockStyle.Top;
@@ -74,19 +77,6 @@
             this.label1.Size = new System.Drawing.Size(390, 36);
             this.label1.TabIndex = 2;
             this.label1.Text = "Informations sur les ateliers";
-            // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.Fermer_window;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(1241, 9);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(46, 40);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.bunifuImageButton1.TabIndex = 4;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
             // 
             // label2
             // 
@@ -178,6 +168,54 @@
             this.label4.TabIndex = 149;
             this.label4.Text = "Date Sensibilisation";
             // 
+            // txt_code_sensibilisation
+            // 
+            this.txt_code_sensibilisation.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_code_sensibilisation.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_code_sensibilisation.ForeColor = System.Drawing.Color.White;
+            this.txt_code_sensibilisation.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_code_sensibilisation.HintText = "Code Sensibilisation";
+            this.txt_code_sensibilisation.isPassword = false;
+            this.txt_code_sensibilisation.LineFocusedColor = System.Drawing.Color.DodgerBlue;
+            this.txt_code_sensibilisation.LineIdleColor = System.Drawing.Color.White;
+            this.txt_code_sensibilisation.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
+            this.txt_code_sensibilisation.LineThickness = 1;
+            this.txt_code_sensibilisation.Location = new System.Drawing.Point(13, 63);
+            this.txt_code_sensibilisation.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_code_sensibilisation.Name = "txt_code_sensibilisation";
+            this.txt_code_sensibilisation.Size = new System.Drawing.Size(159, 44);
+            this.txt_code_sensibilisation.TabIndex = 145;
+            this.txt_code_sensibilisation.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // dt_debut_sensibilisations
+            // 
+            this.dt_debut_sensibilisations.Location = new System.Drawing.Point(1001, 78);
+            this.dt_debut_sensibilisations.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dt_debut_sensibilisations.Name = "dt_debut_sensibilisations";
+            this.dt_debut_sensibilisations.Size = new System.Drawing.Size(287, 29);
+            this.dt_debut_sensibilisations.Style = MetroFramework.MetroColorStyle.Blue;
+            this.dt_debut_sensibilisations.TabIndex = 144;
+            this.dt_debut_sensibilisations.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // bunifuMaterialTextbox1
+            // 
+            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuMaterialTextbox1.HintText = "Code Sensibilisation";
+            this.bunifuMaterialTextbox1.isPassword = false;
+            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuMaterialTextbox1.LineThickness = 1;
+            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(180, 63);
+            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
+            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(159, 44);
+            this.bunifuMaterialTextbox1.TabIndex = 157;
+            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
             // btn_enregistrer
             // 
             this.btn_enregistrer.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
@@ -254,35 +292,6 @@
             this.btn_supprimer.Textcolor = System.Drawing.Color.White;
             this.btn_supprimer.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // txt_code_sensibilisation
-            // 
-            this.txt_code_sensibilisation.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_code_sensibilisation.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txt_code_sensibilisation.ForeColor = System.Drawing.Color.White;
-            this.txt_code_sensibilisation.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txt_code_sensibilisation.HintText = "Code Sensibilisation";
-            this.txt_code_sensibilisation.isPassword = false;
-            this.txt_code_sensibilisation.LineFocusedColor = System.Drawing.Color.DodgerBlue;
-            this.txt_code_sensibilisation.LineIdleColor = System.Drawing.Color.White;
-            this.txt_code_sensibilisation.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
-            this.txt_code_sensibilisation.LineThickness = 1;
-            this.txt_code_sensibilisation.Location = new System.Drawing.Point(13, 63);
-            this.txt_code_sensibilisation.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_code_sensibilisation.Name = "txt_code_sensibilisation";
-            this.txt_code_sensibilisation.Size = new System.Drawing.Size(159, 44);
-            this.txt_code_sensibilisation.TabIndex = 145;
-            this.txt_code_sensibilisation.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // dt_debut_sensibilisations
-            // 
-            this.dt_debut_sensibilisations.Location = new System.Drawing.Point(1001, 78);
-            this.dt_debut_sensibilisations.MinimumSize = new System.Drawing.Size(0, 29);
-            this.dt_debut_sensibilisations.Name = "dt_debut_sensibilisations";
-            this.dt_debut_sensibilisations.Size = new System.Drawing.Size(287, 29);
-            this.dt_debut_sensibilisations.Style = MetroFramework.MetroColorStyle.Blue;
-            this.dt_debut_sensibilisations.TabIndex = 144;
-            this.dt_debut_sensibilisations.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
             // bunifuImageButton2
             // 
             this.bunifuImageButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
@@ -296,24 +305,28 @@
             this.bunifuImageButton2.TabStop = false;
             this.bunifuImageButton2.Zoom = 10;
             // 
-            // bunifuMaterialTextbox1
+            // bunifuImageButton1
             // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuMaterialTextbox1.HintText = "Code Sensibilisation";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuMaterialTextbox1.LineThickness = 1;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(180, 63);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(159, 44);
-            this.bunifuMaterialTextbox1.TabIndex = 157;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.Fermer_window;
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(1241, 9);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(46, 40);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bunifuImageButton1.TabIndex = 4;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MediationDB.Properties.Resources.UNHABITAT_svg;
+            this.pictureBox1.Location = new System.Drawing.Point(13, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(203, 39);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 147;
+            this.pictureBox1.TabStop = false;
             // 
             // frm_atelier
             // 
@@ -336,9 +349,10 @@
             this.Text = "frm_atelier";
             this.pnl_header.ResumeLayout(false);
             this.pnl_header.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -359,5 +373,6 @@
         private MetroFramework.Controls.MetroDateTime dt_debut_sensibilisations;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
         public Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
