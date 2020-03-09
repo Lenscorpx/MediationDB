@@ -671,6 +671,7 @@
     <Content Include="LOGO-SCC-2019-PNG.ico" />
     <Content Include="mediationlogo.ico" />
     <Content Include="mediator.ico" />
+    <None Include="Resources\partner.png" />
     <None Include="Resources\IMG_0425.JPG" />
     <None Include="Resources\WIN_20180203_002135.JPG" />
     <None Include="Resources\IMG_07172.JPG" />
