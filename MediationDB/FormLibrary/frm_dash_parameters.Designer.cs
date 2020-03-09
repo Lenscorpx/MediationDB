@@ -47,6 +47,7 @@
             this.btn_resolutions = new Bunifu.Framework.UI.BunifuTileButton();
             this.btn_objets = new Bunifu.Framework.UI.BunifuTileButton();
             this.btn_params_causes = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btn_mediateur = new Bunifu.Framework.UI.BunifuTileButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
@@ -103,7 +104,7 @@
             this.bunifuTileButton1.ImageZoom = 50;
             this.bunifuTileButton1.LabelPosition = 29;
             this.bunifuTileButton1.LabelText = "Types d\'ateliers";
-            this.bunifuTileButton1.Location = new System.Drawing.Point(165, 307);
+            this.bunifuTileButton1.Location = new System.Drawing.Point(50, 311);
             this.bunifuTileButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.bunifuTileButton1.Name = "bunifuTileButton1";
             this.bunifuTileButton1.Size = new System.Drawing.Size(180, 150);
@@ -287,7 +288,7 @@
             this.btn_situation.ImageZoom = 50;
             this.btn_situation.LabelPosition = 29;
             this.btn_situation.LabelText = "Situation du menage";
-            this.btn_situation.Location = new System.Drawing.Point(982, 307);
+            this.btn_situation.Location = new System.Drawing.Point(867, 311);
             this.btn_situation.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_situation.Name = "btn_situation";
             this.btn_situation.Size = new System.Drawing.Size(180, 150);
@@ -308,7 +309,7 @@
             this.btn_nature_conflit.ImageZoom = 50;
             this.btn_nature_conflit.LabelPosition = 29;
             this.btn_nature_conflit.LabelText = "Nature du conflit";
-            this.btn_nature_conflit.Location = new System.Drawing.Point(370, 307);
+            this.btn_nature_conflit.Location = new System.Drawing.Point(255, 311);
             this.btn_nature_conflit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_nature_conflit.Name = "btn_nature_conflit";
             this.btn_nature_conflit.Size = new System.Drawing.Size(176, 150);
@@ -329,7 +330,7 @@
             this.btn_users.ImageZoom = 50;
             this.btn_users.LabelPosition = 29;
             this.btn_users.LabelText = "Utilisateurs";
-            this.btn_users.Location = new System.Drawing.Point(778, 307);
+            this.btn_users.Location = new System.Drawing.Point(663, 311);
             this.btn_users.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_users.Name = "btn_users";
             this.btn_users.Size = new System.Drawing.Size(180, 150);
@@ -349,7 +350,7 @@
             this.btn_etat_part.ImageZoom = 50;
             this.btn_etat_part.LabelPosition = 29;
             this.btn_etat_part.LabelText = "Etat du participant";
-            this.btn_etat_part.Location = new System.Drawing.Point(573, 307);
+            this.btn_etat_part.Location = new System.Drawing.Point(458, 311);
             this.btn_etat_part.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_etat_part.Name = "btn_etat_part";
             this.btn_etat_part.Size = new System.Drawing.Size(180, 150);
@@ -419,6 +420,26 @@
             this.btn_params_causes.TabIndex = 8;
             this.btn_params_causes.Click += new System.EventHandler(this.btn_params_causes_Click);
             // 
+            // btn_mediateur
+            // 
+            this.btn_mediateur.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_mediateur.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.btn_mediateur.color = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.btn_mediateur.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.btn_mediateur.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_mediateur.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.btn_mediateur.ForeColor = System.Drawing.Color.White;
+            this.btn_mediateur.Image = global::MediationDB.Properties.Resources.partner;
+            this.btn_mediateur.ImagePosition = 15;
+            this.btn_mediateur.ImageZoom = 50;
+            this.btn_mediateur.LabelPosition = 29;
+            this.btn_mediateur.LabelText = "Partenaire de mediation";
+            this.btn_mediateur.Location = new System.Drawing.Point(1073, 311);
+            this.btn_mediateur.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_mediateur.Name = "btn_mediateur";
+            this.btn_mediateur.Size = new System.Drawing.Size(180, 150);
+            this.btn_mediateur.TabIndex = 55;
+            // 
             // frm_dash_parameters
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -426,6 +447,7 @@
             this.BackgroundImage = global::MediationDB.Properties.Resources.UN_Habitat;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1300, 690);
+            this.Controls.Add(this.btn_mediateur);
             this.Controls.Add(this.bunifuTileButton1);
             this.Controls.Add(this.btn_typep_conflit);
             this.Controls.Add(this.panel1);
@@ -451,6 +473,7 @@
             this.Opacity = 0.96D;
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Partenaires de mediation";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
@@ -479,5 +502,6 @@
         public Bunifu.Framework.UI.BunifuTileButton btn_resolutions;
         public Bunifu.Framework.UI.BunifuTileButton btn_objets;
         public Bunifu.Framework.UI.BunifuTileButton btn_params_causes;
+        public Bunifu.Framework.UI.BunifuTileButton btn_mediateur;
     }
 }
