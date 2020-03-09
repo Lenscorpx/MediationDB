@@ -268,6 +268,7 @@
             this.btn_types_parties.Name = "btn_types_parties";
             this.btn_types_parties.Size = new System.Drawing.Size(180, 151);
             this.btn_types_parties.TabIndex = 15;
+            this.btn_types_parties.Click += new System.EventHandler(this.btn_types_parties_Click);
             // 
             // btn_situation
             // 
