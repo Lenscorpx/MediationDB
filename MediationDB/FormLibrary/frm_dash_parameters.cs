@@ -45,5 +45,11 @@ namespace MediationDB.FormLibrary
             var fr = new frm_types_partie();
             fr.ShowDialog();
         }
+
+        private void btn_vulnerabilites_Click(object sender, EventArgs e)
+        {
+            var fr = new frm_vulnerabilite();
+            fr.ShowDialog();
+        }
     }
 }

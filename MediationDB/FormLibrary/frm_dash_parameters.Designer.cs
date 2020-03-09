@@ -248,6 +248,7 @@
             this.btn_vulnerabilites.Name = "btn_vulnerabilites";
             this.btn_vulnerabilites.Size = new System.Drawing.Size(180, 151);
             this.btn_vulnerabilites.TabIndex = 16;
+            this.btn_vulnerabilites.Click += new System.EventHandler(this.btn_vulnerabilites_Click);
             // 
             // btn_types_parties
             // 
