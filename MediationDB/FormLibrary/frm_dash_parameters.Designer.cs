@@ -439,6 +439,7 @@
             this.btn_mediateur.Name = "btn_mediateur";
             this.btn_mediateur.Size = new System.Drawing.Size(180, 150);
             this.btn_mediateur.TabIndex = 55;
+            this.btn_mediateur.Click += new System.EventHandler(this.btn_mediateur_Click);
             // 
             // frm_dash_parameters
             // 
