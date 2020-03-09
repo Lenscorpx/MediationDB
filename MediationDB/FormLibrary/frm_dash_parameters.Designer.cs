@@ -388,6 +388,7 @@
             this.btn_objets.Name = "btn_objets";
             this.btn_objets.Size = new System.Drawing.Size(180, 151);
             this.btn_objets.TabIndex = 9;
+            this.btn_objets.Click += new System.EventHandler(this.btn_objets_Click);
             // 
             // btn_params_causes
             // 
