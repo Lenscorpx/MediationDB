@@ -35,26 +35,29 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuCustomDataGrid2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.txt_telephone = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txt_adresse = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label3 = new System.Windows.Forms.Label();
             this.cbx_vulnerabilite = new MetroFramework.Controls.MetroComboBox();
-            this.btn_supprimer = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_enregistrer = new Bunifu.Framework.UI.BunifuFlatButton();
             this.dt_date_distribution = new MetroFramework.Controls.MetroDateTime();
             this.cbx_sexe = new MetroFramework.Controls.MetroComboBox();
             this.txt_noms = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txt_id_beneficiaire = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.btn_supprimer = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_enregistrer = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.bunifuImageButton1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -74,21 +77,6 @@
             this.label1.Size = new System.Drawing.Size(454, 30);
             this.label1.TabIndex = 8;
             this.label1.Text = "Informations sur les bailleurs de fonds";
-            // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.multiply_96px;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(1250, 7);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(42, 34);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 7;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // bunifuCustomDataGrid2
             // 
@@ -219,6 +207,77 @@
             this.cbx_vulnerabilite.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.cbx_vulnerabilite.UseSelectable = true;
             // 
+            // dt_date_distribution
+            // 
+            this.dt_date_distribution.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dt_date_distribution.Location = new System.Drawing.Point(1023, 67);
+            this.dt_date_distribution.MinimumSize = new System.Drawing.Size(0, 29);
+            this.dt_date_distribution.Name = "dt_date_distribution";
+            this.dt_date_distribution.Size = new System.Drawing.Size(232, 29);
+            this.dt_date_distribution.Style = MetroFramework.MetroColorStyle.Blue;
+            this.dt_date_distribution.TabIndex = 95;
+            this.dt_date_distribution.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // cbx_sexe
+            // 
+            this.cbx_sexe.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbx_sexe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.cbx_sexe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbx_sexe.ForeColor = System.Drawing.Color.White;
+            this.cbx_sexe.FormattingEnabled = true;
+            this.cbx_sexe.ItemHeight = 23;
+            this.cbx_sexe.Items.AddRange(new object[] {
+            "Feminin",
+            "Masculin"});
+            this.cbx_sexe.Location = new System.Drawing.Point(405, 72);
+            this.cbx_sexe.Name = "cbx_sexe";
+            this.cbx_sexe.PromptText = "Choisissez le genre ici";
+            this.cbx_sexe.Size = new System.Drawing.Size(198, 29);
+            this.cbx_sexe.Style = MetroFramework.MetroColorStyle.Blue;
+            this.cbx_sexe.TabIndex = 94;
+            this.cbx_sexe.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.cbx_sexe.UseSelectable = true;
+            // 
+            // txt_noms
+            // 
+            this.txt_noms.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_noms.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_noms.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_noms.ForeColor = System.Drawing.Color.White;
+            this.txt_noms.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_noms.HintText = "Noms du beneficiaire";
+            this.txt_noms.isPassword = false;
+            this.txt_noms.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.txt_noms.LineIdleColor = System.Drawing.Color.White;
+            this.txt_noms.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.txt_noms.LineThickness = 4;
+            this.txt_noms.Location = new System.Drawing.Point(26, 109);
+            this.txt_noms.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_noms.Name = "txt_noms";
+            this.txt_noms.Size = new System.Drawing.Size(359, 44);
+            this.txt_noms.TabIndex = 93;
+            this.txt_noms.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txt_id_beneficiaire
+            // 
+            this.txt_id_beneficiaire.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_id_beneficiaire.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_id_beneficiaire.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_id_beneficiaire.ForeColor = System.Drawing.Color.White;
+            this.txt_id_beneficiaire.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_id_beneficiaire.HintText = "Code du beneficiaire";
+            this.txt_id_beneficiaire.isPassword = false;
+            this.txt_id_beneficiaire.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.txt_id_beneficiaire.LineIdleColor = System.Drawing.Color.White;
+            this.txt_id_beneficiaire.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.txt_id_beneficiaire.LineThickness = 4;
+            this.txt_id_beneficiaire.Location = new System.Drawing.Point(26, 57);
+            this.txt_id_beneficiaire.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_id_beneficiaire.Name = "txt_id_beneficiaire";
+            this.txt_id_beneficiaire.Size = new System.Drawing.Size(359, 44);
+            this.txt_id_beneficiaire.TabIndex = 92;
+            this.txt_id_beneficiaire.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
             // btn_supprimer
             // 
             this.btn_supprimer.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
@@ -295,76 +354,30 @@
             this.btn_enregistrer.Textcolor = System.Drawing.Color.White;
             this.btn_enregistrer.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // dt_date_distribution
+            // bunifuImageButton1
             // 
-            this.dt_date_distribution.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dt_date_distribution.Location = new System.Drawing.Point(1023, 67);
-            this.dt_date_distribution.MinimumSize = new System.Drawing.Size(0, 29);
-            this.dt_date_distribution.Name = "dt_date_distribution";
-            this.dt_date_distribution.Size = new System.Drawing.Size(232, 29);
-            this.dt_date_distribution.Style = MetroFramework.MetroColorStyle.Blue;
-            this.dt_date_distribution.TabIndex = 95;
-            this.dt_date_distribution.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.bunifuImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.multiply_96px;
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(1250, 7);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(42, 34);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton1.TabIndex = 7;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
-            // cbx_sexe
+            // pictureBox1
             // 
-            this.cbx_sexe.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cbx_sexe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.cbx_sexe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbx_sexe.ForeColor = System.Drawing.Color.White;
-            this.cbx_sexe.FormattingEnabled = true;
-            this.cbx_sexe.ItemHeight = 23;
-            this.cbx_sexe.Items.AddRange(new object[] {
-            "Feminin",
-            "Masculin"});
-            this.cbx_sexe.Location = new System.Drawing.Point(405, 72);
-            this.cbx_sexe.Name = "cbx_sexe";
-            this.cbx_sexe.PromptText = "Choisissez le genre ici";
-            this.cbx_sexe.Size = new System.Drawing.Size(198, 29);
-            this.cbx_sexe.Style = MetroFramework.MetroColorStyle.Blue;
-            this.cbx_sexe.TabIndex = 94;
-            this.cbx_sexe.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.cbx_sexe.UseSelectable = true;
-            // 
-            // txt_noms
-            // 
-            this.txt_noms.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_noms.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_noms.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txt_noms.ForeColor = System.Drawing.Color.White;
-            this.txt_noms.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txt_noms.HintText = "Noms du beneficiaire";
-            this.txt_noms.isPassword = false;
-            this.txt_noms.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_noms.LineIdleColor = System.Drawing.Color.White;
-            this.txt_noms.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_noms.LineThickness = 4;
-            this.txt_noms.Location = new System.Drawing.Point(26, 109);
-            this.txt_noms.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_noms.Name = "txt_noms";
-            this.txt_noms.Size = new System.Drawing.Size(359, 44);
-            this.txt_noms.TabIndex = 93;
-            this.txt_noms.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txt_id_beneficiaire
-            // 
-            this.txt_id_beneficiaire.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_id_beneficiaire.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_id_beneficiaire.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txt_id_beneficiaire.ForeColor = System.Drawing.Color.White;
-            this.txt_id_beneficiaire.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txt_id_beneficiaire.HintText = "Code du beneficiaire";
-            this.txt_id_beneficiaire.isPassword = false;
-            this.txt_id_beneficiaire.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_id_beneficiaire.LineIdleColor = System.Drawing.Color.White;
-            this.txt_id_beneficiaire.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_id_beneficiaire.LineThickness = 4;
-            this.txt_id_beneficiaire.Location = new System.Drawing.Point(26, 57);
-            this.txt_id_beneficiaire.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_id_beneficiaire.Name = "txt_id_beneficiaire";
-            this.txt_id_beneficiaire.Size = new System.Drawing.Size(359, 44);
-            this.txt_id_beneficiaire.TabIndex = 92;
-            this.txt_id_beneficiaire.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.pictureBox1.Image = global::MediationDB.Properties.Resources.UNHABITAT_svg;
+            this.pictureBox1.Location = new System.Drawing.Point(7, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(203, 39);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 147;
+            this.pictureBox1.TabStop = false;
             // 
             // frm_bailleurs
             // 
@@ -387,14 +400,15 @@
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_bailleurs";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_bailleurs";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -416,5 +430,6 @@
         private MetroFramework.Controls.MetroComboBox cbx_sexe;
         public Bunifu.Framework.UI.BunifuMaterialTextbox txt_noms;
         public Bunifu.Framework.UI.BunifuMaterialTextbox txt_id_beneficiaire;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
