@@ -128,6 +128,7 @@
             this.btn_typep_conflit.Name = "btn_typep_conflit";
             this.btn_typep_conflit.Size = new System.Drawing.Size(180, 150);
             this.btn_typep_conflit.TabIndex = 37;
+            this.btn_typep_conflit.Click += new System.EventHandler(this.btn_typep_conflit_Click);
             // 
             // btn_pays
             // 
