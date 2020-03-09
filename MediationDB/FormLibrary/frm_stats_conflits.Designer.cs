@@ -30,9 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_stats_conflits));
             this.pnl_header = new System.Windows.Forms.Panel();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.chart_classes = new Bunifu.Framework.UI.BunifuGauge();
+            this.chart_referes = new Bunifu.Framework.UI.BunifuGauge();
+            this.chart_encours = new Bunifu.Framework.UI.BunifuGauge();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.txt_total_general = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txt_total_garcons = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txt_total_filles = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -113,27 +124,19 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.txt_id_localite = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label2 = new System.Windows.Forms.Label();
-            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.chart_resolus = new Bunifu.Framework.UI.BunifuGauge();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.chart_encours = new Bunifu.Framework.UI.BunifuGauge();
-            this.chart_referes = new Bunifu.Framework.UI.BunifuGauge();
-            this.chart_classes = new Bunifu.Framework.UI.BunifuGauge();
-            this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnl_header.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_header
             // 
+            this.pnl_header.Controls.Add(this.pictureBox1);
             this.pnl_header.Controls.Add(this.bunifuImageButton1);
             this.pnl_header.Controls.Add(this.label1);
             this.pnl_header.Dock = System.Windows.Forms.DockStyle.Top;
@@ -141,6 +144,20 @@
             this.pnl_header.Name = "pnl_header";
             this.pnl_header.Size = new System.Drawing.Size(1300, 53);
             this.pnl_header.TabIndex = 37;
+            // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.Fermer_window;
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(1246, 7);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(46, 40);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bunifuImageButton1.TabIndex = 8;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // label1
             // 
@@ -263,6 +280,136 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1300, 661);
             this.panel1.TabIndex = 38;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(834, 431);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(65, 17);
+            this.label3.TabIndex = 237;
+            this.label3.Text = "Garcons";
+            // 
+            // bunifuImageButton3
+            // 
+            this.bunifuImageButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuImageButton3.Image = global::MediationDB.Properties.Resources.google_web_search_96px;
+            this.bunifuImageButton3.ImageActive = null;
+            this.bunifuImageButton3.Location = new System.Drawing.Point(545, 13);
+            this.bunifuImageButton3.Name = "bunifuImageButton3";
+            this.bunifuImageButton3.Size = new System.Drawing.Size(45, 37);
+            this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton3.TabIndex = 236;
+            this.bunifuImageButton3.TabStop = false;
+            this.bunifuImageButton3.Zoom = 10;
+            // 
+            // chart_classes
+            // 
+            this.chart_classes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chart_classes.BackgroundImage")));
+            this.chart_classes.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.chart_classes.ForeColor = System.Drawing.Color.White;
+            this.chart_classes.Location = new System.Drawing.Point(1047, 536);
+            this.chart_classes.Margin = new System.Windows.Forms.Padding(5);
+            this.chart_classes.Name = "chart_classes";
+            this.chart_classes.ProgressBgColor = System.Drawing.Color.White;
+            this.chart_classes.ProgressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.chart_classes.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.chart_classes.Size = new System.Drawing.Size(177, 120);
+            this.chart_classes.TabIndex = 235;
+            this.chart_classes.Thickness = 30;
+            this.chart_classes.Value = 0;
+            // 
+            // chart_referes
+            // 
+            this.chart_referes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chart_referes.BackgroundImage")));
+            this.chart_referes.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.chart_referes.ForeColor = System.Drawing.Color.White;
+            this.chart_referes.Location = new System.Drawing.Point(815, 536);
+            this.chart_referes.Margin = new System.Windows.Forms.Padding(5);
+            this.chart_referes.Name = "chart_referes";
+            this.chart_referes.ProgressBgColor = System.Drawing.Color.White;
+            this.chart_referes.ProgressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.chart_referes.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.chart_referes.Size = new System.Drawing.Size(177, 120);
+            this.chart_referes.TabIndex = 234;
+            this.chart_referes.Thickness = 30;
+            this.chart_referes.Value = 0;
+            // 
+            // chart_encours
+            // 
+            this.chart_encours.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chart_encours.BackgroundImage")));
+            this.chart_encours.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.chart_encours.ForeColor = System.Drawing.Color.White;
+            this.chart_encours.Location = new System.Drawing.Point(575, 536);
+            this.chart_encours.Margin = new System.Windows.Forms.Padding(5);
+            this.chart_encours.Name = "chart_encours";
+            this.chart_encours.ProgressBgColor = System.Drawing.Color.White;
+            this.chart_encours.ProgressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.chart_encours.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.chart_encours.Size = new System.Drawing.Size(177, 120);
+            this.chart_encours.TabIndex = 233;
+            this.chart_encours.Thickness = 30;
+            this.chart_encours.Value = 0;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.ForeColor = System.Drawing.Color.White;
+            this.label48.Location = new System.Drawing.Point(936, 431);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(101, 17);
+            this.label48.TabIndex = 232;
+            this.label48.Text = "Total Menage";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.ForeColor = System.Drawing.Color.White;
+            this.label46.Location = new System.Drawing.Point(733, 431);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(42, 17);
+            this.label46.TabIndex = 230;
+            this.label46.Text = "Filles";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.ForeColor = System.Drawing.Color.White;
+            this.label45.Location = new System.Drawing.Point(609, 431);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(67, 17);
+            this.label45.TabIndex = 229;
+            this.label45.Text = "Femmes";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.Color.White;
+            this.label44.Location = new System.Drawing.Point(496, 431);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(70, 17);
+            this.label44.TabIndex = 228;
+            this.label44.Text = "Hommes";
+            // 
+            // bunifuImageButton2
+            // 
+            this.bunifuImageButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.bunifuImageButton2.Image = global::MediationDB.Properties.Resources.google_web_search_96px;
+            this.bunifuImageButton2.ImageActive = null;
+            this.bunifuImageButton2.Location = new System.Drawing.Point(1246, 13);
+            this.bunifuImageButton2.Name = "bunifuImageButton2";
+            this.bunifuImageButton2.Size = new System.Drawing.Size(45, 37);
+            this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton2.TabIndex = 227;
+            this.bunifuImageButton2.TabStop = false;
+            this.bunifuImageButton2.Zoom = 10;
+            this.bunifuImageButton2.Click += new System.EventHandler(this.bunifuImageButton2_Click);
             // 
             // txt_total_general
             // 
@@ -1288,7 +1435,7 @@
             this.txt_conflits_classes.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_conflits_classes.LineThickness = 4;
             this.txt_conflits_classes.Location = new System.Drawing.Point(394, 383);
-            this.txt_conflits_classes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_conflits_classes.Margin = new System.Windows.Forms.Padding(4);
             this.txt_conflits_classes.Name = "txt_conflits_classes";
             this.txt_conflits_classes.Size = new System.Drawing.Size(144, 32);
             this.txt_conflits_classes.TabIndex = 138;
@@ -1310,7 +1457,7 @@
             this.txt_conflits_referes.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_conflits_referes.LineThickness = 4;
             this.txt_conflits_referes.Location = new System.Drawing.Point(394, 310);
-            this.txt_conflits_referes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_conflits_referes.Margin = new System.Windows.Forms.Padding(4);
             this.txt_conflits_referes.Name = "txt_conflits_referes";
             this.txt_conflits_referes.Size = new System.Drawing.Size(144, 34);
             this.txt_conflits_referes.TabIndex = 137;
@@ -1332,7 +1479,7 @@
             this.txt_conflits_encours.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_conflits_encours.LineThickness = 4;
             this.txt_conflits_encours.Location = new System.Drawing.Point(394, 239);
-            this.txt_conflits_encours.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_conflits_encours.Margin = new System.Windows.Forms.Padding(4);
             this.txt_conflits_encours.Name = "txt_conflits_encours";
             this.txt_conflits_encours.Size = new System.Drawing.Size(144, 34);
             this.txt_conflits_encours.TabIndex = 136;
@@ -1354,7 +1501,7 @@
             this.txt_conflit_resolus.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_conflit_resolus.LineThickness = 4;
             this.txt_conflit_resolus.Location = new System.Drawing.Point(394, 168);
-            this.txt_conflit_resolus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_conflit_resolus.Margin = new System.Windows.Forms.Padding(4);
             this.txt_conflit_resolus.Name = "txt_conflit_resolus";
             this.txt_conflit_resolus.Size = new System.Drawing.Size(144, 34);
             this.txt_conflit_resolus.TabIndex = 135;
@@ -1435,7 +1582,7 @@
             this.txt_nombre_conflit.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
             this.txt_nombre_conflit.LineThickness = 4;
             this.txt_nombre_conflit.Location = new System.Drawing.Point(394, 98);
-            this.txt_nombre_conflit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_nombre_conflit.Margin = new System.Windows.Forms.Padding(4);
             this.txt_nombre_conflit.Name = "txt_nombre_conflit";
             this.txt_nombre_conflit.Size = new System.Drawing.Size(144, 33);
             this.txt_nombre_conflit.TabIndex = 120;
@@ -1534,20 +1681,6 @@
             this.label2.TabIndex = 41;
             this.label2.Text = "Total conflits";
             // 
-            // bunifuImageButton2
-            // 
-            this.bunifuImageButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuImageButton2.Image = global::MediationDB.Properties.Resources.google_web_search_96px;
-            this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(1246, 13);
-            this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.Size = new System.Drawing.Size(45, 37);
-            this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton2.TabIndex = 227;
-            this.bunifuImageButton2.TabStop = false;
-            this.bunifuImageButton2.Zoom = 10;
-            this.bunifuImageButton2.Click += new System.EventHandler(this.bunifuImageButton2_Click);
-            // 
             // chart_resolus
             // 
             this.chart_resolus.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chart_resolus.BackgroundImage")));
@@ -1564,135 +1697,15 @@
             this.chart_resolus.Thickness = 30;
             this.chart_resolus.Value = 0;
             // 
-            // bunifuImageButton1
+            // pictureBox1
             // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.Fermer_window;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(1246, 7);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(46, 40);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.bunifuImageButton1.TabIndex = 8;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.ForeColor = System.Drawing.Color.White;
-            this.label44.Location = new System.Drawing.Point(496, 431);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(70, 17);
-            this.label44.TabIndex = 228;
-            this.label44.Text = "Hommes";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.ForeColor = System.Drawing.Color.White;
-            this.label45.Location = new System.Drawing.Point(609, 431);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(67, 17);
-            this.label45.TabIndex = 229;
-            this.label45.Text = "Femmes";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.ForeColor = System.Drawing.Color.White;
-            this.label46.Location = new System.Drawing.Point(733, 431);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(42, 17);
-            this.label46.TabIndex = 230;
-            this.label46.Text = "Filles";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.ForeColor = System.Drawing.Color.White;
-            this.label48.Location = new System.Drawing.Point(936, 431);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(101, 17);
-            this.label48.TabIndex = 232;
-            this.label48.Text = "Total Menage";
-            // 
-            // chart_encours
-            // 
-            this.chart_encours.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chart_encours.BackgroundImage")));
-            this.chart_encours.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.chart_encours.ForeColor = System.Drawing.Color.White;
-            this.chart_encours.Location = new System.Drawing.Point(575, 536);
-            this.chart_encours.Margin = new System.Windows.Forms.Padding(5);
-            this.chart_encours.Name = "chart_encours";
-            this.chart_encours.ProgressBgColor = System.Drawing.Color.White;
-            this.chart_encours.ProgressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.chart_encours.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.chart_encours.Size = new System.Drawing.Size(177, 120);
-            this.chart_encours.TabIndex = 233;
-            this.chart_encours.Thickness = 30;
-            this.chart_encours.Value = 0;
-            // 
-            // chart_referes
-            // 
-            this.chart_referes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chart_referes.BackgroundImage")));
-            this.chart_referes.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.chart_referes.ForeColor = System.Drawing.Color.White;
-            this.chart_referes.Location = new System.Drawing.Point(815, 536);
-            this.chart_referes.Margin = new System.Windows.Forms.Padding(5);
-            this.chart_referes.Name = "chart_referes";
-            this.chart_referes.ProgressBgColor = System.Drawing.Color.White;
-            this.chart_referes.ProgressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.chart_referes.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.chart_referes.Size = new System.Drawing.Size(177, 120);
-            this.chart_referes.TabIndex = 234;
-            this.chart_referes.Thickness = 30;
-            this.chart_referes.Value = 0;
-            // 
-            // chart_classes
-            // 
-            this.chart_classes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chart_classes.BackgroundImage")));
-            this.chart_classes.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.chart_classes.ForeColor = System.Drawing.Color.White;
-            this.chart_classes.Location = new System.Drawing.Point(1047, 536);
-            this.chart_classes.Margin = new System.Windows.Forms.Padding(5);
-            this.chart_classes.Name = "chart_classes";
-            this.chart_classes.ProgressBgColor = System.Drawing.Color.White;
-            this.chart_classes.ProgressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.chart_classes.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.chart_classes.Size = new System.Drawing.Size(177, 120);
-            this.chart_classes.TabIndex = 235;
-            this.chart_classes.Thickness = 30;
-            this.chart_classes.Value = 0;
-            // 
-            // bunifuImageButton3
-            // 
-            this.bunifuImageButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.bunifuImageButton3.Image = global::MediationDB.Properties.Resources.google_web_search_96px;
-            this.bunifuImageButton3.ImageActive = null;
-            this.bunifuImageButton3.Location = new System.Drawing.Point(545, 13);
-            this.bunifuImageButton3.Name = "bunifuImageButton3";
-            this.bunifuImageButton3.Size = new System.Drawing.Size(45, 37);
-            this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton3.TabIndex = 236;
-            this.bunifuImageButton3.TabStop = false;
-            this.bunifuImageButton3.Zoom = 10;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(834, 431);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 17);
-            this.label3.TabIndex = 237;
-            this.label3.Text = "Garcons";
+            this.pictureBox1.Image = global::MediationDB.Properties.Resources.UNHABITAT_svg;
+            this.pictureBox1.Location = new System.Drawing.Point(8, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(219, 40);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 144;
+            this.pictureBox1.TabStop = false;
             // 
             // frm_stats_conflits
             // 
@@ -1708,11 +1721,12 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.pnl_header.ResumeLayout(false);
             this.pnl_header.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1814,5 +1828,6 @@
         private Bunifu.Framework.UI.BunifuGauge chart_encours;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
