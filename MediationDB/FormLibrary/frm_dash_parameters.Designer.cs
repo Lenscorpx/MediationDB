@@ -108,6 +108,7 @@
             this.bunifuTileButton1.Name = "bunifuTileButton1";
             this.bunifuTileButton1.Size = new System.Drawing.Size(180, 150);
             this.bunifuTileButton1.TabIndex = 54;
+            this.bunifuTileButton1.Click += new System.EventHandler(this.bunifuTileButton1_Click);
             // 
             // btn_typep_conflit
             // 

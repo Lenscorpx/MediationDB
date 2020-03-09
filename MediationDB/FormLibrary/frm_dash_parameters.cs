@@ -57,5 +57,11 @@ namespace MediationDB.FormLibrary
             var fr = new frm_type_conflit();
             fr.ShowDialog();
         }
+
+        private void bunifuTileButton1_Click(object sender, EventArgs e)
+        {
+            var fr = new frm_types_atelier();
+            fr.ShowDialog();
+        }
     }
 }
