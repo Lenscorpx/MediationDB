@@ -292,6 +292,7 @@
             this.btn_situation.Name = "btn_situation";
             this.btn_situation.Size = new System.Drawing.Size(180, 150);
             this.btn_situation.TabIndex = 14;
+            this.btn_situation.Click += new System.EventHandler(this.btn_situation_Click);
             // 
             // btn_nature_conflit
             // 
@@ -312,6 +313,7 @@
             this.btn_nature_conflit.Name = "btn_nature_conflit";
             this.btn_nature_conflit.Size = new System.Drawing.Size(176, 150);
             this.btn_nature_conflit.TabIndex = 13;
+            this.btn_nature_conflit.Click += new System.EventHandler(this.btn_nature_conflit_Click);
             // 
             // btn_users
             // 
@@ -352,6 +354,7 @@
             this.btn_etat_part.Name = "btn_etat_part";
             this.btn_etat_part.Size = new System.Drawing.Size(180, 150);
             this.btn_etat_part.TabIndex = 11;
+            this.btn_etat_part.Click += new System.EventHandler(this.btn_etat_part_Click);
             // 
             // btn_resolutions
             // 

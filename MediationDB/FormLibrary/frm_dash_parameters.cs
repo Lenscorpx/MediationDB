@@ -63,5 +63,23 @@ namespace MediationDB.FormLibrary
             var fr = new frm_types_atelier();
             fr.ShowDialog();
         }
+
+        private void btn_nature_conflit_Click(object sender, EventArgs e)
+        {
+            var fr = new frm_nature_conflit();
+            fr.ShowDialog();
+        }
+
+        private void btn_etat_part_Click(object sender, EventArgs e)
+        {
+            var fr = new frm_etat_participant();
+            fr.ShowDialog();
+        }
+
+        private void btn_situation_Click(object sender, EventArgs e)
+        {
+            var fr = new frm_situation_menage();
+            fr.ShowDialog();
+        }
     }
 }
