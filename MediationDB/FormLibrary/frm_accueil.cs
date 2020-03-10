@@ -51,5 +51,11 @@ namespace MediationDB.FormLibrary
             var fr = new frm_help();
             fr.Show();
         }
+
+        private void btn_projets_Click(object sender, EventArgs e)
+        {
+            var fr = new frm_sensibilisation();
+            fr.Show();
+        }
     }
 }

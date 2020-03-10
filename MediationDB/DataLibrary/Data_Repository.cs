@@ -22,17 +22,18 @@ namespace MediationDB.DataLibrary
         Params prms = new Params();
         public Data_Repository()
         {
-            //prms.Serveur = "tcp:conebase.database.windows.net";                    
-            //prms.Nom_user = "LensX";
-            //prms.Mot_de_passe = "Cony@2017.com?";
+            prms.Serveur = "unhserver.database.windows.net"; 
+            prms.Base_de_donnees = "db_foncier";
+            prms.Nom_user = "Lens";
+            prms.Mot_de_passe = "unhabitat@@2020";
             //prms.Serveur = "DESKTOP-PO0I2OH";
             //prms.Base_de_donnees = "db_foncier";
             //prms.Nom_user = "sa";
             //prms.Mot_de_passe = "Windy@2019.com?";
-            prms.Serveur = "SCI-CD-L19-430\\SERVEUR";
-            prms.Base_de_donnees = "db_foncier";
-            prms.Nom_user = "sa";
-            prms.Mot_de_passe = "123456789";
+            //prms.Serveur = "SCI-CD-L19-430\\SERVEUR";
+            //prms.Base_de_donnees = "db_foncier";
+            //prms.Nom_user = "sa";
+            //prms.Mot_de_passe = "123456789";
             //prms.Serveur = "DESKTOP-LSH2J11\\UNHABITAT_SERVER";
             //prms.Base_de_donnees = "db_foncier";
             //prms.Nom_user = "sa";
