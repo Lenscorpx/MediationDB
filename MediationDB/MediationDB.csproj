@@ -295,6 +295,12 @@
     <Compile Include="FormLibrary\frm_organisation_atelier.Designer.cs">
       <DependentUpon>frm_organisation_atelier.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLibrary\frm_pays.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_pays.Designer.cs">
+      <DependentUpon>frm_pays.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLibrary\frm_reports.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -515,6 +521,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_organisation_atelier.resx">
       <DependentUpon>frm_organisation_atelier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_pays.resx">
+      <DependentUpon>frm_pays.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLibrary\frm_reports.resx">
       <DependentUpon>frm_reports.cs</DependentUpon>
