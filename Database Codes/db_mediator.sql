@@ -52,6 +52,13 @@ as
 		values
 			(@code_pays, @nom_pays_eng, @nom_pays_fr, @capitale);
 go
+create procedure supprimer_pays
+@code_pays nvarchar(200)
+as
+	delete from t_pays 
+	where
+		code_pays like @code_pays
+go
 --------------------------------Fin codes pays--------------------------------------------------------------------------
 create table t_province
 (
