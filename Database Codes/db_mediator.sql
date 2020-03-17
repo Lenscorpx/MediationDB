@@ -22,6 +22,16 @@ go
 	values
 		('+243','Democratic Republic of Congo','Republique Democratique du Congo','Kinshasa')
 go
+create procedure afficher_pays
+as
+select top 50 
+	code_pays as 'Pays',
+	nom_pays_eng as 'English',
+	nom_pays_fr as 'Francais',
+	capitale as 'Capitale'
+from t_pays
+	order by code_pays asc
+go
 --------------------------------Fin codes pays--------------------------------------------------------------------------
 create table t_province
 (
