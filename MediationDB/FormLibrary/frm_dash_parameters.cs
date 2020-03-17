@@ -87,5 +87,10 @@ namespace MediationDB.FormLibrary
             var fr = new frm_mediateur();
             fr.ShowDialog();
         }
+
+        private void btn_pays_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

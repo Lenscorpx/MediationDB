@@ -153,6 +153,7 @@
             this.btn_pays.Name = "btn_pays";
             this.btn_pays.Size = new System.Drawing.Size(180, 150);
             this.btn_pays.TabIndex = 21;
+            this.btn_pays.Click += new System.EventHandler(this.btn_pays_Click);
             // 
             // btn_porvinces
             // 
