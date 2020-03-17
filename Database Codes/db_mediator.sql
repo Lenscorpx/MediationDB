@@ -32,6 +32,26 @@ select top 50
 from t_pays
 	order by code_pays asc
 go
+create procedure ajouter_pays
+@code_pays nvarchar(200),
+@nom_pays_eng nvarchar(200),
+@nom_pays_fr nvarchar(200),
+@capitale nvarchar(200)
+as
+	merge into t_pays
+	using(select @code_pays as x_id) as x_source
+	on (x_source.x_id=t_pays.code_pays)
+	when matched then	
+		update set
+			nom_pays_eng = @nom_pays_eng,
+			nom_pays_fr = @nom_pays_fr,
+			capitale = @capitale
+	when not matched then
+		insert 
+			(code_pays, nom_pays_eng, nom_pays_fr, capitale)
+		values
+			(@code_pays, @nom_pays_eng, @nom_pays_fr, @capitale);
+go
 --------------------------------Fin codes pays--------------------------------------------------------------------------
 create table t_province
 (
