@@ -23,5 +23,10 @@ namespace MediationDB.FormLibrary
         {
             rps.afficher_pays(bunifuCustomDataGrid2);
         }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
