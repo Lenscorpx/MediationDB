@@ -7,6 +7,7 @@ if not exists(select * from sys.databases where name='db_foncier')
 go
 use db_foncier;
 go
+-----------------------------------Debut codes pays---------------------------------------------------------------------
 create table t_pays
 (
     code_pays nvarchar(200),
@@ -21,6 +22,7 @@ go
 	values
 		('+243','Democratic Republic of Congo','Republique Democratique du Congo','Kinshasa')
 go
+--------------------------------Fin codes pays--------------------------------------------------------------------------
 create table t_province
 (
 	id_province nvarchar(200),
