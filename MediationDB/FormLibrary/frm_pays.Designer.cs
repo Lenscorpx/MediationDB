@@ -59,7 +59,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1036, 49);
+            this.panel1.Size = new System.Drawing.Size(1254, 49);
             this.panel1.TabIndex = 77;
             // 
             // pictureBox1
@@ -77,7 +77,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(376, 9);
+            this.label1.Location = new System.Drawing.Point(511, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(336, 30);
             this.label1.TabIndex = 8;
@@ -88,7 +88,7 @@
             this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.multiply_96px;
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(987, 8);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(1200, 8);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Size = new System.Drawing.Size(42, 34);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -109,10 +109,10 @@
             this.txt_capitale.LineIdleColor = System.Drawing.Color.White;
             this.txt_capitale.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
             this.txt_capitale.LineThickness = 1;
-            this.txt_capitale.Location = new System.Drawing.Point(413, 57);
+            this.txt_capitale.Location = new System.Drawing.Point(274, 56);
             this.txt_capitale.Margin = new System.Windows.Forms.Padding(4);
             this.txt_capitale.Name = "txt_capitale";
-            this.txt_capitale.Size = new System.Drawing.Size(583, 44);
+            this.txt_capitale.Size = new System.Drawing.Size(300, 44);
             this.txt_capitale.TabIndex = 83;
             this.txt_capitale.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -128,10 +128,10 @@
             this.txt_code_pays.LineIdleColor = System.Drawing.Color.White;
             this.txt_code_pays.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
             this.txt_code_pays.LineThickness = 1;
-            this.txt_code_pays.Location = new System.Drawing.Point(35, 57);
+            this.txt_code_pays.Location = new System.Drawing.Point(47, 56);
             this.txt_code_pays.Margin = new System.Windows.Forms.Padding(4);
             this.txt_code_pays.Name = "txt_code_pays";
-            this.txt_code_pays.Size = new System.Drawing.Size(370, 44);
+            this.txt_code_pays.Size = new System.Drawing.Size(219, 44);
             this.txt_code_pays.TabIndex = 82;
             this.txt_code_pays.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -159,7 +159,7 @@
             this.btn_supprimer.IconVisible = true;
             this.btn_supprimer.IconZoom = 70D;
             this.btn_supprimer.IsTab = true;
-            this.btn_supprimer.Location = new System.Drawing.Point(824, 174);
+            this.btn_supprimer.Location = new System.Drawing.Point(933, 174);
             this.btn_supprimer.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btn_supprimer.Name = "btn_supprimer";
             this.btn_supprimer.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
@@ -197,7 +197,7 @@
             this.btn_enregistrer.IconVisible = true;
             this.btn_enregistrer.IconZoom = 70D;
             this.btn_enregistrer.IsTab = true;
-            this.btn_enregistrer.Location = new System.Drawing.Point(625, 174);
+            this.btn_enregistrer.Location = new System.Drawing.Point(734, 174);
             this.btn_enregistrer.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btn_enregistrer.Name = "btn_enregistrer";
             this.btn_enregistrer.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
@@ -270,7 +270,7 @@
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.bunifuCustomDataGrid2.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.bunifuCustomDataGrid2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuCustomDataGrid2.Size = new System.Drawing.Size(1036, 350);
+            this.bunifuCustomDataGrid2.Size = new System.Drawing.Size(1254, 350);
             this.bunifuCustomDataGrid2.TabIndex = 84;
             // 
             // txt_noms_pays_fr
@@ -285,10 +285,10 @@
             this.txt_noms_pays_fr.LineIdleColor = System.Drawing.Color.White;
             this.txt_noms_pays_fr.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
             this.txt_noms_pays_fr.LineThickness = 1;
-            this.txt_noms_pays_fr.Location = new System.Drawing.Point(413, 109);
+            this.txt_noms_pays_fr.Location = new System.Drawing.Point(889, 56);
             this.txt_noms_pays_fr.Margin = new System.Windows.Forms.Padding(4);
             this.txt_noms_pays_fr.Name = "txt_noms_pays_fr";
-            this.txt_noms_pays_fr.Size = new System.Drawing.Size(583, 44);
+            this.txt_noms_pays_fr.Size = new System.Drawing.Size(299, 44);
             this.txt_noms_pays_fr.TabIndex = 88;
             this.txt_noms_pays_fr.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -304,10 +304,10 @@
             this.txt_nom_pays_eng.LineIdleColor = System.Drawing.Color.White;
             this.txt_nom_pays_eng.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
             this.txt_nom_pays_eng.LineThickness = 1;
-            this.txt_nom_pays_eng.Location = new System.Drawing.Point(35, 109);
+            this.txt_nom_pays_eng.Location = new System.Drawing.Point(582, 56);
             this.txt_nom_pays_eng.Margin = new System.Windows.Forms.Padding(4);
             this.txt_nom_pays_eng.Name = "txt_nom_pays_eng";
-            this.txt_nom_pays_eng.Size = new System.Drawing.Size(370, 44);
+            this.txt_nom_pays_eng.Size = new System.Drawing.Size(299, 44);
             this.txt_nom_pays_eng.TabIndex = 87;
             this.txt_nom_pays_eng.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -316,7 +316,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.ClientSize = new System.Drawing.Size(1036, 581);
+            this.ClientSize = new System.Drawing.Size(1254, 581);
             this.Controls.Add(this.txt_noms_pays_fr);
             this.Controls.Add(this.txt_nom_pays_eng);
             this.Controls.Add(this.txt_capitale);
