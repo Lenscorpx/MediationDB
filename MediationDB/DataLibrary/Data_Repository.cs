@@ -5525,7 +5525,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void ajouter_pays(string code_pays, string nom_pays_eng, string id_localite, string id_projet)
+        public void ajouter_pays(string code_pays, string nom_pays_eng, string nom_pays_fr, string capitale)
         {
             cnx = new SqlConnection(prms.ToString());
             try
@@ -5538,8 +5538,8 @@ namespace MediationDB.DataLibrary
                 };
                 cmd.Parameters.Add(new SqlParameter("code_pays", SqlDbType.NVarChar)).Value = code_pays;
                 cmd.Parameters.Add(new SqlParameter("nom_pays_eng", SqlDbType.NVarChar)).Value = nom_pays_eng;
-                cmd.Parameters.Add(new SqlParameter("id_localite", SqlDbType.NVarChar)).Value = id_localite;
-                cmd.Parameters.Add(new SqlParameter("id_projet", SqlDbType.NVarChar)).Value = id_projet;
+                cmd.Parameters.Add(new SqlParameter("nom_pays_fr", SqlDbType.NVarChar)).Value = nom_pays_fr;
+                cmd.Parameters.Add(new SqlParameter("capitale", SqlDbType.NVarChar)).Value = capitale;
 
                 cmd.ExecuteNonQuery();
                 //var fr = new frm_membres();
