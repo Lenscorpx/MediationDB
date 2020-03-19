@@ -31,7 +31,17 @@ namespace MediationDB.FormLibrary
 
         private void btn_enregistrer_Click(object sender, EventArgs e)
         {
-
+            if(txt_code_pays.Text=="")
+            {
+                if(txt_capitale.Text==""||txt_noms_pays_fr.Text==""||txt_nom_pays_eng.Text=="")
+                {
+                    MessageBox.Show("Veuillez completer les cases manquantes!");
+                }
+                else
+                {
+                    rps.ajouter_pays(txt)
+                }
+            }
         }
     }
 }
