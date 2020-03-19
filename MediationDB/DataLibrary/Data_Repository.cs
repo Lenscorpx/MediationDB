@@ -5562,7 +5562,7 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
-        public void supprimer_pays(string code_pays, string nom_pays_eng, string id_localite, string id_projet)
+        public void supprimer_pays(string code_pays)
         {
             cnx = new SqlConnection(prms.ToString());
             try
