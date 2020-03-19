@@ -5532,7 +5532,7 @@ namespace MediationDB.DataLibrary
             {
                 if (cnx.State == ConnectionState.Closed)
                     cnx.Open();
-                var cmd = new SqlCommand("enregistrer_distribution", cnx)
+                var cmd = new SqlCommand("ajouter_pays", cnx)
                 {
                     CommandType = CommandType.StoredProcedure
                 };
@@ -5540,6 +5540,40 @@ namespace MediationDB.DataLibrary
                 cmd.Parameters.Add(new SqlParameter("nom_pays_eng", SqlDbType.NVarChar)).Value = nom_pays_eng;
                 cmd.Parameters.Add(new SqlParameter("id_localite", SqlDbType.NVarChar)).Value = id_localite;
                 cmd.Parameters.Add(new SqlParameter("id_projet", SqlDbType.NVarChar)).Value = id_projet;
+
+                cmd.ExecuteNonQuery();
+                //var fr = new frm_membres();
+                //fr.txt_id_menage.Text = id_menage;
+                //fr.ShowDialog();
+                //afficher_frais(dtg);
+                MessageBox.Show("Enregistrement avec succès!", "Enregistrement", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception tdf)
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show("Voulez vous voir le code d'erreur?", "Erreurs ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    MessageBox.Show(tdf.ToString());
+                }
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void supprimer_pays(string code_pays, string nom_pays_eng, string id_localite, string id_projet)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("supprimer_pays", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.Parameters.Add(new SqlParameter("code_pays", SqlDbType.NVarChar)).Value = code_pays;
 
                 cmd.ExecuteNonQuery();
                 //var fr = new frm_membres();
