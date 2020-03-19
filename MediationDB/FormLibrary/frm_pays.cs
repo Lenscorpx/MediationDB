@@ -28,5 +28,10 @@ namespace MediationDB.FormLibrary
         {
             this.Close();
         }
+
+        private void btn_enregistrer_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
