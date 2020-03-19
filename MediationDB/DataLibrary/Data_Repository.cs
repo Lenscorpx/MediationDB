@@ -5580,7 +5580,7 @@ namespace MediationDB.DataLibrary
                 //fr.txt_id_menage.Text = id_menage;
                 //fr.ShowDialog();
                 //afficher_frais(dtg);
-                MessageBox.Show("Enregistrement avec succès!", "Enregistrement", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Suppresion avec succès!", "Suppression", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception tdf)
             {
