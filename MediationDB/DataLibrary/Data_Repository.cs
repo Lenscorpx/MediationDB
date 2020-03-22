@@ -5523,6 +5523,7 @@ namespace MediationDB.DataLibrary
             finally
             {
                 cnx.Close(); cnx.Dispose();
+                MessageBox.Show("Chargement de la page réussi");
             }
         }
         public void ajouter_pays(string code_pays, string nom_pays_eng, string nom_pays_fr, string capitale)
