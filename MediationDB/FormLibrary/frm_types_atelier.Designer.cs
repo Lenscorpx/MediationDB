@@ -59,7 +59,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1036, 49);
+            this.panel1.Size = new System.Drawing.Size(1258, 49);
             this.panel1.TabIndex = 76;
             // 
             // pictureBox1
@@ -77,7 +77,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(289, 8);
+            this.label1.Location = new System.Drawing.Point(446, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(467, 30);
             this.label1.TabIndex = 8;
@@ -88,7 +88,7 @@
             this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.multiply_96px;
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(987, 8);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(1204, 8);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Size = new System.Drawing.Size(42, 34);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -109,7 +109,7 @@
             this.txt_description.LineIdleColor = System.Drawing.Color.White;
             this.txt_description.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
             this.txt_description.LineThickness = 1;
-            this.txt_description.Location = new System.Drawing.Point(440, 71);
+            this.txt_description.Location = new System.Drawing.Point(595, 73);
             this.txt_description.Margin = new System.Windows.Forms.Padding(4);
             this.txt_description.Name = "txt_description";
             this.txt_description.Size = new System.Drawing.Size(583, 44);
@@ -128,10 +128,10 @@
             this.txt_type_atelier.LineIdleColor = System.Drawing.Color.White;
             this.txt_type_atelier.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
             this.txt_type_atelier.LineThickness = 1;
-            this.txt_type_atelier.Location = new System.Drawing.Point(23, 71);
+            this.txt_type_atelier.Location = new System.Drawing.Point(86, 73);
             this.txt_type_atelier.Margin = new System.Windows.Forms.Padding(4);
             this.txt_type_atelier.Name = "txt_type_atelier";
-            this.txt_type_atelier.Size = new System.Drawing.Size(370, 44);
+            this.txt_type_atelier.Size = new System.Drawing.Size(488, 44);
             this.txt_type_atelier.TabIndex = 77;
             this.txt_type_atelier.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -181,7 +181,7 @@
             this.bunifuCustomDataGrid2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.bunifuCustomDataGrid2.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.bunifuCustomDataGrid2.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuCustomDataGrid2.Location = new System.Drawing.Point(0, 193);
+            this.bunifuCustomDataGrid2.Location = new System.Drawing.Point(0, 184);
             this.bunifuCustomDataGrid2.Name = "bunifuCustomDataGrid2";
             this.bunifuCustomDataGrid2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -201,7 +201,7 @@
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.bunifuCustomDataGrid2.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.bunifuCustomDataGrid2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuCustomDataGrid2.Size = new System.Drawing.Size(1036, 388);
+            this.bunifuCustomDataGrid2.Size = new System.Drawing.Size(1258, 397);
             this.bunifuCustomDataGrid2.TabIndex = 79;
             this.bunifuCustomDataGrid2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid2_CellContentClick);
             // 
@@ -229,7 +229,7 @@
             this.btn_supprimer.IconVisible = true;
             this.btn_supprimer.IconZoom = 70D;
             this.btn_supprimer.IsTab = true;
-            this.btn_supprimer.Location = new System.Drawing.Point(825, 136);
+            this.btn_supprimer.Location = new System.Drawing.Point(595, 127);
             this.btn_supprimer.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btn_supprimer.Name = "btn_supprimer";
             this.btn_supprimer.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
@@ -267,7 +267,7 @@
             this.btn_enregistrer.IconVisible = true;
             this.btn_enregistrer.IconZoom = 70D;
             this.btn_enregistrer.IsTab = true;
-            this.btn_enregistrer.Location = new System.Drawing.Point(626, 136);
+            this.btn_enregistrer.Location = new System.Drawing.Point(396, 127);
             this.btn_enregistrer.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btn_enregistrer.Name = "btn_enregistrer";
             this.btn_enregistrer.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
@@ -286,7 +286,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.ClientSize = new System.Drawing.Size(1036, 581);
+            this.ClientSize = new System.Drawing.Size(1258, 581);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txt_description);
             this.Controls.Add(this.txt_type_atelier);
