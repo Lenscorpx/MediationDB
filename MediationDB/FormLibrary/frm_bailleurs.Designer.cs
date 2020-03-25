@@ -34,7 +34,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuCustomDataGrid2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.txt_telephone = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txt_adresse = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -43,15 +45,13 @@
             this.dt_date_distribution = new MetroFramework.Controls.MetroDateTime();
             this.cbx_sexe = new MetroFramework.Controls.MetroComboBox();
             this.txt_noms = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txt_id_beneficiaire = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_id_bailleurs = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.btn_supprimer = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_enregistrer = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -66,6 +66,16 @@
             this.panel1.Size = new System.Drawing.Size(1300, 49);
             this.panel1.TabIndex = 35;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MediationDB.Properties.Resources.UNHABITAT_svg;
+            this.pictureBox1.Location = new System.Drawing.Point(7, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(203, 39);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 147;
+            this.pictureBox1.TabStop = false;
+            // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -77,6 +87,21 @@
             this.label1.Size = new System.Drawing.Size(454, 30);
             this.label1.TabIndex = 8;
             this.label1.Text = "Informations sur les bailleurs de fonds";
+            // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.multiply_96px;
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(1250, 7);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(42, 34);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton1.TabIndex = 7;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // bunifuCustomDataGrid2
             // 
@@ -258,25 +283,25 @@
             this.txt_noms.TabIndex = 93;
             this.txt_noms.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // txt_id_beneficiaire
+            // txt_id_bailleurs
             // 
-            this.txt_id_beneficiaire.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_id_beneficiaire.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_id_beneficiaire.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txt_id_beneficiaire.ForeColor = System.Drawing.Color.White;
-            this.txt_id_beneficiaire.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txt_id_beneficiaire.HintText = "Code du beneficiaire";
-            this.txt_id_beneficiaire.isPassword = false;
-            this.txt_id_beneficiaire.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_id_beneficiaire.LineIdleColor = System.Drawing.Color.White;
-            this.txt_id_beneficiaire.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
-            this.txt_id_beneficiaire.LineThickness = 4;
-            this.txt_id_beneficiaire.Location = new System.Drawing.Point(26, 57);
-            this.txt_id_beneficiaire.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_id_beneficiaire.Name = "txt_id_beneficiaire";
-            this.txt_id_beneficiaire.Size = new System.Drawing.Size(359, 44);
-            this.txt_id_beneficiaire.TabIndex = 92;
-            this.txt_id_beneficiaire.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_id_bailleurs.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_id_bailleurs.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_id_bailleurs.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_id_bailleurs.ForeColor = System.Drawing.Color.White;
+            this.txt_id_bailleurs.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_id_bailleurs.HintText = "ID du bailleur";
+            this.txt_id_bailleurs.isPassword = false;
+            this.txt_id_bailleurs.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.txt_id_bailleurs.LineIdleColor = System.Drawing.Color.White;
+            this.txt_id_bailleurs.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(72)))), ((int)(((byte)(65)))));
+            this.txt_id_bailleurs.LineThickness = 4;
+            this.txt_id_bailleurs.Location = new System.Drawing.Point(26, 57);
+            this.txt_id_bailleurs.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_id_bailleurs.Name = "txt_id_bailleurs";
+            this.txt_id_bailleurs.Size = new System.Drawing.Size(359, 44);
+            this.txt_id_bailleurs.TabIndex = 92;
+            this.txt_id_bailleurs.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // btn_supprimer
             // 
@@ -354,31 +379,6 @@
             this.btn_enregistrer.Textcolor = System.Drawing.Color.White;
             this.btn_enregistrer.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.multiply_96px;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(1250, 7);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(42, 34);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 7;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MediationDB.Properties.Resources.UNHABITAT_svg;
-            this.pictureBox1.Location = new System.Drawing.Point(7, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(203, 39);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 147;
-            this.pictureBox1.TabStop = false;
-            // 
             // frm_bailleurs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -395,7 +395,7 @@
             this.Controls.Add(this.dt_date_distribution);
             this.Controls.Add(this.cbx_sexe);
             this.Controls.Add(this.txt_noms);
-            this.Controls.Add(this.txt_id_beneficiaire);
+            this.Controls.Add(this.txt_id_bailleurs);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
@@ -406,9 +406,9 @@
             this.Text = "frm_bailleurs";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -429,7 +429,7 @@
         private MetroFramework.Controls.MetroDateTime dt_date_distribution;
         private MetroFramework.Controls.MetroComboBox cbx_sexe;
         public Bunifu.Framework.UI.BunifuMaterialTextbox txt_noms;
-        public Bunifu.Framework.UI.BunifuMaterialTextbox txt_id_beneficiaire;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox txt_id_bailleurs;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
