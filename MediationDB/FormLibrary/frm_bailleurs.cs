@@ -21,5 +21,10 @@ namespace MediationDB.FormLibrary
         {
             this.Close();
         }
+
+        private void txt_id_bailleurs_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
