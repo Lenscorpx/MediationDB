@@ -31,5 +31,10 @@ namespace MediationDB.FormLibrary
         {
 
         }
+
+        private void txt_adresse_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
