@@ -26,5 +26,10 @@ namespace MediationDB.FormLibrary
         {
 
         }
+
+        private void txt_noms_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
