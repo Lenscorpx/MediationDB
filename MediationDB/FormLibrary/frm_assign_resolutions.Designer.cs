@@ -34,7 +34,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.label2 = new System.Windows.Forms.Label();
             this.rtxt_descr = new System.Windows.Forms.RichTextBox();
             this.txt_num_details = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -46,12 +48,10 @@
             this.bunifuCustomDataGrid2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.btn_supprimer = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_enregistrer = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -66,6 +66,16 @@
             this.panel1.Size = new System.Drawing.Size(1300, 49);
             this.panel1.TabIndex = 8;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MediationDB.Properties.Resources.UNHABITAT_svg;
+            this.pictureBox1.Location = new System.Drawing.Point(7, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(203, 39);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 147;
+            this.pictureBox1.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -76,6 +86,20 @@
             this.label1.Size = new System.Drawing.Size(277, 22);
             this.label1.TabIndex = 8;
             this.label1.Text = "Informations sur les resolutions";
+            // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.multiply_96px;
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(1250, 8);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(42, 34);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton1.TabIndex = 7;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // label2
             // 
@@ -110,10 +134,10 @@
             this.txt_num_details.LineIdleColor = System.Drawing.Color.White;
             this.txt_num_details.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
             this.txt_num_details.LineThickness = 1;
-            this.txt_num_details.Location = new System.Drawing.Point(669, 56);
+            this.txt_num_details.Location = new System.Drawing.Point(208, 68);
             this.txt_num_details.Margin = new System.Windows.Forms.Padding(4);
             this.txt_num_details.Name = "txt_num_details";
-            this.txt_num_details.Size = new System.Drawing.Size(373, 44);
+            this.txt_num_details.Size = new System.Drawing.Size(187, 44);
             this.txt_num_details.TabIndex = 111;
             this.txt_num_details.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -130,16 +154,16 @@
             this.txt_num_conflit.LineIdleColor = System.Drawing.Color.White;
             this.txt_num_conflit.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
             this.txt_num_conflit.LineThickness = 1;
-            this.txt_num_conflit.Location = new System.Drawing.Point(248, 56);
+            this.txt_num_conflit.Location = new System.Drawing.Point(13, 68);
             this.txt_num_conflit.Margin = new System.Windows.Forms.Padding(4);
             this.txt_num_conflit.Name = "txt_num_conflit";
-            this.txt_num_conflit.Size = new System.Drawing.Size(398, 44);
+            this.txt_num_conflit.Size = new System.Drawing.Size(187, 44);
             this.txt_num_conflit.TabIndex = 110;
             this.txt_num_conflit.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // dt_date_resolution
             // 
-            this.dt_date_resolution.Location = new System.Drawing.Point(393, 107);
+            this.dt_date_resolution.Location = new System.Drawing.Point(540, 68);
             this.dt_date_resolution.MinimumSize = new System.Drawing.Size(0, 29);
             this.dt_date_resolution.Name = "dt_date_resolution";
             this.dt_date_resolution.Size = new System.Drawing.Size(253, 29);
@@ -153,7 +177,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(245, 115);
+            this.label3.Location = new System.Drawing.Point(402, 68);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(132, 17);
             this.label3.TabIndex = 117;
@@ -326,30 +350,6 @@
             this.btn_enregistrer.TextFont = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_enregistrer.Click += new System.EventHandler(this.btn_enregistrer_Click);
             // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.multiply_96px;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(1250, 8);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(42, 34);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 7;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MediationDB.Properties.Resources.UNHABITAT_svg;
-            this.pictureBox1.Location = new System.Drawing.Point(7, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(203, 39);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 147;
-            this.pictureBox1.TabStop = false;
-            // 
             // frm_assign_resolutions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -376,9 +376,9 @@
             this.Text = "frm_assign_resolutions";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
