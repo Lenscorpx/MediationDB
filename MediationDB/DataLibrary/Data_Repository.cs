@@ -33,7 +33,7 @@ namespace MediationDB.DataLibrary
             prms.Serveur = "DESKTOP-VIA78VL";
             prms.Base_de_donnees = "db_foncier";
             prms.Nom_user = "sa";
-            prms.Mot_de_passe = "Windy@2019.com?";
+            prms.Mot_de_passe = "Windy@2020.com?";
             //prms.Serveur = "DESKTOP-LSH2J11\\UNHABITAT_SERVER";
             //prms.Base_de_donnees = "db_foncier";
             //prms.Nom_user = "sa";
