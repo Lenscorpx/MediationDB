@@ -32,5 +32,10 @@ namespace MediationDB.ReportsLibrary
         {
             this.Close();
         }
+
+        private void documentViewer1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
