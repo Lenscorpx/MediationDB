@@ -163,7 +163,7 @@
             // 
             // dt_date_resolution
             // 
-            this.dt_date_resolution.Location = new System.Drawing.Point(581, 64);
+            this.dt_date_resolution.Location = new System.Drawing.Point(579, 100);
             this.dt_date_resolution.MinimumSize = new System.Drawing.Size(0, 29);
             this.dt_date_resolution.Name = "dt_date_resolution";
             this.dt_date_resolution.Size = new System.Drawing.Size(253, 29);
