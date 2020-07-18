@@ -26,10 +26,6 @@ namespace MediationDB.DataLibrary
             //prms.Base_de_donnees = "db_foncier";
             //prms.Nom_user = "Lens";
             //prms.Mot_de_passe = "unhabitat@@2020";
-            //prms.Serveur = "DESKTOP-PO0I2OH";
-            //prms.Base_de_donnees = "db_foncier";
-            //prms.Nom_user = "sa";
-            //prms.Mot_de_passe = "Windy@2019.com?";
             prms.Serveur = "DESKTOP-VIA78VL";
             prms.Base_de_donnees = "db_foncier";
             prms.Nom_user = "sa";
@@ -38,10 +34,6 @@ namespace MediationDB.DataLibrary
             //prms.Base_de_donnees = "db_foncier";
             //prms.Nom_user = "sa";
             //prms.Mot_de_passe = "UNH@PKA2020";
-            //prms.Serveur = "DESKTOP-NFR9KTI";
-            //prms.Base_de_donnees = "db_foncier";
-            //prms.Nom_user = "sa";
-            //prms.Mot_de_passe = "123456789";
 
         }
         public void afficher_mediateur(DataGridView dtg)
