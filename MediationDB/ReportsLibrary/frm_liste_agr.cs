@@ -17,6 +17,7 @@ namespace MediationDB.ReportsLibrary
         public frm_liste_agr()
         {
             InitializeComponent();
+            rps.liste_beneficiaires(documentViewer1);
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
