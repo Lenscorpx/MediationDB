@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MediationDB.DataLibrary;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace MediationDB.ReportsLibrary
 {
     public partial class frm_liste_agr : Form
     {
+        Data_Repository rps = new Data_Repository();
         public frm_liste_agr()
         {
             InitializeComponent();
