@@ -79,7 +79,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::MediationDB.Properties.Resources.UNHABITAT_svg;
-            this.pictureBox1.Location = new System.Drawing.Point(386, 485);
+            this.pictureBox1.Location = new System.Drawing.Point(507, 576);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(304, 79);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -100,11 +100,12 @@
             this.bunifuTileButton2.ImageZoom = 40;
             this.bunifuTileButton2.LabelPosition = 27;
             this.bunifuTileButton2.LabelText = "AGR";
-            this.bunifuTileButton2.Location = new System.Drawing.Point(657, 257);
+            this.bunifuTileButton2.Location = new System.Drawing.Point(712, 329);
             this.bunifuTileButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuTileButton2.Name = "bunifuTileButton2";
-            this.bunifuTileButton2.Size = new System.Drawing.Size(249, 154);
+            this.bunifuTileButton2.Size = new System.Drawing.Size(473, 240);
             this.bunifuTileButton2.TabIndex = 82;
+            this.bunifuTileButton2.Click += new System.EventHandler(this.bunifuTileButton2_Click);
             // 
             // btn_conflits
             // 
@@ -120,10 +121,10 @@
             this.btn_conflits.ImageZoom = 40;
             this.btn_conflits.LabelPosition = 27;
             this.btn_conflits.LabelText = "Rapport détaillé sur les conflits";
-            this.btn_conflits.Location = new System.Drawing.Point(143, 257);
+            this.btn_conflits.Location = new System.Drawing.Point(115, 71);
             this.btn_conflits.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_conflits.Name = "btn_conflits";
-            this.btn_conflits.Size = new System.Drawing.Size(249, 154);
+            this.btn_conflits.Size = new System.Drawing.Size(473, 240);
             this.btn_conflits.TabIndex = 78;
             this.btn_conflits.Click += new System.EventHandler(this.btn_conflits_Click);
             // 
@@ -141,10 +142,10 @@
             this.btn_mediateurs.ImageZoom = 40;
             this.btn_mediateurs.LabelPosition = 27;
             this.btn_mediateurs.LabelText = "Rapports sur les beneficiaires";
-            this.btn_mediateurs.Location = new System.Drawing.Point(914, 257);
+            this.btn_mediateurs.Location = new System.Drawing.Point(115, 329);
             this.btn_mediateurs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_mediateurs.Name = "btn_mediateurs";
-            this.btn_mediateurs.Size = new System.Drawing.Size(249, 154);
+            this.btn_mediateurs.Size = new System.Drawing.Size(473, 240);
             this.btn_mediateurs.TabIndex = 77;
             // 
             // btn_sensibilisations
@@ -161,10 +162,10 @@
             this.btn_sensibilisations.ImageZoom = 40;
             this.btn_sensibilisations.LabelPosition = 27;
             this.btn_sensibilisations.LabelText = "Rapport sur les sensibilisations";
-            this.btn_sensibilisations.Location = new System.Drawing.Point(400, 257);
+            this.btn_sensibilisations.Location = new System.Drawing.Point(712, 71);
             this.btn_sensibilisations.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_sensibilisations.Name = "btn_sensibilisations";
-            this.btn_sensibilisations.Size = new System.Drawing.Size(249, 154);
+            this.btn_sensibilisations.Size = new System.Drawing.Size(473, 240);
             this.btn_sensibilisations.TabIndex = 76;
             this.btn_sensibilisations.Click += new System.EventHandler(this.btn_sensibilisations_Click);
             // 
