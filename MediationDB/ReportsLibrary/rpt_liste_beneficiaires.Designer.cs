@@ -217,7 +217,7 @@
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.label1});
             this.ReportHeader.Dpi = 254F;
-            this.ReportHeader.HeightF = 152.4F;
+            this.ReportHeader.HeightF = 107.9499F;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // GroupHeader1
@@ -258,20 +258,19 @@
             // 
             // GroupHeader4
             // 
-            this.GroupHeader4.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table4});
             this.GroupHeader4.Dpi = 254F;
             this.GroupHeader4.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader4.HeightF = 71.12F;
+            this.GroupHeader4.HeightF = 20.84894F;
             this.GroupHeader4.Level = 4;
             this.GroupHeader4.Name = "GroupHeader4";
             // 
             // Detail
             // 
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.table4,
             this.table5});
             this.Detail.Dpi = 254F;
-            this.Detail.HeightF = 63.42F;
+            this.Detail.HeightF = 288.2096F;
             this.Detail.HierarchyPrintOptions.Indent = 50.8F;
             this.Detail.Name = "Detail";
             // 
@@ -306,11 +305,17 @@
             // label1
             // 
             this.label1.Dpi = 254F;
-            this.label1.LocationFloat = new DevExpress.Utils.PointFloat(16F, 16F);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.LocationFloat = new DevExpress.Utils.PointFloat(16.00001F, 15.99999F);
             this.label1.Name = "label1";
-            this.label1.SizeF = new System.Drawing.SizeF(2838F, 61.45361F);
+            this.label1.SizeF = new System.Drawing.SizeF(2838F, 85.26611F);
             this.label1.StyleName = "Title";
+            this.label1.StylePriority.UseFont = false;
+            this.label1.StylePriority.UseForeColor = false;
+            this.label1.StylePriority.UseTextAlignment = false;
             this.label1.Text = "Liste des bénéficiaires d\'AGR";
+            this.label1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // table1
             // 
@@ -523,7 +528,7 @@
             // table5
             // 
             this.table5.Dpi = 254F;
-            this.table5.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.table5.LocationFloat = new DevExpress.Utils.PointFloat(0F, 224.7896F);
             this.table5.Name = "table5";
             this.table5.OddStyleName = "DetailData3_Odd";
             this.table5.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
