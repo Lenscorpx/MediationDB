@@ -27,7 +27,7 @@ namespace MediationDB.ReportsLibrary
         }
         private void refresh()
         {
-            rps.liste_conflits_par_groupements(documentViewer1);
+            rps.liste_beneficiaires(documentViewer1);
         }
     }
 }
