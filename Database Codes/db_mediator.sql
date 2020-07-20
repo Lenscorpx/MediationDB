@@ -3338,7 +3338,11 @@ select
 	t_distribution.id_agr, 
 	t_agr.description_agr, 
 	t_distribution.qte, 
-    t_distribution.valeur, t_agr.id_categorie, t_assignation_beneficiaires.id_beneficiaire, t_beneficiaires.noms, t_beneficiaires.sexe
+    t_distribution.valeur, 
+	t_agr.id_categorie, 
+	t_assignation_beneficiaires.id_beneficiaire, 
+	t_beneficiaires.noms, 
+	t_beneficiaires.sexe
 from            t_agr inner join
                          t_categorie_agr on t_agr.id_categorie = t_categorie_agr.id_categorie inner join
                          t_distribution on t_agr.id_agr = t_distribution.id_agr inner join
