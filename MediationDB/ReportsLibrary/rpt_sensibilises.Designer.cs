@@ -467,9 +467,9 @@
             // 
             // xrLabel2
             // 
-            this.xrLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(129)))), ((int)(((byte)(249)))));
-            this.xrLabel2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel2.ForeColor = System.Drawing.Color.White;
+            this.xrLabel2.BackColor = System.Drawing.Color.White;
+            this.xrLabel2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrLabel2.ForeColor = System.Drawing.Color.Black;
             this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(252.5661F, 135.2084F);
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.SizeF = new System.Drawing.SizeF(588.9865F, 54.41666F);
@@ -478,7 +478,7 @@
             this.xrLabel2.StylePriority.UseFont = false;
             this.xrLabel2.StylePriority.UseForeColor = false;
             this.xrLabel2.StylePriority.UseTextAlignment = false;
-            this.xrLabel2.Text = "ZONE PRIORITAIRE DE KITSHANGA";
+            this.xrLabel2.Text = "Zone prioritaire autour de Kitshanga";
             this.xrLabel2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // BottomMargin
@@ -514,11 +514,11 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(129)))), ((int)(((byte)(249)))));
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.LocationFloat = new DevExpress.Utils.PointFloat(317.968F, 195.639F);
+            this.label1.LocationFloat = new DevExpress.Utils.PointFloat(386.381F, 207.0973F);
             this.label1.Name = "label1";
-            this.label1.SizeF = new System.Drawing.SizeF(463.7069F, 25.65276F);
+            this.label1.SizeF = new System.Drawing.SizeF(348.667F, 25.65276F);
             this.label1.StyleName = "Title";
             this.label1.StylePriority.UseBackColor = false;
             this.label1.StylePriority.UseFont = false;
