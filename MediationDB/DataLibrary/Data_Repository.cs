@@ -5602,7 +5602,7 @@ namespace MediationDB.DataLibrary
                 };
                 cmd.ExecuteNonQuery();
                 var da = new SqlDataAdapter(cmd);
-                var rpt = new rpt_sensibilises();
+                var rpt = new rpt_liste_beneficiaires();
                 DataSet dt = new DataSet();
                 da.Fill(dt, "liste_beneficiaires");
                 rpt.DataSource = dt;
