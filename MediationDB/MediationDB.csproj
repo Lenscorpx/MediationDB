@@ -402,6 +402,12 @@
     <Compile Include="ReportsLibrary\rpt_conflits.Designer.cs">
       <DependentUpon>rpt_conflits.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReportsLibrary\rpt_liste_beneficiaires.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLibrary\rpt_liste_beneficiaires.Designer.cs">
+      <DependentUpon>rpt_liste_beneficiaires.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportsLibrary\rpt_liste_menages_detailles_conflit_par_dates.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -580,6 +586,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReportsLibrary\rpt_conflits.resx">
       <DependentUpon>rpt_conflits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLibrary\rpt_liste_beneficiaires.resx">
+      <DependentUpon>rpt_liste_beneficiaires.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportsLibrary\rpt_liste_menages_detailles_conflit_par_dates.resx">
       <DependentUpon>rpt_liste_menages_detailles_conflit_par_dates.cs</DependentUpon>
