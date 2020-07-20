@@ -3330,22 +3330,33 @@ from            t_localite inner join
 GO
 create procedure liste_beneficiaires
 as
-select
-	t_distribution.code_distribution, 
-	t_distribution.date_distribution, 
-	t_distribution.id_localite, 
-	t_executants.id_executant, 
-	t_distribution.id_agr, 
-	t_agr.description_agr, 
-	t_distribution.qte, 
-    t_distribution.valeur, 
-	t_agr.id_categorie, 
-	t_assignation_beneficiaires.id_beneficiaire, 
-	t_beneficiaires.noms, 
-	t_beneficiaires.sexe
-from            t_agr inner join
-                         t_categorie_agr on t_agr.id_categorie = t_categorie_agr.id_categorie inner join
-                         t_distribution on t_agr.id_agr = t_distribution.id_agr inner join
-                         t_assignation_beneficiaires on t_distribution.code_distribution = t_assignation_beneficiaires.code_distribution inner join
-                         t_executants on t_distribution.id_executant = t_executants.id_executant inner join
-                         t_beneficiaires on t_assignation_beneficiaires.id_beneficiaire = t_beneficiaires.id_beneficiaire
+	select
+		t_distribution.code_distribution, 
+		t_distribution.date_distribution, 
+		t_distribution.id_localite, 
+		t_executants.id_executant, 
+		t_distribution.id_agr, 
+		t_agr.description_agr, 
+		t_distribution.qte, 
+		t_distribution.valeur, 
+		t_agr.id_categorie, 
+		t_assignation_beneficiaires.id_beneficiaire, 
+		t_beneficiaires.noms, 
+		t_beneficiaires.sexe
+	from            
+		t_agr inner join
+					t_categorie_agr on 
+						t_agr.id_categorie = t_categorie_agr.id_categorie 
+					inner join
+					t_distribution on 
+						t_agr.id_agr = t_distribution.id_agr 
+					inner join
+					t_assignation_beneficiaires on 
+						t_distribution.code_distribution = t_assignation_beneficiaires.code_distribution 
+					inner join
+					t_executants on 
+						t_distribution.id_executant = t_executants.id_executant 
+					inner join
+					t_beneficiaires on 
+						t_assignation_beneficiaires.id_beneficiaire = t_beneficiaires.id_beneficiaire
+go
