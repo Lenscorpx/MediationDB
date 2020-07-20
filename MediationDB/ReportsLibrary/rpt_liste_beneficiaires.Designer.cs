@@ -206,6 +206,7 @@
             // GroupHeader1
             // 
             this.GroupHeader1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLabel18,
             this.xrLabel3,
             this.xrLabel9});
             this.GroupHeader1.Dpi = 254F;
@@ -252,7 +253,6 @@
             // Detail
             // 
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrLabel18,
             this.xrLabel2,
             this.xrLabel4,
             this.xrLabel5,
@@ -267,7 +267,7 @@
             this.xrLabel15,
             this.xrLabel16});
             this.Detail.Dpi = 254F;
-            this.Detail.HeightF = 578.9591F;
+            this.Detail.HeightF = 478.4171F;
             this.Detail.HierarchyPrintOptions.Indent = 50.8F;
             this.Detail.Name = "Detail";
             // 
@@ -897,7 +897,7 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[id_localite]")});
             this.xrLabel18.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrLabel18.ForeColor = System.Drawing.Color.White;
-            this.xrLabel18.LocationFloat = new DevExpress.Utils.PointFloat(1897.503F, 482.7292F);
+            this.xrLabel18.LocationFloat = new DevExpress.Utils.PointFloat(1238.691F, 12.04206F);
             this.xrLabel18.Name = "xrLabel18";
             this.xrLabel18.Padding = new DevExpress.XtraPrinting.PaddingInfo(15, 5, 0, 0, 254F);
             this.xrLabel18.SizeF = new System.Drawing.SizeF(833.7262F, 63.49999F);
