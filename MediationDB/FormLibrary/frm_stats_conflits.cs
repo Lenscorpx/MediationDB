@@ -222,5 +222,10 @@ namespace MediationDB.FormLibrary
             rps.stats_garcons_conflit_resolus_parperiode(txt_garcons_classes, "Classé", dt_resol_1.Value, dt_resol_2.Value);
             rps.stats_garcons_conflit_resolus_parperiode(txt_garcons_encours, "En cours", dt_resol_1.Value, dt_resol_2.Value);
         }
+
+        private void bunifuImageButton3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
