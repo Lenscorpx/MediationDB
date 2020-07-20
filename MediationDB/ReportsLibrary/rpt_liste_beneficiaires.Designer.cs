@@ -186,10 +186,11 @@
             // TopMargin
             // 
             this.TopMargin.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.label1,
             this.xrPictureBox2,
             this.xrPictureBox1});
             this.TopMargin.Dpi = 254F;
-            this.TopMargin.HeightF = 343.4294F;
+            this.TopMargin.HeightF = 486.3043F;
             this.TopMargin.Name = "TopMargin";
             // 
             // BottomMargin
@@ -203,10 +204,8 @@
             // 
             // ReportHeader
             // 
-            this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.label1});
             this.ReportHeader.Dpi = 254F;
-            this.ReportHeader.HeightF = 107.9499F;
+            this.ReportHeader.HeightF = 10.58309F;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // GroupHeader1
@@ -305,11 +304,11 @@
             // label1
             // 
             this.label1.Dpi = 254F;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.LocationFloat = new DevExpress.Utils.PointFloat(16.00001F, 15.99999F);
+            this.label1.LocationFloat = new DevExpress.Utils.PointFloat(668.8019F, 362.809F);
             this.label1.Name = "label1";
-            this.label1.SizeF = new System.Drawing.SizeF(2838F, 85.26611F);
+            this.label1.SizeF = new System.Drawing.SizeF(1639.438F, 85.26611F);
             this.label1.StyleName = "Title";
             this.label1.StylePriority.UseFont = false;
             this.label1.StylePriority.UseForeColor = false;
@@ -853,7 +852,7 @@
             this.Dpi = 254F;
             this.Font = new System.Drawing.Font("Arial", 9.75F);
             this.Landscape = true;
-            this.Margins = new System.Drawing.Printing.Margins(50, 50, 343, 150);
+            this.Margins = new System.Drawing.Printing.Margins(50, 50, 486, 150);
             this.PageHeight = 2100;
             this.PageWidth = 2970;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
