@@ -5589,5 +5589,41 @@ namespace MediationDB.DataLibrary
                 cnx.Close(); cnx.Dispose();
             }
         }
+        public void liste_beneficiaires(DocumentViewer dcv)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("liste_beneficiaires", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var rpt = new rpt_sensibilises();
+                DataSet dt = new DataSet();
+                da.Fill(dt, "liste_beneficiaires");
+                rpt.DataSource = dt;
+                //rpt.SetDataSource(dt.Tables["rechercher_pay_bill"]);                    
+                dcv.DocumentSource = rpt;
+                rpt.CreateDocument();
+                dcv.Refresh();
+            }
+            catch (Exception exct)
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show("Want to see error code?", "Errors ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    MessageBox.Show(exct.ToString());
+                }
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
     }
 }
