@@ -3315,16 +3315,33 @@ go
 ------------ 2. End of block -----------------------------------------------------------------------------------------------------------------
 create procedure liste_sensibilises
 as
-SELECT        dbo.t_sensibilisation.num_sensibilisation, dbo.t_sensibilisation.date_debut, dbo.t_sensibilisation.date_fin, dbo.t_sensibilisation.id_localite, dbo.t_localite.id_groupement, dbo.t_groupement.id_chefferie, 
-                         dbo.t_chefferie.id_territoire, dbo.t_territoire.id_province, dbo.t_atelier_masse.num_atelier_masse, dbo.t_atelier_masse.noms_sensibilisateur, dbo.t_atelier_masse.nbre_hommes, dbo.t_atelier_masse.nbre_femmes, 
-                         dbo.t_atelier_masse.nbre_filles, dbo.t_atelier_masse.nbre_garcons, dbo.t_atelier_masse.nbre_autorite_femmes, dbo.t_atelier_masse.nbre_autorite_hommes, dbo.t_atelier_masse.nbre_menages_deplaces, 
-                         dbo.t_atelier_masse.nbre_menages_retournes, dbo.t_atelier_masse.nbre_menages_locaux, dbo.t_atelier_masse.nbre_menages_rapatrie, dbo.t_atelier_masse.telephone_sensibilisateur, 
-                         dbo.t_atelier_masse.theme_developpe
-FROM            dbo.t_localite INNER JOIN
-                         dbo.t_sensibilisation ON dbo.t_localite.id_localite = dbo.t_sensibilisation.id_localite INNER JOIN
-                         dbo.t_groupement ON dbo.t_localite.id_groupement = dbo.t_groupement.id_groupement INNER JOIN
-                         dbo.t_chefferie ON dbo.t_groupement.id_chefferie = dbo.t_chefferie.id_chefferie INNER JOIN
-                         dbo.t_territoire ON dbo.t_chefferie.id_territoire = dbo.t_territoire.id_territoire INNER JOIN
-                         dbo.t_province ON dbo.t_territoire.id_province = dbo.t_province.id_province INNER JOIN
-                         dbo.t_atelier_masse ON dbo.t_sensibilisation.num_sensibilisation = dbo.t_atelier_masse.num_sensibilisation
+select        t_sensibilisation.num_sensibilisation, t_sensibilisation.date_debut, t_sensibilisation.date_fin, t_sensibilisation.id_localite, t_localite.id_groupement, t_groupement.id_chefferie, 
+                         t_chefferie.id_territoire, t_territoire.id_province, t_atelier_masse.num_atelier_masse, t_atelier_masse.noms_sensibilisateur, t_atelier_masse.nbre_hommes, t_atelier_masse.nbre_femmes, 
+                         t_atelier_masse.nbre_filles, t_atelier_masse.nbre_garcons, t_atelier_masse.nbre_autorite_femmes, t_atelier_masse.nbre_autorite_hommes, t_atelier_masse.nbre_menages_deplaces, 
+                         t_atelier_masse.nbre_menages_retournes, t_atelier_masse.nbre_menages_locaux, t_atelier_masse.nbre_menages_rapatrie, t_atelier_masse.telephone_sensibilisateur, 
+                         t_atelier_masse.theme_developpe
+from            t_localite inner join
+                         t_sensibilisation on t_localite.id_localite = t_sensibilisation.id_localite inner join
+                         t_groupement on t_localite.id_groupement = t_groupement.id_groupement inner join
+                         t_chefferie on t_groupement.id_chefferie = t_chefferie.id_chefferie inner join
+                         t_territoire on t_chefferie.id_territoire = t_territoire.id_territoire inner join
+                         t_province on t_territoire.id_province = t_province.id_province inner join
+                         t_atelier_masse on t_sensibilisation.num_sensibilisation = t_atelier_masse.num_sensibilisation
 GO
+create procedure liste_beneficiaires
+as
+select
+	t_distribution.code_distribution, 
+	t_distribution.date_distribution, 
+	t_distribution.id_localite, 
+	t_executants.id_executant, 
+	t_distribution.id_agr, 
+	t_agr.description_agr, 
+	t_distribution.qte, 
+    t_distribution.valeur, t_agr.id_categorie, t_assignation_beneficiaires.id_beneficiaire, t_beneficiaires.noms, t_beneficiaires.sexe
+from            t_agr inner join
+                         t_categorie_agr on t_agr.id_categorie = t_categorie_agr.id_categorie inner join
+                         t_distribution on t_agr.id_agr = t_distribution.id_agr inner join
+                         t_assignation_beneficiaires on t_distribution.code_distribution = t_assignation_beneficiaires.code_distribution inner join
+                         t_executants on t_distribution.id_executant = t_executants.id_executant inner join
+                         t_beneficiaires on t_assignation_beneficiaires.id_beneficiaire = t_beneficiaires.id_beneficiaire
