@@ -98,6 +98,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControlLibrary\uc_test.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlLibrary\uc_test.Designer.cs">
+      <DependentUpon>uc_test.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataLibrary\Data_Repository.cs" />
     <Compile Include="DataLibrary\Params.cs" />
     <Compile Include="FormLibrary\frm_accueil.cs">
@@ -770,9 +776,7 @@
     <None Include="Resources\split_horizontal_80px.png" />
     <None Include="Resources\racism_80px1.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ControlLibrary\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
