@@ -48,6 +48,7 @@ select id_beneficiaire, CODE_AGR_COLLECTIF from Tempo_WOA
         CODE_AGR_COLLECTIF is not null
 
 select * from t_beneficiaires
+
 insert into t_beneficiaires
     (id_beneficiaire,noms,sexe,vulnerabilite,date_naissance,adresse)
 select id_beneficiaire, noms, SEXE, VULNERABILITE, DATE_NAISSANCE, ADRESSE_PHYSIQUE from Tempo_WOA
