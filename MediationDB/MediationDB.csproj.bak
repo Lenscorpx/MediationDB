@@ -1,0 +1,776 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.props" Condition="Exists('..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0D5E0D67-69D2-480D-8503-F5943CD7DC47}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MediationDB</RootNamespace>
+    <AssemblyName>MediationDB</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>MediationDB.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>mediationlogo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BunifuDataViz">
+      <HintPath>..\..\..\..\..\Downloads\Bunifu-Dataviz-Advanced-1.1.1.5_ShareAppsCrack.com\Bunifu Dataviz Advanced 1.1.1.5\BunifuDataViz.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\..\Downloads\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v19.1.Core, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v19.1.Core, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v19.1.Core, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v19.1.Core, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v19.1.Core, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.1.Core, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.1.Export, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v19.1.Core, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.1.UI, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.1.UI, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.1.Wizard, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v19.1.Core, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.1.Extensions, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="LiveCharts">
+      <HintPath>..\..\..\..\..\Desktop\Mes Frameworks\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms">
+      <HintPath>..\..\..\..\..\Desktop\Mes Frameworks\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin">
+      <HintPath>H:\Data Center\Projects Datas\CodeLabs\Mes Frameworks\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>H:\Data Center\Projects Datas\CodeLabs\Mes Frameworks\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.2.4.0.280\lib\netstandard1.0\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.2.4.0.280\lib\netstandard1.0\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.2.4.0.280\lib\netstandard1.0\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataLibrary\Data_Repository.cs" />
+    <Compile Include="DataLibrary\Params.cs" />
+    <Compile Include="FormLibrary\frm_accueil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_accueil.Designer.cs">
+      <DependentUpon>frm_accueil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_assignation_bailleurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_assignation_bailleurs.Designer.cs">
+      <DependentUpon>frm_assignation_bailleurs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_assign_resolutions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_assign_resolutions.Designer.cs">
+      <DependentUpon>frm_assign_resolutions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_atelier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_atelier.Designer.cs">
+      <DependentUpon>frm_atelier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_atelier_masse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_atelier_masse.Designer.cs">
+      <DependentUpon>frm_atelier_masse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_bailleurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_bailleurs.Designer.cs">
+      <DependentUpon>frm_bailleurs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_beneficiaires.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_beneficiaires.Designer.cs">
+      <DependentUpon>frm_beneficiaires.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_causes_conflit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_causes_conflit.Designer.cs">
+      <DependentUpon>frm_causes_conflit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_conflit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_conflit.Designer.cs">
+      <DependentUpon>frm_conflit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_dash_agr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_dash_agr.Designer.cs">
+      <DependentUpon>frm_dash_agr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_dash_parameters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_dash_parameters.Designer.cs">
+      <DependentUpon>frm_dash_parameters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_dash_recherches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_dash_recherches.Designer.cs">
+      <DependentUpon>frm_dash_recherches.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_dash_reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_dash_reports.Designer.cs">
+      <DependentUpon>frm_dash_reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_details_causes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_details_causes.Designer.cs">
+      <DependentUpon>frm_details_causes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_details_conflit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_details_conflit.Designer.cs">
+      <DependentUpon>frm_details_conflit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_details_objets_conflits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_details_objets_conflits.Designer.cs">
+      <DependentUpon>frm_details_objets_conflits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_details_parties_conflits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_details_parties_conflits.Designer.cs">
+      <DependentUpon>frm_details_parties_conflits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_distribution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_distribution.Designer.cs">
+      <DependentUpon>frm_distribution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_etat_participant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_etat_participant.Designer.cs">
+      <DependentUpon>frm_etat_participant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_evolution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_evolution.Designer.cs">
+      <DependentUpon>frm_evolution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_help.Designer.cs">
+      <DependentUpon>frm_help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_login.Designer.cs">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_mediateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_mediateur.Designer.cs">
+      <DependentUpon>frm_mediateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_mediation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_mediation.Designer.cs">
+      <DependentUpon>frm_mediation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_membres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_membres.Designer.cs">
+      <DependentUpon>frm_membres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_menages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_menages.Designer.cs">
+      <DependentUpon>frm_menages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_menu.Designer.cs">
+      <DependentUpon>frm_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_nature_conflit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_nature_conflit.Designer.cs">
+      <DependentUpon>frm_nature_conflit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_objet_conflit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_objet_conflit.Designer.cs">
+      <DependentUpon>frm_objet_conflit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_organisations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_organisations.Designer.cs">
+      <DependentUpon>frm_organisations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_organisation_atelier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_organisation_atelier.Designer.cs">
+      <DependentUpon>frm_organisation_atelier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_pays.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_pays.Designer.cs">
+      <DependentUpon>frm_pays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_reports.Designer.cs">
+      <DependentUpon>frm_reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_report_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_report_dashboard.Designer.cs">
+      <DependentUpon>frm_report_dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_resolutions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_resolutions.Designer.cs">
+      <DependentUpon>frm_resolutions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_search_ateliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_search_ateliers.Designer.cs">
+      <DependentUpon>frm_search_ateliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_search_sensibilisation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_search_sensibilisation.Designer.cs">
+      <DependentUpon>frm_search_sensibilisation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_sensibilisation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_sensibilisation.Designer.cs">
+      <DependentUpon>frm_sensibilisation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_situation_menage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_situation_menage.Designer.cs">
+      <DependentUpon>frm_situation_menage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_splash.Designer.cs">
+      <DependentUpon>frm_splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_stats_conflits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_stats_conflits.Designer.cs">
+      <DependentUpon>frm_stats_conflits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_stats_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_stats_dashboard.Designer.cs">
+      <DependentUpon>frm_stats_dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_types_atelier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_types_atelier.Designer.cs">
+      <DependentUpon>frm_types_atelier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_types_partie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_types_partie.Designer.cs">
+      <DependentUpon>frm_types_partie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_type_conflit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_type_conflit.Designer.cs">
+      <DependentUpon>frm_type_conflit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary\frm_vulnerabilite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary\frm_vulnerabilite.Designer.cs">
+      <DependentUpon>frm_vulnerabilite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportsLibrary\frm_report_conflits_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsLibrary\frm_report_conflits_list.Designer.cs">
+      <DependentUpon>frm_report_conflits_list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsLibrary\frm_report_infos_general.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsLibrary\frm_report_infos_general.Designer.cs">
+      <DependentUpon>frm_report_infos_general.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsLibrary\frm_sensibilises.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsLibrary\frm_sensibilises.Designer.cs">
+      <DependentUpon>frm_sensibilises.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsLibrary\rpt_conflits.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLibrary\rpt_conflits.Designer.cs">
+      <DependentUpon>rpt_conflits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsLibrary\rpt_liste_menages_detailles_conflit_par_dates.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLibrary\rpt_liste_menages_detailles_conflit_par_dates.Designer.cs">
+      <DependentUpon>rpt_liste_menages_detailles_conflit_par_dates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsLibrary\rpt_rapport_general_sur_conflit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLibrary\rpt_rapport_general_sur_conflit.Designer.cs">
+      <DependentUpon>rpt_rapport_general_sur_conflit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsLibrary\rpt_sensibilises.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportsLibrary\rpt_sensibilises.Designer.cs">
+      <DependentUpon>rpt_sensibilises.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormLibrary\frm_accueil.resx">
+      <DependentUpon>frm_accueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_assignation_bailleurs.resx">
+      <DependentUpon>frm_assignation_bailleurs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_assign_resolutions.resx">
+      <DependentUpon>frm_assign_resolutions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_atelier.resx">
+      <DependentUpon>frm_atelier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_atelier_masse.resx">
+      <DependentUpon>frm_atelier_masse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_bailleurs.resx">
+      <DependentUpon>frm_bailleurs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_beneficiaires.resx">
+      <DependentUpon>frm_beneficiaires.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_causes_conflit.resx">
+      <DependentUpon>frm_causes_conflit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_conflit.resx">
+      <DependentUpon>frm_conflit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_dash_agr.resx">
+      <DependentUpon>frm_dash_agr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_dash_parameters.resx">
+      <DependentUpon>frm_dash_parameters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_dash_recherches.resx">
+      <DependentUpon>frm_dash_recherches.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_dash_reports.resx">
+      <DependentUpon>frm_dash_reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_details_causes.resx">
+      <DependentUpon>frm_details_causes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_details_conflit.resx">
+      <DependentUpon>frm_details_conflit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_details_objets_conflits.resx">
+      <DependentUpon>frm_details_objets_conflits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_details_parties_conflits.resx">
+      <DependentUpon>frm_details_parties_conflits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_distribution.resx">
+      <DependentUpon>frm_distribution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_etat_participant.resx">
+      <DependentUpon>frm_etat_participant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_evolution.resx">
+      <DependentUpon>frm_evolution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_help.resx">
+      <DependentUpon>frm_help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_login.resx">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_mediateur.resx">
+      <DependentUpon>frm_mediateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_mediation.resx">
+      <DependentUpon>frm_mediation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_membres.resx">
+      <DependentUpon>frm_membres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_menages.resx">
+      <DependentUpon>frm_menages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_menu.resx">
+      <DependentUpon>frm_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_nature_conflit.resx">
+      <DependentUpon>frm_nature_conflit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_objet_conflit.resx">
+      <DependentUpon>frm_objet_conflit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_organisations.resx">
+      <DependentUpon>frm_organisations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_organisation_atelier.resx">
+      <DependentUpon>frm_organisation_atelier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_pays.resx">
+      <DependentUpon>frm_pays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_reports.resx">
+      <DependentUpon>frm_reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_report_dashboard.resx">
+      <DependentUpon>frm_report_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_resolutions.resx">
+      <DependentUpon>frm_resolutions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_search_ateliers.resx">
+      <DependentUpon>frm_search_ateliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_search_sensibilisation.resx">
+      <DependentUpon>frm_search_sensibilisation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_sensibilisation.resx">
+      <DependentUpon>frm_sensibilisation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_situation_menage.resx">
+      <DependentUpon>frm_situation_menage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_splash.resx">
+      <DependentUpon>frm_splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_stats_conflits.resx">
+      <DependentUpon>frm_stats_conflits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_stats_dashboard.resx">
+      <DependentUpon>frm_stats_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_types_atelier.resx">
+      <DependentUpon>frm_types_atelier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_types_partie.resx">
+      <DependentUpon>frm_types_partie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_type_conflit.resx">
+      <DependentUpon>frm_type_conflit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary\frm_vulnerabilite.resx">
+      <DependentUpon>frm_vulnerabilite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportsLibrary\frm_report_conflits_list.resx">
+      <DependentUpon>frm_report_conflits_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLibrary\frm_report_infos_general.resx">
+      <DependentUpon>frm_report_infos_general.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLibrary\frm_sensibilises.resx">
+      <DependentUpon>frm_sensibilises.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLibrary\rpt_conflits.resx">
+      <DependentUpon>rpt_conflits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLibrary\rpt_liste_menages_detailles_conflit_par_dates.resx">
+      <DependentUpon>rpt_liste_menages_detailles_conflit_par_dates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLibrary\rpt_rapport_general_sur_conflit.resx">
+      <DependentUpon>rpt_rapport_general_sur_conflit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsLibrary\rpt_sensibilises.resx">
+      <DependentUpon>rpt_sensibilises.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speed_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mediator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mediator-red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_trash_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiply_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\collaboration_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\handshake_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\racism_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\strike_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\family_man_woman_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_groups_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\presentation_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\services_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\strike_80px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_property_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speaker_notes_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_slide_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\idea_sharing_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiply_96px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LOGO-SCC-2019-PNG.ico" />
+    <Content Include="mediationlogo.ico" />
+    <Content Include="mediator.ico" />
+    <None Include="Resources\partner.png" />
+    <None Include="Resources\IMG_0425.JPG" />
+    <None Include="Resources\WIN_20180203_002135.JPG" />
+    <None Include="Resources\IMG_07172.JPG" />
+    <None Include="Resources\IMG_07171.JPG" />
+    <None Include="Resources\settings.png" />
+    <None Include="Resources\un-un-habitat-1.jpg" />
+    <None Include="Resources\UNHABITAT.svg1.png" />
+    <None Include="Resources\IMG_05071.JPG" />
+    <None Include="Resources\IMG_0507.JPG" />
+    <None Include="Resources\IMG_0717.JPG" />
+    <None Include="Resources\fonciers.png" />
+    <None Include="Resources\distribution.png" />
+    <None Include="Resources\categorize_104px.png" />
+    <None Include="Resources\type_agr.png" />
+    <None Include="Resources\beneficiaires.png" />
+    <None Include="Resources\executants.png" />
+    <None Include="Resources\bailleurs.png" />
+    <None Include="Resources\magazine_104px.png" />
+    <None Include="Resources\google_web_search_96px.png" />
+    <None Include="Resources\refresh_96px.png" />
+    <None Include="Resources\pandora 2.png" />
+    <None Include="Resources\pandora.png" />
+    <None Include="Resources\Picture11.png" />
+    <None Include="Resources\Picture1.png" />
+    <None Include="Resources\printer_104px.png" />
+    <None Include="Resources\print_96px.png" />
+    <None Include="Resources\UNHABITAT.svg.png" />
+    <None Include="Resources\ISSSS.png" />
+    <None Include="Resources\UN-Habitat.png" />
+    <None Include="Resources\search_more_96px.png" />
+    <None Include="Resources\multiply_96px2.png" />
+    <None Include="Resources\next.png" />
+    <None Include="Resources\violences_sur_bg.png" />
+    <None Include="Resources\combo_chart_80px.png" />
+    <None Include="Resources\schedule_104px.png" />
+    <None Include="Resources\modifier.png" />
+    <None Include="Resources\observation.png" />
+    <None Include="Resources\ateliers.png" />
+    <None Include="Resources\participants.png" />
+    <None Include="Resources\help_96px.png" />
+    <None Include="Resources\typesdeconflit.png" />
+    <None Include="Resources\location_96px1.png" />
+    <None Include="Resources\location_96px.png" />
+    <None Include="Resources\vulnera.png" />
+    <None Include="Resources\types de parties.png" />
+    <None Include="Resources\situationsMenages.png" />
+    <None Include="Resources\natures conflit.png" />
+    <None Include="Resources\users.png" />
+    <None Include="Resources\etat_participants.png" />
+    <None Include="Resources\resolutions.png" />
+    <None Include="Resources\objets_confl.png" />
+    <None Include="Resources\causes.png" />
+    <None Include="Resources\menages 2.png" />
+    <None Include="Resources\statistics_report_96px.png" />
+    <None Include="Resources\organization_96px.png" />
+    <None Include="Resources\fight_96px.png" />
+    <None Include="Resources\menages.png" />
+    <None Include="Resources\conflits.png" />
+    <None Include="Resources\mediateurs.png" />
+    <None Include="Resources\sensibilisation.png" />
+    <None Include="Resources\joining_queue_96px.png" />
+    <None Include="Resources\Logo_SCC.png" />
+    <None Include="Resources\male_user_104px.png" />
+    <None Include="Resources\LOGO-SCC-2019-PNG.png" />
+    <None Include="Resources\Feronia-portada.jpg" />
+    <None Include="Resources\Fermer_window.png" />
+    <None Include="Resources\cancel_80px1.png" />
+    <None Include="Resources\scales_104px1.png" />
+    <None Include="Resources\scales_104px.png" />
+    <None Include="Resources\mediation.png" />
+    <None Include="Resources\good_quality_80px.png" />
+    <None Include="Resources\hypertension_80px.png" />
+    <None Include="Resources\courthouse_80px.png" />
+    <None Include="Resources\group_foreground_selected_80px.png" />
+    <None Include="Resources\mind_map_80px.png" />
+    <None Include="Resources\administrative_tools_80px.png" />
+    <None Include="Resources\speaker_notes_80px1.png" />
+    <None Include="Resources\split_horizontal_80px.png" />
+    <None Include="Resources\racism_80px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ControlLibrary\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.props'))" />
+    <Error Condition="!Exists('..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.targets'))" />
+  </Target>
+  <Import Project="..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.targets')" />
+</Project>
