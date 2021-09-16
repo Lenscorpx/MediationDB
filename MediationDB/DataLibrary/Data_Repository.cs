@@ -22,10 +22,10 @@ namespace MediationDB.DataLibrary
         Params prms = new Params();
         public Data_Repository()
         {
-            prms.Serveur = "unhserver.database.windows.net";
-            prms.Base_de_donnees = "db_foncier";
-            prms.Nom_user = "Lens";
-            prms.Mot_de_passe = "unhabitat@@2020";
+            //prms.Serveur = "unhserver.database.windows.net";
+            //prms.Base_de_donnees = "db_foncier";
+            //prms.Nom_user = "Lens";
+            //prms.Mot_de_passe = "unhabitat@@2020";
             //prms.Serveur = "DESKTOP-PO0I2OH";
             //prms.Base_de_donnees = "db_foncier";
             //prms.Nom_user = "sa";
@@ -38,10 +38,10 @@ namespace MediationDB.DataLibrary
             //prms.Base_de_donnees = "db_foncier";
             //prms.Nom_user = "sa";
             //prms.Mot_de_passe = "UNH@PKA2020";
-            //prms.Serveur = "DESKTOP-NFR9KTI";
-            //prms.Base_de_donnees = "db_foncier";
-            //prms.Nom_user = "sa";
-            //prms.Mot_de_passe = "123456789";
+            prms.Serveur = "LENSCORPX";
+            prms.Base_de_donnees = "db_foncier";
+            prms.Nom_user = "sa";
+            prms.Mot_de_passe = "LensX2020.com?";
 
         }
         public void afficher_mediateur(DataGridView dtg)
