@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.pnl_header = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuTileButton2 = new Bunifu.Framework.UI.BunifuTileButton();
             this.btn_conflits = new Bunifu.Framework.UI.BunifuTileButton();
@@ -48,26 +48,15 @@
             this.pnl_header.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_header.Location = new System.Drawing.Point(0, 0);
             this.pnl_header.Name = "pnl_header";
-            this.pnl_header.Size = new System.Drawing.Size(970, 53);
+            this.pnl_header.Size = new System.Drawing.Size(1300, 53);
             this.pnl_header.TabIndex = 74;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(338, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(309, 36);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Dashboard Rapports";
             // 
             // bunifuImageButton1
             // 
             this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.Fermer_window;
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(913, 7);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(1242, 9);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Size = new System.Drawing.Size(46, 40);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -76,12 +65,23 @@
             this.bunifuImageButton1.Zoom = 10;
             this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(516, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(309, 36);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Dashboard Rapports";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::MediationDB.Properties.Resources.UNHABITAT_svg;
-            this.pictureBox1.Location = new System.Drawing.Point(410, 472);
+            this.pictureBox1.Location = new System.Drawing.Point(507, 576);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(188, 40);
+            this.pictureBox1.Size = new System.Drawing.Size(304, 79);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 83;
             this.pictureBox1.TabStop = false;
@@ -100,11 +100,12 @@
             this.bunifuTileButton2.ImageZoom = 40;
             this.bunifuTileButton2.LabelPosition = 27;
             this.bunifuTileButton2.LabelText = "AGR";
-            this.bunifuTileButton2.Location = new System.Drawing.Point(510, 263);
+            this.bunifuTileButton2.Location = new System.Drawing.Point(712, 329);
             this.bunifuTileButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuTileButton2.Name = "bunifuTileButton2";
-            this.bunifuTileButton2.Size = new System.Drawing.Size(249, 154);
+            this.bunifuTileButton2.Size = new System.Drawing.Size(473, 240);
             this.bunifuTileButton2.TabIndex = 82;
+            this.bunifuTileButton2.Click += new System.EventHandler(this.bunifuTileButton2_Click);
             // 
             // btn_conflits
             // 
@@ -120,10 +121,10 @@
             this.btn_conflits.ImageZoom = 40;
             this.btn_conflits.LabelPosition = 27;
             this.btn_conflits.LabelText = "Rapport détaillé sur les conflits";
-            this.btn_conflits.Location = new System.Drawing.Point(253, 101);
+            this.btn_conflits.Location = new System.Drawing.Point(115, 71);
             this.btn_conflits.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_conflits.Name = "btn_conflits";
-            this.btn_conflits.Size = new System.Drawing.Size(249, 154);
+            this.btn_conflits.Size = new System.Drawing.Size(473, 240);
             this.btn_conflits.TabIndex = 78;
             this.btn_conflits.Click += new System.EventHandler(this.btn_conflits_Click);
             // 
@@ -141,10 +142,10 @@
             this.btn_mediateurs.ImageZoom = 40;
             this.btn_mediateurs.LabelPosition = 27;
             this.btn_mediateurs.LabelText = "Rapports sur les beneficiaires";
-            this.btn_mediateurs.Location = new System.Drawing.Point(253, 263);
+            this.btn_mediateurs.Location = new System.Drawing.Point(115, 329);
             this.btn_mediateurs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_mediateurs.Name = "btn_mediateurs";
-            this.btn_mediateurs.Size = new System.Drawing.Size(249, 154);
+            this.btn_mediateurs.Size = new System.Drawing.Size(473, 240);
             this.btn_mediateurs.TabIndex = 77;
             // 
             // btn_sensibilisations
@@ -161,10 +162,10 @@
             this.btn_sensibilisations.ImageZoom = 40;
             this.btn_sensibilisations.LabelPosition = 27;
             this.btn_sensibilisations.LabelText = "Rapport sur les sensibilisations";
-            this.btn_sensibilisations.Location = new System.Drawing.Point(510, 101);
+            this.btn_sensibilisations.Location = new System.Drawing.Point(712, 71);
             this.btn_sensibilisations.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_sensibilisations.Name = "btn_sensibilisations";
-            this.btn_sensibilisations.Size = new System.Drawing.Size(249, 154);
+            this.btn_sensibilisations.Size = new System.Drawing.Size(473, 240);
             this.btn_sensibilisations.TabIndex = 76;
             this.btn_sensibilisations.Click += new System.EventHandler(this.btn_sensibilisations_Click);
             // 
@@ -173,7 +174,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.ClientSize = new System.Drawing.Size(970, 520);
+            this.ClientSize = new System.Drawing.Size(1300, 665);
             this.Controls.Add(this.pnl_header);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.bunifuTileButton2);
@@ -182,8 +183,9 @@
             this.Controls.Add(this.btn_sensibilisations);
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_dash_reports";
+            this.Opacity = 0.96D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.pnl_header.ResumeLayout(false);
             this.pnl_header.PerformLayout();

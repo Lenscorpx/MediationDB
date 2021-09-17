@@ -324,11 +324,10 @@
             this.documentViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.documentViewer1.DocumentSource = typeof(MediationDB.ReportsLibrary.rpt_rapport_general_sur_conflit);
             this.documentViewer1.ForeColor = System.Drawing.Color.White;
-            this.documentViewer1.IsMetric = true;
-            this.documentViewer1.Location = new System.Drawing.Point(0, 141);
+            this.documentViewer1.Location = new System.Drawing.Point(0, 150);
             this.documentViewer1.Name = "documentViewer1";
             this.documentViewer1.PageBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.documentViewer1.Size = new System.Drawing.Size(1300, 490);
+            this.documentViewer1.Size = new System.Drawing.Size(1300, 481);
             this.documentViewer1.TabIndex = 0;
             // 
             // ribbonStatusBar1
@@ -433,14 +432,14 @@
             this.printPreviewStaticItem2,
             this.zoomTrackBarEditItem1});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 60;
+            this.ribbonControl1.MaxItemId = 61;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
             this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemProgressBar1,
             this.repositoryItemZoomTrackBar1});
-            this.ribbonControl1.Size = new System.Drawing.Size(1300, 141);
+            this.ribbonControl1.Size = new System.Drawing.Size(1300, 150);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.TransparentEditorsMode = DevExpress.Utils.DefaultBoolean.True;
             // 
@@ -1404,17 +1403,18 @@
             // printPreviewRibbonPageGroup1
             // 
             this.printPreviewRibbonPageGroup1.AllowTextClipping = false;
+            this.printPreviewRibbonPageGroup1.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.printPreviewRibbonPageGroup1.ContextSpecifier = this.documentViewerRibbonController1;
             this.printPreviewRibbonPageGroup1.ItemLinks.Add(this.printPreviewBarItem50);
             this.printPreviewRibbonPageGroup1.ItemLinks.Add(this.printPreviewBarItem51);
             this.printPreviewRibbonPageGroup1.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Document;
             this.printPreviewRibbonPageGroup1.Name = "printPreviewRibbonPageGroup1";
-            this.printPreviewRibbonPageGroup1.ShowCaptionButton = false;
             this.printPreviewRibbonPageGroup1.Text = "Document";
             // 
             // printPreviewRibbonPageGroup2
             // 
             this.printPreviewRibbonPageGroup2.AllowTextClipping = false;
+            this.printPreviewRibbonPageGroup2.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.printPreviewRibbonPageGroup2.ContextSpecifier = this.documentViewerRibbonController1;
             this.printPreviewRibbonPageGroup2.ItemLinks.Add(this.printPreviewBarItem7);
             this.printPreviewRibbonPageGroup2.ItemLinks.Add(this.printPreviewBarItem8);
@@ -1422,7 +1422,6 @@
             this.printPreviewRibbonPageGroup2.ItemLinks.Add(this.printPreviewBarItem3);
             this.printPreviewRibbonPageGroup2.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Print;
             this.printPreviewRibbonPageGroup2.Name = "printPreviewRibbonPageGroup2";
-            this.printPreviewRibbonPageGroup2.ShowCaptionButton = false;
             this.printPreviewRibbonPageGroup2.Text = "Print";
             // 
             // printPreviewRibbonPageGroup3
@@ -1449,6 +1448,7 @@
             // printPreviewRibbonPageGroup4
             // 
             this.printPreviewRibbonPageGroup4.AllowTextClipping = false;
+            this.printPreviewRibbonPageGroup4.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.printPreviewRibbonPageGroup4.ContextSpecifier = this.documentViewerRibbonController1;
             this.printPreviewRibbonPageGroup4.ItemLinks.Add(this.printPreviewBarItem4);
             this.printPreviewRibbonPageGroup4.ItemLinks.Add(this.printPreviewBarItem5);
@@ -1460,12 +1460,12 @@
             this.printPreviewRibbonPageGroup4.ItemLinks.Add(this.printPreviewBarItem21);
             this.printPreviewRibbonPageGroup4.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Navigation;
             this.printPreviewRibbonPageGroup4.Name = "printPreviewRibbonPageGroup4";
-            this.printPreviewRibbonPageGroup4.ShowCaptionButton = false;
             this.printPreviewRibbonPageGroup4.Text = "Navigation";
             // 
             // printPreviewRibbonPageGroup5
             // 
             this.printPreviewRibbonPageGroup5.AllowTextClipping = false;
+            this.printPreviewRibbonPageGroup5.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.printPreviewRibbonPageGroup5.ContextSpecifier = this.documentViewerRibbonController1;
             this.printPreviewRibbonPageGroup5.ItemLinks.Add(this.printPreviewBarItem12);
             this.printPreviewRibbonPageGroup5.ItemLinks.Add(this.printPreviewBarItem13);
@@ -1476,39 +1476,38 @@
             this.printPreviewRibbonPageGroup5.ItemLinks.Add(this.printPreviewBarItem16);
             this.printPreviewRibbonPageGroup5.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Zoom;
             this.printPreviewRibbonPageGroup5.Name = "printPreviewRibbonPageGroup5";
-            this.printPreviewRibbonPageGroup5.ShowCaptionButton = false;
             this.printPreviewRibbonPageGroup5.Text = "Zoom";
             // 
             // printPreviewRibbonPageGroup6
             // 
             this.printPreviewRibbonPageGroup6.AllowTextClipping = false;
+            this.printPreviewRibbonPageGroup6.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.printPreviewRibbonPageGroup6.ContextSpecifier = this.documentViewerRibbonController1;
             this.printPreviewRibbonPageGroup6.ItemLinks.Add(this.printPreviewBarItem23);
             this.printPreviewRibbonPageGroup6.ItemLinks.Add(this.printPreviewBarItem24);
             this.printPreviewRibbonPageGroup6.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Background;
             this.printPreviewRibbonPageGroup6.Name = "printPreviewRibbonPageGroup6";
-            this.printPreviewRibbonPageGroup6.ShowCaptionButton = false;
             this.printPreviewRibbonPageGroup6.Text = "Page Background";
             // 
             // printPreviewRibbonPageGroup7
             // 
             this.printPreviewRibbonPageGroup7.AllowTextClipping = false;
+            this.printPreviewRibbonPageGroup7.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.printPreviewRibbonPageGroup7.ContextSpecifier = this.documentViewerRibbonController1;
             this.printPreviewRibbonPageGroup7.ItemLinks.Add(this.printPreviewBarItem25);
             this.printPreviewRibbonPageGroup7.ItemLinks.Add(this.printPreviewBarItem26);
             this.printPreviewRibbonPageGroup7.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Export;
             this.printPreviewRibbonPageGroup7.Name = "printPreviewRibbonPageGroup7";
-            this.printPreviewRibbonPageGroup7.ShowCaptionButton = false;
             this.printPreviewRibbonPageGroup7.Text = "Export";
             // 
             // printPreviewRibbonPageGroup8
             // 
             this.printPreviewRibbonPageGroup8.AllowTextClipping = false;
+            this.printPreviewRibbonPageGroup8.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.printPreviewRibbonPageGroup8.ContextSpecifier = this.documentViewerRibbonController1;
             this.printPreviewRibbonPageGroup8.ItemLinks.Add(this.printPreviewBarItem27);
             this.printPreviewRibbonPageGroup8.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Close;
             this.printPreviewRibbonPageGroup8.Name = "printPreviewRibbonPageGroup8";
-            this.printPreviewRibbonPageGroup8.ShowCaptionButton = false;
             this.printPreviewRibbonPageGroup8.Text = "Close";
             // 
             // repositoryItemProgressBar1
@@ -1517,8 +1516,7 @@
             // 
             // frm_report_conflits_list
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
             this.ClientSize = new System.Drawing.Size(1300, 714);
             this.Controls.Add(this.panel1);

@@ -30,6 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.pnl_header = new System.Windows.Forms.Panel();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_stats = new Bunifu.Framework.UI.BunifuTileButton();
             this.btn_distribution_agr = new Bunifu.Framework.UI.BunifuTileButton();
@@ -39,10 +40,9 @@
             this.btn_executants = new Bunifu.Framework.UI.BunifuTileButton();
             this.btn_projets = new Bunifu.Framework.UI.BunifuTileButton();
             this.btn_bailleurs = new Bunifu.Framework.UI.BunifuTileButton();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.pnl_header.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -65,6 +65,20 @@
             this.pnl_header.Name = "pnl_header";
             this.pnl_header.Size = new System.Drawing.Size(1300, 53);
             this.pnl_header.TabIndex = 74;
+            // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
+            this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.Fermer_window;
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(1242, 8);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(46, 40);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bunifuImageButton1.TabIndex = 8;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // pictureBox1
             // 
@@ -239,20 +253,6 @@
             this.btn_bailleurs.TabIndex = 75;
             this.btn_bailleurs.Click += new System.EventHandler(this.btn_bailleurs_Click);
             // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(43)))), ((int)(((byte)(69)))));
-            this.bunifuImageButton1.Image = global::MediationDB.Properties.Resources.Fermer_window;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(1242, 8);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(46, 40);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.bunifuImageButton1.TabIndex = 8;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
-            // 
             // frm_dash_agr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -273,12 +273,13 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_dash_agr";
+            this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_dash_agr";
             this.pnl_header.ResumeLayout(false);
             this.pnl_header.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

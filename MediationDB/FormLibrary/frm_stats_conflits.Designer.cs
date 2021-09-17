@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_stats_conflits));
             this.pnl_header = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -125,13 +126,12 @@
             this.txt_id_localite = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label2 = new System.Windows.Forms.Label();
             this.chart_resolus = new Bunifu.Framework.UI.BunifuGauge();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnl_header.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_header
@@ -144,6 +144,16 @@
             this.pnl_header.Name = "pnl_header";
             this.pnl_header.Size = new System.Drawing.Size(1300, 53);
             this.pnl_header.TabIndex = 37;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MediationDB.Properties.Resources.UNHABITAT_svg;
+            this.pictureBox1.Location = new System.Drawing.Point(8, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(219, 40);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 144;
+            this.pictureBox1.TabStop = false;
             // 
             // bunifuImageButton1
             // 
@@ -304,6 +314,7 @@
             this.bunifuImageButton3.TabIndex = 236;
             this.bunifuImageButton3.TabStop = false;
             this.bunifuImageButton3.Zoom = 10;
+            this.bunifuImageButton3.Click += new System.EventHandler(this.bunifuImageButton3_Click);
             // 
             // chart_classes
             // 
@@ -1697,16 +1708,6 @@
             this.chart_resolus.Thickness = 30;
             this.chart_resolus.Value = 0;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MediationDB.Properties.Resources.UNHABITAT_svg;
-            this.pictureBox1.Location = new System.Drawing.Point(8, 7);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(219, 40);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 144;
-            this.pictureBox1.TabStop = false;
-            // 
             // frm_stats_conflits
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1721,12 +1722,12 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.pnl_header.ResumeLayout(false);
             this.pnl_header.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -32,8 +32,12 @@ namespace MediationDB.DataLibrary
             //prms.Mot_de_passe = "Windy@2019.com?";
             //prms.Serveur = "DESKTOP-VIA78VL";
             //prms.Base_de_donnees = "db_foncier";
-            //prms.Nom_user = "sa";
-            //prms.Mot_de_passe = "Windy@2020.com?";
+            //prms.Nom_user = "Lens";
+            //prms.Mot_de_passe = "unhabitat@@2020";
+            prms.Serveur = "DESKTOP-VIA78VL";
+            prms.Base_de_donnees = "db_foncier";
+            prms.Nom_user = "sa";
+            prms.Mot_de_passe = "Windy@2020.com?";
             //prms.Serveur = "DESKTOP-LSH2J11\\UNHABITAT_SERVER";
             //prms.Base_de_donnees = "db_foncier";
             //prms.Nom_user = "sa";
@@ -5590,6 +5594,42 @@ namespace MediationDB.DataLibrary
                 if (rs == DialogResult.Yes)
                 {
                     MessageBox.Show(tdf.ToString());
+                }
+            }
+            finally
+            {
+                cnx.Close(); cnx.Dispose();
+            }
+        }
+        public void liste_beneficiaires(DocumentViewer dcv)
+        {
+            cnx = new SqlConnection(prms.ToString());
+            try
+            {
+                if (cnx.State == ConnectionState.Closed)
+                    cnx.Open();
+                var cmd = new SqlCommand("liste_beneficiaires", cnx)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.ExecuteNonQuery();
+                var da = new SqlDataAdapter(cmd);
+                var rpt = new rpt_liste_beneficiaires();
+                DataSet dt = new DataSet();
+                da.Fill(dt, "liste_beneficiaires");
+                rpt.DataSource = dt;
+                //rpt.SetDataSource(dt.Tables["rechercher_pay_bill"]);                    
+                dcv.DocumentSource = rpt;
+                rpt.CreateDocument();
+                dcv.Refresh();
+            }
+            catch (Exception exct)
+            {
+                var rs = new DialogResult();
+                rs = MessageBox.Show("Want to see error code?", "Errors ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (rs == DialogResult.Yes)
+                {
+                    MessageBox.Show(exct.ToString());
                 }
             }
             finally
